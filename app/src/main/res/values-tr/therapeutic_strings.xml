@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="therapeutic_title">Terapötik Sığınak</string>
+    <string name="therapeutic_subtitle">Derin duygusal yeniden kalibrasyon için uzman liderliğinde ses iyileştirme ve rehberli yolculuklar.</string>
+    <string name="therapeutic_research_centre">HAC SAĞLIK • BÜTÜNLEŞİK NÖRAL TASARIM</string>
+
+    <!-- Kategoriler / Sekmeler -->
+    <string name="cat_stress_relief">Anksiyete ve Stresi Eritin</string>
+    <string name="cat_forgiveness">Kırgınlığı ve İncinmeyi İyileştirin</string>
+    <string name="cat_manifesting">Amaç ve Anlam Bulun</string>
+    <string name="cat_sleep">Uykusuzluğu ve Gece Düşüncelerini Bitirin</string>
+    <string name="cat_healing">Kederi ve Fiziksel Acıyı İyileştirin</string>
+    <string name="cat_clarity">Zihinsel Sisi Dağıtın ve Odaklanın</string>
+    <string name="cat_delays">Hayatta \'Geri Kalmışlık\' Hissini Aşın</string>
+
+    <!-- REHBERLİK METİNLERİ -->
+    <string name="session_stress_reset_guidance">Bu oturum, sadece verimliliğiniz için değil, temel sağlığınız için de mutlak iç huzuru geliştirmeye yönelik derin bir nöral sıfırlamadır. Sürekli küçük kararların görünmez ağırlığıyla mücadele ediyor, zihninizde kalıcı bir statik gürültü ve çenenizde veya omuzlarınızda asla tam olarak gevşemiyor gibi görünen fiziksel bir gerginlik hissediyor olabilirsiniz. Bu kronik stres, hücrelerinizi yaşlandıran biyolojik bir vergidir; bunu iyileştirmek hayati bir fiziksel bakım eylemidir. Başlamak için sırt üstü düz bir şekilde uzanabileceğiniz sessiz bir yer bulun. Kollarınızın yanlara ağır bir şekilde düşmesine izin verin ve çenenizi gevşetin. Gözlerinizi kapatın ve farkındalığınızı nefesinize getirin. Stresi iyileştirmek, sinir sisteminizde bir ateşkes ilan etme eylemidir. Bitkinlik veya bunalmışlık hislerinin bir an için yüzeye çıkmasına izin verin. Onlarla savaşmanıza gerek yok, sadece verdikleri zararı kabul edin. Şimdi, başınızın tepesinde serin, gümüş bir ışık hayal edin. Her nefes alışta bu ışık daha da parlaklaşıyor. Her nefes verişte, gerginliğin vücudunuzu duman gibi terk ettiğini hayal edin. Bu kelimeleri sessizce tekrarlayın: \'Güvendeyim. Huzurluyum. Vücudumun dinlenmesine izin veriyorum.\' Kalp atışlarınızın evrenin doğal ritmine uyum sağlayacak şekilde yavaşladığını hissedin. Bu görselleştirmeye devam edin, gümüş ışığın eskiden stresin yaşadığı alanı doldurmasına izin verin. Bu sizin mutlak iyileşme anınızdır.</string>
+
+    <string name="session_panic_brake_guidance">Bu oturum, sinir sisteminizi bir panik döngüsünün eşiğinden anında geri çekmek için akut bir biyolojik müdahaledir. Muhtemelen korkunç bir adrenalin patlaması hissediyorsunuz; kalbiniz hızla çarpıyor, göğsünüz sıkışıyor ve zihniniz orada olmayan bir felaketin yaklaşmakta olduğuna inanıyor. Bu, amigdalanızın yanlış alarm vermesidir, hata sonucu tetiklenen bir hayatta kalma mekanizmasıdır. Başlamak için doğrudan yere oturun ve avuç içlerinizi yere düz bir şekilde koyun. Altınızdaki soğuk, sağlam gerçekliği hissedin. Gözlerinizi kapatın ve bir an için dünyayı görmezden gelin. Panikten iyileşmek, vücudunuza tehlikenin geçtiğini öğretme eylemidir. Korkunun onunla savaşmadan orada olmasına izin verin; o sadece içinizden geçen enerjidir. Şimdi, bu sesteki alçalan tonları dinleyin. Onları yüksek, dengesiz bir yerden sizi aşağı indiren tırabzanlar olarak hayal edin. Nefes verişinizi perdedeki düşüşle eşleştirin. Uzun... yavaş... dışarı. Sessizce tekrarlayın: \'Vücudum güvende. Nefesim benim çapam. Yere geri dönüyorum.\' Perde stabilize oldukça, nabzınızın sakinliği yansıttığını hissedin. Kendi sisteminizin kontrollerini yeniden ele alıyorsunuz.</string>
+
+    <string name="session_overthinker_off_guidance">Bu oturum, beyninizi aşırı düşünmenin pürüzlü, yüksek frekanslı enerjisinden derin Delta dinlenmesinin pürüzsüz, ağır ritmine geçirmek için tasarlanmış manuel bir nöral kapatmadır. Zihninizin uyumayı reddettiğinde zalim bir efendi gibi davrandığını, her hatayı tekrar oynattığını, her korkuyu karanlığa yansıttığını ve sizi \'ya şöyle olursa\' döngüsünde hapsolmuş tuttuğunu fark edebilirsiniz. Bu uyumsuzluk fiziksel olarak yıpratıcıdır; vücudunuz bitkin ama beyniniz hala yüksek performans modundadır. Başlamak için tercih ettiğiniz uyku pozisyonunda yatın ve odanızın tamamen karanlık olduğundan emin olun. Gözlerinizi kapatın. Bu gece hiçbir şeyi çözmenize gerek olmadığını anlayın. Dünya yarın hala orada olacak ve siz iyileştikten sonra onu karşılamak için daha donanımlı olacaksınız. Sadece binaural vuruşun düşük uğultusuna odaklanın. Bunu, düşüncelerinizin üzerine yavaşça çekilen ağır, sıcak bir battaniye olarak hayal edin. Her nabızda göz kapaklarınızın ağırlaştığını ve düşüncelerinizin uzaklaştığını hissedin. Kendinizi bırakıyorsunuz. Batıyorsunuz. Uyumak için güvendesiniz.</string>
+
+    <string name="session_burnout_shield_guidance">Bu oturum, biyolojik sınırlarınızı yeniden inşa etmek ve profesyonel tükenmişliğin ezici ağırlığından iyileşmek için klinik bir nöral müdahaledir. Zaten bitkin uyanıyor, telefonunuzdaki ilk bildirimi korkuyla bekliyor ve tutkunuzun ve yaratıcılığınızın olduğu yerde ağır, gri bir sis hissediyor olabilirsiniz. Muhtemelen ruhunuzdan işinize o kadar çok veriyorsunuz ki kendi hayatınızda görünmez hissetmeye başladınız. Başlamak için çalışma alanınızdan uzakta rahat bir koltuk bulun ve ellerinizi gevşetin. Gözlerinizi kapatın ve farkındalığınızı nefesinize getirin. Tükenmişliği iyileştirmek, enerjinizi her zaman daha fazlasını isteyen bir dünyadan geri alma hayati eylemidir. Sorumluluklarınıza karşı hissettiğiniz uyuşukluk veya kırgınlık duygularının bir an için yüzeye çıkmasına izin verin. Onları haklı çıkarmanıza gerek yok, sadece bitkinliği kabul edin. Şimdi, vücudunuzun etrafında canlı, yanardöner bir kalkanın oluştuğunu hayal edin. Her nefes alışta bu ışık güçleniyor, stresin zihinsel kalıntılarını süzüyor. Her nefes verişte, \'aktif\' olma baskısını bırakın. Bu kelimeleri sessizce tekrarlayın: \'Yeterliyim. Enerjimi geri alıyorum. Dinlenirken güvendeyim.\' Sinir sisteminizin \'yapma\' modundan \'olma\' moduna geçtiğini hissedin. Bu görselleştirmeye devam edin, kalkanın iç huzurunuzu korumasına izin verin. Bu sizin sistemik restorasyona giden yolunuzdur.</string>
+
+    <string name="session_social_buffer_guidance">Bu oturum, sosyal alanlara girmeden önce sinir sisteminizin etrafında koruyucu bir tampon oluşturmak için bir nöral hazırlıktır. Yükselen bir korku dalgası, boğazınızda fiziksel bir sıkışma veya odaya girmeden önce bile kaçma yönünde acil bir biyolojik dürtü hissediyor olabilirsiniz. Bu aşırı uyanıklık, vücudunuzun bir kalabalığı yanlışlıkla bir avcı olarak tanımlamasıdır; sizi izole eden ve yoran bir yanlış alarmdır. Başlamak için dik durun ve ayaklarınızı yere sağlam basın. Gözlerinizi kapatın ve karnınıza üç derin nefes alın, diyaframınızın genişlediğini hissedin. Sosyal anksiyeteyi iyileştirmek, amigdalanıza güvende ve yetkin olduğunuzun sinyalini verme eylemidir. Yargılanma korkusunun bir an için yüzeye çıkmasına izin verin; onu evin sahibi olmayan bir misafir olarak kabul edin. Şimdi, etrafınızı saran, her yöne yaklaşık bir metre uzanan sakin, çivit mavisi bir ışık küresi hayal edin. Her nefes alışta bu tampon daha sağlam hale geliyor. Her nefes verişte, kalp atış hızınızın sessiz bir güven ritmine yavaşladığını hissedin. Sessizce tekrarlayın: \'Kendi varlığımda güvendeyim. Buraya aitim. Huzurum benim kalkanımdır.\' Kendinizi bir hedeften ziyade temelli bir gözlemciye dönüştüğünüzü hissedin. Bu sizin otantik sosyal özgürlüğe giden yolunuzdur.</string>
+
+    <string name="session_chronic_pain_guidance">Bu oturum, sinir sisteminizdeki fiziksel rahatsızlığın tekrarlayan döngülerini kesmek için tasarlanmış nazik, akustik bir anestezidir. Fiziksel acı genellikle ağır bir duygusal yankı taşır; kendi vücudunuzda hapsolmuş hissetmenize, sınırlarınız nedeniyle hüsrana uğramanıza ve sürekli tehlike sinyaliyle bitkin düşmenize neden olabilir. Sinir sisteminiz, acı hissini gerçekten artıran yüksek alarm durumundaki bir geri besleme döngüsünde sıkışmış olabilir. Bugün bu sinyalin sesini değiştiriyoruz. Başlamak için, tam destek için yastık veya battaniye kullanarak mümkün olan en rahat pozisyonu bulun. Gözlerinizi kapatın ve farkındalığınızı rahatsızlık duyduğunuz bölgeye getirin. Acıyla savaşmanıza veya onu itmenize gerek olmadığını anlayın; direnç sadece daha fazla gerginlik yaratır. İyileşme, yumuşak bir farkındalıktan gelir. Şimdi, ses dalgalarını vücudunuzun içinde hareket eden serin, yatıştırıcı bir sis olarak hayal edin. Bu sisin acıyı çevrelediğini, kenarlarını yumuşattığını ve bir zamanlar gerginlik olan yerde bir rahatlama alanı yarattığını hayal edin. Sessizce kendinize söyleyin: \'Ben acımdan ibaret değilim. Vücudumun yumuşamasına izin veriyorum. Bu anda huzur buluyorum.\' Frekanslar yankılandıkça, sıkıntının sesinin azaldığını hissedin. Bir mola veriyorsunuz.</string>
+
+    <string name="session_grief_integration_guidance">Bu oturum, kaybı işlemeniz ve kalıcı barışın frekansını bulmanız için size bir sığınak sağlar. Göğsünüzde fiziksel bir delik varmış gibi veya hayatınızda sağır edici bir sessizlik varmış gibi hissedebilirsiniz. Bunu \'atlatmaya\' çalışmak caziptir, ancak gerçek iyileşme entegrasyondan gelir; her şeyi geride bırakmak değil, ağırlığı ayarlanmış bir şekilde ilerlemek. Kaybı küçültmeye çalışmıyoruz; kalbinizi onu taşıyacak kadar büyütmenize yardımcı oluyoruz. Başlamak için kendinizi tamamen güvende ve desteklenmiş hissettiğiniz bir yer bulun. Arkaya yaslanın veya rahatça oturun, ellerinizi nazikçe kucağınıza bırakın. Gözlerinizi kapatın. Acınızın taşıdığınız sevginin bir kanıtı olduğunu anlayın; bu çözülecek bir sorun değil, içinde yaşanacak bir geçiştir. Şimdi, kalbinizdeki boşlukları nazikçe dolduran yumuşak, mavi-yeşil bir ışık hayal edin. Her nefes alışta bu ışık genişleyerek kederiniz için bir yastık oluşturuyor. Her nefes verişte, \'güçlü\' olma baskısını bırakın. Sessizce tekrarlayın: \'Hissedebilmeme izin veriyorum. Kederim aracılığıyla sevgimi onurlandırıyorum. Bu huzurda tutuluyorum.\' Ses sizi çevrelerken, kelimelerin yetersiz kaldığı alanlarda frekansların sizi tutmasına izin verin. Bu sizin duygusal entegrasyona giden yolunuzdur.</string>
+
+    <string name="session_delay_marriage_guidance">Bu oturum, dış zaman çizelgelerinin baskısını serbest bırakmak ve kendi yolunuza olan iç güveninizi geri kazanmak için derin bir nöral yeniden kalibrasyondur. Etrafınıza bakıp başkalarının sizden kaçıyor gibi görünen dönüm noktalarını kutladığını görebilir, bir şekilde \'geç kaldığınız\' veya hayatınızın beklemede olduğu yönünde sessiz, ağır bir utanç hissedebilirsiniz. Geride kalmışlık hissi, fiziksel acıyla aynı sinir yollarını tetikleyen sürekli sosyal karşılaştırmanın körüklediği biyolojik bir illüzyondur. Başlamak için sessiz bir yere yerleşin ve derin, bilinçli bir nefes alın. Gözlerinizi kapatın. Zaman çizelgenizin benzersiz olduğunu anlayın; geç kalmadınız, tam olmanız gereken zamanda geliyorsunuz. Ağır bir pelerin gibi taşıdığınız dış beklentilerin ağırlığını bırakın. Şimdi, göğsünüzün merkezinde, değerinizin bir ilişki durumuna bağlı bir değişken değil, mutlak bir sabit olduğunu hatırlatan sıcak, altın bir ışık hayal edin. Her nefes alışta bu ışığın genişlediğini, sizi bir bütünlük ve varış duygusuyla doldurduğunu hissedin. Her nefes verişte, başka bir yerde olma ihtiyacını bırakın. Sessizce kendinize söyleyin: \'Olduğum gibi bütünüm. Yolum kutsal. Zamanlamama güveniyorum.\' Hayatınızın bu evresini arınma ve kendini keşfetme için nadir bir fırsat olarak takdir edin. Bundan sonra gelecek her şeyi destekleyecek bir huzur temeli inşa ediyorsunuz.</string>
+
+    <string name="session_betrayal_healing_guidance">Bu oturum, ihanetin sinir sisteminizde tetiklediği akut biyolojik alarmı yatıştırmak için tasarlanmış, iç sınırlarınızın derin bir restorasyonudur. İhanet, gerçeklik duygunuzu yıkan ve sizi dinlenemez veya güvenemez hale getiren bir aşırı uyanıklık durumunda bırakan iç sığınağınızın ihlalidir. Kendinizi saplantılı bir şekilde geçmişte ipuçları ararken veya artık var olmayan bir temel bulmaya çalışarak kırılmış güven anlarını tekrar oynatırken bulabilirsiniz. Bundan iyileşmek hayati önem taşır çünkü kronik şüphe fiziksel olarak yıpratıcıdır ve kalbinizin bir daha asla gerçekten açılmasını engeller. Başlamak için dik oturun ve ayaklarınızı yere sağlam basın. Altınızdaki yerin stabilitesini, yani elinizden alınamayacak bir gerçekliği hissedin. Gözlerinizi kapatın. Şu anda dünyaya güvenmenizi istemiyoruz; kendi algınıza ve kendi değerinize olan güveninizi yeniden inşa etmenize yardımcı oluyoruz. Şimdi, kalbinizi çevreleyen serin, koruyucu derin mavi bir ışık kalkanı hayal edin. Her nefes alışta bu kalkan daha dirençli hale geliyor, geçmişin korkusunu süzüyor. Her nefes verişte, \'neden\' sorusunu anlama ihtiyacını bırakın. Sessizce kendinize söyleyin: \'Kendi gerçeğimde güvendeyim. Kendi kalbime güveniyorum. Huzurumu geri alıyorum.\' Frekanslar stabilize oldukça sinir sisteminizin dahili bir sığınak durumuna döndüğünü hissedin.</string>
+
+    <string name="session_self_judgment_guidance">Bu oturum, iç eleştirmeninizle olan iç savaşı sona erdirmek ve gerçek benliğinizin ortaya çıkmasına izin vermek için tasarlanmış radikal bir öz-şefkat uygulamasıdır. Duyduğumuz en ağır kelimeler genellikle kendimize söylediklerimizdir. Başka bir insandan asla talep etmeyeceğiniz bir mükemmellik standardına kendinizi zorlayarak kendi en acımasız yargıcınız olabilirsiniz. Bu kronik öz-eleştiri, canlılığınızı ve yaratıcı ruhunuzu tüketen bir iç biyolojik sürtünme durumu yaratır. Başlamak için rahat bir pozisyon bulun ve bir elinizi kalbinizin üzerine koyun. Gözlerinizi kapatın. Avucunuzun göğsünüze karşı sıcaklığını hissedin; bu bir nezaket jestidir. Hatalarınızın kimliğiniz olmadığını, eğitiminiz olduğunu anlayın. \'Sevgi Frekansı\' başlarken, bunun düşüncelerinizin üzerinden bir kıyıdaki nazik bir gelgit gibi geçtiğini hayal edin. Eleştirel bir düşünce her ortaya çıktığında, sesin onu alıp götürmesine izin verin. Sessizce kendinize söyleyin: \'Kendi sevgime layığım. Elimden gelenin en iyisini yapıyorum. İnsan olduğum için kendimi affediyorum.\' Siz düzeltilecek bir proje değilsiniz; dinlenmesi gereken bir insansınız. Bu sizin içsel hizalanmaya giden yolunuzdur.</string>
+
+    <string name="session_regret_release_guidance">Bu oturum, şimdiki anın gücünde tamamen yaşamanıza yardımcı olmak için tasarlanmış, \'neler olabilirdi\' şeklindeki hayalet acının derin bir serbest bırakılmasıdır. Kendinizi bitmek bilmeyen \'ya şöyle olsaydı\'lar içinde yaşarken, seçilmemiş yolların, söylenmemiş sözlerin veya sizi amaçladığınızdan başka bir yere götüren seçimlerin yasını tutarken bulabilirsiniz. Bu kronik pişmanlık, geleceğinizin hırsızıdır; geriye bakarak harcadığınız enerji, aslında değişim yaratma gücüne sahip olduğunuz tek andan çalınmıştır. Başlamak için sessizce oturun ve üç derin, bilinçli nefes alın. Gözlerinizi kapatın. O zamanki bilgi, olgunluk ve kaynaklarınızla elinizden gelenin en iyisini yaptığınızı kabul edin. Pişmanlığı iyileştirmek, dürüst bir muhasebe ve ardından tam, özürsüz bir serbest bırakma gerektirir. Şimdi kendinizi uçsuz bucaksız, yavaş akan bir nehrin üzerindeki bir köprüde dururken hayal edin. Ellerinizde ağır bir kitap var; pişmanlıklarınızın bölümü. Frekanslar yükseldikçe kendinizi o kitabı bırakırken hayal edin. Sis içinde kaybolana kadar uzaklaşmasını izleyin. Sessizce kendinize söyleyin: \'Geçmişi serbest bırakıyorum. Yolculuktan öğreniyorum. Yeniden başlamak için özgürüm.\' Hayatınızı burası ve şimdi için geri alırken ruhunuza dönen hafifliği hissedin.</string>
+
+    <string name="session_body_acceptance_guidance">Bu oturum, fiziksel formunuzla olan ilişkinizi iyileştirmek ve gözlemden içinde yaşamaya geçmek için bir yolculuktur. Vücudumuza genellikle düzeltilecek bir proje, çözülecek bir sorun veya bizi hayal kırıklığına uğratmış bir kap olarak davranırız. Vücudunuza karşı bir kopukluk hatta bir nefret hissediyorsanız, biyolojik bir yabancılaşma durumunda yaşıyorsunuz demektir. Vücudunuz gerçekten sahip olacağınız tek evdir; kınanmayı değil, nezaketinizi hak eder. Başlamak için rahatsız edilmeyeceğiniz bir yerde rahatça uzanın. Gözlerinizi kapatın. Farkındalığınızı ayaklarınıza, sonra bacaklarınıza getirin, yavaşça yukarı doğru hareket edin. Her parçayı nasıl göründüğü için değil, size nasıl hizmet ettiği için takdir edin; asla durmayan kalp atışı, siz düşünmediğinizde bile sizi hayatta tutan nefes. Frekanslar yankılandıkça, vücudunuzu tarayan, \'iyi\' veya \'kötü\' etiketlerini eriten yumuşak, iyileştirici bir ışık hayal edin. Sessizce kendinize söyleyin: \'Vücudumda evimdeyim. Fiziksel benliğimi onurlandırıyorum. İçimdeki yaşam için minnettarım.\' Kendi teninizdeki varlığınızı geri alıyorsunuz.</string>
+
+    <string name="session_delay_parenthood_guidance">Bu oturum, ebeveynlik bekleyişi sırasında huzur bulmanıza ve doğurganlık gecikmesinin sessiz acısını iyileştirmenize yardımcı olmak için bir sakinlik sığınağı yaratır. Bir çocuk beklemek, dünyanın çoğunun görmediği veya anlamadığı sessiz, tekrarlayan bir keder gibi hissedilebilir. Başkalarından gelen her duyuru, kişisel bir darbe gibi hissedilebilir ve size ağır bir yetersizlik duygusu veya vücudunuzun sizi hayal kırıklığına uğrattığı korkusu bırakabilir. Bu acıyı iyileştirmek hayati önem taşır çünkü kronik stres, esenliğinizi daha da etkileyebilecek bir biyolojik yüksek alarm durumunu tetikler. Başlamak için kendinizi tamamen desteklenmiş hissettiğiniz rahat bir dinlenme yeri bulun. Ellerinizi nazikçe alt karnınıza koyun ve gözlerinizi kapatın. Her nefesi bir şefkat dalgası olarak hayal ederek o alana derin nefes alın. Değerinizin biyolojik çıktınızdan bağımsız, mutlak bir sabit olduğunu anlayın. \'Henüz değil\' fırtınasını dindirerek sisteminizin bir denge ve umut durumuna dönmesine izin veriyoruz. Şimdi merkezinizi dolduran, ruhunuzun doğurganlığını ve vücudunuzun dayanıklılığını temsil eden yumuşak, zümrüt bir ışık hayal edin. Sessizce tekrarlayın: \'Tam olduğum gibi bütünüm. Hayatımın zamanlamasına güveniyorum. Yolculuğumla barışığım.\' Bu, her yeni başlangıç için en verimli topraktır.</string>
+
+    <string name="session_manifest_intent_guidance">Bu oturum, mevcut durumunuzu gelecek vizyonunuzla senkronize etmek ve niyetinizi bilinçaltı zihninize sabitlemek için tasarlanmış nöral amacınızın hassas bir şekilde keskinleştirilmesidir. Eğer başıboş geziyor, çok çalışıyor ama hiçbir yere varmıyor gibi hissediyorsanız, bunun nedeni beyninizin filtreleme sisteminin (Retiküler Aktive Edici Sistem) net bir hedefi olmamasıdır. Tanımlanmış bir niyet olmadan, tam önünüzde duran fırsatları göremezsiniz. Bu yön eksikliğini iyileştirmek, bir seyirci değil, bir yaratıcı olarak gücünüzü talep etme eylemidir. Başlamak için tetikte ama rahat bir duruşla, omurganız dik ve elleriniz kucağınızda açık şekilde oturun. Gözlerinizi kapatın. Zihninizin gözüne spesifik, anlamlı bir hedef getirin. Hayallerinizin \'çok büyük\' olduğunu söyleyen şüpheyi susturuyoruz. Şimdi, Alfa-Teta köprüsünü dinlerken, kendinizi zaten o gelecek gerçekliğinde yaşıyor gibi hayal edin. Havayı hissedin, sesleri duyun ve başarınızın *hissini* mevcut sinir sisteminize sabitleyin. Sessizce tekrarlayın: \'Niyetim net. Zihnim odaklanmış. Amacımla uyumluyum.\' Sadece bir hedef hakkında düşünmüyorsunuz; biyolojinizi onu yaşamaya hazırlıyorsunuz.</string>
+
+    <string name="session_delay_career_guidance">Bu oturum, mesleki duraklama kaygısını dağıtmak ve yaratıcı gücünüzü geri kazanmak için tasarlanmış stratejik bir nöral yeniden kalibrasyondur. \'Sıkışmış\' hissetmenin ağırlığı yavaş, görünmez bir boğulma gibi gelebilir; akranlarınızın terfi ettiğini, girişimlerin başladığını ve dönüm noktalarına ulaşıldığını görürken siz kendinizi görünmez, değersiz veya bir platoda kapana kısılmış hissedersiniz. Bu kariyer paniği, aslında problem çözme yeteneklerinizi bozan biyolojik bir hayatta kalma tepkisini tetikler. Başlamak için sessiz bir çalışma alanı veya dik ve rahatsız edilmeden oturabileceğiniz bir köşe bulun. Gözlerinizi kapatın. Bir kariyerin bir merdiven değil, bir ekosistem olduğunu anlayın. Bu aşama bir gecikme değil; yüksek yoğunluklu beceri biriktirme ve karakter oluşturma dönemidir. Şimdi, karşılaştırma sisini delip geçen lazer benzeri bir berraklık ışını hayal edin. Her nefes alışta içsel değerinizin ve derin köklerinizin güçlendiğini hissedin. Her nefes verişte, başka bir yerde olma baskısını bırakın. Sessizce kendinize söyleyin: \'Kendi yolumun mimarıyım. Arınma dönemime güveniyorum. Bir sonraki seviyem için hazırım.\' Sizi sonunda hedefinize götürecek işe hakim oluyorsunuz.</string>
+
+    <string name="session_comparison_trap_guidance">Bu oturum, sürekli sosyal karşılaştırma döngüsünü kırmak ve otantik öz değerinizi yeniden ateşlemek için tasarlanmış dahili kaynağınıza güçlü bir dönüştür. Şu anda tarihteki en büyük psikolojik deneyi yaşıyorsunuz: binlerce insanın özenle seçilmiş en iyi anlarıyla 7/24 sürekli karşılaştırma. Eğer kalıcı bir yetersizlik duygusu hissediyorsanız, bunun nedeni beyninizin algılanan bir sosyal açıkla kandırılmasıdır. Bu sürekli \'kontrol etme\', gücünüzü aşındıran kronik bir yüksek-beta stresi durumu yaratır. Başlamak için tüm cihazları bir kenara bırakın ve sessiz bir yere yerleşin. Gözlerinizi kapatın. Diğer insanların hayatlarına açılan pencereleri kapatıyoruz ki sonunda kendi hayatınızdaki ateşi yakabilesiniz. Aşmaya mahkum olduğunuz tek kişinin kendiniz olduğunu anlayın. Şimdi enerjinizin her yönden size döndüğünü hayal edin. Her nefes alışta kendi benzersiz yolunuzun netleştiğini ve canlandığını hissedin. Her nefes verişte dış onay ihtiyacını bırakın. Sessizce tekrarlayın: \'Yolculuğum sadece bana ait. Tam olduğum gibi yeterliyim. Kendi varışımı kutluyorum.\' İçsel kaynağınızın sabit, sarsılmaz bir alev haline geldiğini hissedin. Bu sizin özgürlüğe giden yolunuzdur.</string>
+
+    <string name="session_focus_alpha_guidance">Bu oturum, sizi dikkatin dağınık enerjisinden Alfa-durumu odağının sakin, lazer benzeri hassasiyetine geçirmek için nöral gürültüyü manuel olarak susturur. Sonsuz dikkat dağıtıcı unsurların olduğu bir çağda, derin odaklanma bir süper güce dönüştü. Muhtemelen telefonunuzu kontrol etmek için \'zihinsel bir kaşıntı\', zihninizde bir düzine açık sekmenin sisi ve sürekli kısmi dikkatin bitkinliğini hissediyorsunuz. Bu parçalanmış durum, üst düzey yaratımın mümkün olduğu tek durum olan \'Akış\'a (Flow) girmenizi engeller. Başlamak için fiziksel alanınızdaki dağınıklığı temizleyin. Rahatça oturun ve üç yavaş, bilinçli nefes alın. Gözlerinizi kapatın. Beyin dalgalarınızı yüksek-beta yarışından zahmetsiz akışa geçiriyoruz. Dikkatinizi iyileştirmek, hayatınızın işini geri almanın ilk adımıdır. Frekanslar stabilize oldukça, zihninizin en derin düşüncelerinizin nihayet yüzeye çıkabileceği net, durgun bir göle dönüştüğünü hissedin. Sessizce tekrarlayın: \'Buradayım. Odaklanmış durumdayım. Akıştayım.\' En değerli kaynağınızı geri alıyorsunuz: varlığınızı.</string>
+
+    <string name="session_imposter_dissolver_guidance">Bu oturum, içsel benlik imajınızı dışsal başarılarınızla hizalamak için tasarlanmış, sahtekarlık sendromunun (imposter syndrome) yanlış anlatısının klinik bir sökümüdür. Kafanızdaki o sessiz, ısrarcı sesin bir sahtekar olduğunuzu, o odaya ait olmadığınızı veya başarınızın sadece bir dizi şanslı kaza olduğunu fısıldaması, yanlış gitmiş eski bir savunma mekanizmasıdır. Bu aşırı uyanıklık, otoritenizi tam olarak benimsemenizi ve dünyaya gerçek katkınızı yapmanızı engeller. Başlamak için dik oturun ve başınızın tepesini gökyüzüne doğru çeken altın bir ip hayal edin. Ellerinizi kucağınızda açık tutun, bu kendi gücünüzü almaya hazır olduğunuzun bir jestidir. Gözlerinizi kapatın. Buraya tesadüfen gelmediğinizi anlayın; buraya benzersiz özünüz ve tutarlı çabanızla geldiniz. Sahtekarlık sendromunu iyileştirmek, varlığınız için özür dilemeyi bırakma eylemidir. Şimdi kendinizi uzun bir masanın başında, sarsılmaz ve otantik bir şekilde dururken hayal edin. Her nefes alışta başarılarınızın gerçekliğinin kemiklerinize sabitlendiğini hissedin. Her nefes verişte kendinizi kimseye kanıtlama ihtiyacını bırakın. Sessizce tekrarlayın: \'Girdiğim her odaya aitim. Başarım benimdir. Otoritemi sahipleniyorum.\' Siz bir sahtekar değilsiniz; siz bir orijinalsiniz. Bu sizin sarsılmaz güvene giden yolunuzdur.</string>
+
+    <string name="session_creative_block_guidance">Bu oturum, analitik, mükemmeliyetçi zihninizi atlamak ve sizi yaratıcı akış durumuna geri döndürmek için tasarlanmış bir nöral kapıdır. Yaratıcı bir tıkanıklık fikir eksikliği değildir; içsel yargı fazlalığıdır. İşi daha doğmadan mükemmelleştirmeye çalıştığınız için sıkıştınız, vücudunuzda fiziksel bir gerginlik ve düşüncelerinizde hayal gücünüzü felç eden bir statik yarattınız. Bu bloğu iyileştirmek, başarısızlığın artık bir tehdit olmadığı bir oyun durumuna dönüşü gerektirir. Başlamak için elinize bir kalem, bir fırça alın veya sadece elleriniz açık ve alıcı bir şekilde oturun. Gözlerinizi kapatın. Bilinçaltınızla doğrudan konuşmak, bunun yeterince iyi olmadığını söyleyen eleştirmeni susturmak için belirli frekanslar kullanıyoruz. Bugün bir şaheser yaratmaya çalışmıyoruz; sadece nehrin tekrar akması için kapıyı açıyoruz. Şimdi, omurganızın tabanından alnınıza doğru akan sıvı bir ışık akışı hayal edin. Her nefes alışta bu akış daha canlı ve akışkan hale geliyor. Her nefes verişte, \'doğru\' olma baskısını bırakın. Sessizce tekrarlayın: \'Akışa izin veriyorum. Yaratım için bir kanalım. Sürece güveniyorum.\' Sonuçlar, serbest bırakmayı takip edecektir.</string>
+
+    <string name="session_forgiveness_guidance">Bu oturum, başka biri için değil, kendiniz için bağışlayıcılığı geliştirmeye yönelik rehberli bir yolculuktur. Kalbinizi kıran veya sizi derin bir hayal kırıklığına uğratan bir durumdan kaynaklanan bir acı veya ağır bir ihanet duygusuyla mücadele ediyor olabilirsiniz. Başlamak için sessiz bir yerde rahat bir oturma pozisyonuna geçin. Gözlerinizi kapatın ve farkındalığınızı nefesinize getirin. Bağışlamak, kendinizi kırgınlığın ağırlığından kurtarma eylemidir. İlişkili duyguların bir an için yüzeye çıkmasına izin verin. Eylemi onaylamanıza gerek yok, sadece acıyı kabul edin. Şimdi, göğsünüzün merkezinde altın bir ışık hayal edin. Her nefes alışta bu ışık daha da parlaklaşıyor. Her nefes verişte, bu ışığın bir kısmını anıya gönderin. Bu kelimeleri sessizce tekrarlayın: \'Seni affediyorum, bunu hak ettiğin için değil, ben huzuru hak ettiğim için.\' Kırgınlık zincirlerinin gevşediğini hissedin. Bu görselleştirmeye devam edin, altın ışığın incinmenin bıraktığı boşluğu doldurmasına izin verin. Bu sizin özgürlüğe giden yolunuzdur.</string>
+
+    <string name="session_abundance_mindset_guidance">Bu oturum, bilincinizi algılanan bir kıtlık durumundan sonsuz olasılığın geniş frekansına taşımak için tasarlanmış bir nöral kaydırma egzersizidir. Zaman, para, destek veya fırsat olsun, \'yeterince sahip olmama\' yönündeki kalıcı, ağır bir korkuyla mücadele ediyor olabilirsiniz. Bu eksiklik hissi, beyninizi hayatta kalma modunda tutan kısıtlayıcı bir biyolojik enerjidir ve tam önünüzde duran fırsatları görmenizi imkansız hale getirir. Başlamak için rahat bir oturma pozisyonu bulun ve ellerinizi bir alıcılık jesti olarak avuç içleriniz yukarı bakacak şekilde kucağınıza koyun. Gözlerinizi kapatın. Bolluğun edindiğiniz bir şey olmadığını anlayın; biyolojik durumunuzu savunmacı kasılmadan açık genişlemeye kaydırarak uyumlandığınız bir frekans olduğunu anlayın. Şimdi sonsuz, parıldayan altın ışık tarlasını hayal edin. Her nefes alışta bu ışığın potansiyelini içinize çektiğinizi hissedin. Her nefes verişte, göğsünüzdeki \'yetersiz\' fiziksel gerginliğini bırakın. Sessizce tekrarlayın: \'Akışa açığım. Değerim eksiklikle tanımlanmaz. Fırsatlar için bir mıknatısım.\' 852Hz frekansı içsel gücünüzü uyandırırken, zihninizdeki kısıtlamaların çözüldüğünü hissedin. Hayatın doğal bolluğuyla uyumlanıyorsunuz.</string>
+
+    <string name="session_courage_guidance">Bu oturum, bilinmeyenin korkusunu yenmenize ve büyük hayat değişiklikleri yapmak için gereken cesareti bulmanıza yardımcı olmak için tasarlanmış, içsel gücünüzün nöral bir çapalanmasıdır. Çok mutsuz olsanız bile, belirsizliğin felç edici ağırlığını ve küçük ve güvende kalma yönündeki acil biyolojik dürtüyü hissederek bir yol ayrımında duruyor olabilirsiniz. Bu geçiş kaygısı, tanıdık olanın kaybına verilen doğal bir tepkidir, ancak durağan bir durumda kalmak ruhunuzun yavaş yavaş aşınmasıdır. Bu korkuyu iyileştirmek, geleceğinizi talep etme eylemidir. Başlamak için dik durabileceğiniz veya vakur bir şekilde oturabileceğiniz bir yer bulun. Gözlerinizi kapatın. Ayaklarınızı yere sağlam basın, dünyanın desteğini hissedin. Cesaretin korkunun yokluğu olmadığını, başka bir şeyin daha önemli olduğuna karar vermek olduğunu anlayın. Şimdi omurganızın tabanında parlak, mor bir ışık kıvılcımı hayal edin. Her nefes alışta bu kıvılcım sabit bir aleve dönüşüyor, merkezinizden yükseliyor ve sizi bir \'rahat uyanıklık\' duygusuyla dolduruyor. Her nefes verişte, ilk adımı atmadan önce tüm haritayı bilme ihtiyacını bırakın. Sessizce tekrarlayın: \'Korkumdan daha güçlüyüm. Uyum sağlama yeteneğime güveniyorum. Berraklıkla ileri adım atıyorum.\' Gamma-nabızları nöral dayanıklılığınızı uyarırken, kendinizi sarsılmaz bir hale geldiğinizi hissedin. Sırada ne varsa hazırsınız.</string>
+
+    <string name="session_insomnia_relief_guidance">Bu oturum, beyninizi sistemik biyolojik onarımın gerçekleştiği Delta uykusunun en derin aşamalarına manuel olarak çekmek için tasarlanmış uzun süreli bir nöral sürüklemedir. Kronik uykusuzluğun bitkinliğiyle mücadele ediyor olabilirsiniz; saatlerce uyanık yatmak, geçen saatin kaygısını hissetmek ve yarın nasıl işlev göreceğinizden korkmak. Bu yüksek alarm durumu, vücudunuzun restoratif N3 uyku aşamasına girmesini engeller. Başlamak için tercih ettiğiniz uyku pozisyonunda yatın ve ortamınızın tamamen karanlık ve sessiz olduğundan emin olun. Gözlerinizi kapatın. Uyumaya \'çalışmanıza\' gerek olmadığını anlayın; uyku bir görev değil, biyolojik bir teslimiyettir. Şimdi zihninizin tepesinden omurganızın tabanına kadar yavaşça inen ağır, kadife bir perde hayal edin. Her nefes verişte vücudunuzun yatağın bir parçası oluyormuşsunuz gibi şiltenin derinliklerine battığını hissedin. Sessizce tekrarlayın: \'Günü serbest bırakıyorum. Vücudumun dinlenmesine güveniyorum. Huzura batıyorum.\' 1.5Hz Delta dalgaları stabilize oldukça, sesin tek gerçekliğiniz olmasına izin verin. Kendinizi bırakmak için güvendesiniz.</string>
+
+    <string name="session_post_nightmare_guidance">Bu oturum, bir kabusun dehşetini anında yatıştırmak ve sinir sisteminizi güvenli bir duruma döndürmek için tasarlanmış bir acil nöral topraklamadır. Az önce hızla çarpan bir kalple, belki terleyerek veya titreyerek, zihninize hala yapışmış olan üzücü bir rüyanın canlı kalıntısıyla uyandınız. Beyniniz tehdit gerçekmiş gibi tepki veriyor, sizi yüksek-beta alarm durumunda tutuyor. Başlamak için yatakta dik oturun ve mümkünse küçük, yumuşak bir ışık açın. Ellerinizi uyluklarınıza düz bir şekilde koyun ve giysilerinizin veya çarşaflarınızın dokusunu hissedin. Gözlerinizi kapatın ve akciğerlerinize güvenlik sinyali vermek için yavaş, sığ nefesler alın. Rüyanın bir yansıma olduğunu ve şu anda güvenli bir odada olduğunuzu anlayın. Şimdi yatağınızın etrafında yerde koruyucu bir altın daire hayal edin. Her nefes alışta bu dairenin sıcaklığının sizi fiziksel dünyada toprakladığını hissedin. Her nefes verişte kabus görüntülerinin güneşteki sis gibi dağılmasını izleyin. Sessizce tekrarlayın: \'Uyanığım. Güvendeyim. Kontrol bende.\' 174Hz frekansı bir güvenlik ve emniyet temeli sağlarken, kalp atış hızınızın normale döndüğünü hissedin. Evinizdesiniz.</string>
+
+    <!-- UI Dizeleri -->
+    <string name="therapeutic_quick_reset">AKUT 2 DAKİKALIK MÜDAHALE</string>
+    <string name="player_clinical_rationale">TERAPÖTİK GEREKÇE</string>
+    <string name="player_guided_guidance">REHBERLİ YOLCULUK METNİ</string>
+    <string name="player_biological_impact">BİYOLOJİK REZONANS</string>
+    <string name="player_emotional_guidance">UZMAN REHBERLİĞİ VE HAZIRLIK</string>
+
+    <string name="duration_2min">2 dk</string>
+    <string name="duration_5min">5 dk</string>
+    <string name="duration_10min">10 dk</string>
+    <string name="duration_12min">12 dk</string>
+    <string name="duration_15min">15 dk</string>
+    <string name="duration_20min">20 dk</string>
+    <string name="duration_infinite">Sürekli</string>
+
+    <!-- BAŞLIKLAR, AÇIKLAMALAR VE GEREKÇELER -->
+    <string name="session_stress_reset_title">432Hz Anksiyete Eritici</string>
+    <string name="session_stress_reset_desc">Vücudunuzun gevşeme tepkisini anında tetiklemek ve yarışan bir zihni susturmak için nazik bir akustik kucaklama.</string>
+    <string name="session_stress_reset_rationale">432Hz matematiksel olarak evrenle uyumludur. Kalp atış hızını ve kan basıncını 440Hz\'den daha etkili bir şekilde düşürür.</string>
+    <string name="session_panic_brake_title">Panik Atak İmdat Freni</string>
+    <string name="session_panic_brake_desc">Yüksek kaygı veya ezici panik anları için akut düzenleme.</string>
+    <string name="session_panic_brake_rationale">Hızla çarpan bir kalple \'el sıkışmak\' ve sürükleme yoluyla onu kademeli olarak dinlenme durumuna çekmek için hızlı frekans inişi kullanır.</string>
+
+    <string name="session_social_buffer_title">Sosyal Anksiyete Kalkanı</string>
+    <string name="session_social_buffer_desc">Kalabalık veya yüksek baskılı sosyal ortamlara girmeden önce \'savaş ya da kaç\' tepkisini sakinleştirin.</string>
+    <string name="session_social_buffer_rationale">Sosyal tehdit algısını azaltmak ve güvenlik duygularını artırmak için 174Hz ile amigdalayı hedefler.</string>
+    <string name="session_burnout_shield_title">İş-Özel Hayat Tükenmişlik İyileşmesi</string>
+    <string name="session_burnout_shield_desc">Mesleki stresin zihinsel kalıntılarını eritin ve kişisel alanınızı geri kazanın.</string>
+    <string name="session_burnout_shield_rationale">Alfa dalgası uyarımı, beynin işteki \'yapma\' modundan ev hayatındaki \'olma\' moduna geçmesine yardımcı olur.</string>
+    <string name="session_forgiveness_title">Kırgınlık İyileştirme Yolculuğu</string>
+    <string name="session_forgiveness_desc">Öz-bağışlamayı geliştirmek ve eski incinmelerin ağırlığını bırakmak için 12 dakikalık derin bir meditasyon.</string>
+
+    <string name="session_forgiveness_rationale">Kırgınlık limbik sistemde tekrarlayan döngüler yaratır. Bu oturum bu döngüleri kırmak ve duygusal özgürlüğü teşvik etmek için 396Hz kullanır.</string>
+    <string name="session_betrayal_healing_title">İhanetten İyileşme</string>
+    <string name="session_betrayal_healing_desc">Kırılan güvenin keskin acısını işlemek ve iç güvenliği geri yüklemek için özel olarak tasarlanmıştır.</string>
+    <string name="session_betrayal_healing_rationale">Travmatik olayların enerjisini temizlemek ve duygusal dengeye dönüşü kolaylaştırmak için 417Hz\'i entegre eder.</string>
+    <string name="session_self_judgment_title">Öz-Yargıyı Eritmek</string>
+    <string name="session_self_judgment_desc">İç eleştirmeni susturun ve radikal bir öz-şefkat durumunu kucaklayın.</string>
+    <string name="session_self_judgment_rationale">Kalp merkeziyle rezonansa girmek ve öz-eleştiri sinir yollarını eritmek için 528Hz \'Sevgi Frekansına\' odaklanır.</string>
+
+    <string name="session_regret_release_title">Pişmanlığın Ağırlığı</string>
+    <string name="session_regret_release_desc">Şimdiki anın gücünde tamamen yaşamak için \'neler olabilirdi\'yi serbest bırakmak.</string>
+    <string name="session_regret_release_rationale">396Hz Solfeggio frekansı, kronik pişmanlığın iki ana bileşeni olan suçluluk ve korkuyu özellikle hedefler.</string>
+    <string name="session_manifest_intent_title">Gelecek Yönü Hizalaması</string>
+    <string name="session_manifest_intent_desc">Hedefli nöral niyet sabitleme yoluyla mevcut durumunuzu gelecek vizyonunuzla senkronize edin.</string>
+    <string name="session_manifest_intent_rationale">Yüksek-alfa dalgaları (10-12Hz) bilinçli ve bilinçaltı zihin arasındaki köprüyü kolaylaştırarak niyetin daha \'yapışkan\' olmasını sağlar.</string>
+    <string name="session_abundance_mindset_title">Yokluk ve Kıtlıktan Kaçış</string>
+    <string name="session_abundance_mindset_desc">Eksiklik frekansından sonsuz olasılık ve bolluk akışı frekansına geçiş yapın.</string>
+    <string name="session_abundance_mindset_rationale">İçsel gücü ve öz-gerçekleşmeyi uyandırmak için 852Hz kullanarak zihni daha yüksek öngörülere açar.</string>
+    <string name="session_courage_title">Yolu Değiştirme Cesareti</string>
+    <string name="session_courage_desc">Bilinmeyenin korkusunu yenin ve büyük değişiklikler yapmak için kendinizi içsel gücünüze sabitleyin.</string>
+    <string name="session_courage_rationale">Düşük teta darbeleriyle eşleştirilen gama patlamaları, geçiş kaygısını yenmek için ideal olan bir \'rahat uyanıklık\' durumu yaratır.</string>
+    <string name="session_imposter_dissolver_title">Sahtekarlık Sendromunu Eritmek</string>
+    <string name="session_imposter_dissolver_desc">Yetersizlik duygularını susturarak otoritenizi geri kazanın ve gerçek değerinizi tanıyın.</string>
+    <string name="session_imposter_dissolver_rationale">741Hz sorunları çözmeye ve fikirleri ifade etmeye yardımcı olur, özellikle boğaz çakrasını temizler ve güveni artırır.</string>
+    <string name="session_overthinker_off_title">Aşırı Düşünenin Kapatma Düğmesi</string>
+    <string name="session_overthinker_off_desc">Zihnin durmadığı o geceler için. Nazikçe bir nöral kapatmaya zorlayın.</string>
+    <string name="session_overthinker_off_rationale">20 dakika içinde 12Hz\'den (Beta) 0.5Hz\'e (Derin Delta) düşen spesifik bir binaural vuruş kullanır.</string>
+
+    <string name="session_insomnia_relief_title">Uykusuzluk Nöral Restorasyonu</string>
+    <string name="session_insomnia_relief_desc">Beyni derin, kesintisiz uyku döngüleri için sürüklemeye yönelik uzun süreli bir oturum.</string>
+    <string name="session_insomnia_relief_rationale">En fazla fiziksel iyileşmenin gerçekleştiği derin N3 uyku aşamalarını sürdürmek için stabil 1.5Hz Delta dalgalarına odaklanır.</string>
+    <string name="session_post_nightmare_title">Kabus Sonrası Topraklama</string>
+    <string name="session_post_nightmare_desc">Üzücü bir rüya veya gece teröründen sonra hızla güvenlik ve sakinlik durumuna dönün.</string>
+    <string name="session_post_nightmare_rationale">Güvenlik ve emniyet temeli sağlamak için 174Hz kullanarak anlık korku tepkisini azaltır.</string>
+    <string name="session_grief_integration_title">Keder ve Kayıp İşleme</string>
+    <string name="session_grief_integration_desc">Kaybı işlemek ve kalıcı barışın frekansını bulmak için nazik bir alan.</string>
+    <string name="session_grief_integration_rationale">Travmatik deneyimleri temizlemesi ve duygusal bedende değişimi kolaylaştırmasıyla bilinen 417Hz frekansını kullanır.</string>
+
+    <string name="session_body_acceptance_title">Vücut Reddini İyileştirme</string>
+    <string name="session_body_acceptance_desc">Fiziksel formunuzla olan ilişkinizi iyileştirin ve vücut dismorfisinin acısını eritin.</string>
+    <string name="session_body_acceptance_rationale">Hücresel uyumu ve derin, koşulsuz bir öz-sevgi duygusunu teşvik etmek için 528Hz\'de yankılanır.</string>
+    <string name="session_chronic_pain_title">Akustik Ağrı Giderme</string>
+    <string name="session_chronic_pain_desc">Frekans etkileşimi yoluyla fiziksel rahatsızlığı yönetmek için non-invaziv bir yaklaşım.</string>
+    <string name="session_chronic_pain_rationale">Fiziksel ağrı sinyallerini azaltan doğal bir anestezik olarak kabul edilen 174Hz\'i kullanır.</string>
+    <string name="session_focus_alpha_title">Odak Akışı Başlatma</string>
+    <string name="session_focus_alpha_desc">Gevşeme ve yüksek performanslı odaklanma arasındaki boşluğu doldurmak için nazik Alfa dalgaları.</string>
+    <string name="session_focus_alpha_rationale">Alfa dalgaları (8-12Hz) beynin \'boşta\' olma durumunu temsil eder, zahmetsiz akış durumuna girmek için mükemmeldir.</string>
+    <string name="session_creative_block_title">Yaratıcı Engel Kırıcı</string>
+    <string name="session_creative_block_desc">Durağan zihinsel enerjiyi serbest bırakın ve yeni fikirlerin ortaya çıkması için yolları açın.</string>
+    <string name="session_creative_block_rationale">Bilişsel entegrasyonu korurken bilinçaltını uyarmak için Teta (4Hz) ve Gama (40Hz) darbelerini birleştirir.</string>
+    <string name="session_delay_marriage_title">Bekleyişteki Huzur (Evlilik)</string>
+    <string name="session_delay_marriage_desc">Toplumun zaman çizelgesi baskısını serbest bırakmak ve kendi yolunuzda bütünselliği bulmak.</string>
+    <string name="session_delay_marriage_rationale">\'Yeterli olmama\' kaygısını azaltmak için 432Hz\'e ve öz-sevgiyi geri kazandırmak için 528Hz\'e odaklanır.</string>
+
+    <string name="session_delay_career_title">Kariyer Duraklaması İyileştirme</string>
+    <string name="session_delay_career_desc">Mesleki hayatınızda ve dönüm noktalarınızda sıkışmış veya geride kalmış hissetmenin üstesinden gelmek.</string>
+    <string name="session_delay_career_rationale">Kariyer karşılaştırması sisini dağıtmak için Alfa dalgalarını ve yeni bakış açısını tetiklemek için Gama patlamalarını kullanır.</string>
+    <string name="session_delay_parenthood_title">Ebeveynlik Bekleyişini İyileştirme</string>
+    <string name="session_delay_parenthood_desc">Ebeveynlik bekleyişi sırasında huzur bulmak ve doğurganlık gecikmesinin acısını iyileştirmek.</string>
+    <string name="session_delay_parenthood_rationale">Gecikmenin travmatik hissini işlemek için 417Hz ve sistemik biyolojik sakinliği desteklemek için 528Hz\'i birleştirir.</string>
+    <string name="session_comparison_trap_title">Karşılaştırma Tuzağından Kaçış</string>
+    <string name="session_comparison_trap_desc">İçsel hayatınızı diğer insanların dışsal anlarıyla ölçmeyi bırakın.</string>
+    <string name="session_comparison_trap_rationale">Karşılaştırmanın suçluluk duygusunu eritmek için 396Hz ve içsel, otantik gücünüze dönmek için 852Hz kullanır.</string>
+
+    <!-- Alanlar (Domains) -->
+    <string name="domain_home">Ana Sayfa</string>
+    <string name="domain_heart">Kalp</string>
+    <string name="domain_mind">Zihin</string>
+    <string name="domain_body">Vücut</string>
+
+    <!-- Teknik Hedefler -->
+    <string name="target_amygdala">Amigdala</string>
+    <string name="target_vagal_tone">Vagal Ton</string>
+    <string name="target_sleep_architecture">Uyku Mimarisi</string>
+    <string name="target_emotional_resilience">Duygusal Dayanıklılık</string>
+    <string name="target_dopamine_stability">Dopamin Stabilitesi</string>
+    <string name="target_systemic_reset">Sistemik Sıfırlama</string>
+    <string name="target_acute">Akut Müdahale</string>
+    <string name="target_systemic">Sistemik</string>
+
+    <!-- Frekanslar -->
+    <string name="freq_432hz">432Hz</string>
+    <string name="freq_528hz">528Hz</string>
+    <string name="freq_174hz">174Hz</string>
+    <string name="freq_delta">Delta</string>
+    <string name="freq_396hz">396Hz</string>
+    <string name="freq_alpha">Alfa</string>
+    <string name="freq_741hz">741Hz</string>
+
+    <!-- UI Başlıkları ve Etiketleri -->
+    <string name="therapeutic_header">SIĞINAK</string>
+    <string name="therapeutic_sub_header">NÖRO-AKUSTİK MERKEZ</string>
+    <string name="recommended_for">ŞUNUN İÇİN ÖNERİLEN: %1$s</string>
+    <string name="active_protocols">AKTİF PROTOKOLLER</string>
+    <string name="clinical_prep_library">KLİNİK HAZIRLIK KÜTÜPHANESİ</string>
+    <string name="clinical_insight">KLİNİK GÖRÜŞ</string>
+    <string name="begin_sync">NÖRO-AKUSTİK SENKRONİZASYONU BAŞLAT</string>
+    <string name="prep_steps_title">HAZIRLIK ADIMLARI:</string>
+    <string name="prep_step_1">1. Sessiz, loş bir alan bulun.</string>
+    <string name="prep_step_2">2. Sıfır dijital kesinti olduğundan emin olun.</string>
+    <string name="prep_step_3">3. Tarif edilen duruşu alın.</string>
+    <string name="prep_step_4">4. Gözlerinizi kapatın ve frekansla eşleşin.</string>
+    <string name="current_bio_state">MEVCUT BİYOLOJİK DURUM</string>
+    <string name="acute_neural_brakes">AKUT NÖRAL FRENLER</string>
+    <string name="live_intervention">CANLI MÜDAHALE</string>
+    <string name="global_syncing">%1$d KÜRESEL SENKRONİZASYON</string>
+    <string name="live_clinical_guidance">CANLI KLİNİK REHBERLİK</string>
+    <string name="player_session_header">NÖRO-AKUSTİK OTURUM</string>
+
+    <!-- Duygular -->
+    <string name="emotion_overwhelmed">Bunalmış</string>
+    <string name="emotion_scattered">Dağınık</string>
+    <string name="emotion_heavy">Ağır</string>
+    <string name="emotion_burned_out">Tükenmiş</string>
+
+    <!-- Oynatıcı Kontrolleri ve Metrikler -->
+    <string name="label_exhale">NEFES VER</string>
+    <string name="label_inhale">NEFES AL</string>
+    <string name="label_frequency">FREKANS</string>
+    <string name="label_intensity">YOĞUNLUK</string>
+    <string name="label_sync">SENKRONİZASYON</string>
+    <string name="state_active">Aktif</string>
+    <string name="state_paused">Duraklatıldı</string>
+    <string name="label_live_sync">CANLI SENKRONİZASYON</string>
+
+    <!-- İstihbarat Sinyalleri -->
+    <string name="signal_sync_oscillations">Nöral salınımlar senkronize ediliyor...</string>
+    <string name="signal_target_nodes">%1$s frekans düğümleri hedefleniyor...</string>
+    <string name="signal_reduce_hyperarousal">Amigdala aşırı uyarılması azaltılıyor...</string>
+    <string name="signal_calibrate_vagal">Vagal sinir tepkisi kalibre ediliyor...</string>
+    <string name="signal_optimize_balance">Otonom denge optimize ediliyor...</string>
+
+    <!-- Frenler -->
+    <string name="brake_panic">Panik Freni</string>
+    <string name="brake_anger">Öfke Sıfırlama</string>
+    <string name="brake_rest">Derin Dinlenme</string>
+</resources>

@@ -1,0 +1,944 @@
+<resources>
+    <string name="app_name">Recovery Intelligence</string>
+
+    <!-- Navigasi -->
+    <string name="nav_home">Beranda</string>
+    <string name="nav_recovery">Pemulihan</string>
+    <string name="nav_insights">Wawasan</string>
+    <string name="nav_coach">Pelatih</string>
+    <string name="nav_community">Komunitas</string>
+
+    <!-- Layar Login -->
+    <string name="login_welcome_back">Selamat Datang Kembali</string>
+    <string name="login_create_account">Buat Akun</string>
+    <string name="login_sign_in">Masuk</string>
+    <string name="login_continue_google">Lanjutkan dengan Google</string>
+    <string name="login_email_label">Alamat Email</string>
+    <string name="login_password_label">Kata Sandi</string>
+    <string name="login_sign_up_prompt">Bergabunglah dengan komunitas pemulihan</string>
+    <string name="login_sign_in_prompt">Masuk ke dasbor pemulihan Anda</string>
+    <string name="login_already_have_account">Sudah punya akun? Masuk</string>
+    <string name="login_dont_have_account">Belum punya akun? Buat baru</string>
+
+    <!-- Pengaturan -->
+    <string name="settings_language">Bahasa</string>
+    <string name="settings_logout">Keluar</string>
+    <string name="settings_delete_account">Hapus Akun</string>
+    <string name="settings_select_language">Pilih Bahasa</string>
+    <string name="settings_account_mgmt">Manajemen Akun</string>
+    <string name="settings_security">Keamanan</string>
+    <string name="settings_close">Tutup</string>
+    <string name="settings_cancel">Batal</string>
+    <string name="settings_confirm_delete">Konfirmasi Hapus</string>
+    <string name="settings_apply">KONFIRMASI TRANSISI</string>
+    <string name="settings_delete_warning">Peringatan: Menghapus akun Anda akan menghapus secara permanen semua log kesehatan, data biologis, dan kontribusi komunitas Anda. Tindakan ini tidak dapat dibatalkan.</string>
+
+    <!-- Layar Profil -->
+    <string name="profile_title">Profil Saya</string>
+    <string name="profile_save">Simpan</string>
+    <string name="profile_edit">Edit Profil</string>
+    <string name="profile_full_name">Nama Lengkap</string>
+    <string name="profile_bio">Bio</string>
+    <string name="profile_location">Lokasi</string>
+    <string name="profile_gender">Jenis Kelamin</string>
+    <string name="profile_age">Usia</string>
+    <string name="profile_security_privacy">Keamanan &amp; Privasi</string>
+    <string name="profile_pin_protection">Perlindungan PIN</string>
+    <string name="profile_biometric_login">Login Biometrik</string>
+    <string name="profile_local_storage_warning">Penyimpanan lokal saja: Data Anda tetap ada di perangkat ini. Jika aplikasi dihapus, data tidak dapat dipulihkan.</string>
+    <string name="profile_set_pin_title">Atur Kunci PIN</string>
+    <string name="profile_set_pin_desc">Masukkan 4-6 digit PIN untuk melindungi data lokal Anda.</string>
+    <string name="profile_pin_label">PIN</string>
+    <string name="profile_set_pin_button">Atur PIN</string>
+    <string name="profile_not_set">Belum diatur</string>
+
+    <!-- Ekstra Layar Kunci -->
+    <string name="lock_wrong_pin">PIN salah. Silakan coba lagi.</string>
+    <string name="lock_forgot_pin">Lupa PIN?</string>
+    <string name="lock_reset_title">Reset Akses Aplikasi</string>
+    <string name="lock_reset_desc">Untuk mereset PIN Anda, kami harus menghapus semua data kesehatan yang tersimpan secara lokal demi keamanan. Tindakan ini tidak dapat dibatalkan. Apakah Anda ingin melanjutkan?</string>
+    <string name="lock_reset_confirm">Hapus Data &amp; Reset</string>
+
+    <!-- Layar Beranda -->
+    <string name="home_biological_command">KOMANDO BIOLOGIS</string>
+    <string name="home_hello">Halo, %1$s</string>
+    <string name="home_mandatory_triad">TRIAD HARIAN WAJIB</string>
+    <string name="home_triad_subtitle">Protokol yang dipimpin ahli untuk perbaikan fisiologis segera</string>
+    <string name="home_core_systems">Sistem Biologis Inti</string>
+    <string name="home_systems_subtitle">Status klinis berdasarkan data terbaru</string>
+    <string name="home_recovery_toolkit">Toolkit Pemulihan</string>
+    <string name="home_toolkit_subtitle">Tindakan cepat untuk meningkatkan metrik</string>
+    <string name="home_recovery_index">INDEKS PEMULIHAN</string>
+    <string name="home_recovery_desc">Kesiapan fisiologis keseluruhan untuk perbaikan seluler dan detoksifikasi.</string>
+    <string name="home_streak_title">UNTUN PEMULIHAN %1$d HARI</string>
+    <string name="home_streak_desc">Anda berada di posisi 5%% teratas pengguna untuk konsistensi biologis minggu ini. Pertahankan protokol saat ini untuk stabilisasi saraf.</string>
+    <string name="home_live_tag">LIVE</string>
+    <string name="home_category_sleep">Tidur</string>
+    <string name="home_category_metabolic">Metabolik</string>
+    <string name="home_category_vascular">Vaskular</string>
+
+    <!-- Metrik & Status -->
+    <string name="status_optimized">TEROPTIMALISASI</string>
+    <string name="status_stable">STABIL</string>
+    <string name="status_strained">TEGANG</string>
+    <string name="status_critical">KRITIS</string>
+    <string name="metric_hydration">TINGKAT HIDRASI</string>
+    <string name="metric_brain_recovery">PEMULIHAN OTAK</string>
+    <string name="metric_tag_cellular_fluid">CAIRAN SELULER</string>
+    <string name="metric_tag_neural_repair">PERBAIKAN SARAF</string>
+
+    <!-- Tindakan -->
+    <string name="action_hydrate">HIDRASI</string>
+    <string name="action_hydrate_sub">Tambah 250ml</string>
+    <string name="action_rest">ISTIRAHAT</string>
+    <string name="action_rest_sub">Tambah 1 jam</string>
+    <string name="action_full_protocol">PROTOCOLO COMPLETO</string>
+    <string name="action_review_interventions">Tinjau Semua Intervensi Tertarget</string>
+
+    <!-- Spanduk Intelijen -->
+    <string name="intel_equilibrium_title">KESEIMBANGAN TERCAPAI</string>
+    <string name="intel_equilibrium_desc">Sistem biologis berhasil memperbaiki jalur saraf dan membersihkan produk sampingan metabolik.</string>
+
+    <!-- Tugas Triad -->
+    <string name="task_breath_title">Pernapasan Pra-Tidur (4-7-8)</string>
+    <string name="task_breath_desc">Reset saraf dengan panduan langsung untuk memicu pemulihan parasimpatis.</string>
+    <string name="task_hydrate_title">Hidrasi + Elektrolit</string>
+    <string name="task_hydrate_desc">Kritis untuk pembersihan limbah saraf dan rehidrasi otak.</string>
+    <string name="task_aerobic_title">Aktivitas Aerobik Ringan</string>
+    <string name="task_aerobic_desc">Merangsang aliran darah untuk mempercepat filtrasi toksin.</string>
+
+    <!-- Layar Vitalis -->
+    <string name="vitalis_command_center">PUSAT KOMANDO</string>
+    <string name="vitalis_bio_intel">BIO-INTEL</string>
+    <string name="vitalis_protocols">PROTOKOL</string>
+    <string name="vitalis_evidence_base">BASIS BUKTI</string>
+    <string name="vitalis_domain_analysis">ANALISIS DOMAIN</string>
+    <string name="vitalis_engine_status">STATUS MESIN</string>
+    <string name="vitalis_live_directives">DIREKTIF SISTEM LANGSUNG</string>
+    <string name="vitalis_bio_modules">MODUL BIOLOGIS</string>
+    <string name="vitalis_pattern_analysis">ANALISIS POLA</string>
+    <string name="vitalis_health_trajectory">TRAJEKTORI KESEHATAN</string>
+    <string name="vitalis_help_centre">PUSAT BANTUAN BIOLOGIS</string>
+    <string name="vitalis_longevity_index">INDEKS UMUR PANJANG</string>
+    <string name="vitalis_system_state">STATUS SISTEM</string>
+    <string name="vitalis_syncing">Menyinkronkan</string>
+    <string name="vitalis_optimal">Optimal</string>
+    <string name="vitalis_verify_success">VERIFIKASI KEBERHASILAN</string>
+    <string name="vitalis_initiate_intervention">MEMULAI INTERVENSI</string>
+    <string name="vitalis_repeat_intervention">ULANGI INTERVENSI</string>
+    <string name="vitalis_manner_execution">CARA EKSEKUSI</string>
+    <string name="vitalis_research_insight">WAWASAN PENELITIAN</string>
+    <string name="vitalis_bio_advantage">KEUNTUNGAN BIOLOGIS</string>
+    <string name="vitalis_follow_sync">IKUTI SINKRONISASI TEMPORAL</string>
+    <string name="vitalis_pause_session">JEDA SESI</string>
+    <string name="vitalis_resume">LANJUTKAN</string>
+    <string name="vitalis_conclude_manual">AKHIRI SESI SECARA MANUAL</string>
+    <string name="vitalis_achievement_unlocked">PENCAPAIAN BIOLOGIS TERBUKA</string>
+    <string name="vitalis_celebration_desc">Mesin Vitalis mengonfirmasi perlambatan signifikan pada trajektori penuaan biologis Anda. Rentang hidup status sehat Anda telah diperpanjang secara efektif melalui intervensi ini.</string>
+    <string name="vitalis_continue_journey">LANJUTKAN PERJALANAN UMUR PANJANG</string>
+    <string name="vitalis_system_directive">DIREKTIF SISTEM</string>
+    <string name="vitalis_neural_coherence">SINKRONISASI KOHERENSI SARAF</string>
+    <string name="vitalis_box_breathing">PERNAPASAN KOTAK</string>
+    <string name="vitalis_biological_rationale">RASIONAL BIOLOGIS</string>
+    <string name="vitalis_physiological_outcome">HASIL FISIOLOGIS</string>
+    <string name="vitalis_expert_guidance">PANDUAN AHLI</string>
+    <string name="vitalis_active_protocols">PROTOKOL BIOLOGIS AKTIF</string>
+    <string name="vitalis_protocols_desc">Intervensi multi-langkah berdampak tinggi untuk optimasi sistemik.</string>
+    <string name="vitalis_no_protocols">Tidak ada protokol aktif yang terdeteksi. Sinkronisasi sedang berlangsung…</string>
+    <string name="vitalis_bio_signal_sync">SINKRONISASI SINYAL-BIO</string>
+    <string name="vitalis_bio_signal_desc">Mesin Vitalis saat ini sedang memproses sinyal dari 12 domain biologis. Presisi adalah 99,8%%.</string>
+    <string name="vitalis_projected_health_age">PROYEKSI USIA KESEHATAN</string>
+    <string name="vitalis_biological_momentum">MOMENTUM BIOLOGIS</string>
+    <string name="vitalis_expert">AHLI</string>
+    <string name="vitalis_project_vitalis">PROJECT VITALIS™</string>
+    <string name="vitalis_system">Sistem</string>
+    <string name="vitalis_intelligence">Kecerdasan</string>
+    <string name="vitalis_help">Bantuan</string>
+    <string name="vitalis_impact_analysis">ANALISIS DAMPAK</string>
+    <string name="vitalis_neural_recalibration">REKALIBRASI SARAF CEPAT</string>
+    <string name="vitalis_acute_neural_reset">RESET SARAF AKUT</string>
+    <string name="vitalis_research_context">KONTEKS PENELITIAN</string>
+    <string name="vitalis_specific_guidance">PANDUAN SPESIFIK</string>
+    <string name="vitalis_execute_directive">EKSEKUSI DIREKTIF</string>
+    <string name="vitalis_bio_intervention">INTERVENSI-BIO</string>
+    <string name="vitalis_live_protocol_session">SESI PROTOKOL LANGSUNG</string>
+    <string name="vitalis_anticipated_outcome">HASIL BIOLOGIS YANG DIHARAPKAN</string>
+    <string name="vitalis_verify_completion">VERIFIKASI PENYELESAIAN PROTOKOL</string>
+    <string name="vitalis_help_desc">Keahlian berbasis bukti tingkat lanjut untuk intervensi umur panjang.</string>
+    <string name="vitalis_streak_days">UNTUN %1$d HARI</string>
+    <string name="vitalis_functional_protocols">PROTOKOL INTERVENSI FUNGSIONAL</string>
+    <string name="vitalis_synchronization_progress">Sinkronisasi sedang berlangsung…</string>
+    <string name="vitalis_ready">SIAP</string>
+    <string name="vitalis_inhale">TARIK NAPAS</string>
+    <string name="vitalis_hold">TAHAN</string>
+    <string name="vitalis_exhale">BUANG NAPAS</string>
+    <string name="vitalis_vacuum">VAKUM</string>
+    <string name="vitalis_inhale_deep">TARIK NAPAS DALAM</string>
+    <string name="vitalis_top_off">PENUHKAN (TARIK NAPAS)</string>
+    <string name="vitalis_long_exhale">BUANG NAPAS PANJANG (MULUT)</string>
+    <string name="vitalis_session_complete">SESI SELESAI</string>
+    <string name="vitalis_rep_counter">REPETISI %1$d / %2$d</string>
+    <string name="vitalis_reset_in_progress">RESET SEDANG BERLANGSUNG…</string>
+    <string name="vitalis_begin_guided_reset">MULAI RESET TERPANDU</string>
+    <string name="vitalis_begin_neural_sync">MULAI SINKRONISASI SARAF</string>
+    <string name="vitalis_conclude_action_manual">AKHIRI TINDAKAN SECARA MANUAL</string>
+    <string name="vitalis_resilience_points_earned">+%1$d Poin Ketahanan Diperoleh</string>
+    <string name="vitalis_module_sleep">Ritme Sirkadian &amp; Arsitektur Tidur</string>
+    <string name="vitalis_module_cardio">Hemodinamik Kardiovaskular</string>
+    <string name="vitalis_module_metabolic">Efisiensi Metabolik &amp; Kontrol Glikemik</string>
+    <string name="vitalis_module_stress">Neuro-Endokrin &amp; Ketahanan Stres</string>
+    <string name="vitalis_module_physical">Integritas Muskuloskeletal &amp; Mobilitas</string>
+    <string name="vitalis_module_cognitive">Fungsi Kognitif &amp; Plastisitas Saraf</string>
+    <string name="vitalis_module_recovery">Kedokteran Regeneratif &amp; Pemulihan</string>
+    <string name="vitalis_neural_connectivity">KONEKTIVITAS SARAF</string>
+    <string name="vitalis_search_compounds">Cari senyawa…</string>
+    <string name="vitalis_clinically_indexed">TERINDEKS SECARA KLINIS</string>
+    <string name="vitalis_dictionary_desc">Kamus Vitalis berisi data tentang nutrisi, protokol, dan farmakologi modern. Ketik untuk memindai basis bukti.</string>
+    <string name="vitalis_clinical_rationale">RASIONAL KLINIS</string>
+    <string name="vitalis_command">KOMANDO</string>
+    <string name="vitalis_intel">INTEL</string>
+    <string name="vitalis_library">PERPUSTAKAAN</string>
+    <string name="vitalis_back">Kembali</string>
+    <string name="vitalis_notifications">Notifikasi</string>
+    <string name="vitalis_system_status_label">STATUS SISTEM</string>
+    <string name="vitalis_longevity_trajectory_label">TRAJEKTORI UMUR PANJANG</string>
+    <string name="vitalis_calculating">Menghitung...</string>
+    <string name="vitalis_directives_title">DIREKTIF VITALIS</string>
+    <string name="vitalis_biological_systems_title">SISTEM BIOLOGIS</string>
+    <string name="vitalis_active_analysis">ANALISIS AKTIF</string>
+    <string name="vitalis_view_analysis">LIHAT ANALISIS</string>
+    <string name="vitalis_longevity_protocol_label">PROTOKOL UMUR PANJANG</string>
+    <string name="vitalis_phase_active">Fase: Aktif</string>
+    <string name="vitalis_start_protocol">MULAI PROTOKOL</string>
+    <string name="vitalis_dictionary_title">KAMUS VITALIS</string>
+    <string name="vitalis_dictionary_subtitle">Basis data klinis dari 150+ senyawa biologis.</string>
+    <string name="vitalis_protocol_hierarchy">Hierarki Protokol</string>
+    <string name="vitalis_protocol_hierarchy_desc">Bagaimana kami memberi peringkat intervensi berdasarkan kekuatan uji klinis.</string>
+    <string name="vitalis_bio_markers">Memahami Bio-Marker</string>
+    <string name="vitalis_bio_markers_desc">Penjelasan mendalam tentang VO2 Max, ApoB, dan HRV.</string>
+    <string name="vitalis_philosophy">Filosofi Vitalis</string>
+    <string name="vitalis_philosophy_desc">Matematika pembalikan usia biologis.</string>
+    <string name="vitalis_targeted_interventions">INTERVENSI TERTARGET</string>
+    <string name="vitalis_vitalis_os">VITALIS OS</string>
+    <string name="vitalis_physiological_sigh">DESAHAN FISIOLOGIS</string>
+    <string name="vitalis_physiological_sigh_desc">Tarik napas dalam dua kali melalui hidung, buang napas panjang melalui mulut. Ini memicu dominasi parasimpatis segera.</string>
+    <string name="vitalis_abort_session">BATALKAN SESI</string>
+    <string name="vitalis_navy_seal_protocol">PROTOKOL NAVY SEAL</string>
+    <string name="vitalis_timed_intervention">INTERVENSI BERWAKTU</string>
+    <string name="vitalis_log_completion">CATAT PENYELESAIAN</string>
+    <string name="vitalis_complete">SELESAI</string>
+    <string name="vitalis_execution_steps">LANGKAH EKSEKUSI</string>
+    <string name="vitalis_log_protocol_completed">CATAT PROTOKOL SEBAGAI SELESAI</string>
+    <string name="vitalis_biological_optimization">OPTIMASI BIOLOGIS</string>
+    <string name="vitalis_intervention_logged">Intervensi berhasil dicatat. Marker seluler Anda telah diperbarui.</string>
+    <string name="vitalis_continue_scan">LANJUTKAN PEMINDAIAN</string>
+    <string name="vitalis_module_detail_domain">DOMAIN</string>
+
+    <!-- Lokalisasi Aktivitas (MESIN VITALIS) -->
+    <string name="phase_morning">Pagi</string>
+    <string name="phase_daytime">Siang</string>
+    <string name="phase_evening">Malam</string>
+    <string name="phase_execution">Eksekusi</string>
+
+    <!-- Aktivitas Tidur -->
+    <string name="act_sl1_title">Aktivasi Bangun Segera</string>
+    <string name="act_sl1_inst">Keluar dari tempat tidur dalam 120 detik setelah bangun.</string>
+    <string name="act_sl1_bio">Memberi sinyal pada otak untuk mengakhiri kondisi tidur dan memulai Cortisol Awakening Response (CAR).</string>
+    <string name="act_sl1_phys">Mencegah inersia tidur dan mengatur ulang jam metabolik untuk stabilitas energi harian.</string>
+    <string name="act_sl1_rsch">Eksekusi dengan meletakkan perangkat alarm Anda 3+ meter dari tempat tidur. Perpindahan fisik ini memaksa posisi vertikal dan mengaktifkan sistem proprioseptif-vestibular, memastikan transisi tajam dari dominasi parasimpatis ke simpatis.</string>
+
+    <string name="act_sl2_title">Fotobiomodulasi SCN</string>
+    <string name="act_sl2_inst">15 menit paparan cahaya alami yang terang.</string>
+    <string name="act_sl2_bio">Cahaya memicu Suprachiasmatic Nucleus (SCN) untuk menekan melatonin dan mengatur pengatur waktu 16 jam untuk pelepasan malam hari.</string>
+    <string name="act_sl2_phys">Penting untuk stabilitas sirkadian jangka panjang dan pencegahan gangguan afektif musiman.</string>
+    <string name="act_sl2_rsch">Prioritaskan paparan luar ruangan langsung tanpa jendela atau kacamata hitam. Jika mendung, perpanjang hingga 30 menit. Intensitas lux ini diperlukan untuk menjenuhkan sel ganglion retina yang mengandung melanopsin yang mengatur jam utama Anda.</string>
+
+    <string name="act_sl3_title">Perisai Melatonin: Puasa Cahaya Biru</string>
+    <string name="act_sl3_inst">Ubah semua layar ke warna merah atau gunakan pemblokir 120 menit sebelum tidur.</string>
+    <string name="act_sl3_bio">Melindungi sel ganglion yang mengandung melanopsin. Melatonin adalah antioksidan antikarsinogenik yang kuat.</string>
+    <string name="act_sl3_phys">Memaksimalkan mekanisme melawan kanker dan perbaikan seluler di malam hari.</string>
+    <string name="act_sl3_rsch">Terapkan perangkat lunak \'Night Shift\' dan lensa berwarna amber fisik. Bahkan cahaya biru intensitas rendah dapat menekan pelepasan melatonin hingga 90 menit. Pastikan semua LED perifer di kamar tidur tertutup atau dinonaktifkan.</string>
+
+    <string name="act_sl4_title">Pemicu Termal Glimfatik</string>
+    <string name="act_sl4_inst">Turunkan suhu kamar tidur menjadi 18°C (64°F).</string>
+    <string name="act_sl4_bio">Penurunan suhu tubuh inti adalah pemicu fisiologis utama untuk memasuki tidur dalam N3.</string>
+    <string name="act_sl4_phys">Mengaktifkan sistem glimfatik untuk \'membilas\' beta-amyloid, mengurangi risiko Alzheimer dan Demensia.</string>
+    <string name="act_sl4_rsch">Gabungkan dengan mandi air hangat 90 menit sebelum tidur. Vasodilatasi \'rebound\' di tangan dan kaki memfasilitasi penurunan suhu inti 1°C yang diperlukan untuk siklus pembersihan limbah saraf.</string>
+
+    <string name="act_sl5_title">Protokol Senja Digital</string>
+    <string name="act_sl5_inst">Hentikan semua masukan digital/dopamin tinggi 60 menit sebelum tidur.</string>
+    <string name="act_sl5_bio">Mengurangi gairah saraf sebelum tidur dan mencegah \'residu perhatian\' mengganggu arsitektur REM.</string>
+    <string name="act_sl5_phys">Memastikan tidur REM berkualitas tinggi untuk pemrosesan emosional dan umur panjang kognitif.</string>
+    <string name="act_sl5_rsch">Beralih ke aktivitas analog: membaca buku fisik, peregangan ringan, atau jurnaling non-judgmental. Hindari antarmuka \'scroll tak terbatas\' yang memicu sirkuit pencarian hal baru di otak.</string>
+
+    <string name="act_sl6_title">Jendela Sirkadian yang Konsisten</string>
+    <string name="act_sl6_inst">Pergi tidur dalam waktu +/- 30 menit dari waktu target Anda.</string>
+    <string name="act_sl6_bio">Keteraturan adalah faktor tunggal terpenting untuk menyelaraskan miliaran jam seluler perifer.</string>
+    <string name="act_sl6_phys">Mengurangi beban alostatik sistemik dan meningkatkan ketahanan kardiovaskular.</string>
+    <string name="act_sl6_rsch">Atur alarm \'Wind-Down\' 2 jam sebelum waktu tidur target. Ini menyediakan jangkar temporal yang diperlukan bagi sistem saraf otonom Anda untuk memulai transisi ke homeostasis kondisi tidur.</string>
+
+    <!-- Aktivitas Kardio -->
+    <string name="act_ca1_title">Priming Vaskular Ortostatik</string>
+    <string name="act_ca1_inst">Segera berdiri dan lakukan peregangan ringan selama 2 menit.</string>
+    <string name="act_ca1_bio">Memaksa sistem vaskular untuk beradaptasi dengan gravitasi, merangsang pelepasan nitrat oksida di endotelium.</string>
+    <string name="act_ca1_phys">Meningkatkan kepatuhan vaskular dan mengurangi risiko hipertensi ortostatik.</string>
+    <string name="act_ca1_rsch">Eksekusi gerakan lambat dan terkontrol ke arah langit-langit sambil menarik napas dalam. Peregangan mekanis pembuluh darah besar ini meningkatkan stres geser pada dinding pembuluh darah, memicu aktivitas eNOS.</string>
+
+    <string name="act_ca2_title">Nitrat Oksida eNOS Dump</string>
+    <string name="act_ca2_inst">60 detik squat cepat atau gerakan intensitas tinggi.</string>
+    <string name="act_ca2_bio">Merangsang enzim endotelial nitric oxide synthase (eNOS) secara masif untuk vasodilatasi sistemik segera.</string>
+    <string name="act_ca2_phys">Secara klinis mengurangi tekanan darah sistolik dan meningkatkan kesehatan arteri jangka panjang.</string>
+    <string name="act_ca2_rsch">Lakukan 40-50 air squat dengan kecepatan maksimal selama fase konsentris. \'Pemompaan\' cepat kelompok otot besar ini menciptakan lonjakan sistemik nitrat oksida yang bertahan selama 2-3 jam.</string>
+
+    <string name="act_ca3_title">Basis Aerobik Zona 2</string>
+    <string name="act_ca3_inst">45 menit gerakan pada 60-70%% detak jantung maksimal.</string>
+    <string name="act_ca3_bio">Memaksimalkan kepadatan mitokondria dalam miosit jantung dan meningkatkan efisiensi volume sekuncup.</string>
+    <string name="act_ca3_phys">Pertahanan utama terhadap gagal jantung dan penyakit arteri koroner.</string>
+    <string name="act_ca3_rsch">Pertahankan kecepatan di mana Anda dapat mengobrol dengan nyaman tetapi tidak dapat bernyanyi. Ambang metabolik spesifik ini (di bawah Lactate Threshold 1) mengoptimalkan biogenesis mitokondria dan oksidasi lemak.</string>
+
+    <string name="act_ca4_title">Koherensi Jantung RSA</string>
+    <string name="act_ca4_inst">5 menit pernapasan lambat dengan 6 napas per menit.</string>
+    <string name="act_ca4_bio">Menyinkronkan ritme pernapasan dan jantung (RSA) untuk memaksimalkan Vagal Tone.</string>
+    <string name="act_ca4_phys">Meningkatkan Variabilitas Detak Jantung (HRV), biomarker utama untuk ketahanan otonom dan mortalitas rendah.</string>
+    <string name="act_ca4_rsch">Tarik napas selama 5 detik, buang napas selama 5 detik. Fokus pada kesadaran yang berpusat pada jantung. Keseimbangan ritmis ini mengoptimalkan barorefleks, melatih jantung untuk merespons dengan presisi terhadap perubahan tekanan sistemik.</string>
+
+    <string name="act_ca5_title">Vascular Catecholamine Flush</string>
+    <string name="act_ca5_inst">30-60 detik paparan air dingin di akhir mandi.</string>
+    <string name="act_ca5_bio">Memicu vasokonstriksi perifer diikuti oleh vasodilatasi dalam (\'The Flush\').</string>
+    <string name="act_ca5_phys">Meningkatkan throughput sirkulasi dan mempercepat pembuangan produk sampingan metabolik.</string>
+    <string name="act_ca5_rsch">Pindahkan air ke pengaturan terdingin. Fokus pada menjaga napas tetap stabil. Kejutan dingin yang tiba-tiba memicu lonjakan simpatis besar diikuti oleh pantulan parasimpatis yang dalam dan regeneratif.</string>
+
+    <string name="act_ca6_title">Bantuan Aliran Balik Vena</string>
+    <string name="act_ca6_inst">Pose kaki ke atas dinding selama 10 menit.</string>
+    <string name="act_ca6_bio">Menggunakan gravitasi untuk membantu aliran balik vena ke jantung, mengurangi beban vaskular ekstremitas bawah.</string>
+    <string name="act_ca6_phys">Mengurangi edema perifer dan ketegangan kardiovaskular sebelum tidur.</string>
+    <string name="act_ca6_rsch">Berbaring telentang with pinggul sedekat mungkin ke dinding. Inversi pasif ini menurunkan tekanan vena sentral dan memfasilitasi drainase limfatik dari ekstremitas bawah.</string>
+
+    <!-- Aktivitas Metabolik -->
+    <string name="act_me1_title">Penyemaian Sensitivitas Insulin</string>
+    <string name="act_me1_inst">30g protein berkualitas tinggi dalam waktu 60 menit setelah bangun.</string>
+    <string name="act_me1_bio">Mencegah lonjakan ghrelin pagi hari dan menstabilkan glukosa darah untuk sisa hari itu.</string>
+    <string name="act_me1_phys">Mengurangi volatilitas energi tengah hari dan resistensi insulin jangka panjang.</string>
+    <string name="act_me1_rsch">Prioritaskan whey, telur, atau daging tanpa lemak. Asupan protein tinggi di pagi hari memicu \'Second Meal Effect,\' meningkatkan toleransi glukosa untuk makanan berikutnya yang dikonsumsi sepanjang hari.</string>
+
+    <string name="act_me2_title">Sinkronisasi Adenosin/Kortisol</string>
+    <string name="act_me2_inst">Tunda asupan kafein pertama selama 90-120 menit.</string>
+    <string name="act_me2_bio">Mencegah blokade reseptor adenosin saat kortisol secara alami tinggi, menghindari penurunan energi yang drastis.</string>
+    <string name="act_me2_phys">Melindungi fungsi adrenal dan menjaga keluaran energi metabolik yang stabil.</string>
+    <string name="act_me2_rsch">Hidrasi dengan 500ml air dan elektrolit terlebih dahulu. Menunggu puncak kortisol alami mereda sebelum memasukkan kafein memastikan bahwa reseptor adenosin Anda dibersihkan dengan benar, mencegah kemerosotan jam 2 siang.</string>
+
+    <string name="act_me3_title">GLUT4 Glucose Disposal Walk</string>
+    <string name="act_me3_inst">Jalan kaki 10 menit dalam 20 menit setelah asupan kalori.</string>
+    <string name="act_me3_bio">Mengaktifkan transporter GLUT4 di otot rangka untuk membersihkan glukosa tanpa memerlukan kadar insulin yang tinggi.</string>
+    <string name="act_me3_phys">Secara signifikan menumpulkan lonjakan glukosa post-prandial, melindungi arteri dari glikasi.</string>
+    <string name="act_me3_rsch">Berjalan dengan langkah cepat (sekitar 100 langkah/menit). Stimulus mekanis ini \'menarik\' gula dari darah ke otot, melindungi endotelium Anda dari kerusakan akibat lonjakan glukosa tinggi.</string>
+
+    <string name="act_me4_title">Protokol Sekuensing Glisemik</string>
+    <string name="act_me4_inst">Konsumsi serat/sayuran sebelum protein dan pati.</string>
+    <string name="act_me4_bio">Serat melapisi usus halus, memperlambat penyerapan glukosa ke dalam aliran darah.</string>
+    <string name="act_me4_phys">Menjaga kurva glisemik yang stabil dan mencegah peradangan sistemik (Inflammaging).</string>
+    <string name="act_me4_rsch">Makan salad hijau atau brokoli kukus sebagai \'hidangan pembuka\'. Penghalang kental serat yang dihasilkan di usus secara signifikan mengurangi laju pemecahan enzimatik karbohidrat kompleks yang dikonsumsi kemudian.</string>
+
+    <string name="act_me5_title">Jendela Induksi Otofagi</string>
+    <string name="act_me5_inst">Hentikan semua asupan kalori 3-4 jam sebelum tidur.</string>
+    <string name="act_me5_bio">Menandakan pergeseran biologis dari mTOR (pertumbuhan) ke AMPK/Otofagi (perbaikan/daur ulang seluler).</string>
+    <string name="act_me5_phys">Memungkinkan proses pembersihan seluler yang mengurangi risiko kanker dan penyakit salah lipat protein.</string>
+    <string name="act_me5_rsch">Ganti dengan teh herbal (tanpa pemanis) setelah makanan terakhir. Jendela puasa yang diperpanjang sebelum tidur ini memastikan insulin rendah selama puncak denyut hormon pertumbuhan, memaksimalkan perbaikan seluler.</string>
+
+    <string name="act_me6_title">Beban Mikronutrisi Mitokondria</string>
+    <string name="act_me6_inst">Pastikan asupan CoQ10, Magnesium, dan vitamin B.</string>
+    <string name="act_me6_bio">Kofaktor penting untuk Rantai Transpor Elektron di mitokondria.</string>
+    <string name="act_me6_phys">Mengoptimalkan efisiensi produksi ATP dan mengurangi stres oksidatif di tingkat sel.</string>
+    <string name="act_me6_rsch">Ambil ini dengan makanan terbesar Anda untuk memastikan penyerapan yang optimal. Magnesium secara spesifik bertindak sebagai kofaktor untuk lebih dari 300 reaksi enzimatik, termasuk yang bertanggung jawab untuk perbaikan DNA.</string>
+
+    <!-- Aktivitas Stres -->
+    <string name="act_st1_title">Reset Saraf Akut (Desahan)</string>
+    <string name="act_st1_inst">5 repetisi \'Physiological Sigh\' (tarik napas dua kali, buang napas panjang).</string>
+    <string name="act_st1_bio">Membuang CO2 dari darah dengan cepat, memicu sinyal vagal untuk memperlambat detak jantung.</string>
+    <string name="act_st1_phys">Down-regulasi segera sistem saraf simpatis (fight/flight).</string>
+    <string name="act_st1_rsch">Tarik napas melalui hidung hingga paru-paru terisi 90%%, lalu tarik napas tajam kedua untuk membuka alveoli. Buang napas melalui mulut selama dua kali durasi tarik napas. Ini adalah cara tercepat untuk menurunkan detak jantung Anda.</string>
+
+    <string name="act_st2_title">Kalibrasi Amigdala NSDR</string>
+    <string name="act_st2_inst">15 menit Non-Sleep Deep Rest (NSDR) atau Yoga Nidra.</string>
+    <string name="act_st2_bio">Mengatur ulang ambang aktivasi amigdala dan memulihkan kontrol prefrontal korteks.</string>
+    <string name="act_st2_phys">Memulihkan energi kognitif dan mencegah akumulasi beban alostatik kronis.</string>
+    <string name="act_st2_rsch">Cari tempat yang gelap dan tenang lalu berbaring rata. Fokus pada pemindaian tubuh yang dipandu. Kondisi \'keheningan aktif\' ini memungkinkan otak memasuki kondisi tidur semu, mengisi kembali kadar dopamin di basal ganglia.</string>
+
+    <string name="act_st3_title">Koherensi Pernapasan Kotak</string>
+    <string name="act_st3_inst">5 menit pernapasan 4 detik tarik, 4 detik tahan, 4 detik buang, 4 detik tahan.</string>
+    <string name="act_st3_bio">Menyeimbangkan kadar O2/CO2 darah dan menginduksi kondisi kewaspadaan yang tenang dan terfokus.</string>
+    <string name="act_st3_phys">Menstabilkan sistem saraf terhadap stresor hari itu.</string>
+    <string name="act_st3_rsch">Visualisasikan sebuah kotak: Naik untuk tarik napas, Mendatar untuk tahan, Turun untuk buang napas, Mendatar untuk kosong. Jangkar visual-spasial ini dikombinasikan dengan pernapasan ritmis memaksa otak keluar dari siklus perenungan.</string>
+
+    <string name="act_st4_title">Aktivasi Refleks Menyelam</string>
+    <string name="act_st4_inst">15 detik membasuh wajah dengan air dingin.</string>
+    <string name="act_st4_bio">Merangsang saraf trigeminal untuk memicu efek rebound parasimpatis yang masif.</string>
+    <string name="act_st4_phys">Pemutusan instan dalam loop kecemasan akut atau kondisi stres tinggi.</string>
+    <string name="act_st4_rsch">Percikkan air es ke mata dan tulang pipi. Refleks yang dilestarikan secara evolusioner ini segera memperlambat detak jantung dan mengalihkan aliran darah ke otak dan jantung.</string>
+
+    <string name="act_st5_title">Ritual Pelepasan Kognitif</string>
+    <string name="act_st5_inst">3 menit jurnaling \'Brain Dump\' untuk semua tugas yang tertunda.</string>
+    <string name="act_st5_bio">Mengurangi efek Zeigarnik (otak tetap aktif pada tugas yang belum selesai) sebelum tidur.</string>
+    <string name="act_st5_phys">Menurunkan beban kognitif nokturnal dan meningkatkan transisi tidur dalam.</string>
+    <string name="act_st5_rsch">Gunakan kertas dan pena. Daftar setiap tugas mikro, kekhawatiran, atau item yang dijadwalkan. Mengeksternalisasi pikiran-pikiran ini memberi sinyal ke otak bahwa \'pemrosesan\' telah selesai, memungkinkan siklus REM yang lebih dalam.</string>
+
+    <string name="act_st6_title">Proprioseptif Grounding</string>
+    <string name="act_st6_inst">Berjalan tanpa alas kaki atau fokus pada sensasi sentuhan kaki selama 3 menit.</string>
+    <string name="act_st6_bio">Mengalihkan fokus saraf dari Default Mode Network (perenungan) ke Somatosensory Cortex.</string>
+    <string name="act_st6_phys">Menginterupsi loop stres malam hari dan memfasilitasi relaksasi.</string>
+    <string name="act_st6_rsch">Fokus secara intens pada tekanan dan tekstur tanah di bawah kaki Anda. Masukan sensorik \'bottom-up\' ini menimpa sinyal kecemasan \'top-down\' yang berasal dari prefrontal korteks.</string>
+
+    <!-- Aktivitas Fisik -->
+    <string name="act_ph1_title">Articular Joint Priming (CARs)</string>
+    <string name="act_ph1_inst">3 repetisi per sendi untuk leher, bahu, dan pinggul.</string>
+    <string name="act_ph1_bio">Menjaga ruang kapsul dan memberi sinyal produksi cairan sinovial untuk umur panjang sendi.</string>
+    <string name="act_ph1_phys">Mencegah osteoarthritis dan menjaga rentang gerak fungsional penuh.</string>
+    <string name="act_ph1_rsch">Gerakkan setiap sendi melalui rentang sirkular maksimal yang tersedia tanpa menggerakkan seluruh tubuh. \'Joint flossing\' ini menghidrasi tulang rawan dan mencegah perkembangan adhesi.</string>
+
+    <string name="act_ph2_title">LPL Activity Interruption</string>
+    <string name="act_ph2_inst">Berdiri dan bergerak selama 2 menit setiap 45-60 menit.</string>
+    <string name="act_ph2_bio">Duduk yang lama menekan Lipoprotein Lipase (LPL), enzim yang membersihkan lemak dari darah.</string>
+    <string name="act_ph2_phys">Mengurangi risiko sindrom metabolik dan mendukung kesehatan kardiovaskular yang berkelanjutan.</string>
+    <string name="act_ph2_rsch">Berdiri saja tidak cukup; lakukan jinjit (calf raises) atau jalan kaki singkat. Kontraksi otot ini \'memulai ulang\' aktivitas enzimatik LPL, mencegah akumulasi trigliserida yang bersirkulasi.</string>
+
+    <string name="act_ph3_title">Pemuatan Jaringan Isometrik</string>
+    <string name="act_ph3_inst">60 detik Wall Sit atau Plank pada ketegangan maksimum.</string>
+    <string name="act_ph3_bio">Merangsang transporter glukosa otot rangka dan menjaga integritas struktural tanpa kelelahan SSP.</string>
+    <string name="act_ph3_phys">Melindungi sendi dan menjaga aktivitas metabolik otot selama blok menetap (sedentari).</string>
+    <string name="act_ph3_rsch">Remas setiap otot di tubuh Anda sekencang mungkin selama menahan posisi. \'Hyper-irradiation\' ini memaksimalkan perekrutan unit motorik dan merangsang aktivitas metabolik tanpa memerlukan beban berat.</string>
+
+    <string name="act_ph4_title">Fokus Remodeling Eksentrik</string>
+    <string name="act_ph4_inst">5-10 squat berat badan lambat dengan penurunan 4 detik.</string>
+    <string name="act_ph4_bio">Fokus pada fase eksentrik (pemanjangan) merangsang perbaikan tendon dan jaringan ikat.</string>
+    <string name="act_ph4_phys">Meningkatkan ketahanan fisik dan melindungi terhadap cedera di masa depan.</string>
+    <string name="act_ph4_rsch">Hitung 1-2-3-4 saat turun, lalu meledak kembali ke atas. Beban eksentrik menciptakan tegangan mikro yang memberi sinyal pada tubuh untuk menyimpan serat kolagen baru yang lebih tahan banting di tendon.</string>
+
+    <string name="act_ph5_title">Gantungan Dekompresi Tulang Belakang</string>
+    <string name="act_ph5_inst">Bergantung pada bar atau gunakan peregangan kusen pintu selama 60 detik.</string>
+    <string name="act_ph5_bio">Menggunakan gravitasi untuk mendekompresi diskus intervertebralis dan melawan keruntuhan postural akibat duduk.</string>
+    <string name="act_ph5_phys">Postur tubuh yang lebih baik, nyeri punggung berkurang, dan transmisi saraf yang lebih baik ke ekstremitas.</string>
+    <string name="act_ph5_rsch">Biarkan bahu Anda mencapai telinga dan bernapaslah ke punggung Anda. Ini menciptakan ruang di antara vertebra, menghidrasi kembali diskus yang terkompresi selama duduk lama.</string>
+
+    <string name="act_ph6_title">Tugas Keseimbangan Vestibular</string>
+    <string name="act_ph6_inst">Berdiri dengan satu kaki sambil melakukan tugas rutin (misal: menyikat gigi).</string>
+    <string name="act_ph6_bio">Melibatkan serebelum dan otot-otot penstabil pergelangan kaki dan pinggul.</string>
+    <string name="act_ph6_phys">Secara langsung mengurangi risiko jatuh (penyebab utama cedera pada penuaan) dan meningkatkan koordinasi neuro-motorik.</string>
+    <string name="act_ph6_rsch">Coba tutup mata Anda untuk meningkatkan tingkat kesulitan. Ini memaksa otak untuk mengandalkan propriosepsi dan sistem vestibular, memperkuat jalur saraf yang bertanggung jawab atas keseimbangan.</string>
+
+    <!-- Aktivitas Kognitif -->
+    <string name="act_co1_title">Monotropic Focus Deep Work</string>
+    <string name="act_co1_inst">Blok 90 menit fokus tunggal dengan nol peralihan tugas.</string>
+    <string name="act_co1_bio">Menghilangkan \'Attention Residue\' dan memungkinkan pencapaian kondisi Flow.</string>
+    <string name="act_co1_phys">Memaksimalkan keluaran saraf dan mengurangi biaya metabolik dari kerja kognitif.</string>
+    <string name="act_co1_rsch">Nonaktifkan semua notifikasi dan gangguan fisik. Setiap kali Anda beralih tugas, otak membutuhkan rata-rata 23 menit untuk kembali ke fokus penuh. Melindungi jendela ini menjaga stamina kognitif Anda.</string>
+
+    <string name="act_co2_title">Reset Amigdala: Aliran Optik Lateral</string>
+    <string name="act_co2_inst">Jalan kaki 10 menit di luar ruangan sambil memindai cakrawala secara lateral.</string>
+    <string name="act_co2_bio">Gerakan mata lateral (aliran optik) telah terbukti secara klinis mengurangi aktivitas amigdala.</string>
+    <string name="act_co2_phys">Reset segera kejernihan mental dan pengurangan kecemasan atau frustrasi saraf.</string>
+    <string name="act_co2_rsch">Jaga agar kepala Anda tetap diam dan biarkan mata Anda menjelajahi lanskap dari kiri ke kanan. Pola gerakan ini secara evolusioner terkait dengan kondisi aman, menurunkan regulasi sistem deteksi ancaman otak.</string>
+
+    <string name="act_co3_title">Protokol Dopamine Shielding</string>
+    <string name="act_co3_inst">Tidak ada media sosial, berita, atau email selama jam pertama setelah bangun.</string>
+    <string name="act_co3_bio">Melindungi tingkat dopamin dasar Anda, memastikan motivasi tinggi untuk tugas-tugas kompleks yang bernilai tinggi.</string>
+    <string name="act_co3_phys">Mencegah puncak dopaminergik \'murah\' yang menyebabkan kemerosotan motivasi tengah hari.</string>
+    <string name="act_co3_rsch">Ganti ponsel dengan aktivitas rendah dopamin seperti minum air, sinar matahari, atau peregangan ringan. Memulai hari dengan \'lonjakan kebaruan\' eksternal membuat otak dalam kondisi reaktif dan mudah terganggu.</string>
+
+    <string name="act_co4_title">Binaural Alpha-Entrainment</string>
+    <string name="act_co4_inst">Dengarkan binaural beats 8-12Hz selama kerja ringan.</string>
+    <string name="act_co4_bio">Menarik gelombang otak ke arah frekuensi Alpha yang terkait dengan fokus kondisi stabil yang santai.</string>
+    <string name="act_co4_phys">Meningkatkan konsentrasi tanpa meningkatkan dorongan adrenergik (stres).</string>
+    <string name="act_co4_rsch">Gunakan headphone. Sedikit perbedaan frekuensi antara telinga memaksa otak untuk menghasilkan \'ketukan ketiga\' internal pada frekuensi Alpha target, memfasilitasi kondisi kewaspadaan yang santai.</string>
+
+    <string name="act_co5_title">Latihan Keterampilan Motorik Kompleks</string>
+    <string name="act_co5_inst">5 menit keterampilan baru (misal: juggling, menyeimbangkan, mengetik).</string>
+    <string name="act_co5_bio">Tugas motorik baru merangsang BDNF (Brain-Derived Neurotrophic Factor) dan plastisitas saraf.</string>
+    <string name="act_co5_phys">Penting untuk menjaga fleksibilitas kognitif dan mencegah atrofi otak terkait usia.</string>
+    <string name="act_co5_rsch">Fokus pada perjuangan. Momen \'hampir jatuh\' atau \'gagal menangkap\' adalah saat otak melepaskan neurokimia yang diperlukan untuk remodeling saraf struktural.</string>
+
+    <string name="act_co6_title">Pemangkasan Saraf: Senja Digital</string>
+    <string name="act_co6_inst">Akhiri semua informasi/layar berkepadatan tinggi 60 menit sebelum tidur.</string>
+    <string name="act_co6_bio">Cahaya biru dan kepadatan informasi yang tinggi mencegah reorganisasi saraf yang penting selama tidur.</string>
+    <string name="act_co6_phys">Memaksimalkan konsolidasi memori dan memastikan Anda bangun dengan kondisi kognitif yang \'bersih\'.</string>
+    <string name="act_co6_rsch">Otak Anda membutuhkan \'jalur keluar\' dari pemrosesan informasi berkecepatan tinggi hari itu. Mengurangi kepadatan masukan memungkinkan hipokampus untuk memulai proses vital stabilisasi dan pemangkasan memori.</string>
+
+    <!-- Aktivitas Pemulihan -->
+    <string name="act_re1_title">Beban Magnesium Transdermal</string>
+    <string name="act_re1_inst">20 menit merendam garam Epsom atau aplikasi minyak magnesium.</string>
+    <string name="act_re1_bio">Melewati saluran pencernaan untuk relaksasi otot dan sistem saraf segera.</string>
+    <string name="act_re1_phys">Mempercepat pemulihan dari beban fisik dan meningkatkan kualitas tidur dalam.</string>
+    <string name="act_re1_rsch">Air hangat meningkatkan permeabilitas kulit. Ion magnesium melintasi penghalang kulit dan masuk ke cairan interstisial, di mana mereka dapat segera mulai memodulasi rangsang otot dan menurunkan kortisol.</string>
+
+    <string name="act_re2_title">Remodeling Jaringan Ikat</string>
+    <string name="act_re2_inst">5 menit peregangan statis tahan lama (pose Pigeon atau 90/90).</string>
+    <string name="act_re2_bio">Merangsang fibroblast untuk merombak fasia dan jaringan ikat sambil menurunkan dorongan simpatis.</string>
+    <string name="act_re2_phys">Mengurangi ketegangan sistemik dan mempersiapkan tubuh untuk regenerasi nokturnal.</string>
+    <string name="act_re2_rsch">Tahan setidaknya selama 2 menit per sisi. Dibutuhkan waktu selama ini bagi mekanoreseptor di fasia untuk memberi sinyal pada sistem saraf agar memungkinkan pemanjangan nyata dari matriks jaringan ikat.</string>
+
+    <string name="act_re3_title">Pantulan Otonom: Keheningan Total</string>
+    <string name="act_re3_inst">5 menit keheningan fisik and mental yang lengkap.</string>
+    <string name="act_re3_bio">Memungkinkan sistem saraf beralih dari mode \'pemrosesan\' ke mode \'integrasi\'.</string>
+    <string name="act_re3_phys">Mengurangi beban alostatik kumulatif dan membersihkan kekacauan mental.</string>
+    <string name="act_re3_rsch">Duduk atau berbaring dan tidak melakukan apa pun. Tahan keinginan untuk \'bermeditasi\' atau \'bernapas\'. Hanya ada. \'Ruang kosong\' ini memungkinkan otak untuk membersihkan cache sarafnya dan mengatur ulang ambang batas stres dasar Anda.</string>
+
+    <string name="act_re4_title">Inflammation Blunting Support</string>
+    <string name="act_re4_inst">Konsumsi Omega-3 dan Kurkumin dengan bioavailabilitas tinggi.</string>
+    <string name="act_re4_bio">Modulator alami jalur sitokin pro-inflamasi (TNF-alpha, IL-6).</string>
+    <string name="act_re4_phys">Penting untuk mengendalikan \'Inflammaging\' - peradangan tingkat rendah yang mendorong penuaan.</string>
+    <string name="act_re4_rsch">Ambil dengan makanan yang mengandung lemak. Kurkumin secara spesifik larut dalam lemak dan penyerapannya meningkat 2000%% jika dikombinasikan dengan lada hitam (piperine).</string>
+
+    <string name="act_re5_title">Lymphatic Assistance Flush</string>
+    <string name="act_re5_inst">5 menit foam rolling atau pijat mandiri ringan.</string>
+    <string name="act_re5_bio">Membantu sistem limfatik dalam membersihkan limbah metabolik dari jaringan.</string>
+    <string name="act_re5_phys">Mengurangi nyeri otot dan \'pembengkakan\' sistemik atau stagnasi.</string>
+    <string name="act_re5_rsch">Selalu berguling ke arah jantung. Sistem limfatik tidak memiliki pompa; ia mengandalkan tekanan manual dan kontraksi otot untuk menggerakkan cairan melalui kelenjar untuk filtrasi dan pembuangan limbah.</string>
+
+    <string name="act_re6_title">Lingkungan Perbaikan Nokturnal</string>
+    <string name="act_re6_inst">Pastikan kegelapan 100%% dan suhu dingin di ruang tidur.</string>
+    <string name="act_re6_bio">Mengoptimalkan lingkungan untuk denyut Hormon Pertumbuhan (GH) nokturnal dan perbaikan seluler.</string>
+    <string name="act_re6_phys">Puncak regenerasi jaringan sistemik dan perbaikan mitokondria selama tidur.</string>
+    <string name="act_re6_rsch">Gunakan tirai blackout dan tutup lampu elektronik apa pun. Bahkan sedikit cahaya dapat menembus kelopak mata dan mengganggu produksi puncak melatonin, yang merupakan antioksidan tubuh Anda yang paling kuat.</string>
+
+    <!-- Pemulihan -->
+    <string name="recovery_programs_title">PROGRAM PEMULIHAN</string>
+    <string name="recovery_programs_desc">Protokol terstruktur untuk restorasi fisiologis.</string>
+    <string name="recovery_daily_interventions">INTERVENSI HARIAN</string>
+    <string name="recovery_critical_needs">Kebutuhan Kritis</string>
+    <string name="recovery_liver_metabolic">1. DUKUNGAN HATI &amp; METABOLIK</string>
+    <string name="recovery_drinkers">Peminum</string>
+    <string name="recovery_cardio_circulation">2. KARDIOVASCULAR &amp; SIRKULASI</string>
+    <string name="recovery_both_smokers_drinkers">Perokok dan Peminum</string>
+    <string name="recovery_respiratory_lung">3. KESEHATAN PERNAPASAN &amp; PARU</string>
+    <string name="recovery_smokers">Perokok</string>
+    <string name="recovery_metabolic_nutritional">4. REGULASI METABOLIK &amp; NUTRISI</string>
+    <string name="recovery_sleep_optimization">5. OPTIMASI TIDUR</string>
+    <string name="recovery_drinkers_smokers">Peminum, Perokok, atau Keduanya</string>
+    <string name="recovery_neuro_cognitive">6. PERBAIKAN NEURO-KOGNITIF</string>
+    <string name="recovery_behavioral_craving">7. PERILAKU &amp; KONTROL KEINGINAN</string>
+    <string name="recovery_target_audience">Target Audiens: %1$s</string>
+
+    <!-- Asupan -->
+    <string name="intake_bio_data_logging">PENCATATAN DATA-BIO</string>
+    <string name="intake_tab_intake">ASUPAN</string>
+    <string name="intake_tab_sleep">TIDUR</string>
+    <string name="intake_alcohol">Alkohol</string>
+    <string name="intake_smoking">Merokok</string>
+    <string name="intake_sleep_alignment">Penyelarasan Tidur &amp; Sirkadian</string>
+    <string name="intake_sleep_desc">Catat arsitektur Anda untuk menstabilkan sistem bioregulasi.</string>
+    <string name="intake_duration_hours">Durasi (Jam)</string>
+    <string name="intake_subjective_quality">Kualitas Subjektif</string>
+    <string name="intake_bedtime_consistency">Konsistensi Waktu Tidur</string>
+    <string name="intake_night_awakenings">Terbangun di Malam Hari</string>
+    <string name="intake_integrate_sleep">INTEGRASIKAN DATA TIDUR</string>
+    <string name="intake_standard_drinks">Minuman Standar</string>
+    <string name="intake_confirm_alcohol">KONFIRMASI LOG ALKOHOL</string>
+    <string name="intake_quantity_cigarettes">Jumlah (Rokok)</string>
+    <string name="intake_confirm_smoking">KONFIRMASI LOG MEROKOK</string>
+    <string name="intake_logged">%1$s Dicatat</string>
+    <string name="intake_alcohol_feedback">Hati Anda sedang memproses toksin. Mulailah hidrasi untuk mendukung pembersihan metabolik.</string>
+    <string name="intake_smoking_feedback">Stres vaskular saat ini meningkat. Sesi pernapasan akan meningkatkan efisiensi oksigen.</string>
+    <string name="intake_start_hydration">Mulai Hidrasi</string>
+    <string name="intake_liver_support">Dukungan Hati</string>
+    <string name="intake_breathing_exercise">Latihan Pernapasan</string>
+    <string name="intake_return">Kembali</string>
+
+    <!-- Pelatih -->
+    <string name="coach_help_centre">Pusat Bantuan</string>
+    <string name="coach_ai_coach">Pelatih Kesehatan AI</string>
+    <string name="coach_clinically_precise">Jawaban presisi secara klinis</string>
+    <string name="coach_real_time_support">Dukungan waktu nyata</string>
+    <string name="coach_common_questions">Pertanyaan Umum</string>
+    <string name="coach_need_advice">Butuh saran segera?</string>
+    <string name="coach_chat_with_ai">Ngobrol dengan Pelatih Pemulihan AI Anda</string>
+    <string name="coach_back_to_help">Kembali ke Pusat Bantuan</string>
+    <string name="coach_describe_feeling">Gambarkan perasaan Anda…</string>
+    <string name="coach_hello">Halo! Saya Pelatih AI Anda. Saya dapat membantu Anda memahami jalur pemulihan atau mengelola keinginan. Apa yang ada di pikiran Anda?</string>
+    <string name="coach_research_insight">Wawasan Penelitian</string>
+    <string name="coach_research_desc">Temuan baru dari Pusat Penelitian HAC (Penelitian Alkohol &amp; Rokok Sehat) menunjukkan bahwa bernapas dalam selama 5 menit saja dapat mengurangi penyempitan vaskular yang disebabkan oleh nikotin hingga 20%%.</string>
+
+    <!-- Wawasan -->
+    <string name="insights_behavioral_intelligence">KECERDASAN PERILAKU</string>
+    <string name="insights_behavioral_trends">Tren Perilaku</string>
+    <string name="insights_clinical_interpretation">Interpretasi klinis dari aktivitas yang Anda catat</string>
+    <string name="insights_intake_intensity">INTENSITAS ASUPAN</string>
+    <string name="insights_metabolic_load">Pelacakan beban metabolik gabungan</string>
+    <string name="insights_liver_recovery">Dukung Pemulihan Hati</string>
+    <string name="insights_lung_health">Optimalkan Kesehatan Paru</string>
+    <string name="insights_resilience_dynamics">DINAMIKA KETAHANAN</string>
+    <string name="insights_system_stability">Stabilitas sistem vs Masukan perilaku</string>
+    <string name="insights_review_protocol">Tinjau Protokol Pemulihan</string>
+    <string name="insights_cause_effect">Analisis Sebab &amp; Akibat</string>
+    <string name="insights_physiological_reactions">Reaksi berantai fisiologis langsung</string>
+    <string name="insights_scientific_intelligence">Kecerdasan Ilmiah</string>
+    <string name="insights_latest_findings">Temuan terbaru dari Pusat Penelitian HAC</string>
+    <string name="insights_clinical_library">Perpustakaan Klinis</string>
+    <string name="insights_peer_reviewed_guides">Panduan tinjauan sejawat untuk manajemen fisiologis</string>
+    <string name="insights_intake_high_no_recovery">Tren asupan Anda tinggi tanpa tindakan pemulihan. Filtrasi hepatik dan pemulihan paru sangat tertekan.</string>
+    <string name="insights_intake_high_recovery">Asupan tinggi terdeteksi, tetapi protokol pemulihan aktif. Tindakan Anda sebagian mengimbangi beban metabolik.</string>
+    <string name="insights_intake_low_recovery">Asupan rendah dan pemulihan aktif. Sistem biologis Anda berada dalam kondisi optimal perbaikan seluler.</string>
+    <string name="insights_intake_stable">Tingkat asupan berada dalam ambang pemulihan yang stabil. Sistem biologis mempertahankan keseimbangan.</string>
+    <string name="insights_recovery_critical">Tekanan sistem kritis. Protokol istirahat dan hidrasi segera diperlukan untuk menstabilkan fungsi saraf.</string>
+    <string name="insights_recovery_decreasing">Stabilitas sistemik menurun. Skor Anda biasanya meningkat 15%% saat tugas hidrasi selesai.</string>
+    <string name="insights_recovery_progress">Pemulihan sedang berlangsung. Hidrasi mendukung pembersihan toksin, tetapi istirahat keseluruhan masih sub-optimal.</string>
+    <string name="insights_recovery_high">Ketahanan tinggi dipertahankan. Protokol hidrasi dan istirahat Anda yang konsisten berhasil mengimbangi stres metabolik.</string>
+    <string name="insights_recovery_stable">Dinamika pemulihan stabil. Pertahankan protokol hidrasi dan pernapasan saat ini untuk memastikan keseimbangan sistem.</string>
+    <string name="insights_urgent_hydration">DARURAT: Hidrasi setelah minum meningkatkan kecepatan pemulihan sebesar 40%%.</string>
+    <string name="insights_success_hydration">BERHASIL: Protokol hidrasi berhasil mempercepat pembersihan toksin.</string>
+    <string name="insights_vascular_stress">Stres vaskular tinggi. Mulailah latihan pernapasan untuk meningkatkan aliran udara.</string>
+    <string name="insights_breathing_reset">Reset pernapasan terdeteksi. Efisiensi paru sedang pulih.</string>
+    <string name="insights_low_hydration">Hidrasi rendah terdeteksi. Pembersihan toksin saat ini sub-optimal.</string>
+    <string name="insights_high_consistency">Konsistensi tinggi: Skor pemulihan Anda meningkat karena intervensi aktif.</string>
+    <string name="insights_equilibrium">Sistem biologis berada dalam keseimbangan. Pertahankan protokol saat ini.</string>
+    <string name="insights_alcohol_intake">Asupan Alkohol</string>
+    <string name="insights_metabolic_ethanol">Beban etanol metabolik</string>
+    <string name="insights_hydration_active">Hidrasi Aktif</string>
+    <string name="insights_hydration_deficit">Defisit Hidrasi</string>
+    <string name="insights_accelerating_toxin">Mempercepat pembersihan toksin</string>
+    <string name="insights_metabolic_delayed">Pemrosesan metabolik tertunda</string>
+    <string name="insights_reduced_hangover">Mengurangi Mabuk</string>
+    <string name="insights_increased_fatigue">Meningkatkan Kelelahan</string>
+    <string name="insights_systemic_stability_returning">Stabilitas sistemik kembali</string>
+    <string name="insights_neural_recovery_delayed">Pemulihan saraf tertunda</string>
+    <string name="insights_nicotine_intake">Asupan Nikotin</string>
+    <string name="insights_vascular_constriction">Penyempitan vaskular</string>
+    <string name="insights_breathing_protocol">Protokol Pernapasan</string>
+    <string name="insights_lung_stress">Stres Paru</string>
+    <string name="insights_increasing_oxygen">Meningkatkan asupan oksigen</string>
+    <string name="insights_lower_oxygen">Efisiensi oksigen lebih rendah</string>
+    <string name="insights_oxygen_stabilized">Oksigen Distabilkan</string>
+    <string name="insights_recovery_slowed">Pemulihan Melambat</string>
+    <string name="insights_vascular_decreasing">Stres vaskular menurun</string>
+    <string name="insights_reduced_cellular">Mengurangi perbaikan seluler</string>
+    <string name="insights_clean_protocol">Protokol Bersih</string>
+    <string name="insights_zero_toxin">Nol beban toksin</string>
+    <string name="insights_stable_equilibrium">Keseimbangan Stabil</string>
+    <string name="insights_optimal_system">Fungsi sistem optimal</string>
+    <string name="insights_rapid_repair">Perbaikan Cepat</string>
+    <string name="insights_maximum_cellular">Restorasi seluler maksimum</string>
+    <string name="insights_pulmonary_restoration">Studi Restorasi Paru</string>
+    <string name="insights_study_desc">Data klinis Pusat HAC mengonfirmasi bahwa protokol pernapasan dalam 5 menit yang terstruktur dapat mengimbangi 20%% penyempitan vaskular akut segera setelah paparan nikotin.</string>
+    <string name="insights_access_publication">Akses Publikasi Lengkap</string>
+    <string name="insights_hepatic_restoration">Restorasi Hepatik</string>
+    <string name="insights_sleep_architecture">Arsitektur Tidur</string>
+    <string name="insights_intracellular_hydration">Hidrasi Intraseluler</string>
+    <string name="insights_neuro_chemical">Keseimbangan Neuro-Kimia</string>
+    <string name="insights_questions_concerns">Pertanyaan atau Kekhawatiran?</string>
+    <string name="insights_reach_out">Hubungi tim Pusat Penelitian HAC untuk komentar atau pertanyaan klinis apa pun.</string>
+
+    <!-- Komunitas -->
+    <string name="community_hub">PUSAT KOMUNITAS</string>
+    <string name="community_cloaked_mode">MODE PENYAMARAN AKTIF</string>
+    <string name="community_toggle_anonymity">Ganti Anonimitas</string>
+    <string name="community_tab_feed">Umpan</string>
+    <string name="community_tab_circles">Lingkaran</string>
+    <string name="community_tab_sos">Suara SOS</string>
+    <string name="community_tab_inbox">Kotak Masuk</string>
+    <string name="community_new_post">Postingan Baru</string>
+    <string name="community_launch_circle">Luncurkan Lingkaran</string>
+    <string name="community_post_placeholder">Catat kemenangan atau minta bantuan…</string>
+    <string name="community_recent_breakthroughs">TEROBOSAN TERBARU</string>
+    <string name="community_no_posts">Tidak ada postingan untuk ditampilkan.</string>
+    <string name="community_add_comment">Tambah komentar…</string>
+    <string name="community_active_circles">LINGKARAN AKTIF</string>
+    <string name="community_circles_desc">Lingkungan dukungan sejawat pribadi</string>
+    <string name="community_discover_circles">TEMUKAN LINGKARAN SEJAWAT</string>
+    <string name="community_discover_desc">Temukan dukungan yang selaras dengan jalur Anda</string>
+    <string name="community_no_public_circles">Belum ada lingkaran publik. Luncurkan yang pertama!</string>
+    <string name="community_join_circle">Bergabung dengan Lingkaran</string>
+    <string name="community_no_private_sessions">TIDAK ADA SESI PRIBADI</string>
+    <string name="community_secure_session">Sesi Aman</string>
+    <string name="community_peer_circle">LINGKARAN SEJAWAT</string>
+    <string name="community_direct_encrypted">TERENKRIPSI LANGSUNG</string>
+    <string name="community_type_message">Ketik pesan…</string>
+    <string name="community_blocked">DIBLOKIR</string>
+    <string name="community_verified_member">ANGGOTA TERVERIFIKASI</string>
+    <string name="community_message">Pesan</string>
+    <string name="community_call">Panggil</string>
+    <string name="community_block">Blokir</string>
+    <string name="community_managed_circles">LINGKARAN YANG DIKELOLA</string>
+    <string name="community_unblock_user">BATAL BLOKIR PENGGUNA</string>
+    <string name="community_close_profile">TUTUP PROFIL</string>
+    <string name="community_launch_support_circle">LUNCURKAN LINGKARAN DUKUNGAN</string>
+    <string name="community_circle_name">Nama Lingkaran</string>
+    <string name="community_primary_focus">Fokus Utama (Jalur)</string>
+    <string name="community_purpose_guidelines">Tujuan &amp; Pedoman</string>
+    <string name="community_launch">LUNCURKAN</string>
+    <string name="community_sos_sessions">SESI SUARA SOS</string>
+    <string name="community_sos_desc">Dukungan vokal langsung untuk kebutuhan pemulihan mendesak</string>
+    <string name="community_no_active_sessions">TIDAK ADA SESI AKTIF</string>
+    <string name="community_join">GABUNG</string>
+    <string name="community_initialize_sos">INISIALISASI PANGGILAN SOS</string>
+    <string name="community_live_session">SESI LANGSUNG: %1$s</string>
+    <string name="community_hosted_by">DIHOSTING OLEH %1$s</string>
+    <string name="community_terminate_session">AKHIRI SESI</string>
+    <string name="community_circle">Lingkaran</string>
+    <string name="community_recovery">PEMULIHAN</string>
+
+    <!-- Layar Rencana Pemulihan -->
+    <string name="recovery_biological_resilience">KETAHANAN BIOLOGIS</string>
+    <string name="recovery_live_time">WAKTU NYATA</string>
+    <string name="recovery_simulating">MENYIMULASIKAN: %1$d:00</string>
+    <string name="recovery_biological_briefing">BRIPING BIOLOGIS</string>
+    <string name="recovery_daily_journey">PERJALANAN PEMULIHAN HARIAN</string>
+    <string name="recovery_daily_journey_desc">Ikuti panduan biologis Anda untuk mengoptimalkan restorasi sistemik.</string>
+    <string name="recovery_cat_morning">PAGI: AKTIVASI</string>
+    <string name="recovery_cat_midday">SIANG: PEMELIHARAAN</string>
+    <string name="recovery_cat_afternoon">SORE: PERLINDUNGAN</string>
+    <string name="recovery_cat_evening">MALAM: RESTORASI</string>
+    <string name="recovery_cat_night">MALAM: PEMULIHAN DALAM</string>
+    <string name="recovery_status_recommended">DIREKOMENDASIKAN SEKARANG</string>
+    <string name="recovery_status_scheduled">TERJADWAL</string>
+    <string name="recovery_targeted_repair">PERBAIKAN TERTARGET</string>
+    <string name="recovery_cat_liver_metabolic">HATI &amp; METABOLIK</string>
+    <string name="recovery_cat_cardiovascular">KARDIOVASKULAR</string>
+    <string name="recovery_cat_respiratory">PERNAPASAN</string>
+    <string name="recovery_cat_metabolic">METABOLIK</string>
+    <string name="recovery_cat_sleep_arch">ARSITEKTUR TIDUR</string>
+    <string name="recovery_cat_cognitive">PERBAIKAN KOGNITIF</string>
+    <string name="recovery_cat_behavioral">PERILAKU</string>
+    <string name="recovery_cat_priority">PRIORITAS</string>
+
+    <!-- Sistem Ketahanan -->
+    <string name="recovery_system_hepatic_name">Ketahanan Hepatik</string>
+    <string name="recovery_system_hepatic_desc">Efisiensi detoksifikasi hati dan throughput metabolik.</string>
+    <string name="recovery_system_pulmonary_name">Kekuatan Paru</string>
+    <string name="recovery_system_pulmonary_desc">Kapasitas paru-paru dan efisiensi pertukaran oksigen-CO2.</string>
+    <string name="recovery_system_neural_name">Stabilitas Saraf</string>
+    <string name="recovery_system_neural_desc">Keseimbangan neurotransmitter dan kontrol eksekutif atas keinginan.</string>
+    <string name="recovery_system_vascular_name">Integritas Vaskular</string>
+    <string name="recovery_system_vascular_desc">Variabilitas detak jantung dan regulasi tekanan darah.</string>
+
+    <!-- Briping Biologis -->
+    <string name="briefing_critical_toxicity">Toksisitas sistemik berada pada level KRITIS. Hati Anda berada di bawah stres oksidatif yang berat. Prioritaskan hidrasi dan B1 segera untuk mencegah kabut kognitif.</string>
+    <string name="briefing_moderate_inflammation">Peradangan sedang terdeteksi. Throughput metabolik melambat. Fokus pada protokol Hepatik dan Vaskular hari ini.</string>
+    <string name="briefing_vascular_constriction">Penyempitan vaskular tinggi. Saturasi oksigen mungkin terganggu. Fokus pada ritual Paru untuk membersihkan lendir dan memulihkan aliran udara.</string>
+    <string name="briefing_neural_depletion">Cadangan saraf terkuras. Harapkan iritabilitas tinggi dan keinginan yang kuat. Gunakan Reset Dopamin dan ritual Vagal untuk menstabilkan.</string>
+    <string name="briefing_excellent_compliance">Kepatuhan biologis yang sangat baik. Sistem Anda memasuki kondisi homeostasis yang stabil. Pertahankan momentum.</string>
+    <string name="briefing_default">Perjalanan biologis Anda sedang berlangsung. Ikuti protokol yang direkomendasikan untuk mengoptimalkan pemulihan sistemik Anda.</string>
+
+    <!-- Judul dan Deskripsi Tugas (Mapping untuk Engine) -->
+    <string name="act_h1_title">Hidrasi Pagi</string>
+    <string name="act_h1_desc">Minum 300ml air + sejumput garam laut. Menghidrasi kembali otak Anda setelah tidur.</string>
+    <string name="act_h4_title">Saturasi Tiamin (B1)</string>
+    <string name="act_h4_desc">Memulai metabolisme energi. Sangat penting untuk pemulihan alkohol.</string>
+    <string name="act_cc2_title">Sinar Matahari &amp; Gerak</string>
+    <string name="act_cc2_desc">Jalan kaki atau peregangan 5-10 menit. Mengatur ulang ritme sirkadian Anda.</string>
+    <string name="act_rl1_title">Pemuatan Oksigen</string>
+    <string name="act_rl1_desc">3 menit pernapasan diafragma. Membersihkan paru-paru dan meningkatkan kewaspadaan.</string>
+    <string name="act_mn1_title">Jangkar Gula Darah</string>
+    <string name="act_mn1_desc">Makan siang tinggi protein. Mencegah penurunan energi dan keinginan makan di tengah hari.</string>
+    <string name="act_cc3_title">Reset Vagal (Percikan Dingin)</string>
+    <string name="act_cc3_desc">Percikkan air dingin ke wajah. Menurunkan kortisol dan mengatur ulang fokus.</string>
+    <string name="act_cc1_title">Pernapasan Koheren</string>
+    <string name="act_cc1_desc">Pernapasan 4-2-6 selama 2 menit. Menstabilkan detak jantung selama bekerja.</string>
+    <string name="act_mn5_title">Pemuatan Omega-3</string>
+    <string name="act_mn5_desc">Mendukung perbaikan otak dan menurunkan peradangan sistemik.</string>
+    <string name="act_cc4_title">Dorongan Nitrat Oksida</string>
+    <string name="act_cc4_desc">Jus bit atau sayuran hijau. Meningkatkan sirkulasi dan tekanan darah.</string>
+    <string name="act_nc2_title">Latihan Kognitif</string>
+    <string name="act_nc2_desc">Latihan fokus 5 menit untuk memperkuat fungsi eksekutif.</string>
+    <string name="act_ng1_title">Dukungan Mikrobioma</string>
+    <string name="act_ng1_desc">Probiotik/Makanan fermentasi. Menyembuhkan lapisan usus yang rusak akibat alkohol.</string>
+    <string name="act_rl5_title">Uap Detoks Paru</string>
+    <string name="act_rl5_desc">Inhalasi uap untuk mengencerkan dan membersihkan lendir (untuk perokok).</string>
+    <string name="act_nc1_title">Puasa Dopamin</string>
+    <string name="act_nc1_desc">Tanpa layar selama 15 menit. Merekalibrasi sirkuit hadiah.</string>
+    <string name="act_rc_sl4_title">Dukungan Magnesium</string>
+    <string name="act_rc_sl4_desc">Magnesium Glycinate. Merilekskan otot dan membantu tidur REM yang dalam.</string>
+    <string name="act_rc_sl1_title">Peralihan Parasimpatis</string>
+    <string name="act_rc_sl1_desc">Pernapasan 4-7-8. Memberi sinyal pada tubuh bahwa aman untuk tidur.</string>
+    <string name="act_rc_sl2_title">Meditasi Pemindaian Tubuh</string>
+    <string name="act_rc_sl2_desc">Meditasi terpandu untuk menurunkan kadar kortisol nokturnal.</string>
+    <string name="act_h2_title">Dukungan Nutrisi (B/C/NAC)</string>
+    <string name="act_h2_desc">Konsumsi B-Kompleks, Vitamin C, atau NAC. Mendukung perbaikan enzim hati.</string>
+    <string name="act_lv1_title">Pemuatan Detoks Krusiferus</string>
+    <string name="act_lv1_desc">Makan brokoli/kecambah untuk mengaktifkan detoksifikasi hati Fase II.</string>
+    <string name="act_rl4_title">Latihan Otot Inspirasi</string>
+    <string name="act_rl4_desc">Pernapasan tahanan untuk memperkuat otot diafragma.</string>
+    <string name="act_rl3_title">Drainase Postural</string>
+    <string name="act_rl3_desc">Pemosisian terpandu untuk membersihkan lendir dari lobus paru bawah.</string>
+    <string name="act_mn4_title">Kepatuhan Struktur Makan</string>
+    <string name="act_mn4_desc">Pastikan fokus Protein + Serat dengan karbohidrat terkendali.</string>
+    <string name="act_nc3_title">Keseimbangan Glutamat/GABA</string>
+    <string name="act_nc3_desc">Asupan L-Theanine untuk mengelola hipereksitabilitas neurologis.</string>
+    <string name="act_bh1_title">Kebiasaan-Mikro: Ganti Air</string>
+    <string name="act_bh1_desc">Ganti dorongan asupan dengan hidrasi penuh kesadaran.</string>
+    <string name="act_bh3_title">Latihan Surfing Dorongan</string>
+    <string name="act_bh3_desc">Saksikan sensasi keinginan tanpa penilaian atau tindakan.</string>
+    <string name="act_bh2_title">Penghitung Waktu Tunda Keinginan</string>
+    <string name="act_bh2_desc">Mulai penundaan 5 menit untuk membiarkan gelombang keinginan berlalu.</string>
+    <string name="act_p1_title">Hidrasi Sekarang</string>
+    <string name="act_p1_desc">DARURAT: Tubuh dehidrasi. Minum 250ml air sekarang.</string>
+    <string name="act_p2_title">Dukungan Nutrisi</string>
+    <string name="act_p2_desc">KRITIS: Dukungan hati dibutuhkan (Vitamin B/Elektrolit)."</string>
+    <string name="act_p3_title">Reset Paru</string>
+    <string name="act_p3_desc">WASPADA VASKULAR: Stres paru tinggi. Lakukan pernapasan dalam sekarang.</string>
+    <string name="act_p6_title">Reset Vagal</string>
+    <string name="act_p6_desc">TIPS AHLI: Gunakan air dingin untuk mengatur ulang sistem saraf Anda.</string>
+    <string name="recovery_lvl">LVL</string>
+
+    <!-- PROTOKOL UMUR PANJANG BARU -->
+    <string name="lp_autophagy_title">Siklus Otofagi</string>
+    <string name="lp_autophagy_purpose">Memicu \"pembersihan rumah\" seluler dengan mendaur ulang protein yang rusak dan membersihkan limbah metabolik.</string>
+    <string name="lp_autophagy_step1">Mulai jendela puasa 16 jam.</string>
+    <string name="lp_autophagy_step2">Konsumsi 500ml air kaya mineral selama puasa.</string>
+    <string name="lp_autophagy_step3">Akhiri puasa dengan makanan berprotein tinggi dan glikemik rendah.</string>
+
+    <string name="lp_thermal_title">Hormesis Termal (Kontras)</string>
+    <string name="lp_thermal_purpose">Mengaktifkan Heat Shock Proteins (HSP) dan lemak cokelat untuk meningkatkan ketahanan kardiovaskular.</string>
+    <string name="lp_thermal_step1">20 menit paparan Sauna (80°C+).</string>
+    <string name="lp_thermal_step2">Segera lakukan Cold Plunge atau Mandi Dingin selama 3 menit (10°C)."</string>
+    <string name="lp_thermal_step3">Istirahat selama 10 menit di lingkungan netral.</string>
+
+    <string name="lp_vo2_title">Mitochondrial Forge (VO2 Max)</string>
+    <string name="lp_vo2_purpose">Pemanfaatan oksigen maksimum untuk menunda penuaan biologis jantung dan paru-paru.</string>
+    <string name="lp_vo2_step1">Pemanasan progresif 5 menit.</string>
+    <string name="lp_vo2_step2">Interval 4x4: 4 menit pada Intensitas Maks, 3 menit pemulihan aktif.</string>
+    <string name="lp_vo2_step3">Pendinginan dengan pernapasan diafragma.</string>
+
+    <string name="lp_glycemic_title">Protokol Stabilitas Glikemik</string>
+    <string name="lp_glycemic_purpose">Meminimalkan lonjakan insulin untuk mencegah glikasi protein dan menjaga elastisitas kulit/organ.</string>
+    <string name="lp_glycemic_step1">Konsumsi 1 sdm Cuka Apel dalam air sebelum makan berat karbohidrat.</string>
+    <string name="lp_glycemic_step2">Jalan cepat 15 menit segera setelah makan.</string>
+    <string name="lp_glycemic_step3">Prioritaskan serat dan protein sebelum konsumsi pati apa pun.</string>
+
+    <string name="lp_glymphatic_title">Reset Glimfatik</string>
+    <string name="lp_glymphatic_purpose">Optimalkan sistem pembuangan limbah otak untuk mencegah akumulasi neurodegeneratif.</string>
+    <string name="lp_glymphatic_step1">Nol paparan cahaya biru 90 menit sebelum tidur.</string>
+    <string name="lp_glymphatic_step2">Turunkan suhu ruangan menjadi tepat 18°C.</string>
+    <string name="lp_glymphatic_step3">Tidur miring untuk memfasilitasi aliran cairan serebrospinal maksimal.</string>
+
+    <string name="lp_apob_title">ApoB Lipid Scour</string>
+    <string name="lp_apob_purpose">Pengurangan agresif partikel aterogenik untuk menghilangkan risiko penumpukan plak di arteri.</string>
+    <string name="lp_apob_step1">Tingkatkan asupan serat larut menjadi 30g+ setiap hari (Psyllium/Oat).</string>
+    <string name="lp_apob_step2">Konsumsi 2g asam lemak Omega-3 dengan EPA tinggi.</string>
+    <string name="lp_apob_step3">Lakukan 5 menit \"Nitric Oxide Dumps\" (Squat/Press) untuk menyiapkan endotelium.</string>
+
+    <string name="lp_skeletal_title">Fortifikasi Kerangka</string>
+    <string name="lp_skeletal_purpose">Maksimalkan kepadatan mineral tulang dan integritas struktural untuk mencegah kelemahan terkait usia.</string>
+    <string name="lp_skeletal_step1">Kumulatif 3 menit \"Dead Hang\" dari palang pull-up.</string>
+    <string name="lp_skeletal_step2">Lakukan 10 menit pemuatan eksentrik berat (Squat/Push-up Lambat).</string>
+    <string name="lp_skeletal_step3">Optimalkan kadar Vitamin D3 + K2 untuk pensinyalan kalsium.</string>
+
+    <string name="lp_dna_title">Perisai Metilasi DNA</string>
+    <string name="lp_dna_purpose">Maksimalkan kapasitas perbaikan DNA dan membungkam gen penuaan pro-inflamasi.</string>
+    <string name="lp_dna_step1">Konsumsi 100mg Sulforaphane (Kecambah Brokoli) atau ekstrak krusiferus pekat.</string>
+    <string name="lp_dna_step2">10 menit kesadaran (mindfulness) untuk menekan kerusakan DNA akibat kortisol.</string>
+    <string name="lp_dna_step3">Hindari semua minyak olahan dan daging gosong selama 24 jam.</string>
+
+
+    <!-- Recovery & Session Sync -->
+    <string name="act_me1_ipre">1 tbsp Apple Cider Vinegar in 250ml water before your largest meal.</string>
+    <string name="act_me2_ipre">15-minute brisk walk immediately following a meal.</string>
+    <string name="act_co1_ipre">20 minutes of guided NSDR or Yoga Nidra.</string>
+    <string name="act_ph1_ipre">Perform 3x30s passive dead-hangs from a pull-up bar.</string>
+    <string name="act_ph2_ipre">Perform full-range rotations for neck, shoulders, and hips.</string>
+    <string name="act_sl1_ipre">Exit bed within 120 seconds of waking.</string>
+    <string name="act_sl2_ipre">15m of bright natural light exposure.</string>
+    <string name="act_sl3_ipre">Apply red filter to all screens or use blockers 120m before sleep.</string>
+    <string name="act_sl4_ipre">Lower bedroom temperature to 18�C (64�F).</string>
+    <string name="act_ca1_ipre">Stand up immediately and perform 2m of light stretching.</string>
+    <string name="act_osmotic_title">Osmotic Loading</string>
+    <string name="act_osmotic_why">Alcohol suppresses vasopressin, causing massive dehydration. Electrolytes are required to restore osmotic pressure.</string>
+    <string name="act_osmotic_what">250ml water, sipped slowly every 20 seconds.</string>
+    <string name="act_osmotic_outcome">Stabilized cellular hydration and reduced post-alcohol brain fog.</string>
+    <string name="act_osmotic_prep_title">Preparation</string>
+    <string name="act_osmotic_prep_desc">Get 250ml water + electrolytes.</string>
+    <string name="act_osmotic_sip_title">Osmotic Sips</string>
+    <string name="act_osmotic_sip_desc">Slow sips every 20s for mucosal absorption.</string>
+    <string name="act_osmotic_impact">Hydration complete. Osmotic pressure stabilized. Liver filtration capacity increased by ~12%.</string>
+    <string name="act_pulmonary_title">Pulmonary Expansion</string>
+    <string name="act_pulmonary_why">Smoking reduces functional lung volume. Diaphragmatic breathing re-engages the lower lobes.</string>
+    <string name="act_pulmonary_what">Slow, deep belly breaths through the nose.</string>
+    <string name="act_pulmonary_outcome">Increased VO2 efficiency and reduced systemic vascular tension.</string>
+    <string name="act_pulmonary_posture_title">Posture</string>
+    <string name="act_pulmonary_posture_desc">Sit upright, hand on belly.</string>
+    <string name="act_pulmonary_ritual_title">Ritual</string>
+    <string name="act_pulmonary_ritual_desc">Deep belly inhale, slow exhale.</string>
+    <string name="act_pulmonary_impact">Lung capacity engaged. Oxygen saturation improved. Residual CO2 offloaded.</string>
+    <string name="act_vagal_title">Vagal Nerve Strike</string>
+    <string name="act_vagal_why">Cold exposure triggers the Mammalian Dive Reflex, immediately activating the parasympathetic branch.</string>
+    <string name="act_vagal_what">Apply cold water to the face/neck for 60 seconds.</string>
+    <string name="act_vagal_outcome">Immediate reduction in cortisol and resting heart rate.</string>
+    <string name="act_vagal_cold_title">Cold Exposure</string>
+    <string name="act_vagal_cold_desc">Splash face with cold water or use an ice pack on neck.</string>
+    <string name="act_vagal_impact">Nervous system regulated. Vagal tone improved. Heart rate stabilized.</string>
+    <string name="act_hepatic_title">Hepatic Phase II Load</string>
+    <string name="act_hepatic_why">Alcohol creates acetaldehyde. Phase II liver detox requires specific sulfur-containing compounds (NAC/Glutathione) to neutralize toxins.</string>
+    <string name="act_hepatic_what">Take NAC or eat broccoli sprouts with water.</string>
+    <string name="act_hepatic_outcome">Accelerated clearance of toxic alcohol byproducts and reduced liver strain.</string>
+    <string name="act_hepatic_loading_title">Nutrient Loading</string>
+    <string name="act_hepatic_loading_desc">Consume Cruciferous extracts or NAC with 200ml water.</string>
+    <string name="act_hepatic_impact">Phase II detoxification pathways primed. Glutathione precursors acknowledged.</string>
+    <string name="act_steam_title">Mucolytic Steam Protocol</string>
+    <string name="act_steam_why">Nicotine paralyzes the cilia in your lungs. Steam helps thin the mucus, making it easier to expectorate tar.</string>
+    <string name="act_steam_what">Inhale steam from a bowl of hot water or a humidifier.</string>
+    <string name="act_steam_outcome">Improved pulmonary clearance and reduced smoker\'s cough.</string>
+    <string name="act_steam_inhale_title">Steam Inhalation</string>
+    <string name="act_steam_inhale_desc">Inhale warm steam for deep bronchial reach.</string>
+    <string name="act_steam_impact">Tar-laden mucus thinned. Bronchial pathways moisturized.</string>
+    <string name="act_thiamine_title">Thiamine Saturation Ritual</string>
+    <string name="act_thiamine_why">Alcohol severely inhibits Thiamine (B1) absorption, which is critical for brain energy. Deficiency leads to neurological decline.</string>
+    <string name="act_thiamine_what">Take B1 supplement with a full glass of water.</string>
+    <string name="act_thiamine_outcome">Protection of Wernicke-Korsakoff pathways and improved cognitive clarity.</string>
+    <string name="act_thiamine_intake_title">Oral Intake</string>
+    <string name="act_thiamine_intake_desc">Take 100mg Thiamine with water.</string>
+    <string name="act_thiamine_impact">B1 levels stabilized. Cerebral glucose metabolism protected.</string>
+    <string name="act_inspiratory_title">Inspiratory Muscle Training</string>
+    <string name="act_inspiratory_why">Smoking weakens the primary respiratory muscles. Resistance training restores diaphragm power.</string>
+    <string name="act_inspiratory_what">Inhale deeply, then exhale through a small opening in your lips, creating resistance.</string>
+    <string name="act_inspiratory_outcome">Reduced breathlessness and improved thoracic mobility.</string>
+    <string name="act_inspiratory_res_title">Resistance</string>
+    <string name="act_inspiratory_res_desc">Breathe through pursed lips with moderate force.</string>
+    <string name="act_inspiratory_impact">Diaphragm strength increased. Accessory breathing muscles recruited.</string>
+    <string name="act_coherence_title">Heart-Rate Coherence</string>
+    <string name="act_coherence_why">Smoking and alcohol both increase resting HR. Coherence breathing trains the heart to oscillate in a healthy, regenerative pattern.</string>
+    <string name="act_coherence_what">Follow the visual for a perfectly timed 4-6 rhythm.</string>
+    <string name="act_coherence_outcome">Lowered systolic blood pressure and improved HRV.</string>
+    <string name="act_coherence_step_title">Coherence</string>
+    <string name="act_coherence_step_desc">4s inhale, 6s exhale. Smooth transition.</string>
+    <string name="act_coherence_impact">Autonomic balance reached. HRV increased. Cardiac load reduced.</string>
+    <string name="act_postural_title">Postural Drainage Protocol</string>
+    <string name="act_postural_why">Gravity helps move tar and mucus from the lower lung segments to the larger airways for clearance.</string>
+    <string name="act_postural_what">Use pillows to prop up your hips while lying on your front.</string>
+    <string name="act_postural_outcome">Deep lung clearance and improved oxygenation in the base of the lungs.</string>
+    <string name="act_postural_pos_title">Positioning</string>
+    <string name="act_postural_pos_desc">Lie with chest lower than hips. Breathe deep.</string>
+    <string name="act_postural_impact">Lower lung lobes cleared. Gravity-assisted mucus mobilization.</string>
+    <string name="act_reset_title">Parasympathetic Reset</string>
+    <string name="act_reset_why">Alcohol disrupts sleep architecture. 4-7-8 breathing is a biological \'off-switch\' for the sympathetic nervous system.</string>
+    <string name="act_reset_what">Inhale through nose (4s), hold (7s), exhale through mouth (8s).Log completion to update neural markers.</string>
+    <string name="act_reset_outcome">Rapid induction of the relaxation response for restorative sleep.</string>
+    <string name="act_reset_cycle_title">4-7-8 Cycle</string>
+    <string name="act_reset_cycle_desc">Inhale 4, Hold 7, Exhale 8.</string>
+    <string name="act_reset_impact">CNS down-regulated. Melatonin readiness optimized.</string>
+    <string name="act_sigh_title">Neural Reset (Sigh)</string>
+    <string name="act_sigh_why">Fastest biological way to down-regulate. Pops open collapsed alveoli.</string>
+    <string name="act_sigh_what">Double inhale + long, audile sigh.</string>
+    <string name="act_sigh_outcome">Shift from Sympathetic (fight/flight) to Parasympathetic dominance.</string>
+    <string name="act_sigh_cycle_title">Cycle</string>
+    <string name="act_sigh_cycle_desc">Double inhale, long exhale.</string>
+    <string name="act_sigh_impact">Vagal tone increased. Amygdala reactivity lowered.</string>
+    <string name="act_surfing_title">Neural Wave Navigation</string>
+    <string name="act_surfing_why">Cravings are neurochemical pulses. Observing them as waves prevents addiction loop reinforcement.</string>
+    <string name="act_surfing_what">Mindful observation of physical sensations in the throat/chest.</string>
+    <string name="act_surfing_outcome">Dopamine baseline recalibration and increased prefrontal control.</string>
+    <string name="act_surfing_step_title">Surfing</string>
+    <string name="act_surfing_step_desc">Observe the physical sensation without judgment.</string>
+    <string name="act_surfing_impact">Craving wave navigated. Addiction neural pathways weakened.</string>
+    <string name="act_circadian_title">Circadian Rhythm Lock</string>
+    <string name="act_circadian_why">Alcohol and nicotine fragment sleep architecture by suppressing REM and increasing core temperature. This ritual recalibrates the master clock.</string>
+    <string name="act_circadian_what">Follow the light pulse to signal the SCN (Suprachiasmatic Nucleus) for melatonin readiness.</string>
+    <string name="act_circadian_outcome">Improved sleep continuity and stabilized circadian signaling.</string>
+    <string name="act_circadian_step_title">SCN Sync</string>
+    <string name="act_circadian_step_desc">Match your gaze to the central light pulse. Dim environment required.</string>
+    <string name="act_circadian_impact">Circadian markers updated. Biological clock synchronized.</string>
+    <string name="act_dopamine_title">Dopamine Receptor Reset</string>
+    <string name="act_dopamine_why">Chronic substance use down-regulates D2 receptors. This ritual uses sensory-minimum stimuli to allow receptor sensitivity to return.</string>
+    <string name="act_dopamine_what">Focus on the singular point. Minimize all other sensory input. This allows reward circuits to cool down.</string>
+    <string name="act_dopamine_outcome">Restoration of prefrontal control and reduced impulse volatility.</string>
+    <string name="act_dopamine_step_title">Sensory Minimum</string>
+    <string name="act_dopamine_step_desc">Gaze at the pulse. Acknowledge and release external sensory noise.</string>
+    <string name="act_dopamine_impact">Reward circuit baseline reset. Prefrontal engagement increased.</string>
+    <string name="act_st1_ipre">5 reps of \'Physiological Sigh\' (double inhale, long exhale).</string>
+</resources>

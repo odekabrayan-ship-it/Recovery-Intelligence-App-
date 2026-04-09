@@ -1,0 +1,737 @@
+<resources>
+    <string name="app_name">Recovery Intelligence</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_recovery">Recovery</string>
+    <string name="nav_insights">Insights</string>
+    <string name="nav_coach">Expert Help</string>
+    <string name="nav_community">Community</string>
+
+    <!-- Login Screen -->
+    <string name="login_welcome_back">Welcome Back</string>
+    <string name="login_create_account">Create Account</string>
+    <string name="login_sign_in">Sign In</string>
+    <string name="login_continue_google">Continue with Google</string>
+    <string name="login_email_label">Email Address</string>
+    <string name="login_password_label">Password</string>
+    <string name="login_sign_up_prompt">Join the Recovery Community</string>
+    <string name="login_sign_in_prompt">Log in to your Recovery Dashboard</string>
+    <string name="login_already_have_account">Already have an account? Sign In</string>
+    <string name="login_dont_have_account">Don\'t have an account? Create one</string>
+
+    <!-- Settings & Profile -->
+    <string name="settings_language">Language</string>
+    <string name="settings_logout">Reset Session</string>
+    <string name="settings_delete_account">Delete All Data</string>
+    <string name="settings_select_language">Select Language</string>
+    <string name="settings_account_mgmt">App Management</string>
+    <string name="settings_security">Security</string>
+    <string name="settings_close">Close</string>
+    <string name="settings_cancel">Cancel</string>
+    <string name="settings_confirm_delete">Confirm Data Purge</string>
+    <string name="settings_apply">CONFIRM TRANSITION</string>
+    <string name="settings_delete_warning">Warning: This will permanently remove all your health logs, biological data, and recovery progress from this device. This action cannot be undone.</string>
+
+    <!-- Profile Screen -->
+    <string name="profile_title">My Recovery Profile</string>
+    <string name="profile_save">Save</string>
+    <string name="profile_edit">Edit Profile</string>
+    <string name="profile_full_name">Display Name</string>
+    <string name="profile_username">Internal ID</string>
+    <string name="profile_copy_username">Copy ID</string>
+    <string name="profile_share_profile">Share App</string>
+    <string name="profile_share_text">Join me on Recovery Intelligence for privacy-first biological optimization.</string>
+    <string name="profile_username_copied">ID copied to clipboard</string>
+    <string name="profile_bio">Bio</string>
+    <string name="profile_location">Location</string>
+    <string name="profile_gender">Gender</string>
+    <string name="profile_age">Age</string>
+    <string name="profile_security_privacy">Security &amp; Privacy</string>
+    <string name="profile_pin_protection">PIN Protection</string>
+    <string name="profile_biometric_login">Biometric Login</string>
+    <string name="profile_privacy_policy">Privacy Policy</string>
+    <string name="profile_medical_disclaimer">Medical Disclaimer</string>
+    <string name="medical_disclaimer_text">Recovery Intelligence provides biological optimization protocols for informational purposes only. It is NOT a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of your physician before starting any new health protocol.</string>
+    <string name="profile_local_storage_warning">Local-only storage: Your data stays on this device. If the app is deleted, data cannot be recovered.</string>
+    <string name="profile_set_pin_title">Set PIN Lock</string>
+    <string name="profile_set_pin_desc">Enter a 4–6 digit PIN to protect your local data.</string>
+    <string name="profile_pin_label">PIN</string>
+    <string name="profile_set_pin_button">Set PIN</string>
+    <string name="profile_not_set">Not set</string>
+
+    <!-- Lock Screen Extras -->
+    <string name="lock_wrong_pin">Incorrect PIN. Please try again.</string>
+    <string name="lock_forgot_pin">Forgot PIN?</string>
+    <string name="lock_reset_title">Reset App Access</string>
+    <string name="lock_reset_desc">To reset your PIN, we must clear all locally stored health data for security. This action cannot be undone. Do you wish to proceed?</string>
+    <string name="lock_reset_confirm">Clear Data &amp; Reset</string>
+
+    <!-- Home Screen -->
+    <string name="home_biological_command">BIOLOGICAL COMMAND</string>
+    <string name="home_hello">Hello, %1$s</string>
+    <string name="home_mandatory_triad">MANDATORY DAILY TRIAD</string>
+    <string name="home_triad_subtitle">Expert-led protocols for immediate physiological repair</string>
+    <string name="home_core_systems">Core Biological Systems</string>
+    <string name="home_systems_subtitle">Clinical status based on recent data</string>
+    <string name="home_recovery_toolkit">Recovery Toolkit</string>
+    <string name="home_toolkit_subtitle">Quick actions to boost metrics</string>
+    <string name="home_recovery_index">RECOVERY INDEX</string>
+    <string name="home_recovery_desc">Current biological resilience and systemic regulation level.</string>
+    <string name="home_streak_title">CONSISTENCY STREAK: %1$d DAYS</string>
+    <string name="home_streak_desc">Each day of compliance strengthens your neural resilience.</string>
+    <string name="home_live_tag">LIVE RITUAL</string>
+
+    <!-- Home Screen New -->
+    <string name="home_biological_directives">BIOLOGICAL DIRECTIVES</string>
+    <string name="home_biological_directives_subtitle">Precision actions from the Vitalis expert engine</string>
+    <string name="home_therapeutic_subtitle">Sound sessions for stress \u0026 craving control</string>
+    <string name="home_vitalis_subtitle">Precision biological optimization engine</string>
+    <string name="home_expert_directive">Expert Directive</string>
+    <string name="home_how_to_execute">HOW TO EXECUTE</string>
+    <string name="home_biological_rationale_header">BIOLOGICAL RATIONALE</string>
+    <string name="home_repeat_ritual">Repeat Ritual</string>
+    <string name="home_initiate_ritual">Initiate Biological Ritual</string>
+    <string name="home_category_sleep">Sleep</string>
+    <string name="home_category_metabolic">Metabolic</string>
+    <string name="home_category_vascular">Vascular</string>
+
+    <!-- Metrics & Status -->
+    <string name="status_optimized">OPTIMIZED</string>
+    <string name="status_stable">STABLE</string>
+    <string name="status_strained">STRAINED</string>
+    <string name="status_critical">CRITICAL</string>
+    <string name="metric_hydration">HYDRATION LEVEL</string>
+    <string name="metric_brain_recovery">BRAIN RECOVERY</string>
+    <string name="metric_tag_cellular_fluid">CELLULAR FLUID</string>
+    <string name="metric_tag_neural_repair">NEURAL REPAIR</string>
+
+    <!-- Actions -->
+    <string name="action_hydrate">HYDRATE</string>
+    <string name="action_hydrate_sub">Add 250ml</string>
+    <string name="action_rest">REST</string>
+    <string name="action_rest_sub">Add 1h</string>
+    <string name="action_full_protocol">FULL PROTOCOL</string>
+    <string name="action_review_interventions">Review all targeted interventions</string>
+
+    <!-- Intelligence Banner -->
+    <string name="intel_equilibrium_title">EQUILIBRIUM REACHED</string>
+    <string name="intel_equilibrium_title_optimized">SYSTEM OPTIMIZED</string>
+    <string name="intel_equilibrium_desc">Biological systems are successfully repairing neural pathways and clearing metabolic byproducts.</string>
+
+    <!-- Triad Tasks -->
+    <string name="task_breath_title">Pre-sleep Breathing (4–7–8)</string>
+    <string name="task_breath_desc">Live guided neural reset to trigger parasympathetic recovery.</string>
+    <string name="task_hydrate_title">Hydration + Electrolytes</string>
+    <string name="task_hydrate_desc">Critical for neural waste clearance and brain rehydration.</string>
+    <string name="task_aerobic_title">Light Aerobic Activity</string>
+    <string name="task_aerobic_desc">Stimulates blood flow to accelerate toxin filtration.</string>
+
+    <!-- Vitalis & Engine -->
+    <string name="vitalis_command_center">VITALIS ENGINE</string>
+    <string name="vitalis_bio_intel">BIO-INTEL</string>
+    <string name="vitalis_protocols">PROTOCOLS</string>
+    <string name="vitalis_evidence_base">EVIDENCE BASE</string>
+    <string name="vitalis_domain_analysis">DOMAIN ANALYSIS</string>
+    <string name="vitalis_optimal">Optimal</string>
+    <string name="vitalis_initiate_intervention">INITIATE INTERVENTION</string>
+    <string name="vitalis_session_complete">SESSION COMPLETE</string>
+    <string name="vitalis_inhale">INHALE</string>
+    <string name="vitalis_hold">HOLD</string>
+    <string name="vitalis_exhale">EXHALE</string>
+    <string name="vitalis_system_status_label">SYSTEM STATUS</string>
+    <string name="vitalis_long_exhale">LONG EXHALE (MOUTH)</string>
+    <string name="vitalis_longevity_trajectory_label">LONGEVITY TRAJECTORY</string>
+    <string name="vitalis_calculating">Calculating…</string>
+    <string name="vitalis_directives_title">VITALIS DIRECTIVES</string>
+    <string name="vitalis_biological_systems_title">BIOLOGICAL SYSTEMS</string>
+    <string name="vitalis_active_analysis">ACTIVE ANALYSIS</string>
+    <string name="vitalis_view_analysis">VIEW ANALYSIS</string>
+    <string name="vitalis_longevity_protocol_label">LONGEVITY PROTOCOL</string>
+    <string name="vitalis_phase_active">Phase: Active</string>
+    <string name="vitalis_start_protocol">START PROTOCOL</string>
+    <string name="vitalis_dictionary_title">VITALIS DICTIONARY</string>
+    <string name="vitalis_dictionary_subtitle">Clinical database of 150+ biological compounds.</string>
+    <string name="vitalis_protocol_hierarchy">The Protocol Hierarchy</string>
+    <string name="vitalis_protocol_hierarchy_desc">How we rank interventions based on clinical trial strength.</string>
+    <string name="vitalis_bio_markers">Understanding Bio-Markers</string>
+    <string name="vitalis_bio_markers_desc">Deep dive into VO2 Max, ApoB, and HRV.</string>
+    <string name="vitalis_philosophy">The Vitalis Philosophy</string>
+    <string name="vitalis_philosophy_desc">The mathematics of biological age reversal.</string>
+    <string name="vitalis_targeted_interventions">TARGETED INTERVENTIONS</string>
+    <string name="vitalis_vitalis_os">VITALIS OS</string>
+    <string name="vitalis_physiological_sigh">PHYSIOLOGICAL SIGH</string>
+    <string name="vitalis_physiological_sigh_desc">Inhale deeply twice through nose, exhale long through mouth. This triggers immediate parasympathetic dominance.</string>
+    <string name="vitalis_abort_session">ABORT SESSION</string>
+    <string name="vitalis_navy_seal_protocol">NAVY SEAL PROTOCOL</string>
+    <string name="vitalis_box_breathing">BOX BREATHING</string>
+    <string name="vitalis_rep_counter">REP %1$d / %2$d</string>
+    <string name="vitalis_timed_intervention">TIMED INTERVENTION</string>
+    <string name="vitalis_log_completion">LOG COMPLETION</string>
+    <string name="vitalis_complete">COMPLETE</string>
+    <string name="vitalis_execution_steps">EXECUTION STEPS</string>
+    <string name="vitalis_log_protocol_completed">LOG PROTOCOL AS COMPLETED</string>
+
+    <!-- NEW LONGEVITY PROTOCOLS STRINGS -->
+    <string name="lp_autophagy_title">The Autophagy Cycle</string>
+    <string name="lp_autophagy_purpose">Trigger cellular "housecleaning" by recycling damaged proteins and clearing metabolic debris.</string>
+    <string name="lp_autophagy_step1">Initiate a 16-hour fasting window.</string>
+    <string name="lp_autophagy_step2">Consume 500ml of mineral-rich water during the fast.</string>
+    <string name="lp_autophagy_step3">Break fast with a high-protein, low-glycemic meal.</string>
+
+    <string name="lp_thermal_title">Thermal Hormesis (Contrast)</string>
+    <string name="lp_thermal_purpose">Activate Heat Shock Proteins (HSP) and brown fat to improve cardiovascular resilience.</string>
+    <string name="lp_thermal_step1">20 minutes of Sauna exposure (80°C+).</string>
+    <string name="lp_thermal_step2">Immediate 3-minute Cold Plunge or Shower (10°C).</string>
+    <string name="lp_thermal_step3">Rest for 10 minutes in a neutral environment.</string>
+
+    <string name="lp_vo2_title">Mitochondrial Forge (VO2 Max)</string>
+    <string name="lp_vo2_purpose">Maximum oxygen utilization to delay biological aging of the heart and lungs.</string>
+    <string name="lp_vo2_step1">5-minute progressive warm-up.</string>
+    <string name="lp_vo2_step2">4x4 Intervals: 4 mins at Max Intensity, 3 mins active recovery.</string>
+    <string name="lp_vo2_step3">Cool down with diaphragmatic breathing.</string>
+
+    <string name="lp_glycemic_title">Glycemic Stability Protocol</string>
+    <string name="lp_glycemic_purpose">Minimize insulin spikes to prevent protein glycation and preserve skin/organ elasticity.</string>
+    <string name="lp_glycemic_step1">Ingest 1 tbsp Apple Cider Vinegar in water before a carb-heavy meal.</string>
+    <string name="lp_glycemic_step2">15-minute brisk walk immediately after eating.</string>
+    <string name="lp_glycemic_step3">Prioritize fiber and protein before any starch consumption.</string>
+
+    <string name="lp_glymphatic_title">Glymphatic Reset</string>
+    <string name="lp_glymphatic_purpose">Optimize the brain\'s waste clearance system to prevent neurodegenerative accumulation.</string>
+    <string name="lp_glymphatic_step1">Zero blue light exposure 90 minutes before sleep.</string>
+    <string name="lp_glymphatic_step2">Lower room temperature to exactly 18°C.</string>
+    <string name="lp_glymphatic_step3">Sleep on your side to facilitate maximal cerebrospinal fluid flow.</string>
+
+    <string name="lp_apob_title">ApoB Lipid Scour</string>
+    <string name="lp_apob_purpose">Aggressive reduction of atherogenic particles to eliminate the risk of plaque buildup in arteries.</string>
+    <string name="lp_apob_step1">Increase soluble fiber intake to 30g+ daily (Psyllium/Oats).</string>
+    <string name="lp_apob_step2">Consume 2g of high-EPA Omega-3 fatty acids.</string>
+    <string name="lp_apob_step3">Perform 5 minutes of "Nitric Oxide Dumps" (Squats/Presses) to prime the endothelium.</string>
+
+    <string name="lp_skeletal_title">Skeletal Fortification</string>
+    <string name="lp_skeletal_purpose">Maximize bone mineral density and structural integrity to prevent age-related frailty.</string>
+    <string name="lp_skeletal_step1">Cumulative 3-minute "Dead Hang" from a pull-up bar.</string>
+    <string name="lp_skeletal_step2">Perform 10 minutes of heavy eccentric loading (Slow Squats/Push-ups).</string>
+    <string name="lp_skeletal_step3">Optimize Vitamin D3 + K2 levels for calcium signaling.</string>
+
+    <string name="lp_dna_title">DNA Methylation Shield</string>
+    <string name="lp_dna_purpose">Maximize DNA repair capacity and silence pro-inflammatory aging genes.</string>
+    <string name="lp_dna_step1">Ingest 100mg of Sulforaphane (Broccoli Sprouts) or concentrated cruciferous extract.</string>
+    <string name="lp_dna_step2">10 minutes of mindfulness to suppress cortisol-driven DNA damage.</string>
+    <string name="lp_dna_step3">Avoid all processed oils and charred meats for 24 hours.</string>
+
+    <string name="vitalis_biological_optimization">BIOLOGICAL OPTIMIZATION</string>
+    <string name="vitalis_intervention_logged">Intervention successfully logged. Your cellular markers have been updated.</string>
+    <string name="vitalis_continue_scan">CONTINUE SCAN</string>
+    <string name="vitalis_module_detail_domain">DOMAIN</string>
+    <string name="vitalis_neural_connectivity">NEURAL CONNECTIVITY</string>
+    <string name="vitalis_search_compounds">Search compounds…</string>
+    <string name="vitalis_clinically_indexed">CLINICALLY INDEXED</string>
+    <string name="vitalis_dictionary_desc">The Vitalis Dictionary contains data on nutrients, protocols, and modern pharmacology. Type to scan the evidence base.</string>
+    <string name="vitalis_clinical_rationale">CLINICAL RATIONALE</string>
+    <string name="vitalis_command">COMMAND</string>
+    <string name="vitalis_intel">INTEL</string>
+    <string name="vitalis_library">LIBRARY</string>
+    <string name="vitalis_back">Back</string>
+    <string name="vitalis_notifications">Notifications</string>
+    <string name="vitalis_syncing">Synchronizing</string>
+    <string name="vitalis_module_stress">Neuro-Endocrine &amp; Stress Resilience</string>
+    <string name="vitalis_module_physical">Musculoskeletal Integrity &amp; Mobility</string>
+    <string name="vitalis_module_cognitive">Cognitive Function &amp; Neural Plasticity</string>
+    <string name="vitalis_synchronization_progress">Synchronization in progress…</string>
+    <string name="vitalis_acute_neural_load">ACUTE NEURAL LOAD</string>
+    <string name="vitalis_physical_strain_index">PHYSICAL STRAIN INDEX</string>
+    <string name="vitalis_cognitive_reserve">COGNITIVE RESERVE</string>
+    <string name="vitalis_autonomic_balance">AUTONOMIC BALANCE</string>
+    <string name="vitalis_biochemical_status">BIOCHEMICAL STATUS</string>
+    <string name="vitalis_metabolic_efficiency">METABOLIC EFFICIENCY</string>
+    <string name="vitalis_regeneration_rate">REGENERATION RATE</string>
+    <string name="vitalis_phase_daytime">PHASE: DAYTIME OPTIMIZATION</string>
+    <string name="vitalis_phase_execution">PHASE: RECOVERY EXECUTION</string>
+    <string name="vitalis_phase_nocturnal">PHASE: NOCTURNAL REPAIR</string>
+    <string name="vitalis_project_vitalis">PROJECT VITALIS™</string>
+    <string name="vitalis_acute_neural_reset">ACUTE NEURAL RESET</string>
+
+    <!-- Verdict Labels -->
+    <string name="verdict_protect_label">PROTECT</string>
+    <string name="verdict_protect_signal">Optimal Bio-Marker</string>
+    <string name="verdict_caution_label">CAUTION</string>
+    <string name="verdict_caution_signal">Systemic Risk Detected</string>
+    <string name="verdict_unknown_label">UNKNOWN</string>
+    <string name="verdict_unknown_signal">Insufficient Clinical Data</string>
+
+    <!-- Dictionary Entries -->
+    <string name="ent_sauna">Sauna Therapy</string>
+    <string name="rat_sauna">Increases heat-shock proteins and supports cardiovascular health.</string>
+    <string name="ent_hiit">HIIT</string>
+    <string name="rat_hiit">Improves mitochondrial density and metabolic flexibility.</string>
+    <string name="ent_nmn">NMN</string>
+    <string name="rat_nmn">Essential NAD+ precursor for DNA repair and longevity.</string>
+    <string name="ent_magnesium">Magnesium</string>
+    <string name="rat_magnesium">Cofactor for 300+ enzymatic reactions and neural relaxation.</string>
+    <string name="ent_omega3">Omega-3</string>
+    <string name="rat_omega3">Reduces systemic inflammation and supports neural membrane integrity.</string>
+    <string name="ent_zone2">Zone 2 Training</string>
+    <string name="rat_zone2">Foundational aerobic base for longevity and mitochondrial health.</string>
+    <string name="ent_fasting">Intermittent Fasting</string>
+    <string name="rat_fasting">Triggers autophagy and improves insulin sensitivity.</string>
+    <string name="ent_alcohol">Alcohol</string>
+    <string name="rat_alcohol">Disrupts sleep architecture and causes metabolic ethanol load.</string>
+    <string name="ent_nicotine">Nicotine</string>
+    <string name="rat_nicotine">Causes acute vascular constriction and disrupts autonomic balance.</string>
+    <string name="ent_sugar">Refined Sugar</string>
+    <string name="rat_sugar">Primary driver of glycation and systemic low-grade inflammation.</string>
+    <string name="ent_nac">NAC (N-Acetyl Cysteine)</string>
+    <string name="rat_nac">Replenishes glutathione, the body\'s master antioxidant, critical for liver repair.</string>
+    <string name="ent_thiamine">Vitamin B1 (Thiamine)</string>
+    <string name="rat_thiamine">Critical for brain glucose metabolism; often depleted by alcohol consumption.</string>
+
+    <!-- Metabolic Activities -->
+    <string name="act_me1_title">Vinegar Glucose Buffer</string>
+    <string name="act_me1_ipre">1 tbsp Apple Cider Vinegar in 250ml water before your largest meal.</string>
+    <string name="act_me1_bio">Acetic acid inhibits alpha-amylase, slowing the breakdown of starch into glucose.</string>
+    <string name="act_me1_phys">Reduces post-prandial glucose spike by up to 30%%, preserving insulin sensitivity.</string>
+    <string name="act_me1_rsch">Clinical trials show that acetic acid significantly blunts the glycemic response when consumed 2-5 minutes before a carbohydrate load.</string>
+
+    <string name="act_me2_title">Post-Prandial Glycemic Walk</string>
+    <string name="act_me2_ipre">15-minute brisk walk immediately following a meal.</string>
+    <string name="act_me2_bio">Muscular contraction recruits GLUT4 transporters to the cell surface without requiring high insulin.</string>
+    <string name="act_me2_phys">Clears glucose from the bloodstream rapidly, preventing glycation of proteins.</string>
+    <string name="act_me2_rsch">Even a short walk is significantly more effective at glucose clearance than standing or sitting after a meal.</string>
+
+    <!-- Cognitive & Neural Longevity -->
+    <string name="act_co1_title">NSDR (Non-Sleep Deep Rest)</string>
+    <string name="act_co1_ipre">20 minutes of guided NSDR or Yoga Nidra.</string>
+    <string name="act_co1_bio">Shifts the brain from high-frequency beta waves to alpha/theta waves without sleep.</string>
+    <string name="act_co1_phys">Replenishes acetylcholine levels in the prefrontal cortex, enhancing neuroplasticity.</string>
+    <string name="act_co1_rsch">NSDR has been shown to increase dopamine levels in the nigrostriatal pathway by up to 65%%.</string>
+
+    <!-- Physical & Articular Integrity -->
+    <string name="act_ph1_title">Passive Hanging Protocol</string>
+    <string name="act_ph1_ipre">Perform 3x30s passive dead-hangs from a pull-up bar.</string>
+    <string name="act_ph1_bio">Decompresses the intervertebral discs and increases subacromial space in the shoulders.</string>
+    <string name="act_ph1_phys">Reverses the compressive effects of gravity and sedentary behavior on the spine.</string>
+    <string name="act_ph1_rsch">Regular hanging is a foundational practice for maintaining shoulder mobility and spinal health into late age.</string>
+
+    <string name="act_ph2_title">CARS (Controlled Articular Rotations)</string>
+    <string name="act_ph2_ipre">Perform full-range rotations for neck, shoulders, and hips.</string>
+    <string name="act_ph2_bio">Stimulates mechanoreceptors in the joint capsule and ensures synovial fluid distribution.</string>
+    <string name="act_ph2_phys">Prevents joint "locking" and maintains the "use it or lose it" range of motion.</string>
+    <string name="act_ph2_rsch">CARS are a daily maintenance requirement to map the joint workspace in the central nervous system.</string>
+
+    <!-- Phase labels -->
+    <string name="phase_morning">Morning</string>
+    <string name="phase_daytime">Daytime</string>
+    <string name="phase_evening">Evening</string>
+    <string name="phase_execution">Execution</string>
+
+    <!-- Sleep Activities -->
+    <string name="act_sl1_title">Immediate Wake Activation</string>
+    <string name="act_sl1_ipre">Exit bed within 120 seconds of waking.</string>
+    <string name="act_sl1_bio">Signals the brain to terminate sleep state and initiates Cortisol Awakening Response (CAR).</string>
+    <string name="act_sl1_phys">Prevents sleep inertia and resets metabolic clock for daily energy stability.</string>
+    <string name="act_sl1_rsch">Execute by placing your alarm device >3m from bed. This physical displacement forces verticality and triggers proprioceptive-vestibular activation, ensuring a sharp transition from parasympathetic to sympathetic dominance.</string>
+
+    <string name="act_sl2_title">SCN Photobiomodulation</string>
+    <string name="act_sl2_ipre">15m of bright natural light exposure.</string>
+    <string name="act_sl2_bio">Light triggers Suprachiasmatic Nucleus (SCN) to suppress melatonin and set the 16h timer for nocturnal release.</string>
+    <string name="act_sl2_phys">Essential for long-term circadian stability and prevention of seasonal affective disorders.</string>
+    <string name="act_sl2_rsch">Prioritize direct outdoor exposure without windows or sunglasses. If overcast, extend to 30m. This lux intensity is necessary to saturate melanopsin-containing retinal ganglion cells that govern your master clock.</string>
+
+    <string name="act_sl3_title">Melatonin Shield: Blue Light Fast</string>
+    <string name="act_sl3_ipre">Apply red filter to all screens or use blockers 120m before sleep.</string>
+    <string name="act_sl3_bio">Protects melanopsin-containing ganglion cells. Melatonin is a potent anti-carcinogenic antioxidant.</string>
+    <string name="act_sl3_phys">Maximizes nocturnal anti-cancer mechanisms and cellular repair.</string>
+    <string name="act_sl3_rsch">Apply \'Night Shift\' software and physical amber-tinted lenses. Even low-intensity blue light can suppress melatonin release for up to 90 minutes. Ensure all peripheral LEDs in the bedroom are covered or disabled.</string>
+
+    <string name="act_sl4_title">Glymphatic Thermal Trigger</string>
+    <string name="act_sl4_ipre">Lower bedroom temperature to 18°C (64°F).</string>
+    <string name="act_sl4_bio">A drop in core body temperature is the primary physiological trigger for entering N3 Deep Sleep.</string>
+    <string name="act_sl4_phys">Triggers glymphatic system to \'flush\' beta-amyloid, reducing Alzheimer\'s and dementia risk.</string>
+    <string name="act_sl4_rsch">Combine with a warm shower 90m before bed. The \'rebound\' vasodilation in hands and feet facilitates the necessary 1°C drop in core temperature required for neural waste-clearance cycles.</string>
+
+    <!-- Cardiovascular Activities -->
+    <string name="act_ca1_title">Orthostatic Vascular Priming</string>
+    <string name="act_ca1_ipre">Stand up immediately and perform 2m of light stretching.</string>
+    <string name="act_ca1_bio">Forces the vascular system to adapt to gravity, stimulating nitric oxide release in the endothelium.</string>
+    <string name="act_ca1_phys">Improves vascular compliance and reduces risk of orthostatic hypertension.</string>
+    <string name="act_ca1_rsch">Perform slow, controlled reaches toward the ceiling while breathing deeply. This mechanical stretching of large vessels increases shear stress on vessel walls, inducing eNOS activity.</string>
+
+    <!-- Recovery Live Activities -->
+    <string name="act_osmotic_title">Osmotic Loading</string>
+    <string name="act_osmotic_why">Alcohol suppresses vasopressin, causing massive dehydration. Electrolytes are required to restore osmotic pressure.</string>
+    <string name="act_osmotic_what">250ml water, sipped slowly every 20 seconds.</string>
+    <string name="act_osmotic_outcome">Stabilized cellular hydration and reduced post-alcohol brain fog.</string>
+    <string name="act_osmotic_prep_title">Preparation</string>
+    <string name="act_osmotic_prep_desc">Get 250ml water + electrolytes.</string>
+    <string name="act_osmotic_sip_title">Osmotic Sips</string>
+    <string name="act_osmotic_sip_desc">Slow sips every 20s for mucosal absorption.</string>
+    <string name="act_osmotic_impact">Hydration complete. Osmotic pressure stabilized. Liver filtration capacity increased by ~12%.</string>
+
+    <string name="act_pulmonary_title">Pulmonary Expansion</string>
+    <string name="act_pulmonary_why">Smoking reduces functional lung volume. Diaphragmatic breathing re-engages the lower lobes.</string>
+    <string name="act_pulmonary_what">Slow, deep belly breaths through the nose.</string>
+    <string name="act_pulmonary_outcome">Increased VO2 efficiency and reduced systemic vascular tension.</string>
+    <string name="act_pulmonary_posture_title">Posture</string>
+    <string name="act_pulmonary_posture_desc">Sit upright, hand on belly.</string>
+    <string name="act_pulmonary_ritual_title">Ritual</string>
+    <string name="act_pulmonary_ritual_desc">Deep belly inhale, slow exhale.</string>
+    <string name="act_pulmonary_impact">Lung capacity engaged. Oxygen saturation improved. Residual CO2 offloaded.</string>
+
+    <string name="act_vagal_title">Vagal Nerve Strike</string>
+    <string name="act_vagal_why">Cold exposure triggers the Mammalian Dive Reflex, immediately activating the parasympathetic branch.</string>
+    <string name="act_vagal_what">Apply cold water to the face/neck for 60 seconds.</string>
+    <string name="act_vagal_outcome">Immediate reduction in cortisol and resting heart rate.</string>
+    <string name="act_vagal_cold_title">Cold Exposure</string>
+    <string name="act_vagal_cold_desc">Splash face with cold water or use an ice pack on neck.</string>
+    <string name="act_vagal_impact">Nervous system regulated. Vagal tone improved. Heart rate stabilized.</string>
+
+    <string name="act_hepatic_title">Hepatic Phase II Load</string>
+    <string name="act_hepatic_why">Alcohol creates acetaldehyde. Phase II liver detox requires specific sulfur-containing compounds (NAC/Glutathione) to neutralize toxins.</string>
+    <string name="act_hepatic_what">Take NAC or eat broccoli sprouts with water.</string>
+    <string name="act_hepatic_outcome">Accelerated clearance of toxic alcohol byproducts and reduced liver strain.</string>
+    <string name="act_hepatic_loading_title">Nutrient Loading</string>
+    <string name="act_hepatic_loading_desc">Consume Cruciferous extracts or NAC with 200ml water.</string>
+    <string name="act_hepatic_impact">Phase II detoxification pathways primed. Glutathione precursors acknowledged.</string>
+
+    <string name="act_steam_title">Mucolytic Steam Protocol</string>
+    <string name="act_steam_why">Nicotine paralyzes the cilia in your lungs. Steam helps thin the mucus, making it easier to expectorate tar.</string>
+    <string name="act_steam_what">Inhale steam from a bowl of hot water or a humidifier.</string>
+    <string name="act_steam_outcome">Improved pulmonary clearance and reduced smoker\'s cough.</string>
+    <string name="act_steam_inhale_title">Steam Inhalation</string>
+    <string name="act_steam_inhale_desc">Inhale warm steam for deep bronchial reach.</string>
+    <string name="act_steam_impact">Tar-laden mucus thinned. Bronchial pathways moisturized.</string>
+
+    <string name="act_thiamine_title">Thiamine Saturation Ritual</string>
+    <string name="act_thiamine_why">Alcohol severely inhibits Thiamine (B1) absorption, which is critical for brain energy. Deficiency leads to neurological decline.</string>
+    <string name="act_thiamine_what">Take B1 supplement with a full glass of water.</string>
+    <string name="act_thiamine_outcome">Protection of Wernicke-Korsakoff pathways and improved cognitive clarity.</string>
+    <string name="act_thiamine_intake_title">Oral Intake</string>
+    <string name="act_thiamine_intake_desc">Take 100mg Thiamine with water.</string>
+    <string name="act_thiamine_impact">B1 levels stabilized. Cerebral glucose metabolism protected.</string>
+
+    <string name="act_inspiratory_title">Inspiratory Muscle Training</string>
+    <string name="act_inspiratory_why">Smoking weakens the primary respiratory muscles. Resistance training restores diaphragm power.</string>
+    <string name="act_inspiratory_what">Inhale deeply, then exhale through a small opening in your lips, creating resistance.</string>
+    <string name="act_inspiratory_outcome">Reduced breathlessness and improved thoracic mobility.</string>
+    <string name="act_inspiratory_res_title">Resistance</string>
+    <string name="act_inspiratory_res_desc">Breathe through pursed lips with moderate force.</string>
+    <string name="act_inspiratory_impact">Diaphragm strength increased. Accessory breathing muscles recruited.</string>
+
+    <string name="act_coherence_title">Heart-Rate Coherence</string>
+    <string name="act_coherence_why">Smoking and alcohol both increase resting HR. Coherence breathing trains the heart to oscillate in a healthy, regenerative pattern.</string>
+    <string name="act_coherence_what">Follow the visual for a perfectly timed 4-6 rhythm.</string>
+    <string name="act_coherence_outcome">Lowered systolic blood pressure and improved HRV.</string>
+    <string name="act_coherence_step_title">Coherence</string>
+    <string name="act_coherence_step_desc">4s inhale, 6s exhale. Smooth transition.</string>
+    <string name="act_coherence_impact">Autonomic balance reached. HRV increased. Cardiac load reduced.</string>
+
+    <string name="act_postural_title">Postural Drainage Protocol</string>
+    <string name="act_postural_why">Gravity helps move tar and mucus from the lower lung segments to the larger airways for clearance.</string>
+    <string name="act_postural_what">Use pillows to prop up your hips while lying on your front.</string>
+    <string name="act_postural_outcome">Deep lung clearance and improved oxygenation in the base of the lungs.</string>
+    <string name="act_postural_pos_title">Positioning</string>
+    <string name="act_postural_pos_desc">Lie with chest lower than hips. Breathe deep.</string>
+    <string name="act_postural_impact">Lower lung lobes cleared. Gravity-assisted mucus mobilization.</string>
+
+    <string name="act_reset_title">Parasympathetic Reset</string>
+    <string name="act_reset_why">Alcohol disrupts sleep architecture. 4-7-8 breathing is a biological \'off-switch\' for the sympathetic nervous system.</string>
+    <string name="act_reset_what">Inhale through nose (4s), hold (7s), exhale through mouth (8s).Log completion to update neural markers.</string>
+    <string name="act_reset_outcome">Rapid induction of the relaxation response for restorative sleep.</string>
+    <string name="act_reset_cycle_title">4-7-8 Cycle</string>
+    <string name="act_reset_cycle_desc">Inhale 4, Hold 7, Exhale 8.</string>
+    <string name="act_reset_impact">CNS down-regulated. Melatonin readiness optimized.</string>
+
+    <string name="act_sigh_title">Neural Reset (Sigh)</string>
+    <string name="act_sigh_why">Fastest biological way to down-regulate. Pops open collapsed alveoli.</string>
+    <string name="act_sigh_what">Double inhale + long, audile sigh.</string>
+    <string name="act_sigh_outcome">Shift from Sympathetic (fight/flight) to Parasympathetic dominance.</string>
+    <string name="act_sigh_cycle_title">Cycle</string>
+    <string name="act_sigh_cycle_desc">Double inhale, long exhale.</string>
+    <string name="act_sigh_impact">Vagal tone increased. Amygdala reactivity lowered.</string>
+
+    <string name="act_surfing_title">Neural Wave Navigation</string>
+    <string name="act_surfing_why">Cravings are neurochemical pulses. Observing them as waves prevents addiction loop reinforcement.</string>
+    <string name="act_surfing_what">Mindful observation of physical sensations in the throat/chest.</string>
+    <string name="act_surfing_outcome">Dopamine baseline recalibration and increased prefrontal control.</string>
+    <string name="act_surfing_step_title">Surfing</string>
+    <string name="act_surfing_step_desc">Observe the physical sensation without judgment.</string>
+    <string name="act_surfing_impact">Craving wave navigated. Addiction neural pathways weakened.</string>
+
+    <string name="act_circadian_title">Circadian Rhythm Lock</string>
+    <string name="act_circadian_why">Alcohol and nicotine fragment sleep architecture by suppressing REM and increasing core temperature. This ritual recalibrates the master clock.</string>
+    <string name="act_circadian_what">Follow the light pulse to signal the SCN (Suprachiasmatic Nucleus) for melatonin readiness.</string>
+    <string name="act_circadian_outcome">Improved sleep continuity and stabilized circadian signaling.</string>
+    <string name="act_circadian_step_title">SCN Sync</string>
+    <string name="act_circadian_step_desc">Match your gaze to the central light pulse. Dim environment required.</string>
+    <string name="act_circadian_impact">Circadian markers updated. Biological clock synchronized.</string>
+
+    <string name="act_dopamine_title">Dopamine Receptor Reset</string>
+    <string name="act_dopamine_why">Chronic substance use down-regulates D2 receptors. This ritual uses sensory-minimum stimuli to allow receptor sensitivity to return.</string>
+    <string name="act_dopamine_what">Focus on the singular point. Minimize all other sensory input. This allows reward circuits to cool down.</string>
+    <string name="act_dopamine_outcome">Restoration of prefrontal control and reduced impulse volatility.</string>
+    <string name="act_dopamine_step_title">Sensory Minimum</string>
+    <string name="act_dopamine_step_desc">Gaze at the pulse. Acknowledge and release external sensory noise.</string>
+    <string name="act_dopamine_impact">Reward circuit baseline reset. Prefrontal engagement increased.</string>
+
+    <!-- Stress Activities -->
+    <string name="act_st1_title">Acute Neural Reset (Sigh)</string>
+    <string name="act_st1_ipre">5 reps of \'Physiological Sigh\' (double inhale, long exhale).</string>
+    <string name="act_st1_bio">Rapidly offloads CO2 from blood, triggering a vagal signal to slow heart rate.</string>
+    <string name="act_st1_phys">Immediate down-regulation of the sympathetic (fight/flight) nervous system.</string>
+    <string name="act_st1_rsch">Inhale through nose until lungs are 90%% full, then take a second sharp inhale to pop open the alveoli. Exhale through mouth for double the length of inhale. This is the fastest way to lower HR.</string>
+
+    <!-- Area Strings -->
+    <string name="area_cardio">Cardiovascular Health</string>
+    <string name="area_metabolic">Metabolic Function</string>
+    <string name="area_cellular">Cellular Resilience</string>
+    <string name="area_neurological">Neurological Health</string>
+    <string name="area_vascular">Vascular Health</string>
+    <string name="area_systemic">Systemic Health</string>
+
+    <string name="cat_respiratory">Respiratory</string>
+    <string name="cat_liver">Liver</string>
+    <string name="cat_cardiovascular">Cardiovascular</string>
+    <string name="cat_metabolic">Metabolic</string>
+    <string name="cat_stress">Stress</string>
+    <string name="cat_behavioral">Behavioral</string>
+    <string name="cat_sleep_arch">Sleep Architecture</string>
+    <string name="cat_cognitive">Cognitive Repair</string>
+
+    <string name="audience_drinkers">Drinkers</string>
+    <string name="audience_smokers">Smokers</string>
+    <string name="audience_both">Both</string>
+
+    <string name="recovery_audience_alcohol">Alcohol Recovery</string>
+    <string name="recovery_audience_both_short">Dual Recovery</string>
+    <string name="recovery_audience_smoking_short">Nicotine Recovery</string>
+
+    <!-- Coach Strings -->
+    <string name="coach_chat_with_expert">Chat with Expert</string>
+    <string name="coach_hello">Hello! I am your IA Coach. I can help you understand your recovery path or manage anxiety. What is on your mind?</string>
+    <string name="coach_back_to_help">Back to Help</string>
+    <string name="coach_describe_feeling">Describe how you feel…</string>
+    <string name="coach_help_centre">Help Centre</string>
+    <string name="coach_expert_help">Expert Help</string>
+    <string name="coach_clinically_precise">Clinically Precise</string>
+    <string name="coach_real_time_support">Real-time Support</string>
+    <string name="coach_need_advice">Need Advice?</string>
+    <string name="coach_common_questions">Common Questions</string>
+    <string name="coach_research_insight">Research Insight</string>
+    <string name="coach_research_desc">New findings from HAC indicate that just 5 minutes of deep breathing can reduce nicotine-induced vascular constriction by up to 20%%.</string>
+
+    <!-- Intake Strings -->
+    <string name="intake_purge_confirm">Confirm Purge</string>
+    <string name="intake_purge_desc">This will permanently clear today\'s intake logs. Proceed?</string>
+    <string name="intake_logging_system">INTAKE LOGGING SYSTEM</string>
+    <string name="intake_tab_intake">INTAKE</string>
+    <string name="intake_tab_sleep">SLEEP</string>
+    <string name="intake_alcohol">Alcohol</string>
+    <string name="intake_smoking">Smoking</string>
+    <string name="intake_compare_period">Compare Period</string>
+    <string name="intake_weekly_load">Weekly Load</string>
+    <string name="intake_monthly_load">Monthly Load</string>
+    <string name="intake_analyzer_active">ANALYZER ACTIVE</string>
+    <string name="intake_bio_load_summary">BIO-LOAD SUMMARY</string>
+    <string name="intake_recovery_index_preview">Recovery Index Preview</string>
+    <string name="intake_standard_drinks">Standard Drinks</string>
+    <string name="intake_confirm_alcohol">CONFIRM ALCOHOL LOG</string>
+    <string name="intake_quantity_cigarettes">Quantity (Cigarettes)</string>
+    <string name="intake_confirm_smoking">CONFIRMS SMOKING LOG</string>
+    <string name="intake_sleep_alignment">Sleep &amp; Circadian Alignment</string>
+    <string name="intake_sleep_desc">Log your architecture to stabilize bio-regulation systems.</string>
+    <string name="intake_subjective_quality">Subjective Quality</string>
+    <string name="intake_bedtime_consistency">Bedtime Consistency</string>
+    <string name="intake_night_awakenings">Night Awakenings</string>
+    <string name="intake_integrate_sleep">INTEGRATE SLEEP DATA</string>
+    <string name="intake_duration_hours">Duration (Hours)</string>
+    <string name="intake_logged">%1$s Logged</string>
+    <string name="intake_alcohol_feedback">Your liver is currently processing toxins. Initiate hydration to support metabolic clearance.</string>
+    <string name="intake_smoking_feedback">Vascular strain is currently elevated. A breathing session will improve oxygen efficiency.</string>
+    <string name="intake_start_hydration">Start Hydration</string>
+    <string name="intake_liver_support">Liver Support</string>
+    <string name="intake_breathing_exercise">Breathing Exercise</string>
+    <string name="intake_return">Return</string>
+
+    <!-- Insights Strings -->
+    <string name="insights_behavioral_intelligence">BEHAVIORAL INTELLIGENCE</string>
+    <string name="insights_behavioral_trends">Behavioral Trends</string>
+    <string name="insights_clinical_interpretation">Clinical interpretation of your logged activity</string>
+    <string name="insights_intake_intensity">INTAKE INTENSITY</string>
+    <string name="insights_metabolic_load">Metabolic Load</string>
+    <string name="insights_liver_recovery">Liver Recovery</string>
+    <string name="insights_lung_health">Lung Health</string>
+    <string name="insights_resilience_dynamics">RESILIENCE DYNAMICS</string>
+    <string name="insights_system_stability">System Stability</string>
+    <string name="insights_review_protocol">Review Protocol</string>
+    <string name="insights_cause_effect">Cause &amp; Effect</string>
+    <string name="insights_physiological_reactions">Physiological Reactions</string>
+    <string name="insights_scientific_intelligence">Scientific Intelligence</string>
+    <string name="insights_latest_findings">Latest Findings</string>
+    <string name="insights_clinical_library">Clinical Library</string>
+    <string name="insights_peer_reviewed_guides">Peer-Reviewed Guides</string>
+    <string name="insights_intake_high_no_recovery">Your intake trends are high with zero recovery action. Hepatic filtration and lung repair are severely strained.</string>
+    <string name="insights_intake_high_recovery">High intake detected, but recovery protocols are active. Your actions are partially offsetting the metabolic load.</string>
+    <string name="insights_intake_low_recovery">Low intake and active recovery. Your biological systems are in an optimized state of cellular repair.</string>
+    <string name="insights_intake_stable">Intake levels are within stable recovery thresholds. Biological systems are maintaining equilibrium.</string>
+    <string name="insights_recovery_critical">Critical system strain. Immediate hydration and rest protocols required to stabilize neural function.</string>
+    <string name="insights_recovery_decreasing">Systemic stability is decreasing. Your score typically improves by 15%% when hydration tasks are completed.</string>
+    <string name="insights_recovery_progress">Recovery in progress. Hydration is supporting toxin clearance, but overall rest remains sub-optimal.</string>
+    <string name="insights_recovery_high">High resilience maintained. Your consistent hydration and rest protocols are successfully balancing metabolic stress.</string>
+    <string name="insights_recovery_stable">Stable recovery dynamics. Maintain current hydration and breathing protocols to ensure system balance.</string>
+    <string name="insights_urgent_hydration">URGENT: Hydration after alcohol increases recovery rate by 40%%.</string>
+    <string name="insights_success_hydration">SUCCESS: Hydration protocol is successfully accelerating toxin clearance.</string>
+    <string name="insights_vascular_stress">Vascular strain is high. Initiate breathing exercise to improve airflow.</string>
+    <string name="insights_breathing_reset">Breathing reset detected. Lung efficiency is improving.</string>
+    <string name="insights_low_hydration">Low hydration detected. Toxin clearance is not currently optimal.</string>
+    <string name="insights_high_consistency">High Consistency: Recovery score trending up due to active interventions.</string>
+    <string name="insights_equilibrium">Biological systems in equilibrium. Maintain current protocol.</string>
+    <string name="insights_alcohol_intake">Alcohol Intake</string>
+    <string name="insights_metabolic_ethanol">Metabolic ethanol load</string>
+    <string name="insights_hydration_active">Hydration Active</string>
+    <string name="insights_hydration_deficit">Hydration Deficit</string>
+    <string name="insights_accelerating_toxin">Accelerating toxin clearance</string>
+    <string name="insights_metabolic_delayed">Metabolic processing delayed</string>
+    <string name="insights_reduced_hangover">Reduced Hangover</string>
+    <string name="insights_increased_fatigue">Increased Fatigue</string>
+    <string name="insights_systemic_stability_returning">Systemic stability returning</string>
+    <string name="insights_neural_recovery_delayed">Neural recovery delayed</string>
+    <string name="insights_nicotine_intake">Nicotine Intake</string>
+    <string name="insights_vascular_constriction">Vascular constriction</string>
+    <string name="insights_breathing_protocol">Breathing Protocol</string>
+    <string name="insights_lung_stress">Lung Stress</string>
+    <string name="insights_increasing_oxygen">Increasing oxygen uptake</string>
+    <string name="insights_lower_oxygen">Lower oxygen efficiency</string>
+    <string name="insights_oxygen_stabilized">Oxygen Stabilized</string>
+    <string name="insights_recovery_slowed">Recovery Slowed</string>
+    <string name="insights_vascular_decreasing">Decreasing vascular strain</string>
+    <string name="insights_reduced_cellular">Reduced cellular repair</string>
+    <string name="insights_clean_protocol">Clean Protocol</string>
+    <string name="insights_zero_toxin">Zero toxin load</string>
+    <string name="insights_stable_equilibrium">Stable Equilibrium</string>
+    <string name="insights_optimal_system">Optimal system function</string>
+    <string name="insights_available_guides">Available Guides</string>
+    <string name="insights_rapid_repair">Rapid Repair</string>
+    <string name="insights_maximum_cellular">Maximum cellular restoration</string>
+    <string name="insights_pulmonary_restoration">Pulmonary Restoration Study</string>
+    <string name="insights_study_desc">Clinical data from HAC Centre confirms that 5-minute structured deep breathing protocols can offset acute vascular constriction by 20%% immediately following nicotine exposure.</string>
+    <string name="insights_access_publication">Access Full Publication</string>
+    <string name="insights_reach_out">Reach out to the HAC Research Centre team for any clinical feedback or questions.</string>
+    <string name="insights_hepatic_restoration">Hepatic Restoration</string>
+    <string name="insights_sleep_architecture">Sleep Architecture</string>
+    <string name="insights_intracellular_hydration">Intracellular Hydration</string>
+    <string name="insights_neuro_chemical">Neuro-Chemical Balance</string>
+    <string name="insights_questions_concerns">Questions or Concerns?</string>
+
+    <!-- Community Strings -->
+    <string name="community_hub">COMMUNITY HUB</string>
+    <string name="community_my_username">My Username: %1$s</string>
+    <string name="community_post_placeholder">Log a breakthrough or ask for support…</string>
+    <string name="community_tab_feed">GLOBAL FEED</string>
+    <string name="community_tab_inbox">PRIVATE INBOX</string>
+
+    <!-- Recovery Plan Screen -->
+    <string name="recovery_biological_resilience">BIOLOGICAL RESILIENCE</string>
+    <string name="recovery_live_time">LIVE TIME</string>
+    <string name="recovery_simulating">SIMULATING: %1$d:00</string>
+    <string name="recovery_biological_briefing">BIOLOGICAL BRIEFING</string>
+    <string name="recovery_daily_journey">DAILY RECOVERY JOURNEY</string>
+    <string name="recovery_daily_journey_desc">Follow your biological guide to optimize systemic restoration.</string>
+    <string name="recovery_cat_morning">MORNING: ACTIVATION</string>
+    <string name="recovery_cat_midday">MID-DAY: MAINTENANCE</string>
+    <string name="recovery_cat_afternoon">AFTERNOON: PROTECTION</string>
+    <string name="recovery_cat_evening">EVENING: RESTORATION</string>
+    <string name="recovery_cat_night">NIGHT: DEEP RECOVERY</string>
+    <string name="recovery_status_recommended">RECOMMENDED NOW</string>
+    <string name="recovery_status_scheduled">SCHEDULED</string>
+    <string name="recovery_targeted_repair">TARGETED REPAIR</string>
+    <string name="recovery_cat_liver_metabolic">LIVER &amp; METABOLIC</string>
+    <string name="recovery_cat_cardiovascular">CARDIOVASCULAR</string>
+    <string name="recovery_cat_respiratory">RESPIRATORY</string>
+    <string name="recovery_cat_metabolic">METABOLIC</string>
+    <string name="recovery_cat_sleep_arch">SLEEP ARCHITECTURE</string>
+    <string name="recovery_cat_cognitive">COGNITIVE REPAIR</string>
+    <string name="recovery_cat_behavioral">BEHAVIORAL</string>
+    <string name="recovery_cat_priority">PRIORITY</string>
+
+    <!-- Resilience Systems -->
+    <string name="recovery_system_hepatic_name">Hepatic Resilience</string>
+    <string name="recovery_system_hepatic_desc">Liver detoxification efficiency and metabolic throughput.</string>
+    <string name="recovery_system_pulmonary_name">Pulmonary Power</string>
+    <string name="recovery_system_pulmonary_desc">Lung capacity and oxygen-CO2 exchange efficiency.</string>
+    <string name="recovery_system_neural_name">Neural Stability</string>
+    <string name="recovery_system_neural_desc">Neurotransmitter balance and executive control over cravings.</string>
+    <string name="recovery_system_vascular_name">Vascular Integrity</string>
+    <string name="recovery_system_vascular_desc">Heart rate variability and blood pressure regulation.</string>
+
+    <!-- Biological Briefings -->
+    <string name="briefing_critical_toxicity">Systemic toxicity is CRITICAL. Your liver is under heavy oxidative stress. Prioritize hydration and B1 immediately to prevent cognitive fog.</string>
+    <string name="briefing_moderate_inflammation">Moderate inflammation detected. Metabolic throughput is slowed. Focus on Hepatic and Vascular protocols today.</string>
+    <string name="briefing_vascular_constriction">Vascular constriction is high. Oxygen saturation may be compromised. Focus on Pulmonary rituals to clear mucus and restore airflow.</string>
+    <string name="briefing_neural_depletion">Neural reserves are depleted. Expect high irritability and cravings. Use the Dopamine Reset and Vagal rituals to stabilize.</string>
+    <string name="briefing_excellent_compliance">Excellent biological compliance. Your systems are entering a state of stable homeostasis. Maintain the momentum.</string>
+    <string name="briefing_default">Your biological journey is underway. Follow the recommended protocols to optimize your systemic recovery.</string>
+
+    <!-- Task Titles and Descriptions (Mapping for Engine) -->
+    <string name="act_h1_title">Morning Hydration</string>
+    <string name="act_h1_desc">Drink 300ml water + pinch of sea salt. Rehydrates your brain after sleep.</string>
+    <string name="act_h4_title">Thiamine Saturation (B1)</string>
+    <string name="act_h4_desc">Kickstart energy metabolism. Vital for alcohol recovery.</string>
+    <string name="act_cc2_title">Sunlight &amp; Movement</string>
+    <string name="act_cc2_desc">5-10 min walk or stretching. Resets your circadian rhythm.</string>
+    <string name="act_rl1_title">Oxygen Loading</string>
+    <string name="act_rl1_desc">3 mins Diaphragmatic breathing. Clears lungs and increases alertness.</string>
+    <string name="act_mn1_title">Blood Sugar Anchor</string>
+    <string name="act_mn1_desc">High-protein lunch. Prevents energy crashes and mid-day cravings.</string>
+    <string name="act_cc3_title">Vagal Reset (Cold Splash)</string>
+    <string name="act_cc3_desc">Splash cold water on face. Lowers cortisol and resets focus.</string>
+    <string name="act_cc1_title">Coherent Breathing</string>
+    <string name="act_cc1_desc">4-2-6 breathing for 2 mins. Stabilizes heart rate during work.</string>
+    <string name="act_mn5_title">Omega-3 Loading</string>
+    <string name="act_mn5_desc">Supports brain repair and lowers systemic inflammation.</string>
+    <string name="act_cc4_title">Nitric Oxide Boost</string>
+    <string name="act_cc4_desc">Beetroot juice or leafy greens. Improves circulation and BP.</string>
+    <string name="act_nc2_title">Cognitive Drill</string>
+    <string name="act_nc2_desc">5-min focus exercise to strengthen executive function.</string>
+    <string name="act_ng1_title">Microbiome Support</string>
+    <string name="act_ng1_desc">Probiotics/Fermented foods. Heals gut-lining damaged by alcohol.</string>
+    <string name="act_rl5_title">Lung Detox Steam</string>
+    <string name="act_rl5_desc">Steam inhalation to thin and clear mucus (for smokers).</string>
+    <string name="act_nc1_title">Dopamine Fast</string>
+    <string name="act_nc1_desc">No screens for 15 mins. Recalibrates reward circuits.</string>
+    <string name="act_rc_sl4_title">Magnesium Support</string>
+    <string name="act_rc_sl4_desc">Magnesium Glycinate. Relaxes muscles and aids deep REM sleep.</string>
+    <string name="act_rc_sl1_title">Parasympathetic Switch</string>
+    <string name="act_rc_sl1_desc">4-7-8 breathing. Signals your body it\'s safe to sleep.</string>
+    <string name="act_rc_sl2_title">Body Scan Meditation</string>
+    <string name="act_rc_sl2_desc">Guided meditation to lower nocturnal cortisol levels.</string>
+    <string name="act_h2_title">Nutrient Support (B/C/NAC)</string>
+    <string name="act_h2_desc">Take B-Complex, Vitamin C, or NAC. Supports liver enzyme repair.</string>
+    <string name="act_lv1_title">Cruciferous Detox Loading</string>
+    <string name="act_lv1_desc">Eat broccoli/sprouts to activate Phase II liver detoxification.</string>
+    <string name="act_rl4_title">Inspiratory Muscle Training</string>
+    <string name="act_rl4_desc">Resistance breathing to strengthen the diaphragm muscles.</string>
+    <string name="act_rl3_title">Postural Drainage</string>
+    <string name="act_rl3_desc">Guided positioning to clear mucus from lower lung lobes.</string>
+    <string name="act_mn4_title">Meal Structure Compliance</string>
+    <string name="act_mn4_desc">Ensure Protein + Fiber focus with controlled carbohydrates.</string>
+    <string name="act_nc3_title">Glutamate/GABA Balance</string>
+    <string name="act_nc3_desc">L-Theanine intake to manage neurological hyperexcitability.</string>
+    <string name="act_bh1_title">Micro-Habit: Water Replace</string>
+    <string name="act_bh1_desc">Replace intake urge with mindful hydration.</string>
+    <string name="act_bh3_title">Urge Surfing Exercise</string>
+    <string name="act_bh3_desc">Witness craving sensations without judgement or action.</string>
+    <string name="act_bh2_title">Craving Delay Timer</string>
+    <string name="act_bh2_desc">Initiate a 5-minute delay to let the craving wave pass.</string>
+    <string name="act_p1_title">Hydrate Now</string>
+    <string name="act_p1_desc">URGENT: Body dehydrated. Drink 250ml water now.</string>
+    <string name="act_p2_title">Nutrient Support</string>
+    <string name="act_p2_desc">CRITICAL: Liver support needed (B-vitamins/Electrolytes).</string>
+    <string name="act_p3_title">Lung Reset</string>
+    <string name="act_p3_desc">VASCULAR ALERT: High lung stress. Do deep breathing now.</string>
+    <string name="act_p6_title">Vagal Reset</string>
+    <string name="act_p6_desc">EXPERT TIP: Use cold water to reset your nervous system.</string>
+    <string name="recovery_lvl">LVL</string>
+
+</resources>

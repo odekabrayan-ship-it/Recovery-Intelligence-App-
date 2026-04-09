@@ -1,0 +1,413 @@
+<resources>
+    <string name="app_name">Recovery Intelligence</string>
+
+    <!-- التنقل -->
+    <string name="nav_home">الرئيسية</string>
+    <string name="nav_recovery">التعافي</string>
+    <string name="nav_insights">الرؤى</string>
+    <string name="nav_coach">مساعدة الخبراء</string>
+
+    <!-- الإعدادات والملف الشخصي -->
+    <string name="settings_language">اللغة</string>
+    <string name="settings_logout">إعادة ضبط الجلسة</string>
+    <string name="settings_delete_account">حذف جميع البيانات</string>
+    <string name="settings_select_language">اختر اللغة</string>
+    <string name="settings_account_mgmt">إدارة التطبيق</string>
+    <string name="settings_security">الأمان</string>
+    <string name="settings_close">إغلاق</string>
+    <string name="settings_cancel">إلغاء</string>
+    <string name="settings_confirm_delete">تأكيد مسح البيانات</string>
+    <string name="settings_apply">تأكيد الانتقال</string>
+    <string name="settings_delete_warning">تحذير: سيؤدي هذا الإجراء إلى إزالة جميع سجلاتك الصحية وبياناتك البيولوجية وتقدم التعافي نهائياً من هذا الجهاز. لا يمكن التراجع عن هذا الإجراء.</string>
+
+    <!-- شاشة الملف الشخصي -->
+    <string name="profile_title">ملف التعافي الخاص بي</string>
+    <string name="profile_save">حفظ</string>
+    <string name="profile_edit">تعديل الملف الشخصي</string>
+    <string name="profile_full_name">اسم العرض</string>
+    <string name="profile_username">المعرف الداخلي</string>
+    <string name="profile_copy_username">نسخ المعرف</string>
+    <string name="profile_share_profile">مشاركة التطبيق</string>
+    <string name="profile_share_text">انضم إلي في Recovery Intelligence لتحسين بيولوجي يركز على الخصوصية.</string>
+    <string name="profile_username_copied">تم نسخ المعرف إلى الحافظة</string>
+    <string name="profile_bio">السيرة الذاتية</string>
+    <string name="profile_location">الموقع</string>
+    <string name="profile_gender">الجنس</string>
+    <string name="profile_age">Age</string>
+    <string name="profile_security_privacy">الأمان والخصوصية</string>
+    <string name="profile_pin_protection">الحماية برمز PIN</string>
+    <string name="profile_biometric_login">تسجيل الدخول البيومتري</string>
+    <string name="profile_privacy_policy">سياسة الخصوصية</string>
+    <string name="profile_medical_disclaimer">إخلاء المسؤولية الطبي</string>
+    <string name="medical_disclaimer_text">يوفر Recovery Intelligence بروتوكولات التحسين البيولوجي لأغراض إعلامية فقط. وهو ليس بديلاً عن المشورة الطبية المهنية أو التشخيص أو العلاج. اطلب دائماً مشورة طبيبك قبل البدء في أي بروتوكول صحي جديد.</string>
+    <string name="profile_local_storage_warning">تخزين محلي فقط: تبقى بياناتك على هذا الجهاز. في حال حذف التطبيق، لا يمكن استعادة البيانات.</string>
+    <string name="profile_set_pin_title">تعيين قفل رمز PIN</string>
+    <string name="profile_set_pin_desc">أدخل رمز PIN من 4-6 أرقام لحماية بياناتك المحلية.</string>
+    <string name="profile_pin_label">رمز PIN</string>
+    <string name="profile_set_pin_button">تعيين رمز PIN</string>
+    <string name="profile_not_set">لم يتم التعيين</string>
+
+    <!-- إضافات شاشة القفل -->
+    <string name="lock_wrong_pin">رمز PIN غير صحيح. يرجى المحاولة مرة أخرى.</string>
+    <string name="lock_forgot_pin">نسيت رمز PIN؟</string>
+    <string name="lock_reset_title">إعادة ضبط الوصول للتطبيق</string>
+    <string name="lock_reset_desc">لإعادة ضبط رمز PIN الخاص بك، يجب علينا مسح جميع البيانات الصحية المخزنة محلياً لدواعي أمنية. لا يمكن التراجع عن هذا الإجراء. هل ترغب في المتابعة؟</string>
+    <string name="lock_reset_confirm">مسح البيانات وإعادة الضبط</string>
+
+    <!-- الشاشة الرئيسية -->
+    <string name="home_biological_command">BIOLOGICAL COMMAND</string>
+    <string name="home_hello">مرحباً، %1$s</string>
+    <string name="home_mandatory_triad">MANDATORY DAILY TRIAD</string>
+    <string name="home_triad_subtitle">بروتوكولات بقيادة خبراء للإصلاح الفسيولوجي الفوري</string>
+    <string name="home_core_systems">Core Biological Systems</string>
+    <string name="home_systems_subtitle">الحالة السريرية بناءً على البيانات الحديثة</string>
+    <string name="home_recovery_toolkit">Recovery Toolkit</string>
+    <string name="home_toolkit_subtitle">إجراءات سريعة لتحسين المقاييس</string>
+    <string name="home_recovery_index">RECOVERY INDEX</string>
+    <string name="home_recovery_desc">الاستعداد الفسيولوجي العام للإصلاح الخلوي وإزالة السموم.</string>
+    <string name="home_streak_title">%1$d DAY RECOVERY STREAK</string>
+    <string name="home_streak_desc">أنت ضمن أفضل 5%% من المستخدمين من حيث الاتساق البيولوجي هذا الأسبوع. حافظ على البروتوكول الحالي لاستقرار الأعصاب.</string>
+    <string name="home_live_tag">LIVE</string>
+    <string name="home_category_sleep">النوم</string>
+    <string name="home_category_metabolic">التمثيل الغذائي</string>
+    <string name="home_category_vascular">الأوعية الدموية</string>
+
+    <!-- فيتاليس والمحرك -->
+    <string name="vitalis_command_center">VITALIS ENGINE</string>
+    <string name="vitalis_bio_intel">BIO-INTEL</string>
+    <string name="vitalis_protocols">PROTOCOLS</string>
+    <string name="vitalis_evidence_base">EVIDENCE BASE</string>
+    <string name="vitalis_domain_analysis">DOMAIN ANALYSIS</string>
+    <string name="vitalis_optimal">Optimal</string>
+    <string name="vitalis_initiate_intervention">INITIATE INTERVENTION</string>
+    <string name="vitalis_session_complete">اكتملت الجلسة</string>
+    <string name="vitalis_inhale">INHALE</string>
+    <string name="vitalis_hold">HOLD</string>
+    <string name="vitalis_exhale">EXHALE</string>
+
+    <!-- Recovery Live Activities -->
+    <string name="act_osmotic_title">التحميل التناضحي</string>
+    <string name="act_osmotic_why">يثبط الكحول هرمون الفازوبريسين، مما يسبب جفافاً شديداً. الأملاح ضرورية لاستعادة الضغط التناضحي.</string>
+    <string name="act_osmotic_what">250 مل من الماء، يتم رشفه ببطء كل 20 ثانية.</string>
+    <string name="act_osmotic_outcome">استقرار ترطيب الخلايا وتقليل ضباب الدماغ بعد الكحول.</string>
+    <string name="act_osmotic_prep_title">التحضير</string>
+    <string name="act_osmotic_prep_desc">أحضر 250 مل ماء + أملاح تعويض الجفاف.</string>
+    <string name="act_osmotic_sip_title">رشفات تناضحية</string>
+    <string name="act_osmotic_sip_desc">رشفات بطيئة كل 20 ثانية للامتصاص الغشائي.</string>
+    <string name="act_osmotic_impact">اكتمل الترطيب. استقرار الضغط التناضحي. زيادة قدرة الكبد على التصفية بنسبة ~12%.</string>
+
+    <string name="act_pulmonary_title">التوسع الرئوي</string>
+    <string name="act_pulmonary_why">يقلل التدخين من حجم الرئة الوظيفي. التنفس الحجابي يعيد تنشيط الفصوص السفلية.</string>
+    <string name="act_pulmonary_what">تنفس بطني عميق وبطيء من خلال الأنف.</string>
+    <string name="act_pulmonary_outcome">زيادة كفاءة استهلاك الأكسجين وتقليل التوتر الوعائي الجهازي.</string>
+    <string name="act_pulmonary_posture_title">الوضعية</string>
+    <string name="act_pulmonary_posture_desc">اجلس بشكل مستقيم، ضع يدك على بطنك.</string>
+    <string name="act_pulmonary_ritual_title">الطقس</string>
+    <string name="act_pulmonary_ritual_desc">شهيق بطني عميق، زفير بطيء.</string>
+    <string name="act_pulmonary_impact">تفعيل سعة الرئة. تحسن تشبع الأكسجين. التخلص من ثاني أكسيد الكربون المتبقي.</string>
+
+    <string name="act_vagal_title">تحفيز العصب المبهم</string>
+    <string name="act_vagal_why">يؤدي التعرض للبرد إلى تفعيل منعكس الغطس، مما ينشط الجهاز العصبي اللاودّي فوراً.</string>
+    <string name="act_vagal_what">ضع ماءً بارداً على الوجه/الرقبة لمدة 60 ثانية.</string>
+    <string name="act_vagal_outcome">انخفاض فوري في الكورتيزول ومعدل ضربات القلب أثناء الراحة.</string>
+    <string name="act_vagal_cold_title">التعرض للبرد</string>
+    <string name="act_vagal_cold_desc">رش الوجه بماء بارد أو استخدم كيس ثلج على الرقبة.</string>
+    <string name="act_vagal_impact">تنظيم الجهاز العصبي. تحسن نغمة العصب المبهم. استقرار ضربات القلب.</string>
+
+    <string name="act_hepatic_title">تحميل الكبد للمرحلة الثانية</string>
+    <string name="act_hepatic_why">ينتج الكحول مادة الأسيتالدهيد. تتطلب المرحلة الثانية من إزالة سموم الكبد مركبات كبريتية معينة لمعادلة السموم.</string>
+    <string name="act_hepatic_what">تناول NAC أو مستخلصات الخضروات الصليبية مع الماء.</string>
+    <string name="act_hepatic_outcome">تسريع التخلص من نواتج الكحول السامة وتقليل إجهاد الكبد.</string>
+    <string name="act_hepatic_loading_title">تحميل المغذيات</string>
+    <string name="act_hepatic_loading_desc">تناول مستخلصات الصليبيات أو NAC مع 200 مل ماء.</string>
+    <string name="act_hepatic_impact">تمهيد مسارات إزالة السموم للمرحلة الثانية. استلام بوادر الجلوتاثيون.</string>
+
+    <string name="act_steam_title">بروتوكول البخار المذيب للبلغم</string>
+    <string name="act_steam_why">يشل النيكوتين الأهداب في الرئتين. يساعد البخار في تسييل البلغم، مما يسهل طرد القطران.</string>
+    <string name="act_steam_what">استنشق بخاراً دافئاً من وعاء ماء ساخن أو جهاز ترطيب.</string>
+    <string name="act_steam_outcome">تحسين التصفية الرئوية وتقليل سعال المدخنين.</string>
+    <string name="act_steam_inhale_title">استنشاق البخار</string>
+    <string name="act_steam_inhale_desc">استنشق بخاراً دافئاً للوصول العميق إلى الشعب الهوائية.</string>
+    <string name="act_steam_impact">تسييل البلغم المحمل بالقطران. ترطيب المسالك الهوائية.</string>
+
+    <string name="act_thiamine_title">طقس إشباع الثيامين</string>
+    <string name="act_thiamine_why">يثبط الكحول بشدة امتصاص الثيامين (B1)، وهو ضروري لطاقة الدماغ. يؤدي نقصه إلى تدهور عصبي.</string>
+    <string name="act_thiamine_what">تناول مكمل B1 مع كوب كامل من الماء.</string>
+    <string name="act_thiamine_outcome">حماية مسارات فيرنيكه-كورساكوف وتحسين الوضوح المعرفي.</string>
+    <string name="act_thiamine_intake_title">التناول الفموي</string>
+    <string name="act_thiamine_intake_desc">تناول 100 مجم من الثيامين مع الماء.</string>
+    <string name="act_thiamine_impact">استقرار مستويات B1. حماية التمثيل الغذائي للجلوكوز في الدماغ.</string>
+
+    <string name="act_inspiratory_title">تدريب عضلات الشهيق</string>
+    <string name="act_inspiratory_why">يضعف التدخين العضلات التنفسية الأساسية. تدريب المقاومة يستعيد قوة الحجاب الحاجز.</string>
+    <string name="act_inspiratory_what">شهيق عميق، ثم زفير عبر فتحة صغيرة بين الشفتين لخلق مقاومة.</string>
+    <string name="act_inspiratory_outcome">تقليل ضيق التنفس وتحسين الحركة الصدرية.</string>
+    <string name="act_inspiratory_res_title">المقاومة</string>
+    <string name="act_inspiratory_res_desc">تنفس عبر شفاه مضمومة بقوة متوسطة.</string>
+    <string name="act_inspiratory_impact">زيادة قوة الحجاب الحاجز. تفعيل العضلات التنفسية المساعدة.</string>
+
+    <string name="act_coherence_title">تناغم ضربات القلب</string>
+    <string name="act_coherence_why">يزيد التدخين والكحول من ضربات القلب أثناء الراحة. يدرب تنفس التناغم القلب على النبض بنمط صحي ومتجدد.</string>
+    <string name="act_coherence_what">اتبع المؤشر البصري لإيقاع 4-6 مثالي.</string>
+    <string name="act_coherence_outcome">خفض ضغط الدم الانقباضي وتحسين HRV.</string>
+    <string name="act_coherence_step_title">التناغم</string>
+    <string name="act_coherence_step_desc">شهيق 4 ثوانٍ، زفير 6 ثوانٍ. انتقال سلس.</string>
+    <string name="act_coherence_impact">تحقيق التوازن الذاتي. زيادة HRV. تقليل الحمل القلبي.</string>
+
+    <string name="act_postural_title">بروتوكول التصريف الموضعي</string>
+    <string name="act_postural_why">تساعد الجاذبية في تحريك القطران والبلغم من فصوص الرئة السفلية إلى الممرات الهوائية الكبيرة للتخلص منها.</string>
+    <string name="act_postural_what">استخدم الوسائد لرفع الوركين أثناء الاستلقاء على بطنك.</string>
+    <string name="act_postural_outcome">تصفية عميقة للرئة وتحسين الأكسجين في قاعدة الرئتين.</string>
+    <string name="act_postural_pos_title">الوضعية</string>
+    <string name="act_postural_pos_desc">استلقِ بحيث يكون الصدر أخفض من الوركين. تنفس بعمق.</string>
+    <string name="act_postural_impact">تصفية فصوص الرئة السفلية. تحريك البلغم بمساعدة الجاذبية.</string>
+
+    <string name="act_reset_title">إعادة الضبط اللاودّي</string>
+    <string name="act_reset_why">يقطع الكحول بنية النوم. تنفس 4-7-8 هو "مفتاح إيقاف" بيولوجي للجهاز العصبي الودّي.</string>
+    <string name="act_reset_what">شهيق أنفي (4ث)، كتم (7ث)، زفير فموي (8ث). سجل الإتمام لتحديث المؤشرات العصبية.</string>
+    <string name="act_reset_outcome">تحفيز سريع لاستجابة الاسترخاء لنوم متجدد.</string>
+    <string name="act_reset_cycle_title">دورة 4-7-8</string>
+    <string name="act_reset_cycle_desc">شهيق 4، كتم 7، زفير 8.</string>
+    <string name="act_reset_impact">خفض نشاط الجهاز العصبي المركزي. تحسين الاستعداد للميلاتونين.</string>
+
+    <string name="act_sigh_title">إعادة الضبط العصبي (تنهيدة)</string>
+    <string name="act_sigh_why">أسرع طريقة بيولوجية لخفض النشاط. يفتح الحويصلات الهوائية المنكمشة.</string>
+    <string name="act_sigh_what">شهيق مزدوج + تنهيدة طويلة ومسموعة.</string>
+    <string name="act_sigh_outcome">الانتقال من هيمنة الجهاز الودّي (الكر والفر) إلى اللاودّي.</string>
+    <string name="act_sigh_cycle_title">الدورة</string>
+    <string name="act_sigh_cycle_desc">شهيق مزدوج، زفير طويل.</string>
+    <string name="act_sigh_impact">زيادة نغمة العصب المبهم. خفض استجابة اللوزة الدماغية.</string>
+
+    <string name="act_surfing_title">التنقل في الموجة العصبية</string>
+    <string name="act_surfing_why">الرغبات الملحة هي نبضات كيميائية عصبية. مراقبتها كموجات تمنع تعزيز حلقة الإدمان.</string>
+    <string name="act_surfing_what">مراقبة واعية للأحاسيس الجسدية في الحلق/الصدر.</string>
+    <string name="act_surfing_outcome">إعادة معايرة خط أساس الدوبامين وزيادة التحكم في القشرة الأمامية.</string>
+    <string name="act_surfing_step_title">التنقل</string>
+    <string name="act_surfing_step_desc">راقب الإحساس الجسدي دون إطلاق أحكام.</string>
+    <string name="act_surfing_impact">تجاوز موجة الرغبة. إضعاف المسارات العصبية للإدمان.</string>
+
+    <string name="act_circadian_title">قفل الإيقاع اليوماوي</string>
+    <string name="act_circadian_why">يفتت الكحول والنيكوتين بنية النوم من خلال تثبيط حركة العين السريعة وزيادة درجة حرارة الجسم الأساسية.</string>
+    <string name="act_circadian_what">اتبع نبض الضوء لإرسال إشارة لنواة التأقلم (SCN) للاستعداد للميلاتونين.</string>
+    <string name="act_circadian_outcome">تحسين استمرارية النوم واستقرار الإشارات اليوماوية.</string>
+    <string name="act_circadian_step_title">مزامنة SCN</string>
+    <string name="act_circadian_step_desc">طابق نظرك مع نبض الضوء المركزي. تتطلب بيئة خافتة.</string>
+    <string name="act_circadian_impact">تحديث المؤشرات اليوماوية. مزامنة الساعة البيولوجية.</string>
+
+    <string name="act_dopamine_title">إعادة ضبط مستقبِل الدوبامين</string>
+    <string name="act_dopamine_why">يؤدي الاستخدام المزمن للمواد إلى خفض تنظيم مستقبلات D2. يستخدم هذا الطقس محفزات حسية دنيا للسماح بعودة حساسية المستقبلات.</string>
+    <string name="act_dopamine_what">ركز على النقطة المفردة. قلل من جميع المدخلات الحسية الأخرى.</string>
+    <string name="act_dopamine_outcome">استعادة التحكم في القشرة الأمامية وتقليل تقلب الاندفاعات.</string>
+    <string name="act_dopamine_step_title">الحد الأدنى الحسي</string>
+    <string name="act_dopamine_step_desc">انظر إلى النبض. اعترف بالضجيج الحسي الخارجي وحرره.</string>
+    <string name="act_dopamine_impact">إعادة ضبط خط أساس دائرة المكافأة. زيادة مشاركة القشرة الأمامية.</string>
+
+    <string name="cat_respiratory">Respiratory</string>
+    <string name="cat_liver">Liver</string>
+    <string name="cat_cardiovascular">Cardiovascular</string>
+    <string name="cat_metabolic">Metabolic</string>
+    <string name="cat_stress">Stress</string>
+    <string name="cat_behavioral">Behavioral</string>
+    <string name="cat_sleep_arch">Sleep Architecture</string>
+    <string name="cat_cognitive">Cognitive Repair</string>
+
+    <string name="audience_drinkers">Drinkers</string>
+    <string name="audience_smokers">Smokers</string>
+    <string name="audience_both">Both</string>
+
+    <!-- المدرب -->
+    <string name="coach_help_centre">Help Centre</string>
+    <string name="coach_expert_help">Expert Help</string>
+    <string name="coach_clinically_precise">Clinically Precise</string>
+    <string name="coach_real_time_support">Real-time Support</string>
+    <string name="coach_need_advice">Need Advice?</string>
+    <string name="coach_chat_with_expert">Chat with Expert</string>
+    <string name="coach_back_to_help">Back to Help</string>
+    <string name="coach_describe_feeling">Describe how you feel…</string>
+    <string name="coach_hello">Hello! I am your IA Coach. I can help you understand your recovery path or manage anxiety. What is on your mind?</string>
+    <string name="coach_research_insight">Research Insight</string>
+    <string name="coach_research_desc">New findings from HAC indicate that just 5 minutes of deep breathing can reduce nicotine-induced vascular constriction by up to 20%%.</string>
+
+    <!-- الرؤى -->
+    <string name="insights_behavioral_intelligence">BEHAVIORAL INTELLIGENCE</string>
+    <string name="insights_behavioral_trends">Behavioral Trends</string>
+    <string name="insights_clinical_interpretation">Clinical interpretation of your logged activity</string>
+    <string name="insights_intake_intensity">INTAKE INTENSITY</string>
+    <string name="insights_metabolic_load">Metabolic Load</string>
+    <string name="insights_liver_recovery">Liver Recovery</string>
+    <string name="insights_lung_health">Lung Health</string>
+    <string name="insights_resilience_dynamics">RESILIENCE DYNAMICS</string>
+    <string name="insights_system_stability">System Stability</string>
+    <string name="insights_review_protocol">Review Protocol</string>
+    <string name="insights_cause_effect">Cause &amp; Effect</string>
+    <string name="insights_physiological_reactions">Physiological Reactions</string>
+    <string name="insights_scientific_intelligence">Scientific Intelligence</string>
+    <string name="insights_latest_findings">Latest Findings</string>
+    <string name="insights_clinical_library">Clinical Library</string>
+    <string name="insights_peer_reviewed_guides">Peer-Reviewed Guides</string>
+    <string name="insights_intake_high_no_recovery">Your intake trends are high with zero recovery action. Hepatic filtration and lung repair are severely strained.</string>
+    <string name="insights_intake_high_recovery">High intake detected, but recovery protocols are active. Your actions are partially offsetting the metabolic load.</string>
+    <string name="insights_intake_low_recovery">Low intake and active recovery. Your biological systems are in an optimized state of cellular repair.</string>
+    <string name="insights_intake_stable">Intake levels are within stable recovery thresholds. Biological systems are maintaining equilibrium.</string>
+    <string name="insights_recovery_critical">Critical system strain. Immediate hydration and rest protocols required to stabilize neural function.</string>
+    <string name="insights_recovery_decreasing">Systemic stability is decreasing. Your score typically improves by 15%% when hydration tasks are completed.</string>
+    <string name="insights_recovery_progress">Recovery in progress. Hydration is supporting toxin clearance, but overall rest remains sub-optimal.</string>
+    <string name="insights_recovery_high">High resilience maintained. Your consistent hydration and rest protocols are successfully balancing metabolic stress.</string>
+    <string name="insights_recovery_stable">Stable recovery dynamics. Maintain current hydration and breathing protocols to ensure system balance.</string>
+    <string name="insights_urgent_hydration">URGENT: Hydration after alcohol increases recovery rate by 40%%.</string>
+    <string name="insights_success_hydration">SUCCESS: Hydration protocol is successfully accelerating toxin clearance.</string>
+    <string name="insights_vascular_stress">Vascular strain is high. Initiate breathing exercise to improve airflow.</string>
+    <string name="insights_breathing_reset">Breathing reset detected. Lung efficiency is improving.</string>
+    <string name="insights_low_hydration">Low hydration detected. Toxin clearance is not currently optimal.</string>
+    <string name="insights_high_consistency">High Consistency: Recovery score trending up due to active interventions.</string>
+    <string name="insights_equilibrium">Biological systems in equilibrium. Maintain current protocol.</string>
+    <string name="insights_alcohol_intake">Alcohol Intake</string>
+    <string name="insights_metabolic_ethanol">Metabolic ethanol load</string>
+    <string name="insights_hydration_active">Hydration Active</string>
+    <string name="insights_hydration_deficit">Hydration Deficit</string>
+    <string name="insights_accelerating_toxin">Accelerating toxin clearance</string>
+    <string name="insights_metabolic_delayed">Metabolic processing delayed</string>
+    <string name="insights_reduced_hangover">Reduced Hangover</string>
+    <string name="insights_increased_fatigue">Increased Fatigue</string>
+    <string name="insights_systemic_stability_returning">Systemic stability returning</string>
+    <string name="insights_neural_recovery_delayed">Neural recovery delayed</string>
+    <string name="insights_nicotine_intake">Nicotine Intake</string>
+    <string name="insights_vascular_constriction">Vascular constriction</string>
+    <string name="insights_breathing_protocol">Breathing Protocol</string>
+    <string name="insights_lung_stress">Lung Stress</string>
+    <string name="insights_increasing_oxygen">Increasing oxygen uptake</string>
+    <string name="insights_lower_oxygen">Lower oxygen efficiency</string>
+    <string name="insights_oxygen_stabilized">Oxygen Stabilized</string>
+    <string name="insights_recovery_slowed">Recovery Slowed</string>
+    <string name="insights_vascular_decreasing">Decreasing vascular strain</string>
+    <string name="insights_reduced_cellular">Reduced cellular repair</string>
+    <string name="insights_clean_protocol">Clean Protocol</string>
+    <string name="insights_zero_toxin">Zero toxin load</string>
+    <string name="insights_stable_equilibrium">Stable Equilibrium</string>
+    <string name="insights_optimal_system">Optimal system function</string>
+    <string name="insights_available_guides">Available Guides</string>
+    <string name="insights_rapid_repair">Rapid Repair</string>
+    <string name="insights_maximum_cellular">Maximum cellular restoration</string>
+    <string name="insights_pulmonary_restoration">Pulmonary Restoration Study</string>
+    <string name="insights_study_desc">Clinical data from HAC Centre confirms that 5-minute structured deep breathing protocols can offset acute vascular constriction by 20%% immediately following nicotine exposure.</string>
+    <string name="insights_access_publication">Access Full Publication</string>
+    <string name="insights_reach_out">Reach out to the HAC Research Centre team for any clinical feedback or questions.</string>
+    <string name="insights_hepatic_restoration">Hepatic Restoration</string>
+    <string name="insights_sleep_architecture">Sleep Architecture</string>
+    <string name="insights_intracellular_hydration">Intracellular Hydration</string>
+    <string name="insights_neuro_chemical">Neuro-Chemical Balance</string>
+    <string name="insights_questions_concerns">Questions or Concerns?</string>
+
+    <!-- تسجيل الإدخال -->
+    <string name="intake_tab_intake">تسجيل الإدخال</string>
+    <string name="intake_alcohol">الكحول</string>
+    <string name="intake_smoking">التدخين</string>
+    <string name="intake_confirm_alcohol">CONFIRM ALCOHOL LOG</string>
+    <string name="intake_confirm_smoking">CONFIRMS SMOKING LOG</string>
+    <string name="intake_logged">%1$s Logged</string>
+
+    <!-- Recovery & Session Sync -->
+    <string name="recovery_biological_resilience">المرونة البيولوجية</string>
+    <string name="recovery_live_time">الوقت الفعلي</string>
+    <string name="recovery_simulating">محاكاة: %1$d:00</string>
+    <string name="recovery_biological_briefing">الإيجاز البيولوجي</string>
+    <string name="recovery_daily_journey">رحلة التعافي اليومية</string>
+    <string name="recovery_daily_journey_desc">اتبع دليلك البيولوجي لتحسين الترميم النظامي.</string>
+    <string name="recovery_cat_morning">الصباح: التنشيط</string>
+    <string name="recovery_cat_midday">منتصف اليوم: الصيانة</string>
+    <string name="recovery_cat_afternoon">بعد الظهر: الحماية</string>
+    <string name="recovery_cat_evening">المساء: الترميم</string>
+    <string name="recovery_cat_night">الليل: التعافي العميق</string>
+    <string name="recovery_status_recommended">موصى به الآن</string>
+    <string name="recovery_status_scheduled">مجدول</string>
+    <string name="recovery_targeted_repair">الإصلاح المستهدف</string>
+    <string name="recovery_cat_liver_metabolic">الكبد والأيض</string>
+    <string name="recovery_cat_cardiovascular">القلب والأوعية الدموية</string>
+    <string name="recovery_cat_respiratory">الجهاز التنفسي</string>
+    <string name="recovery_cat_metabolic">الأيض</string>
+    <string name="recovery_cat_sleep_arch">بنية النوم</string>
+    <string name="recovery_cat_cognitive">الإصلاح المعرفي</string>
+    <string name="recovery_cat_behavioral">السلوكي</string>
+    <string name="recovery_cat_priority">الأولوية</string>
+
+    <!-- Resilience Systems -->
+    <string name="recovery_system_hepatic_name">مرونة الكبد</string>
+    <string name="recovery_system_hepatic_desc">كفاءة إزالة السموم من الكبد والإنتاجية الأيضية.</string>
+    <string name="recovery_system_pulmonary_name">القوة الرئوية</string>
+    <string name="recovery_system_pulmonary_desc">سعة الرئة وكفاءة تبادل الأكسجين وثاني أكسيد الكربون.</string>
+    <string name="recovery_system_neural_name">الاستقرار العصبي</string>
+    <string name="recovery_system_neural_desc">توازن النواقل العصبية والتحكم التنفيذي في الرغبات الشديدة.</string>
+    <string name="recovery_system_vascular_name">سلامة الأوعية الدموية</string>
+    <string name="recovery_system_vascular_desc">تقلب معدل ضربات القلب وتنظيم ضغط الدم.</string>
+
+    <!-- Biological Briefings -->
+    <string name="briefing_critical_toxicity">السمية النظامية حرجة. كبدك تحت إجهاد أكسدي شديد. أعطِ الأولوية للترطيب وفيتامين B1 فوراً لمنع الضباب المعرفي.</string>
+    <string name="briefing_moderate_inflammation">تم اكتشاف التهاب متوسط. تباطأت الإنتاجية الأيضية. ركز على بروتوكولات الكبد والأوعية الدموية اليوم.</string>
+    <string name="briefing_vascular_constriction">تضيق الأوعية الدموية مرتفع. قد يتأثر تشبع الأكسجين. ركز على طقوس الجهاز التنفسي لتنظيف المخاط واستعادة تدفق الهواء.</string>
+    <string name="briefing_neural_depletion">المخزونات العصبية مستنفدة. توقع تهيجاً عالياً ورغبات شديدة. استخدم إعادة ضبط الدوبامين وطقوس العصب الحائر للاستقرار.</string>
+    <string name="briefing_excellent_compliance">امتثال بيولوجي ممتاز. تدخل أنظمتك في حالة من الاستقرار الداخلي المستقر. حافظ على الزخم.</string>
+    <string name="briefing_default">رحلتك البيولوجية جارية. اتبع البروتوكولات الموصى بها لتحسين تعافيك النظامي.</string>
+
+    <!-- Task Titles and Descriptions (Mapping for Engine) -->
+    <string name="act_h1_title">ترطيب الصباح</string>
+    <string name="act_h1_desc">اشرب 300 مل من الماء + رشة ملح بحر. يعيد ترطيب دماغك بعد النوم.</string>
+    <string name="act_h4_title">تشبع الثيامين (B1)</string>
+    <string name="act_h4_desc">بدء عملية التمثيل الغذائي للطاقة. حيوي للتعافي من الكحول.</string>
+    <string name="act_cc2_title">ضوء الشمس والحركة</string>
+    <string name="act_cc2_desc">مشى لمدة 5-10 دقائق أو تمدد. يعيد ضبط إيقاع الساعة البيولوجية.</string>
+    <string name="act_rl1_title">تحميل الأكسجين</string>
+    <string name="act_rl1_desc">3 دقائق تنفس حجابي. ينظف الرئتين ويزيد من اليقظة.</string>
+    <string name="act_mn1_title">مرساة سكر الدم</string>
+    <string name="act_mn1_desc">غداء عالي البروتين. يمنع انخفاض الطاقة والرغبات الشديدة في منتصف اليوم.</string>
+    <string name="act_cc3_title">إعادة ضبط العصب الحائر (رش الماء البارد)</string>
+    <string name="act_cc3_desc">رش الماء البارد على الوجه. يخفض الكورتيزول ويعيد التركيز.</string>
+    <string name="act_cc1_title">التنفس المتسق</string>
+    <string name="act_cc1_desc">تنفس 4-2-6 لمدة دقيقتين. يثبت معدل ضربات القلب أثناء العمل.</string>
+    <string name="act_mn5_title">تحميل أوميغا 3</string>
+    <string name="act_mn5_desc">يدعم إصلاح الدماغ ويقلل من الالتهاب النظامي.</string>
+    <string name="act_cc4_title">تعزيز أكسيد النيتريك</string>
+    <string name="act_cc4_desc">عصير الشمندر أو الخضروات الورقية. يحسن الدورة الدموية وضغط الدم.</string>
+    <string name="act_nc2_title">تدريب معرفي</string>
+    <string name="act_nc2_desc">تمرين تركيز لمدة 5 دقائق لتقوية الوظيفة التنفيذية.</string>
+    <string name="act_ng1_title">دعم الميكروبيوم</string>
+    <string name="act_ng1_desc">البروبيوتيك/الأطعمة المخمرة. يشفي بطانة الأمعاء المتضررة من الكحول.</string>
+    <string name="act_rl5_title">بخار تنظيف الرئة</string>
+    <string name="act_rl5_desc">استنشاق البخار لترقيق وتنظيف المخاط (للمدخنين).</string>
+    <string name="act_nc1_title">صيام الدوبامين</string>
+    <string name="act_nc1_desc">لا شاشات لمدة 15 دقيقة. يعيد معايرة دوائر المكافأة.</string>
+    <string name="act_rc_sl4_title">دعم المغنيسيوم</string>
+    <string name="act_rc_sl4_desc">جليسينات المغنيسيوم. يريح العضلات ويساعد في نوم حركة العين السريعة العميق.</string>
+    <string name="act_rc_sl1_title">مفتاح الجهاز الودية</string>
+    <string name="act_rc_sl1_desc">تنفس 4-7-8. يرسل إشارة لجسمك بأنه من الآمن النوم.</string>
+    <string name="act_rc_sl2_title">تأمل مسح الجسم</string>
+    <string name="act_rc_sl2_desc">تأمل موجه لخفض مستويات الكورتيزول الليلية.</string>
+    <string name="act_h2_title">دعم المغذيات (B/C/NAC)</string>
+    <string name="act_h2_desc">تناول مركب B أو فيتامين C أو NAC. يدعم إصلاح إنزيمات الكبد.</string>
+    <string name="act_lv1_title">تحميل تنظيف الخضروات الصليبية</string>
+    <string name="act_lv1_desc">تناول البروكلي/البراعم لتنشيط المرحلة الثانية من إزالة السموم من الكبد.</string>
+    <string name="act_rl4_title">تدريب عضلات الشهيق</string>
+    <string name="act_rl4_desc">التنفس بالمقاومة لتقوية عضلات الحجاب الحاجز.</string>
+    <string name="act_rl3_title">التصريف الموضعي</string>
+    <string name="act_rl3_desc">وضعيات موجهة لتنظيف المخاط من فصوص الرئة السفلية.</string>
+    <string name="act_mn4_title">الامتثال لهيكل الوجبات</string>
+    <string name="act_mn4_desc">تأكد من التركيز على البروتين + الألياف مع كربوهيدرات محكومة.</string>
+    <string name="act_nc3_title">توازن الغلوتامات/GABA</string>
+    <string name="act_nc3_desc">تناول L-Theanine لإدارة فرط الاستثارة العصبية.</string>
+    <string name="act_bh1_title">عادة صغيرة: استبدال الماء</string>
+    <string name="act_bh1_desc">استبدل الرغبة في التناول بالترطيب الواعي.</string>
+    <string name="act_bh3_title">تمرين ركوب موجة الرغبة</string>
+    <string name="act_bh3_desc">شاهد أحاسيس الرغبة الشديدة دون حكم أو فعل.</string>
+    <string name="act_bh2_title">مؤقت تأخير الرغبة</string>
+    <string name="act_bh2_desc">ابدأ تأخيراً لمدة 5 دقائق للسماح لموجة الرغبة بالمرور.</string>
+    <string name="act_p1_title">ترطيب الآن</string>
+    <string name="act_p1_desc">عاجل: الجسم جاف. اشرب 250 مل من الماء الآن.</string>
+    <string name="act_p2_title">دعم المغذيات</string>
+    <string name="act_p2_desc">حرج: مطلوب دعم الكبد (فيتامينات B/إلكتروليتات).</string>
+    <string name="act_p3_title">إعادة ضبط الرئة</string>
+    <string name="act_p3_desc">تنبيه وعائي: إجهاد رئوي مرتفع. قم بالتنفس العميق الآن.</string>
+    <string name="act_p6_title">إعادة ضبط العصب الحائر</string>
+    <string name="act_p6_desc">نصيحة الخبراء: استخدم الماء البارد لإعادة ضبط جهازك العصبي.</string>
+    <string name="recovery_lvl">مستوى</string>
+
+</resources>
+

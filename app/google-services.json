@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "119651407923",
+    "project_id": "studio-1410966483-9abab",
+    "storage_bucket": "studio-1410966483-9abab.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:119651407923:android:9044b1dee7cdbd88cdab46",
+        "android_client_info": {
+          "package_name": "com.harc.health"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "119651407923-ro0hm0bife2jmiev5v2pv91u9vi9h06t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.harc.health",
+            "certificate_hash": "3a9aa99ea96c14fcedf943b8ddd2ac54aba4e08e"
+          }
+        },
+        {
+          "client_id": "119651407923-4e5a838i6kku18di1cpp0kb9s9mko6mu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5jJ2fKS_H2AN5iW0Q8Ng0LZDtyYgl7hg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "119651407923-4e5a838i6kku18di1cpp0kb9s9mko6mu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

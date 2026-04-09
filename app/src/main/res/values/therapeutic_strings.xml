@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="therapeutic_title">Therapeutic Sanctuary</string>
+    <string name="therapeutic_subtitle">Expert-led sound healing and guided journeys for deep emotional recalibration.</string>
+    <string name="therapeutic_research_centre">HAC WELLNESS • INTEGRATIVE NEURAL DESIGN</string>
+
+    <!-- Categories / Tabs -->
+    <string name="cat_stress_relief">Dissolve Anxiety &amp; Stress</string>
+    <string name="cat_forgiveness">Heal Resentment &amp; Hurt</string>
+    <string name="cat_manifesting">Find Purpose &amp; Meaning</string>
+    <string name="cat_sleep">End Insomnia &amp; Night Thoughts</string>
+    <string name="cat_healing">Heal Grief &amp; Physical Pain</string>
+    <string name="cat_clarity">Clear Mental Fog &amp; Focus</string>
+    <string name="cat_delays">Overcome Feeling \'Behind\' in Life</string>
+
+    <!-- IMPROVED EXPERT MODEL SESSIONS -->
+    <string name="session_stress_reset_guidance">This session is a deep neural reset to cultivate absolute internal peace, not just for your productivity, but for your fundamental health. You may be struggling with an invisible weight of constant small decisions, feeling a persistent hum of static in your mind and a physical tightness in your jaw or shoulders that never seems to fully release. This chronic stress is a biological tax that ages your cells; healing this is a vital act of physical maintenance. To start, find a quiet place where you can lie down flat on your back. Let your arms fall heavily to your sides and un-clench your jaw. Close your eyes, and bring your awareness to your breath. Healing stress is the act of declaring a ceasefire in your nervous system. Allow the feelings of exhaustion or overwhelm to surface, just for a moment. You don\'t need to fight them, only acknowledge the toll they have taken. Now, visualize a cool, silver light at the top of your head. With each inhale, this light grows brighter. With each exhale, imagine the tension leaving your body like smoke. Repeat these words silently: \'I am safe. I am at peace. I allow my body to rest.\' Feel your heartbeat slowing to match the natural rhythm of the universe. Continue this visualization, allowing the silver light to fill the space where the stress used to live. This is your moment of absolute recovery.</string>
+
+    <string name="session_panic_brake_guidance">This session is an acute biological intervention to immediately pull your nervous system back from the edge of a panic cycle. You are likely feeling a terrifying surge of adrenaline—your heart is racing, your chest feels tight, and your mind is convinced of an impending doom that isn\'t there. This is your amygdala sounding a false alarm, a survival mechanism triggered in error. To start, sit directly on the floor and place your palms flat against the ground. Feel the cold, solid reality beneath you. Close your eyes and ignore the world for a moment. Healing from panic is the act of teaching your body that the danger has passed. Allow the fear to be present without fighting it; it is just energy moving through you. Now, listen to the descending tones in this audio. Imagine them as handrails guiding you down from a high, unstable place. Match your exhale to the drop in pitch. Long... slow... out. Repeat silently: \'My body is safe. My breath is my anchor. I am returning to the ground.\' As the pitch stabilizes, feel your pulse mirroring the calm. You are regaining the controls of your own system.</string>
+
+    <string name="session_overthinker_off_guidance">This session is a manual neural shutdown designed to transition your brain from the jagged, high-frequency energy of overthinking into the smooth, heavy rhythm of deep Delta rest. You may find your mind acts as a cruel master when it refuses to sleep, replaying every mistake, projecting every fear into the dark, and keeping you trapped in a loop of \'what-ifs.\' This mismatch is physically draining; your body is exhausted, but your brain is still in high-performance mode. To start, lie in your preferred sleeping position and ensure your room is completely dark. Close your eyes. Understand that you don\'t need to solve anything tonight. The world will still be there tomorrow, and you will be better equipped to meet it after you recover. Focus only on the low hum of the binaural beat. Imagine it as a heavy, warm blanket being slowly pulled over your thoughts. With each pulse, feel your eyelids becoming heavier and your thoughts becoming distant. You are letting go. You are sinking. You are safe to sleep.</string>
+
+    <string name="session_burnout_shield_guidance">This session is a clinical neural intervention to rebuild your biological boundaries and heal from the crushing weight of professional burnout. You may be waking up already feeling exhausted, dreading the first notification on your phone, and feeling a heavy, grey fog where your passion and creativity used to be. You have likely been giving so much of your spirit to your work that you have started to feel invisible in your own life. To start, find a comfortable seat away from your workspace and un-clench your hands. Close your eyes, and bring your awareness to your breath. Healing burnout is the vital act of reclaiming your energy from a world that always asks for more. Allow the feelings of numbness or resentment toward your responsibilities to surface, just for a moment. You don\'t need to justify them, only acknowledge the exhaustion. Now, visualize a vibrant, iridescent shield forming around your body. With each inhale, this light grows stronger, filtering out the mental residue of stress. With each exhale, release the pressure to be \'on.\' Repeat these words silently: \'I am enough. I reclaim my energy. I am safe in my rest.\' Feel your nervous system shifting from \'doing\' into \'being.\' Continue this visualization, allowing the shield to protect your inner peace. This is your path to systemic restoration.</string>
+
+    <string name="session_social_buffer_guidance">This session is a neural preparation to build a protective buffer around your nervous system before you step into social spaces. You may be feeling a rising tide of dread, a physical tightness in your throat, or the urgent biological impulse to flee before you even enter the room. This hyper-vigilance is your body misidentifying a crowd as a predator—a false alarm that keeps you isolated and exhausted. To start, stand tall and plant your feet firmly on the ground. Close your eyes, and take three deep breaths into your belly, feeling your diaphragm expand. Healing social anxiety is the act of signaling to your amygdala that you are secure and capable. Allow the fear of judgment to surface for just a moment; acknowledge it as a guest that doesn\'t own the house. Now, visualize a calm, indigo sphere of light surrounding you, about three feet in all directions. With each inhale, this buffer becomes more solid. With each exhale, feel your heart rate slowing into a rhythm of quiet confidence. Repeat silently: \'I am secure in my own presence. I belong here. My peace is my shield.\' Feel yourself becoming a grounded observer rather than a target. This is your path to authentic social freedom.</string>
+
+    <string name="session_chronic_pain_guidance">This session is a gentle, acoustic anesthetic designed to interrupt the recursive loops of physical discomfort in your nervous system. Physical pain often carries a heavy emotional echo—it can make you feel trapped in your own body, frustrated by your limitations, and exhausted by the constant signal of distress. Your nervous system may be stuck in a high-alert feedback loop that actually amplifies the sensation of pain. Today, we are changing the volume of that signal. To start, find the most comfortable position possible, using pillows or blankets for total support. Close your eyes, and bring your awareness to the area of discomfort. Understand that you don\'t need to fight the pain or push it away; resistance only creates more tension. Healing comes from soft awareness. Now, imagine the sound waves as a cool, soothing mist moving through your body. Visualize this mist surrounding the pain, softening its edges and creating a space of ease where there was once tightness. Silently say to yourself: \'I am not my pain. I allow my body to soften. I find peace in this moment.\' As the frequencies resonate, feel the volume of the distress lowering. You are finding a reprieve.</string>
+
+    <string name="session_grief_integration_guidance">This session provides a sanctuary for you to process loss and find the frequency of lasting peace. You might feel as though there is a physical hole in your chest, or a silence in your life that is deafening. It is tempting to try and \'get over it,\' but true healing comes from integration—not moving on, but moving forward with the weight adjusted. We aren\'t trying to make the loss smaller; we are helping you grow your heart large enough to carry it. To start, find a place where you feel completely safe and supported. Lay back or sit comfortably, letting your hands rest gently on your lap. Close your eyes. Understand that your pain is a testament to the love you carry; it is not a problem to be solved, but a transition to be inhabited. Now, visualize a soft, blue-green light gently filling the hollow spaces in your heart. With each inhale, this light expands, providing a cushion for your sorrow. With each exhale, release the pressure to be \'strong.\' Repeat silently: \'I allow myself to feel. I honor my love through my grief. I am held in this peace.\' As the sound surrounds you, let the frequencies hold you in the spaces where words fail. This is your path to emotional integration.</string>
+
+    <string name="session_delay_marriage_guidance">This session is a profound neural recalibration to release the pressure of external timelines and restore your inner confidence in your own path. You may look around and see others celebrating milestones that seem to elude you, feeling a quiet, heavy shame that you are somehow \'late\' or that your life is on hold. This feeling of being behind is a biological illusion fueled by constant social comparison, which triggers the same neural pathways as physical pain. To begin, settle into a quiet space and take a deep, intentional breath. Close your eyes. Understand that your timeline is unique; you are not late, you are arriving exactly when you are meant to. Release the weight of external expectations that you have been carrying like a heavy cloak. Now, visualize a warm, golden light in the center of your chest, reminding you that your worth is an absolute constant, not a variable tied to a relationship status. With each inhale, feel this light expanding, filling you with a sense of wholeness and arrival. With each exhale, let go of the need to be elsewhere. Silently say to yourself: \'I am whole as I am. My path is sacred. I trust my timing.\' Appreciate this phase of your life as a rare opportunity for refinement and self-discovery. You are building a foundation of peace that will support everything that comes next.</string>
+
+    <string name="session_betrayal_healing_guidance">This session is a profound restoration of your internal boundaries, designed to soothe the acute biological alarm that betrayal triggers in your nervous system. Betrayal is a violation of your inner sanctuary that shatters your sense of reality and leaves you in a state of hyper-vigilance, unable to rest or trust. You might find yourself obsessively searching the past for clues or replaying moments of broken trust, trying to find a footing that no longer exists. Healing from this is vital because chronic suspicion is physically exhausting and prevents your heart from ever truly opening again. To begin, sit upright and plant your feet firmly on the ground. Feel the stability of the floor beneath you—a reality that cannot be taken away. Close your eyes. We aren’t asking you to trust the world right now; we are helping you rebuild trust in your own perception and your own worth. Now, visualize a cool, protective shield of deep blue light surrounding your heart. With each inhale, this shield becomes more resilient, filtering out the fear of the past. With each exhale, release the need to understand \'why.\' Silently say to yourself: \'I am safe in my own truth. I trust my own heart. I reclaim my peace.\' As the frequencies stabilize, feel your nervous system returning to a state of internal sanctuary.</string>
+
+    <string name="session_self_judgment_guidance">This session is a practice in radical self-compassion, designed to end the internal war with your inner critic and allow your true self to emerge. The harshest words we ever hear are often the ones we say to ourselves. You may be your own most ruthless judge, holding yourself to a standard of perfection you would never demand of another human being. This chronic self-criticism creates a state of internal biological friction that drains your vitality and creative spirit. To start, find a comfortable position and place one hand over your heart. Close your eyes. Feel the warmth of your palm against your chest—this is a gesture of kindness. Understand that your mistakes are not your identity; they are your education. As the \'Love Frequency\' begins, imagine it washing over your thoughts like a gentle tide on a shore. Every time a critical thought arises, let the sound carry it away. Silently say to yourself: \'I am worthy of my own love. I am doing my best. I forgive myself for being human.\' You are not a project to be fixed; you are a person to be heard. This is your path to inner alignment.</string>
+
+    <string name="session_regret_release_guidance">This session is a profound release of the phantom pain of \'what could have been,\' designed to help you fully inhabit the power of the present moment. You may find yourself living in a haunting series of \'what-ifs,\' mourning paths not taken, words not said, or choices that led you somewhere other than where you intended. This chronic regret is a thief of your future; the energy you spend looking backward is stolen from the only moment where you actually have the power to create change. To begin, sit quietly and take three deep, intentional breaths. Close your eyes. Acknowledge that you did the best you could with the information, the maturity, and the resources you had at the time. Healing regret requires an honest accounting followed by a total, un-apologetic release. Now, visualize yourself standing on a bridge over a vast, slow-moving river. In your hands is a heavy book—the chapter of your regrets. As the frequencies build, imagine yourself letting go of that book. Watch it drift away until it disappears into the mist. Silently say to yourself: \'I release the past. I learn from the journey. I am free to start again.\' Feel the lightness returning to your spirit as you reclaim your life for the here and now.</string>
+
+    <string name="session_body_acceptance_guidance">This session is a journey to heal the relationship with your physical form and move from observation to inhabitation. We often treat our bodies as a project to be fixed, a problem to be solved, or a vessel that has failed us. If you feel a disconnection or even a loathing for your body, you are living in a state of biological alienation. Your body is the only home you will ever truly own—it deserves your kindness, not your condemnation. To start, lie down comfortably in a place where you won’t be disturbed. Close your eyes. Bring your awareness to your feet, then your legs, moving slowly upward. Appreciate each part not for how it looks, but for how it serves you—the heartbeat that never stops, the breath that sustains you even when you aren\'t thinking about it. As the frequencies resonate, imagine a soft, healing light scanning your body, dissolving the labels of \'good\' or \'bad.\' Silently say to yourself: \'I am at home in my body. I honor my physical self. I am grateful for the life within me.\' You are reclaiming your presence in your own skin.</string>
+
+    <string name="session_delay_parenthood_guidance">This session creates a sanctuary of calm to help you find peace amidst the wait for parenthood and heal the quiet ache of fertility delay. The wait for a child can feel like a silent, recurring grief that most of the world doesn\'t see or understand. Every announcement from others might feel like a personal blow, leaving you with a heavy sense of inadequacy or a fear that your body is failing you. Healing this ache is vital because chronic stress triggers a state of biological high-alert that can further impact your well-being. To start, find a comfortable place to rest where you feel completely supported. Place your hands gently on your lower abdomen and close your eyes. Breathe deeply into that space, imagining each breath as a wave of compassion. Understand that your worth is an absolute constant, independent of your biological output. By calming the storm of \'not yet,\' we allow your system to return to a state of equilibrium and hope. Now, visualize a soft, emerald light filling your center, representing the fertility of your spirit and the resilience of your body. Repeat silently: \'I am whole exactly as I am. I trust the timing of my life. I am at peace with my journey.\' This is the most fertile ground for any new beginning.</string>
+
+    <string name="session_manifest_intent_guidance">This session is a precision sharpening of your neural aim, designed to synchronize your current state with your future vision and anchor your intent into your subconscious mind. If you feel as though you are drifting, working hard but moving nowhere, it is because your brain\'s filtering system—the Reticular Activating System—lacks a clear destination. Without a defined intent, you cannot see the opportunities standing right in front of you. Healing this lack of direction is the act of claiming your power as a creator rather than a spectator. To start, sit upright with an alert but relaxed posture, your spine straight and hands open on your lap. Close your eyes. Bring a specific, meaningful goal into your mind\'s eye. We are quieting the doubt that tells you your dreams are \'too big.\' Now, as you listen to the Alpha-Theta bridge, imagine yourself already inhabiting that future reality. Feel the air, hear the sounds, and anchor the *feeling* of your success into your present nervous system. Repeat silently: \'My intent is clear. My mind is focused. I am aligned with my purpose.\' You aren\'t just thinking about a goal; you are preparing your biology to live it.</string>
+
+    <string name="session_delay_career_guidance">This session is a strategic neural recalibration designed to dissolve the anxiety of professional stagnation and reclaim your creative edge. The weight of feeling \'stuck\' can feel like a slow, invisible suffocation—you see peers promoted, startups launched, and milestones met, while you feel invisible, undervalued, or trapped on a plateau. This career panic triggers a biological survival response that actually impairs your problem-solving abilities. To start, find a quiet workspace or a corner where you can sit tall and undisturbed. Close your eyes. Understand that a career is an ecosystem, not a ladder. This phase is not a delay; it is a period of high-intensity skill-stacking and character-building. Now, visualize a beam of laser-like clarity piercing through the fog of comparison. With each inhale, feel your internal value and your deep roots growing stronger. With each exhale, release the pressure to be elsewhere. Silently say to yourself: \'I am the architect of my own path. I trust my period of refinement. I am ready for my next level.\' You are mastering the work that will eventually take you to your destination.</string>
+
+    <string name="session_comparison_trap_guidance">This session is a powerful return to your internal source, designed to break the cycle of constant social comparison and reignite your authentic self-worth. You are currently living through the greatest psychological experiment in history: constant, 24/7 comparison to the curated highlight reels of thousands of people. If you feel a persistent sense of inadequacy, it is because your brain is being tricked into a perceived social deficit. This constant \'checking\' creates a state of chronic high-beta stress that erodes your power. To start, put away all devices and settle into a quiet space. Close your eyes. We are closing the windows to other people\'s lives so you can finally light the fire in your own. Understand that you are the only person you are destined to exceed. Now, visualize your energy returning to you from every direction. With each inhale, feel your own unique path becoming clear and vibrant. With each exhale, release the need for external validation. Repeat silently: \'My journey is mine alone. I am enough exactly as I am. I celebrate my own arrival.\' Feel your internal source becoming a steady, unshakeable flame. This is your path to liberation.</string>
+
+    <string name="session_focus_alpha_guidance">This session manually quiets neural noise to shift you from the scattered energy of distraction into the calm, laser-like precision of Alpha-state focus. In an age of infinite distraction, deep focus has become a superpower. You likely feel the \'mental itch\' to check your phone, the fog of a dozen open tabs in your mind, and the exhaustion of continuous partial attention. This fractured state prevents you from entering \'Flow,\' the only state where high-level creation is possible. To begin, clear your physical space of clutter. Sit comfortably and take three slow, intentional breaths. Close your eyes. We are shifting your brainwaves from high-beta racing into effortless flow. Healing your attention is the first step toward reclaiming your life\'s work. As the frequencies stabilize, feel your mind becoming a clear, still lake where your deepest thoughts can finally surface. Repeat silently: \'I am here. I am focused. I am in the flow.\' You are reclaiming your most valuable resource: your presence.</string>
+
+    <string name="session_imposter_dissolver_guidance">This session is a clinical dismantling of the false narrative of imposter syndrome, designed to align your internal self-image with your external achievements. That quiet, persistent voice in your head whispering that you are a fraud, that you don’t belong in the room, or that your success is merely a series of lucky accidents is an ancient defense mechanism gone wrong. This hyper-vigilance prevents you from fully inhabiting your authority and making your true contribution to the world. To start, sit tall and imagine a golden thread pulling the crown of your head toward the sky. Place your hands open on your lap, a gesture of readiness to receive your own power. Close your eyes. Understand that you didn’t get here by accident; you got here through your unique essence and consistent effort. Healing imposter syndrome is the act of stopping the apology for your existence. Now, visualize yourself standing at the head of a long table, unshakeable and authentic. With each inhale, feel the reality of your achievements anchoring into your bones. With each exhale, release the need to prove yourself to anyone. Repeat silently: \'I belong in every room I enter. My success is my own. I inhabit my authority.\' You are not an imposter; you are an original. This is your path to unshakeable confidence.</string>
+
+    <string name="session_creative_block_guidance">This session is a neural gateway designed to bypass your analytical, perfectionist mind and return you to a state of creative flow. A creative block is not a lack of ideas; it is a surplus of internal judgment. You are stuck because you are trying to perfect the work before it has even been born, creating a physical tension in your body and a static in your thoughts that paralyzes your imagination. Healing this block requires a return to a state of play, where failure is no longer a threat. To begin, pick up a pen, a brush, or simply sit with your hands open and receptive. Close your eyes. We are using specific frequencies to speak directly to your subconscious, quieting the critic who says it isn\'t good enough. Today, we are not trying to create a masterpiece; we are just opening the gate to let the river flow again. Now, visualize a stream of liquid light flowing from the base of your spine up to your forehead. With each inhale, this stream becomes more vibrant and fluid. With each exhale, release the pressure to be \'correct.\' Repeat silently: \'I allow the flow. I am a channel for creation. I trust the process.\' The results will follow the release.</string>
+
+    <string name="session_forgiveness_guidance">This session is a guided journey to cultivate forgiveness, not for anyone else, but for yourself. You may be struggling with bitterness or a heavy sense of betrayal from a situation that broke your heart or left you deeply disappointed. To start, settle into a comfortable seated position in a quiet place. Close your eyes, and bring your awareness to your breath. Forgiveness is the act of freeing yourself from the weight of resentment. Allow the associated feelings to surface, just for a moment. You don\'t need to condone the action, only acknowledge the pain. Now, visualize a golden light in the center of your chest. With each inhale, this light grows brighter. With each exhale, send a little of this light towards the memory. Repeat these words silently: \'I forgive you, not because you deserve it, but because I deserve peace.\' Feel the chains of resentment loosening. Continue this visualization, allowing the golden light to fill the space left by the hurt. This is your path to freedom.</string>
+
+    <string name="session_abundance_mindset_guidance">This session is a neural shifting exercise designed to move your consciousness from a state of perceived scarcity into the expansive frequency of infinite possibility. You may be struggling with a persistent, heavy fear of \'not having enough\'—whether it is time, money, support, or opportunity. This feeling of lack is a restrictive biological energy that keeps your brain in survival mode, making it impossible to see the opportunities standing right in front of you. To start, find a comfortable seated position and rest your hands on your lap, palms facing upward in a gesture of receptivity. Close your eyes. Understand that abundance is not something you acquire; it is a frequency you tune into by shifting your biological state from defensive contraction to open expansion. Now, visualize a field of infinite, shimmering golden light. With each inhale, feel yourself breathing in the potential of this light. With each exhale, release the physical tension of \'not enough\' from your chest. Repeat silently: \'I am open to the flow. My worth is not defined by lack. I am a magnet for opportunity.\' As the 852Hz frequency awakens your inner strength, feel the restrictions in your mind dissolving. You are aligning with the natural abundance of life.</string>
+
+    <string name="session_courage_guidance">This session is a neural anchoring of your inner strength, designed to help you overcome the fear of the unknown and find the courage to make major life changes. You may be standing at a crossroad, feeling the paralyzing weight of uncertainty and the urgent biological impulse to stay small and safe, even if you are deeply unhappy. This transition-anxiety is a natural response to the loss of the familiar, but staying in a stagnant situation is a slow erosion of your spirit. Healing this fear is the act of claiming your future. To begin, find a place where you can stand tall or sit with an upright, dignified posture. Close your eyes. Plant your feet firmly, feeling the earth\'s support. Understand that courage is not the absence of fear, but the decision that something else is more important. Now, visualize a spark of brilliant, violet light at the base of your spine. With each inhale, this spark grows into a steady flame, rising up through your center and filling you with a sense of \'relaxed alertness.\' With each exhale, release the need to know the entire map before you take the first step. Repeat silently: \'I am stronger than my fear. I trust my ability to adapt. I step forward with clarity.\' As the Gamma-pulses stimulate your neural resilience, feel yourself becoming unshakeable. You are ready for what comes next.</string>
+
+    <!-- NEW SPECIALIZED SESSIONS (Expert Model) -->
+    <string name="session_insomnia_relief_guidance">This session is a long-form neural entrainment designed to manually pull your brain into the deepest stages of Delta sleep, where systemic biological repair occurs. You may be struggling with the exhaustion of chronic insomnia—lying awake for hours, feeling the anxiety of the passing clock, and fearing how you will function tomorrow. This state of high-alert prevents your body from entering the restorative N3 sleep stage. To start, lie in your preferred sleeping position and ensure your environment is completely dark and silent. Close your eyes. Understand that you do not need to \'try\' to sleep; sleep is a biological surrender, not a task. Now, imagine a heavy, velvet curtain slowly descending from the top of your mind to the base of your spine. With each exhale, feel your body sinking deeper into the mattress, as if you are becoming part of the bed itself. Repeat silently: \'I release the day. I trust my body to rest. I am sinking into peace.\' As the 1.5Hz Delta waves stabilize, allow the sound to become your only reality. You are safe to let go.</string>
+
+    <string name="session_post_nightmare_guidance">This session is an emergency neural grounding designed to immediately soothe the terror of a nightmare and return your nervous system to a state of safety. You have just woken up with a racing heart, perhaps sweating or trembling, with the vivid residue of a distressing dream still clinging to your mind. Your brain is reacting as if the threat was real, keeping you in a state of high-beta alarm. To start, sit up in bed and turn on a small, soft light if possible. Place your hands flat on your thighs and feel the texture of your clothing or sheets. Close your eyes and take slow, shallow breaths to signal safety to your lungs. Understand that the dream was a projection, and you are currently in a room that is safe and secure. Now, visualize a protective golden circle on the floor around your bed. With each inhale, feel the warmth of this circle grounding you in the physical world. With each exhale, watch the images of the nightmare dissolving like mist in the sun. Repeat silently: \'I am awake. I am safe. I am in control.\' As the 174Hz frequency provides a foundation of safety and security, feel your heart rate returning to normal. You are home.</string>
+
+    <!-- UI Strings -->
+    <string name="therapeutic_quick_reset">ACUTE 2-MIN INTERVENTION</string>
+    <string name="player_clinical_rationale">THERAPEUTIC RATIONALE</string>
+    <string name="player_guided_guidance">GUIDED JOURNEY GUIDANCE</string>
+    <string name="player_biological_impact">BIOLOGICAL RESONANCE</string>
+    <string name="player_emotional_guidance">EXPERT GUIDANCE &amp; PREPARATION</string>
+
+    <string name="duration_2min">2 min</string>
+    <string name="duration_5min">5 min</string>
+    <string name="duration_10min">10 min</string>
+    <string name="duration_12min">12 min</string>
+    <string name="duration_15min">15 min</string>
+    <string name="duration_20min">20 min</string>
+    <string name="duration_infinite">Continuous</string>
+
+    <!-- TITLES, DESCRIPTIONS & RATIONALE (Remaining) -->
+    <string name="session_stress_reset_title">432Hz Anxiety Dissolver</string>
+    <string name="session_stress_reset_desc">A gentle acoustic embrace to immediately trigger your body\'s relaxation response and quiet a racing mind.</string>
+    <string name="session_stress_reset_rationale">432Hz is mathematically consistent with the universe. It lowers heart rate and blood pressure more effectively than 440Hz.</string>
+    <string name="session_panic_brake_title">Panic Attack Emergency Brake</string>
+    <string name="session_panic_brake_desc">Acute down-regulation for moments of high anxiety or overwhelming panic.</string>
+    <string name="session_panic_brake_rationale">Utilizes rapid frequency descent to \'handshake\' with a racing heart and gradually pull it down to a resting state via entrainment.</string>
+
+    <string name="session_social_buffer_title">Social Anxiety Shield</string>
+    <string name="session_social_buffer_desc">Calm the \'fight or flight\' response before entering crowded or high-pressure social situations.</string>
+    <string name="session_social_buffer_rationale">Targets the amygdala with 174Hz to reduce the perception of social threat and increase feelings of security.</string>
+    <string name="session_burnout_shield_title">Work-Life Burnout Recovery</string>
+    <string name="session_burnout_shield_desc">Dissolve the mental residue of professional stress and reclaim your personal space.</string>
+    <string name="session_burnout_shield_rationale">Alpha-wave stimulation helps transition the brain from the \'doing\' mode of work to the \'being\' mode of home life.</string>
+    <string name="session_forgiveness_title">Healing Resentment Journey</string>
+    <string name="session_forgiveness_desc">A profound 12-minute meditation to cultivate self-forgiveness and release the weight of old hurts.</string>
+
+    <string name="session_forgiveness_rationale">Resentment creates recursive loops in the limbic system. This session uses 396Hz to break those loops and promote emotional liberation.</string>
+    <string name="session_betrayal_healing_title">Recovering from Betrayal</string>
+    <string name="session_betrayal_healing_desc">Specifically designed to process the sharp pain of broken trust and restore inner safety.</string>
+    <string name="session_betrayal_healing_rationale">Integrates 417Hz to clear the energy of traumatic events and facilitate the return to emotional equilibrium.</string>
+    <string name="session_self_judgment_title">Dissolving Self-Judgment</string>
+    <string name="session_self_judgment_desc">Silence the inner critic and embrace a state of radical self-compassion.</string>
+    <string name="session_self_judgment_rationale">Focuses on the 528Hz \'Love Frequency\' to resonate with the heart center and dissolve the neural pathways of self-criticism.</string>
+
+    <string name="session_regret_release_title">The Weight of Regret</string>
+    <string name="session_regret_release_desc">Releasing \'what could have been\' to fully inhabit the power of the present moment.</string>
+    <string name="session_regret_release_rationale">396Hz Solfeggio frequency specifically targets guilt and fear, the two primary components of chronic regret.</string>
+    <string name="session_manifest_intent_title">Future Direction Alignment</string>
+    <string name="session_manifest_intent_desc">Synchronize your current state with your future vision through targeted neural intent anchoring.</string>
+    <string name="session_manifest_intent_rationale">High-alpha waves (10-12Hz) facilitate the bridge between the conscious and subconscious mind, making intent more \'sticky\'.</string>
+    <string name="session_abundance_mindset_title">Escaping Lack &amp; Scarcity</string>
+    <string name="session_abundance_mindset_desc">Shift from a frequency of lack to one of infinite possibility and abundance flow.</string>
+    <string name="session_abundance_mindset_rationale">Uses 852Hz to awaken inner strength and self-realization, opening the mind to higher insights.</string>
+    <string name="session_courage_title">Courage to Change Path</string>
+    <string name="session_courage_desc">Overcome the fear of the unknown and anchor yourself in your inner strength to make big changes.</string>
+    <string name="session_courage_rationale">Gamma-bursts paired with low-theta pulses create a state of \'relaxed alertness\' ideal for overcoming transition-anxiety.</string>
+    <string name="session_imposter_dissolver_title">Dissolving Imposter Syndrome</string>
+    <string name="session_imposter_dissolver_desc">Reclaim your authority and recognize your true value by silencing feelings of inadequacy.</string>
+    <string name="session_imposter_dissolver_rationale">741Hz helps to solve problems and express ideas, specifically clearing the throat chakra and boosting confidence.</string>
+    <string name="session_overthinker_off_title">Overthinker\'s Off-Switch</string>
+    <string name="session_overthinker_off_desc">For those nights when the mind won\'t stop racing. Gently force a neural shutdown.</string>
+    <string name="session_overthinker_off_rationale">Uses a specific binaural beat that slides from 12Hz (Beta) down to 0.5Hz (Deep Delta) over 20 minutes.</string>
+
+    <string name="session_insomnia_relief_title">Insomnia Neural Restoration</string>
+    <string name="session_insomnia_relief_desc">A long-form session to entrain the brain for deep, uninterrupted sleep cycles.</string>
+    <string name="session_insomnia_relief_rationale">Focuses on stable 1.5Hz Delta waves to maintain deep N3 sleep stages where the most physical healing occurs.</string>
+    <string name="session_post_nightmare_title">Post-Nightmare Grounding</string>
+    <string name="session_post_nightmare_desc">Quickly return to a state of safety and calm after a distressing dream or night terror.</string>
+    <string name="session_post_nightmare_rationale">Uses 174Hz to provide a foundation of safety and security, reducing the immediate fear-response.</string>
+    <string name="session_grief_integration_title">Grief &amp; Loss Processing</string>
+    <string name="session_grief_integration_desc">A gentle space to process loss and find the frequency of lasting peace.</string>
+    <string name="session_grief_integration_rationale">Uses 417Hz, a frequency known for clearing traumatic experiences and facilitating change in the emotional body.</string>
+
+    <string name="session_body_acceptance_title">Healing Body Rejection</string>
+    <string name="session_body_acceptance_desc">Heal the relationship with your physical form and dissolve the pain of body dysmorphia.</string>
+    <string name="session_body_acceptance_rationale">Resonates at 528Hz to promote cellular harmony and a sense of deep, unconditional self-love.</string>
+    <string name="session_chronic_pain_title">Acoustic Pain Relief</string>
+    <string name="session_chronic_pain_desc">A non-invasive approach to managing physical discomfort through frequency interference.</string>
+    <string name="session_chronic_pain_rationale">Utilizes 174Hz, which is considered a natural anesthetic, reducing physical pain signals.</string>
+    <string name="session_focus_alpha_title">Focus Flow Initiation</string>
+    <string name="session_focus_alpha_desc">Gentle Alpha waves to bridge the gap between relaxation and high-performance focus.</string>
+    <string name="session_focus_alpha_rationale">Alpha waves (8-12Hz) represent the brain\'s \'idling\' state, perfect for entering a state of effortless flow.</string>
+    <string name="session_creative_block_title">Creative Block Breaker</string>
+    <string name="session_creative_block_desc">Unlock stagnant mental energy and open the pathways for new ideas to emerge.</string>
+    <string name="session_creative_block_rationale">Combines Theta (4Hz) and Gamma (40Hz) to stimulate the subconscious while maintaining cognitive integration.</string>
+    <string name="session_delay_marriage_title">Peace in the Wait (Marriage)</string>
+    <string name="session_delay_marriage_desc">Releasing the pressure of society\'s timeline and finding wholeness in your own path.</string>
+    <string name="session_delay_marriage_rationale">Focuses on 432Hz to lower the anxiety of \'not being enough\' and 528Hz to restore self-love.</string>
+
+    <string name="session_delay_career_title">Career Stagnation Healing</string>
+    <string name="session_delay_career_desc">Overcoming the feeling of being stuck or behind in your professional life and milestones.</string>
+    <string name="session_delay_career_rationale">Uses Alpha waves to clear the fog of career-comparison and Gamma-bursts to trigger new perspective.</string>
+    <string name="session_delay_parenthood_title">Healing the Parenthood Wait</string>
+    <string name="session_delay_parenthood_desc">Finding peace amidst the wait for parenthood and healing the ache of fertility delay.</string>
+    <string name="session_delay_parenthood_rationale">Integrates 417Hz to process the traumatic feeling of delay and 528Hz to support systemic biological calm.</string>
+    <string name="session_comparison_trap_title">Escaping the Comparison Trap</string>
+    <string name="session_comparison_trap_desc">Stop measuring your internal life by other people\'s external highlights.</string>
+    <string name="session_comparison_trap_rationale">Uses 396Hz to dissolve the guilt of comparison and 852Hz to return to your inner, authentic strength.</string>
+
+    <!-- Domains -->
+    <string name="domain_home">Home</string>
+    <string name="domain_heart">Heart</string>
+    <string name="domain_mind">Mind</string>
+    <string name="domain_body">Body</string>
+
+    <!-- Technical Targets -->
+    <string name="target_amygdala">Amygdala</string>
+    <string name="target_vagal_tone">Vagal Tone</string>
+    <string name="target_sleep_architecture">Sleep Architecture</string>
+    <string name="target_emotional_resilience">Emotional Resilience</string>
+    <string name="target_dopamine_stability">Dopamine Stability</string>
+    <string name="target_systemic_reset">Systemic Reset</string>
+    <string name="target_acute">Acute Intervention</string>
+    <string name="target_systemic">Systemic</string>
+
+    <!-- Frequencies -->
+    <string name="freq_432hz">432Hz</string>
+    <string name="freq_174hz">174Hz</string>
+    <string name="freq_delta">Delta</string>
+    <string name="freq_396hz">396Hz</string>
+    <string name="freq_alpha">Alpha</string>
+    <string name="freq_741hz">741Hz</string>
+    <string name="freq_528hz">528Hz</string>
+
+
+    <!-- UI Headers & Labels -->
+    <string name="therapeutic_header">THE SANCTUARY</string>
+    <string name="therapeutic_sub_header">NEURO-ACOUSTIC CENTER</string>
+    <string name="recommended_for">RECOMMENDED FOR: %1$s</string>
+    <string name="active_protocols">ACTIVE PROTOCOLS</string>
+    <string name="clinical_prep_library">CLINICAL PREPARATION LIBRARY</string>
+    <string name="clinical_insight">CLINICAL INSIGHT</string>
+    <string name="begin_sync">BEGIN NEURO-ACOUSTIC SYNC</string>
+    <string name="prep_steps_title">PREPARATION STEPS:</string>
+    <string name="prep_step_1">1. Find a quiet, dim space.</string>
+    <string name="prep_step_2">2. Ensure zero digital interruptions.</string>
+    <string name="prep_step_3">3. Assume the described posture.</string>
+    <string name="prep_step_4">4. Close eyes and match the frequency.</string>
+    <string name="current_bio_state">CURRENT BIOLOGICAL STATE</string>
+    <string name="acute_neural_brakes">ACUTE NEURAL BRAKES</string>
+    <string name="live_intervention">LIVE INTERVENTION</string>
+    <string name="global_syncing">%1$d GLOBAL SYNCING</string>
+    <string name="live_clinical_guidance">LIVE CLINICAL GUIDANCE</string>
+    <string name="player_session_header">NEURO-ACOUSTIC SESSION</string>
+
+    <!-- Emotions -->
+    <string name="emotion_overwhelmed">Overwhelmed</string>
+    <string name="emotion_scattered">Scattered</string>
+    <string name="emotion_heavy">Heavy</string>
+    <string name="emotion_burned_out">Burned Out</string>
+
+    <!-- Player Controls & Metrics -->
+    <string name="label_exhale">EXHALE</string>
+    <string name="label_inhale">INHALE</string>
+    <string name="label_frequency">FREQUENCY</string>
+    <string name="label_intensity">INTENSITY</string>
+    <string name="label_sync">SYNC</string>
+    <string name="state_active">Active</string>
+    <string name="state_paused">Paused</string>
+    <string name="label_live_sync">LIVE SYNC</string>
+
+    <!-- Intelligence Signals -->
+    <string name="signal_sync_oscillations">Synchronizing neural oscillations...</string>
+    <string name="signal_target_nodes">Targeting %1$s frequency nodes...</string>
+    <string name="signal_reduce_hyperarousal">Reducing amygdala hyper-arousal...</string>
+    <string name="signal_calibrate_vagal">Calibrating vagal nerve response...</string>
+    <string name="signal_optimize_balance">Optimizing autonomic balance...</string>
+
+    <!-- Brakes -->
+    <string name="brake_panic">Panic Brake</string>
+    <string name="brake_anger">Anger Reset</string>
+    <string name="brake_rest">Deep Rest</string>
+</resources>

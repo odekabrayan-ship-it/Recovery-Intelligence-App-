@@ -1,0 +1,717 @@
+<resources>
+    <string name="app_name">HARC Sağlık</string>
+
+    <!-- Navigasyon -->
+    <string name="nav_home">Ana Sayfa</string>
+    <string name="nav_recovery">İyileşme</string>
+    <string name="nav_insights">Analizler</string>
+    <string name="nav_coach">Uzman Yardımı</string>
+    <string name="nav_community">Topluluk</string>
+
+    <!-- Giriş Ekranı -->
+    <string name="login_welcome_back">Tekrar Hoş Geldiniz</string>
+    <string name="login_create_account">Hesap Oluştur</string>
+    <string name="login_sign_in">Giriş Yap</string>
+    <string name="login_continue_google">Google ile Devam Et</string>
+    <string name="login_email_label">E-posta Adresi</string>
+    <string name="login_password_label">Şifre</string>
+    <string name="login_sign_up_prompt">İyileşme Topluluğuna Katılın</string>
+    <string name="login_sign_in_prompt">İyileşme Panelinize Giriş Yapın</string>
+    <string name="login_already_have_account">Zaten bir hesabınız var mı? Giriş Yap</string>
+    <string name="login_dont_have_account">Hesabınız yok mu? Bir tane oluşturun</string>
+
+    <!-- Ayarlar ve Profil -->
+    <string name="settings_language">Dil</string>
+    <string name="settings_logout">Oturumu Sıfırla</string>
+    <string name="settings_delete_account">Tüm Verileri Sil</string>
+    <string name="settings_select_language">Dil Seçin</string>
+    <string name="settings_account_mgmt">Uygulama Yönetimi</string>
+    <string name="settings_security">Güvenlik</string>
+    <string name="settings_close">Kapat</string>
+    <string name="settings_cancel">İptal</string>
+    <string name="settings_confirm_delete">Veri Silme Onayı</string>
+    <string name="settings_apply">GEÇİŞİ ONAYLA</string>
+    <string name="settings_delete_warning">Uyarı: Bu işlem tüm sağlık kayıtlarınızı, biyolojik verilerinizi ve iyileşme ilerlemenizi bu cihazdan kalıcı olarak kaldıracaktır. Bu işlem geri alınamaz.</string>
+
+    <!-- Profil Ekranı -->
+    <string name="profile_title">İyileşme Profilim</string>
+    <string name="profile_save">Kaydet</string>
+    <string name="profile_edit">Profili Düzenle</string>
+    <string name="profile_full_name">Görünen Ad</string>
+    <string name="profile_username">Dahili Kimlik</string>
+    <string name="profile_copy_username">Kimliği Kopyala</string>
+    <string name="profile_share_profile">Uygulamayı Paylaş</string>
+    <string name="profile_share_text">Gizlilik odaklı biyolojik optimizasyon için HARC Sağlık\'ta bana katılın.</string>
+    <string name="profile_username_copied">Kimlik panoya kopyalandı</string>
+    <string name="profile_bio">Biyografi</string>
+    <string name="profile_location">Konum</string>
+    <string name="profile_gender">Cinsiyet</string>
+    <string name="profile_age">Yaş</string>
+    <string name="profile_security_privacy">Güvenlik ve Gizlilik</string>
+    <string name="profile_pin_protection">PIN Koruması</string>
+    <string name="profile_biometric_login">Biyometrik Giriş</string>
+    <string name="profile_privacy_policy">Gizlilik Politikası</string>
+    <string name="profile_medical_disclaimer">Tıbbi Feragatname</string>
+    <string name="medical_disclaimer_text">HARC Sağlık, biyolojik optimizasyon protokollerini yalnızca bilgilendirme amaçlı sunar. Profesyonel tıbbi tavsiye, teşhis veya tedavinin yerini TUTMAZ. Herhangi bir yeni sağlık protokolüne başlamadan önce daima doktorunuzun tavsiyesini alın.</string>
+    <string name="profile_local_storage_warning">Sadece yerel depolama: Verileriniz bu cihazda kalır. Uygulama silinirse veriler kurtarılamaz.</string>
+    <string name="profile_set_pin_title">PIN Kilidi Ayarla</string>
+    <string name="profile_set_pin_desc">Yerel verilerinizi korumak için 4-6 haneli bir PIN girin.</string>
+    <string name="profile_pin_label">PIN</string>
+    <string name="profile_set_pin_button">PIN Ayarla</string>
+    <string name="profile_not_set">Ayarlanmadı</string>
+
+    <!-- Kilit Ekranı Ekstraları -->
+    <string name="lock_wrong_pin">Hatalı PIN. Lütfen tekrar deneyin.</string>
+    <string name="lock_forgot_pin">PIN mi Unutuldu?</string>
+    <string name="lock_reset_title">Uygulama Erişimini Sıfırla</string>
+    <string name="lock_reset_desc">PIN\'inizi sıfırlamak için güvenlik nedeniyle yerel olarak depolanan tüm sağlık verilerini silmeliyiz. Bu işlem geri alınamaz. Devam etmek istiyor musunuz?</string>
+    <string name="lock_reset_confirm">Verileri Sil ve Sıfırla</string>
+
+    <!-- Ana Sayfa -->
+    <string name="home_biological_command">BİYOLOJİK KOMUTA</string>
+    <string name="home_hello">Merhaba, %1$s</string>
+    <string name="home_mandatory_triad">ZORUNLU GÜNLÜK ÜÇLÜ</string>
+    <string name="home_triad_subtitle">Anlık fizyolojik onarım için uzman liderliğinde protokoller</string>
+    <string name="home_core_systems">Temel Biyolojik Sistemler</string>
+    <string name="home_systems_subtitle">Son verilere dayalı klinik durum</string>
+    <string name="home_recovery_toolkit">İyileşme Araç Seti</string>
+    <string name="home_toolkit_subtitle">Metrikleri yükseltmek için hızlı eylemler</string>
+    <string name="home_recovery_index">İYİLEŞME ENDEKSİ</string>
+    <string name="home_recovery_desc">Hücresel onarım ve detoksifikasyon için genel fizyolojik hazırlık.</string>
+    <string name="home_streak_title">%1$d GÜNLÜK İYİLEŞME SERİSİ</string>
+    <string name="home_streak_desc">Bu hafta biyolojik tutarlılık açısından kullanıcıların ilk %5’indesiniz. Sinirsel stabilizasyon için mevcut protokolü sürdürün.</string>
+    <string name="home_live_tag">CANLI</string>
+    <string name="home_category_sleep">Uyku</string>
+    <string name="home_category_metabolic">Metabolik</string>
+    <string name="home_category_vascular">Vasküler</string>
+
+    <!-- Metrikler ve Durum -->
+    <string name="status_optimized">OPTİMİZE EDİLDİ</string>
+    <string name="status_stable">STABİL</string>
+    <string name="status_strained">ZORLANMIŞ</string>
+    <string name="status_critical">KRİTİK</string>
+    <string name="metric_hydration">HİDRASYON SEVİYESİ</string>
+    <string name="metric_brain_recovery">BEYİN İYİLEŞMESİ</string>
+    <string name="metric_tag_cellular_fluid">HÜCRESEL SIVI</string>
+    <string name="metric_tag_neural_repair">NÖRAL ONARIM</string>
+
+    <!-- Eylemler -->
+    <string name="action_hydrate">SIVI AL</string>
+    <string name="action_hydrate_sub">250ml Ekle</string>
+    <string name="action_rest">DİNLEN</string>
+    <string name="action_rest_sub">1 sa Ekle</string>
+    <string name="action_full_protocol">TAM PROTOKOL</string>
+    <string name="action_review_interventions">Tüm hedefli müdahaleleri inceleyin</string>
+
+    <!-- İstihbarat Başlığı -->
+    <string name="intel_equilibrium_title">DENGE SAĞLANDI</string>
+    <string name="intel_equilibrium_title_optimized">SİSTEM OPTİMİZE EDİLDİ</string>
+    <string name="intel_equilibrium_desc">Biyolojik sistemler sinir yollarını başarıyla onarıyor ve metabolik yan ürünleri temizliyor.</string>
+
+    <!-- Üçlü Görevler -->
+    <string name="task_breath_title">Uyku Öncesi Nefes (4–7–8)</string>
+    <string name="task_breath_desc">Parasempatik iyileşmeyi tetiklemek için canlı rehberli nöral sıfırlama.</string>
+    <string name="task_hydrate_title">Hidrasyon + Elektrolitler</string>
+    <string name="task_hydrate_desc">Nöral atık temizliği ve beyin hidrasyonu için kritik öneme sahiptir.</string>
+    <string name="task_aerobic_title">Hafif Aerobik Aktivite</string>
+    <string name="task_aerobic_desc">Toksin filtrasyonunu hızlandırmak için kan akışını uyarır.</string>
+
+    <!-- Vitalis ve Motor -->
+    <string name="vitalis_command_center">VITALIS MOTORU</string>
+    <string name="vitalis_bio_intel">BİYO-BİLGİ</string>
+    <string name="vitalis_protocols">PROTOKOLLER</string>
+    <string name="vitalis_evidence_base">KANIT TABANI</string>
+    <string name="vitalis_domain_analysis">ALAN ANALİZİ</string>
+    <string name="vitalis_optimal">Optimal</string>
+    <string name="vitalis_initiate_intervention">MÜDAHALEYİ BAŞLAT</string>
+    <string name="vitalis_session_complete">OTURUM TAMAMLANDI</string>
+    <string name="vitalis_inhale">NEFES AL</string>
+    <string name="vitalis_hold">TUT</string>
+    <string name="vitalis_exhale">NEFES VER</string>
+    <string name="vitalis_system_status_label">SİSTEM DURUMU</string>
+    <string name="vitalis_long_exhale">UZUN NEFES VER (AĞIZ)</string>
+    <string name="vitalis_longevity_trajectory_label">UZUN ÖMÜR YÖRÜNGESİ</string>
+    <string name="vitalis_calculating">Hesaplanıyor…</string>
+    <string name="vitalis_directives_title">VITALIS DİREKTİFLERİ</string>
+    <string name="vitalis_biological_systems_title">BİYOLOJİK SİSTEMLER</string>
+    <string name="vitalis_active_analysis">AKTİF ANALİZ</string>
+    <string name="vitalis_view_analysis">ANALİZİ GÖRÜNTÜLE</string>
+    <string name="vitalis_longevity_protocol_label">UZUN ÖMÜR PROTOKOLÜ</string>
+    <string name="vitalis_phase_active">Faz: Aktif</string>
+    <string name="vitalis_start_protocol">PROTOKOLÜ BAŞLAT</string>
+    <string name="vitalis_dictionary_title">VITALIS SÖZLÜĞÜ</string>
+    <string name="vitalis_dictionary_subtitle">150+ biyolojik bileşikten oluşan klinik veritabanı.</string>
+    <string name="vitalis_protocol_hierarchy">Protokol Hiyerarşisi</string>
+    <string name="vitalis_protocol_hierarchy_desc">Klinik çalışma gücüne göre müdahaleleri nasıl sıralıyoruz.</string>
+    <string name="vitalis_bio_markers">Biyo-Göstergeleri Anlamak</string>
+    <string name="vitalis_bio_markers_desc">VO2 Max, ApoB ve HRV konularına derinlemesine bakış.</string>
+    <string name="vitalis_philosophy">Vitalis Felsefesi</string>
+    <string name="vitalis_philosophy_desc">Biyolojik yaş geri çevirme matematiği.</string>
+    <string name="vitalis_targeted_interventions">HEDEFLİ MÜDAHALELER</string>
+    <string name="vitalis_vitalis_os">VITALIS OS</string>
+    <string name="vitalis_physiological_sigh">FİZYOLOJİK İÇ ÇEKİŞ</string>
+    <string name="vitalis_physiological_sigh_desc">Burundan iki kez derin nefes alın, ağızdan uzunca verin. Bu, anlık parasempatik hakimiyeti tetikler.</string>
+    <string name="vitalis_abort_session">OTURUMU İPTAL ET</string>
+    <string name="vitalis_navy_seal_protocol">NAVY SEAL PROTOKOLÜ</string>
+    <string name="vitalis_box_breathing">KARE NEFES EGZERSİZİ</string>
+    <string name="vitalis_rep_counter">TEKRAR %1$d / %2$d</string>
+    <string name="vitalis_timed_intervention">ZAMANLI MÜDAHALE</string>
+    <string name="vitalis_log_completion">TAMAMLANMAYI KAYDET</string>
+    <string name="vitalis_complete">TAMAMLANDI</string>
+    <string name="vitalis_execution_steps">UYGULAMA ADIMLARI</string>
+    <string name="vitalis_log_protocol_completed">PROTOKOLÜ TAMAMLANDI OLARAK KAYDET</string>
+
+    <!-- YENİ UZUN ÖMÜR PROTOKOLLERİ DİZİLERİ -->
+    <string name="lp_autophagy_title">Otofaji Döngüsü</string>
+    <string name="lp_autophagy_purpose">Hasarlı proteinleri geri dönüştürerek ve metabolik kalıntıları temizleyerek hücresel \"temizliği\" tetikleyin.</string>
+    <string name="lp_autophagy_step1">16 saatlik bir açlık penceresi başlatın.</string>
+    <string name="lp_autophagy_step2">Açlık sırasında 500 ml mineral bakımından zengin su tüketin.</string>
+    <string name="lp_autophagy_step3">Açlığı yüksek proteinli, düşük glisemik indeksli bir öğünle bozun.</string>
+
+    <string name="lp_thermal_title">Termal Hormezis (Kontrast)</string>
+    <string name="lp_thermal_purpose">Isı Şoku Proteinlerini (HSP) ve kahverengi yağı aktive ederek kardiyovasküler dayanıklılığı artırın.</string>
+    <string name="lp_thermal_step1">20 dakikalık Sauna maruziyeti (80°C+).</string>
+    <string name="lp_thermal_step2">Hemen 3 dakikalık Soğuk Dalış veya Duş (10°C).</string>
+    <string name="lp_thermal_step3">Nötr bir ortamda 10 dakika dinlenin.</string>
+
+    <string name="lp_vo2_title">Mitokondriyal Ocak (VO2 Maks)</string>
+    <string name="lp_vo2_purpose">Kalp ve akciğerlerin biyolojik yaşlanmasını geciktirmek için maksimum oksijen kullanımı.</string>
+    <string name="lp_vo2_step1">5 dakikalık aşamalı ısınma.</string>
+    <string name="lp_vo2_step2">4x4 İntervaller: 4 dakika Maksimum Yoğunlukta, 3 dakika aktif toparlanma.</string>
+    <string name="lp_vo2_step3">Diyafram nefesi ile soğuma.</string>
+
+    <string name="lp_glycemic_title">Glisemik Stabilite Protokolü</string>
+    <string name="lp_glycemic_purpose">Protein glikasyonunu önlemek ve cilt/organ elastikiyetini korumak için insülin artışlarını minimize edin.</string>
+    <string name="lp_glycemic_step1">Karbonhidrat ağırlıklı bir öğünden önce suya 1 yemek kaşığı Elma Sirkesi ekleyip için.</string>
+    <string name="lp_glycemic_step2">Yemekten hemen sonra 15 dakikalık tempolu yürüyüş.</string>
+    <string name="lp_glycemic_step3">Herhangi bir nişasta tüketiminden önce lif ve proteine öncelik verin.</string>
+
+    <string name="lp_glymphatic_title">Glimfatik Sıfırlama</string>
+    <string name="lp_glymphatic_purpose">Nörodejeneratif birikimi önlemek için beynin atık temizleme sistemini optimize edin.</string>
+    <string name="lp_glymphatic_step1">Uykudan 90 dakika önce mavi ışık maruziyetini sıfırlayın.</string>
+    <string name="lp_glymphatic_step2">Oda sıcaklığını tam olarak 18°C\'ye düşürün.</string>
+    <string name="lp_glymphatic_step3">Maksimum beyin omurilik sıvısı akışını kolaylaştırmak için yan yatın.</string>
+
+    <string name="lp_apob_title">ApoB Lipid Temizliği</string>
+    <string name="lp_apob_purpose">Arterlerde plak oluşumu riskini ortadan kaldırmak için aterojenik partiküllerin agresif bir şekilde azaltılması.</string>
+    <string name="lp_apob_step1">Günlük çözünür lif alımını 30g+ üzerine çıkarın (Psyllium/Yulaf).</string>
+    <string name="lp_apob_step2">2g yüksek EPA içerikli Omega-3 yağ asidi tüketin.</string>
+    <string name="lp_apob_step3">Endoteli hazırlamak için 5 dakikalık \"Nitrik Oksit Boşaltımı\" (Squat/Press) yapın.</string>
+
+    <string name="lp_skeletal_title">İskelet Güçlendirme</string>
+    <string name="lp_skeletal_purpose">Yaşa bağlı kırılganlığı önlemek için kemik mineral yoğunluğunu ve yapısal bütünlüğü maksimize edin.</string>
+    <string name="lp_skeletal_step1">Barfiks barında kümülatif 3 dakikalık \"Ölü Asılış\" (Dead Hang) yapın.</string>
+    <string name="lp_skeletal_step2">10 dakikalık ağır eksantrik yükleme (Yavaş Squat/Şınav) yapın.</string>
+    <string name="lp_skeletal_step3">Kalsiyum sinyali için Vitamin D3 + K2 seviyelerini optimize edin.</string>
+
+    <string name="lp_dna_title">DNA Metilasyon Kalkanı</string>
+    <string name="lp_dna_purpose">DNA onarım kapasitesini maksimize edin ve pro-inflamatuar yaşlanma genlerini susturun.</string>
+    <string name="lp_dna_step1">100mg Sülforafan (Brokoli Filizi) veya konsantre kış sebzesi özü tüketin.</string>
+    <string name="lp_dna_step2">Kortizol kaynaklı DNA hasarını baskılamak için 10 dakika farkındalık egzersizi yapın.</string>
+    <string name="lp_dna_step3">24 saat boyunca tüm işlenmiş yağlardan ve yanmış etlerden kaçının.</string>
+
+    <string name="vitalis_biological_optimization">BİYOLOJİK OPTİMİZASYON</string>
+    <string name="vitalis_intervention_logged">Müdahale başarıyla kaydedildi. Hücresel göstergeleriniz güncellendi.</string>
+    <string name="vitalis_continue_scan">TARAMAYA DEVAM ET</string>
+    <string name="vitalis_module_detail_domain">ALAN</string>
+    <string name="vitalis_neural_connectivity">NÖRAL BAĞLANTI</string>
+    <string name="vitalis_search_compounds">Bileşikleri ara…</string>
+    <string name="vitalis_clinically_indexed">KLİNİK OLARAK İNDEKSLENDİ</string>
+    <string name="vitalis_dictionary_desc">Vitalis Sözlüğü besinler, protokoller ve modern farmakoloji hakkında veriler içerir. Kanıt tabanını taramak için yazın.</string>
+    <string name="vitalis_clinical_rationale">KLİNİK GEREKÇE</string>
+    <string name="vitalis_command">KOMUTA</string>
+    <string name="vitalis_intel">BİLGİ</string>
+    <string name="vitalis_library">KÜTÜPHANE</string>
+    <string name="vitalis_back">Geri</string>
+    <string name="vitalis_notifications">Bildirimler</string>
+    <string name="vitalis_syncing">Senkronize Ediliyor</string>
+    <string name="vitalis_module_stress">Nöro-Endokrin ve Stres Dayanıklılığı</string>
+    <string name="vitalis_module_physical">Kas-İskelet Bütünlüğü ve Mobilite</string>
+    <string name="vitalis_module_cognitive">Bilişsel Fonksiyon ve Nöral Plastisite</string>
+    <string name="vitalis_synchronization_progress">Senkronizasyon devam ediyor…</string>
+    <string name="vitalis_acute_neural_load">AKUT NÖRAL YÜK</string>
+    <string name="vitalis_physical_strain_index">FİZİKSEL ZORLANMA ENDEKSİ</string>
+    <string name="vitalis_cognitive_reserve">BİLİŞSEL REZERV</string>
+    <string name="vitalis_autonomic_balance">OTONOM DENGE</string>
+    <string name="vitalis_biochemical_status">BİYOKİMYASAL DURUM</string>
+    <string name="vitalis_metabolic_efficiency">METABOLİK VERİMLİLİK</string>
+    <string name="vitalis_regeneration_rate">REJENERASYON HIZI</string>
+    <string name="vitalis_phase_daytime">FAZ: GÜNDÜZ OPTİMİZASYONU</string>
+    <string name="vitalis_phase_execution">FAZ: İYİLEŞME UYGULAMASI</string>
+    <string name="vitalis_phase_nocturnal">FAZ: GECE ONARIMI</string>
+    <string name="vitalis_project_vitalis">PROJECT VITALIS™</string>
+    <string name="vitalis_acute_neural_reset">AKUT NÖRAL SIFIRLAMA</string>
+
+    <!-- Hüküm Etiketleri -->
+    <string name="verdict_protect_label">KORU</string>
+    <string name="verdict_protect_signal">Optimal Biyo-Gösterge</string>
+    <string name="verdict_caution_label">DİKKAT</string>
+    <string name="verdict_caution_signal">Sistemik Risk Tespit Edildi</string>
+    <string name="verdict_unknown_label">BİLİNMİYOR</string>
+    <string name="verdict_unknown_signal">Yetersiz Klinik Veri</string>
+
+    <!-- Sözlük Girişleri -->
+    <string name="ent_sauna">Sauna Terapisi</string>
+    <string name="rat_sauna">Isı şoku proteinlerini artırır ve kardiyovasküler sağlığı destekler.</string>
+    <string name="ent_hiit">HIIT</string>
+    <string name="rat_hiit">Mitokondriyal yoğunluğu ve metabolik esnekliği artırır.</string>
+    <string name="ent_nmn">NMN</string>
+    <string name="rat_nmn">DNA onarımı ve uzun ömür için temel NAD+ öncüsü.</string>
+    <string name="ent_magnesium">Magnezyum</string>
+    <string name="rat_magnesium">300+ enzimatik reaksiyon ve nöral gevşeme için kofaktör.</string>
+    <string name="ent_omega3">Omega-3</string>
+    <string name="rat_omega3">Sistemik inflamasyonu azaltır ve nöral membran bütünlüğünü destekler.</string>
+    <string name="ent_zone2">Bölge 2 Eğitimi</string>
+    <string name="rat_zone2">Uzun ömür ve mitokondriyal sağlık için temel aerobik temel.</string>
+    <string name="ent_fasting">Aralıklı Oruç</string>
+    <string name="rat_fasting">Otofajiyi tetikler ve insülin duyarlılığını artırır.</string>
+    <string name="ent_alcohol">Alkol</string>
+    <string name="rat_alcohol">Uyku mimarisini bozar ve metabolik etanol yüküne neden olur.</string>
+    <string name="ent_nicotine">Nikotin</string>
+    <string name="rat_nicotine">Akut vasküler daralmaya neden olur ve otonom dengeyi bozar.</string>
+    <string name="ent_sugar">Rafine Şeker</string>
+    <string name="rat_sugar">Glikasyonun ve sistemik düşük dereceli inflamasyonun birincil itici gücü.</string>
+    <string name="ent_nac">NAC (N-Asetil Sistein)</string>
+    <string name="rat_nac">Vücudun ana antioksidanı olan glutationu yeniler, karaciğer onarımı için kritiktir.</string>
+    <string name="ent_thiamine">B1 Vitamini (Tiamin)</string>
+    <string name="rat_thiamine">Beyin glukoz metabolizması için kritiktir; genellikle alkol tüketimiyle tükenir.</string>
+
+    <!-- Metabolik Aktiviteler -->
+    <string name="act_me1_title">Sirke Glukoz Tamponu</string>
+    <string name="act_me1_ipre">En büyük öğününüzden önce 250ml suya 1 yemek kaşığı Elma Sirkesi ekleyip için.</string>
+    <string name="act_me1_bio">Asetik asit alfa-amilazı inhibe ederek nişastanın glukoza parçalanmasını yavaşlatır.</string>
+    <string name="act_me1_phys">Yemek sonrası glukoz artışını %30\'a kadar azaltarak insülin duyarlılığını korur.</string>
+    <string name="act_me1_rsch">Klinik araştırmalar, asetik asidin karbonhidrat yüklemesinden 2-5 dakika önce tüketildiğinde glisemik yanıtı önemli ölçüde körelttiğini göstermektedir.</string>
+
+    <string name="act_me2_title">Yemek Sonrası Glisemik Yürüyüş</string>
+    <string name="act_me2_ipre">Yemekten hemen sonra 15 dakikalık tempolu yürüyüş.</string>
+    <string name="act_me2_bio">Kas kasılması, yüksek insülin gerektirmeden GLUT4 taşıyıcılarını hücre yüzeyine çağırır.</string>
+    <string name="act_me2_phys">Glukozu kan dolaşımından hızla temizleyerek proteinlerin glikasyonunu önler.</string>
+    <string name="act_me2_rsch">Kısa bir yürüyüş bile, yemekten sonra ayakta durmaktan veya oturmaktan glukoz temizliğinde önemli ölçüde daha etkilidir.</string>
+
+    <!-- Bilişsel ve Nöral Uzun Ömür -->
+    <string name="act_co1_title">NSDR (Uyku Dışı Derin Dinlenme)</string>
+    <string name="act_co1_ipre">20 dakikalık rehberli NSDR veya Yoga Nidra.</string>
+    <string name="act_co1_bio">Beyni uyumadan yüksek frekanslı beta dalgalarından alfa/teta dalgalarına kaydırır.</string>
+    <string name="act_co1_phys">Prefrontal korteksteki asetilkolin seviyelerini yenileyerek nöroplastisiteyi artırır.</string>
+    <string name="act_co1_rsch">NSDR\'nin nigrostriatal yoldaki dopamin seviyelerini %65\'e kadar artırdığı gösterilmiştir.</string>
+
+    <!-- Fiziksel ve Eklem Bütünlüğü -->
+    <string name="act_ph1_title">Pasif Asılma Protokolü</string>
+    <string name="act_ph1_ipre">Barfiks barında 3x30 saniye pasif ölü asılış yapın.</string>
+    <string name="act_ph1_bio">İntervertebral diskleri dekomprese eder ve omuzlardaki subakromiyal alanı artırır.</string>
+    <string name="act_ph1_phys">Yerçekiminin ve hareketsiz davranışın omurga üzerindeki sıkıştırıcı etkilerini geri çevirir.</string>
+    <string name="act_ph1_rsch">Düzenli asılma, omuz mobilitesini ve omurga sağlığını ileri yaşlara kadar korumak için temel bir uygulamadır.</string>
+
+    <string name="act_ph2_title">CARS (Kontrollü Eklem Rotasyonları)</string>
+    <string name="act_ph2_ipre">Boyun, omuzlar ve kalçalar için tam aralıklı rotasyonlar yapın.</string>
+    <string name="act_ph2_bio">Eklem kapsülündeki mekanoreseptörleri uyarır ve sinovyal sıvı dağılımını sağlar.</string>
+    <string name="act_ph2_phys">Eklem \"kilitlenmesini\" önler ve \"kullan ya da kaybet\" hareket aralığını korur.</string>
+    <string name="act_ph2_rsch">CARS, merkezi sinir sistemindeki eklem çalışma alanını haritalamak için günlük bir bakım gerekliliğidir.</string>
+
+    <!-- Faz etiketleri -->
+    <string name="phase_morning">Sabah</string>
+    <string name="phase_daytime">Gündüz</string>
+    <string name="phase_evening">Akşam</string>
+    <string name="phase_execution">Uygulama</string>
+
+    <!-- Uyku Aktiviteleri -->
+    <string name="act_sl1_title">Anlık Uyanış Aktivasyonu</string>
+    <string name="act_sl1_ipre">Uyandıktan sonra 120 saniye içinde yataktan çıkın.</string>
+    <string name="act_sl1_bio">Beyne uyku durumunu sonlandırması için sinyal gönderir ve Kortizol Uyanış Yanıtını (CAR) başlatır.</string>
+    <string name="act_sl1_phys">Uyku ataletini önler ve günlük enerji stabilitesi için metabolik saati sıfırlar.</string>
+    <string name="act_sl1_rsch">Alarm cihazınızı yataktan >3m uzağa yerleştirerek uygulayın. Bu fiziksel yer değiştirme dikeyliği zorlar ve propriyoseptif-vestibüler aktivasyonu tetikleyerek parasempatikten sempatik hakimiyete keskin bir geçiş sağlar.</string>
+
+    <string name="act_sl2_title">SCN Fotobiyomodülasyonu</string>
+    <string name="act_sl2_ipre">15 dakika parlak doğal ışığa maruz kalın.</string>
+    <string name="act_sl2_bio">Işık, Suprakiazmatik Çekirdeği (SCN) melatonin baskılaması için uyarır ve gece salınımı için 16 saatlik zamanlayıcıyı ayarlar.</string>
+    <string name="act_sl2_phys">Uzun vadeli sirkadiyen stabilite ve mevsimsel afektif bozuklukların önlenmesi için gereklidir.</string>
+    <string name="act_sl2_rsch">Pencere veya güneş gözlüğü olmadan doğrudan dış mekan maruziyetine öncelik verin. Hava kapalıysa 30 dakikaya çıkarın. Bu lüks yoğunluğu, ana saatinizi yöneten melanopsin içeren retinal ganglion hücrelerini doyurmak için gereklidir.</string>
+
+    <string name="act_sl3_title">Melatonin Kalkanı: Mavi Işık Orucu</string>
+    <string name="act_sl3_ipre">Uykudan 120 dakika önce tüm ekranlara kırmızı filtre uygulayın veya engelleyici kullanın.</string>
+    <string name="act_sl3_bio">Melanopsin içeren ganglion hücrelerini korur. Melatonin güçlü bir anti-kanserojen antioksidandır.</string>
+    <string name="act_sl3_phys">Gece anti-kanser mekanizmalarını ve hücresel onarımı maksimize eder.</string>
+    <string name="act_sl3_rsch">\'Gece Vardiyası\' yazılımı ve fiziksel kehribar rengi lensler uygulayın. Düşük yoğunluklu mavi ışık bile melatonin salınımını 90 dakikaya kadar baskılayabilir. Yatak odasındaki tüm çevresel LED\'lerin kapatıldığından emin olun.</string>
+
+    <string name="act_sl4_title">Glimfatik Termal Tetikleyici</string>
+    <string name="act_sl4_ipre">Yatak odası sıcaklığını 18°C\'ye (64°F) düşürün.</string>
+    <string name="act_sl4_bio">Vücut çekirdek sıcaklığındaki düşüş, N3 Derin Uykuya girmek için birincil fizyolojik tetikleyicidir.</string>
+    <string name="act_sl4_phys">Glimfatik sistemi beta-amiloidi \"temizlemesi\" için tetikler, Alzheimer ve demans riskini azaltır.</string>
+    <string name="act_sl4_rsch">Yatmadan 90 dakika önce ılık bir duş ile birleştirin. El ve ayaklardaki \'geri tepme\' vazodilatasyonu, nöral atık temizleme döngüleri için gereken çekirdek sıcaklığındaki 1°C\'lik düşüşü kolaylaştırır.</string>
+
+    <!-- Kardiyovasküler Aktiviteler -->
+    <string name="act_ca1_title">Ortostatik Vasküler Hazırlık</string>
+    <string name="act_ca1_ipre">Hemen ayağa kalkın ve 2 dakika hafif esneme yapın.</string>
+    <string name="act_ca1_bio">Vasküler sistemi yerçekimine uyum sağlamaya zorlar, endotelde nitrik oksit salınımını uyarır.</string>
+    <string name="act_ca1_phys">Vasküler uyumu artırır ve ortostatik hipertansiyon riskini azaltır.</string>
+    <string name="act_ca1_rsch">Derin nefes alırken tavana doğru yavaş, kontrollü uzanmalar yapın. Büyük damarların bu mekanik gerilmesi, damar duvarlarındaki kesme stresini artırarak eNOS aktivitesini indükler.</string>
+
+    <!-- İyileşme Canlı Aktiviteleri -->
+    <string name="act_osmotic_title">Osmotik Yükleme</string>
+    <string name="act_osmotic_why">Alkol vazopressini baskılayarak büyük hidrasyon kaybına neden olur. Osmotik basıncı geri yüklemek için elektrolitler gereklidir.</string>
+    <string name="act_osmotic_what">250ml su, her 20 saniyede bir yavaşça yudumlanarak.</string>
+    <string name="act_osmotic_outcome">Stabilize edilmiş hücresel hidrasyon ve azaltılmış alkol sonrası beyin sisi.</string>
+    <string name="act_osmotic_prep_title">Hazırlık</string>
+    <string name="act_osmotic_prep_desc">250ml su + elektrolit edinin.</string>
+    <string name="act_osmotic_sip_title">Osmotik Yudumlar</string>
+    <string name="act_osmotic_sip_desc">Mukozal emilim için her 20 saniyede bir yavaş yudumlar.</string>
+    <string name="act_osmotic_impact">Hidrasyon tamamlandı. Osmotik basınç stabilize edildi. Karaciğer filtrasyon kapasitesi ~%12 arttı.</string>
+
+    <string name="act_pulmonary_title">Pulmoner Genişleme</string>
+    <string name="act_pulmonary_why">Sigara içmek fonksiyonel akciğer hacmini azaltır. Diyafram nefesi alt lobları tekrar devreye sokar.</string>
+    <string name="act_pulmonary_what">Burundan yavaş, derin karın nefesleri.</string>
+    <string name="act_pulmonary_outcome">Artan VO2 verimliliği ve azaltılmış sistemik vasküler gerginlik.</string>
+    <string name="act_pulmonary_posture_title">Duruş</string>
+    <string name="act_pulmonary_posture_desc">Dik oturun, elinizi karnınıza koyun.</string>
+    <string name="act_pulmonary_ritual_title">Ritüel</string>
+    <string name="act_pulmonary_ritual_desc">Derin karın nefesi al, yavaşça ver.</string>
+    <string name="act_pulmonary_impact">Akciğer kapasitesi devreye girdi. Oksijen doygunluğu arttı. Artık CO2 dışarı atıldı.</string>
+
+    <string name="act_vagal_title">Vagal Sinir Vuruşu</string>
+    <string name="act_vagal_why">Soğuğa maruz kalma, Memeli Dalış Refleksini tetikleyerek parasempatik dalı anında aktive eder.</string>
+    <string name="act_vagal_what">Yüze/boyna 60 saniye boyunca soğuk su uygulayın.</string>
+    <string name="act_vagal_outcome">Kortizol ve dinlenme kalp hızında anında düşüş.</string>
+    <string name="act_vagal_cold_title">Soğuk Maruziyeti</string>
+    <string name="act_vagal_cold_desc">Yüzünüze soğuk su çarpın veya boynunuza buz paketi uygulayın.</string>
+    <string name="act_vagal_impact">Sinir sistemi düzenlendi. Vagal ton arttı. Kalp hızı stabilize edildi.</string>
+
+    <string name="act_hepatic_title">Hepatik Faz II Yüklemesi</string>
+    <string name="act_hepatic_why">Alkol asetaldehit oluşturur. Faz II karaciğer detoksu, toksinleri nötralize etmek için belirli kükürt içeren bileşikler (NAC/Glutation) gerektirir.</string>
+    <string name="act_hepatic_what">NAC alın veya suyla brokoli filizi tüketin.</string>
+    <string name="act_hepatic_outcome">Toksik alkol yan ürünlerinin hızlandırılmış temizliği ve azaltılmış karaciğer zorlanması.</string>
+    <string name="act_hepatic_loading_title">Besin Yüklemesi</string>
+    <string name="act_hepatic_loading_desc">200ml su ile kış sebzesi özleri veya NAC tüketin.</string>
+    <string name="act_hepatic_impact">Faz II detoksifikasyon yolları hazırlandı. Glutation öncüleri kabul edildi.</string>
+
+    <string name="act_steam_title">Mukolitik Buhar Protokolü</string>
+    <string name="act_steam_why">Nikotin akciğerlerinizdeki silleri felç eder. Buhar mukusu inceltmeye yardımcı olarak katranın atılmasını kolaylaştırır.</string>
+    <string name="act_steam_what">Sıcak su dolu bir kaptan veya nemlendiriciden buhar soluyun.</string>
+    <string name="act_steam_outcome">Gelişmiş pulmoner temizlik ve azaltılmış sigara öksürüğü.</string>
+    <string name="act_steam_inhale_title">Buhar Soluma</string>
+    <string name="act_steam_inhale_desc">Derin bronşiyal erişim için sıcak buhar soluyun.</string>
+    <string name="act_steam_impact">Katran yüklü mukus inceltildi. Bronşiyal yollar nemlendirildi.</string>
+
+    <string name="act_thiamine_title">Tiamin Doygunluk Ritüeli</string>
+    <string name="act_thiamine_why">Alkol, beyin enerjisi için kritik olan Tiamin (B1) emilimini şiddetle engeller. Eksiklik nörolojik gerilemeye yol açar.</string>
+    <string name="act_thiamine_what">Bir tam bardak su ile B1 takviyesi alın.</string>
+    <string name="act_thiamine_outcome">Wernicke-Korsakoff yollarının korunması ve gelişmiş bilişsel netlik.</string>
+    <string name="act_thiamine_intake_title">Ağızdan Alım</string>
+    <string name="act_thiamine_intake_desc">Su ile 100mg Tiamin alın.</string>
+    <string name="act_thiamine_impact">B1 seviyeleri stabilize edildi. Serebral glukoz metabolizması korundu.</string>
+
+    <string name="act_inspiratory_title">İlham Verici Kas Eğitimi</string>
+    <string name="act_inspiratory_why">Sigara içmek birincil solunum kaslarını zayıflatır. Direnç eğitimi diyafram gücünü geri kazandırır.</string>
+    <string name="act_inspiratory_what">Derin nefes alın, ardından dudaklarınızda küçük bir açıklık bırakarak direnç oluşturarak nefes verin.</string>
+    <string name="act_inspiratory_outcome">Azaltılmış nefes darlığı ve gelişmiş torasik mobilite.</string>
+    <string name="act_inspiratory_res_title">Direnç</string>
+    <string name="act_inspiratory_res_desc">Büzülmüş dudaklarla orta kuvvete sahip bir dirençle nefes verin.</string>
+    <string name="act_inspiratory_impact">Diyafram gücü arttı. Yardımcı solunum kasları devreye girdi.</string>
+
+    <string name="act_coherence_title">Kalp Hızı Uyumu</string>
+    <string name="act_coherence_why">Sigara ve alkol dinlenme kalp hızını artırır. Uyum nefesi, kalbi sağlıklı ve yenileyici bir düzende salınım yapması için eğitir.</string>
+    <string name="act_coherence_what">Mükemmel zamanlanmış bir 4-6 ritmi için görseli takip edin.</string>
+    <string name="act_coherence_outcome">Düşürülmüş sistolik kan basıncı ve iyileşmiş HRV.</string>
+    <string name="act_coherence_step_title">Uyum</string>
+    <string name="act_coherence_step_desc">4s nefes al, 6s nefes ver. Pürüzsüz geçiş.</string>
+    <string name="act_coherence_impact">Otonom dengeye ulaşıldı. HRV arttı. Kardiyak yük azaldı.</string>
+
+    <string name="act_postural_title">Postural Drenaj Protokolü</string>
+    <string name="act_postural_why">Yerçekimi, katran ve mukusun alt akciğer segmentlerinden temizlenmek üzere daha büyük hava yollarına hareket etmesine yardımcı olur.</string>
+    <string name="act_postural_what">Yüz üstü yatarken kalçalarınızı desteklemek için yastık kullanın.</string>
+    <string name="act_postural_outcome">Derin akciğer temizliği ve akciğerlerin tabanında gelişmiş oksijenasyon.</string>
+    <string name="act_postural_pos_title">Konumlandırma</string>
+    <string name="act_postural_pos_desc">Göğüs kalçadan daha aşağıda olacak şekilde yatın. Derin nefes alın.</string>
+    <string name="act_postural_impact">Alt akciğer lobları temizlendi. Yerçekimi destekli mukus mobilizasyonu.</string>
+
+    <string name="act_reset_title">Parasempatik Sıfırlama</string>
+    <string name="act_reset_why">Alkol uyku mimarisini bozar. 4-7-8 nefesi, sempatik sinir sistemi için biyolojik bir \'kapatma düğmesi\'dir.</string>
+    <string name="act_reset_what">Burundan nefes al (4s), tut (7s), ağızdan ver (8s). Nöral göstergeleri güncellemek için tamamlamayı kaydedin.</string>
+    <string name="act_reset_outcome">Restoratif uyku için gevşeme yanıtının hızlı indüksiyonu.</string>
+    <string name="act_reset_cycle_title">4-7-8 Döngüsü</string>
+    <string name="act_reset_cycle_desc">4 Nefes Al, 7 Tut, 8 Nefes Ver.</string>
+    <string name="act_reset_impact">Merkezi sinir sistemi aşağı regüle edildi. Melatonin hazırlığı optimize edildi.</string>
+
+    <string name="act_sigh_title">Nöral Sıfırlama (İç Çekiş)</string>
+    <string name="act_sigh_why">Aşağı regüle etmenin en hızlı biyolojik yolu. Çökmüş alveolleri açar.</string>
+    <string name="act_sigh_what">Çift nefes alış + uzun, sesli iç çekiş.</string>
+    <string name="act_sigh_outcome">Sempatikten (savaş/kaç) Parasempatik hakimiyete geçiş.</string>
+    <string name="act_sigh_cycle_title">Döngü</string>
+    <string name="act_sigh_cycle_desc">Çift nefes al, uzun nefes ver.</string>
+    <string name="act_sigh_impact">Vagal ton arttı. Amigdala reaktivitesi düşürüldü.</string>
+
+    <string name="act_surfing_title">Nöral Dalga Navigasyonu</string>
+    <string name="act_surfing_why">Aşermeler nörokimyasal darbelerdir. Onları dalga gibi gözlemlemek bağımlılık döngüsü pekişmesini önler.</string>
+    <string name="act_surfing_what">Boğaz/göğüsteki fiziksel duyumların dikkatli gözlemi.</string>
+    <string name="act_surfing_outcome">Dopamin taban çizgisi rekalibrasyonu ve artan prefrontal kontrol.</string>
+    <string name="act_surfing_step_title">Dalga Sörfü</string>
+    <string name="act_surfing_step_desc">Fiziksel duyumu yargılamadan gözlemleyin.</string>
+    <string name="act_surfing_impact">Aşerme dalgasında gezinildi. Bağımlılık nöral yolları zayıflatıldı.</string>
+
+    <string name="act_circadian_title">Sirkadiyen Ritim Kilidi</string>
+    <string name="act_circadian_why">Alkol ve nikotin, REM\'i baskılayarak ve çekirdek sıcaklığını artırarak uyku mimarisini parçalar. Bu ritüel ana saati yeniden kalibre eder.</string>
+    <string name="act_circadian_what">Melatonin hazırlığı için SCN\'ye (Suprakiazmatik Çekirdek) sinyal göndermek üzere ışık nabzını takip edin.</string>
+    <string name="act_circadian_outcome">Gelişmiş uyku sürekliliği ve stabilize edilmiş sirkadiyen sinyalleşme.</string>
+    <string name="act_circadian_step_title">SCN Senkronizasyonu</string>
+    <string name="act_circadian_step_desc">Bakışınızı merkezi ışık nabzıyla eşleştirin. Loş ortam gereklidir.</string>
+    <string name="act_circadian_impact">Sirkadiyen göstergeler güncellendi. Biyolojik saat senkronize edildi.</string>
+
+    <string name="act_dopamine_title">Dopamin Reseptör Sıfırlama</string>
+    <string name="act_dopamine_why">Kronik madde kullanımı D2 reseptörlerini aşağı regüle eder. Bu ritüel, reseptör duyarlılığının geri dönmesini sağlamak için duyusal-minimum uyaranlar kullanır.</string>
+    <string name="act_dopamine_what">Tek bir noktaya odaklanın. Diğer tüm duyusal girdileri minimize edin. Bu, ödül devrelerinin soğumasını sağlar.</string>
+    <string name="act_dopamine_outcome">Prefrontal kontrolün restorasyonu ve azaltılmış dürtü oynaklığı.</string>
+    <string name="act_dopamine_step_title">Duyusal Minimum</string>
+    <string name="act_dopamine_step_desc">Işığa odaklanın. Dış duyusal gürültüyü kabul edin ve serbest bırakın.</string>
+    <string name="act_dopamine_impact">Ödül devresi taban çizgisi sıfırlandı. Prefrontal etkileşim arttı.</string>
+
+    <!-- Stres Aktiviteleri -->
+    <string name="act_st1_title">Akut Nöral Sıfırlama (İç Çekiş)</string>
+    <string name="act_st1_ipre">5 tekrar \'Fizyolojik İç Çekiş\' (çift nefes al, uzun nefes ver).</string>
+    <string name="act_st1_bio">Kandan CO2\'yi hızla boşaltır, kalp hızını yavaşlatmak için bir vagal sinyali tetikler.</string>
+    <string name="act_st1_phys">Sempatik (savaş/kaç) sinir sisteminin anında aşağı regülasyonu.</string>
+    <string name="act_st1_rsch">Akciğerler %90 dolana kadar burundan nefes alın, ardından alveolleri açmak için ikinci bir keskin nefes alın. Nefes alışın iki katı uzunlukta ağızdan nefes verin. Kalp hızını düşürmenin en hızlı yolu budur.</string>
+
+    <!-- Alan Dizileri -->
+    <string name="area_cardio">Kardiyovasküler Sağlık</string>
+    <string name="area_metabolic">Metabolik Fonksiyon</string>
+    <string name="area_cellular">Hücresel Dayanıklılık</string>
+    <string name="area_neurological">Nörolojik Sağlık</string>
+    <string name="area_vascular">Vasküler Sağlık</string>
+    <string name="area_systemic">Sistemik Sağlık</string>
+
+    <string name="cat_respiratory">Solunum</string>
+    <string name="cat_liver">Karaciğer</string>
+    <string name="cat_cardiovascular">Kardiyovasküler</string>
+    <string name="cat_metabolic">Metabolik</string>
+    <string name="cat_stress">Stres</string>
+    <string name="cat_behavioral">Davranışsal</string>
+    <string name="cat_sleep_arch">Uyku Mimarisi</string>
+    <string name="cat_cognitive">Bilişsel Onarım</string>
+
+    <string name="audience_drinkers">İçenler</string>
+    <string name="audience_smokers">İçenler (Sigara)</string>
+    <string name="audience_both">Her İkisi</string>
+
+    <!-- Koç Dizileri -->
+    <string name="coach_chat_with_expert">Uzmanla Sohbet Et</string>
+    <string name="coach_hello">Merhaba! Ben Yapay Zeka Koçunuzum. İyileşme yolunuzu anlamanıza veya kaygıyı yönetmenize yardımcı olabilirim. Aklınızda ne var?</string>
+    <string name="coach_back_to_help">Yardıma Geri Dön</string>
+    <string name="coach_describe_feeling">Nasıl hissettiğinizi tarif edin…</string>
+    <string name="coach_help_centre">Yardım Merkezi</string>
+    <string name="coach_expert_help">Uzman Yardımı</string>
+    <string name="coach_clinically_precise">Klinik Olarak Kesin</string>
+    <string name="coach_real_time_support">Gerçek Zamanlı Destek</string>
+    <string name="coach_need_advice">Tavsiyeye mi İhtiyacınız Var?</string>
+    <string name="coach_common_questions">Sıkça Sorulan Sorular</string>
+    <string name="coach_research_insight">Araştırma Öngörüsü</string>
+    <string name="coach_research_desc">HAC\'tan elde edilen yeni bulgular, sadece 5 dakikalık derin nefes almanın nikotin kaynaklı vasküler daralmayı %20\'ye kadar azaltabileceğini göstermektedir.</string>
+
+    <!-- Kayıt Dizileri -->
+    <string name="intake_purge_confirm">Temizlemeyi Onayla</string>
+    <string name="intake_purge_desc">Bu işlem bugünkü kayıtları kalıcı olarak silecektir. Devam edilsin mi?</string>
+    <string name="intake_logging_system">GİRİŞ KAYIT SİSTEMİ</string>
+    <string name="intake_tab_intake">GİRİŞ</string>
+    <string name="intake_tab_sleep">UYKU</string>
+    <string name="intake_alcohol">Alkol</string>
+    <string name="intake_smoking">Sigara</string>
+    <string name="intake_compare_period">Dönemi Karşılaştır</string>
+    <string name="intake_weekly_load">Haftalık Yük</string>
+    <string name="intake_monthly_load">Aylık Yük</string>
+    <string name="intake_analyzer_active">ANALİZÖR AKTİF</string>
+    <string name="intake_bio_load_summary">BİYO-YÜK ÖZETİ</string>
+    <string name="intake_recovery_index_preview">İyileşme Endeksi Önizlemesi</string>
+    <string name="intake_standard_drinks">Standart İçecek</string>
+    <string name="intake_confirm_alcohol">ALKOL KAYDINI ONAYLA</string>
+    <string name="intake_quantity_cigarettes">Miktar (Sigara)</string>
+    <string name="intake_confirm_smoking">SİGARA KAYDINI ONAYLA</string>
+    <string name="intake_sleep_alignment">Uyku ve Sirkadiyen Uyum</string>
+    <string name="intake_sleep_desc">Biyo-düzenleme sistemlerini stabilize etmek için mimarinizi kaydedin.</string>
+    <string name="intake_subjective_quality">Öznel Kalite</string>
+    <string name="intake_bedtime_consistency">Yatış Saati Tutarlılığı</string>
+    <string name="intake_night_awakenings">Gece Uyanmaları</string>
+    <string name="intake_integrate_sleep">UYKU VERİLERİNİ ENTEGRE ET</string>
+    <string name="intake_duration_hours">Süre (Saat)</string>
+    <string name="intake_logged">%1$s kaydedildi</string>
+    <string name="intake_alcohol_feedback">Karaciğeriniz şu anda toksinleri işliyor. Metabolik temizliği desteklemek için hidrasyon başlatın.</string>
+    <string name="intake_smoking_feedback">Vasküler zorlanma şu anda yüksek. Bir nefes seansı oksijen verimliliğini artıracaktır.</string>
+    <string name="intake_start_hydration">Hidrasyonu Başlat</string>
+    <string name="intake_liver_support">Karaciğer Desteği</string>
+    <string name="intake_breathing_exercise">Nefes Egzersizi</string>
+    <string name="intake_return">Geri Dön</string>
+
+    <!-- Analiz Dizileri -->
+    <string name="insights_behavioral_intelligence">DAVRANIŞSAL ZEKA</string>
+    <string name="insights_behavioral_trends">Davranışsal Eğilimler</string>
+    <string name="insights_clinical_interpretation">Kaydedilen aktivitenizin klinik yorumu</string>
+    <string name="insights_intake_intensity">GİRİŞ YOĞUNLUĞU</string>
+    <string name="insights_metabolic_load">Metabolik Yük</string>
+    <string name="insights_liver_recovery">Karaciğer İyileşmesi</string>
+    <string name="insights_lung_health">Akciğer Sağlığı</string>
+    <string name="insights_resilience_dynamics">DAYANIKLILIK DİNAMİKLERİ</string>
+    <string name="insights_system_stability">Sistem Stabilitesi</string>
+    <string name="insights_review_protocol">Protokolü İncele</string>
+    <string name="insights_cause_effect">Neden ve Sonuç</string>
+    <string name="insights_physiological_reactions">Fizyolojik Reaksiyonlar</string>
+    <string name="insights_scientific_intelligence">Bilimsel Zeka</string>
+    <string name="insights_latest_findings">Son Bulgular</string>
+    <string name="insights_clinical_library">Klinik Kütüphane</string>
+    <string name="insights_peer_reviewed_guides">Hakemli Rehberler</string>
+    <string name="insights_intake_high_no_recovery">Giriş eğilimleriniz yüksek ve iyileşme eylemi sıfır. Hepatik filtrasyon ve akciğer onarımı ciddi şekilde zorlanıyor.</string>
+    <string name="insights_intake_high_recovery">Yüksek giriş tespit edildi, ancak iyileşme protokolleri aktif. Eylemleriniz metabolik yükü kısmen dengeliyor.</string>
+    <string name="insights_intake_low_recovery">Düşük giriş ve aktif iyileşme. Biyolojik sistemleriniz optimize edilmiş bir hücresel onarım durumundadır.</string>
+    <string name="insights_intake_stable">Giriş seviyeleri stabil iyileşme eşikleri içindedir. Biyolojik sistemler dengeyi koruyor.</string>
+    <string name="insights_recovery_critical">Kritik sistem zorlanması. Sinir fonksiyonlarını stabilize etmek için acil hidrasyon ve dinlenme protokolleri gereklidir.</string>
+    <string name="insights_recovery_decreasing">Sistemik stabilite azalıyor. Hidrasyon görevleri tamamlandığında puanınız tipik olarak %15 artar.</string>
+    <string name="insights_recovery_progress">İyileşme devam ediyor. Hidrasyon toksin temizliğini destekliyor, ancak genel dinlenme suboptimal durumda.</string>
+    <string name="insights_recovery_high">Yüksek dayanıklılık korunuyor. Tutarlı hidrasyon ve dinlenme protokolleriniz metabolik stresi başarıyla dengeliyor.</string>
+    <string name="insights_recovery_stable">Stabil iyileşme dinamikleri. Sistem dengesini sağlamak için mevcut hidrasyon ve nefes protokollerini sürdürün.</string>
+    <string name="insights_urgent_hydration">ACİL: Alkol sonrası hidrasyon iyileşme hızını %40 artırır.</string>
+    <string name="insights_success_hydration">BAŞARILI: Hidrasyon protokolü toksin temizliğini başarıyla hızlandırıyor.</string>
+    <string name="insights_vascular_stress">Vasküler zorlanma yüksek. Hava akışını iyileştirmek için nefes egzersizi başlatın.</string>
+    <string name="insights_breathing_reset">Nefes sıfırlama tespit edildi. Akciğer verimliliği iyileşiyor.</string>
+    <string name="insights_low_hydration">Düşük hidrasyon tespit edildi. Toksin temizliği şu anda optimal değil.</string>
+    <string name="insights_high_consistency">Yüksek Tutarlılık: Aktif müdahaleler nedeniyle iyileşme puanı yükseliyor.</string>
+    <string name="insights_equilibrium">Biyolojik sistemler dengede. Mevcut protokolü sürdürün.</string>
+    <string name="insights_alcohol_intake">Alkol Girişi</string>
+    <string name="insights_metabolic_ethanol">Metabolik etanol yükü</string>
+    <string name="insights_hydration_active">Hidrasyon Aktif</string>
+    <string name="insights_hydration_deficit">Hidrasyon Açığı</string>
+    <string name="insights_accelerating_toxin">Toksin temizliği hızlanıyor</string>
+    <string name="insights_metabolic_delayed">Metabolik işleme gecikti</string>
+    <string name="insights_reduced_hangover">Azaltılmış Akşamdan Kalmalık</string>
+    <string name="insights_increased_fatigue">Artan Yorgunluk</string>
+    <string name="insights_systemic_stability_returning">Sistemik stabilite geri dönüyor</string>
+    <string name="insights_neural_recovery_delayed">Nöral iyileşme gecikti</string>
+    <string name="insights_nicotine_intake">Nikotin Girişi</string>
+    <string name="insights_vascular_constriction">Vasküler daralma</string>
+    <string name="insights_breathing_protocol">Nefes Protokolü</string>
+    <string name="insights_lung_stress">Akciğer Stresi</string>
+    <string name="insights_increasing_oxygen">Oksijen alımı artıyor</string>
+    <string name="insights_lower_oxygen">Düşük oksijen verimliliği</string>
+    <string name="insights_oxygen_stabilized">Oksijen Stabilize Edildi</string>
+    <string name="insights_recovery_slowed">İyileşme Yavaşladı</string>
+    <string name="insights_vascular_decreasing">Vasküler zorlanma azalıyor</string>
+    <string name="insights_reduced_cellular">Azaltılmış hücresel onarım</string>
+    <string name="insights_clean_protocol">Temiz Protokol</string>
+    <string name="insights_zero_toxin">Sıfır toksin yükü</string>
+    <string name="insights_stable_equilibrium">Stabil Denge</string>
+    <string name="insights_optimal_system">Optimal sistem fonksiyonu</string>
+    <string name="insights_available_guides">Mevcut Rehberler</string>
+    <string name="insights_rapid_repair">Hızlı Onarım</string>
+    <string name="insights_maximum_cellular">Maksimum hücresel restorasyon</string>
+    <string name="insights_pulmonary_restoration">Pulmoner Restorasyon Çalışması</string>
+    <string name="insights_study_desc">HAC Merkezi\'nden alınan klinik veriler, 5 dakikalık yapılandırılmış derin nefes protokollerinin nikotin maruziyetinin hemen ardından akut vasküler daralmayı %20 oranında dengeleyebildiğini doğrulamaktadır.</string>
+    <string name="insights_access_publication">Tam Yayına Erişin</string>
+    <string name="insights_reach_out">Klinik geri bildirim veya sorularınız için HAC Araştırma Merkezi ekibiyle iletişime geçin.</string>
+    <string name="insights_hepatic_restoration">Hepatik Restorasyon</string>
+    <string name="insights_sleep_architecture">Uyku Mimarisi</string>
+    <string name="insights_intracellular_hydration">Hücre İçi Hidrasyon</string>
+    <string name="insights_neuro_chemical">Nöro-Kimyasal Denge</string>
+    <string name="insights_questions_concerns">Sorular veya Endişeler?</string>
+
+    <!-- Topluluk Dizileri -->
+    <string name="community_hub">TOPLULUK MERKEZİ</string>
+    <string name="community_my_username">Kullanıcı Adım: %1$s</string>
+    <string name="community_post_placeholder">Bir başarıyı kaydedin veya destek isteyin…</string>
+    <string name="community_tab_feed">KÜRESEL AKIŞ</string>
+    <string name="community_tab_inbox">ÖZEL GELEN KUTUSU</string>
+
+
+    <!-- Recovery & Session Sync -->
+    <string name="recovery_biological_resilience">BİYOLOJİK DAYANIKLILIK</string>
+    <string name="recovery_live_time">CANLI SÜRE</string>
+    <string name="recovery_simulating">SİMÜLASYON: %1$d:00</string>
+    <string name="recovery_biological_briefing">BİYOLOJİK BİLGİLENDİRME</string>
+    <string name="recovery_daily_journey">GÜNLÜK İYİLEŞME YOLCULUĞU</string>
+    <string name="recovery_daily_journey_desc">Sistemik restorasyonu optimize etmek için biyolojik rehberinizi takip edin.</string>
+    <string name="recovery_cat_morning">SABAH: AKTİVASYON</string>
+    <string name="recovery_cat_midday">GÜN ORTASI: BAKIM</string>
+    <string name="recovery_cat_afternoon">ÖĞLEDEN SONRA: KORUMA</string>
+    <string name="recovery_cat_evening">AKŞAM: RESTORASYON</string>
+    <string name="recovery_cat_night">GECE: DERİN İYİLEŞME</string>
+    <string name="recovery_status_recommended">ŞİMDİ ÖNERİLEN</string>
+    <string name="recovery_status_scheduled">PLANLANAN</string>
+    <string name="recovery_targeted_repair">HEDEFLİ ONARIM</string>
+    <string name="recovery_cat_liver_metabolic">KARACİĞER VE METABOLİK</string>
+    <string name="recovery_cat_cardiovascular">KARDİYOVASKÜLER</string>
+    <string name="recovery_cat_respiratory">SOLUNUM</string>
+    <string name="recovery_cat_metabolic">METABOLİK</string>
+    <string name="recovery_cat_sleep_arch">UYKU MİMARİSİ</string>
+    <string name="recovery_cat_cognitive">BİLİŞSEL ONARIM</string>
+    <string name="recovery_cat_behavioral">DAVRANIŞSAL</string>
+    <string name="recovery_cat_priority">ÖNCELİK</string>
+    <string name="recovery_system_hepatic_name">Hepatik Dayanıklılık</string>
+    <string name="recovery_system_hepatic_desc">Karaciğer detoksifikasyon verimliliği ve metabolik çıktı.</string>
+    <string name="recovery_system_pulmonary_name">Pulmoner Güç</string>
+    <string name="recovery_system_pulmonary_desc">Akciğer kapasitesi ve oksijen-CO2 değişim verimliliği.</string>
+    <string name="recovery_system_neural_name">Nöral Stabilite</string>
+    <string name="recovery_system_neural_desc">Nörotransmitter dengesi ve aşermeler üzerinde yönetici kontrolü.</string>
+    <string name="recovery_system_vascular_name">Vasküler Bütünlük</string>
+    <string name="recovery_system_vascular_desc">Kalp hızı değişkenliği ve kan basıncı düzenlemesi.</string>
+    <string name="briefing_critical_toxicity">Sistemik toksisite KRİTİK. Karaciğeriniz ağır oksidatif stres altında. Bilişsel bulanıklığı önlemek için derhal hidrasyon ve B1\'e öncelik verin.</string>
+    <string name="briefing_moderate_inflammation">Orta düzeyde inflamasyon tespit edildi. Metabolik çıktı yavaşladı. Bugün Hepatik ve Vasküler protokollere odaklanın.</string>
+    <string name="briefing_vascular_constriction">Vasküler daralma yüksek. Oksijen doygunluğu tehlikede olabilir. Mukusu temizlemek ve hava akışını geri yüklemek için Pulmoner ritüellere odaklanın.</string>
+    <string name="briefing_neural_depletion">Nöral rezervler tükenmiş durumda. Yüksek sinirlilik ve aşerme bekleyin. Stabilize etmek için Dopamin Sıfırlama ve Vagal ritüelleri kullanın.</string>
+    <string name="briefing_excellent_compliance">Mükemmel biyolojik uyum. Sistemleriniz stabil bir homeostaz durumuna giriyor. Momentumu koruyun.</string>
+    <string name="briefing_default">Biyolojik yolculuğunuz devam ediyor. Sistemik iyileşmenizi optimize etmek için önerilen protokolleri takip edin.</string>
+    <string name="act_h1_title">Sabah Hidrasyonu</string>
+    <string name="act_h1_desc">300ml su + bir tutam deniz tuzu için. Uykudan sonra beyninizi yeniden hidrate eder.</string>
+    <string name="act_h4_title">Tiamin Doygunluğu (B1)</string>
+    <string name="act_h4_desc">Enerji metabolizmasını başlatın. Alkol iyileşmesi için hayati önem taşır.</string>
+    <string name="act_cc2_title">Güneş Işığı ve Hareket</string>
+    <string name="act_cc2_desc">5-10 dk yürüyüş veya esneme. Sirkadiyen ritminizi sıfırlar.</string>
+    <string name="act_rl1_title">Oksijen Yüklemesi</string>
+    <string name="act_rl1_desc">3 dk Diyafram nefesi. Akciğerleri temizler ve uyanıklığı artırır.</string>
+    <string name="act_mn1_title">Kan Şekeri Çapası</string>
+    <string name="act_mn1_desc">Yüksek proteinli öğle yemeği. Enerji düşüşlerini ve gün ortası aşermelerini önler.</string>
+    <string name="act_cc3_title">Vagal Sıfırlama (Soğuk Su)</string>
+    <string name="act_cc3_desc">Yüzünüze soğuk su çarpın. Kortizolü düşürür ve odaklanmayı sıfırlar.</string>
+    <string name="act_cc1_title">Uyumlu Nefes</string>
+    <string name="act_cc1_desc">2 dk boyunca 4-2-6 nefesi. Çalışma sırasında kalp hızını stabilize eder.</string>
+    <string name="act_mn5_title">Omega-3 Yüklemesi</string>
+    <string name="act_mn5_desc">Beyin onarımını destekler ve sistemik inflamasyonu düşürür.</string>
+    <string name="act_cc4_title">Nitric Oksit Artışı</string>
+    <string name="act_cc4_desc">Pancar suyu veya yapraklı sebzeler. Dolaşımı ve tansiyonu iyileştirir.</string>
+    <string name="act_nc2_title">Bilişsel Alıştırma</string>
+    <string name="act_nc2_desc">Yönetici işlevi güçlendirmek için 5 dakikalık odaklanma egzersizi.</string>
+    <string name="act_ng1_title">Mikrobiyom Desteği</string>
+    <string name="act_ng1_desc">Probiyotikler/Fermente gıdalar. Alkolün zarar verdiği bağırsak astarını iyileştirir.</string>
+    <string name="act_rl5_title">Akciğer Detoks Buharı</string>
+    <string name="act_rl5_desc">Mukusu inceltmek ve temizlemek için buhar soluma (sigara içenler için).</string>
+    <string name="act_nc1_title">Dopamine Orucu</string>
+    <string name="act_nc1_desc">15 dk boyunca ekran yok. Ödül devrelerini yeniden kalibre eder.</string>
+    <string name="act_rc_sl4_title">Magnezyum Desteği</string>
+    <string name="act_rc_sl4_desc">Magnezyum Glisinat. Kasları gevşetir ve derin REM uykusuna yardımcı olur.</string>
+    <string name="act_rc_sl1_title">Parasempatik Geçiş</string>
+    <string name="act_rc_sl1_desc">4-7-8 nefesi. Vücudunuza uyumanın güvenli olduğu sinyalini verir.</string>
+    <string name="act_rc_sl2_title">Vücut Tarama Meditasyonu</string>
+    <string name="act_rc_sl2_desc">Gece kortizol seviyelerini düşürmek için rehberli meditasyon.</string>
+    <string name="act_h2_title">Besin Desteği (B/C/NAC)</string>
+    <string name="act_h2_desc">B-Kompleks, Vitamin C veya NAC alın. Karaciğer enzim onarımını destekler.</string>
+    <string name="act_lv1_title">Kış Sebzesi Detoks Yüklemesi</string>
+    <string name="act_lv1_desc">Faz II karaciğer detoksifikasyonunu aktive etmek için brokoli/filiz yiyin.</string>
+    <string name="act_rl4_title">Nefes Kas Eğitimi</string>
+    <string name="act_rl4_desc">Diyafram kaslarını güçlendirmek için dirençli nefes.</string>
+    <string name="act_rl3_title">Postural Drenaj</string>
+    <string name="act_rl3_desc">Alt akciğer loblarından mukusu temizlemek için rehberli pozisyonlama.</string>
+    <string name="act_mn4_title">Öğün Yapısı Uyumu</string>
+    <string name="act_mn4_desc">Kontrollü karbonhidratlarla Protein + Lif odağını sağlayın.</string>
+    <string name="act_nc3_title">Glutamat/GABA Dengesi</string>
+    <string name="act_nc3_desc">Nörolojik aşırı uyarılabilirliği yönetmek için L-Teanin alımı.</string>
+    <string name="act_bh1_title">Mikro-Alışkanlık: Su İle Değiştir</string>
+    <string name="act_bh1_desc">Alım dürtüsünü dikkatli hidrasyonla değiştirin.</string>
+    <string name="act_bh3_title">Aşerme Sörfü Egzersizi</string>
+    <string name="act_bh3_desc">Aşerme duyumlarına yargılamadan veya eyleme geçmeden tanıklık edin.</string>
+    <string name="act_bh2_title">Aşerme Geciktirme Zamanlayıcısı</string>
+    <string name="act_bh2_desc">Aşerme dalgasının geçmesi için 5 dakikalık bir gecikme başlatın.</string>
+    <string name="act_p1_title">Şimdi Hidrate Ol</string>
+    <string name="act_p1_desc">ACİL: Vücut susuz kaldı. Şimdi 250ml su iç.</string>
+    <string name="act_p2_title">Besin Desteği</string>
+    <string name="act_p2_desc">KRİTİK: Karaciğer desteği gerekiyor (B-vitaminleri/Elektrolitler).</string>
+    <string name="act_p3_title">Akciğer Sıfırlama</string>
+    <string name="act_p3_desc">VASKÜLER UYARI: Yüksek akciğer stresi. Şimdi derin nefes al.</string>
+    <string name="act_p6_title">Vagal Sıfırlama</string>
+    <string name="act_p6_desc">UZMAN İPUCU: Sinir sisteminizi sıfırlamak için soğuk su kullanın.</string>
+    <string name="recovery_lvl">SEVİYE</string>
+</resources>
+

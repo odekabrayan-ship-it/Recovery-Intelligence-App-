@@ -1,0 +1,778 @@
+<resources>
+    <string name="app_name">Recovery Intelligence</string>
+
+    <!-- Navegación -->
+    <string name="nav_home">Inicio</string>
+    <string name="nav_recovery">Recuperación</string>
+    <string name="nav_insights">Análisis</string>
+    <string name="nav_coach">Entrenador</string>
+    <string name="nav_community">Comunidad</string>
+
+    <!-- Pantalla de Inicio de Sesión -->
+    <string name="login_welcome_back">Bienvenido de nuevo</string>
+    <string name="login_create_account">Crear cuenta</string>
+    <string name="login_sign_in">Iniciar sesión</string>
+    <string name="login_continue_google">Continuar con Google</string>
+    <string name="login_email_label">Correo electrónico</string>
+    <string name="login_password_label">Contraseña</string>
+    <string name="login_sign_up_prompt">Únete a la comunidad de recuperación</string>
+    <string name="login_sign_in_prompt">Inicia sesión en tu panel de recuperación</string>
+    <string name="login_already_have_account">¿Ya tienes una cuenta? Iniciar sesión</string>
+    <string name="login_dont_have_account">¿No tienes una cuenta? Crea una</string>
+
+    <!-- Ajustes -->
+    <string name="settings_language">Idioma</string>
+    <string name="settings_logout">Cerrar sesión</string>
+    <string name="settings_delete_account">Eliminar cuenta</string>
+    <string name="settings_select_language">Seleccionar idioma</string>
+    <string name="settings_account_mgmt">Gestión de la cuenta</string>
+    <string name="settings_security">Seguridad</string>
+    <string name="settings_close">Cerrar</string>
+    <string name="settings_cancel">Cancelar</string>
+    <string name="settings_confirm_delete">Confirmar eliminación</string>
+    <string name="settings_apply">CONFIRMAR TRANSICIÓN</string>
+    <string name="settings_delete_warning">Advertencia: Eliminar tu cuenta borrará permanentemente todos tus registros de salud, datos biológicos y contribuciones a la comunidad. Esta acción no se puede deshacer.</string>
+
+    <!-- Pantalla de Perfil -->
+    <string name="profile_title">Mi Perfil</string>
+    <string name="profile_save">Guardar</string>
+    <string name="profile_edit">Editar Perfil</string>
+    <string name="profile_full_name">Nombre Completo</string>
+    <string name="profile_bio">Biografía</string>
+    <string name="profile_location">Ubicación</string>
+    <string name="profile_gender">Género</string>
+    <string name="profile_age">Edad</string>
+    <string name="profile_security_privacy">Seguridad y Privacidad</string>
+    <string name="profile_pin_protection">Protección por PIN</string>
+    <string name="profile_biometric_login">Inicio biométrico</string>
+    <string name="profile_local_storage_warning">Almacenamiento solo local: Tus datos permanecen en este dispositivo. Si se elimina la aplicación, los datos no se pueden recuperar.</string>
+    <string name="profile_set_pin_title">Establecer bloqueo por PIN</string>
+    <string name="profile_set_pin_desc">Introduce un PIN de 4 a 6 dígitos para proteger tus datos locales.</string>
+    <string name="profile_pin_label">PIN</string>
+    <string name="profile_set_pin_button">Establecer PIN</string>
+    <string name="profile_not_set">No establecido</string>
+
+    <!-- Extras de Pantalla de Bloqueo -->
+    <string name="lock_wrong_pin">PIN incorrecto. Inténtalo de nuevo.</string>
+    <string name="lock_forgot_pin">¿Olvidaste tu PIN?</string>
+    <string name="lock_reset_title">Restablecer acceso a la aplicación</string>
+    <string name="lock_reset_desc">Para restablecer tu PIN, debemos borrar todos los datos de salud almacenados localmente por seguridad. Esta acción no se puede deshacer. ¿Deseas continuar?</string>
+    <string name="lock_reset_confirm">Borrar datos y restablecer</string>
+
+    <!-- Pantalla de Inicio -->
+    <string name="home_biological_command">COMANDO BIOLÓGICO</string>
+    <string name="home_hello">Hola, %1$s</string>
+    <string name="home_mandatory_triad">TRÍADA DIARIA OBLIGATORIA</string>
+    <string name="home_triad_subtitle">Protocolos dirigidos por expertos para la reparación fisiológica inmediata</string>
+    <string name="home_core_systems">Sistemas Biológicos Centrales</string>
+    <string name="home_systems_subtitle">Estado clínico basado en datos recientes</string>
+    <string name="home_recovery_toolkit">Kit de Herramientas de Recuperación</string>
+    <string name="home_toolkit_subtitle">Acciones rápidas para mejorar métricas</string>
+    <string name="home_recovery_index">ÍNDICE DE RECUPERACIÓN</string>
+    <string name="home_recovery_desc">Preparación fisiológica general para la reparación celular y la desintoxicación.</string>
+    <string name="home_streak_title">RACHA DE RECUPERACIÓN DE %1$d DÍAS</string>
+    <string name="home_streak_desc">Estás en el 5%% superior de usuarios por consistencia biológica esta semana. Mantén el protocolo actual para la estabilización neuronal.</string>
+    <string name="home_live_tag">EN VIVO</string>
+    <string name="home_category_sleep">Sueño</string>
+    <string name="home_category_metabolic">Metabólico</string>
+    <string name="home_category_vascular">Vascular</string>
+
+    <!-- Métricas y Estado -->
+    <string name="status_optimized">OPTIMIZADO</string>
+    <string name="status_stable">ESTABLE</string>
+    <string name="status_strained">TENSO</string>
+    <string name="status_critical">CRÍTICO</string>
+    <string name="metric_hydration">NIVEL DE HIDRATACIÓN</string>
+    <string name="metric_brain_recovery">RECUPERACIÓN CEREBRAL</string>
+    <string name="metric_tag_cellular_fluid">FLUIDO CELULAR</string>
+    <string name="metric_tag_neural_repair">REPARACIÓN NEURONAL</string>
+
+    <!-- Acciones -->
+    <string name="action_hydrate">HIDRATAR</string>
+    <string name="action_hydrate_sub">Añadir 250ml</string>
+    <string name="action_rest">DESCANSAR</string>
+    <string name="action_rest_sub">Añadir 1h</string>
+    <string name="action_full_protocol">PROTOCOLO COMPLETO</string>
+    <string name="action_review_interventions">Revisar todas las intervenciones dirigidas</string>
+
+    <!-- Banner de Inteligencia -->
+    <string name="intel_equilibrium_title">EQUILIBRIO ALCANZADO</string>
+    <string name="intel_equilibrium_desc">Los sistemas biológicos están reparando con éxito las vías neuronales y eliminando los subproductos metabólicos.</string>
+
+    <!-- Tareas de la Tríada -->
+    <string name="task_breath_title">Respiración pre-sueño (4-7-8)</string>
+    <string name="task_breath_desc">Reinicio neuronal guiado en vivo para activar la recuperación parasimpática.</string>
+    <string name="task_hydrate_title">Hidratación + Electrolitos</string>
+    <string name="task_hydrate_desc">Crítico para la eliminación de desechos neuronales y la rehidratación cerebral.</string>
+    <string name="task_aerobic_title">Actividad aeróbica ligera</string>
+    <string name="task_aerobic_desc">Estimula el flujo sanguíneo para acelerar la filtración de toxinas.</string>
+
+    <!-- Pantalla Vitalis -->
+    <string name="vitalis_command_center">CENTRO DE MANDO</string>
+    <string name="vitalis_bio_intel">BIO-INTEL</string>
+    <string name="vitalis_protocols">PROTOCOLOS</string>
+    <string name="vitalis_evidence_base">BASE DE EVIDENCIA</string>
+    <string name="vitalis_domain_analysis">ANÁLISIS DE DOMINIO</string>
+    <string name="vitalis_engine_status">ESTADO DEL MOTOR</string>
+    <string name="vitalis_live_directives">DIRECTIVAS DEL SISTEMA EN VIVO</string>
+    <string name="vitalis_bio_modules">MÓDULOS BIOLÓGICOS</string>
+    <string name="vitalis_pattern_analysis">ANÁLISIS DE PATRONES</string>
+    <string name="vitalis_health_trajectory">TRAYECTORIA DE SALUD</string>
+    <string name="vitalis_help_centre">CENTRO DE AYUDA BIOLÓGICA</string>
+    <string name="vitalis_longevity_index">ÍNDICE DE LONGEVIDAD</string>
+    <string name="vitalis_system_state">ESTADO DEL SISTEMA</string>
+    <string name="vitalis_syncing">Sincronizando</string>
+    <string name="vitalis_optimal">Óptimo</string>
+    <string name="vitalis_verify_success">VERIFICAR ÉXITO</string>
+    <string name="vitalis_initiate_intervention">INICIAR INTERVENCIÓN</string>
+    <string name="vitalis_repeat_intervention">REPETIR INTERVENCIÓN</string>
+    <string name="vitalis_manner_execution">MODO DE EJECUCIÓN</string>
+    <string name="vitalis_research_insight">PERSPECTIVA DE INVESTIGACIÓN</string>
+    <string name="vitalis_bio_advantage">VENTAJA BIOLÓGICA</string>
+    <string name="vitalis_follow_sync">SEGUIR SINCRONIZACIÓN TEMPORAL</string>
+    <string name="vitalis_pause_session">PAUSAR SESIÓN</string>
+    <string name="vitalis_resume">REANUDAR</string>
+    <string name="vitalis_conclude_manual">CONCLUIR SESIÓN MANUALMENTE</string>
+    <string name="vitalis_achievement_unlocked">LOGRO BIOLÓGICO DESBLOQUEADO</string>
+    <string name="vitalis_celebration_desc">El Motor Vitalis confirma una ralentización significativa de tu trayectoria de envejecimiento biológico. Tu esperanza de vida en estado saludable se ha prolongado eficazmente mediante esta intervención.</string>
+    <string name="vitalis_continue_journey">CONTINUAR EL VIAJE DE LA LONGEVIDAD</string>
+    <string name="vitalis_system_directive">DIRECTIVA DEL SISTEMA</string>
+    <string name="vitalis_neural_coherence">SINCRONIZACIÓN DE COHERENCIA NEURONAL</string>
+    <string name="vitalis_box_breathing">RESPIRACIÓN DE CAJA</string>
+    <string name="vitalis_biological_rationale">JUSTIFICACIÓN BIOLÓGICA</string>
+    <string name="vitalis_physiological_outcome">RESULTADO FISIOLÓGICO</string>
+    <string name="vitalis_expert_guidance">GUÍA EXPERTA</string>
+    <string name="vitalis_active_protocols">PROTOCOLOS BIOLÓGICOS ACTIVOS</string>
+    <string name="vitalis_protocols_desc">Intervenciones multietapa de alto impacto para la optimización sistémica.</string>
+    <string name="vitalis_no_protocols">No se detectan protocolos activos. Sincronización en curso…</string>
+    <string name="vitalis_bio_signal_sync">SINCRONIZACIÓN DE BIOSEÑALES</string>
+    <string name="vitalis_bio_signal_desc">El Motor Vitalis está procesando actualmente señales de 12 dominios biológicos. La precisión es del 99,8%%.</string>
+    <string name="vitalis_projected_health_age">EDAD DE SALUD PROYECTADA</string>
+    <string name="vitalis_biological_momentum">MOMENTO BIOLÓGICO</string>
+    <string name="vitalis_expert">EXPERTO</string>
+    <string name="vitalis_project_vitalis">PROYECTO VITALIS™</string>
+    <string name="vitalis_system">Sistema</string>
+    <string name="vitalis_intelligence">Inteligencia</string>
+    <string name="vitalis_help">Ayuda</string>
+    <string name="vitalis_impact_analysis">ANÁLISIS DE IMPACTO</string>
+    <string name="vitalis_neural_recalibration">RECALIBRACIÓN NEURONAL RÁPIDA</string>
+    <string name="vitalis_acute_neural_reset">REINICIO NEURONAL AGUDO</string>
+    <string name="vitalis_research_context">CONTEXTO DE INVESTIGACIÓN</string>
+    <string name="vitalis_specific_guidance">GUÍA ESPECÍFICA</string>
+    <string name="vitalis_execute_directive">EJECUTAR DIRECTIVA</string>
+    <string name="vitalis_bio_intervention">BIOINTERVENCIÓN</string>
+    <string name="vitalis_live_protocol_session">SESIÓN DE PROTOCOLO EN VIVO</string>
+    <string name="vitalis_anticipated_outcome">RESULTADO BIOLÓGICO ANTICIPADO</string>
+    <string name="vitalis_verify_completion">VERIFICAR FINALIZACIÓN DEL PROTOCOLO</string>
+    <string name="vitalis_help_desc">Experiencia avanzada basada en evidencia para la intervención en la longevidad.</string>
+    <string name="vitalis_streak_days">RACHA DE %1$d DÍAS</string>
+    <string name="vitalis_functional_protocols">PROTOCOLOS DE INTERVENCIÓN FUNCIONAL</string>
+    <string name="vitalis_synchronization_progress">Sincronización en curso…</string>
+    <string name="vitalis_ready">LISTO</string>
+    <string name="vitalis_inhale">INHALA</string>
+    <string name="vitalis_hold">MANTÉN</string>
+    <string name="vitalis_exhale">EXHALA</string>
+    <string name="vitalis_vacuum">VACÍO</string>
+    <string name="vitalis_inhale_deep">INHALA PROFUNDO</string>
+    <string name="vitalis_top_off">LLENADO (INHALA)</string>
+    <string name="vitalis_long_exhale">EXHALA LARGO (BOCA)</string>
+    <string name="vitalis_session_complete">SESIÓN COMPLETADA</string>
+    <string name="vitalis_rep_counter">REP %1$d / %2$d</string>
+    <string name="vitalis_reset_in_progress">REINICIO EN CURSO…</string>
+    <string name="vitalis_begin_guided_reset">INICIAR REINICIO GUIADO</string>
+    <string name="vitalis_begin_neural_sync">INICIAR SINCRONIZACIÓN NEURONAL</string>
+    <string name="vitalis_conclude_action_manual">CONCLUIR ACCIÓN MANUALMENTE</string>
+    <string name="vitalis_resilience_points_earned">+%1$d Puntos de Resiliencia Ganados</string>
+    <string name="vitalis_module_sleep">Ritmo Circadiano y Arquitectura del Sueño</string>
+    <string name="vitalis_module_cardio">Hemodinámica Cardiovascular</string>
+    <string name="vitalis_module_metabolic">Eficiencia Metabólica y Control Glucémico</string>
+    <string name="vitalis_module_stress">Resiliencia Neuroendocrina y al Estrés</string>
+    <string name="vitalis_module_physical">Integridad Musculoesquelética y Movilidad</string>
+    <string name="vitalis_module_cognitive">Función Cognitiva y Plasticidad Neuronal</string>
+    <string name="vitalis_module_recovery">Medicina Regenerativa y Recuperación</string>
+    <string name="vitalis_neural_connectivity">CONECTIVIDAD NEURONAL</string>
+    <string name="vitalis_search_compounds">Buscar compuestos…</string>
+    <string name="vitalis_clinically_indexed">INDEXADO CLÍNICAMENTE</string>
+    <string name="vitalis_dictionary_desc">El Diccionario Vitalis contiene datos sobre nutrientes, protocolos y farmacología moderna. Escribe para escanear la base de evidencia.</string>
+    <string name="vitalis_clinical_rationale">JUSTIFICACIÓN CLÍNICA</string>
+    <string name="vitalis_command">COMANDO</string>
+    <string name="vitalis_intel">INTELIGENCIA</string>
+    <string name="vitalis_library">BIBLIOTECA</string>
+    <string name="vitalis_back">Atrás</string>
+    <string name="vitalis_notifications">Notificaciones</string>
+    <string name="vitalis_system_status_label">ESTADO DEL SISTEMA</string>
+    <string name="vitalis_longevity_trajectory_label">TRAYECTORIA DE LONGEVIDAD</string>
+    <string name="vitalis_calculating">Calculando...</string>
+    <string name="vitalis_directives_title">DIRECTIVAS VITALIS</string>
+    <string name="vitalis_biological_systems_title">SISTEMAS BIOLÓGICOS</string>
+    <string name="vitalis_active_analysis">ANÁLISIS ACTIVO</string>
+    <string name="vitalis_view_analysis">VER ANÁLISIS</string>
+    <string name="vitalis_longevity_protocol_label">PROTOCOLO DE LONGEVIDAD</string>
+    <string name="vitalis_phase_active">Fase: Activa</string>
+    <string name="vitalis_start_protocol">INICIAR PROTOCOLO</string>
+    <string name="vitalis_dictionary_title">DICCIONARIO VITALIS</string>
+    <string name="vitalis_dictionary_subtitle">Base de datos clínica de más de 150 compuestos biológicos.</string>
+    <string name="vitalis_protocol_hierarchy">La Jerarquía de Protocolos</string>
+    <string name="vitalis_protocol_hierarchy_desc">Cómo clasificamos las intervenciones según la solidez de los ensayos clínicos.</string>
+    <string name="vitalis_bio_markers">Comprender los biomarcadores</string>
+    <string name="vitalis_bio_markers_desc">Análisis profundo de VO2 Máx, ApoB y VFC.</string>
+    <string name="vitalis_philosophy">La Filosofía Vitalis</string>
+    <string name="vitalis_philosophy_desc">La matemática de la reversión de la edad biológica.</string>
+    <string name="vitalis_targeted_interventions">INTERVENCIONES DIRIGIDAS</string>
+    <string name="vitalis_vitalis_os">S.O. VITALIS</string>
+    <string name="vitalis_physiological_sigh">SUSPIRO FISIOLÓGICO</string>
+    <string name="vitalis_physiological_sigh_desc">Inhala profundamente dos veces por la nariz, exhala largo por la boca. Esto desencadena el dominio parasimpático inmediato.</string>
+    <string name="vitalis_abort_session">ABORTAR SESIÓN</string>
+    <string name="vitalis_navy_seal_protocol">PROTOCOLO NAVY SEAL</string>
+    <string name="vitalis_timed_intervention">INTERVENCIÓN CRONOMETRADA</string>
+    <string name="vitalis_log_completion">REGISTRAR FINALIZACIÓN</string>
+    <string name="vitalis_complete">COMPLETADO</string>
+    <string name="vitalis_execution_steps">PASOS DE EJECUCIÓN</string>
+    <string name="vitalis_log_protocol_completed">REGISTRAR PROTOCOLO COMO COMPLETADO</string>
+    <string name="vitalis_biological_optimization">OPTIMIZACIÓN BIOLÓGICA</string>
+    <string name="vitalis_intervention_logged">Intervención registrada con éxito. Tus marcadores celulares han sido actualizados.</string>
+    <string name="vitalis_continue_scan">CONTINUAR ESCANEO</string>
+    <string name="vitalis_module_detail_domain">DOMINIO</string>
+
+    <!-- Localización de Actividad (MOTOR VITALIS) -->
+    <string name="phase_morning">Mañana</string>
+    <string name="phase_daytime">Día</string>
+    <string name="phase_evening">Noche</string>
+    <string name="phase_execution">Ejecución</string>
+
+    <!-- Actividades del Sueño -->
+    <string name="act_sl1_title">Activación Inmediata al Despertar</string>
+    <string name="act_sl1_inst">Sal de la cama dentro de los 120 segundos tras despertar.</string>
+    <string name="act_sl1_bio">Señala al cerebro que termine el estado de sueño e inicia la Respuesta de Despertar del Cortisol (CAR).</string>
+    <string name="act_sl1_phys">Previene la inercia del sueño y restablece el reloj metabólico para la estabilidad energética diaria.</string>
+    <string name="act_sl1_rsch">Ejecútalo colocando tu dispositivo de alarma a más de 3 metros de la cama. Este desplazamiento físico obliga a la verticalidad y activa el sistema propioceptivo-vestibular, asegurando una transición brusca del dominio parasimpático al simpático.</string>
+
+    <string name="act_sl2_title">Fotobiomodulación SCN</string>
+    <string name="act_sl2_inst">15m de exposición a luz natural brillante.</string>
+    <string name="act_sl2_bio">La luz activa el Núcleo Supraquiasmático (SCN) para suprimir la melatonina y establecer el temporizador de 16h para su liberación nocturna.</string>
+    <string name="act_sl2_phys">Esencial para la estabilidad circadiana a largo plazo y la prevención de trastornos afectivos estacionales.</string>
+    <string name="act_sl2_rsch">Prioriza la exposición directa al aire libre sin ventanas ni gafas de sol. Si está nublado, extiéndela a 30m. Esta intensidad de lux es necesaria para saturar las células ganglionares de la retina que contienen melanopsina y que rigen tu reloj maestro.</string>
+
+    <string name="act_sl3_title">Escudo de Melatonina: Ayuno de Luz Azul</string>
+    <string name="act_sl3_inst">Aplica filtro rojo a todas las pantallas o usa bloqueadores 120m antes de dormir.</string>
+    <string name="act_sl3_bio">Protege las células ganglionares que contienen melanopsina. La melatonina es un potente antioxidante anticarcinogénico.</string>
+    <string name="act_sl3_phys">Maximiza los mecanismos nocturnos de lucha contra el cáncer y reparación celular.</string>
+    <string name="act_sl3_rsch">Aplica software tipo \'Night Shift\' y lentes físicos de tinte ámbar. Incluso la luz azul de baja intensidad puede suprimir la liberación de melatonina hasta por 90 minutos. Asegúrate de que todos los LED periféricos en el dormitorio estén cubiertos o desactivados.</string>
+
+    <string name="act_sl4_title">Disparador Térmico Glinfático</string>
+    <string name="act_sl4_inst">Baja la temperatura del dormitorio a 18°C (64°F).</string>
+    <string name="act_sl4_bio">Un descenso en la temperatura corporal central es el principal disparador fisiológico para entrar en el sueño profundo N3.</string>
+    <string name="act_sl4_phys">Activa el sistema glinfático para \'limpiar\' el beta-amiloide, reduciendo el riesgo de Alzheimer y demencia.</string>
+    <string name="act_sl4_rsch">Combínalo con una ducha tibia 90m antes de dormir. La vasodilatación de \'rebote\' en manos y pies facilita el descenso necesario de 1°C en la temperatura central requerido para los ciclos de limpieza de desechos neuronales.</string>
+
+    <string name="act_sl5_title">Protocolo de Atardecer Digital</string>
+    <string name="act_sl5_inst">Detén toda entrada digital/alta en dopamina 60m antes de dormir.</string>
+    <string name="act_sl5_bio">Reduce la excitación neuronal previa al sueño y evita que el \'residuo de atención\' interrumpa la arquitectura REM.</string>
+    <string name="act_sl5_phys">Asegura un sueño REM de alta calidad para el procesamiento emocional y la longevidad cognitiva.</string>
+    <string name="act_sl5_rsch">Cambia a actividades analógicas: lectura física (libros), estiramientos suaves o diario no juicioso. Evita interfaces de \'scroll infinito\' que activan los circuitos de búsqueda de novedad del cerebro.</string>
+
+    <string name="act_sl6_title">Ventana Circadiana Consistente</string>
+    <string name="act_sl6_inst">Ve a la cama dentro de un margen de +/- 30m de tu hora objetivo.</string>
+    <string name="act_sl6_bio">La regularidad es el factor más importante para alinear los miles de millones de relojes celulares periféricos.</string>
+    <string name="act_sl6_phys">Reduce la carga alostática sistémica y mejora la resiliencia cardiovascular.</string>
+    <string name="act_sl6_rsch">Establece una alarma de \'desconexión\' 2 horas antes de la hora prevista de sueño. Esto proporciona el anclaje temporal necesario para que tu sistema nervioso autónomo comience la transición a la homeostasis del estado de sueño.</string>
+
+    <!-- Actividades Cardiovasculares -->
+    <string name="act_ca1_title">Primado Vascular Ortostático</string>
+    <string name="act_ca1_inst">Levántate inmediatamente y realiza 2m de estiramientos ligeros.</string>
+    <string name="act_ca1_bio">Obliga al sistema vascular a adaptarse a la gravedad, estimulando la liberación de óxido nítrico en el endotelio.</string>
+    <string name="act_ca1_phys">Mejora la distensibilidad vascular y reduce el riesgo de hipertensión ortostática.</string>
+    <string name="act_ca1_rsch">Realiza alcances lentos y controlados hacia el techo mientras respiras profundamente. Este estiramiento mecánico de los grandes vasos aumenta la tensión de cizallamiento en las paredes de los vasos, induciendo la actividad de la eNOS.</string>
+
+    <string name="act_ca2_title">Descarga de Óxido Nítrico eNOS</string>
+    <string name="act_ca2_inst">60s de sentadillas rápidas o movimiento de alta intensidad.</string>
+    <string name="act_ca2_bio">Estimula masivamente la óxido nítrico sintasa endotelial (eNOS) para una vasodilatación sistémica inmediata.</string>
+    <string name="act_ca2_phys">Reduce clínicamente la presión arterial sistólica y mejora la salud arterial a largo plazo.</string>
+    <string name="act_ca2_rsch">Realiza 40-50 sentadillas al aire con la máxima velocidad durante la fase concéntrica. Este \'bombeo\' rápido de grandes grupos musculares crea un aumento sistémico de óxido nítrico que persiste durante 2-3 horas.</string>
+
+    <string name="act_ca3_title">Base Aeróbica Zona 2</string>
+    <string name="act_ca3_inst">45m de movimiento al 60-70%% de la frecuencia cardíaca máxima.</string>
+    <string name="act_ca3_bio">Maximiza la densidad mitocondrial en los miocitos cardíacos y mejora la eficiencia del volumen sistólico.</string>
+    <string name="act_ca3_phys">Defensa principal contra la insuficiencia cardíaca y la enfermedad de las arterias coronarias.</string>
+    <string name="act_ca3_rsch">Mantén un ritmo en el que puedas mantener una conversación cómodamente pero no puedas cantar. Este umbral metabólico específico (por debajo del Umbral de Lactato 1) optimiza la biogénesis mitocondrial y la oxidación de grasas.</string>
+
+    <string name="act_ca4_title">Coherencia Cardíaca RSA</string>
+    <string name="act_ca4_inst">5m de respiración lenta a 6 respiraciones por minuto.</string>
+    <string name="act_ca4_bio">Sincroniza los ritmos respiratorio y cardíaco (RSA) para maximizar el tono vagal.</string>
+    <string name="act_ca4_phys">Aumenta la Variabilidad de la Frecuencia Cardíaca (VFC), un biomarcador clave para la resiliencia autonómica y la baja mortalidad.</string>
+    <string name="act_ca4_rsch">Inhala durante 5s, exhala durante 5s. Enfócate en la conciencia centrada en el corazón. Este equilibrio rítmico optimiza el barorreflejo, entrenando al corazón para responder con precisión a los cambios de presión sistémica.</string>
+
+    <string name="act_ca5_title">Lavado Vascular de Catecolaminas</string>
+    <string name="act_ca5_inst">30-60s de exposición a agua fría al final de la ducha.</string>
+    <string name="act_ca5_bio">Desencadena la vasoconstricción periférica seguida de una vasodilatación profunda (\'El Lavado\').</string>
+    <string name="act_ca5_phys">Mejora el rendimiento circulatorio y acelera la eliminación de subproductos metabólicos.</string>
+    <string name="act_ca5_rsch">Cambia el agua a la temperatura más fría. Concéntrate en mantener la respiración constante. El choque repentino del frío induce un aumento simpático masivo seguido de un rebote parasimpático profundo y regenerativo.</string>
+
+    <string name="act_ca6_title">Asistencia al Retorno Venoso</string>
+    <string name="act_ca6_inst">Postura de piernas arriba en la pared durante 10 minutos.</string>
+    <string name="act_ca6_bio">Utiliza la gravedad para asistir el retorno venoso al corazón, reduciendo la carga vascular de las extremidades inferiores.</string>
+    <string name="act_ca6_phys">Reduce el edema periférico y la tensión cardiovascular previa al sueño.</string>
+    <string name="act_ca6_rsch">Acuéstate boca arriba con las caderas lo más cerca posible de la pared. Esta inversión pasiva reduce la presión venosa central y facilita el drenaje linfático de las extremidades inferiores.</string>
+
+    <!-- Actividades Metabólicas -->
+    <string name="act_me1_title">Siembra de Sensibilidad a la Insulina</string>
+    <string name="act_me1_inst">30g de proteína de alta calidad dentro de los 60m tras despertar.</string>
+    <string name="act_me1_bio">Previene el pico matutino de ghrelina y ancla la glucosa en sangre durante el resto del día.</string>
+    <string name="act_me1_phys">Reduce la volatilidad energética de mediodía y la resistencia a la insulina a largo plazo.</string>
+    <string name="act_me1_rsch">Prioriza suero de leche, huevos o carne magra. La ingesta alta de proteínas por la mañana desencadena el \'Efecto de la Segunda Comida\', mejorando la tolerancia a la glucosa para las comidas posteriores consumidas durante el día.</string>
+
+    <string name="act_me2_title">Sincronización de Adenosina/Cortisol</string>
+    <string name="act_me2_inst">Retrasa la primera ingesta de cafeína de 90 a 120 minutos.</string>
+    <string name="act_me2_bio">Evita el bloqueo de los receptores de adenosina mientras el cortisol está naturally alto, evitando un colapso energético masivo.</string>
+    <string name="act_me2_phys">Protege la función suprarrenal y mantiene un rendimiento energético metabólico constante.</string>
+    <string name="act_me2_rsch">Hidrátate primero con 500ml de agua y electrolitos. Esperar a que el pico natural de cortisol disminuya antes de introducir la cafeína asegura que tus receptores de adenosina se limpien adecuadamente, evitando el bajón de las 2 p.m.</string>
+
+    <string name="act_me3_title">Caminata de Eliminación de Glucosa GLUT4</string>
+    <string name="act_me3_inst">10m de caminata dentro de los 20m tras la ingesta calórica.</string>
+    <string name="act_me3_bio">Activa los transportadores GLUT4 en el músculo esquelético para eliminar la glucosa sin requerir niveles altos de insulina.</string>
+    <string name="act_me3_phys">Atenúa significativamente el pico de glucosa posprandial, protegiendo las arterias de la glicación.</string>
+    <string name="act_me3_rsch">Camina a un ritmo rápido (aprox. 100 pasos/min). Este estímulo mecánico \'extrae\' el azúcar de la sangre hacia los músculos, protegiendo tu endotelio del daño de los picos altos de glucosa.</string>
+
+    <string name="act_me4_title">Protocolo de Secuenciación Glucémica</string>
+    <string name="act_me4_inst">Consume fibra/verduras antes que las proteínas y los almidones.</string>
+    <string name="act_me4_bio">La fibra recubre el intestino delgado, ralentizando la absorción de glucosa en el torrente sanguíneo.</string>
+    <string name="act_me4_phys">Mantiene una curva glucémica estable y previene la inflamación sistémica (Inflammaging).</string>
+    <string name="act_me4_rsch">Come una ensalada verde o brócoli al vapor como \'entrante\'. La barrera viscosa de fibra resultante en el intestino reduce significativamente la velocidad de descomposición enzimática de los carbohidratos complejos consumidos posteriormente.</string>
+
+    <string name="act_me5_title">Ventana de Inducción de Autofagia</string>
+    <string name="act_me5_inst">Detén toda ingesta calórica 3-4 horas antes de dormir.</string>
+    <string name="act_me5_bio">Señala el cambio biológico de mTOR (crecimiento) a AMPK/Autofagia (reparación/reciclaje celular).</string>
+    <string name="act_me5_phys">Permite procesos de limpieza celular que reducen el riesgo de cáncer y enfermedades por mal plegamiento de proteínas.</string>
+    <string name="act_me5_rsch">Cambia a té de hierbas (sin edulcorantes) después de la última comida. Esta ventana de ayuno extendida antes de dormir asegura que la insulina esté baja durante el pico de la hormona del crecimiento, maximizando la reparación celular.</string>
+
+    <string name="act_me6_title">Carga de Micronutrientes Mitocondriales</string>
+    <string name="act_me6_inst">Asegura la ingesta de CoQ10, magnesio y vitaminas B.</string>
+    <string name="act_me6_bio">Cofactores esenciales para la cadena de transporte de electrones en las mitocondrias.</string>
+    <string name="act_me6_phys">Optimiza la eficiencia de producción de ATP y reduce el estrés oxidativo a nivel celular.</string>
+    <string name="act_me6_rsch">Tómalos con tu comida más importante para asegurar una absorción óptima. El magnesio actúa específicamente como cofactor de más de 300 reacciones enzimáticas, incluidas las responsables de la reparación del ADN.</string>
+
+    <!-- Actividades de Estrés -->
+    <string name="act_st1_title">Reinicio Neuronal Agudo (Suspiro)</string>
+    <string name="act_st1_inst">5 repeticiones del \'Suspiro Fisiológico\' (doble inhalación, exhalación larga).</string>
+    <string name="act_st1_bio">Elimina rápidamente el CO2 de la sangre, activando una señal vagal para ralentizar la frecuencia cardíaca.</string>
+    <string name="act_st1_phys">Regulación a la baja inmediata del sistema nervioso simpático (lucha/huida).</string>
+    <string name="act_st1_rsch">Inhala por la nariz hasta que los pulmones estén al 90%%, luego realiza una segunda inhalación brusca para abrir los alvéolos. Exhala por la boca durante el doble de tiempo que la inhalación. Esta es la forma más rápida de bajar el ritmo cardíaco.</string>
+
+    <string name="act_st2_title">Calibración de la Amígdala NSDR</string>
+    <string name="act_st2_inst">15m de Descanso Profundo Sin Dormir (NSDR) o Yoga Nidra.</string>
+    <string name="act_st2_bio">Restablece el umbral de activación de la amígdala y restaura el control de la corteza prefrontal.</string>
+    <string name="act_st2_phys">Restaura la energía cognitiva y evita la acumulación de carga alostática crónica.</string>
+    <string name="act_st2_rsch">Busca un espacio oscuro y tranquilo y acuéstate. Concéntrate en un escaneo corporal guiado. Este estado de \'quietud activa\' permite al cerebro entrar en un estado de pseudo-sueño, reponiendo los niveles de dopamina en los ganglios basales.</string>
+
+    <string name="act_st3_title">Coherencia de Respiración de Caja</string>
+    <string name="act_st3_inst">5 minutos de 4s inhalación, 4s pausa, 4s exhalación, 4s pausa.</string>
+    <string name="act_st3_bio">Equilibra los niveles de O2/CO2 en sangre e induce un estado de alerta tranquila y concentrada.</string>
+    <string name="act_st3_phys">Estabiliza el sistema nervioso frente a los estresores del día.</string>
+    <string name="act_st3_rsch">Visualiza una caja: Arriba para inhalar, Horizontal para mantener, Abajo para exhalar, Horizontal para vacío. Este anclaje visual-espacial combinado con la respiración rítmica saca al cerebro de los bucles de rumiación.</string>
+
+    <string name="act_st4_title">Activación del Reflejo de Inmersión</string>
+    <string name="act_st4_inst">15s de inmersión de la cara en agua fría.</string>
+    <string name="act_st4_bio">Estimula el nervio trigémino para desencadenar un efecto de rebote parasimpático masivo.</string>
+    <string name="act_st4_phys">Ruptura instantánea de bucles de ansiedad aguda o estados de alto estrés.</string>
+    <string name="act_st4_rsch">Salpica agua helada sobre los ojos y los pómulos. Este reflejo conservado evolutivamente ralentiza inmediatamente el corazón y redirige el flujo sanguíneo al cerebro y al corazón.</string>
+
+    <string name="act_st5_title">Ritual de Descarga Cognitiva</string>
+    <string name="act_st5_inst">3m de \'Vaciado de Cerebro\' anotando todas las tareas pendientes.</string>
+    <string name="act_st5_bio">Reduce el efecto Zeigarnik (el cerebro permanece activo en tareas inacabadas) antes de dormir.</string>
+    <string name="act_st5_phys">Reduce la carga cognitiva nocturna y mejora la transición al sueño profundo.</string>
+    <string name="act_st5_rsch">Usa papel y lápiz. Enumera cada microtarea, preocupación o elemento programado. Externalizar estos pensamientos señala al cerebro que el \'procesamiento\' ha terminado, permitiendo ciclos REM más profundos.</string>
+
+    <string name="act_st6_title">Enraizamiento Propioceptivo</string>
+    <string name="act_st6_inst">Camina descalzo o enfócate en la sensación táctil de los pies durante 3m.</string>
+    <string name="act_st6_bio">Cambia el enfoque neuronal de la Red Neuronal por Defecto (rumiación) a la Corteza Somatosensorial.</string>
+    <string name="act_st6_phys">Interrumpe los bucles de estrés vespertinos y facilita la relajación.</string>
+    <string name="act_st6_rsch">Enfócate intensamente en la presión y la textura del suelo bajo tus pies. Esta entrada sensorial \'de abajo hacia arriba\' anula las señales de ansiedad \'de arriba hacia abajo\' originadas en la corteza prefrontal.</string>
+
+    <!-- Actividades Físicas -->
+    <string name="act_ph1_title">Primado Articular (CARs)</string>
+    <string name="act_ph1_inst">3 repeticiones por articulación para cuello, hombros y caderas.</string>
+    <string name="act_ph1_bio">Mantiene el espacio capsular y señala la producción de líquido sinovial para la longevidad de las articulaciones.</string>
+    <string name="act_ph1_phys">Previene la osteoartritis y mantiene el rango funcional completo de movimiento.</string>
+    <string name="act_ph1_rsch">Mueve cada articulación a través de su rango circular máximo disponible sin mover el resto del cuerpo. Este \'hilo dental articular\' hidrata el cartílago y evita el desarrollo de adherencias.</string>
+
+    <string name="act_ph2_title">Interrupción de Actividad LPL</string>
+    <string name="act_ph2_inst">Levántate y muévete durante 2 minutos cada 45-60 minutos.</string>
+    <string name="act_ph2_bio">Estar sentado de forma prolongada suprime la Lipoproteína Lipasa (LPL), la enzima que limpia las grasas de la sangre.</string>
+    <string name="act_ph2_phys">Reduce el riesgo de síndrome metabólico y promueve una salud cardiovascular continua.</string>
+    <string name="act_ph2_rsch">No basta con estar de pie; realiza elevaciones de talones o una caminata corta. Esta contracción muscular \'reinicia\' la actividad enzimática de la LPL, evitando la acumulación de triglicéridos circulantes.</string>
+
+    <string name="act_ph3_title">Carga Isométrica de Tejidos</string>
+    <string name="act_ph3_inst">60s de sentadilla en pared o plancha a máxima tensión.</string>
+    <string name="act_ph3_bio">Estimula los transportadores de glucosa del músculo esquelético y mantiene la integridad estructural sin fatiga del SNC.</string>
+    <string name="act_ph3_phys">Protege las articulaciones y mantiene la actividad metabólica muscular durante los bloques sedentarios.</string>
+    <string name="act_ph3_rsch">Aprieta cada músculo de tu cuerpo tan fuerte como sea posible durante el mantenimiento. Esta \'hiperirradiación\' maximiza el reclutamiento de unidades motoras y estimula la actividad metabólica sin necesidad de pesos pesados.</string>
+
+    <string name="act_ph4_title">Enfoque en Remodelación Excéntrica</string>
+    <string name="act_ph4_inst">5-10 sentadillas lentas con peso corporal y descenso de 4s.</string>
+    <string name="act_ph4_bio">Enfocarse en la fase excéntrica (alargamiento) estimula la reparación del tendón y del tejido conectivo.</string>
+    <string name="act_ph4_phys">Aumenta la resiliencia física y protege contra futuras lesiones.</string>
+    <string name="act_ph4_rsch">Cuenta 1-2-3-4 al bajar, luego sube con explosividad. La carga excéntrica crea una microtensión que indica al cuerpo que deposite nuevas fibras de colágeno más resistentes en los tendones.</string>
+
+    <string name="act_ph5_title">Suspensión de Descompresión Espinal</string>
+    <string name="act_ph5_inst">Cuélgate de una barra o utiliza un estiramiento de puerta durante 60s.</string>
+    <string name="act_ph5_bio">Utiliza la gravedad para descomprimir los discos intervertebrales y contrarrestar el colapso postural de estar sentado.</string>
+    <string name="act_ph5_phys">Mejora de la postura, reducción del dolor de espalda y mejor transmisión neuronal a las extremidades.</string>
+    <string name="act_ph5_rsch">Deja que tus hombros lleguen a tus orejas y respira hacia tu espalda. Esto crea espacio entre las vértebras, rehidratando los discos que se comprimen durante largos periodos de estar sentado.</string>
+
+    <string name="act_ph6_title">Tarea de Equilibrio Vestibular</string>
+    <string name="act_ph6_inst">Mantente sobre una pierna mientras realizas una tarea rutinaria (ej. cepillarse los dientes).</string>
+    <string name="act_ph6_bio">Involucra al cerebelo y a los músculos estabilizadores del tobillo y la cadera.</string>
+    <string name="act_ph6_phys">Reduce directamente el riesgo de caídas (la principal causa de lesiones en el envejecimiento) y mejora la coordinación neuromotora.</string>
+    <string name="act_ph6_rsch">Intenta cerrar los ojos para aumentar la dificultad. Esto obliga al cerebro a confiar en la propiocepción y el sistema vestibular, fortaleciendo las vías neuronales responsables del equilibrio.</string>
+
+    <!-- Actividades Cognitivas -->
+    <string name="act_co1_title">Trabajo Profundo de Enfoque Monotrópico</string>
+    <string name="act_co1_inst">Bloque de 90m de enfoque singular con cero cambios de tarea.</string>
+    <string name="act_co1_bio">Elimina el \'Residuo de Atención\' y permite alcanzar estados de Flujo.</string>
+    <string name="act_co1_phys">Maximiza el rendimiento neuronal y reduce el coste metabólico del trabajo cognitivo.</string>
+    <string name="act_co1_rsch">Desactiva todas las notificaciones y distracciones físicas. Cada vez que cambias de tarea, el cerebro tarda una media de 23 minutos en volver al enfoque total. Proteger esta ventana preserva tu resistencia cognitiva.</string>
+
+    <string name="act_co2_title">Reinicio de la Amígdala: Flujo Óptico Lateral</string>
+    <string name="act_co2_inst">10m de caminata al aire libre escaneando el horizonte lateralmente.</string>
+    <string name="act_co2_bio">Se ha demostrado clínicamente que los movimientos oculares laterales (flujo óptico) reducen la actividad de la amígdala.</string>
+    <string name="act_co2_phys">Reinicio inmediato de la claridad mental y reducción de la ansiedad o frustración neuronal.</string>
+    <string name="act_co2_rsch">Mantén la cabeza quieta y deja que tus ojos recorran el paisaje de izquierda a derecha. Este patrón de movimiento está vinculado evolutivamente a un estado de seguridad, regulando a la baja los sistemas de detección de amenazas del cerebro.</string>
+
+    <string name="act_co3_title">Protocolo de Escudo de Dopamina</string>
+    <string name="act_co3_inst">Nada de redes sociales, noticias o correo durante la primera hora tras despertar.</string>
+    <string name="act_co3_bio">Protege tus niveles basales de dopamina, asegurando una alta motivación para tareas complejas y de alto valor.</string>
+    <string name="act_co3_phys">Evita picos de dopamina \'baratos\' que conducen a caídas de motivación a mitad del día.</string>
+    <string name="act_co3_rsch">Sustituye el teléfono por una actividad baja en dopamina como beber agua, luz solar o estiramientos ligeros. Empezar el día con un \'pico de novedad\' externo pone al cerebro en un estado reactivo y fácilmente distrable.</string>
+
+    <string name="act_co4_title">Entrenamiento Alfa Binaural</string>
+    <string name="act_co4_inst">Escucha ondas binaurales de 8-12 Hz durante el trabajo ligero.</string>
+    <string name="act_co4_bio">Arrastra las ondas cerebrales hacia frecuencias Alfa asociadas con un enfoque relajado en estado estable.</string>
+    <string name="act_co4_phys">Mejora la concentración tanpa aumentar el impulso adrenérgico (estrés).</string>
+    <string name="act_co4_rsch">Usa auriculares. La ligera diferencia de frecuencia entre oídos obliga al cerebro a generar un \'tercer pulso\' interno en la frecuencia Alfa objetivo, facilitando un estado de alerta tranquila.</string>
+
+    <string name="act_co5_title">Práctica de Habilidades Motoras Complejas</string>
+    <string name="act_co5_inst">5m de una nueva habilidad (ej. malabares, equilibrio, mecanografía).</string>
+    <string name="act_co5_bio">Las nuevas tareas motoras estimulan el BDNF (Factor Neurotrófico Derivado del Cerebro) y la plasticidad neuronal.</string>
+    <string name="act_co5_phys">Esencial para mantener la flexibilidad cognitiva y prevenir la atrofia cerebral relacionada con la edad.</string>
+    <string name="act_co5_rsch">Enfócate en la dificultad. El momento de \'casi caerse\' o \'perder el objeto\' es exactamente cuando el cerebro libera los neuroquímicos necesarios para la remodelación neuronal estructural.</string>
+
+    <string name="act_co6_title">Poda Neuronal: Ocaso Digital</string>
+    <string name="act_co6_inst">Termina toda información/pantallas de alta densidad 60m antes de dormir.</string>
+    <string name="act_co6_bio">La luz azul y la alta densidad de información impiden la reorganización neuronal necesaria durante el sueño.</string>
+    <string name="act_co6_phys">Maximiza la consolidación de la memoria y asegura que despiertes con una pizarra cognitiva \'limpia\'.</string>
+    <string name="act_co6_rsch">Tu cerebro necesita una \'vía de salida\' del procesamiento de información de alta velocidad del día. Reducir la densidad de entrada permite al hipocampo iniciar el proceso vital de estabilización y poda de la memoria.</string>
+
+    <string name="act_re1_title">Carga de Magnesio Transdérmico</string>
+    <string name="act_re1_inst">20m de inmersión en sales de Epsom o aplicación de aceite de magnesio.</string>
+    <string name="act_re1_bio">Evita el tracto gastrointestinal para una relajación inmediata del músculo y del sistema nervioso.</string>
+    <string name="act_re1_phys">Acelera la recuperación del esfuerzo físico y mejora la calidad del sueño profundo.</string>
+    <string name="act_re1_rsch">El agua tibia aumenta la permeabilidad de la piel. Los iones de magnesio cruzan la barrera cutánea y entran en el líquido intersticial, donde pueden comenzar inmediatamente a modular la excitabilidad muscular y reducir el cortisol.</string>
+
+    <string name="act_re2_title">Remodelación del Tejido Conectivo</string>
+    <string name="act_re2_inst">5m de estiramiento estático prolongado (pose de paloma o 90/90).</string>
+    <string name="act_re2_bio">Estimula los fibroblastos para remodelar la fascia y el tejido conectivo mientras reduce el impulso simpático.</string>
+    <string name="act_re2_phys">Reduce la tensión sistémica y prepara el cuerpo para la regeneración nocturna.</string>
+    <string name="act_re2_rsch">Mantén durante al menos 2m por lado. Los mecanorreceptores en la fascia tardan este tiempo en señalar al sistema nervioso que permita el alargamiento real de la matriz del tejido conectivo.</string>
+
+    <string name="act_re3_title">Rebote Autonómico: Quietud Total</string>
+    <string name="act_re3_inst">5m de completa quietud física y mental.</string>
+    <string name="act_re3_bio">Permite que el sistema nervioso cambie del modo de \'procesamiento\' al de \'integración\'.</string>
+    <string name="act_re3_phys">Reduce la carga alostática acumulada y aclara el desorden mental.</string>
+    <string name="act_re3_rsch">Siéntate o acuéstate y no hagas absolutamente nada. Resiste el impulso de \'meditar\' o \'respirar\'. Solo sé. Este \'espacio vacío\' permite al cerebro limpiar su caché neuronal y restablece tu umbral de estrés base.</string>
+
+    <string name="act_re4_title">Soporte para Mitigación de Inflamación</string>
+    <string name="act_re4_inst">Consume Omega-3 y Curcumina de alta biodisponibilidad.</string>
+    <string name="act_re4_bio">Moduladores naturales de las vías de citoquinas proinflamatorias (TNF-alfa, IL-6).</string>
+    <string name="act_re4_phys">Esencial para controlar el \'Inflammaging\': la inflamación de bajo grado que impulsa el envejecimiento.</string>
+    <string name="act_re4_rsch">Tómalo con una comida que contenga grasas. La curcumina es específicamente soluble en grasa y su absorción aumenta un 2000%% cuando se combina con pimienta negra (piperine).</string>
+
+    <string name="act_re5_title">Lavado de Asistencia Linfática</string>
+    <string name="act_re5_inst">5m de foam rolling o automasaje ligero.</string>
+    <string name="act_re5_bio">Ayuda al sistema linfático a eliminar los desechos metabólicos de los tejidos.</string>
+    <string name="act_re5_phys">Reduce el dolor muscular y la \'hinchazón\' o estancamiento sistémico.</string>
+    <string name="act_re5_rsch">Rueda siempre hacia el corazón. El sistema linfático no tiene bomba; depende de la presión manual y la contracción muscular para mover el fluido a través de los ganglios para la filtración y eliminación de desechos.</string>
+
+    <string name="act_re6_title">Entorno de Reparación Nocturna</string>
+    <string name="act_re6_inst">Asegura 100%% de oscuridad y temperatura fresca en el dormitorio.</string>
+    <string name="act_re6_bio">Optimiza el entorno para el pulso nocturno de la Hormona del Crecimiento (GH) y la reparación celular.</string>
+    <string name="act_re6_phys">Pico de regeneración de tejidos sistémicos y reparación mitocondrial durante el sueño.</string>
+    <string name="act_re6_rsch">Usa cortinas opacas y cubre con cinta cualquier luz de dispositivos electrónicos. Incluso una pequeña cantidad de luz puede penetrar los párpados e interrumpir la producción máxima de melatonina, que es el antioxidante más potente de tu cuerpo.</string>
+
+    <!-- Recuperación -->
+    <string name="recovery_programs_title">PROGRAMAS DE RECUPERACIÓN</string>
+    <string name="recovery_programs_desc">Protocolos estructurados para la restauración fisiológica.</string>
+    <string name="recovery_daily_interventions">INTERVENCIONES DIARIAS</string>
+    <string name="recovery_critical_needs">Necesidades Críticas</string>
+    <string name="recovery_liver_metabolic">1. SOPORTE HEPÁTICO Y METABÓLICO</string>
+    <string name="recovery_drinkers">Bebedores</string>
+    <string name="recovery_cardio_circulation">2. CARDIOVASCULAR Y CIRCULACIÓN</string>
+    <string name="recovery_both_smokers_drinkers">Tanto fumadores como bebedores</string>
+    <string name="recovery_respiratory_lung">3. SALUD RESPIRATORIA Y PULMONAR</string>
+    <string name="recovery_smokers">Fumadores</string>
+    <string name="recovery_metabolic_nutritional">4. REGULACIÓN METABÓLICA Y NUTRICIONAL</string>
+    <string name="recovery_sleep_optimization">5. OPTIMIZACIÓN DEL SUEÑO</string>
+    <string name="recovery_drinkers_smokers">Bebedores, fumadores o ambos</string>
+    <string name="recovery_neuro_cognitive">6. REPARACIÓN NEUROCOGNITIVA</string>
+    <string name="recovery_behavioral_craving">7. CONTROL CONDUCTUAL Y DE ANSIEDAD</string>
+    <string name="recovery_target_audience">Audiencia objetivo: %1$s</string>
+
+    <!-- Ingesta -->
+    <string name="intake_bio_data_logging">REGISTRO DE DATOS BIOLÓGICOS</string>
+    <string name="intake_tab_intake">INGESTA</string>
+    <string name="intake_tab_sleep">SUEÑO</string>
+    <string name="intake_alcohol">Alcohol</string>
+    <string name="intake_smoking">Tabaquismo</string>
+    <string name="intake_sleep_alignment">Alineación del Sueño y Circadiana</string>
+    <string name="intake_sleep_desc">Registra tu arquitectura para estabilizar los sistemas de biorregulación.</string>
+    <string name="intake_duration_hours">Duración (Horas)</string>
+    <string name="intake_subjective_quality">Calidad subjetiva</string>
+    <string name="intake_bedtime_consistency">Consistencia de la hora de dormir</string>
+    <string name="intake_night_awakenings">Despertares nocturnos</string>
+    <string name="intake_integrate_sleep">INTEGRAR DATOS DE SUEÑO</string>
+    <string name="intake_standard_drinks">Bebidas estándar</string>
+    <string name="intake_confirm_alcohol">CONFIRMAR REGISTRO DE ALCOHOL</string>
+    <string name="intake_quantity_cigarettes">Cantidad (Cigarrillos)</string>
+    <string name="intake_confirm_smoking">CONFIRMAR REGISTRO DE TABACO</string>
+    <string name="intake_logged">%1$s registrado</string>
+    <string name="intake_alcohol_feedback">Tu hígado está procesando toxinas actualmente. Inicia la hidratación para apoyar la depuración metabólica.</string>
+    <string name="intake_smoking_feedback">La tensión vascular está elevada actualmente. Una sesión de respiración mejorará la eficiencia del oxígeno.</string>
+    <string name="intake_start_hydration">Iniciar hidratación</string>
+    <string name="intake_liver_support">Soporte hepático</string>
+    <string name="intake_breathing_exercise">Ejercicio de respiración</string>
+    <string name="intake_return">Volver</string>
+
+    <!-- Entrenador -->
+    <string name="coach_help_centre">Centro de Ayuda</string>
+    <string name="coach_ai_coach">Entrenador de Salud IA</string>
+    <string name="coach_clinically_precise">Respuestas clínicamente precisas</string>
+    <string name="coach_real_time_support">Soporte en tiempo real</string>
+    <string name="coach_common_questions">Preguntas frecuentes</string>
+    <string name="coach_need_advice">¿Necesitas consejo inmediato?</string>
+    <string name="coach_chat_with_ai">Chatea con tu Entrenador de Recuperación IA</string>
+    <string name="coach_back_to_help">Volver al Centro de Ayuda</string>
+    <string name="coach_describe_feeling">Describe cómo te sientes…</string>
+    <string name="coach_hello">¡Hola! Soy tu Entrenador IA. Puedo ayudarte a entender tu camino de recuperación o gestionar la ansiedad. ¿Qué tienes en mente?</string>
+    <string name="coach_research_insight">Perspectiva de investigación</string>
+    <string name="coach_research_desc">Nuevos hallazgos del Centro de Investigación HAC (Investigación Saludable sobre Alcohol y Tabaco) indican que solo 5 minutos de respiración profunda pueden reducir la constricción vascular inducida por la nicotina hasta en un 20%%.</string>
+
+    <!-- Análisis -->
+    <string name="insights_behavioral_intelligence">INTELIGENCIA CONDUCTUAL</string>
+    <string name="insights_behavioral_trends">Tendencias conductuales</string>
+    <string name="insights_clinical_interpretation">Interpretación clínica de tu actividad registrada</string>
+    <string name="insights_intake_intensity">INTENSIDAD DE INGESTA</string>
+    <string name="insights_metabolic_load">Seguimiento de carga metabólica combinada</string>
+    <string name="insights_liver_recovery">Apoyar recuperación hepática</string>
+    <string name="insights_lung_health">Optimizar salud pulmonar</string>
+    <string name="insights_resilience_dynamics">DINÁMICA DE RESILIENCIA</string>
+    <string name="insights_system_stability">Estabilidad del sistema vs. entrada conductual</string>
+    <string name="insights_review_protocol">Revisar protocolo de recuperación</string>
+    <string name="insights_cause_effect">Análisis de causa y efecto</string>
+    <string name="insights_physiological_reactions">Reacciones fisiológicas en cadena directas</string>
+    <string name="insights_scientific_intelligence">Inteligencia Científica</string>
+    <string name="insights_latest_findings">Últimos hallazgos del Centro de Investigación HAC</string>
+    <string name="insights_clinical_library">Biblioteca Clínica</string>
+    <string name="insights_peer_reviewed_guides">Guías revisadas por pares para la gestión fisiológica</string>
+    <string name="insights_intake_high_no_recovery">Tus tendencias de ingesta son altas con cero acción de recuperación. La filtración hepática y la reparación pulmonar están severamente tensas.</string>
+    <string name="insights_intake_high_recovery">Alta ingesta detectada, pero los protocolos de recuperación están activos. Tus acciones están compensando parcialmente la carga metabólica.</string>
+    <string name="insights_intake_low_recovery">Baja ingesta y recuperación activa. Tus sistemas biológicos están en un estado optimizado de reparación celular.</string>
+    <string name="insights_intake_stable">Los niveles de ingesta están dentro de los umbrales de recuperación estables. Los sistemas biológicos mantienen el equilibrio.</string>
+    <string name="insights_recovery_critical">Tensión crítica del sistema. Se requieren protocolos de hidratación y descanso inmediatos para estabilizar la función neuronal.</string>
+    <string name="insights_recovery_decreasing">La estabilidad sistémica está disminuyendo. Tu puntuación suele mejorar un 15%% cuando se completan las tareas de hidratación.</string>
+    <string name="insights_recovery_progress">Recuperación en curso. La hidratación está apoyando la depuración de toxinas, pero el descanso general sigue siendo subóptimo.</string>
+    <string name="insights_recovery_high">Alta resiliencia mantenida. Tus protocolos constantes de hidratación y descanso están equilibrando con éxito el estrés metabólico.</string>
+    <string name="insights_recovery_stable">Dinámica de recuperación estable. Mantén los protocolos actuales de hidratación y respiración para asegurar el equilibrio del sistema.</string>
+    <string name="insights_urgent_hydration">URGENTE: La hidratación tras el alcohol aumenta la tasa de recuperación en un 40%%.</string>
+    <string name="insights_success_hydration">ÉXITO: El protocolo de hidratación está acelerando con éxito la depuración de toxinas.</string>
+    <string name="insights_vascular_stress">La tensión vascular es alta. Inicia un ejercicio de respiración para mejorar el flujo de aire.</string>
+    <string name="insights_breathing_reset">Reinicio de respiración detectado. La eficiencia pulmonar está mejorando.</string>
+    <string name="insights_low_hydration">Baja hidratación detectada. La depuración de toxinas no es óptima actualmente.</string>
+    <string name="insights_high_consistency">Alta consistencia: La puntuación de recuperación tiende al alza debido a las intervenciones activas.</string>
+    <string name="insights_equilibrium">Sistemas biológicos en equilibrio. Mantener protocolo actual.</string>
+    <string name="insights_alcohol_intake">Ingesta de Alcohol</string>
+    <string name="insights_metabolic_ethanol">Carga metabólica de etanol</string>
+    <string name="insights_hydration_active">Hidratación Activa</string>
+    <string name="insights_hydration_deficit">Déficit de Hidratación</string>
+    <string name="insights_accelerating_toxin">Acelerando depuración de toxinas</string>
+    <string name="insights_metabolic_delayed">Procesamiento metabólico retrasado</string>
+    <string name="insights_reduced_hangover">Resaca Reducida</string>
+    <string name="insights_increased_fatigue">Aumento de Fatiga</string>
+    <string name="insights_systemic_stability_returning">Retorno de estabilidad sistémica</string>
+    <string name="insights_neural_recovery_delayed">Recuperación neuronal retrasada</string>
+    <string name="insights_nicotine_intake">Ingesta de Nicotina</string>
+    <string name="insights_vascular_constriction">Constricción vascular</string>
+    <string name="insights_breathing_protocol">Protocolo de Respiración</string>
+    <string name="insights_lung_stress">Estrés Pulmonar</string>
+    <string name="insights_increasing_oxygen">Aumentando la captación de oxígeno</string>
+    <string name="insights_lower_oxygen">Menor eficiencia de oxígeno</string>
+    <string name="insights_oxygen_stabilized">Oxígeno Estabilizado</string>
+    <string name="insights_recovery_slowed">Recuperación Ralentizada</string>
+    <string name="insights_vascular_decreasing">Disminución de tensión vascular</string>
+    <string name="insights_reduced_cellular">Reparación celular reducida</string>
+    <string name="insights_clean_protocol">Protocolo Limpio</string>
+    <string name="insights_zero_toxin">Cero carga de toxinas</string>
+    <string name="insights_stable_equilibrium">Equilibrio Estable</string>
+    <string name="insights_optimal_system">Función óptima del sistema</string>
+    <string name="insights_rapid_repair">Reparación Rápida</string>
+    <string name="insights_maximum_cellular">Máxima restauración celular</string>
+    <string name="insights_pulmonary_restoration">Estudio de Restauración Pulmonar</string>
+    <string name="insights_study_desc">Los datos clínicos del Centro HAC confirma que los protocolos estructurados de respiración profunda de 5 minutos pueden compensar la constricción vascular aguda en un 20%% inmediatamente después de la exposición a la nicotina.</string>
+    <string name="insights_access_publication">Acceder a la publicación completa</string>
+    <string name="insights_hepatic_restoration">Restauración Hepática</string>
+    <string name="insights_sleep_architecture">Arquitectura del Sueño</string>
+    <string name="insights_intracellular_hydration">Hidratación Intracelular</string>
+    <string name="insights_neuro_chemical">Equilibrio Neuroquímico</string>
+    <string name="insights_questions_concerns">¿Preguntas o inquietudes?</string>
+    <string name="insights_reach_out">Contacta con el equipo del Centro de Investigación HAC para cualquier comentario o pregunta clínica.</string>
+
+    <!-- Comunidad -->
+    <string name="community_hub">CENTRO COMUNITARIO</string>
+    <string name="community_cloaked_mode">MODO OCULTO ACTIVO</string>
+    <string name="community_toggle_anonymity">Alternar anonimato</string>
+    <string name="community_tab_feed">Muro</string>
+    <string name="community_tab_circles">Círculos</string>
+    <string name="community_tab_sos">Voz SOS</string>
+    <string name="community_tab_inbox">Bandeja de entrada</string>
+    <string name="community_new_post">Nueva publicación</string>
+    <string name="community_launch_circle">Lanzar Círculo</string>
+    <string name="community_post_placeholder">Registra un logro o pide ayuda…</string>
+    <string name="community_recent_breakthroughs">AVANCES RECIENTES</string>
+    <string name="community_no_posts">No hay publicaciones para mostrar.</string>
+    <string name="community_add_comment">Añadir un comentario…</string>
+    <string name="community_active_circles">CÍRCULOS ACTIVOS</string>
+    <string name="community_circles_desc">Entornos de apoyo mutuo privados</string>
+    <string name="community_discover_circles">DESCUBRIR CÍRCULOS DE PARES</string>
+    <string name="community_discover_desc">Encuentra apoyo alineado con tu camino</string>
+    <string name="community_no_public_circles">Aún no hay círculos públicos. ¡Lanza el primero!</string>
+    <string name="community_join_circle">Unirse al Círculo</string>
+    <string name="community_no_private_sessions">SIN SESIONES PRIVADAS</string>
+    <string name="community_secure_session">Sesión Segura</string>
+    <string name="community_peer_circle">CÍRCULO DE PARES</string>
+    <string name="community_direct_encrypted">DIRECTO CIFRADO</string>
+    <string name="community_type_message">Escribe un mensaje…</string>
+    <string name="community_blocked">BLOQUEADO</string>
+    <string name="community_verified_member">MIEMBRO VERIFICADO</string>
+    <string name="community_message">Mensaje</string>
+    <string name="community_call">Llamada</string>
+    <string name="community_block">Bloquear</string>
+    <string name="community_managed_circles">CÍRCULOS GESTIONADOS</string>
+    <string name="community_unblock_user">DESBLOQUEAR USUARIO</string>
+    <string name="community_close_profile">CERRAR PERFIL</string>
+    <string name="community_launch_support_circle">LANZAR CÍRCULO DE APOYO</string>
+    <string name="community_circle_name">Nombre del Círculo</string>
+    <string name="community_primary_focus">Enfoque Principal (Camino)</string>
+    <string name="community_purpose_guidelines">Propósito y Directrices</string>
+    <string name="community_launch">LANZAR</string>
+    <string name="community_sos_sessions">SESIONES DE VOZ SOS</string>
+    <string name="community_sos_desc">Soporte vocal en vivo para necesidades de recuperación inmediatas</string>
+    <string name="community_no_active_sessions">SIN SESIONES ACTIVAS</string>
+    <string name="community_join">UNIRSE</string>
+    <string name="community_initialize_sos">INICIALIZار LLAMADA SOS</string>
+    <string name="community_live_session">SESIÓN EN VIVO: %1$s</string>
+    <string name="community_hosted_by">ORGANIZADO POR %1$s</string>
+    <string name="community_terminate_session">TERMINAR SESIÓN</string>
+    <string name="community_circle">Círculo</string>
+    <string name="community_recovery">RECUPERACIÓN</string>
+
+    <!-- Recovery & Session Sync -->
+    <string name="recovery_biological_resilience">RESILIENCIA BIOLÓGICA</string>
+    <string name="recovery_live_time">TIEMPO REAL</string>
+    <string name="recovery_simulating">SIMULANDO: %1$d:00</string>
+    <string name="recovery_biological_briefing">INFORME BIOLÓGICO</string>
+    <string name="recovery_daily_journey">VIAJE DIARIO DE RECUPERACIÓN</string>
+    <string name="recovery_daily_journey_desc">Sigue tu guía biológica para optimizar la restauración sistémica.</string>
+    <string name="recovery_cat_morning">MAÑANA: ACTIVACIÓN</string>
+    <string name="recovery_cat_midday">MEDIODÍA: MANTENIMIENTO</string>
+    <string name="recovery_cat_afternoon">TARDE: PROTECCIÓN</string>
+    <string name="recovery_cat_evening">NOCHE: RESTAURACIÓN</string>
+    <string name="recovery_cat_night">MADRUGADA: RECUPERACIÓN PROFUNDA</string>
+    <string name="recovery_status_recommended">RECOMENDADO AHORA</string>
+    <string name="recovery_status_scheduled">PROGRAMADO</string>
+    <string name="recovery_targeted_repair">REPARACIÓN DIRIGIDA</string>
+    <string name="recovery_cat_liver_metabolic">HÍGADO Y METABOLISMO</string>
+    <string name="recovery_cat_cardiovascular">CARDIOVASCULAR</string>
+    <string name="recovery_cat_respiratory">RESPIRATORIO</string>
+    <string name="recovery_cat_metabolic">METABÓLICO</string>
+    <string name="recovery_cat_sleep_arch">ARQUITECTURA DEL SUEÑO</string>
+    <string name="recovery_cat_cognitive">REPARACIÓN COGNITIVA</string>
+    <string name="recovery_cat_behavioral">CONDUCTUAL</string>
+    <string name="recovery_cat_priority">PRIORIDAD</string>
+
+    <!-- Resilience Systems -->
+    <string name="recovery_system_hepatic_name">Resiliencia Hepática</string>
+    <string name="recovery_system_hepatic_desc">Eficiencia de desintoxicación del hígado y rendimiento metabólico.</string>
+    <string name="recovery_system_pulmonary_name">Potencia Pulmonar</string>
+    <string name="recovery_system_pulmonary_desc">Capacidad pulmonar y eficiencia del intercambio oxígeno-CO2.</string>
+    <string name="recovery_system_neural_name">Estabilidad Neural</string>
+    <string name="recovery_system_neural_desc">Equilibrio de neurotransmisores y control ejecutivo sobre los antojos.</string>
+    <string name="recovery_system_vascular_name">Integridad Vascular</string>
+    <string name="recovery_system_vascular_desc">Variabilidad del ritmo cardíaco y regulación de la presión arterial.</string>
+
+    <!-- Biological Briefings -->
+    <string name="briefing_critical_toxicity">La toxicidad sistémica es CRÍTICA. Tu hígado está bajo un fuerte estrés oxidativo. Prioriza la hidratación y la B1 inmediatamente para prevenir la niebla cognitiva.</string>
+    <string name="briefing_moderate_inflammation">Inflamación moderada detectada. El rendimiento metabólico se ha ralentizado. Enfócate en los protocolos hepáticos y vasculares hoy.</string>
+    <string name="briefing_vascular_constriction">La constricción vascular es alta. La saturación de oxígeno puede estar comprometida. Enfócate en rituales pulmonares para limpiar la mucosidad y restaurar el flujo de aire.</string>
+    <string name="briefing_neural_depletion">Las reservas neurales están agotadas. Espera alta irritabilidad y antojos. Usa el Reinicio de Dopamina y los rituales vagales para estabilizarte.</string>
+    <string name="briefing_excellent_compliance">Excelente cumplimiento biológico. Tus sistemas están entrando en un estado de homeostasis estable. Mantén el impulso.</string>
+    <string name="briefing_default">Tu viaje biológico está en marcha. Sigue los protocolos recomendados para optimizar tu recuperación sistémica.</string>
+
+    <!-- Task Titles and Descriptions (Mapping for Engine) -->
+    <string name="act_h1_title">Hidratación Matutina</string>
+    <string name="act_h1_desc">Bebe 300ml de agua + una pizca de sal marina. Rehidrata tu cerebro después de dormir.</string>
+    <string name="act_h4_title">Saturación de Tiamina (B1)</string>
+    <string name="act_h4_desc">Inicia el metabolismo energético. Vital para la recuperación del alcohol.</string>
+    <string name="act_cc2_title">Luz Solar y Movimiento</string>
+    <string name="act_cc2_desc">5-10 min de caminata o estiramientos. Reinicia tu ritmo circadiano.</string>
+    <string name="act_rl1_title">Carga de Oxígeno</string>
+    <string name="act_rl1_desc">3 min de respiración diafragmática. Limpia los pulmones y aumenta el estado de alerta.</string>
+    <string name="act_mn1_title">Ancla de Azúcar en Sangre</string>
+    <string name="act_mn1_desc">Almuerzo alto en proteínas. Previene caídas de energía y antojos al mediodía.</string>
+    <string name="act_cc3_title">Reinicio Vagal (Agua Fría)</string>
+    <string name="act_cc3_desc">Salpica agua fría en la cara. Reduce el cortisol y reinicia el enfoque.</string>
+    <string name="act_cc1_title">Respiración Coherente</string>
+    <string name="act_cc1_desc">Respiración 4-2-6 durante 2 min. Estabiliza el ritmo cardíaco durante el trabajo.</string>
+    <string name="act_mn5_title">Carga de Omega-3</string>
+    <string name="act_mn5_desc">Apoya la reparación cerebral y reduce la inflamación sistémica.</string>
+    <string name="act_cc4_title">Impulso de Óxido Nítrico</string>
+    <string name="act_cc4_desc">Jugo de remolacha o vegetales de hoja verde. Mejora la circulación y la PA.</string>
+    <string name="act_nc2_title">Ejercicio Cognitivo</string>
+    <string name="act_nc2_desc">Ejercicio de enfoque de 5 min para fortalecer la función ejecutiva.</string>
+    <string name="act_ng1_title">Apoyo al Microbioma</string>
+    <string name="act_ng1_desc">Probióticos/Alimentos fermentados. Sana el revestimiento intestinal dañado por el alcohol.</string>
+    <string name="act_rl5_title">Vapor de Desintoxicación Pulmonar</string>
+    <string name="act_rl5_desc">Inhalación de vapor para diluir y limpiar la mucosidad (para fumadores).</string>
+    <string name="act_nc1_title">Ayuno de Dopamina</string>
+    <string name="act_nc1_desc">Sin pantallas durante 15 min. Recalibra los circuitos de recompensa.</string>
+    <string name="act_rc_sl4_title">Apoyo de Magnesio</string>
+    <string name="act_rc_sl4_desc">Glicinato de Magnesio. Relaja los músculos y ayuda al sueño REM profundo.</string>
+    <string name="act_rc_sl1_title">Interruptor Parasimpático</string>
+    <string name="act_rc_sl1_desc">Respiración 4-7-8. Indica a tu cuerpo que es seguro dormir.</string>
+    <string name="act_rc_sl2_title">Meditación de Escaneo Corporal</string>
+    <string name="act_rc_sl2_desc">Meditación guiada para reducir los niveles nocturnos de cortisol.</string>
+    <string name="act_h2_title">Apoyo de Nutrientes (B/C/NAC)</string>
+    <string name="act_h2_desc">Toma complejo B, Vitamina C o NAC. Apoya la reparación de las enzimas hepáticas.</string>
+    <string name="act_lv1_title">Carga Detox de Crucíferas</string>
+    <string name="act_lv1_desc">Come brócoli/brotes para activar la fase II de desintoxicación hepática.</string>
+    <string name="act_rl4_title">Entrenamiento Muscular Inspiratorio</string>
+    <string name="act_rl4_desc">Respiración de resistencia para fortalecer los músculos del diafragma.</string>
+    <string name="act_rl3_title">Drenaje Postural</string>
+    <string name="act_rl3_desc">Posicionamiento guiado para limpiar la mucosidad de los lóbulos inferiores.</string>
+    <string name="act_mn4_title">Cumplimiento de Estructura de Comidas</string>
+    <string name="act_mn4_desc">Asegura un enfoque de proteína + fibra con carbohidratos controlados.</string>
+    <string name="act_nc3_title">Equilibrio Glutamato/GABA</string>
+    <string name="act_nc3_desc">Ingesta de L-Teanina para manejar la hiperexcitabilidad neurológica.</string>
+    <string name="act_bh1_title">Micro-hábito: Reemplazo de Agua</string>
+    <string name="act_bh1_desc">Reemplaza el impulso de consumo con hidratación consciente.</string>
+    <string name="act_bh3_title">Ejercicio de Navegación del Antojo</string>
+    <string name="act_bh3_desc">Observa las sensaciones del antojo sin juicio ni acción.</string>
+    <string name="act_bh2_title">Temporizador de Retraso de Antojo</string>
+    <string name="act_bh2_desc">Inicia un retraso de 5 minutos para dejar pasar la ola del antojo.</string>
+    <string name="act_p1_title">Hidrátate Ahora</string>
+    <string name="act_p1_desc">URGENTE: Cuerpo deshidratado. Bebe 250ml de agua ahora.</string>
+    <string name="act_p2_title">Apoyo de Nutrientes</string>
+    <string name="act_p2_desc">CRÍTICO: Se necesita apoyo hepático (vitaminas B/electrolitos).</string>
+    <string name="act_p3_title">Reinicio Pulmonar</string>
+    <string name="act_p3_desc">ALERTA VASCULAR: Alto estrés pulmonar. Respira profundamente ahora.</string>
+    <string name="act_p6_title">Reinicio Vagal</string>
+    <string name="act_p6_desc">CONSEJO DE EXPERTO: Usa agua fría para reiniciar tu sistema nervioso.</string>
+    <string name="recovery_lvl">NIVEL</string>
+</resources>
