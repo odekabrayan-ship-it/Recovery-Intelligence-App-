@@ -88,6 +88,7 @@ fun TherapeuticScreen(
             // HOME / GENERAL
             TherapeuticSession("st_1", "P-432", R.string.session_stress_reset_title, R.string.duration_10min, SanctuaryDomain.HOME, R.string.session_stress_reset_desc, R.string.freq_432hz, R.string.target_amygdala, Icons.Default.Cloud, 0.4f, "hz_432", "g_1", R.string.session_stress_reset_guidance),
             TherapeuticSession("st_2", "P-174", R.string.session_panic_brake_title, R.string.duration_5min, SanctuaryDomain.BODY, R.string.session_panic_brake_desc, R.string.freq_174hz, R.string.target_vagal_tone, Icons.Default.FlashOn, 0.8f, "hz_174", "g_2", R.string.session_panic_brake_guidance),
+            TherapeuticSession("rl_5", "P-CLR", R.string.session_pulmonary_clearance_title, R.string.duration_12min, SanctuaryDomain.BODY, R.string.session_pulmonary_clearance_desc, R.string.freq_alpha, R.string.target_respiratory, Icons.Default.Air, 0.5f, "alpha_10hz", "g_17", R.string.session_pulmonary_clearance_guidance),
             
             // BODY
             TherapeuticSession("sl_1", "P-DLT", R.string.session_insomnia_relief_title, R.string.duration_20min, SanctuaryDomain.BODY, R.string.session_insomnia_relief_desc, R.string.freq_delta, R.string.target_sleep_architecture, Icons.Default.Bedtime, 0.2f, "brown_noise", "g_14", R.string.session_insomnia_relief_guidance),

@@ -37,6 +37,7 @@ import androidx.compose.ui.window.DialogProperties
 import com.harc.health.R
 import com.harc.health.logic.ActionDecisionEngine
 import com.harc.health.logic.VitalisDictionary
+import com.harc.health.logic.VitalisEngine
 import com.harc.health.model.*
 import com.harc.health.viewmodel.MainViewModel
 import kotlinx.coroutines.delay
@@ -68,20 +69,20 @@ fun VitalisScreen(viewModel: MainViewModel, onBack: () -> Unit) {
     var activeActivity by remember { mutableStateOf<VitalisActivity?>(null) }
     var activeProtocol by remember { mutableStateOf<LongevityProtocol?>(null) }
     var activeAdeAction by remember { mutableStateOf<ActionDecisionEngine.AdeAction?>(null) }
-    var showCelebration by remember { mutableStateOf<Int?>(null) }
+    var showCelebration by remember { mutableStateOf<String?>(null) }
 
     CircadianEnvironment { circadianColor ->
         Scaffold(
             containerColor = VitalisDeepNavy,
             topBar = {
                 val title = when(currentSection) {
-                    "home" -> "VITALIS COMMAND"
-                    "intelligence" -> "BIO-INTELLIGENCE"
-                    "protocols" -> "LONGEVITY PROTOCOLS"
-                    "help" -> "EVIDENCE BASE"
-                    "detail" -> "DOMAIN ANALYSIS"
-                    "dictionary" -> "COMPOUND DICTIONARY"
-                    else -> "VITALIS OS"
+                    "home" -> stringResource(R.string.vitalis_command_center)
+                    "intelligence" -> stringResource(R.string.vitalis_bio_intel)
+                    "protocols" -> stringResource(R.string.vitalis_protocols)
+                    "help" -> stringResource(R.string.vitalis_evidence_base)
+                    "detail" -> stringResource(R.string.vitalis_domain_analysis)
+                    "dictionary" -> stringResource(R.string.vitalis_dictionary_title)
+                    else -> stringResource(R.string.vitalis_vitalis_os)
                 }
                 VitalisEnvironmentTopBar(
                     sectionTitle = title,
@@ -128,19 +129,19 @@ fun VitalisScreen(viewModel: MainViewModel, onBack: () -> Unit) {
 
             // --- LIVE INTERVENTION DIALOGS (Inherited from the high-engagement model) ---
             if (activeAdeAction != null) {
-                AdeInterventionDialog(accent = circadianColor, action = activeAdeAction!!, onComplete = { viewModel.toggleAction(activeAdeAction!!.id); showCelebration = activeAdeAction!!.instructionRes; activeAdeAction = null }, onDismiss = { activeAdeAction = null })
+                AdeInterventionDialog(accent = circadianColor, action = activeAdeAction!!, onComplete = { viewModel.toggleAction(activeAdeAction!!.id); showCelebration = activeAdeAction!!.id; activeAdeAction = null }, onDismiss = { activeAdeAction = null })
             }
 
             if (activeActivity != null) {
-                ActivityInterventionDialog(accent = circadianColor, activity = activeActivity!!, onComplete = { viewModel.toggleAction(activeActivity!!.id); showCelebration = activeActivity!!.titleRes; activeActivity = null }, onDismiss = { activeActivity = null })
+                ActivityInterventionDialog(accent = circadianColor, activity = activeActivity!!, onComplete = { viewModel.toggleAction(activeActivity!!.id); showCelebration = activeActivity!!.id; activeActivity = null }, onDismiss = { activeActivity = null })
             }
 
             if (activeProtocol != null) {
-                ProtocolExecutionDialog(accent = circadianColor, protocol = activeProtocol!!, onComplete = { viewModel.toggleAction(activeProtocol!!.id); showCelebration = R.string.vitalis_complete; activeProtocol = null }, onDismiss = { activeProtocol = null })
+                ProtocolExecutionDialog(accent = circadianColor, protocol = activeProtocol!!, onComplete = { viewModel.completeProtocol(activeProtocol!!.id); showCelebration = activeProtocol!!.id; activeProtocol = null }, onDismiss = { activeProtocol = null })
             }
 
             if (showCelebration != null) {
-                LongevityCelebrationDialog(accent = circadianColor, itemNameRes = showCelebration!!, onDismiss = { showCelebration = null })
+                LongevityCelebrationDialog(accent = circadianColor, protocolId = showCelebration!!, onDismiss = { showCelebration = null })
             }
         }
     }
@@ -172,7 +173,11 @@ fun VitalisHomeSection(
         modifier = Modifier.fillMaxSize().padding(horizontal = StandardPadding),
         verticalArrangement = Arrangement.spacedBy(SectionSpacing)
     ) {
-        item { Spacer(modifier = Modifier.height(16.dp)); GlobalStatusHeader(ade?.globalState ?: "SYNCING...") }
+        item { 
+            Spacer(modifier = Modifier.height(16.dp))
+            val globalState = if (ade != null) stringResource(ade.globalStateRes) else stringResource(R.string.vitalis_syncing)
+            GlobalStatusHeader(globalState.uppercase()) 
+        }
         
         item {
             ClinicalBioMap(data, accent)
@@ -196,7 +201,7 @@ fun VitalisHomeSection(
 fun GlobalStatusHeader(state: String) {
     Column {
         Text(
-            text = "SYSTEM STATUS",
+            text = stringResource(R.string.vitalis_system_status_label),
             style = MaterialTheme.typography.labelSmall,
             color = VitalisSteel,
             letterSpacing = 2.sp
@@ -212,7 +217,7 @@ fun GlobalStatusHeader(state: String) {
 
 @Composable
 fun LongevityScoreCard(data: VitalisData, accent: Color) {
-    val offset = data.trajectoryModule.futureDirectives.firstOrNull() ?: "Predicting Trajectory..."
+    val offsetRes = data.trajectoryRes
     Surface(
         modifier = Modifier.fillMaxWidth(),
         shape = RoundedCornerShape(CardCornerRadius),
@@ -244,13 +249,13 @@ fun LongevityScoreCard(data: VitalisData, accent: Color) {
             
             Column {
                 Text(
-                    text = "BIOLOGICAL TRAJECTORY",
+                    text = stringResource(R.string.vitalis_longevity_trajectory_label),
                     style = MaterialTheme.typography.labelSmall,
                     color = VitalisSteel,
                     letterSpacing = 1.sp
                 )
                 Text(
-                    text = offset,
+                    text = if (offsetRes != 0) stringResource(offsetRes) else stringResource(R.string.vitalis_calculating),
                     style = MaterialTheme.typography.titleLarge,
                     fontWeight = FontWeight.Bold,
                     color = accent,
@@ -273,7 +278,7 @@ fun ActionEngineCard(ade: ActionDecisionEngine.AdeOutput, accent: Color, onExecu
             Row(verticalAlignment = Alignment.CenterVertically) {
                 Icon(Icons.Default.Bolt, contentDescription = null, tint = accent)
                 Spacer(modifier = Modifier.width(12.dp))
-                Text("EXPERT DIRECTIVES", style = MaterialTheme.typography.labelLarge, fontWeight = FontWeight.Black, color = accent, letterSpacing = 1.sp)
+                Text(stringResource(R.string.vitalis_directives_title), style = MaterialTheme.typography.labelLarge, fontWeight = FontWeight.Black, color = accent, letterSpacing = 1.sp)
             }
             
             Spacer(modifier = Modifier.height(16.dp))
@@ -305,7 +310,7 @@ fun ActionEngineCard(ade: ActionDecisionEngine.AdeOutput, accent: Color, onExecu
 @Composable
 fun DomainHealthGrid(systems: Map<String, SystemHealth>, accent: Color) {
     Column {
-        Text("BIO-REGULATORY SYSTEMS", style = MaterialTheme.typography.labelSmall, color = VitalisSteel, letterSpacing = 2.sp)
+        Text(stringResource(R.string.vitalis_biological_systems_title), style = MaterialTheme.typography.labelSmall, color = VitalisSteel, letterSpacing = 2.sp)
         Spacer(modifier = Modifier.height(16.dp))
         
         val systemList = systems.entries.toList()
@@ -335,7 +340,7 @@ fun DomainCard(name: String, system: SystemHealth, accent: Color, modifier: Modi
         Column(modifier = Modifier.padding(16.dp)) {
             Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) {
                 Text(name.uppercase(), style = MaterialTheme.typography.labelSmall, color = VitalisSteel, fontSize = 9.sp)
-                Text(system.trend, style = MaterialTheme.typography.labelSmall, color = accent, fontWeight = FontWeight.Black)
+                Text(stringResource(system.trendRes), style = MaterialTheme.typography.labelSmall, color = accent, fontWeight = FontWeight.Black)
             }
             Spacer(modifier = Modifier.height(12.dp))
             Text("${system.score}%", style = MaterialTheme.typography.headlineSmall, fontWeight = FontWeight.Black, color = VitalisPureWhite)
@@ -370,7 +375,7 @@ fun VitalisIntelligenceSection(data: VitalisData, accent: Color, onModuleClick: 
         item { Spacer(modifier = Modifier.height(16.dp)) }
         
         items(modules) { (title, activities) ->
-            val insight = activities.firstOrNull()?.let { stringResource(it.researchInsightRes) } ?: "SYSTEM SYNCHRONIZING..."
+            val insight = activities.firstOrNull()?.let { stringResource(it.researchInsightRes) } ?: stringResource(R.string.vitalis_synchronization_progress).uppercase()
             IntelligenceModulePlaceholder(title, insight, accent) {
                 onModuleClick(title)
             }
@@ -403,7 +408,7 @@ fun IntelligenceModulePlaceholder(title: String, insight: String, accent: Color,
                 Spacer(modifier = Modifier.width(16.dp))
                 Column {
                     Text(title, style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.Bold, color = VitalisPureWhite)
-                    Text("DOMAIN ACTIVE", style = MaterialTheme.typography.labelSmall, color = accent)
+                    Text(stringResource(R.string.vitalis_active_analysis), style = MaterialTheme.typography.labelSmall, color = accent)
                 }
             }
             
@@ -413,7 +418,7 @@ fun IntelligenceModulePlaceholder(title: String, insight: String, accent: Color,
             Spacer(modifier = Modifier.height(20.dp))
             
             Row(verticalAlignment = Alignment.CenterVertically) {
-                Text("VIEW CLINICAL ANALYSIS", style = MaterialTheme.typography.labelLarge, fontWeight = FontWeight.Bold, color = VitalisPureWhite)
+                Text(stringResource(R.string.vitalis_view_analysis), style = MaterialTheme.typography.labelLarge, fontWeight = FontWeight.Bold, color = VitalisPureWhite)
                 Spacer(modifier = Modifier.width(8.dp))
                 Icon(Icons.AutoMirrored.Filled.ArrowForward, null, tint = VitalisPureWhite, modifier = Modifier.size(16.dp))
             }
@@ -430,7 +435,7 @@ fun VitalisProtocolsSection(data: VitalisData, accent: Color, onProtocolClick: (
     ) {
         item { 
             Spacer(modifier = Modifier.height(16.dp))
-            Text("STRUCTURED LONGEVITY", style = MaterialTheme.typography.labelSmall, color = VitalisSteel, letterSpacing = 2.sp)
+            Text(stringResource(R.string.vitalis_protocols), style = MaterialTheme.typography.labelSmall, color = VitalisSteel, letterSpacing = 2.sp)
         }
         
         items(protocols) { protocol ->
@@ -451,18 +456,18 @@ fun ProtocolCard(protocol: LongevityProtocol, accent: Color, onClick: () -> Unit
         border = BorderStroke(1.dp, VitalisSteel.copy(alpha = 0.1f))
     ) {
         Column(modifier = Modifier.padding(24.dp)) {
-            Text("PROTOCOL", style = MaterialTheme.typography.labelSmall, color = accent, letterSpacing = 2.sp)
+            Text(stringResource(R.string.vitalis_longevity_protocol_label), style = MaterialTheme.typography.labelSmall, color = accent, letterSpacing = 2.sp)
             Spacer(modifier = Modifier.height(8.dp))
-            Text(protocol.title, style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.Black, color = VitalisPureWhite)
+            Text(stringResource(protocol.titleRes), style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.Black, color = VitalisPureWhite)
             Spacer(modifier = Modifier.height(12.dp))
-            Text(protocol.purpose, style = MaterialTheme.typography.bodyMedium, color = VitalisSteel)
+            Text(stringResource(protocol.purposeRes), style = MaterialTheme.typography.bodyMedium, color = VitalisSteel)
             
             Spacer(modifier = Modifier.height(24.dp))
             
             Row(verticalAlignment = Alignment.CenterVertically) {
                 Surface(color = accent.copy(alpha = 0.1f), shape = CircleShape) {
                     Text(
-                        text = "ACTIVE",
+                        text = stringResource(R.string.vitalis_phase_active).uppercase(),
                         modifier = Modifier.padding(horizontal = 8.dp, vertical = 2.dp),
                         style = MaterialTheme.typography.labelSmall,
                         fontWeight = FontWeight.Black,
@@ -470,7 +475,7 @@ fun ProtocolCard(protocol: LongevityProtocol, accent: Color, onClick: () -> Unit
                     )
                 }
                 Spacer(modifier = Modifier.weight(1f))
-                Text("INITIATE", style = MaterialTheme.typography.labelLarge, fontWeight = FontWeight.Black, color = VitalisPureWhite)
+                Text(stringResource(R.string.vitalis_start_protocol), style = MaterialTheme.typography.labelLarge, fontWeight = FontWeight.Black, color = VitalisPureWhite)
                 Spacer(modifier = Modifier.width(8.dp))
                 Icon(Icons.Default.PlayCircle, null, tint = VitalisPureWhite, modifier = Modifier.size(20.dp))
             }
@@ -495,8 +500,8 @@ fun VitalisHelpCentreSection(accent: Color, onOpenDictionary: () -> Unit) {
             ) {
                 Row(modifier = Modifier.padding(24.dp), verticalAlignment = Alignment.CenterVertically) {
                     Column(modifier = Modifier.weight(1f)) {
-                        Text("COMPOUND DICTIONARY", style = MaterialTheme.typography.headlineSmall, fontWeight = FontWeight.Black, color = VitalisDeepNavy)
-                        Text("Clinical evidence on compounds & intake.", style = MaterialTheme.typography.bodyMedium, color = VitalisDeepNavy.copy(alpha = 0.7f))
+                        Text(stringResource(R.string.vitalis_dictionary_title), style = MaterialTheme.typography.headlineSmall, fontWeight = FontWeight.Black, color = VitalisDeepNavy)
+                        Text(stringResource(R.string.vitalis_dictionary_subtitle), style = MaterialTheme.typography.bodyMedium, color = VitalisDeepNavy.copy(alpha = 0.7f))
                     }
                     Icon(Icons.Default.MenuBook, null, tint = VitalisDeepNavy, modifier = Modifier.size(40.dp))
                 }
@@ -504,11 +509,11 @@ fun VitalisHelpCentreSection(accent: Color, onOpenDictionary: () -> Unit) {
         }
 
         item {
-            Text("VITALIS EVIDENCE BASE", style = MaterialTheme.typography.labelSmall, color = VitalisSteel, letterSpacing = 2.sp)
+            Text(stringResource(R.string.vitalis_evidence_base), style = MaterialTheme.typography.labelSmall, color = VitalisSteel, letterSpacing = 2.sp)
         }
 
-        item { HelpItemCard("Protocol Hierarchy", "Understanding how Vitalis prioritizes interventions.", Icons.Default.Layers) }
-        item { HelpItemCard("Bio-Marker Mapping", "Clinical definitions of tracked metrics.", Icons.Default.Biotech) }
+        item { HelpItemCard(stringResource(R.string.vitalis_protocol_hierarchy), stringResource(R.string.vitalis_protocol_hierarchy_desc), Icons.Default.Layers) }
+        item { HelpItemCard(stringResource(R.string.vitalis_bio_markers), stringResource(R.string.vitalis_bio_markers_desc), Icons.Default.Biotech) }
     }
 }
 
@@ -549,26 +554,26 @@ fun VitalisModuleDetailScreen(title: String?, data: VitalisData, accent: Color, 
     ) {
         item {
             Spacer(modifier = Modifier.height(16.dp))
-            Text(title ?: "DOMAIN ANALYSIS", style = MaterialTheme.typography.headlineLarge, fontWeight = FontWeight.Black, color = VitalisPureWhite)
+            Text(title ?: stringResource(R.string.vitalis_domain_analysis), style = MaterialTheme.typography.headlineLarge, fontWeight = FontWeight.Black, color = VitalisPureWhite)
         }
 
         // --- NEW: BIOMETRIC MARKERS SECTION ---
         item {
-            Text("CLINICAL MARKERS", style = MaterialTheme.typography.labelSmall, color = VitalisSteel, letterSpacing = 2.sp)
+            Text(stringResource(R.string.vitalis_clinical_data).uppercase(), style = MaterialTheme.typography.labelSmall, color = VitalisSteel, letterSpacing = 2.sp)
             Spacer(modifier = Modifier.height(12.dp))
             Surface(modifier = Modifier.fillMaxWidth(), shape = RoundedCornerShape(20.dp), color = VitalisSlate) {
                 Column(modifier = Modifier.padding(20.dp)) {
-                    MarkerItem("HRV Baseline", "64ms", "Optimal", accent)
+                    MarkerItem("HRV Baseline", "64ms", stringResource(R.string.vitalis_optimal), accent)
                     HorizontalDivider(modifier = Modifier.padding(vertical = 12.dp), color = Color.White.copy(alpha = 0.05f))
-                    MarkerItem("Systemic pH", "7.38", "Balanced", accent)
+                    MarkerItem("Systemic pH", "7.38", stringResource(R.string.status_stable), accent)
                     HorizontalDivider(modifier = Modifier.padding(vertical = 12.dp), color = Color.White.copy(alpha = 0.05f))
-                    MarkerItem("Glycemic Load", "Low", "Stable", accent)
+                    MarkerItem("Glycemic Load", "Low", stringResource(R.string.status_stable), accent)
                 }
             }
         }
 
         item {
-            Text("TARGETED DIRECTIVES", style = MaterialTheme.typography.labelSmall, color = VitalisSteel, letterSpacing = 2.sp)
+            Text(stringResource(R.string.vitalis_targeted_interventions), style = MaterialTheme.typography.labelSmall, color = VitalisSteel, letterSpacing = 2.sp)
         }
 
         items(activities) { activity ->
@@ -628,7 +633,7 @@ fun VitalisDictionarySection(accent: Color) {
                     modifier = Modifier.weight(1f),
                     cursorBrush = Brush.verticalGradient(listOf(accent, accent))
                 ) {
-                    if (query.isEmpty()) Text("Search compounds (e.g. NAC, B1)...", color = VitalisSteel)
+                    if (query.isEmpty()) Text(stringResource(R.string.vitalis_search_compounds), color = VitalisSteel)
                     it()
                 }
             }
@@ -639,9 +644,9 @@ fun VitalisDictionarySection(accent: Color) {
         Crossfade(targetState = query.isEmpty(), label = "dict") { isEmpty ->
             if (isEmpty) {
                 Column {
-                    Text("CLINICALLY INDEXED COMPOUNDS", style = MaterialTheme.typography.labelSmall, color = VitalisSteel, letterSpacing = 2.sp)
+                    Text(stringResource(R.string.vitalis_clinically_indexed), style = MaterialTheme.typography.labelSmall, color = VitalisSteel, letterSpacing = 2.sp)
                     Spacer(modifier = Modifier.height(16.dp))
-                    Text("Vitalis references clinical trials to provide evidence-based guidance on therapeutic intake.", color = VitalisSteel)
+                    Text(stringResource(R.string.vitalis_dictionary_desc), color = VitalisSteel)
                 }
             } else {
                 DictionaryResultContent(result)
@@ -690,7 +695,7 @@ fun DictionaryResultContent(result: VitalisDictionary.Entry?) {
                 
                 Surface(modifier = Modifier.fillMaxWidth(), shape = RoundedCornerShape(24.dp), color = VitalisSlate) {
                     Column(modifier = Modifier.padding(24.dp)) {
-                        Text("CLINICAL RATIONALE", style = MaterialTheme.typography.labelSmall, color = VitalisSteel, letterSpacing = 1.sp)
+                        Text(stringResource(R.string.vitalis_clinical_rationale), style = MaterialTheme.typography.labelSmall, color = VitalisSteel, letterSpacing = 1.sp)
                         Spacer(modifier = Modifier.height(12.dp))
                         Text(stringResource(result.rationaleRes), style = MaterialTheme.typography.bodyLarge, color = VitalisPureWhite, lineHeight = 24.sp)
                     }
@@ -707,7 +712,7 @@ fun VitalisEnvironmentTopBar(sectionTitle: String, isHome: Boolean, accentColor:
         title = {
             Column(horizontalAlignment = Alignment.CenterHorizontally) {
                 Text(
-                    text = "VITALIS OS",
+                    text = stringResource(R.string.vitalis_vitalis_os),
                     style = MaterialTheme.typography.labelSmall,
                     color = VitalisSteel,
                     letterSpacing = 4.sp
@@ -723,13 +728,13 @@ fun VitalisEnvironmentTopBar(sectionTitle: String, isHome: Boolean, accentColor:
         navigationIcon = {
             if (!isHome) {
                 IconButton(onClick = onBack) {
-                    Icon(Icons.AutoMirrored.Filled.ArrowBack, "Back", tint = VitalisPureWhite)
+                    Icon(Icons.AutoMirrored.Filled.ArrowBack, stringResource(R.string.vitalis_back), tint = VitalisPureWhite)
                 }
             }
         },
         actions = {
             IconButton(onClick = {}) {
-                Icon(Icons.Outlined.Notifications, "Notifications", tint = VitalisPureWhite)
+                Icon(Icons.Outlined.Notifications, stringResource(R.string.vitalis_notifications), tint = VitalisPureWhite)
             }
         }
     )
@@ -745,7 +750,7 @@ fun VitalisEnvironmentBottomBar(current: String, accent: Color, onNavigate: (Str
             selected = current == "home",
             onClick = { onNavigate("home") },
             icon = { Icon(Icons.Default.GridView, null) },
-            label = { Text("COMMAND") },
+            label = { Text(stringResource(R.string.vitalis_command)) },
             colors = NavigationBarItemDefaults.colors(
                 selectedIconColor = accent,
                 selectedTextColor = accent,
@@ -758,7 +763,7 @@ fun VitalisEnvironmentBottomBar(current: String, accent: Color, onNavigate: (Str
             selected = current == "intelligence" || current == "detail",
             onClick = { onNavigate("intelligence") },
             icon = { Icon(Icons.Default.Analytics, null) },
-            label = { Text("INTEL") },
+            label = { Text(stringResource(R.string.vitalis_intel)) },
             colors = NavigationBarItemDefaults.colors(
                 selectedIconColor = accent,
                 selectedTextColor = accent,
@@ -771,7 +776,7 @@ fun VitalisEnvironmentBottomBar(current: String, accent: Color, onNavigate: (Str
             selected = current == "protocols",
             onClick = { onNavigate("protocols") },
             icon = { Icon(Icons.Default.Terminal, null) },
-            label = { Text("PROTOCOLS") },
+            label = { Text(stringResource(R.string.vitalis_protocols)) },
             colors = NavigationBarItemDefaults.colors(
                 selectedIconColor = accent,
                 selectedTextColor = accent,
@@ -784,7 +789,7 @@ fun VitalisEnvironmentBottomBar(current: String, accent: Color, onNavigate: (Str
             selected = current == "help" || current == "dictionary",
             onClick = { onNavigate("help") },
             icon = { Icon(Icons.Default.MenuBook, null) },
-            label = { Text("LIBRARY") },
+            label = { Text(stringResource(R.string.vitalis_library)) },
             colors = NavigationBarItemDefaults.colors(
                 selectedIconColor = accent,
                 selectedTextColor = accent,
@@ -807,7 +812,7 @@ fun ClinicalBioMap(data: VitalisData, accent: Color) {
     ) {
         Box(modifier = Modifier.padding(20.dp)) {
             Column {
-                Text("NEURAL CONNECTIVITY & SYSTEMIC SYNC", style = MaterialTheme.typography.labelSmall, color = VitalisSteel, letterSpacing = 1.sp)
+                Text(stringResource(R.string.vitalis_neural_connectivity), style = MaterialTheme.typography.labelSmall, color = VitalisSteel, letterSpacing = 1.sp)
                 Spacer(modifier = Modifier.weight(1f))
                 Row(modifier = Modifier.fillMaxWidth(), verticalAlignment = Alignment.Bottom) {
                     repeat(16) { i ->
@@ -854,11 +859,11 @@ fun AdeInterventionDialog(accent: Color, action: ActionDecisionEngine.AdeAction,
         },
         confirmButton = {
             Button(onClick = onComplete, colors = ButtonDefaults.buttonColors(containerColor = accent, contentColor = VitalisDeepNavy)) {
-                Text("LOG COMPLETION", fontWeight = FontWeight.Bold)
+                Text(stringResource(R.string.vitalis_log_completion), fontWeight = FontWeight.Bold)
             }
         },
         dismissButton = {
-            TextButton(onClick = onDismiss) { Text("CLOSE", color = VitalisSteel) }
+            TextButton(onClick = onDismiss) { Text(stringResource(R.string.settings_close), color = VitalisSteel) }
         }
     )
 }
@@ -880,11 +885,11 @@ fun ActivityInterventionDialog(accent: Color, activity: VitalisActivity, onCompl
         },
         confirmButton = {
             Button(onClick = onComplete, colors = ButtonDefaults.buttonColors(containerColor = accent, contentColor = VitalisDeepNavy)) {
-                Text("COMPLETE", fontWeight = FontWeight.Bold)
+                Text(stringResource(R.string.vitalis_complete), fontWeight = FontWeight.Bold)
             }
         },
         dismissButton = {
-            TextButton(onClick = onDismiss) { Text("CLOSE", color = VitalisSteel) }
+            TextButton(onClick = onDismiss) { Text(stringResource(R.string.settings_close), color = VitalisSteel) }
         }
     )
 }
@@ -895,28 +900,29 @@ fun ProtocolExecutionDialog(accent: Color, protocol: LongevityProtocol, onComple
         Surface(modifier = Modifier.fillMaxSize(), color = VitalisDeepNavy) {
             LazyColumn(modifier = Modifier.fillMaxSize().padding(StandardPadding)) {
                 item {
-                    Text("LONGEVITY PROTOCOL", color = accent, style = MaterialTheme.typography.labelLarge, letterSpacing = 2.sp)
-                    Text(protocol.title, style = MaterialTheme.typography.displaySmall, fontWeight = FontWeight.Black, color = VitalisPureWhite)
+                    Text(stringResource(R.string.vitalis_longevity_protocol_label), color = accent, style = MaterialTheme.typography.labelLarge, letterSpacing = 2.sp)
+                    Text(stringResource(protocol.titleRes), style = MaterialTheme.typography.displaySmall, fontWeight = FontWeight.Black, color = VitalisPureWhite)
                     Spacer(modifier = Modifier.height(24.dp))
                     
                     Surface(color = VitalisSlate, shape = RoundedCornerShape(16.dp)) {
-                        Text(protocol.purpose, modifier = Modifier.padding(20.dp), color = VitalisSteel)
+                        Text(stringResource(protocol.purposeRes), modifier = Modifier.padding(20.dp), color = VitalisSteel)
                     }
                     
                     Spacer(modifier = Modifier.height(32.dp))
-                    Text("EXECUTION STEPS", style = MaterialTheme.typography.labelSmall, color = VitalisSteel, letterSpacing = 2.sp)
+                    Text(stringResource(R.string.vitalis_execution_steps), style = MaterialTheme.typography.labelSmall, color = VitalisSteel, letterSpacing = 2.sp)
                     Spacer(modifier = Modifier.height(16.dp))
                 }
                 
-                items(protocol.instructions) { step ->
+                items(protocol.instructionsRes) { stepRes ->
+                    val stepIndex = protocol.instructionsRes.indexOf(stepRes)
                     Row(modifier = Modifier.padding(vertical = 12.dp)) {
                         Surface(shape = CircleShape, color = accent, modifier = Modifier.size(24.dp)) {
                             Box(contentAlignment = Alignment.Center) {
-                                Text((protocol.instructions.indexOf(step) + 1).toString(), style = MaterialTheme.typography.labelSmall, fontWeight = FontWeight.Bold, color = VitalisDeepNavy)
+                                Text((stepIndex + 1).toString(), style = MaterialTheme.typography.labelSmall, fontWeight = FontWeight.Bold, color = VitalisDeepNavy)
                             }
                         }
                         Spacer(modifier = Modifier.width(16.dp))
-                        Text(step, color = VitalisPureWhite, style = MaterialTheme.typography.bodyLarge)
+                        Text(stringResource(stepRes), color = VitalisPureWhite, style = MaterialTheme.typography.bodyLarge)
                     }
                 }
                 
@@ -928,11 +934,11 @@ fun ProtocolExecutionDialog(accent: Color, protocol: LongevityProtocol, onComple
                         colors = ButtonDefaults.buttonColors(containerColor = accent, contentColor = VitalisDeepNavy),
                         shape = RoundedCornerShape(16.dp)
                     ) {
-                        Text("LOG PROTOCOL COMPLETED", fontWeight = FontWeight.Bold)
+                        Text(stringResource(R.string.vitalis_log_protocol_completed), fontWeight = FontWeight.Bold)
                     }
                     Spacer(modifier = Modifier.height(16.dp))
                     TextButton(onClick = onDismiss, modifier = Modifier.fillMaxWidth()) {
-                        Text("CANCEL", color = VitalisSteel)
+                        Text(stringResource(R.string.settings_cancel), color = VitalisSteel)
                     }
                 }
             }
@@ -941,42 +947,72 @@ fun ProtocolExecutionDialog(accent: Color, protocol: LongevityProtocol, onComple
 }
 
 @Composable
-fun LongevityCelebrationDialog(accent: Color, itemNameRes: Int, onDismiss: () -> Unit) {
+fun LongevityCelebrationDialog(accent: Color, protocolId: String, onDismiss: () -> Unit) {
+    val dividend = remember(protocolId) { VitalisEngine.getBiologicalGain(protocolId) }
+    
     Dialog(onDismissRequest = onDismiss) {
         Surface(
             shape = RoundedCornerShape(32.dp),
-            color = VitalisSlate,
-            border = BorderStroke(2.dp, accent)
+            color = VitalisDeepNavy,
+            border = BorderStroke(1.dp, accent.copy(alpha = 0.5f))
         ) {
             Column(
                 modifier = Modifier.padding(32.dp),
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
-                Surface(
-                    shape = CircleShape,
-                    color = accent.copy(alpha = 0.1f),
-                    modifier = Modifier.size(80.dp)
-                ) {
-                    Box(contentAlignment = Alignment.Center) {
-                        Icon(Icons.Default.Check, null, tint = accent, modifier = Modifier.size(40.dp))
+                Box(contentAlignment = Alignment.Center) {
+                    Surface(
+                        shape = CircleShape,
+                        color = accent.copy(alpha = 0.1f),
+                        modifier = Modifier.size(120.dp)
+                    ) {}
+                    Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                        Text(
+                            text = stringResource(dividend.gainRes),
+                            style = MaterialTheme.typography.headlineLarge,
+                            fontWeight = FontWeight.Black,
+                            color = accent
+                        )
+                        Text(
+                            "DIVIDEND",
+                            style = MaterialTheme.typography.labelSmall,
+                            color = accent,
+                            letterSpacing = 2.sp
+                        )
                     }
                 }
                 
-                Spacer(modifier = Modifier.height(24.dp))
-                Text("BIOLOGICAL OPTIMIZATION", style = MaterialTheme.typography.labelSmall, color = accent, letterSpacing = 2.sp)
-                Spacer(modifier = Modifier.height(8.dp))
-                Text(stringResource(itemNameRes).uppercase(), style = MaterialTheme.typography.headlineSmall, fontWeight = FontWeight.Black, color = VitalisPureWhite, textAlign = TextAlign.Center)
+                Spacer(modifier = Modifier.height(32.dp))
+                Text(stringResource(dividend.titleRes), style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.Bold, color = VitalisPureWhite, textAlign = TextAlign.Center)
+                
+                Spacer(modifier = Modifier.height(16.dp))
+                Surface(color = VitalisSlate, shape = RoundedCornerShape(12.dp)) {
+                    Text(
+                        text = stringResource(dividend.metricRes).uppercase(),
+                        modifier = Modifier.padding(horizontal = 12.dp, vertical = 4.dp),
+                        style = MaterialTheme.typography.labelSmall,
+                        color = accent,
+                        fontWeight = FontWeight.Bold
+                    )
+                }
                 
                 Spacer(modifier = Modifier.height(24.dp))
-                Text("Intervention logged. System recalibrating...", textAlign = TextAlign.Center, color = VitalisSteel)
+                Text(
+                    text = stringResource(dividend.descriptionRes),
+                    textAlign = TextAlign.Center,
+                    color = VitalisSteel,
+                    style = MaterialTheme.typography.bodyMedium,
+                    lineHeight = 20.sp
+                )
                 
                 Spacer(modifier = Modifier.height(32.dp))
                 Button(
                     onClick = onDismiss,
-                    modifier = Modifier.fillMaxWidth(),
-                    colors = ButtonDefaults.buttonColors(containerColor = accent, contentColor = VitalisDeepNavy)
+                    modifier = Modifier.fillMaxWidth().height(56.dp),
+                    colors = ButtonDefaults.buttonColors(containerColor = accent, contentColor = VitalisDeepNavy),
+                    shape = RoundedCornerShape(16.dp)
                 ) {
-                    Text("CONTINUE SCAN")
+                    Text("SECURE GAINS", fontWeight = FontWeight.Bold)
                 }
             }
         }

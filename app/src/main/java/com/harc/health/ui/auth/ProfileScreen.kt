@@ -11,6 +11,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material.icons.automirrored.filled.Login
 import androidx.compose.material.icons.automirrored.filled.Logout
 import androidx.compose.material.icons.automirrored.filled.OpenInNew
 import androidx.compose.material.icons.filled.*
@@ -36,12 +37,15 @@ import com.harc.health.viewmodel.ProfileViewModel
 fun ProfileScreen(
     onBack: () -> Unit,
     onLogout: () -> Unit,
+    onNavigateToLogin: () -> Unit,
     viewModel: ProfileViewModel = viewModel()
 ) {
     val userProfile by viewModel.userProfile.collectAsState()
     val isLoading by viewModel.isLoading.collectAsState()
     val error by viewModel.error.collectAsState()
     val isProtected by viewModel.isProtected.collectAsState()
+
+    val isAnonymous = userProfile?.id == "anonymous"
 
     var isEditing by remember { mutableStateOf(false) }
     var showPinDialog by remember { mutableStateOf(false) }
@@ -429,35 +433,47 @@ fun ProfileScreen(
                 Card(
                     modifier = Modifier.fillMaxWidth(),
                     shape = RoundedCornerShape(12.dp),
-                    colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.errorContainer.copy(alpha = 0.1f))
+                    colors = CardDefaults.cardColors(containerColor = if (isAnonymous) MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.3f) else MaterialTheme.colorScheme.errorContainer.copy(alpha = 0.1f))
                 ) {
                     Column(modifier = Modifier.padding(16.dp)) {
-                        // Logout
+                        // Login/Logout
                         Row(
                             modifier = Modifier
                                 .fillMaxWidth()
-                                .clickable { showLogoutDialog = true }
+                                .clickable { 
+                                    if (isAnonymous) onNavigateToLogin() else showLogoutDialog = true 
+                                }
                                 .padding(vertical = 8.dp),
                             verticalAlignment = Alignment.CenterVertically
                         ) {
-                            Icon(Icons.AutoMirrored.Filled.Logout, contentDescription = null, tint = MaterialTheme.colorScheme.error)
+                            Icon(
+                                if (isAnonymous) Icons.AutoMirrored.Filled.Login else Icons.AutoMirrored.Filled.Logout,
+                                contentDescription = null, 
+                                tint = if (isAnonymous) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.error
+                            )
                             Spacer(modifier = Modifier.width(12.dp))
-                            Text(stringResource(R.string.settings_logout), color = MaterialTheme.colorScheme.error, fontWeight = FontWeight.Bold)
+                            Text(
+                                if (isAnonymous) stringResource(R.string.login_sign_in) else stringResource(R.string.settings_logout), 
+                                color = if (isAnonymous) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.error, 
+                                fontWeight = FontWeight.Bold
+                            )
                         }
 
-                        HorizontalDivider(modifier = Modifier.padding(vertical = 8.dp), thickness = 0.5.dp, color = MaterialTheme.colorScheme.error.copy(alpha = 0.2f))
+                        if (!isAnonymous) {
+                            HorizontalDivider(modifier = Modifier.padding(vertical = 8.dp), thickness = 0.5.dp, color = MaterialTheme.colorScheme.error.copy(alpha = 0.2f))
 
-                        // Delete Account
-                        Row(
-                            modifier = Modifier
-                                .fillMaxWidth()
-                                .clickable { showDeleteDialog = true }
-                                .padding(vertical = 8.dp),
-                            verticalAlignment = Alignment.CenterVertically
-                        ) {
-                            Icon(Icons.Default.DeleteForever, contentDescription = null, tint = MaterialTheme.colorScheme.error)
-                            Spacer(modifier = Modifier.width(12.dp))
-                            Text(stringResource(R.string.settings_delete_account), color = MaterialTheme.colorScheme.error, fontWeight = FontWeight.Bold)
+                            // Delete Account
+                            Row(
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .clickable { showDeleteDialog = true }
+                                    .padding(vertical = 8.dp),
+                                verticalAlignment = Alignment.CenterVertically
+                            ) {
+                                Icon(Icons.Default.DeleteForever, contentDescription = null, tint = MaterialTheme.colorScheme.error)
+                                Spacer(modifier = Modifier.width(12.dp))
+                                Text(stringResource(R.string.settings_delete_account), color = MaterialTheme.colorScheme.error, fontWeight = FontWeight.Bold)
+                            }
                         }
                     }
                 }

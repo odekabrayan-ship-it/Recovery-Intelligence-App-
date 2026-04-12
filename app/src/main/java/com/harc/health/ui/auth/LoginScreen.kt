@@ -85,7 +85,12 @@ fun LoginScreen(onLoginSuccess: () -> Unit) {
             color = MaterialTheme.colorScheme.primaryContainer
         ) {
             Box(contentAlignment = Alignment.Center) {
-                Text("HARC", fontWeight = FontWeight.Black, color = MaterialTheme.colorScheme.primary, fontSize = 20.sp)
+                  Text(
+                    text = stringResource(R.string.app_name).split(" ").firstOrNull() ?: "HARC",
+                    fontWeight = FontWeight.Black,
+                    color = MaterialTheme.colorScheme.primary,
+                    fontSize = 20.sp
+                )
             }
         }
 
@@ -192,7 +197,12 @@ fun LoginScreen(onLoginSuccess: () -> Unit) {
 
         Row(verticalAlignment = Alignment.CenterVertically) {
             HorizontalDivider(modifier = Modifier.weight(1f), color = MaterialTheme.colorScheme.outlineVariant)
-            Text(" SECURE ACCESS ", style = MaterialTheme.typography.labelSmall, color = Color.Gray, modifier = Modifier.padding(horizontal = 8.dp))
+            Text(
+                text = " " + stringResource(R.string.profile_security_privacy).uppercase() + " ",
+                style = MaterialTheme.typography.labelSmall,
+                color = Color.Gray,
+                modifier = Modifier.padding(horizontal = 8.dp)
+            )
             HorizontalDivider(modifier = Modifier.weight(1f), color = MaterialTheme.colorScheme.outlineVariant)
         }
 
@@ -270,7 +280,7 @@ fun MonthlyTrackerCard(alcohol: Int, cigarettes: Int) {
     ) {
         Column(modifier = Modifier.padding(20.dp)) {
             Text(
-                "MONTHLY BIOMETRIC LOGS",
+                stringResource(R.string.profile_biometric_login).uppercase(),
                 style = MaterialTheme.typography.labelLarge,
                 color = MaterialTheme.colorScheme.primary,
                 fontWeight = FontWeight.Bold,

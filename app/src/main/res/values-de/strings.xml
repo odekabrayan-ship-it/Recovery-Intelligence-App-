@@ -69,6 +69,15 @@
 
     <!-- Home Screen -->
     <string name="home_biological_command">BIOLOGISCHES KOMMANDO</string>
+    <string name="home_biological_directives">BIOLOGISCHE RICHTLINIEN</string>
+    <string name="home_biological_directives_subtitle">Präzisionsmaßnahmen der Vitalis Expert Engine</string>
+    <string name="home_therapeutic_subtitle">Sound-Sitzungen zur Stress- und Angstkontrolle</string>
+    <string name="home_vitalis_subtitle">Präzisions-Engine zur biologischen Optimierung</string>
+    <string name="home_expert_directive">Experten-Richtlinie</string>
+    <string name="home_how_to_execute">AUSFÜHRUNG</string>
+    <string name="home_biological_rationale_header">BIOLOGISCHE BEGRÜNDUNG</string>
+    <string name="home_repeat_ritual">Ritual wiederholen</string>
+    <string name="home_initiate_ritual">Biologisches Ritual einleiten</string>
     <string name="home_hello">Hallo, %1$s</string>
     <string name="home_mandatory_triad">OBLIGATORISCHE TÄGLICHE TRIADE</string>
     <string name="home_triad_subtitle">Expertengeführte Protokolle für sofortige physiologische Reparatur</string>
@@ -131,6 +140,13 @@
     <string name="vitalis_system_status_label">SYSTEMSTATUS</string>
     <string name="vitalis_long_exhale">LANGES AUSATMEN (MUND)</string>
     <string name="vitalis_longevity_trajectory_label">LANGLEBIGKEITSVERLAUF</string>
+    <string name="vitalis_trajectory_optimal">OPTIMALE BIOLOGISCHE KAPAZITÄT</string>
+    <string name="vitalis_trajectory_stable">STABILE HOMÖOSTASE</string>
+    <string name="vitalis_trajectory_drift">SYSTEMISCHE DRIFT ERKANNT</string>
+    <string name="vitalis_synchronized">Synchronisiert</string>
+    <string name="vitalis_drifting">Driftend</string>
+    <string name="vitalis_stable">Stabil</string>
+    <string name="vitalis_gathering">Erfassung</string>
     <string name="vitalis_calculating">Berechnung…</string>
     <string name="vitalis_directives_title">VITALIS-RICHTLINIEN</string>
     <string name="vitalis_biological_systems_title">BIOLOGISCHE SYSTEME</string>
@@ -167,48 +183,81 @@
     <string name="lp_autophagy_step1">Beginnen Sie ein 16-stündiges Fastenfenster.</string>
     <string name="lp_autophagy_step2">Konsumieren Sie während des Fastens 500ml mineralreiches Wasser.</string>
     <string name="lp_autophagy_step3">Beenden Sie das Fasten mit einer proteinreichen Mahlzeit mit niedrigem glykämischen Index.</string>
+    <string name="lp_autophagy_benefit_short">Stoffwechsel-Umschaltung</string>
+    <string name="lp_autophagy_benefit_long">Zelluläre Langlebigkeit</string>
+    <string name="lp_autophagy_insight">Autophagie ist ein Schlüsselfaktor für die Gesundheitsspanne und die Protein-Homöostase.</string>
 
     <string name="lp_thermal_title">Thermische Hormesis (Kontrast)</string>
-    <string name="lp_thermal_purpose">Aktivieren Sie Hitzeschockproteine (HSP) und braunes Fett, um die kardiovaskuläre Widerstandsfähigkeit zu verbessern.</string>
+    <string name="lp_thermal_purpose">Aktiviert Hitzeschockproteine (HSP) und braunes Fett, um die kardiovaskuläre Belastbarkeit zu verbessern.</string>
     <string name="lp_thermal_step1">20 Minuten Saunagang (80°C+).</string>
     <string name="lp_thermal_step2">Sofortiges 3-minütiges Kaltbad oder Dusche (10°C).</string>
     <string name="lp_thermal_step3">10 Minuten in einer neutralen Umgebung ausruhen.</string>
+    <string name="lp_thermal_benefit_short">Vaskuläre Compliance</string>
+    <string name="lp_thermal_benefit_long">Kardiovaskuläre Resilienz</string>
+    <string name="lp_thermal_insight">Hitzeschockproteine fungieren als molekulare Chaperone für die Proteinfaltung.</string>
 
     <string name="lp_vo2_title">Mitochondriale Schmiede (VO2 Max)</string>
     <string name="lp_vo2_purpose">Maximale Sauerstoffausnutzung zur Verzögerung der biologischen Alterung von Herz und Lunge.</string>
     <string name="lp_vo2_step1">5-minütiges progressives Aufwärmen.</string>
     <string name="lp_vo2_step2">4x4 Intervalle: 4 Min. bei max. Intensität, 3 Min. aktive Erholung.</string>
     <string name="lp_vo2_step3">Abkühlen mit Zwerchfellatmung.</string>
+    <string name="lp_vo2_benefit_short">Mitochondriale Dichte</string>
+    <string name="lp_vo2_benefit_long">Kardiopulmonale Vitalität</string>
+    <string name="lp_vo2_insight">Die VO2 Max ist der stärkste Einzelindikator für die Gesamtmortalität.</string>
 
     <string name="lp_glycemic_title">Protokoll zur glykämischen Stabilität</string>
     <string name="lp_glycemic_purpose">Minimierung von Insulinspitzen zur Verhinderung der Proteinglykation und Erhaltung der Elastizität von Haut und Organen.</string>
     <string name="lp_glycemic_step1">1 EL Apfelessig in Wasser vor einer kohlenhydratreichen Mahlzeit einnehmen.</string>
     <string name="lp_glycemic_step2">15-minütiger flotter Spaziergang unmittelbar nach dem Essen.</string>
-    <string name="lp_glycemic_step3">Priorisieren Sie Ballaststoffe und Proteine vor jeglichem Stärkeverzehr.</string>
+    <string name="lp_glycemic_step3">Ballaststoffe und Proteine vor jeglichem Stärkeverzehr priorisieren.</string>
+    <string name="lp_glycemic_benefit_short">Postprandiale Stabilität</string>
+    <string name="lp_glycemic_benefit_long">Stoffwechselgesundheit</string>
+    <string name="lp_glycemic_insight">Die Reduzierung der Glukosevariabilität verlangsamt die biologische Alterung von Haut und Organen.</string>
 
     <string name="lp_glymphatic_title">Glymphatischer Reset</string>
     <string name="lp_glymphatic_purpose">Optimierung des Abfallentsorgungssystems des Gehirns zur Verhinderung neurodegenerativer Ablagerungen.</string>
     <string name="lp_glymphatic_step1">Kein Blaulicht 90 Minuten vor dem Schlafengehen.</string>
     <string name="lp_glymphatic_step2">Raumtemperatur auf genau 18°C senken.</string>
     <string name="lp_glymphatic_step3">Schlafen Sie auf der Seite, um einen maximalen Liquorfluss zu ermöglichen.</string>
+    <string name="lp_glymphatic_benefit_short">Kognitive Klarheit</string>
+    <string name="lp_glymphatic_benefit_long">Neuroprotektion</string>
+    <string name="lp_glymphatic_insight">Das glymphatische System baut Beta-Amyloid während tiefer Schlafphasen ab.</string>
+
+    <string name="lp_senolytic_title">Senolytische Ladung</string>
+    <string name="lp_senolytic_purpose">Beseitigt \"Zombiezellen\", die Entzündungen antreiben.</string>
+    <string name="lp_senolytic_step1">500 mg Quercetin oder Fisetin-reiche Lebensmittel konsumieren.</string>
+    <string name="lp_senolytic_step2">24 Stunden lang kein raffinierter Zucker.</string>
+    <string name="lp_senolytic_step3">15 Minuten leichtes Widerstandstraining.</string>
+    <string name="lp_senolytic_benefit_short">Entzündungshemmung</string>
+    <string name="lp_senolytic_benefit_long">Geweberegeneration</string>
+    <string name="lp_senolytic_insight">Senolytika induzieren selektiv den Tod alternder (seneszenter) Zellen.</string>
 
     <string name="lp_apob_title">ApoB Lipid-Reinigung</string>
     <string name="lp_apob_purpose">Aggressive Reduzierung atherogener Partikel zur Eliminierung des Risikos von Plaqueablagerungen in den Arterien.</string>
     <string name="lp_apob_step1">Erhöhung der löslichen Ballaststoffaufnahme auf 30g+ täglich (Flohsamen/Hafer).</string>
     <string name="lp_apob_step2">2g hochdosierte EPA-Omega-3-Fettsäuren konsumieren.</string>
     <string name="lp_apob_step3">Führen Sie 5 Minuten \"Nitric Oxide Dumps\" (Kniebeugen/Drücken) durch, um das Endothel zu aktivieren.</string>
+    <string name="lp_apob_benefit_short">Endotheliales Priming</string>
+    <string name="lp_apob_benefit_long">Kardiovaskuläre Immunität</string>
+    <string name="lp_apob_insight">ApoB ist der Haupttreiber für die Bildung atherosklerotischer Plaques.</string>
 
     <string name="lp_skeletal_title">Skelettale Stärkung</string>
     <string name="lp_skeletal_purpose">Maximierung der Knochenmineraldichte und strukturellen Integrität zur Verhinderung altersbedingter Gebrechlichkeit.</string>
     <string name="lp_skeletal_step1">Kumulativ 3 Minuten \"Dead Hang\" an einer Klimmzugstange.</string>
     <string name="lp_skeletal_step2">10 Minuten schweres exzentrisches Training (langsame Kniebeugen/Liegestütze).</string>
     <string name="lp_skeletal_step3">Optimierung des Vitamin D3 + K2 Spiegels für die Kalziumsignalisierung.</string>
+    <string name="lp_skeletal_benefit_short">Strukturelle Ausrichtung</string>
+    <string name="lp_skeletal_benefit_long">Prävention von Gebrechlichkeit</string>
+    <string name="lp_skeletal_insight">Griffkraft und Knochendichte sind hochpräzise Prädiktoren für Autonomie im Alter.</string>
 
     <string name="lp_dna_title">DNA-Methylierungsschutz</string>
     <string name="lp_dna_purpose">Maximierung der DNA-Reparaturkapazität und Stummschaltung pro-inflammatorischer Alterungsgene.</string>
     <string name="lp_dna_step1">100mg Sulforaphan (Brokkolisprossen) oder konzentrierten Kreuzblütler-Extrakt einnehmen.</string>
     <string name="lp_dna_step2">10 Minuten Achtsamkeit zur Unterdrückung Cortisol-bedingter DNA-Schäden.</string>
     <string name="lp_dna_step3">Vermeiden Sie 24 Stunden lang alle verarbeiteten Öle und verkohltes Fleisch.</string>
+    <string name="lp_dna_benefit_short">Genomische Stabilität</string>
+    <string name="lp_dna_benefit_long">Krebsrisikominderung</string>
+    <string name="lp_dna_insight">Methylierungsmuster bestimmen die Rate der biologischen Alterung (Horvath-Uhr).</string>
 
     <string name="vitalis_biological_optimization">BIOLOGISCHE OPTIMIERUNG</string>
     <string name="vitalis_intervention_logged">Intervention erfolgreich protokolliert. Ihre zellulären Marker wurden aktualisiert.</string>
@@ -558,5 +607,182 @@
     <string name="act_p6_desc">EXPERTENTIPP: Kaltes Wasser nutzen, um das Nervensystem zurückzusetzen.</string>
     <string name="recovery_lvl">LVL</string>
 
+    <string name="vitalis_continue_journey">Reise zur Langlebigkeit fortsetzen</string>
+    <string name="vitalis_engine_status">Engine-Status</string>
+    <string name="vitalis_execute_directive">Anweisung ausführen</string>
+    <string name="vitalis_expert">Experte</string>
+    <string name="vitalis_expert_guidance">Expertenberatung</string>
+    <string name="vitalis_follow_sync">Temporaler Synchronisierung folgen</string>
+    <string name="vitalis_functional_protocols">Funktionelle Interventionsprotokolle</string>
+    <string name="vitalis_health_trajectory">Gesundheitsverlauf</string>
+    <string name="vitalis_help">Hilfe</string>
+    <string name="vitalis_help_centre">Biologisches Hilfezentrum</string>
+    <string name="vitalis_help_desc">Fortgeschrittenes Expertenwissen für Langlebigkeitsinterventionen.</string>
+    <string name="vitalis_impact_analysis">Auswirkungsanalyse</string>
+    <string name="vitalis_inhale_deep">Tief einatmen</string>
+    <string name="vitalis_intelligence">Intelligenz</string>
+    <string name="vitalis_live_directives">Systemanweisungen</string>
+    <string name="vitalis_live_protocol_session">Live-Protokollsitzung</string>
+    <string name="vitalis_longevity_index">Langlebigkeitsindex</string>
+    <string name="vitalis_manner_execution">Ausführungsart</string>
+    <string name="vitalis_module_cardio">Kardiovaskuläre Hämodynamik</string>
+    <string name="vitalis_module_metabolic">Stoffwechseleffizienz &amp; Glykämische Kontrolle</string>
+    <string name="vitalis_module_recovery">Regenerative Medizin &amp; Erholung</string>
+    <string name="vitalis_module_sleep">Zirkadianer Rhythmus &amp; Schlafarchitektur</string>
+    <string name="vitalis_neural_coherence">Neurale Kohärenz-Synchronisation</string>
+    <string name="vitalis_neural_recalibration">Schnelle neurale Rekalibrierung</string>
+    <string name="vitalis_no_protocols">Keine aktiven Protokolle gefunden. Synchronisierung…</string>
+    <string name="vitalis_pattern_analysis">Musteranalyse</string>
+    <string name="vitalis_pause_session">Sitzung pausieren</string>
+    <string name="vitalis_physiological_outcome">Physiologisches Ergebnis</string>
+    <string name="vitalis_projected_health_age">Projiziertes Gesundheitsalter</string>
+    <string name="vitalis_protocols_desc">Mehrstufige, hochwirksame Interventionen zur systemischen Optimierung.</string>
+    <string name="vitalis_ready">Bereit</string>
+    <string name="vitalis_repeat_intervention">Intervention wiederholen</string>
+    <string name="vitalis_research_context">Forschungskontext</string>
+    <string name="vitalis_research_insight">Forschungserkenntnis</string>
+    <string name="vitalis_reset_in_progress">Zurücksetzung läuft…</string>
+    <string name="vitalis_resilience_points_earned">+%1$d Resilienzpunkte verdient</string>
+    <string name="vitalis_resume">Fortsetzen</string>
+    <string name="vitalis_specific_guidance">Spezifische Anleitung</string>
+    <string name="vitalis_streak_days">%1$d-Tage-Serie</string>
+    <string name="vitalis_system">System</string>
+    <string name="vitalis_system_directive">Systemanweisung</string>
+    <string name="vitalis_system_state">Systemzustand</string>
+    <string name="vitalis_top_off">Nachfassen (Einatmen)</string>
+    <string name="vitalis_vacuum">Vakuum</string>
+    <string name="vitalis_verify_completion">Abschluss verifizieren</string>
+    <string name="vitalis_verify_success">Erfolg verifizieren</string>
+
+    <!-- Biological Reward Strings -->
+    <string name="reward_h1_title">Hydratations-Lock abgeschlossen</string>
+    <string name="reward_h1_msg">Neurale Leitfähigkeit wiederhergestellt. Ihr Gehirn verfügt nun über das Elektrolytgleichgewicht, das für eine optimale Signalübertragung und Abfallbeseitigung erforderlich ist.</string>
+
+    <string name="reward_mn1_title">Stoffwechselanker gesetzt</string>
+    <string name="reward_mn1_msg">Blutzucker stabilisiert. Sie haben erfolgreich einen Cortisol-Spike verhindert und Ihre Energiereserven für die nächsten 4 Stunden geschont.</string>
+
+    <string name="reward_rl1_title">Vagaltonus optimiert</string>
+    <string name="reward_rl1_msg">Parasympathischer Wechsel erreicht. Ihre Herzfrequenzvariabilität tendiert nach oben, was auf einen Zustand hoher Erholungsresilienz hinweist.</string>
+
+    <string name="reward_sl1_title">Melatonin-Schild aktiv</string>
+    <string name="reward_sl1_msg">Zirkadiane Störung abgewendet. Durch das Abschirmung Ihrer Augen vor Blaulicht haben Sie die Tiefe Ihres bevorstehenden N3-Schlafzyklus gesichert.</string>
+
+    <string name="reward_cc2_title">Vaskulärer Flush eingeleitet</string>
+    <string name="reward_cc2_msg">Systemische Entzündung reduziert. Die Kälteexposition hat eine Norepinephrin-Freisetzung ausgelöst, die den Fokus schärft und die zelluläre Reparatur beschleunigt.</string>
+
+    <string name="reward_lp_autophagy_title">Autophagie-Lock: AKTIV</string>
+    <string name="reward_lp_autophagy_gain">+6,2 Stunden</string>
+    <string name="reward_lp_autophagy_metric">Zelluläres Recycling</string>
+    <string name="reward_lp_autophagy_desc">Fehlgefaltete Proteine beseitigt. Systemische Entzündung reduziert.</string>
+
+    <string name="reward_lp_thermal_title">Hormetische Reaktion: PEAK</string>
+    <string name="reward_lp_thermal_gain">+4,8 Stunden</string>
+    <string name="reward_lp_thermal_metric">Vaskuläre Resilienz</string>
+    <string name="reward_lp_thermal_desc">Hitzeschockprotein-Aktivierung (HSP-70) erkannt.</string>
+
+    <string name="reward_lp_vo2_title">Mitochondrialer Schub: BESTÄTIGT</string>
+    <string name="reward_lp_vo2_gain">+12,5 Stunden</string>
+    <string name="reward_lp_vo2_metric">Aerobe Kapazität</string>
+    <string name="reward_lp_vo2_desc">Mitochondriendichte erhöht. VO2max-Verlauf optimiert.</string>
+
+    <string name="reward_lp_glycemic_title">Stoffwechselschild: AKTIVIERT</string>
+    <string name="reward_lp_glycemic_gain">+5,1 Stunden</string>
+    <string name="reward_lp_glycemic_metric">Insulinsensitivität</string>
+    <string name="reward_lp_glycemic_desc">Postprandialer Glukose-Spike neutralisiert.</string>
+
+    <string name="reward_lp_glymphatic_title">Neuraler Flush: BEREIT</string>
+    <string name="reward_lp_glymphatic_gain">+3,9 Stunden</string>
+    <string name="reward_lp_glymphatic_metric">Abfallbeseitigung</string>
+    <string name="reward_lp_glymphatic_desc">Beta-Amyloid-Drainage für den Tiefschlaf optimiert.</string>
+
+    <string name="reward_ts_dopamine_title">Baseline-Reset: GESICHERT</string>
+    <string name="reward_ts_dopamine_gain">+14% Stabilität</string>
+    <string name="reward_ts_dopamine_metric">Neurale Dopamin-Abstimmung</string>
+    <string name="reward_ts_dopamine_desc">Nikotinrezeptoren regulieren sich herunter. Baseline-Dopaminsensitivität steigt.</string>
+
+    <string name="reward_ts_vascular_title">Compliance-Schub: PEAK</string>
+    <string name="reward_ts_vascular_gain">+8% Elastizität</string>
+    <string name="reward_ts_vascular_metric">Endotheliale Erholung</string>
+    <string name="reward_ts_vascular_desc">Ethanol-induzierte Gefäßverengung neutralisiert.</string>
+
+    <string name="reward_ts_cortisol_title">Allostatische Last: REDUZIERT</string>
+    <string name="reward_ts_cortisol_gain">-22% Spannung</string>
+    <string name="reward_ts_cortisol_metric">Nebennieren-Kalibrierung</string>
+    <string name="reward_ts_cortisol_desc">Cortisolspiegel durch diaphragmatische Synchronisation gesenkt.</string>
+
+    <string name="reward_ts_liver_title">Hepatischer Flush: AKTIV</string>
+    <string name="reward_ts_liver_gain">+11% Effizienz</string>
+    <string name="reward_ts_liver_metric">Metabolische Filtration</string>
+    <string name="reward_ts_liver_desc">Glutathion-Pfade zur beschleunigten Toxinausschüttung stimuliert.</string>
+
+    <string name="reward_generic_title">Anweisung ausgeführt</string>
+    <string name="reward_generic_gain">+2,5 Stunden</string>
+    <string name="reward_generic_metric">Systemische Resilienz</string>
+    <string name="reward_generic_desc">Biologische Pfade aktualisiert. Jedes Protokoll baut kumulative Reserven auf.</string>
+
+    <string name="reward_generic_msg">Biologisches System aktualisiert. Jede abgeschlossene Anweisung stärkt Ihre langfristige Erholungsarchitektur.</string>
+
+    <!-- Expert Feedback Component Labels -->
+    <string name="feedback_instant_gratification">BIOLOGISCHE VERÄNDERUNG PROTOKOLLIERT</string>
+    <string name="feedback_health_dividends">GESUNDHEITSDIVIDENDEN</string>
+    <string name="feedback_next_ritual">NÄCHSTE RITUAL-ANWEISUNG</string>
+    <string name="feedback_close_ritual">RITUAL ABSCHLIESSEN</string>
+
+    <!-- Specific Health Dividends (Expert Metrics) -->
+    <string name="dividend_vascular_elasticity">Gefäßelastizität +4,2%</string>
+    <string name="dividend_cortisol_reduction">Cortisolspiegel -18,5%</string>
+    <string name="dividend_neural_coherence">Neurale Kohärenz +12,0%</string>
+    <string name="dividend_metabolic_throughput">Metabolischer Durchsatz +7,4%</string>
+    <string name="dividend_glymphatic_flow">Glymphatischer Fluss optimiert</string>
+    <string name="dividend_mitochondrial_biogenesis">Mitochondriale Biogenese ausgelöst</string>
+    <string name="dividend_systemic_resilience">Systemische Resilienz erhöht</string>
+
+    <!-- Next Ritual Instructions -->
+    <string name="next_ritual_morning">Morgen nach dem Aufwachen ausführen, um Ihre Cortisol-Aufwachreaktion zurückzusetzen.</string>
+    <string name="next_ritual_evening">60 Minuten vor dem Schlafengehen wiederholen, um die glymphatische Klärung zu unterstützen.</string>
+    <string name="next_ritual_post_meal">20 Minuten nach der nächsten Mahlzeit durchführen, um den postprandialen Glukosespiegel zu stabilisieren.</string>
+    <string name="next_ritual_urgent">Sofort erneut einleiten, wenn die physiologischen Marker außerhalb des optimalen Bereichs bleiben.</string>
+    <string name="next_ritual_daily">Täglich ausführen, um eine kumulative systemische Resilienz aufzubauen.</string>
+    <string name="next_ritual_post_exercise">Nach körperlicher Anstrengung ausführen, um den Abtransport metabolischer Nebenprodukte zu beschleunigen.</string>
+    <string name="next_ritual_pre_sleep">Unmittelbar vor dem Schlafengehen durchführen, um die N3-Tiefschlafarchitektur zu maximieren.</string>
+    <string name="next_ritual_midday">Während des metabolischen Mittagspeaks ausführen, um den kognitiven Durchsatz aufrechtzuerhalten.</string>
+    <string name="next_ritual_stress">Bei Erkennung eines erhöhten Sympathikotonus oder akuten Stresses auslösen.</string>
+
+    <string name="notif_morning_title">Biologische Aktivierung erforderlich</string>
+    <string name="notif_morning_msg_1">Ihr Gehirn befindet sich in einem Zustand nächtlicher Dehydratation. Leiten Sie die morgendliche Hydratation ein, um den neuralen Durchsatz wiederherzustellen.</string>
+    <string name="notif_morning_msg_2">Cortisol-Aufwachreaktion erkannt. Verlassen Sie jetzt das Bett, um Ihren zirkadianen Rhythmus für die nächsten 16 Stunden zu fixieren.</string>
+
+    <string name="notif_midday_title">Systemwartungsalarm</string>
+    <string name="notif_midday_msg_1">Die Stoffwechselbelastung erreicht ihren Höhepunkt. Führen Sie das Blutzucker-Anker-Protokoll aus, um das kognitive Tief am Nachmittag zu verhindern.</string>
+    <string name="notif_midday_msg_2">Der Vagaltonus sinkt. Ein 2-minütiges kaltes Gesichtswaschen setzt Ihren Fokus zurück und senkt das systemische Cortisol.</string>
+
+    <string name="notif_afternoon_title">Schutzphase aktiv</string>
+    <string name="notif_afternoon_msg_1">Vaskuläre Belastung erkannt. Ein 5-minütiger Vagal-Reset wird Ihre Stressreaktion sofort herunterregulieren.</string>
+    <string name="notif_afternoon_msg_2">Neurale Erschöpfung summiert sich. Leiten Sie ein 15-minütiges Dopamin-Fasten ein, um Ihre Fokus-Schaltkreise neu zu kalibrieren.</string>
+
+    <string name="notif_evening_title">Restaurationsfenster öffnet sich</string>
+    <string name="notif_evening_msg_1">Bereiten Sie Ihre neurale Architektur auf die Reparatur vor. Leiten Sie das Blaulicht-Fasten ein, um Ihre Melatoninproduktion zu schützen.</string>
+    <string name="notif_evening_msg_2">Die metabolische Klärung verlangsamt sich. Hydrieren Sie jetzt mit Elektrolyten, um die Leberfiltration während des Schlafs zu unterstützen.</string>
+
+    <string name="notif_night_title">Tiefenerholungsprotokoll</string>
+    <string name="notif_night_msg_1">Ihr glymphatisches System ist bereit, Stoffwechselabfälle auszuspülen. Optimieren Sie jetzt Ihre Umgebung für den N3-Tiefschlaf.</string>
+    <string name="notif_night_msg_2">Neurale Synchronisation eingeleitet. Nutzen Sie das 4-7-8-Atemprotokoll, um einen parasympathischen Wechsel für tiefe Ruhe zu erzwingen.</string>
+
+    <!-- Addiction-Specific Clinical Reminders -->
+    <string name="notif_smoker_title">Vaskuläre Integritätswarnung</string>
+    <string name="notif_smoker_msg">Carboxyhämoglobin-Spiegel erfordern Klärung. Führen Sie jetzt das [Pulmonale Ritual] aus, um die Sauerstoffsättigung wiederherzustellen und oxidativen Stress zu neutralisieren.</string>
+
+    <string name="notif_drinker_title">Alarm zur hepatischen Filtration</string>
+    <string name="notif_drinker_msg">Acetaldehyd-Klärung verzögert sich. Leiten Sie den [Hepatischen Flush] ein, um die Glutathionproduktion zu stimulieren und die neurale Architektur zu schützen.</string>
+
+    <string name="notif_craving_title">Neuraler Schub erkannt</string>
+    <string name="notif_craving_msg">Dopamin-Suche erkannt. Führen Sie [Urge Surfing] aus, um die Reiz-Reaktions-Schleife zu entkoppeln und die präfrontale Kontrolle zu stärken.</string>
+
+    <!-- State-Specific Clinical Reminders -->
+    <string name="notif_stress_title">Amygdala-Übersteuerung erkannt</string>
+    <string name="notif_stress_msg">Sympathikotonus dominiert. Führen Sie den [Stress-Reset] aus, um eine vagale Bremse zu erzwingen und systemische Entzündungen zu verhindern.</string>
 </resources>
+
+
+
 

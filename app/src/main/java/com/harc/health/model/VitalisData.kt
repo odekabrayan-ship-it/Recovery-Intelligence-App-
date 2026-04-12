@@ -8,7 +8,7 @@ import androidx.annotation.StringRes
  */
 data class VitalisData(
     val longevityScore: Int = 0,
-    val trajectory: String = "",
+    @StringRes val trajectoryRes: Int = 0,
     val systems: Map<String, SystemHealth> = emptyMap(),
     
     // The 12 Expert Modules
@@ -28,13 +28,13 @@ data class VitalisData(
 )
 
 data class SystemHealth(
-    val status: String,
+    @StringRes val statusRes: Int,
     val score: Int,
-    val trend: String,
-    val trendDescription: String = "",
+    @StringRes val trendRes: Int,
+    @StringRes val trendDescriptionRes: Int = 0,
     val confidence: Int,
-    val implication: String,
-    val action: String
+    @StringRes val implicationRes: Int,
+    @StringRes val actionRes: Int
 )
 
 // Shared Activity Structure - Now supporting Localization via StringRes
@@ -52,7 +52,7 @@ data class VitalisActivity(
 
 data class SleepModuleData(
     val sleepScore: Int = 0,
-    val circadianAlignment: String = "Unknown",
+    @StringRes val circadianAlignmentRes: Int = 0,
     val activities: List<VitalisActivity> = emptyList(),
     val priorityActions: List<PriorityAction> = emptyList()
 )
@@ -97,19 +97,24 @@ data class LongevityProtocolsModuleData(
     val activeProtocols: List<LongevityProtocol> = emptyList(),
     val adherenceScore: Int = 0,
     val completionRate: Int = 0,
-    val behavioralStability: String = "Unknown",
+    @StringRes val behavioralStabilityRes: Int = 0,
     val priorityActions: List<PriorityAction> = emptyResActions()
 )
 
 data class PatternAnalysisModuleData(
     val identifiedPatterns: List<VitalisPattern> = emptyList(),
-    val insightLevel: String = "Gathering"
+    @StringRes val insightLevelRes: Int = 0
 )
 
 data class TrajectoryModuleData(
     val projectedHealthAge: Int = 0,
-    val riskTrend: String = "Stable",
-    val futureDirectives: List<String> = emptyList()
+    @StringRes val riskTrendRes: Int = 0,
+    val futureDirectives: List<TrajectoryDirective> = emptyList()
+)
+
+data class TrajectoryDirective(
+    @StringRes val directiveRes: Int,
+    val args: List<String> = emptyList()
 )
 
 data class ResearchModuleData(
@@ -117,27 +122,27 @@ data class ResearchModuleData(
 )
 
 data class VitalisPattern(
-    val title: String,
-    val description: String,
-    val impact: String
+    @StringRes val titleRes: Int,
+    @StringRes val descriptionRes: Int,
+    @StringRes val impactRes: Int
 )
 
 data class ResearchInsight(
-    val topic: String,
-    val simplifiedEvidence: String,
-    val reference: String
+    @StringRes val topicRes: Int,
+    @StringRes val simplifiedEvidenceRes: Int,
+    @StringRes val referenceRes: Int
 )
 
 data class LongevityProtocol(
     val id: String,
-    val title: String,
-    val purpose: String,
-    val instructions: List<String>,
-    val shortTermBenefit: String,
-    val longTermBenefit: String,
-    val researchInsight: String = "",
-    val status: String = "Inactive",
-    val timeOfDay: String = "General" // "Morning", "Mid-day", "Afternoon", "Evening", "Before Sleep"
+    @StringRes val titleRes: Int,
+    @StringRes val purposeRes: Int,
+    val instructionsRes: List<Int>,
+    @StringRes val shortTermBenefitRes: Int,
+    @StringRes val longTermBenefitRes: Int,
+    @StringRes val researchInsightRes: Int = 0,
+    @StringRes val statusRes: Int = 0,
+    @StringRes val timeOfDayRes: Int = 0
 )
 
 data class PriorityAction(

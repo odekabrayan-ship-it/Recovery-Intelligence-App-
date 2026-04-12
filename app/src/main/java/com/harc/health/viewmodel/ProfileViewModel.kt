@@ -174,5 +174,20 @@ class ProfileViewModel(application: Application) : AndroidViewModel(application)
         _isProtected.value = false
     }
 
+    fun logout() {
+        viewModelScope.launch {
+            try {
+                // Sign out from Firebase
+                auth.signOut()
+                
+                // Clear any secure local sessions or tokens if necessary
+                sessionManager.disableProtection()
+                sessionManager.resetSession()
+            } catch (e: Exception) {
+                _error.value = "Logout error: ${e.message}"
+            }
+        }
+    }
+
     fun clearError() { _error.value = null }
 }

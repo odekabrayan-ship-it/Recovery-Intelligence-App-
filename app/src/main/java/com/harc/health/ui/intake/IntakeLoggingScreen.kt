@@ -389,11 +389,11 @@ fun AlcoholLoggingSection(viewModel: MainViewModel, quantity: Int, onQuantityCha
             onClick = { repeat(quantity) { viewModel.addDrink() }; onLogged() },
             modifier = Modifier.fillMaxWidth().height(64.dp),
             shape = RoundedCornerShape(20.dp),
-            colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.primary)
+            colors = ButtonDefaults.buttonColors(containerColor = GreenRecovery, contentColor = Color.White)
         ) {
-            Icon(Icons.Default.Check, contentDescription = null)
+            Icon(Icons.Default.CheckCircle, contentDescription = null)
             Spacer(modifier = Modifier.width(12.dp))
-            Text(stringResource(R.string.intake_confirm_alcohol).uppercase(), fontWeight = FontWeight.Black, letterSpacing = 1.sp)
+            Text(stringResource(R.string.vitalis_complete).uppercase(), fontWeight = FontWeight.Black, letterSpacing = 1.sp)
         }
     }
 }
@@ -417,11 +417,11 @@ fun SmokingLoggingSection(viewModel: MainViewModel, quantity: Int, onQuantityCha
             onClick = { repeat(quantity) { viewModel.addCigarette() }; onLogged() },
             modifier = Modifier.fillMaxWidth().height(64.dp),
             shape = RoundedCornerShape(20.dp),
-            colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.primary)
+            colors = ButtonDefaults.buttonColors(containerColor = GreenRecovery, contentColor = Color.White)
         ) {
-            Icon(Icons.Default.Check, contentDescription = null)
+            Icon(Icons.Default.CheckCircle, contentDescription = null)
             Spacer(modifier = Modifier.width(12.dp))
-            Text(stringResource(R.string.intake_confirm_smoking).uppercase(), fontWeight = FontWeight.Black, letterSpacing = 1.sp)
+            Text(stringResource(R.string.vitalis_complete).uppercase(), fontWeight = FontWeight.Black, letterSpacing = 1.sp)
         }
     }
 }

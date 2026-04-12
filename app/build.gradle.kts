@@ -23,6 +23,27 @@ android {
     buildFeatures {
         compose = true
     }
+
+    lint {
+        checkReleaseBuilds = false
+        abortOnError = false
+    }
+
+    signingConfigs {
+        create("release") {
+            storeFile = file("release-key.jks")
+            storePassword = "booodeka13@gmail.com"
+            keyAlias = "key0"
+            keyPassword = "booodeka13@gmail.com"
+        }
+    }
+
+    buildTypes {
+        release {
+            isMinifyEnabled = false
+            signingConfig = signingConfigs.getByName("release")
+        }
+    }
 }
 
 ksp {
@@ -67,6 +88,7 @@ dependencies {
     // Utilities
     implementation(libs.gson)
     implementation(libs.androidx.security.crypto)
+    implementation(libs.androidx.work.runtime.ktx)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

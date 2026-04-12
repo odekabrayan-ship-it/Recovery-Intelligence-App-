@@ -1,6 +1,7 @@
 package com.harc.health.logic
 
 import androidx.annotation.StringRes
+import com.harc.health.R
 import com.harc.health.model.*
 import kotlin.math.roundToInt
 
@@ -14,11 +15,11 @@ import kotlin.math.roundToInt
 object ActionDecisionEngine {
 
     data class AdeOutput(
-        val globalState: String,
+        @StringRes val globalStateRes: Int,
         val systemBalanceIndex: Int,
         val primaryActions: List<AdeAction>,
         val confidence: Double,
-        val intelligenceSignals: List<String>
+        val intelligenceSignalsRes: List<Int>
     )
 
     data class AdeAction(
@@ -55,17 +56,17 @@ object ActionDecisionEngine {
         val globalAvg = if (scores.isNotEmpty()) scores.average() else 0.0
         val balanceIndex = (100 - (scores.maxOrNull()?.minus(scores.minOrNull() ?: 0.0) ?: 0.0)).roundToInt().coerceIn(0, 100)
         
-        val globalState = when {
-            globalAvg < 40 -> "Dysregulated"
-            globalAvg < 65 -> "Compensated"
-            globalAvg < 85 -> "Stable"
-            else -> "Optimal"
+        val globalStateRes = when {
+            globalAvg < 40 -> R.string.status_critical
+            globalAvg < 65 -> R.string.status_strained
+            globalAvg < 85 -> R.string.status_stable
+            else -> R.string.status_optimized
         }
 
         // 2. SIGNAL PROCESSING
-        val signals = mutableListOf<String>()
-        if (healthLog.stressLevel > 70) signals.add("High Allostatic Load Detected")
-        if (healthLog.bedtimeConsistency < 80) signals.add("Circadian Drift Present")
+        val signals = mutableListOf<Int>()
+        if (healthLog.stressLevel > 70) signals.add(R.string.vitalis_acute_neural_load)
+        if (healthLog.bedtimeConsistency < 80) signals.add(R.string.vitalis_drifting)
 
         // 3. DIRECTIVE GATHERING (Consolidated from all Vitalis Modules)
         val candidates = gatherAllDirectives(vitalisData)
@@ -77,11 +78,11 @@ object ActionDecisionEngine {
             .take(5)
 
         return AdeOutput(
-            globalState = globalState,
+            globalStateRes = globalStateRes,
             systemBalanceIndex = balanceIndex,
             primaryActions = finalSelection,
             confidence = calculateConfidence(vitalisData),
-            intelligenceSignals = signals
+            intelligenceSignalsRes = signals
         )
     }
 

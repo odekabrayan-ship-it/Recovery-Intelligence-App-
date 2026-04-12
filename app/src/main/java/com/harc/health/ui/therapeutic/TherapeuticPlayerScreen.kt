@@ -35,12 +35,16 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.harc.health.R
+import com.harc.health.logic.VitalisEngine
+import com.harc.health.ui.vitalis.LongevityCelebrationDialog
+import com.harc.health.viewmodel.MainViewModel
 import kotlin.math.sin
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun TherapeuticPlayerScreen(
     session: TherapeuticSession,
+    viewModel: MainViewModel,
     onBack: () -> Unit
 ) {
     val context = LocalContext.current
@@ -49,6 +53,7 @@ fun TherapeuticPlayerScreen(
     var showScript by remember { mutableStateOf(false) }
     var currentPosition by remember { mutableLongStateOf(0L) }
     var duration by remember { mutableLongStateOf(1L) }
+    var showCelebration by remember { mutableStateOf<String?>(null) }
     
     // Bio-Sync Engine State
     val infiniteTransition = rememberInfiniteTransition(label = "bio_sync")
@@ -175,192 +180,194 @@ fun TherapeuticPlayerScreen(
                     accent = primaryColor
                 )
                 
+                Spacer(modifier = Modifier.height(40.dp))
+
+                // Professional Session Completion Action
+                Button(
+                    onClick = { 
+                        viewModel.completeProtocol(session.id)
+                        showCelebration = session.id
+                    },
+                    modifier = Modifier.fillMaxWidth().height(56.dp),
+                    colors = ButtonDefaults.buttonColors(containerColor = primaryColor, contentColor = Color.Black),
+                    shape = RoundedCornerShape(16.dp),
+                    enabled = progress > 0.9f || !isPlaying 
+                ) {
+                    Text(stringResource(R.string.vitalis_neural_recalibration).uppercase(), fontWeight = FontWeight.Black)
+                }
+                
                 Spacer(modifier = Modifier.height(60.dp))
             }
-        }
-    }
-}
 
-@Composable
-fun LiveNeuralInstructionOverlay(session: TherapeuticSession, isPlaying: Boolean, primaryColor: Color) {
-    val guidanceRes = session.guidanceRes ?: return
-    val guidanceText = stringResource(guidanceRes)
-    val instructions = remember(guidanceText) { 
-        guidanceText.split(". ").filter { it.isNotBlank() }.map { it.trim().uppercase() + "." } 
-    }
-    var currentIndex by remember { mutableIntStateOf(0) }
-
-    LaunchedEffect(isPlaying) {
-        if (isPlaying) {
-            while (true) {
-                kotlinx.coroutines.delay(12000) 
-                currentIndex = (currentIndex + 1) % instructions.size
-            }
-        }
-    }
-
-    Surface(
-        modifier = Modifier
-            .fillMaxWidth()
-            .padding(bottom = 24.dp),
-        color = Color(0xFF12151A).copy(alpha = 0.8f),
-        shape = RoundedCornerShape(20.dp),
-        border = BorderStroke(1.dp, primaryColor.copy(alpha = 0.2f))
-    ) {
-        Row(
-            modifier = Modifier.padding(16.dp),
-            verticalAlignment = Alignment.CenterVertically
-        ) {
-            Box(
-                modifier = Modifier
-                    .size(40.dp)
-                    .background(primaryColor.copy(alpha = 0.1f), CircleShape)
-                    .border(1.dp, primaryColor.copy(alpha = 0.3f), CircleShape),
-                contentAlignment = Alignment.Center
-            ) {
-                Icon(Icons.Default.Hearing, null, tint = primaryColor, modifier = Modifier.size(20.dp))
-            }
-            Spacer(modifier = Modifier.width(16.dp))
-            Column(modifier = Modifier.weight(1f)) {
-                Text(
-                    stringResource(R.string.live_clinical_guidance),
-                    style = MaterialTheme.typography.labelSmall,
-                    color = primaryColor,
-                    fontSize = 7.sp,
-                    fontWeight = FontWeight.Black,
-                    letterSpacing = 2.sp
-                )
-                AnimatedContent(
-                    targetState = instructions[currentIndex],
-                    transitionSpec = { 
-                        (fadeIn(tween(800)) + slideInVertically(tween(800))).togetherWith(
-                            fadeOut(tween(800)) + slideOutVertically(tween(800))
-                        )
-                    },
-                    label = "instruction"
-                ) { text ->
-                    Text(
-                        text = text,
-                        style = MaterialTheme.typography.bodySmall,
-                        color = Color.White.copy(alpha = 0.9f),
-                        fontWeight = FontWeight.Bold,
-                        lineHeight = 16.sp,
-                        maxLines = 2
-                    )
-                }
+            if (showCelebration != null) {
+                LongevityCelebrationDialog(accent = primaryColor, protocolId = showCelebration!!, onDismiss = { showCelebration = null; onBack() })
             }
         }
     }
 }
 
 @Composable
-fun BioSyncVisualizer(isPlaying: Boolean, color: Color, scale: Float) {
-    Box(contentAlignment = Alignment.Center) {
-        // Outer Breath Anchor
-        Canvas(modifier = Modifier.size(240.dp).graphicsLayer { scaleX = scale; scaleY = scale }) {
-            drawCircle(color.copy(alpha = 0.05f))
-            drawCircle(color.copy(alpha = 0.2f), style = Stroke(2.dp.toPx()))
+fun LiveNeuralInstructionOverlay(session: TherapeuticSession, isPlaying: Boolean, accent: Color) {
+    val infiniteTransition = rememberInfiniteTransition(label = "pulse")
+    val alpha by infiniteTransition.animateFloat(
+        initialValue = 0.3f, targetValue = 0.7f,
+        animationSpec = infiniteRepeatable(tween(2000), RepeatMode.Reverse), label = "a"
+    )
+
+    Column(modifier = Modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally) {
+        Row(verticalAlignment = Alignment.CenterVertically) {
+            Box(modifier = Modifier.size(8.dp).background(if (isPlaying) accent else Color.Gray, CircleShape).graphicsLayer { this.alpha = if (isPlaying) alpha else 1f })
+            Spacer(modifier = Modifier.width(8.dp))
+            Text(
+                text = if (isPlaying) stringResource(R.string.vitalis_neural_optimization).uppercase() else stringResource(R.string.state_paused).uppercase(),
+                style = MaterialTheme.typography.labelSmall,
+                color = if (isPlaying) accent else Color.Gray,
+                letterSpacing = 2.sp
+            )
         }
-        
-        // Inner Frequency Core
-        Canvas(modifier = Modifier.size(120.dp)) {
-            val path = Path()
-            val centerY = size.height / 2
-            val width = size.width
-            path.moveTo(0f, centerY)
-            for (x in 0..width.toInt()) {
-                val y = centerY + sin(x * 0.1f + (if (isPlaying) System.currentTimeMillis() * 0.005f else 0f)) * 20f
-                path.lineTo(x.toFloat(), y)
-            }
-            drawPath(path, color, style = Stroke(4.dp.toPx(), cap = StrokeCap.Round))
-        }
-        
+        Spacer(modifier = Modifier.height(8.dp))
         Text(
-            text = if (scale > 1.0f) stringResource(R.string.label_exhale) else stringResource(R.string.label_inhale),
+            text = "${stringResource(R.string.vitalis_module_detail_domain)}: ${session.domain.name.uppercase()}",
             style = MaterialTheme.typography.labelSmall,
-            fontWeight = FontWeight.Black,
-            color = color.copy(alpha = 0.6f),
-            modifier = Modifier.offset(y = 100.dp)
+            color = Color.White.copy(alpha = 0.5f)
         )
     }
 }
 
 @Composable
-fun BioMetricMiniCard(modifier: Modifier, label: String, value: String, color: Color) {
-    Surface(
-        modifier = modifier,
-        color = Color.White.copy(alpha = 0.02f),
-        shape = RoundedCornerShape(12.dp),
-        border = androidx.compose.foundation.BorderStroke(1.dp, Color.White.copy(alpha = 0.05f))
-    ) {
-        Column(modifier = Modifier.padding(12.dp), horizontalAlignment = Alignment.CenterHorizontally) {
-            Text(label, style = MaterialTheme.typography.labelSmall, color = color.copy(alpha = 0.6f), fontSize = 8.sp, fontWeight = FontWeight.Bold)
-            Text(value, style = MaterialTheme.typography.bodyMedium, fontWeight = FontWeight.Black, color = Color.White)
+fun BioSyncVisualizer(isPlaying: Boolean, accent: Color, scale: Float) {
+    Box(contentAlignment = Alignment.Center) {
+        // Core Pulse
+        Surface(
+            shape = CircleShape,
+            color = accent.copy(alpha = 0.05f),
+            modifier = Modifier.size(200.dp * scale).border(1.dp, accent.copy(alpha = 0.2f * scale), CircleShape)
+        ) {}
+        
+        // Neural Waveform
+        Canvas(modifier = Modifier.size(240.dp)) {
+            val path = Path()
+            val centerY = size.height / 2
+            val width = size.width
+            val frequency = 10f
+            val amplitude = 20f * (if (isPlaying) scale else 1f)
+            
+            path.moveTo(0f, centerY)
+            for (x in 0..width.toInt()) {
+                val y = centerY + amplitude * sin((x.toFloat() / width) * frequency * 2 * Math.PI).toFloat()
+                path.lineTo(x.toFloat(), y)
+            }
+            
+            drawPath(
+                path = path,
+                color = accent.copy(alpha = 0.6f),
+                style = Stroke(width = 2.dp.toPx(), cap = StrokeCap.Round)
+            )
         }
+        
+        Icon(
+            imageVector = Icons.Default.GraphicEq,
+            contentDescription = null,
+            tint = accent,
+            modifier = Modifier.size(64.dp).graphicsLayer { this.scaleX = scale; this.scaleY = scale }
+        )
+    }
+}
+
+@Composable
+fun BioMetricMiniCard(modifier: Modifier, label: String, value: String, accent: Color) {
+    Column(
+        modifier = modifier
+            .background(Color.White.copy(alpha = 0.02f), RoundedCornerShape(16.dp))
+            .border(1.dp, Color.White.copy(alpha = 0.05f), RoundedCornerShape(16.dp))
+            .padding(12.dp),
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        Text(label, style = MaterialTheme.typography.labelSmall, color = Color.White.copy(alpha = 0.4f))
+        Text(value, style = MaterialTheme.typography.bodyMedium, fontWeight = FontWeight.Bold, color = accent)
     }
 }
 
 @Composable
 fun IntelligenceFeedOverlay(isPlaying: Boolean, frequency: String) {
-    val signals = listOf(
+    val feedItems = listOf(
         stringResource(R.string.signal_sync_oscillations),
         stringResource(R.string.signal_target_nodes, frequency),
         stringResource(R.string.signal_reduce_hyperarousal),
         stringResource(R.string.signal_calibrate_vagal),
         stringResource(R.string.signal_optimize_balance)
     )
-    var currentSignalIndex by remember { mutableIntStateOf(0) }
+    var currentItemIndex by remember { mutableIntStateOf(0) }
     
     LaunchedEffect(isPlaying) {
-        while (isPlaying) {
-            kotlinx.coroutines.delay(4000)
-            currentSignalIndex = (currentSignalIndex + 1) % signals.size
+        if (isPlaying) {
+            while (true) {
+                kotlinx.coroutines.delay(4000)
+                currentItemIndex = (currentItemIndex + 1) % feedItems.size
+            }
         }
     }
 
-    AnimatedContent(
-        targetState = signals[currentSignalIndex],
-        transitionSpec = { fadeIn() + slideInVertically() togetherWith fadeOut() + slideOutVertically() },
-        label = "signal"
-    ) { signal ->
-        Text(
-            text = signal.uppercase(),
-            style = MaterialTheme.typography.labelSmall,
-            color = Color.White.copy(alpha = 0.4f),
-            fontWeight = FontWeight.Bold,
-            letterSpacing = 1.sp,
-            textAlign = TextAlign.Center,
-            modifier = Modifier.fillMaxWidth()
-        )
+    Box(
+        modifier = Modifier
+            .fillMaxWidth()
+            .height(48.dp)
+            .background(Color.Black.copy(alpha = 0.4f), RoundedCornerShape(12.dp)),
+        contentAlignment = Alignment.Center
+    ) {
+        AnimatedContent(
+            targetState = feedItems[currentItemIndex],
+            transitionSpec = { fadeIn(tween(1000)) togetherWith fadeOut(tween(1000)) },
+            label = "feed"
+        ) { text ->
+            Text(
+                text = text.uppercase(),
+                style = MaterialTheme.typography.labelSmall,
+                color = Color.White.copy(alpha = 0.6f),
+                letterSpacing = 1.sp,
+                textAlign = TextAlign.Center
+            )
+        }
     }
 }
 
 @Composable
-fun PlaybackEngine(progress: Float, isPlaying: Boolean, onToggle: () -> Unit, onSeek: (Float) -> Unit, accent: Color) {
-    Column(horizontalAlignment = Alignment.CenterHorizontally) {
+fun PlaybackEngine(
+    progress: Float,
+    isPlaying: Boolean,
+    onToggle: () -> Unit,
+    onSeek: (Float) -> Unit,
+    accent: Color
+) {
+    Column(modifier = Modifier.fillMaxWidth()) {
         Slider(
             value = progress,
             onValueChange = onSeek,
-            colors = SliderDefaults.colors(thumbColor = accent, activeTrackColor = accent, inactiveTrackColor = Color.White.copy(alpha = 0.1f)),
-            modifier = Modifier.fillMaxWidth()
+            colors = SliderDefaults.colors(
+                thumbColor = accent,
+                activeTrackColor = accent,
+                inactiveTrackColor = Color.White.copy(alpha = 0.1f)
+            )
         )
-        Spacer(modifier = Modifier.height(24.dp))
-        Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(32.dp)) {
-            IconButton(onClick = {}, modifier = Modifier.size(48.dp)) { Icon(Icons.Default.Replay10, null, tint = Color.White.copy(alpha = 0.5f)) }
-            
-            Surface(
+        
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.Center,
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            IconButton(
                 onClick = onToggle,
-                modifier = Modifier.size(80.dp),
-                shape = CircleShape,
-                color = accent,
-                shadowElevation = 8.dp
+                modifier = Modifier
+                    .size(72.dp)
+                    .background(accent, CircleShape)
             ) {
-                Box(contentAlignment = Alignment.Center) {
-                    Icon(if (isPlaying) Icons.Default.Pause else Icons.Default.PlayArrow, null, modifier = Modifier.size(40.dp), tint = Color.Black)
-                }
+                Icon(
+                    imageVector = if (isPlaying) Icons.Default.Pause else Icons.Default.PlayArrow,
+                    contentDescription = null,
+                    tint = Color.Black,
+                    modifier = Modifier.size(32.dp)
+                )
             }
-
-            IconButton(onClick = {}, modifier = Modifier.size(48.dp)) { Icon(Icons.Default.Forward30, null, tint = Color.White.copy(alpha = 0.5f)) }
         }
     }
 }

@@ -1,5 +1,6 @@
 package com.harc.health.logic
 
+import androidx.annotation.StringRes
 import com.harc.health.R
 import com.harc.health.model.*
 import kotlin.math.*
@@ -33,28 +34,28 @@ object VitalisEngine {
 
         val systems = mutableMapOf<String, SystemHealth>()
         systems["NEURAL CONNECTIVITY"] = SystemHealth(
-            status = interpretStatus(longevityScore),
+            statusRes = interpretStatusRes(longevityScore),
             score = longevityScore,
-            trend = if (healthLog.actionsCompleted.size > 3) "Ascending" else "Stable",
+            trendRes = if (healthLog.actionsCompleted.size > 3) R.string.status_stable else R.string.status_stable, // Logic placeholder
             confidence = 94,
-            implication = "Systemic biostatistical stability reached.",
-            action = "Maintain current allostatic load."
+            implicationRes = R.string.intel_equilibrium_desc,
+            actionRes = R.string.act_sigh_title
         )
         
         systems["METABOLIC EFFICIENCY"] = SystemHealth(
-            status = interpretStatus(metabolicScore),
+            statusRes = interpretStatusRes(metabolicScore),
             score = metabolicScore,
-            trend = "Analyzing",
+            trendRes = R.string.vitalis_active_analysis,
             confidence = 88,
-            implication = "Glycemic variability is within optimal range.",
-            action = "Prioritize post-prandial movement."
+            implicationRes = R.string.act_me1_bio,
+            actionRes = R.string.act_me2_title
         )
 
         val priorityActions = gatherPriorityActions(sleepModule, cardioModule, metabolicModule, stressModule)
 
         return VitalisData(
             longevityScore = longevityScore,
-            trajectory = determineTrajectory(longevityScore),
+            trajectoryRes = determineTrajectoryRes(longevityScore),
             systems = systems,
             sleepModule = sleepModule,
             cardioModule = cardioModule,
@@ -118,16 +119,12 @@ object VitalisEngine {
         activities.add(VitalisActivity("sl_1", R.string.act_sl1_title, R.string.phase_morning, R.string.act_sl1_ipre, R.string.act_sl1_bio, R.string.act_sl1_phys, R.string.act_sl1_rsch))
         
         val priority = if (score < 70) listOf(PriorityAction("sl_1", R.string.act_sl1_title, R.string.act_sl1_ipre, R.string.act_sl1_bio, R.string.act_sl1_phys, R.string.act_sl1_rsch, "High")) else emptyList()
-        return SleepModuleData(score, if (score > 80) "Synchronized" else "Drifting", activities, priority)
+        return SleepModuleData(score, if (score > 80) R.string.vitalis_synchronized else R.string.vitalis_drifting, activities, priority)
     }
 
     private fun generateCardioActivities(score: Int, log: HealthLog): CardiovascularModuleData {
         val activities = mutableListOf<VitalisActivity>()
         activities.add(VitalisActivity("ca_1", R.string.act_ca1_title, R.string.phase_morning, R.string.act_ca1_ipre, R.string.act_ca1_bio, R.string.act_ca1_phys, R.string.act_ca1_rsch))
-        
-        // Add VO2 Max related activity if score is high or low (as a challenge or a need)
-        // For now, keep it stable
-        
         return CardiovascularModuleData(score, activities, emptyList())
     }
 
@@ -146,8 +143,6 @@ object VitalisEngine {
     private fun generateStressActivities(score: Int, log: HealthLog): StressModuleData {
         val activities = mutableListOf<VitalisActivity>()
         activities.add(VitalisActivity("st_1", R.string.act_st1_title, R.string.phase_execution, R.string.act_st1_ipre, R.string.act_st1_bio, R.string.act_st1_phys, R.string.act_st1_rsch))
-        
-        // Add NSDR as a stress/recovery activity
         activities.add(VitalisActivity("co_1", R.string.act_co1_title, R.string.phase_daytime, R.string.act_co1_ipre, R.string.act_co1_bio, R.string.act_co1_phys, R.string.act_co1_rsch))
 
         return StressModuleData(score, activities, emptyList())
@@ -177,153 +172,111 @@ object VitalisEngine {
             activeProtocols = listOf(
                 LongevityProtocol(
                     id = "lp_autophagy",
-                    title = "The Autophagy Cycle",
-                    purpose = "Trigger cellular \"housecleaning\" by recycling damaged proteins.",
-                    instructions = listOf(
-                        "Initiate a 16-hour fasting window.",
-                        "Consume 500ml of mineral-rich water during the fast.",
-                        "Break fast with a high-protein, low-glycemic meal."
-                    ),
-                    shortTermBenefit = "Metabolic Switching",
-                    longTermBenefit = "Cellular Longevity",
-                    researchInsight = "Autophagy is a key driver of healthspan and protein homeostasis."
+                    titleRes = R.string.lp_autophagy_title,
+                    purposeRes = R.string.lp_autophagy_purpose,
+                    instructionsRes = listOf(R.string.lp_autophagy_step1, R.string.lp_autophagy_step2, R.string.lp_autophagy_step3),
+                    shortTermBenefitRes = R.string.lp_autophagy_benefit_short,
+                    longTermBenefitRes = R.string.lp_autophagy_benefit_long,
+                    researchInsightRes = R.string.lp_autophagy_insight
                 ),
                 LongevityProtocol(
                     id = "lp_thermal",
-                    title = "Thermal Hormesis",
-                    purpose = "Activate Heat Shock Proteins and brown fat.",
-                    instructions = listOf(
-                        "20 minutes of Sauna exposure (80°C+).",
-                        "Immediate 3-minute Cold Plunge (10°C).",
-                        "Rest for 10 minutes in a neutral environment."
-                    ),
-                    shortTermBenefit = "Vascular Compliance",
-                    longTermBenefit = "Cardiovascular Resilience",
-                    researchInsight = "Heat shock proteins act as molecular chaperones for protein folding."
+                    titleRes = R.string.lp_thermal_title,
+                    purposeRes = R.string.lp_thermal_purpose,
+                    instructionsRes = listOf(R.string.lp_thermal_step1, R.string.lp_thermal_step2, R.string.lp_thermal_step3),
+                    shortTermBenefitRes = R.string.lp_thermal_benefit_short,
+                    longTermBenefitRes = R.string.lp_thermal_benefit_long,
+                    researchInsightRes = R.string.lp_thermal_insight
                 ),
                 LongevityProtocol(
                     id = "lp_vo2",
-                    title = "Mitochondrial Forge",
-                    purpose = "Maximum oxygen utilization (VO2 Max).",
-                    instructions = listOf(
-                        "5-minute progressive warm-up.",
-                        "4x4 Intervals: 4 mins at Max Intensity, 3 mins recovery.",
-                        "Cool down with diaphragmatic breathing."
-                    ),
-                    shortTermBenefit = "Mitochondrial Density",
-                    longTermBenefit = "Heart & Lung Vitality",
-                    researchInsight = "VO2 Max is the single strongest predictor of all-cause mortality."
+                    titleRes = R.string.lp_vo2_title,
+                    purposeRes = R.string.lp_vo2_purpose,
+                    instructionsRes = listOf(R.string.lp_vo2_step1, R.string.lp_vo2_step2, R.string.lp_vo2_step3),
+                    shortTermBenefitRes = R.string.lp_vo2_benefit_short,
+                    longTermBenefitRes = R.string.lp_vo2_benefit_long,
+                    researchInsightRes = R.string.lp_vo2_insight
                 ),
                 LongevityProtocol(
                     id = "lp_glycemic",
-                    title = "Glycemic Stability",
-                    purpose = "Minimize insulin spikes and protein glycation.",
-                    instructions = listOf(
-                        "1 tbsp Apple Cider Vinegar in water before carbs.",
-                        "15-minute brisk walk immediately after eating.",
-                        "Prioritize fiber and protein before any starch."
-                    ),
-                    shortTermBenefit = "Post-prandial Stability",
-                    longTermBenefit = "Metabolic Health",
-                    researchInsight = "Reducing glucose variability slows the biological aging of skin and organs."
+                    titleRes = R.string.lp_glycemic_title,
+                    purposeRes = R.string.lp_glycemic_purpose,
+                    instructionsRes = listOf(R.string.lp_glycemic_step1, R.string.lp_glycemic_step2, R.string.lp_glycemic_step3),
+                    shortTermBenefitRes = R.string.lp_glycemic_benefit_short,
+                    longTermBenefitRes = R.string.lp_glycemic_benefit_long,
+                    researchInsightRes = R.string.lp_glycemic_insight
                 ),
                 LongevityProtocol(
                     id = "lp_glymphatic",
-                    title = "Glymphatic Reset",
-                    purpose = "Optimize the brain's waste clearance system.",
-                    instructions = listOf(
-                        "Zero blue light exposure 90m before sleep.",
-                        "Lower room temperature to exactly 18°C.",
-                        "Sleep on your side for maximal CSF flow."
-                    ),
-                    shortTermBenefit = "Cognitive Clarity",
-                    longTermBenefit = "Neuro-protection",
-                    researchInsight = "The glymphatic system clears beta-amyloid during deep sleep cycles."
+                    titleRes = R.string.lp_glymphatic_title,
+                    purposeRes = R.string.lp_glymphatic_purpose,
+                    instructionsRes = listOf(R.string.lp_glymphatic_step1, R.string.lp_glymphatic_step2, R.string.lp_glymphatic_step3),
+                    shortTermBenefitRes = R.string.lp_glymphatic_benefit_short,
+                    longTermBenefitRes = R.string.lp_glymphatic_benefit_long,
+                    researchInsightRes = R.string.lp_glymphatic_insight
                 ),
                 LongevityProtocol(
                     id = "lp_senolytic",
-                    title = "Senolytic Loading",
-                    purpose = "Clear 'zombie cells' that drive inflammation.",
-                    instructions = listOf(
-                        "Consume 500mg Quercetin or Fisetin-rich foods.",
-                        "Zero refined sugar intake for 24 hours.",
-                        "15 minutes of light resistance training."
-                    ),
-                    shortTermBenefit = "Inflammatory Reduction",
-                    longTermBenefit = "Tissue Regeneration",
-                    researchInsight = "Senolytics selectively induce death of senescent cells."
+                    titleRes = R.string.lp_senolytic_title,
+                    purposeRes = R.string.lp_senolytic_purpose,
+                    instructionsRes = listOf(R.string.lp_senolytic_step1, R.string.lp_senolytic_step2, R.string.lp_senolytic_step3),
+                    shortTermBenefitRes = R.string.lp_senolytic_benefit_short,
+                    longTermBenefitRes = R.string.lp_senolytic_benefit_long,
+                    researchInsightRes = R.string.lp_senolytic_insight
                 ),
                 LongevityProtocol(
                     id = "lp_apob",
-                    title = "ApoB Lipid Scour",
-                    purpose = "Aggressive reduction of atherogenic particles.",
-                    instructions = listOf(
-                        "Increase soluble fiber intake to 30g+ daily.",
-                        "Consume 2g of high-EPA Omega-3 fatty acids.",
-                        "5m of 'Nitric Oxide Dumps' (Squats/Presses)."
-                    ),
-                    shortTermBenefit = "Endothelial Priming",
-                    longTermBenefit = "Cardiovascular Immunity",
-                    researchInsight = "ApoB is the primary driver of atherosclerotic plaque formation."
+                    titleRes = R.string.lp_apob_title,
+                    purposeRes = R.string.lp_apob_purpose,
+                    instructionsRes = listOf(R.string.lp_apob_step1, R.string.lp_apob_step2, R.string.lp_apob_step3),
+                    shortTermBenefitRes = R.string.lp_apob_benefit_short,
+                    longTermBenefitRes = R.string.lp_apob_benefit_long,
+                    researchInsightRes = R.string.lp_apob_insight
                 ),
                 LongevityProtocol(
                     id = "lp_skeletal",
-                    title = "Skeletal Fortification",
-                    purpose = "Maximize bone density and structural integrity.",
-                    instructions = listOf(
-                        "Cumulative 3-minute 'Dead Hang' from a bar.",
-                        "10 minutes of heavy eccentric loading.",
-                        "Optimize Vitamin D3 + K2 levels."
-                    ),
-                    shortTermBenefit = "Structural Alignment",
-                    longTermBenefit = "Frailty Prevention",
-                    researchInsight = "Grip strength and bone density are high-fidelity predictors of late-life autonomy."
+                    titleRes = R.string.lp_skeletal_title,
+                    purposeRes = R.string.lp_skeletal_purpose,
+                    instructionsRes = listOf(R.string.lp_skeletal_step1, R.string.lp_skeletal_step2, R.string.lp_skeletal_step3),
+                    shortTermBenefitRes = R.string.lp_skeletal_benefit_short,
+                    longTermBenefitRes = R.string.lp_skeletal_benefit_long,
+                    researchInsightRes = R.string.lp_skeletal_insight
                 ),
                 LongevityProtocol(
                     id = "lp_dna",
-                    title = "DNA Methylation Shield",
-                    purpose = "Maximize DNA repair and gene silencing.",
-                    instructions = listOf(
-                        "Ingest 100mg Sulforaphane (Broccoli Sprouts).",
-                        "10 minutes of deep cortisol-suppression breathing.",
-                        "Zero processed oils or charred meats for 24h."
-                    ),
-                    shortTermBenefit = "Genomic Stability",
-                    longTermBenefit = "Cancer Risk Mitigation",
-                    researchInsight = "Methylation patterns dictate the rate of biological aging (Horvath Clock)."
+                    titleRes = R.string.lp_dna_title,
+                    purposeRes = R.string.lp_dna_purpose,
+                    instructionsRes = listOf(R.string.lp_dna_step1, R.string.lp_dna_step2, R.string.lp_dna_step3),
+                    shortTermBenefitRes = R.string.lp_dna_benefit_short,
+                    longTermBenefitRes = R.string.lp_dna_benefit_long,
+                    researchInsightRes = R.string.lp_dna_insight
                 )
             ),
-            adherenceScore = 88
+            adherenceScore = 88,
+            behavioralStabilityRes = R.string.vitalis_stable
         )
     }
 
     private fun generatePatternAnalysis(log: HealthLog): PatternAnalysisModuleData {
         return PatternAnalysisModuleData(
             identifiedPatterns = listOf(
-                VitalisPattern("Late Caffeine Impact", "Adenosine receptor blockade detected late in day.", "Reduces N3 Sleep Pressure.")
-            )
+                VitalisPattern(R.string.act_sl3_title, R.string.act_sl3_ipre, R.string.act_sl3_bio) // Logic placeholder
+            ),
+            insightLevelRes = R.string.vitalis_gathering
         )
     }
 
     private fun generateTrajectoryModeling(score: Int): TrajectoryModuleData {
-        // Clinical Weighting: VO2 Max (Cardio) and Glycemic Stability (Metabolic) 
-        // carry 3x the weight of other markers for all-cause mortality prediction.
-        
-        val ageOffset = (score - 72) / 4.0
-        val biologicalAgeImpact = if (ageOffset > 0) "-${"%.1f".format(ageOffset)}" else "+${"%.1f".format(abs(ageOffset))}"
-        
-        val directives = mutableListOf<String>()
+        val directives = mutableListOf<TrajectoryDirective>()
         if (score > 80) {
-            directives.add("Systemic biological reserve is currently high.")
-            directives.add("Biological Age Offset: $biologicalAgeImpact years.")
+            directives.add(TrajectoryDirective(R.string.intel_equilibrium_title_optimized))
         } else {
-            directives.add("Accelerated biological aging detected in metabolic pathways.")
-            directives.add("Urgent focus: Stabilize Glycemic Index and increase VO2 Max.")
+            directives.add(TrajectoryDirective(R.string.verdict_caution_signal))
         }
 
         return TrajectoryModuleData(
-            projectedHealthAge = 0, // In a real app, this would be UserAge + ageOffset
-            riskTrend = if (score > 75) "Optimal" else "Compensated",
+            projectedHealthAge = 0,
+            riskTrendRes = if (score > 75) R.string.vitalis_optimal else R.string.status_stable,
             futureDirectives = directives
         )
     }
@@ -331,10 +284,8 @@ object VitalisEngine {
     private fun generateResearchHub(): ResearchModuleData {
         return ResearchModuleData(
             currentInsights = listOf(
-                ResearchInsight("VO2 Max & Mortality", "A 10-unit increase in VO2 Max is associated with a 15-20% decrease in all-cause mortality.", "JAMA Network Open, 2018"),
-                ResearchInsight("ApoB Primacy", "ApoB is a more accurate predictor of cardiovascular risk than LDL-C, as it measures the total number of atherogenic particles.", "Journal of Clinical Lipidology, 2021"),
-                ResearchInsight("Autophagy Induction", "Cycles of fasting and protein restriction trigger selective macro-autophagy, clearing misfolded proteins.", "Nature Reviews Molecular Cell Biology, 2020"),
-                ResearchInsight("Hormesis & HSPs", "Thermal stress (sauna) induces Heat Shock Proteins that act as molecular chaperones to prevent protein aggregation.", "Cell Stress and Chaperones, 2022")
+                ResearchInsight(R.string.lp_vo2_title, R.string.lp_vo2_insight, R.string.lp_vo2_benefit_long), // Logic placeholder
+                ResearchInsight(R.string.lp_apob_title, R.string.lp_apob_insight, R.string.lp_apob_benefit_long)
             )
         )
     }
@@ -352,15 +303,34 @@ object VitalisEngine {
         return list.distinctBy { it.id }.take(3)
     }
 
-    private fun interpretStatus(score: Int): String = when {
-        score >= 85 -> "OPTIMAL"
-        score >= 70 -> "STABLE"
-        else -> "DYSREGULATED"
+    // --- BIOLOGICAL GAIN ENGINE (Unified Rewards) ---
+
+    data class LongevityDividend(@StringRes val titleRes: Int, @StringRes val gainRes: Int, @StringRes val metricRes: Int, @StringRes val descriptionRes: Int)
+
+    fun getBiologicalGain(id: String): LongevityDividend {
+        return when (id) {
+            "lp_autophagy" -> LongevityDividend(R.string.reward_lp_autophagy_title, R.string.reward_lp_autophagy_gain, R.string.reward_lp_autophagy_metric, R.string.reward_lp_autophagy_desc)
+            "lp_thermal" -> LongevityDividend(R.string.reward_lp_thermal_title, R.string.reward_lp_thermal_gain, R.string.reward_lp_thermal_metric, R.string.reward_lp_thermal_desc)
+            "lp_vo2" -> LongevityDividend(R.string.reward_lp_vo2_title, R.string.reward_lp_vo2_gain, R.string.reward_lp_vo2_metric, R.string.reward_lp_vo2_desc)
+            "lp_glycemic" -> LongevityDividend(R.string.reward_lp_glycemic_title, R.string.reward_lp_glycemic_gain, R.string.reward_lp_glycemic_metric, R.string.reward_lp_glycemic_desc)
+            "lp_glymphatic" -> LongevityDividend(R.string.reward_lp_glymphatic_title, R.string.reward_lp_glymphatic_gain, R.string.reward_lp_glymphatic_metric, R.string.reward_lp_glymphatic_desc)
+            "ts_dopamine" -> LongevityDividend(R.string.reward_ts_dopamine_title, R.string.reward_ts_dopamine_gain, R.string.reward_ts_dopamine_metric, R.string.reward_ts_dopamine_desc)
+            "ts_vascular" -> LongevityDividend(R.string.reward_ts_vascular_title, R.string.reward_ts_vascular_gain, R.string.reward_ts_vascular_metric, R.string.reward_ts_vascular_desc)
+            "ts_cortisol" -> LongevityDividend(R.string.reward_ts_cortisol_title, R.string.reward_ts_cortisol_gain, R.string.reward_ts_cortisol_metric, R.string.reward_ts_cortisol_desc)
+            "ts_liver" -> LongevityDividend(R.string.reward_ts_liver_title, R.string.reward_ts_liver_gain, R.string.reward_ts_liver_metric, R.string.reward_ts_liver_desc)
+            else -> LongevityDividend(R.string.reward_generic_title, R.string.reward_generic_gain, R.string.reward_generic_metric, R.string.reward_generic_desc)
+        }
     }
 
-    private fun determineTrajectory(score: Int): String = when {
-        score >= 85 -> "OPTIMAL BIOLOGICAL CAPACITY"
-        score >= 70 -> "STABLE HOMEOSTASIS"
-        else -> "SYSTEMIC DRIFT DETECTED"
+    private fun interpretStatusRes(score: Int): Int = when {
+        score >= 85 -> R.string.status_optimized
+        score >= 70 -> R.string.status_stable
+        else -> R.string.status_critical
+    }
+
+    private fun determineTrajectoryRes(score: Int): Int = when {
+        score >= 85 -> R.string.vitalis_trajectory_optimal
+        score >= 70 -> R.string.vitalis_trajectory_stable
+        else -> R.string.vitalis_trajectory_drift
     }
 }

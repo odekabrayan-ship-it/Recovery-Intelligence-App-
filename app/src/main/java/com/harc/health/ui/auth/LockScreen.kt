@@ -1,4 +1,4 @@
-package com.harc.health.ui.auth
+         package com.harc.health.ui.auth
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.text.KeyboardOptions
@@ -64,7 +64,7 @@ fun LockScreen(onAuthenticated: () -> Unit) {
         verticalArrangement = Arrangement.Center
     ) {
         Text(
-            text = "App Locked",
+            text = stringResource(R.string.lock_title),
             style = MaterialTheme.typography.headlineMedium,
             color = MaterialTheme.colorScheme.primary,
             fontWeight = FontWeight.Bold
@@ -73,7 +73,7 @@ fun LockScreen(onAuthenticated: () -> Unit) {
         Spacer(modifier = Modifier.height(8.dp))
         
         Text(
-            text = "Enter your PIN to continue",
+            text = stringResource(R.string.lock_enter_pin),
             style = MaterialTheme.typography.bodyMedium
         )
 
@@ -121,7 +121,7 @@ fun LockScreen(onAuthenticated: () -> Unit) {
                 },
                 modifier = Modifier.fillMaxWidth()
             ) {
-                Text("Unlock")
+                Text(stringResource(R.string.lock_unlock))
             }
         }
 
@@ -134,7 +134,7 @@ fun LockScreen(onAuthenticated: () -> Unit) {
         Spacer(modifier = Modifier.weight(1f))
         
         Text(
-            text = "Your data is stored locally and encrypted.",
+            text = stringResource(R.string.lock_data_privacy_note),
             style = MaterialTheme.typography.labelSmall,
             color = MaterialTheme.colorScheme.outline
         )

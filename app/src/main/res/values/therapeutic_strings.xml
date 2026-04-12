@@ -125,6 +125,9 @@
     <string name="session_insomnia_relief_title">Insomnia Neural Restoration</string>
     <string name="session_insomnia_relief_desc">A long-form session to entrain the brain for deep, uninterrupted sleep cycles.</string>
     <string name="session_insomnia_relief_rationale">Focuses on stable 1.5Hz Delta waves to maintain deep N3 sleep stages where the most physical healing occurs.</string>
+    <string name="session_pulmonary_clearance_title">Pulmonary Clearance Protocol</string>
+    <string name="session_pulmonary_clearance_desc">Accelerated carboxyhemoglobin clearance and respiratory restoration.</string>
+    <string name="session_pulmonary_clearance_guidance">This session is a targeted clinical intervention to accelerate the clearance of metabolic byproducts from your respiratory system and restore vascular integrity. If you have been exposed to environmental pollutants or tobacco smoke, your blood is currently carrying carboxyhemoglobin, which significantly reduces oxygen transport to your brain and heart. This cellular hypoxia is a primary driver of fatigue and systemic inflammation. To start, sit upright with your back supported and place your hands on your lower ribs. Close your eyes. We are using specific 741Hz frequencies to stimulate cellular detoxification and rhythmic breathing to force a mechanical flush of the deep lung tissue. Inhale slowly through your nose for a count of four, feeling your ribs expand outward. Hold for two. Exhale forcefully through pursed lips for a count of six, imagining you are pushing every last bit of stale air from the bottom of your lungs. Repeat silently: \'I clear my system. I restore my oxygen. My lungs are clean and strong.\' As the frequencies resonate, feel the tightness in your chest dissolving. You are reclaiming your vital capacity.</string>
     <string name="session_post_nightmare_title">Post-Nightmare Grounding</string>
     <string name="session_post_nightmare_desc">Quickly return to a state of safety and calm after a distressing dream or night terror.</string>
     <string name="session_post_nightmare_rationale">Uses 174Hz to provide a foundation of safety and security, reducing the immediate fear-response.</string>
@@ -172,6 +175,7 @@
     <string name="target_dopamine_stability">Dopamine Stability</string>
     <string name="target_systemic_reset">Systemic Reset</string>
     <string name="target_acute">Acute Intervention</string>
+    <string name="target_respiratory">Respiratory Restoration</string>
     <string name="target_systemic">Systemic</string>
 
     <!-- Frequencies -->

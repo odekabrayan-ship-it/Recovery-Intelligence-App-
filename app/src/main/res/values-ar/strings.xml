@@ -33,7 +33,7 @@
     <string name="profile_bio">السيرة الذاتية</string>
     <string name="profile_location">الموقع</string>
     <string name="profile_gender">الجنس</string>
-    <string name="profile_age">Age</string>
+    <string name="profile_age">العمر</string>
     <string name="profile_security_privacy">الأمان والخصوصية</string>
     <string name="profile_pin_protection">الحماية برمز PIN</string>
     <string name="profile_biometric_login">تسجيل الدخول البيومتري</string>
@@ -55,35 +55,35 @@
     <string name="lock_reset_confirm">مسح البيانات وإعادة الضبط</string>
 
     <!-- الشاشة الرئيسية -->
-    <string name="home_biological_command">BIOLOGICAL COMMAND</string>
+    <string name="home_biological_command">القيادة البيولوجية</string>
     <string name="home_hello">مرحباً، %1$s</string>
-    <string name="home_mandatory_triad">MANDATORY DAILY TRIAD</string>
+    <string name="home_mandatory_triad">الثلاثي اليومي الإلزامي</string>
     <string name="home_triad_subtitle">بروتوكولات بقيادة خبراء للإصلاح الفسيولوجي الفوري</string>
-    <string name="home_core_systems">Core Biological Systems</string>
+    <string name="home_core_systems">الأنظمة البيولوجية الأساسية</string>
     <string name="home_systems_subtitle">الحالة السريرية بناءً على البيانات الحديثة</string>
-    <string name="home_recovery_toolkit">Recovery Toolkit</string>
+    <string name="home_recovery_toolkit">مجموعة أدوات التعافي</string>
     <string name="home_toolkit_subtitle">إجراءات سريعة لتحسين المقاييس</string>
-    <string name="home_recovery_index">RECOVERY INDEX</string>
+    <string name="home_recovery_index">مؤشر التعافي</string>
     <string name="home_recovery_desc">الاستعداد الفسيولوجي العام للإصلاح الخلوي وإزالة السموم.</string>
-    <string name="home_streak_title">%1$d DAY RECOVERY STREAK</string>
+    <string name="home_streak_title">سلسلة التعافي: %1$d يوم</string>
     <string name="home_streak_desc">أنت ضمن أفضل 5%% من المستخدمين من حيث الاتساق البيولوجي هذا الأسبوع. حافظ على البروتوكول الحالي لاستقرار الأعصاب.</string>
-    <string name="home_live_tag">LIVE</string>
+    <string name="home_live_tag">مباشر</string>
     <string name="home_category_sleep">النوم</string>
     <string name="home_category_metabolic">التمثيل الغذائي</string>
     <string name="home_category_vascular">الأوعية الدموية</string>
 
     <!-- فيتاليس والمحرك -->
-    <string name="vitalis_command_center">VITALIS ENGINE</string>
-    <string name="vitalis_bio_intel">BIO-INTEL</string>
-    <string name="vitalis_protocols">PROTOCOLS</string>
-    <string name="vitalis_evidence_base">EVIDENCE BASE</string>
-    <string name="vitalis_domain_analysis">DOMAIN ANALYSIS</string>
-    <string name="vitalis_optimal">Optimal</string>
-    <string name="vitalis_initiate_intervention">INITIATE INTERVENTION</string>
+    <string name="vitalis_command_center">مركز قيادة فيتاليس</string>
+    <string name="vitalis_bio_intel">الذكاء البيولوجي</string>
+    <string name="vitalis_protocols">البروتوكولات</string>
+    <string name="vitalis_evidence_base">قاعدة الأدلة</string>
+    <string name="vitalis_domain_analysis">تحليل النطاق</string>
+    <string name="vitalis_optimal">أمثل</string>
+    <string name="vitalis_initiate_intervention">بدء التدخل</string>
     <string name="vitalis_session_complete">اكتملت الجلسة</string>
-    <string name="vitalis_inhale">INHALE</string>
-    <string name="vitalis_hold">HOLD</string>
-    <string name="vitalis_exhale">EXHALE</string>
+    <string name="vitalis_inhale">شهيق</string>
+    <string name="vitalis_hold">كتم</string>
+    <string name="vitalis_exhale">زفير</string>
 
     <!-- Recovery Live Activities -->
     <string name="act_osmotic_title">التحميل التناضحي</string>
@@ -202,109 +202,131 @@
     <string name="act_dopamine_step_desc">انظر إلى النبض. اعترف بالضجيج الحسي الخارجي وحرره.</string>
     <string name="act_dopamine_impact">إعادة ضبط خط أساس دائرة المكافأة. زيادة مشاركة القشرة الأمامية.</string>
 
-    <string name="cat_respiratory">Respiratory</string>
-    <string name="cat_liver">Liver</string>
-    <string name="cat_cardiovascular">Cardiovascular</string>
-    <string name="cat_metabolic">Metabolic</string>
-    <string name="cat_stress">Stress</string>
-    <string name="cat_behavioral">Behavioral</string>
-    <string name="cat_sleep_arch">Sleep Architecture</string>
-    <string name="cat_cognitive">Cognitive Repair</string>
+    <string name="cat_respiratory">الجهاز التنفسي</string>
+    <string name="cat_liver">الكبد</string>
+    <string name="cat_cardiovascular">القلب والأوعية الدموية</string>
+    <string name="cat_metabolic">التمثيل الغذائي</string>
+    <string name="cat_stress">الإجهاد</string>
+    <string name="cat_behavioral">السلوكي</string>
+    <string name="cat_sleep_arch">بنية النوم</string>
+    <string name="cat_cognitive">الإصلاح المعرفي</string>
 
-    <string name="audience_drinkers">Drinkers</string>
-    <string name="audience_smokers">Smokers</string>
-    <string name="audience_both">Both</string>
+    <string name="audience_drinkers">المستهلكون</string>
+    <string name="audience_smokers">المدخنون</string>
+    <string name="audience_both">كلاهما</string>
 
     <!-- المدرب -->
-    <string name="coach_help_centre">Help Centre</string>
-    <string name="coach_expert_help">Expert Help</string>
-    <string name="coach_clinically_precise">Clinically Precise</string>
-    <string name="coach_real_time_support">Real-time Support</string>
-    <string name="coach_need_advice">Need Advice?</string>
-    <string name="coach_chat_with_expert">Chat with Expert</string>
-    <string name="coach_back_to_help">Back to Help</string>
-    <string name="coach_describe_feeling">Describe how you feel…</string>
-    <string name="coach_hello">Hello! I am your IA Coach. I can help you understand your recovery path or manage anxiety. What is on your mind?</string>
-    <string name="coach_research_insight">Research Insight</string>
-    <string name="coach_research_desc">New findings from HAC indicate that just 5 minutes of deep breathing can reduce nicotine-induced vascular constriction by up to 20%%.</string>
+    <string name="coach_help_centre">مركز المساعدة</string>
+    <string name="coach_expert_help">مساعدة الخبراء</string>
+    <string name="coach_clinically_precise">دقيق سريرياً</string>
+    <string name="coach_real_time_support">دعم في الوقت الفعلي</string>
+    <string name="coach_need_advice">هل تحتاج إلى نصيحة؟</string>
+    <string name="coach_chat_with_expert">تحدث مع خبير</string>
+    <string name="coach_back_to_help">العودة للمساعدة</string>
+    <string name="coach_describe_feeling">صف شعورك…</string>
+    <string name="coach_hello">مرحباً! أنا مدربك الذكي. يمكنني مساعدتك في فهم مسار تعافيك أو إدارة القلق. ما الذي يدور في ذهنك؟</string>
+    <string name="coach_research_insight">رؤية بحثية</string>
+    <string name="coach_research_desc">تشير النتائج الجديدة من HAC إلى أن 5 دقائق فقط من التنفس العميق يمكن أن تقلل من تضيق الأوعية الناجم عن النيكوتين بنسبة تصل إلى 20%%.</string>
 
     <!-- الرؤى -->
-    <string name="insights_behavioral_intelligence">BEHAVIORAL INTELLIGENCE</string>
-    <string name="insights_behavioral_trends">Behavioral Trends</string>
-    <string name="insights_clinical_interpretation">Clinical interpretation of your logged activity</string>
-    <string name="insights_intake_intensity">INTAKE INTENSITY</string>
-    <string name="insights_metabolic_load">Metabolic Load</string>
-    <string name="insights_liver_recovery">Liver Recovery</string>
-    <string name="insights_lung_health">Lung Health</string>
-    <string name="insights_resilience_dynamics">RESILIENCE DYNAMICS</string>
-    <string name="insights_system_stability">System Stability</string>
-    <string name="insights_review_protocol">Review Protocol</string>
-    <string name="insights_cause_effect">Cause &amp; Effect</string>
-    <string name="insights_physiological_reactions">Physiological Reactions</string>
-    <string name="insights_scientific_intelligence">Scientific Intelligence</string>
-    <string name="insights_latest_findings">Latest Findings</string>
-    <string name="insights_clinical_library">Clinical Library</string>
-    <string name="insights_peer_reviewed_guides">Peer-Reviewed Guides</string>
-    <string name="insights_intake_high_no_recovery">Your intake trends are high with zero recovery action. Hepatic filtration and lung repair are severely strained.</string>
-    <string name="insights_intake_high_recovery">High intake detected, but recovery protocols are active. Your actions are partially offsetting the metabolic load.</string>
-    <string name="insights_intake_low_recovery">Low intake and active recovery. Your biological systems are in an optimized state of cellular repair.</string>
-    <string name="insights_intake_stable">Intake levels are within stable recovery thresholds. Biological systems are maintaining equilibrium.</string>
-    <string name="insights_recovery_critical">Critical system strain. Immediate hydration and rest protocols required to stabilize neural function.</string>
-    <string name="insights_recovery_decreasing">Systemic stability is decreasing. Your score typically improves by 15%% when hydration tasks are completed.</string>
-    <string name="insights_recovery_progress">Recovery in progress. Hydration is supporting toxin clearance, but overall rest remains sub-optimal.</string>
-    <string name="insights_recovery_high">High resilience maintained. Your consistent hydration and rest protocols are successfully balancing metabolic stress.</string>
-    <string name="insights_recovery_stable">Stable recovery dynamics. Maintain current hydration and breathing protocols to ensure system balance.</string>
-    <string name="insights_urgent_hydration">URGENT: Hydration after alcohol increases recovery rate by 40%%.</string>
-    <string name="insights_success_hydration">SUCCESS: Hydration protocol is successfully accelerating toxin clearance.</string>
-    <string name="insights_vascular_stress">Vascular strain is high. Initiate breathing exercise to improve airflow.</string>
-    <string name="insights_breathing_reset">Breathing reset detected. Lung efficiency is improving.</string>
-    <string name="insights_low_hydration">Low hydration detected. Toxin clearance is not currently optimal.</string>
-    <string name="insights_high_consistency">High Consistency: Recovery score trending up due to active interventions.</string>
-    <string name="insights_equilibrium">Biological systems in equilibrium. Maintain current protocol.</string>
-    <string name="insights_alcohol_intake">Alcohol Intake</string>
-    <string name="insights_metabolic_ethanol">Metabolic ethanol load</string>
-    <string name="insights_hydration_active">Hydration Active</string>
-    <string name="insights_hydration_deficit">Hydration Deficit</string>
-    <string name="insights_accelerating_toxin">Accelerating toxin clearance</string>
-    <string name="insights_metabolic_delayed">Metabolic processing delayed</string>
-    <string name="insights_reduced_hangover">Reduced Hangover</string>
-    <string name="insights_increased_fatigue">Increased Fatigue</string>
-    <string name="insights_systemic_stability_returning">Systemic stability returning</string>
-    <string name="insights_neural_recovery_delayed">Neural recovery delayed</string>
-    <string name="insights_nicotine_intake">Nicotine Intake</string>
-    <string name="insights_vascular_constriction">Vascular constriction</string>
-    <string name="insights_breathing_protocol">Breathing Protocol</string>
-    <string name="insights_lung_stress">Lung Stress</string>
-    <string name="insights_increasing_oxygen">Increasing oxygen uptake</string>
-    <string name="insights_lower_oxygen">Lower oxygen efficiency</string>
-    <string name="insights_oxygen_stabilized">Oxygen Stabilized</string>
-    <string name="insights_recovery_slowed">Recovery Slowed</string>
-    <string name="insights_vascular_decreasing">Decreasing vascular strain</string>
-    <string name="insights_reduced_cellular">Reduced cellular repair</string>
-    <string name="insights_clean_protocol">Clean Protocol</string>
-    <string name="insights_zero_toxin">Zero toxin load</string>
-    <string name="insights_stable_equilibrium">Stable Equilibrium</string>
-    <string name="insights_optimal_system">Optimal system function</string>
-    <string name="insights_available_guides">Available Guides</string>
-    <string name="insights_rapid_repair">Rapid Repair</string>
-    <string name="insights_maximum_cellular">Maximum cellular restoration</string>
-    <string name="insights_pulmonary_restoration">Pulmonary Restoration Study</string>
-    <string name="insights_study_desc">Clinical data from HAC Centre confirms that 5-minute structured deep breathing protocols can offset acute vascular constriction by 20%% immediately following nicotine exposure.</string>
-    <string name="insights_access_publication">Access Full Publication</string>
-    <string name="insights_reach_out">Reach out to the HAC Research Centre team for any clinical feedback or questions.</string>
-    <string name="insights_hepatic_restoration">Hepatic Restoration</string>
-    <string name="insights_sleep_architecture">Sleep Architecture</string>
-    <string name="insights_intracellular_hydration">Intracellular Hydration</string>
-    <string name="insights_neuro_chemical">Neuro-Chemical Balance</string>
-    <string name="insights_questions_concerns">Questions or Concerns?</string>
+    <string name="insights_behavioral_intelligence">الذكاء السلوكي</string>
+    <string name="insights_behavioral_trends">الاتجاهات السلوكية</string>
+    <string name="insights_clinical_interpretation">التفسير السريري لنشاطك المسجل</string>
+    <string name="insights_intake_intensity">كثافة الاستهلاك</string>
+    <string name="insights_metabolic_load">الحمل الأيضي</string>
+    <string name="insights_liver_recovery">تعافي الكبد</string>
+    <string name="insights_lung_health">صحة الرئة</string>
+    <string name="insights_resilience_dynamics">ديناميكيات المرونة</string>
+    <string name="insights_system_stability">استقرار النظام</string>
+    <string name="insights_review_protocol">مراجعة البروتوكول</string>
+    <string name="insights_cause_effect">السبب والنتيجة</string>
+    <string name="insights_physiological_reactions">التفاعلات الفسيولوجية</string>
+    <string name="insights_scientific_intelligence">الذكاء العلمي</string>
+    <string name="insights_latest_findings">أحدث النتائج</string>
+    <string name="insights_clinical_library">المكتبة السريرية</string>
+    <string name="insights_peer_reviewed_guides">أدلة مراجعة من قبل الأقران</string>
+    <string name="insights_intake_high_no_recovery">اتجاهات استهلاكك مرتفعة مع انعدام إجراءات التعافي. ترشيح الكبد وإصلاح الرئة تحت ضغط شديد.</string>
+    <string name="insights_intake_high_recovery">تم اكتشاف استهلاك مرتفع، ولكن بروتوكولات التعافي نشطة. أفعالك تعوض جزئياً الحمل الأيضي.</string>
+    <string name="insights_intake_low_recovery">استهلاك منخفض وتعافٍ نشط. أنظمتك البيولوجية في حالة مثالية من الإصلاح الخلوي.</string>
+    <string name="insights_intake_stable">مستويات الاستهلاك ضمن عتبات التعافي المستقرة. الأنظمة البيولوجية تحافظ على التوازن.</string>
+    <string name="insights_recovery_critical">إجهاد حرج للنظام. مطلوب بروتوكولات ترطيب وراحة فورية لاستقرار الوظيفة العصبية.</string>
+    <string name="insights_recovery_decreasing">استقرار النظام يتناقص. عادة ما تتحسن درجتك بنسبة 15%% عند اكتمال مهام الترطيب.</string>
+    <string name="insights_recovery_progress">التعافي قيد التقدم. يدعم الترطيب تصفية السموم، لكن الراحة الإجمالية لا تزال دون المستوى الأمثل.</string>
+    <string name="insights_recovery_high">مرونة عالية مستمرة. تنجح بروتوكولات الترطيب والراحة المتسقة في موازنة الإجهاد الأيضي.</string>
+    <string name="insights_recovery_stable">ديناميكيات تعافٍ مستقرة. حافظ على بروتوكولات الترطيب والتنفس الحالية لضمان توازن النظام.</string>
+    <string name="insights_urgent_hydration">عاجل: الترطيب بعد الكحول يزيد من معدل التعافي بنسبة 40%%.</string>
+    <string name="insights_success_hydration">نجاح: بروتوكول الترطيب يسرع بنجاح من تصفية السموم.</string>
+    <string name="insights_vascular_stress">الإجهاد الوعائي مرتفع. ابدأ تمرين التنفس لتحسين تدفق الهواء.</string>
+    <string name="insights_breathing_reset">تم اكتشاف إعادة ضبط التنفس. كفاءة الرئة في تحسن.</string>
+    <string name="insights_low_hydration">تم اكتشاف انخفاض في الترطيب. تصفية السموم ليست مثالية حالياً.</string>
+    <string name="insights_high_consistency">اتساق عالٍ: درجة التعافي تتجه للأعلى بسبب التدخلات النشطة.</string>
+    <string name="insights_equilibrium">الأنظمة البيولوجية في حالة توازن. حافظ على البروتوكول الحالي.</string>
+    <string name="insights_alcohol_intake">استهلاك الكحول</string>
+    <string name="insights_metabolic_ethanol">الحمل الأيضي للإيثانول</string>
+    <string name="insights_hydration_active">الترطيب نشط</string>
+    <string name="insights_hydration_deficit">نقص في الترطيب</string>
+    <string name="insights_accelerating_toxin">تسريع تصفية السموم</string>
+    <string name="insights_metabolic_delayed">تأخر المعالجة الأيضية</string>
+    <string name="insights_reduced_hangover">تقليل آثار الثمالة</string>
+    <string name="insights_increased_fatigue">زيادة التعب</string>
+    <string name="insights_systemic_stability_returning">عودة الاستقرار النظامي</string>
+    <string name="insights_neural_recovery_delayed">تأخر التعافي العصبي</string>
+    <string name="insights_nicotine_intake">استهلاك النيكوتين</string>
+    <string name="insights_vascular_constriction">تضيق الأوعية الدموية</string>
+    <string name="insights_breathing_protocol">بروتوكول التنفس</string>
+    <string name="insights_lung_stress">إجهاد الرئة</string>
+    <string name="insights_increasing_oxygen">زيادة امتصاص الأكسجين</string>
+    <string name="insights_lower_oxygen">كفاءة أكسجين أقل</string>
+    <string name="insights_oxygen_stabilized">استقرار الأكسجين</string>
+    <string name="insights_recovery_slowed">تباطؤ التعافي</string>
+    <string name="insights_vascular_decreasing">تناقص الإجهاد الوعائي</string>
+    <string name="insights_reduced_cellular">تقليل الإصلاح الخلوي</string>
+    <string name="insights_clean_protocol">بروتوكول نظيف</string>
+    <string name="insights_zero_toxin">حمل سموم صفري</string>
+    <string name="insights_stable_equilibrium">توازن مستقر</string>
+    <string name="insights_optimal_system">وظيفة نظام مثالية</string>
+    <string name="insights_available_guides">الأدلة المتاحة</string>
+    <string name="insights_rapid_repair">إصلاح سريع</string>
+    <string name="insights_maximum_cellular">أقصى ترميم خلوي</string>
+    <string name="insights_pulmonary_restoration">دراسة الترميم الرئوي</string>
+    <string name="insights_study_desc">تؤكد البيانات السريرية من مركز HAC أن بروتوكولات التنفس العميق المنظمة لمدة 5 دقائق يمكن أن تعوض تضيق الأوعية الحاد بنسبة 20%% مباشرة بعد التعرض للنيكوتين.</string>
+    <string name="insights_access_publication">الوصول إلى النشر الكامل</string>
+    <string name="insights_reach_out">تواصل مع فريق مركز أبحاث HAC لأي ملاحظات سريرية أو أسئلة.</string>
+    <string name="insights_hepatic_restoration">الترميم الكبدي</string>
+    <string name="insights_sleep_architecture">بنية النوم</string>
+    <string name="insights_intracellular_hydration">الترطيب داخل الخلايا</string>
+    <string name="insights_neuro_chemical">التوازن الكيميائي العصبي</string>
+    <string name="insights_questions_concerns">أسئلة أو مخاوف؟</string>
 
     <!-- تسجيل الإدخال -->
-    <string name="intake_tab_intake">تسجيل الإدخال</string>
+    <string name="intake_tab_intake">الإدخال</string>
+    <string name="intake_tab_sleep">النوم</string>
     <string name="intake_alcohol">الكحول</string>
     <string name="intake_smoking">التدخين</string>
-    <string name="intake_confirm_alcohol">CONFIRM ALCOHOL LOG</string>
-    <string name="intake_confirm_smoking">CONFIRMS SMOKING LOG</string>
-    <string name="intake_logged">%1$s Logged</string>
+    <string name="intake_compare_period">مقارنة الفترة</string>
+    <string name="intake_weekly_load">الحمل الأسبوعي</string>
+    <string name="intake_monthly_load">الحمل الشهري</string>
+    <string name="intake_analyzer_active">المحلل نشط</string>
+    <string name="intake_bio_load_summary">ملخص الحمل البيولوجي</string>
+    <string name="intake_recovery_index_preview">معاينة مؤشر التعافي</string>
+    <string name="intake_standard_drinks">مشروبات قياسية</string>
+    <string name="intake_confirm_alcohol">تأكيد سجل الكحول</string>
+    <string name="intake_quantity_cigarettes">الكمية (سجائر)</string>
+    <string name="intake_confirm_smoking">تأكيد سجل التدخين</string>
+    <string name="intake_sleep_alignment">محاذاة النوم والإيقاع اليوماوي</string>
+    <string name="intake_sleep_desc">سجل بنية نومك لتحقيق استقرار أنظمة التنظيم البيولوجي.</string>
+    <string name="intake_subjective_quality">الجودة الذاتية</string>
+    <string name="intake_bedtime_consistency">الاتساق في وقت النوم</string>
+    <string name="intake_night_awakenings">الاستيقاظ الليلي</string>
+    <string name="intake_integrate_sleep">دمج بيانات النوم</string>
+    <string name="intake_duration_hours">المدة (ساعات)</string>
+    <string name="intake_logged">تم تسجيل %1$s</string>
+    <string name="intake_alcohol_feedback">كبدك يعالج السموم حالياً. ابدأ الترطيب لدعم التصفية الأيضية.</string>
+    <string name="intake_smoking_feedback">الإجهاد الوعائي مرتفع حالياً. جلسة تنفس ستحسن كفاءة الأكسجين.</string>
+    <string name="intake_start_hydration">بدء الترطيب</string>
+    <string name="intake_liver_support">دعم الكبد</string>
+    <string name="intake_breathing_exercise">تمرين التنفس</string>
+    <string name="intake_return">عودة</string>
 
     <!-- Recovery & Session Sync -->
     <string name="recovery_biological_resilience">المرونة البيولوجية</string>
@@ -409,5 +431,302 @@
     <string name="act_p6_desc">نصيحة الخبراء: استخدم الماء البارد لإعادة ضبط جهازك العصبي.</string>
     <string name="recovery_lvl">مستوى</string>
 
+    <!-- البروتوكولات المتقدمة لطول العمر -->
+    <string name="lp_autophagy_title">دورة التهام الذاتي</string>
+    <string name="lp_autophagy_purpose">تحفيز "التنظيف الخلوي" من خلال إعادة تدوير البروتينات التالفة وتصفية الحطام الأيضي.</string>
+    <string name="lp_autophagy_step1">بدء نافذة صيام لمدة 16 ساعة.</string>
+    <string name="lp_autophagy_step2">استهلاك 500 مل من المياه الغنية بالمعادن أثناء الصيام.</string>
+    <string name="lp_autophagy_step3">كسر الصيام بوجبة عالية البروتين ومنخفضة المؤشر الجلايسيمي.</string>
+    <string name="lp_autophagy_benefit_short">التبديل الأيضي</string>
+    <string name="lp_autophagy_benefit_long">طول العمر الخلوي</string>
+    <string name="lp_autophagy_insight">التهام الذاتي هو محرك رئيسي لمدى الصحة وتوازن البروتين.</string>
+
+    <string name="lp_thermal_title">التكيف الحراري (التباين)</string>
+    <string name="lp_thermal_purpose">تنشيط بروتينات الصدمة الحرارية (HSP) والدهون البنية لتحسين المرونة القلبية الوعائية.</string>
+    <string name="lp_thermal_step1">التعرض للسونا لمدة 20 دقيقة (80 درجة مئوية+).</string>
+    <string name="lp_thermal_step2">غطس بارد أو دش بارد فوري لمدة 3 دقائق (10 درجات مئوية).</string>
+    <string name="lp_thermal_step3">الراحة لمدة 10 دقائق في بيئة محايدة.</string>
+    <string name="lp_thermal_benefit_short">الامتثال الوعائي</string>
+    <string name="lp_thermal_benefit_long">المرونة القلبية الوعائية</string>
+    <string name="lp_thermal_insight">تعمل بروتينات الصدمة الحرارية كمرافقات جزيئية لطي البروتين.</string>
+
+    <string name="lp_vo2_title">صهر الميتوكوندريا (VO2 Max)</string>
+    <string name="lp_vo2_purpose">أقصى استفادة من الأكسجين لتأخير الشيخوخة البيولوجية للقلب والرئتين.</string>
+    <string name="lp_vo2_step1">إحماء تدريجي لمدة 5 دقائق.</string>
+    <string name="lp_vo2_step2">فترات 4x4: 4 دقائق بأقصى شدة، 3 دقائق تعافي نشط.</string>
+    <string name="lp_vo2_step3">التهدئة بالتنفس الحجابي.</string>
+    <string name="lp_vo2_benefit_short">كثافة الميتوكوندريا</string>
+    <string name="lp_vo2_benefit_long">حيوية القلب والرئة</string>
+    <string name="lp_vo2_insight">VO2 Max هو أقوى مؤشر منفرد للوفيات الناجمة عن جميع الأسباب.</string>
+
+    <string name="lp_glycemic_title">بروتوكول استقرار السكر</string>
+    <string name="lp_glycemic_purpose">تقليل ارتفاع الأنسولين لمنع سكر البروتين والحفاظ على مرونة الجلد والأعضاء.</string>
+    <string name="lp_glycemic_step1">تناول ملعقة كبيرة من خل التفاح في الماء قبل وجبة غنية بالكربوهيدرات.</string>
+    <string name="lp_glycemic_step2">مشى سريع لمدة 15 دقيقة مباشرة بعد الأكل.</string>
+    <string name="lp_glycemic_step3">إعطاء الأولوية للألياف والبروتين قبل استهلاك أي نشويات.</string>
+    <string name="lp_glycemic_benefit_short">الاستقرار بعد الأكل</string>
+    <string name="lp_glycemic_benefit_long">الصحة الأيضية</string>
+    <string name="lp_glycemic_insight">تقليل تقلب الجلوكوز يبطئ الشيخوخة البيولوجية للجلد والأعضاء.</string>
+
+    <string name="lp_glymphatic_title">إعادة ضبط الجهاز اللمفاوي الدماغي</string>
+    <string name="lp_glymphatic_purpose">تحسين نظام تصفية النفايات في الدماغ لمنع تراكم التنكس العصبي.</string>
+    <string name="lp_glymphatic_step1">عدم التعرض للضوء الأزرق قبل النوم بـ 90 دقيقة.</string>
+    <string name="lp_glymphatic_step2">خفض درجة حرارة الغرفة إلى 18 درجة مئوية بالضبط.</string>
+    <string name="lp_glymphatic_step3">النوم على جانبك لتسهيل أقصى تدفق للسائل النخاعي.</string>
+    <string name="lp_glymphatic_benefit_short">الوضوح المعرفي</string>
+    <string name="lp_glymphatic_benefit_long">الحماية العصبية</string>
+    <string name="lp_glymphatic_insight">ينظف الجهاز اللمفاوي الدماغي بروتين بيتا أميلويد أثناء دورات النوم العميق.</string>
+
+    <string name="lp_senolytic_title">تحميل السينوليتيك</string>
+    <string name="lp_senolytic_purpose">تصفية "خلايا الزومبي" التي تحرك الالتهاب.</string>
+    <string name="lp_senolytic_step1">استهلاك 500 مجم من الكيرسيتين أو الأطعمة الغنية بالفيزيتين.</string>
+    <string name="lp_senolytic_step2">صفر استهلاك للسكر المكرر لمدة 24 ساعة.</string>
+    <string name="lp_senolytic_step3">15 دقيقة من تدريب المقاومة الخفيف.</string>
+    <string name="lp_senolytic_benefit_short">تقليل الالتهاب</string>
+    <string name="lp_senolytic_benefit_long">تجديد الأنسجة</string>
+    <string name="lp_senolytic_insight">تحفز السينوليتيك بشكل انتقائي موت الخلايا الهرمة.</string>
+
+    <string name="lp_apob_title">تطهير دهون ApoB</string>
+    <string name="lp_apob_purpose">تقليل قوي للجزيئات المسببة لتصلب الشرايين للقضاء على خطر تراكم اللويحات في الشرايين.</string>
+    <string name="lp_apob_step1">زيادة تناول الألياف القابلة للذوبان إلى 30 جم+ يومياً (بسيليوم/شوفان).</string>
+    <string name="lp_apob_step2">استهلاك 2 جم من أحماض أوميغا 3 الدهنية عالية الـ EPA.</string>
+    <string name="lp_apob_step3">القيام بـ 5 دقائق من "تفريغ أكسيد النيتريك" (قرفصاء/ضغط) لتمهيد بطانة الأوعية.</string>
+    <string name="lp_apob_benefit_short">تمهيد البطانة</string>
+    <string name="lp_apob_benefit_long">المناعة القلبية الوعائية</string>
+    <string name="lp_apob_insight">ApoB هو المحرك الرئيسي لتكوين لويحات تصلب الشرايين.</string>
+
+    <string name="lp_skeletal_title">التحصين الهيكلي</string>
+    <string name="lp_skeletal_purpose">تعظيم كثافة المعادن في العظام والسلامة الهيكلية لمنع الهشاشة المرتبطة بالعمر.</string>
+    <string name="lp_skeletal_step1">تراكم 3 دقائق من "التعلق الميت" من قضيب السحب.</string>
+    <string name="lp_skeletal_step2">أداء 10 دقائق من التحميل اللامتمركز الثقيل (قرفصاء بطيئة/ضغط).</string>
+    <string name="lp_skeletal_step3">تحسين مستويات فيتامين D3 + K2 لإشارات الكالسيوم.</string>
+    <string name="lp_skeletal_benefit_short">المحاذاة الهيكلية</string>
+    <string name="lp_skeletal_benefit_long">منع الهشاشة</string>
+    <string name="lp_skeletal_insight">قوة القبضة وكثافة العظام هما مؤشران عالي الدقة للاستقلال الذاتي في أواخر العمر.</string>
+
+    <string name="lp_dna_title">درع مثيلة الحمض النووي</string>
+    <string name="lp_dna_purpose">تعظيم قدرة إصلاح الحمض النووي وإسكات جينات الشيخوخة المحفزة للالتهابات.</string>
+    <string name="lp_dna_step1">تناول 100 مجم من السلفورافان (براعم البروكلي) أو مستخلص صليبي مركز.</string>
+    <string name="lp_dna_step2">10 دقائق من اليقظة الذهنية لقمع تلف الحمض النووي الناتج عن الكورتيزول.</string>
+    <string name="lp_dna_step3">تجنب جميع الزيوت المعالجة واللحوم المتفحمة لمدة 24 ساعة.</string>
+    <string name="lp_dna_benefit_short">الاستقرار الجيني</string>
+    <string name="lp_dna_benefit_long">تخفيف مخاطر السرطان</string>
+    <string name="lp_dna_insight">تملي أنماط المثيلة معدل الشيخوخة البيولوجية (ساعة هورفاث).</string>
+
+    <!-- سلاسل المكافآت والذكاء -->
+    <string name="reward_h1_title">اكتمل قفل الترطيب</string>
+    <string name="reward_h1_msg">تم استعادة التوصيل العصبي. يمتلك دماغك الآن توازن الإلكتروليتات المطلوب للإشارات المثالية وتصفية النفايات.</string>
+    <string name="reward_mn1_title">تم وضع مرساة الأيض</string>
+    <string name="reward_mn1_msg">استقرار سكر الدم. لقد نجحت في منع ارتفاع الكورتيزول، مما يحافظ على احتياطيات الطاقة لديك للـ 4 ساعات القادمة.</string>
+    <string name="reward_rl1_title">تم تحسين نغمة العصب المبهم</string>
+    <string name="reward_rl1_msg">تحقق التحول اللاودّي. يتجه تقلب معدل ضربات القلب الآن نحو الأعلى، مما يشير إلى حالة من مرونة التعافي العالية.</string>
+    <string name="reward_sl1_title">درع الميلاتونين نشط</string>
+    <string name="reward_sl1_msg">تجنب اضطراب الساعة البيولوجية. من خلال حماية عينيك من الضوء الأزرق، قمت بتأمين عمق دورة نوم N3 القادمة.</string>
+    <string name="reward_cc2_title">بدء التدفق الوعائي</string>
+    <string name="reward_cc2_msg">تقليل الالتهاب الجهازي. حفز التعرض للبرد إفراز النورأدرينالين، مما شحذ التركيز وسرع الإصلاح الخلوي.</string>
+
+    <string name="reward_lp_autophagy_title">قفل التهام الذاتي: نشط</string>
+    <string name="reward_lp_autophagy_gain">+6.2 ساعة</string>
+    <string name="reward_lp_autophagy_metric">إعادة التدوير الخلوي</string>
+    <string name="reward_lp_autophagy_desc">تم تصفية البروتينات سيئة الطي. تقليل الالتهاب الجهازي.</string>
+
+    <string name="reward_lp_thermal_title">الاستجابة التكيفية: ذروة</string>
+    <string name="reward_lp_thermal_gain">+4.8 ساعة</string>
+    <string name="reward_lp_thermal_metric">المرونة الوعائية</string>
+    <string name="reward_lp_thermal_desc">تم كشف تنشيط بروتين الصدمة الحرارية (HSP-70).</string>
+
+    <string name="reward_lp_vo2_title">طفرة الميتوكوندريا: مؤكدة</string>
+    <string name="reward_lp_vo2_gain">+12.5 ساعة</string>
+    <string name="reward_lp_vo2_metric">السعة الهوائية</string>
+    <string name="reward_lp_vo2_desc">زيادة كثافة الميتوكوندريا. تحسين مسار VO2 Max.</string>
+
+    <string name="reward_lp_glycemic_title">الدرع الأيضي: مشتبك</string>
+    <string name="reward_lp_glycemic_gain">+5.1 ساعة</string>
+    <string name="reward_lp_glycemic_metric">حساسية الأنسولين</string>
+    <string name="reward_lp_glycemic_desc">معادلة ارتفاع الجلوكوز بعد الأكل.</string>
+
+    <string name="reward_lp_glymphatic_title">التدفق العصبي: جاهز</string>
+    <string name="reward_lp_glymphatic_gain">+3.9 ساعة</string>
+    <string name="reward_lp_glymphatic_metric">تصفية النفايات</string>
+    <string name="reward_lp_glymphatic_desc">تحسين تصريف بيتا أميلويد للنوم العميق.</string>
+
+    <string name="reward_ts_dopamine_title">إعادة ضبط خط الأساس: مؤمن</string>
+    <string name="reward_ts_dopamine_gain">+14% استقرار</string>
+    <string name="reward_ts_dopamine_metric">ضبط الدوبامين العصبي</string>
+    <string name="reward_ts_dopamine_desc">خفاض تنظيم مستقبلات النيكوتين. زيادة حساسية الدوبامين الأساسية.</string>
+
+    <string name="reward_ts_vascular_title">طفرة الامتثال: ذروة</string>
+    <string name="reward_ts_vascular_gain">+8% مرونة</string>
+    <string name="reward_ts_vascular_metric">التعافي البطاني</string>
+    <string name="reward_ts_vascular_desc">معادلة تضيق الأوعية الناجم عن الإيثانول.</string>
+
+    <string name="reward_ts_cortisol_title">الحمل التكيفي: مخفض</string>
+    <string name="reward_ts_cortisol_gain">-22% توتر</string>
+    <string name="reward_ts_cortisol_metric">معايرة الغدة الكظرية</string>
+    <string name="reward_ts_cortisol_desc">تثبيط مستويات الكورتيزول عبر المزامنة الحجابية.</string>
+
+    <string name="reward_ts_liver_title">التدفق الكبدي: نشط</string>
+    <string name="reward_ts_liver_gain">+11% كفاءة</string>
+    <string name="reward_ts_liver_metric">التصفية الأيضية</string>
+    <string name="reward_ts_liver_desc">تحفيز مسارات الجلوتاثيون لتسريع تصفية السموم.</string>
+
+    <string name="reward_generic_title">تم تنفيذ التوجيه</string>
+    <string name="reward_generic_gain">+2.5 ساعة</string>
+    <string name="reward_generic_metric">المرونة النظامية</string>
+    <string name="reward_generic_desc">تحديث المسارات البيولوجية. كل بروتوكول يبني احتياطياً تراكمياً.</string>
+    <string name="reward_generic_msg">تم تحديث النظام البيولوجي. كل توجيه مكتمل يقوي بنية تعافيك على المدى الطويل.</string>
+
+    <!-- التنبيهات -->
+    <string name="notif_morning_title">مطلوب التنشيط البيولوجي</string>
+    <string name="notif_morning_msg_1">دماغك في حالة جفاف ليلي. ابدأ ترطيب الصباح لاستعادة القدرة العصبية.</string>
+    <string name="notif_morning_msg_2">تم كشف استجابة اليقظة للكورتيزول. غادر السرير الآن لقفل إيقاعك اليوماوي للـ 16 ساعة القادمة.</string>
+
+    <string name="notif_midday_title">تنبيه صيانة النظام</string>
+    <string name="notif_midday_msg_1">الحمل الأيضي في ذروته. نفذ بروتوكول مرساة سكر الدم لمنع الانخفاض المعرفي بعد الظهر.</string>
+    <string name="notif_midday_msg_2">نغمة العصب المبهم تتناقص. رشة ماء بارد لمدة دقيقتين ستعيد ضبط تركيزك وتخفض الكورتيزول الجهازي.</string>
+
+    <string name="notif_afternoon_title">مرحلة الحماية نشطة</string>
+    <string name="notif_afternoon_msg_1">تم كشف إجهاد وعائي. إعادة ضبط العصب المبهم لمدة 5 دقائق ستخفض استجابة الإجهاد لديك فوراً.</string>
+    <string name="notif_afternoon_msg_2">التعب العصبي يتراكم. ابدأ صيام الدوبامين لمدة 15 دقيقة لإعادة معايرة دوائر التركيز لديك.</string>
+
+    <string name="notif_evening_title">نافذة الترميم تفتح</string>
+    <string name="notif_evening_msg_1">جهز بنيتك العصبية للإصلاح. ابدأ صيام الضوء الأزرق لحماية إنتاج الميلاتونين لديك.</string>
+    <string name="notif_evening_msg_2">التصفية الأيضية تتباطأ. رطب الآن بالإلكتروليتات لدعم ترشيح الكبد أثناء النوم.</string>
+
+    <string name="notif_night_title">بروتوكول التعافي العميق</string>
+    <string name="notif_night_msg_1">جهازك اللمفاوي الدماغي جاهز لغسل النفايات الأيضية. حسن بيئتك لنوم N3 العميق الآن.</string>
+    <string name="notif_night_msg_2">بدء المزامنة العصبية. استخدم بروتوكول تنفس 4-7-8 لفرض تحول لاودّي لراحة عميقة.</string>
+
+    <!-- إضافات فيتاليس -->
+    <string name="vitalis_log_intake">سجل الإدخال</string>
+    <string name="vitalis_therapeutic">علاجي</string>
+    <string name="vitalis_engine">محرك فيتاليس</string>
+    <string name="vitalis_analysis_report">تقرير التحليل البيولوجي</string>
+    <string name="vitalis_active_interventions">التدخلات النشطة</string>
+    <string name="vitalis_clinical_data">أدلة البيانات السريرية</string>
+    <string name="vitalis_recovery_projection">توقعات التعافي</string>
+    <string name="vitalis_cellular_markers">المؤشرات الخلوية</string>
+    <string name="vitalis_neural_optimization">التحسين العصبي</string>
+    <string name="vitalis_metabolic_reset">إعادة الضبط الأيضي</string>
+    <string name="vitalis_vascular_repair">الإصلاح الوعائي</string>
+    <string name="vitalis_systemic_balance">التوازن النظامي</string>
+    <string name="vitalis_autophagy_trigger">محفز التهام الذاتي</string>
+    <string name="vitalis_glymphatic_clearance">التصفية اللمفاوية الدماغية</string>
+    <string name="vitalis_mitochondrial_health">صحة الميتوكوندريا</string>
+    <string name="vitalis_hormesis_protocol">بروتوكول التكيف (Hormesis)</string>
+    <string name="vitalis_bio_resilience">المرونة البيولوجية</string>
+    <string name="vitalis_oxidative_stress">التحكم في الإجهاد الأكسدي</string>
+    <string name="vitalis_longevity_score">درجة طول العمر</string>
+    <string name="vitalis_protocol_accuracy">دقة البروتوكول</string>
+    <string name="vitalis_real_time_tracking">تتبع في الوقت الفعلي</string>
+    <string name="vitalis_expert_engine">محرك فيتاليس الخبير</string>
+    <string name="vitalis_biological_command">القيادة البيولوجية</string>
+    <string name="vitalis_biological_optimization">التحسين البيولوجي</string>
+    <string name="vitalis_intervention_logged">تم تسجيل التدخل بنجاح. تم تحديث مؤشراتك الخلوية.</string>
+    <string name="vitalis_continue_scan">مواصلة المسح</string>
+    <string name="vitalis_module_detail_domain">النطاق</string>
+    <string name="vitalis_neural_connectivity">التوصيل العصبي</string>
+    <string name="vitalis_search_compounds">البحث عن المركبات…</string>
+    <string name="vitalis_clinically_indexed">مفهرس سريرياً</string>
+    <string name="vitalis_dictionary_title">قاموس فيتاليس</string>
+    <string name="vitalis_dictionary_subtitle">قاعدة بيانات سريرية لأكثر من 150 مركباً بيولوجياً.</string>
+    <string name="vitalis_dictionary_desc">يحتوي قاموس فيتاليس على بيانات حول المغذيات والبروتوكولات وعلم الأدوية الحديث. اكتب لمسح قاعدة الأدلة.</string>
+    <string name="vitalis_clinical_rationale">الأساس السريري</string>
+    <string name="vitalis_command">الأمر</string>
+    <string name="vitalis_intel">الذكاء</string>
+    <string name="vitalis_library">المكتبة</string>
+    <string name="vitalis_back">رجوع</string>
+    <string name="vitalis_notifications">التنبيهات</string>
+    <string name="vitalis_syncing">مزامنة</string>
+    <string name="vitalis_module_stress">المرونة العصبية الصماء والإجهاد</string>
+    <string name="vitalis_module_physical">السلامة العضلية الهيكلية والحركة</string>
+    <string name="vitalis_module_cognitive">الوظيفة المعرفية واللدونة العصبية</string>
+    <string name="vitalis_synchronization_progress">المزامنة قيد التقدم…</string>
+    <string name="vitalis_acute_neural_load">الحمل العصبي الحاد</string>
+    <string name="vitalis_physical_strain_index">مؤشر الإجهاد البدني</string>
+    <string name="vitalis_cognitive_reserve">الاحتياطي المعرفي</string>
+    <string name="vitalis_autonomic_balance">التوازن اللاإرادي</string>
+    <string name="vitalis_biochemical_status">الحالة الكيميائية الحيوية</string>
+    <string name="vitalis_metabolic_efficiency">الكفاءة الأيضية</string>
+    <string name="vitalis_regeneration_rate">معدل التجديد</string>
+    <string name="vitalis_phase_daytime">المرحلة: تحسين النهار</string>
+    <string name="vitalis_phase_execution">المرحلة: تنفيذ التعافي</string>
+    <string name="vitalis_phase_nocturnal">المرحلة: الإصلاح الليلي</string>
+    <string name="vitalis_project_vitalis">PROJECT VITALIS™</string>
+    <string name="vitalis_acute_neural_reset">إعادة ضبط عصبية حادة</string>
+
+    <string name="recovery_index_detail">تعمق في مرونتك البيولوجية الحالية ومستوى تنظيمك الجهازي.</string>
+    <string name="recovery_daily_rituals">طقوس التعافي اليومية</string>
+    <string name="recovery_expert_directives">توجيهات الخبراء</string>
+    <string name="recovery_system_status">حالة النظام</string>
+    <string name="recovery_optimization_path">مسار التحسين</string>
+    <string name="recovery_neural_resilience">المرونة العصبية</string>
+    <string name="recovery_metabolic_efficiency">الكفاءة الأيضية</string>
+    <string name="recovery_cardiac_load">الحمل القلبي</string>
+    <string name="recovery_respiratory_power">القوة التنفسية</string>
+    <string name="recovery_liver_regeneration">تجديد الكبد</string>
+
+    <string name="coach_ai_advisor">مستشار الذكاء الاصطناعي</string>
+    <string name="coach_biological_insight">رؤية بيولوجية</string>
+    <string name="coach_recovery_support">دعم التعافي</string>
+    <string name="coach_clinical_guidance">إرشاد سريري</string>
+    <string name="coach_active_session">جلسة نشطة</string>
+    <string name="coach_ai_coach">مدرب الصحة بالذكاء الاصطناعي</string>
+    <string name="coach_chat_with_ai">تحدث مع مدرب التعافي بالذكاء الاصطناعي</string>
+
+    <!-- Community Strings -->
+    <string name="community_active_circles">دوائر نشطة</string>
+    <string name="community_add_comment">إضافة تعليق…</string>
+    <string name="community_blocked">محظور</string>
+    <string name="community_call">اتصال</string>
+    <string name="community_circle">دائرة</string>
+    <string name="community_circle_name">اسم الدائرة</string>
+    <string name="community_circles_desc">بيئة دعم خاصة</string>
+    <string name="community_cloaked_mode">وضع التخفي نشط</string>
+    <string name="community_close_profile">إغلاق الملف الشخصي</string>
+    <string name="community_direct_encrypted">مشفر مباشر</string>
+    <string name="community_discover_circles">اكتشف الدوائر</string>
+    <string name="community_discover_desc">ابحث عن الدعم بناءً على مسارك</string>
+    <string name="community_hosted_by">مستضاف من قبل %1$s</string>
+    <string name="community_initialize_sos">بدء مكالمة استغاثة (SOS)</string>
+    <string name="community_join">انضمام</string>
+    <string name="community_join_circle">انضمام</string>
+    <string name="community_launch">إنشاء</string>
+    <string name="community_launch_circle">إطلاق دائرة</string>
+    <string name="community_launch_support_circle">إطلاق دائرة دعم</string>
+    <string name="community_live_session">جلسة مباشرة: %1$s</string>
+    <string name="community_managed_circles">دوائر مدارة</string>
+    <string name="community_message">رسالة</string>
+    <string name="community_new_post">منشور جديد</string>
+    <string name="community_no_active_sessions">لا توجد جلسات نشطة</string>
+    <string name="community_no_posts">لا توجد منشورات.</string>
+    <string name="community_no_private_sessions">لا توجد جلسات خاصة</string>
+    <string name="community_no_public_circles">لا توجد دوائر عامة بعد. أنشئ الدائرة الأولى!</string>
+    <string name="community_peer_circle">دائرة دعم الأقران</string>
+    <string name="community_primary_focus">التركيز الأساسي</string>
+    <string name="community_purpose_guidelines">الغرض والإرشادات</string>
+    <string name="community_recent_breakthroughs">الإنجازات الأخيرة</string>
+    <string name="community_recovery">التعافي</string>
+    <string name="community_secure_session">جلسة آمنة</string>
+    <string name="community_sos_desc">دعم صوتي مباشر للاحتياجات العاجلة</string>
+    <string name="community_sos_sessions">جلسات SOS الصوتية</string>
+    <string name="community_tab_circles">الدوائر</string>
+    <string name="community_tab_sos">صوت SOS</string>
+    <string name="community_terminate_session">إنهاء الجلسة</string>
+    <string name="community_toggle_anonymity">تبديل إخفاء الهوية</string>
+    <string name="community_type_message">اكتب رسالة…</string>
+    <string name="community_unblock_user">إلغاء الحظر</string>
+    <string name="community_verified_member">عضو موثق</string>
+    <string name="vitalis_log_protocol_completed">سجل البروتوكول كمكتمل</string>
+    <string name="vitalis_complete">إتمام</string>
+    <string name="vitalis_log_completion">تسجيل الإتمام</string>
+
+    <!-- Expert Feedback -->
+    <string name="feedback_instant_gratification">تم تسجيل التحول البيولوجي</string>
+    <string name="feedback_health_dividends">عوائد صحية</string>
+    <string name="feedback_next_ritual">توجيه الطقوس القادمة</string>
+    <string name="feedback_close_ritual">إغلاق الطقوس</string>
 </resources>
+
+
 

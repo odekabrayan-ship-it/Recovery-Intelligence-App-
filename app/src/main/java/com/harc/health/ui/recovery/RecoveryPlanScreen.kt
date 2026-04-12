@@ -42,6 +42,7 @@ import java.util.Calendar
 fun RecoveryPlanScreen(viewModel: MainViewModel) {
     val healthLog by viewModel.healthLog.collectAsState()
     var activeActivity by remember { mutableStateOf<Activity?>(null) }
+    var showQuickFeedback by remember { mutableStateOf<Activity?>(null) }
     val listState = rememberLazyListState()
     
     var simulatedHour by remember { mutableStateOf<Int?>(null) }
@@ -166,7 +167,7 @@ fun RecoveryPlanScreen(viewModel: MainViewModel) {
                     )
                 }
                 items(RecoveryEngine.getTasksForCategory(categoryRes)) { task ->
-                    RecoveryTaskItem(task, viewModel, isPriority = isActiveTime, isNight = isNight) { activeActivity = it }
+                    RecoveryTaskItem(task, viewModel, isPriority = isActiveTime, isNight = isNight, onStartActivity = { activeActivity = it }, onQuickComplete = { showQuickFeedback = it })
                 }
             }
 
@@ -190,7 +191,7 @@ fun RecoveryPlanScreen(viewModel: MainViewModel) {
                 )
             }
             items(RecoveryEngine.getTasksForCategory(R.string.recovery_cat_liver_metabolic)) { task ->
-                RecoveryTaskItem(task, viewModel, isNight = isNight) { activeActivity = it }
+                RecoveryTaskItem(task, viewModel, isNight = isNight, onStartActivity = { activeActivity = it }, onQuickComplete = { showQuickFeedback = it })
             }
 
             // 2. CARDIOVASCULAR & CIRCULATION
@@ -203,7 +204,7 @@ fun RecoveryPlanScreen(viewModel: MainViewModel) {
                 )
             }
             items(RecoveryEngine.getTasksForCategory(R.string.recovery_cat_cardiovascular)) { task ->
-                RecoveryTaskItem(task, viewModel, isNight = isNight) { activeActivity = it }
+                RecoveryTaskItem(task, viewModel, isNight = isNight, onStartActivity = { activeActivity = it }, onQuickComplete = { showQuickFeedback = it })
             }
 
             // 3. RESPIRATORY & LUNG HEALTH
@@ -216,7 +217,7 @@ fun RecoveryPlanScreen(viewModel: MainViewModel) {
                 )
             }
             items(RecoveryEngine.getTasksForCategory(R.string.recovery_cat_respiratory)) { task ->
-                RecoveryTaskItem(task, viewModel, isNight = isNight) { activeActivity = it }
+                RecoveryTaskItem(task, viewModel, isNight = isNight, onStartActivity = { activeActivity = it }, onQuickComplete = { showQuickFeedback = it })
             }
 
             item { Spacer(modifier = Modifier.height(100.dp)) }
@@ -231,6 +232,13 @@ fun RecoveryPlanScreen(viewModel: MainViewModel) {
                     activeActivity = null
                 },
                 onBack = { activeActivity = null }
+            )
+        }
+
+        if (showQuickFeedback != null) {
+            CompletionRitualOverlay(
+                activity = showQuickFeedback!!,
+                onLog = { showQuickFeedback = null }
             )
         }
     }
@@ -341,7 +349,8 @@ fun RecoveryTaskItem(
     viewModel: MainViewModel, 
     isPriority: Boolean = false,
     isNight: Boolean = false,
-    onStartActivity: (Activity) -> Unit
+    onStartActivity: (Activity) -> Unit,
+    onQuickComplete: (Activity) -> Unit = {}
 ) {
     val healthLog by viewModel.healthLog.collectAsState()
     val isCompleted = healthLog.actionsCompleted.contains(task.id)
@@ -365,7 +374,16 @@ fun RecoveryTaskItem(
             }
             .clip(RoundedCornerShape(20.dp))
             .clickable {
-                if (activity != null) onStartActivity(activity) else viewModel.toggleAction(task.id)
+                if (isCompleted) return@clickable
+                if (activity != null) {
+                    if (isLiveRitual) onStartActivity(activity)
+                    else {
+                        viewModel.toggleAction(task.id)
+                        onQuickComplete(activity)
+                    }
+                } else {
+                    viewModel.toggleAction(task.id)
+                }
             },
         color = when {
             isCompleted -> GreenRecovery.copy(alpha = if (isNight) 0.2f else 0.1f)
@@ -447,11 +465,39 @@ fun RecoveryTaskItem(
             }
             
             if (!isCompleted) {
-                Icon(
-                    imageVector = if (isLiveRitual) Icons.Default.PlayCircle else Icons.Default.AddCircleOutline,
-                    contentDescription = null,
-                    tint = if (isLiveRitual) BluePrimary else (if (isNight) Color.White.copy(alpha = 0.3f) else MaterialTheme.colorScheme.primary.copy(alpha = 0.5f))
-                )
+                if (isLiveRitual) {
+                    IconButton(
+                        onClick = { onStartActivity(activity) },
+                        modifier = Modifier.size(32.dp)
+                    ) {
+                        Icon(
+                            imageVector = Icons.Default.PlayCircle,
+                            contentDescription = null,
+                            tint = BluePrimary
+                        )
+                    }
+                    Spacer(modifier = Modifier.width(8.dp))
+                }
+                
+                Button(
+                    onClick = {
+                        viewModel.toggleAction(task.id)
+                        activity?.let { onQuickComplete(it) }
+                    },
+                    colors = ButtonDefaults.buttonColors(
+                        containerColor = (if (isLiveRitual) GreenRecovery else BluePrimary).copy(alpha = 0.1f), 
+                        contentColor = if (isLiveRitual) GreenRecovery else BluePrimary
+                    ),
+                    contentPadding = PaddingValues(horizontal = 12.dp, vertical = 4.dp),
+                    modifier = Modifier.height(32.dp),
+                    shape = RoundedCornerShape(8.dp)
+                ) {
+                    Text(
+                        text = stringResource(R.string.vitalis_complete), 
+                        style = MaterialTheme.typography.labelMedium, 
+                        fontWeight = FontWeight.Black
+                    )
+                }
             }
         }
     }

@@ -1,6 +1,7 @@
 *.iml
 .gradle
 /local.properties
+/app/release-key.jks
 /.idea/caches
 /.idea/libraries
 /.idea/modules.xml
@@ -13,3 +14,10 @@
 .externalNativeBuild
 .cxx
 local.properties
+/app/release-key.jks
+.kotlin/
+*.log
+keys_*.txt
+missing_*.txt
+recovery_keys_extracted.txt
+app/debug/

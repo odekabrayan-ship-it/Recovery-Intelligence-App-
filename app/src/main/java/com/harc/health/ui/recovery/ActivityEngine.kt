@@ -3,6 +3,7 @@ package com.harc.health.ui.recovery
 import androidx.activity.compose.BackHandler
 import androidx.compose.animation.*
 import androidx.compose.animation.core.*
+import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
@@ -119,6 +120,12 @@ fun ActivityPlayer(
                     IconButton(onClick = onBack) { Icon(Icons.AutoMirrored.Filled.ArrowBack, null) }
                 },
                 actions = {
+                    TextButton(
+                        onClick = { showCompletion = true },
+                        colors = ButtonDefaults.textButtonColors(contentColor = GreenRecovery)
+                    ) {
+                        Text("Complete Now", fontWeight = FontWeight.Black)
+                    }
                     IconButton(onClick = { showGuidance = true }) { Icon(Icons.AutoMirrored.Outlined.HelpOutline, null) }
                 }
             )
@@ -388,38 +395,153 @@ fun ExpertGuidanceOverlay(activity: Activity, onDismiss: () -> Unit) {
 
 @Composable
 fun CompletionRitualOverlay(activity: Activity, onLog: () -> Unit) {
+    val dividendRes = remember(activity.id) {
+        when {
+            activity.id.contains("ca") || activity.id.contains("vascular") -> R.string.dividend_vascular_elasticity
+            activity.id.contains("sl") || activity.id.contains("sleep") -> R.string.dividend_glymphatic_flow
+            activity.id.contains("me") || activity.id.contains("metabolic") -> R.string.dividend_metabolic_throughput
+            activity.id.contains("st") || activity.id.contains("vagal") -> R.string.dividend_cortisol_reduction
+            activity.id.contains("co") || activity.id.contains("coherence") -> R.string.dividend_neural_coherence
+            activity.id.contains("lp") -> R.string.dividend_mitochondrial_biogenesis
+            else -> R.string.dividend_systemic_resilience
+        }
+    }
+
+    val nextRitualRes = remember(activity.id) {
+        when {
+            // Sleep/Evening rituals -> Next in morning
+            activity.id.contains("sl") || activity.id.contains("evening") || activity.id.contains("night") || activity.id == "circadian_sync" -> 
+                R.string.next_ritual_morning
+            
+            // Morning/Hydration rituals -> Next in evening/pre-sleep
+            activity.id.contains("morning") || activity.id == "hydration_action" || activity.id == "h1" -> 
+                R.string.next_ritual_pre_sleep
+            
+            // Metabolic/Glucose rituals -> Post-meal
+            activity.id.contains("me") || activity.id.contains("glycemic") || activity.id == "h4" -> 
+                R.string.next_ritual_post_meal
+            
+            // Acute stress/Vagal rituals -> On stress or Midday
+            activity.id == "vagal_reset" || activity.id == "st_1" || activity.id == "cc1" -> 
+                R.string.next_ritual_stress
+                
+            // Cognitive/Dopamine -> Midday
+            activity.id == "dopamine_reset" -> 
+                R.string.next_ritual_midday
+                
+            // Physical/Respiratory -> Post-exercise
+            activity.id.contains("rl") || activity.id == "diaphragmatic_breathing" -> 
+                R.string.next_ritual_post_exercise
+            
+            // Urgent/Persistent
+            activity.id.contains("urgent") || activity.id == "p1" || activity.id == "urge_surfing" -> 
+                R.string.next_ritual_urgent
+
+            else -> R.string.next_ritual_daily
+        }
+    }
+
     Surface(modifier = Modifier.fillMaxSize(), color = Color.Black.copy(alpha = 0.96f)) {
         Column(
-            modifier = Modifier.padding(32.dp).fillMaxSize(), 
-            horizontalAlignment = Alignment.CenterHorizontally, 
+            modifier = Modifier
+                .padding(32.dp)
+                .fillMaxSize()
+                .verticalScroll(rememberScrollState()),
+            horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Center
         ) {
-            Icon(Icons.Default.Verified, contentDescription = null, tint = GreenRecovery, modifier = Modifier.size(100.dp))
+            Icon(
+                Icons.Default.Verified,
+                contentDescription = null,
+                tint = GreenRecovery,
+                modifier = Modifier.size(80.dp)
+            )
             Spacer(modifier = Modifier.height(24.dp))
-            Text("BIOLOGICAL SHIFT LOGGED", style = MaterialTheme.typography.headlineSmall, color = Color.White, fontWeight = FontWeight.Black)
+            Text(
+                stringResource(R.string.feedback_instant_gratification),
+                style = MaterialTheme.typography.headlineSmall,
+                color = Color.White,
+                fontWeight = FontWeight.Black,
+                textAlign = TextAlign.Center
+            )
             Spacer(modifier = Modifier.height(16.dp))
+            
+            // Bio-Shift Description
             Card(
-                colors = CardDefaults.cardColors(containerColor = Color.White.copy(alpha = 0.1f)),
+                colors = CardDefaults.cardColors(containerColor = Color.White.copy(alpha = 0.05f)),
                 shape = RoundedCornerShape(16.dp),
-                border = androidx.compose.foundation.BorderStroke(1.dp, Color.White.copy(alpha = 0.1f))
+                border = BorderStroke(1.dp, Color.White.copy(alpha = 0.1f))
             ) {
                 Text(
-                    text = stringResource(activity.impactDescRes), 
-                    color = Color.White, 
+                    text = stringResource(activity.impactDescRes),
+                    color = Color.White.copy(alpha = 0.9f),
                     textAlign = TextAlign.Center,
-                    modifier = Modifier.padding(24.dp),
-                    style = MaterialTheme.typography.bodyLarge,
-                    lineHeight = 26.sp
+                    modifier = Modifier.padding(20.dp),
+                    style = MaterialTheme.typography.bodyMedium,
+                    lineHeight = 22.sp
                 )
             }
+            
+            Spacer(modifier = Modifier.height(24.dp))
+            
+            Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(16.dp)) {
+                // Health Dividends Section
+                Column(modifier = Modifier.weight(1f)) {
+                    Text(
+                        stringResource(R.string.feedback_health_dividends),
+                        style = MaterialTheme.typography.labelLarge,
+                        color = GreenRecovery,
+                        fontWeight = FontWeight.Bold
+                    )
+                    Spacer(modifier = Modifier.height(8.dp))
+                    Card(
+                        colors = CardDefaults.cardColors(containerColor = GreenRecovery.copy(alpha = 0.1f)),
+                        shape = RoundedCornerShape(12.dp)
+                    ) {
+                        Text(
+                            stringResource(dividendRes),
+                            modifier = Modifier.padding(12.dp),
+                            style = MaterialTheme.typography.bodySmall,
+                            color = Color.White,
+                            fontWeight = FontWeight.Medium
+                        )
+                    }
+                }
+                
+                // Next Directive Section
+                Column(modifier = Modifier.weight(1f)) {
+                    Text(
+                        stringResource(R.string.feedback_next_ritual),
+                        style = MaterialTheme.typography.labelLarge,
+                        color = BluePrimary,
+                        fontWeight = FontWeight.Bold
+                    )
+                    Spacer(modifier = Modifier.height(8.dp))
+                    Card(
+                        colors = CardDefaults.cardColors(containerColor = BluePrimary.copy(alpha = 0.1f)),
+                        shape = RoundedCornerShape(12.dp)
+                    ) {
+                        Text(
+                            stringResource(nextRitualRes),
+                            modifier = Modifier.padding(12.dp),
+                            style = MaterialTheme.typography.bodySmall,
+                            color = Color.White,
+                            fontWeight = FontWeight.Medium
+                        )
+                    }
+                }
+            }
+
             Spacer(modifier = Modifier.height(48.dp))
             Button(
-                onClick = onLog, 
-                modifier = Modifier.fillMaxWidth().height(64.dp), 
+                onClick = onLog,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(64.dp),
                 colors = ButtonDefaults.buttonColors(containerColor = GreenRecovery),
                 shape = RoundedCornerShape(20.dp)
             ) {
-                Text("CLOSE RITUAL", fontWeight = FontWeight.Black, fontSize = 18.sp)
+                Text(stringResource(R.string.feedback_close_ritual), fontWeight = FontWeight.Black, fontSize = 18.sp)
             }
         }
     }

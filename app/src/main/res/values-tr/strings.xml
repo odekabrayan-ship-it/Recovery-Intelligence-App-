@@ -167,48 +167,82 @@
     <string name="lp_autophagy_step1">16 saatlik bir açlık penceresi başlatın.</string>
     <string name="lp_autophagy_step2">Açlık sırasında 500 ml mineral bakımından zengin su tüketin.</string>
     <string name="lp_autophagy_step3">Açlığı yüksek proteinli, düşük glisemik indeksli bir öğünle bozun.</string>
+    <string name="lp_autophagy_benefit_short">Metabolik Geçiş</string>
+    <string name="lp_autophagy_benefit_long">Hücresel Uzun Ömür</string>
+    <string name="lp_autophagy_insight">Otofaji, sağlık süresi ve protein homeostazının temel bir itici gücüdür.</string>
 
     <string name="lp_thermal_title">Termal Hormezis (Kontrast)</string>
     <string name="lp_thermal_purpose">Isı Şoku Proteinlerini (HSP) ve kahverengi yağı aktive ederek kardiyovasküler dayanıklılığı artırın.</string>
     <string name="lp_thermal_step1">20 dakikalık Sauna maruziyeti (80°C+).</string>
     <string name="lp_thermal_step2">Hemen 3 dakikalık Soğuk Dalış veya Duş (10°C).</string>
     <string name="lp_thermal_step3">Nötr bir ortamda 10 dakika dinlenin.</string>
+    <string name="lp_thermal_benefit_short">Vasküler Uyum</string>
+    <string name="lp_thermal_benefit_long">Kardiyovasküler Dayanıklılık</string>
+    <string name="lp_thermal_insight">Isı şoku proteinleri, protein katlanması için moleküler şaperonlar olarak görev yapar.</string>
 
     <string name="lp_vo2_title">Mitokondriyal Ocak (VO2 Maks)</string>
     <string name="lp_vo2_purpose">Kalp ve akciğerlerin biyolojik yaşlanmasını geciktirmek için maksimum oksijen kullanımı.</string>
     <string name="lp_vo2_step1">5 dakikalık aşamalı ısınma.</string>
     <string name="lp_vo2_step2">4x4 İntervaller: 4 dakika Maksimum Yoğunlukta, 3 dakika aktif toparlanma.</string>
     <string name="lp_vo2_step3">Diyafram nefesi ile soğuma.</string>
+    <string name="lp_vo2_benefit_short">Mitokondriyal Yoğunluk</string>
+    <string name="lp_vo2_benefit_long">Kalp ve Akciğer Canlılığı</string>
+    <string name="lp_vo2_insight">VO2 Max, tüm nedenlere bağlı ölümlerin en güçlü tek göstergesidir.</string>
 
     <string name="lp_glycemic_title">Glisemik Stabilite Protokolü</string>
     <string name="lp_glycemic_purpose">Protein glikasyonunu önlemek ve cilt/organ elastikiyetini korumak için insülin artışlarını minimize edin.</string>
     <string name="lp_glycemic_step1">Karbonhidrat ağırlıklı bir öğünden önce suya 1 yemek kaşığı Elma Sirkesi ekleyip için.</string>
     <string name="lp_glycemic_step2">Yemekten hemen sonra 15 dakikalık tempolu yürüyüş.</string>
     <string name="lp_glycemic_step3">Herhangi bir nişasta tüketiminden önce lif ve proteine öncelik verin.</string>
+    <string name="lp_glycemic_benefit_short">Yemek Sonrası Stabilite</string>
+    <string name="lp_glycemic_benefit_long">Metabolik Sağlık</string>
+    <string name="lp_glycemic_insight">Glikoz değişkenliğini azaltmak, cilt ve organların biyolojik yaşlanmasını yavaşlatır.</string>
 
     <string name="lp_glymphatic_title">Glimfatik Sıfırlama</string>
     <string name="lp_glymphatic_purpose">Nörodejeneratif birikimi önlemek için beynin atık temizleme sistemini optimize edin.</string>
     <string name="lp_glymphatic_step1">Uykudan 90 dakika önce mavi ışık maruziyetini sıfırlayın.</string>
     <string name="lp_glymphatic_step2">Oda sıcaklığını tam olarak 18°C\'ye düşürün.</string>
     <string name="lp_glymphatic_step3">Maksimum beyin omurilik sıvısı akışını kolaylaştırmak için yan yatın.</string>
+    <string name="lp_glymphatic_benefit_short">Bilişsel Netlik</string>
+    <string name="lp_glymphatic_benefit_long">Nöro-koruma</string>
+    <string name="lp_glymphatic_insight">Glimfatik sistem, derin uyku döngüleri sırasında beta-amiloidi temizler.</string>
+
+    <string name="lp_senolytic_title">Senolitik Yükleme</string>
+    <string name="lp_senolytic_purpose">Enflamasyonu körükleyen \'zombi hücreleri\' temizleyin.</string>
+    <string name="lp_senolytic_step1">500mg Kuersetin veya Fisetin bakımından zengin gıdalar tüketin.</string>
+    <string name="lp_senolytic_step2">24 saat boyunca sıfır rafine şeker alımı.</string>
+    <string name="lp_senolytic_step3">15 dakikalık hafif direnç eğitimi.</string>
+    <string name="lp_senolytic_benefit_short">İnflamatuar Azalma</string>
+    <string name="lp_senolytic_benefit_long">Doku Yenilenmesi</string>
+    <string name="lp_senolytic_insight">Senolitikler, yaşlanan hücrelerin ölümünü seçici olarak indükler.</string>
 
     <string name="lp_apob_title">ApoB Lipid Temizliği</string>
     <string name="lp_apob_purpose">Arterlerde plak oluşumu riskini ortadan kaldırmak için aterojenik partiküllerin agresif bir şekilde azaltılması.</string>
     <string name="lp_apob_step1">Günlük çözünür lif alımını 30g+ üzerine çıkarın (Psyllium/Yulaf).</string>
     <string name="lp_apob_step2">2g yüksek EPA içerikli Omega-3 yağ asidi tüketin.</string>
     <string name="lp_apob_step3">Endoteli hazırlamak için 5 dakikalık \"Nitrik Oksit Boşaltımı\" (Squat/Press) yapın.</string>
+    <string name="lp_apob_benefit_short">Endotelyal Hazırlık</string>
+    <string name="lp_apob_benefit_long">Kardiyovasküler Bağışıklık</string>
+    <string name="lp_apob_insight">ApoB, aterosklerotik plak oluşumunun birincil itici gücüdür.</string>
 
     <string name="lp_skeletal_title">İskelet Güçlendirme</string>
     <string name="lp_skeletal_purpose">Yaşa bağlı kırılganlığı önlemek için kemik mineral yoğunluğunu ve yapısal bütünlüğü maksimize edin.</string>
     <string name="lp_skeletal_step1">Barfiks barında kümülatif 3 dakikalık \"Ölü Asılış\" (Dead Hang) yapın.</string>
     <string name="lp_skeletal_step2">10 dakikalık ağır eksantrik yükleme (Yavaş Squat/Şınav) yapın.</string>
     <string name="lp_skeletal_step3">Kalsiyum sinyali için Vitamin D3 + K2 seviyelerini optimize edin.</string>
+    <string name="lp_skeletal_benefit_short">Yapısal Hizalama</string>
+    <string name="lp_skeletal_benefit_long">Kırılganlık Önleme</string>
+    <string name="lp_skeletal_insight">Kavrama gücü ve kemik yoğunluğu, yaşamın son dönemindeki özerkliğin yüksek hassasiyetli göstergeleridir.</string>
 
     <string name="lp_dna_title">DNA Metilasyon Kalkanı</string>
     <string name="lp_dna_purpose">DNA onarım kapasitesini maksimize edin ve pro-inflamatuar yaşlanma genlerini susturun.</string>
     <string name="lp_dna_step1">100mg Sülforafan (Brokoli Filizi) veya konsantre kış sebzesi özü tüketin.</string>
     <string name="lp_dna_step2">Kortizol kaynaklı DNA hasarını baskılamak için 10 dakika farkındalık egzersizi yapın.</string>
     <string name="lp_dna_step3">24 saat boyunca tüm işlenmiş yağlardan ve yanmış etlerden kaçının.</string>
+    <string name="lp_dna_benefit_short">Genomik Stabilite</string>
+    <string name="lp_dna_benefit_long">Kanser Riski Azaltma</string>
+    <string name="lp_dna_insight">Metilasyon kalıpları, biyolojik yaşlanma hızını belirler (Horvath Saati).</string>
+
 
     <string name="vitalis_biological_optimization">BİYOLOJİK OPTİMİZASYON</string>
     <string name="vitalis_intervention_logged">Müdahale başarıyla kaydedildi. Hücresel göstergeleriniz güncellendi.</string>
@@ -492,6 +526,10 @@
     <string name="audience_smokers">İçenler (Sigara)</string>
     <string name="audience_both">Her İkisi</string>
 
+    <string name="recovery_audience_alcohol">Alkol İyileşmesi</string>
+    <string name="recovery_audience_both_short">İkili İyileşme</string>
+    <string name="recovery_audience_smoking_short">Nikotin İyileşmesi</string>
+
     <!-- Koç Dizileri -->
     <string name="coach_chat_with_expert">Uzmanla Sohbet Et</string>
     <string name="coach_hello">Merhaba! Ben Yapay Zeka Koçunuzum. İyileşme yolunuzu anlamanıza veya kaygıyı yönetmenize yardımcı olabilirim. Aklınızda ne var?</string>
@@ -713,5 +751,260 @@
     <string name="act_p6_title">Vagal Sıfırlama</string>
     <string name="act_p6_desc">UZMAN İPUCU: Sinir sisteminizi sıfırlamak için soğuk su kullanın.</string>
     <string name="recovery_lvl">SEVİYE</string>
+
+    <!-- Eksik Çeviriler (Derleme hatalarını gidermek için eklendi) -->
+    <string name="vitalis_analysis_report">Biyolojik Analiz Raporu</string>
+    <string name="vitalis_active_interventions">Aktif Müdahaleler</string>
+    <string name="vitalis_clinical_data">Klinik Veri Kanıtı</string>
+    <string name="vitalis_recovery_projection">İyileşme Projeksiyonu</string>
+    <string name="vitalis_cellular_markers">Hücresel Göstergeler</string>
+    <string name="vitalis_neural_optimization">Nöral Optimizasyon</string>
+    <string name="vitalis_metabolic_reset">Metabolik Sıfırlama</string>
+    <string name="vitalis_vascular_repair">Vasküler Onarım</string>
+    <string name="vitalis_systemic_balance">Sistemik Denge</string>
+    <string name="vitalis_autophagy_trigger">Otofaji Tetikleyici</string>
+    <string name="vitalis_glymphatic_clearance">Glimfatik Temizlik</string>
+    <string name="vitalis_mitochondrial_health">Mitokondriyal Sağlık</string>
+    <string name="vitalis_hormesis_protocol">Hormezis Protokolü</string>
+    <string name="vitalis_bio_resilience">Biyolojik Dayanıklılık</string>
+    <string name="vitalis_oxidative_stress">Oksidatif Stres Kontrolü</string>
+    <string name="vitalis_longevity_score">Uzun Ömür Puanı</string>
+    <string name="vitalis_protocol_accuracy">Protokol Doğruluğu</string>
+    <string name="vitalis_real_time_tracking">Gerçek Zamanlı Takip</string>
+    <string name="vitalis_expert_engine">Vitalis Uzman Motoru</string>
+    <string name="vitalis_biological_command">Biyolojik Komuta</string>
+
+    <string name="recovery_index_detail">Mevcut biyolojik dayanıklılığınız ve sistemik düzenleme seviyenize derinlemesine bakış.</string>
+    <string name="recovery_daily_rituals">Günlük İyileşme Ritüelleri</string>
+    <string name="recovery_expert_directives">Uzman Direktifleri</string>
+    <string name="recovery_system_status">Sistem Durumu</string>
+    <string name="recovery_optimization_path">Optimizasyon Yolu</string>
+    <string name="recovery_neural_resilience">Nöral Dayanıklılık</string>
+    <string name="recovery_metabolic_efficiency">Metabolik Verimlilik</string>
+    <string name="recovery_cardiac_load">Kardiyak Yük</string>
+    <string name="recovery_respiratory_power">Solunum Gücü</string>
+    <string name="recovery_liver_regeneration">Karaciğer Rejenerasyonu</string>
+
+    <string name="coach_ai_advisor">YZ Danışmanı</string>
+    <string name="coach_biological_insight">Biyolojik Öngörü</string>
+    <string name="coach_recovery_support">İyileşme Desteği</string>
+    <string name="coach_clinical_guidance">Klinik Rehberlik</string>
+    <string name="coach_active_session">Aktif Oturum</string>
+
+    <!-- Ek eksik çeviriler -->
+    <string name="coach_ai_coach">YZ Sağlık Koçu</string>
+    <string name="coach_chat_with_ai">YZ İyileşme Koçunuzla Sohbet Edin</string>
+    <string name="community_active_circles">AKTİF ÇEMBERLER</string>
+    <string name="community_add_comment">Yorum ekle…</string>
+    <string name="community_blocked">ENGELLENDİ</string>
+    <string name="community_call">Ara</string>
+    <string name="community_circle">Çember</string>
+    <string name="community_circle_name">Çember Adı</string>
+    <string name="community_circles_desc">Özel destek ortamı</string>
+    <string name="community_cloaked_mode">GİZLİ MOD AKTİF</string>
+    <string name="community_close_profile">PROFİLİ KAPAT</string>
+    <string name="community_direct_encrypted">DOĞRUDAN ŞİFRELENMİŞ</string>
+    <string name="community_discover_circles">ÇEMBERLERİ KEŞFEDİN</string>
+    <string name="community_discover_desc">Yolunuza göre destek bulun</string>
+    <string name="community_hosted_by">%1$s TARAFINDAN YÖNETİLİYOR</string>
+    <string name="community_initialize_sos">SOS ÇAĞRISINI BAŞLAT</string>
+    <string name="community_join">KATIL</string>
+    <string name="community_join_circle">Katıl</string>
+    <string name="community_launch">OLUŞTUR</string>
+    <string name="community_launch_circle">Çember Başlat</string>
+    <string name="community_launch_support_circle">DESTEK ÇEMBERİ BAŞLAT</string>
+    <string name="community_live_session">CANLI OTURUM: %1$s</string>
+    <string name="community_managed_circles">YÖNETİLEN ÇEMBERLER</string>
+    <string name="community_message">Mesaj</string>
+    <string name="community_new_post">Yeni Gönderi</string>
+    <string name="community_no_active_sessions">AKTİF OTURUM YOK</string>
+    <string name="community_no_posts">Gönderi yok.</string>
+    <string name="community_no_private_sessions">ÖZEL OTURUM YOK</string>
+    <string name="community_no_public_circles">Henüz halka açık çember yok. İlkini siz oluşturun!</string>
+    <string name="community_peer_circle">AKRAN DESTEK ÇEMBERİ</string>
+    <string name="community_primary_focus">Birincil Odak</string>
+    <string name="community_purpose_guidelines">Amaç ve Kurallar</string>
+    <string name="community_recent_breakthroughs">SON BAŞARILAR</string>
+    <string name="community_recovery">İYİLEŞME</string>
+    <string name="community_secure_session">Güvenli Oturum</string>
+    <string name="community_sos_desc">Acil ihtiyaçlar için canlı sesli destek</string>
+    <string name="community_sos_sessions">SOS SESLİ OTURUMLARI</string>
+    <string name="community_tab_circles">Çemberler</string>
+    <string name="community_tab_sos">SOS Sesli</string>
+    <string name="community_terminate_session">OTURUMU SONLANDIR</string>
+    <string name="community_toggle_anonymity">Anonimliği Değiştir</string>
+    <string name="community_type_message">Mesaj yazın…</string>
+    <string name="community_unblock_user">ENGELİ KALDIR</string>
+    <string name="community_verified_member">DOĞRULANMIŞ ÜYE</string>
+    <string name="intake_bio_data_logging">BİYO-VERİ KAYDI</string>
+    <string name="recovery_behavioral_craving">7. DAVRANIŞSAL VE AŞERME KONTROLÜ</string>
+    <string name="recovery_both_smokers_drinkers">Hem Sigara Hem Alkol İçenler</string>
+    <string name="recovery_cardio_circulation">2. KARDİYOVASKÜLER VE DOLAŞIM</string>
+    <string name="recovery_critical_needs">Kritik İhtiyaçlar</string>
+    <string name="recovery_daily_interventions">GÜNLÜK MÜDAHALELER</string>
+    <string name="recovery_drinkers">İçenler (Alkol)</string>
+    <string name="recovery_drinkers_smokers">İçenler, Sigara İçenler ve Her İkisi</string>
+    <string name="recovery_liver_metabolic">1. KARACİĞER VE METABOLİK DESTEK</string>
+    <string name="recovery_metabolic_nutritional">4. METABOLİK VE BESLENME DÜZENLEMESİ</string>
+    <string name="recovery_neuro_cognitive">6. NÖRO-BİLİŞSEL İYİLEŞME</string>
+    <string name="recovery_programs_desc">Fizyolojik iyileşme için yapılandırılmış protokoller.</string>
+    <string name="recovery_programs_title">İYİLEŞME PROGRAMLARI</string>
+    <string name="recovery_respiratory_lung">3. SOLUNUM SAĞLIĞI VE AKCİĞERLER</string>
+    <string name="recovery_sleep_optimization">5. UYKU OPTİMİZASYONU</string>
+    <string name="recovery_smokers">Sigara İçenler</string>
+    <string name="recovery_target_audience">Hedef Kitle: %1$s</string>
+    <string name="vitalis_achievement_unlocked">Biyolojik Başarı Kilidi Açıldı</string>
+    <string name="vitalis_active_protocols">Aktif Biyolojik Protokoller</string>
+    <string name="vitalis_anticipated_outcome">Beklenen Biyolojik Sonuç</string>
+    <string name="vitalis_begin_guided_reset">Rehberli Sıfırlamayı Başlat</string>
+    <string name="vitalis_begin_neural_sync">Nöral Senkronizasyonu Başlat</string>
+    <string name="vitalis_bio_advantage">Biyolojik Avantaj</string>
+    <string name="vitalis_bio_intervention">Biyo-Müdahale</string>
+    <string name="vitalis_bio_modules">Biyolojik Modüller</string>
+    <string name="vitalis_bio_signal_desc">Vitalis motoru şu anda 12 biyolojik alandan gelen sinyalleri işliyor. Doğruluk oranı %99,8\'dir.</string>
+    <string name="vitalis_bio_signal_sync">Biyo-Sinyal Senkronizasyonu</string>
+    <string name="vitalis_biological_momentum">Biyolojik Momentum</string>
+    <string name="vitalis_biological_rationale">Biyolojik Gerekçe</string>
+    <string name="vitalis_celebration_desc">Vitalis motoru, biyolojik yaşlanma yörüngenizde önemli bir yavaşlama olduğunu onaylıyor. Bu müdahale ile sağlık süreniz etkili bir şekilde uzatıldı.</string>
+    <string name="vitalis_conclude_action_manual">Manuel Eylem Sonlandırma</string>
+    <string name="vitalis_conclude_manual">Manuel Oturum Sonlandırma</string>
+    <string name="vitalis_continue_journey">Uzun Ömür Yolculuğuna Devam Et</string>
+    <string name="vitalis_engine_status">Motor Durumu</string>
+    <string name="vitalis_execute_directive">Direktifi Uygula</string>
+    <string name="vitalis_expert">Uzman</string>
+    <string name="vitalis_expert_guidance">Uzman Rehberliği</string>
+    <string name="vitalis_follow_sync">Temporal Senkronizasyonu Takip Et</string>
+    <string name="vitalis_functional_protocols">Fonksiyonel Müdahale Protokolleri</string>
+    <string name="vitalis_health_trajectory">Sağlık Yörüngesi</string>
+    <string name="vitalis_help">Yardım</string>
+    <string name="vitalis_help_centre">Biyolojik Yardım Merkezi</string>
+    <string name="vitalis_help_desc">Uzun ömür müdahalesi için gelişmiş uzman bilgisi.</string>
+    <string name="vitalis_impact_analysis">Etki Analizi</string>
+    <string name="vitalis_inhale_deep">Derin Nefes Al</string>
+    <string name="vitalis_intelligence">Zeka</string>
+    <string name="vitalis_live_directives">Sistem Direktifleri</string>
+    <string name="vitalis_live_protocol_session">Canlı Protokol Oturumu</string>
+    <string name="vitalis_longevity_index">Uzun Ömür Endeksi</string>
+    <string name="vitalis_manner_execution">Uygulama Biçimi</string>
+    <string name="vitalis_module_cardio">Kardiyovasküler Hemodinamik</string>
+    <string name="vitalis_module_metabolic">Metabolik Verimlilik ve Glisemik Kontrol</string>
+    <string name="vitalis_module_recovery">Rejeneratif Tıp ve İyileşme</string>
+    <string name="vitalis_module_sleep">Sirkadiyen Ritim ve Uyku Mimarisi</string>
+    <string name="vitalis_neural_coherence">Nöral Uyumluluk Senkronizasyonu</string>
+    <string name="vitalis_neural_recalibration">Hızlı Nöral Rekalibrasyon</string>
+    <string name="vitalis_no_protocols">Aktif protokol bulunamadı. Senkronize ediliyor…</string>
+    <string name="vitalis_pattern_analysis">Örüntü Analizi</string>
+    <string name="vitalis_pause_session">Oturumu Duraklat</string>
+    <string name="vitalis_physiological_outcome">Fizyolojik Sonuç</string>
+    <string name="vitalis_projected_health_age">Öngörülen Sağlık Yaşı</string>
+    <string name="vitalis_protocols_desc">Sistemik optimizasyon için çok seviyeli, yüksek etkili müdahaleler.</string>
+    <string name="vitalis_ready">Hazır</string>
+    <string name="vitalis_repeat_intervention">Müdahaleyi Tekrarla</string>
+    <string name="vitalis_research_context">Araştırma Bağlamı</string>
+    <string name="vitalis_research_insight">Araştırma Öngörüsü</string>
+    <string name="vitalis_reset_in_progress">Sıfırlama Devam Ediyor…</string>
+    <string name="vitalis_resilience_points_earned">+%1$d Dayanıklılık Puanı Kazanıldı</string>
+    <string name="vitalis_resume">Devam Et</string>
+    <string name="vitalis_specific_guidance">Özel Rehberlik</string>
+    <string name="vitalis_streak_days">%1$d Günlük Seri</string>
+    <string name="vitalis_system">Sistem</string>
+    <string name="vitalis_system_directive">Sistem Direktifi</string>
+    <string name="vitalis_system_state">Sistem Durumu</string>
+    <string name="vitalis_top_off">Tamamla (Nefes Al)</string>
+    <string name="vitalis_vacuum">Vakum</string>
+    <string name="vitalis_verify_completion">Tamamlandığını Doğrula</string>
+    <string name="vitalis_verify_success">Başarıyı Doğrula</string>
+
+    <!-- Biyolojik Ödül Dizileri -->
+    <string name="reward_h1_title">Hidrasyon Kilidi Tamamlandı</string>
+    <string name="reward_h1_msg">Nöral iletkenlik geri yüklendi. Beyniniz artık optimal sinyalleşme ve atık temizliği için gereken elektrolit dengesine sahip.</string>
+
+    <string name="reward_mn1_title">Metabolik Çapa Atıldı</string>
+    <string name="reward_mn1_msg">Kan şekeri stabilize edildi. Bir kortizol artışını başarıyla önlediniz ve enerji rezervlerinizi önümüzdeki 4 saat için korudunuz.</string>
+
+    <string name="reward_rl1_title">Vagal Ton Optimize Edildi</string>
+    <string name="reward_rl1_msg">Parasempatik geçiş sağlandı. Kalp hızı değişkenliğiniz artık yükselme eğiliminde, bu da yüksek bir iyileşme dayanıklılığı durumuna işaret ediyor.</string>
+
+    <string name="reward_sl1_title">Melatonin Kalkanı Aktif</string>
+    <string name="reward_sl1_msg">Sirkadiyen bozulma önlendi. Gözlerinizi mavi ışıktan koruyarak, yaklaşan N3 uyku döngünüzün derinliğini güvence altına aldınız.</string>
+
+    <string name="reward_cc2_title">Vasküler Yıkama Başlatıldı</string>
+    <string name="reward_cc2_msg">Sistemik inflamasyon azaltıldı. Soğuğa maruz kalma, odağı keskinleştiren ve hücresel onarımı hızlandıran bir norepinefrin salınımını tetikledi.</string>
+
+    <!-- Biyolojik Uzun Ömür Ödülleri -->
+    <string name="reward_lp_autophagy_title">Otofaji Kilidi: AKTİF</string>
+    <string name="reward_lp_autophagy_gain">+6,2 Saat</string>
+    <string name="reward_lp_autophagy_metric">Hücresel Geri Dönüşüm</string>
+    <string name="reward_lp_autophagy_desc">Hatalı katlanmış proteinler temizlendi. Sistemik inflamasyon azaltıldı.</string>
+
+    <string name="reward_lp_thermal_title">Hormetik Yanıt: ZİRVE</string>
+    <string name="reward_lp_thermal_gain">+4,8 Saat</string>
+    <string name="reward_lp_thermal_metric">Vasküler Dayanıklılık</string>
+    <string name="reward_lp_thermal_desc">Isı Şoku Proteini (HSP-70) aktivasyonu tespit edildi.</string>
+
+    <string name="reward_lp_vo2_title">Mitokondriyal Artış: ONAYLANDI</string>
+    <string name="reward_lp_vo2_gain">+12,5 Saat</string>
+    <string name="reward_lp_vo2_metric">Aerobik Kapasite</string>
+    <string name="reward_lp_vo2_desc">Mitokondriyal yoğunluk arttı. VO2 Max yörüngesi optimize edildi.</string>
+
+    <string name="reward_lp_glycemic_title">Metabolik Kalkan: DEVREDE</string>
+    <string name="reward_lp_glycemic_gain">+5,1 Saat</string>
+    <string name="reward_lp_glycemic_metric">İnsülin Duyarlılığı</string>
+    <string name="reward_lp_glycemic_desc">Yemek sonrası glikoz yükselmesi nötralize edildi.</string>
+
+    <string name="reward_lp_glymphatic_title">Nöral Boşaltım: HAZIR</string>
+    <string name="reward_lp_glymphatic_gain">+3,9 Saat</string>
+    <string name="reward_lp_glymphatic_metric">Atık Temizliği</string>
+    <string name="reward_lp_glymphatic_desc">Beta-amiloid drenajı derin uyku için optimize edildi.</string>
+
+    <string name="reward_ts_dopamine_title">Temel Sıfırlama: GÜVENCEYE ALINDI</string>
+    <string name="reward_ts_dopamine_gain">+%14 Stabilite</string>
+    <string name="reward_ts_dopamine_metric">Nöral Dopamin Ayarı</string>
+    <string name="reward_ts_dopamine_desc">Nikotinik reseptörler aşağı regüle ediliyor. Temel dopamin duyarlılığı artıyor.</string>
+
+    <string name="reward_ts_vascular_title">Uyum Artışı: ZİRVE</string>
+    <string name="reward_ts_vascular_gain">+%8 Esneklik</string>
+    <string name="reward_ts_vascular_metric">Endotelyal İyileşme</string>
+    <string name="reward_ts_vascular_desc">Etanol kaynaklı vasküler daralma nötralize edildi.</string>
+
+    <string name="reward_ts_cortisol_title">Allostatik Yük: AZALTILDI</string>
+    <string name="reward_ts_cortisol_gain">-%22 Gerginlik</string>
+    <string name="reward_ts_cortisol_metric">Adrenal Kalibrasyon</string>
+    <string name="reward_ts_cortisol_desc">Diyafram senkronizasyonu ile kortizol seviyeleri baskılandı.</string>
+
+    <string name="reward_ts_liver_title">Hepatik Boşaltım: AKTİF</string>
+    <string name="reward_ts_liver_gain">+%11 Verimlilik</string>
+    <string name="reward_ts_liver_metric">Metabolik Filtrasyon</string>
+    <string name="reward_ts_liver_desc">Hızlı toksin temizliği için glutatyon yolları uyarıldı.</string>
+
+    <string name="reward_generic_title">Direktif Uygulandı</string>
+    <string name="reward_generic_gain">+2,5 Saat</string>
+    <string name="reward_generic_metric">Sistemik Dayanıklılık</string>
+    <string name="reward_generic_desc">Biyolojik yollar güncellendi. Her protokol kümülatif rezerv oluşturur.</string>
+
+    <string name="reward_generic_msg">Biyolojik sistem güncellendi. Tamamlanan her direktif, uzun vadeli iyileşme mimarinizi güçlendirir.</string>
+
+    <string name="notif_morning_title">Biyolojik Aktivasyon Gerekli</string>
+    <string name="notif_morning_msg_1">Beyniniz gece boyu süren bir dehidrasyon durumunda. Nöral çıktıyı geri yüklemek için Sabah Hidrasyonu\'nu başlatın.</string>
+    <string name="notif_morning_msg_2">Kortizol uyanış yanıtı tespit edildi. Önümüzdeki 16 saat için sirkadiyen ritminizi sabitlemek için şimdi yataktan çıkın.</string>
+
+    <string name="notif_midday_title">Sistem Bakım Uyarısı</string>
+    <string name="notif_midday_msg_1">Metabolik yük zirve yapıyor. Öğleden sonraki bilişsel düşüşü önlemek için Kan Şekeri Çapası protokolünü uygulayın.</string>
+    <string name="notif_midday_msg_2">Vagal ton azalıyor. 2 dakikalık soğuk bir su çarpması odağınızı sıfırlayacak ve sistemik kortizolü düşürecektir.</string>
+
+    <string name="notif_afternoon_title">Koruma Fazı Aktif</string>
+    <string name="notif_afternoon_msg_1">Vasküler zorlanma tespit edildi. 5 dakikalık bir Vagal Sıfırlama stres yanıtınızı anında aşağı regüle edecektir.</string>
+    <string name="notif_afternoon_msg_2">Nöral yorgunluk birikiyor. Odak devrelerinizi yeniden kalibre etmek için 15 dakika boyunca Dopamin Orucu başlatın.</string>
+
+    <string name="notif_evening_title">Restorasyon Penceresi Açılıyor</string>
+    <string name="notif_evening_msg_1">Nöral mimarinizi onarım için hazırlayın. Melatonin üretiminizi korumak için Mavi Işık Orucu\'nu başlatın.</string>
+    <string name="notif_evening_msg_2">Metabolik temizlik yavaşlıyor. Uyku sırasında karaciğer filtrasyonunu desteklemek için şimdi elektrolitlerle hidrate olun.</string>
+
+    <string name="notif_night_title">Derin İyileşme Protokolü</string>
+    <string name="notif_night_msg_1">Glimfatik sisteminiz metabolik atıkları temizlemeye hazır. Ortamınızı şimdi N3 derin uykusu için optimize edin.</string>
+    <string name="notif_night_msg_2">Nöral senkronizasyon başlatıldı. Derin dinlenme için parasempatik bir geçişi zorlamak üzere 4-7-8 nefes protokolünü kullanın.</string>
+
 </resources>
+
+
 

@@ -4,6 +4,7 @@ import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.google.firebase.auth.FirebaseAuth
+import com.harc.health.R
 import com.harc.health.logic.RecoveryEngine
 import com.harc.health.logic.VitalisEngine
 import com.harc.health.logic.ActionDecisionEngine
@@ -245,6 +246,21 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     fun toggleAction(actionId: String) {
         _healthLog.update { currentLog ->
             val isCompleting = !currentLog.actionsCompleted.contains(actionId)
+            
+            if (isCompleting) {
+                viewModelScope.launch {
+                    val message = when (actionId) {
+                        "h1" -> getApplication<Application>().getString(R.string.reward_h1_msg)
+                        "mn1" -> getApplication<Application>().getString(R.string.reward_mn1_msg)
+                        "rl1" -> getApplication<Application>().getString(R.string.reward_rl1_msg)
+                        "sl1" -> getApplication<Application>().getString(R.string.reward_sl1_msg)
+                        "cc2" -> getApplication<Application>().getString(R.string.reward_cc2_msg)
+                        else -> getApplication<Application>().getString(R.string.reward_generic_msg)
+                    }
+                    _uiEvent.emit(UiEvent.ShowSnackbar(message))
+                }
+            }
+
             val newActions = if (isCompleting) {
                 currentLog.actionsCompleted + actionId
             } else {
@@ -295,6 +311,16 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
                 )
             }
         }
+    }
+
+    fun completeProtocol(id: String) {
+        val dividend = VitalisEngine.getBiologicalGain(id)
+        viewModelScope.launch {
+            val message = getApplication<Application>().getString(dividend.gainRes)
+            _uiEvent.emit(UiEvent.ShowSnackbar("${getApplication<Application>().getString(R.string.vitalis_neural_recalibration)}: $message"))
+        }
+        // Use existing toggle logic to persist the action
+        toggleAction(id)
     }
 
     fun updateProfile(name: String, email: String) {
