@@ -1,5 +1,7 @@
 package com.harc.health
 
+import androidx.activity.SystemBarStyle
+import android.graphics.Color
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -48,7 +50,12 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
+        
+        // Explicitly enable edge-to-edge with transparent system bars
+        enableEdgeToEdge(
+            statusBarStyle = SystemBarStyle.auto(Color.TRANSPARENT, Color.TRANSPARENT),
+            navigationBarStyle = SystemBarStyle.auto(Color.TRANSPARENT, Color.TRANSPARENT)
+        )
         RecoveryNotificationManager.createNotificationChannel(this)
         com.harc.health.logic.NotificationWorker.scheduleDailyNotifications(this)
         

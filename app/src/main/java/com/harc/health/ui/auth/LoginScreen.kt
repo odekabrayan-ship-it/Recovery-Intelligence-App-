@@ -3,7 +3,6 @@ package com.harc.health.ui.auth
 import android.util.Log
 import android.util.Patterns
 import androidx.compose.foundation.background
-import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -12,14 +11,11 @@ import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Adjust
-import androidx.compose.material.icons.filled.SmokingRooms
-import androidx.compose.material.icons.filled.WineBar
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalFocusManager
 import androidx.compose.ui.res.stringResource
@@ -33,13 +29,11 @@ import androidx.credentials.CredentialManager
 import androidx.credentials.GetCredentialRequest
 import androidx.credentials.exceptions.GetCredentialCancellationException
 import androidx.credentials.exceptions.GetCredentialException
-import androidx.lifecycle.viewmodel.compose.viewModel
 import com.google.android.libraries.identity.googleid.GetGoogleIdOption
 import com.google.android.libraries.identity.googleid.GoogleIdTokenCredential
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
 import com.harc.health.R
-import com.harc.health.viewmodel.MainViewModel
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.tasks.await
 
@@ -56,13 +50,9 @@ fun LoginScreen(onLoginSuccess: () -> Unit) {
     val focusManager = LocalFocusManager.current
     val scope = rememberCoroutineScope()
     val credentialManager = CredentialManager.create(context)
-    val mainViewModel: MainViewModel = viewModel()
-
-    val monthlyAlcohol by mainViewModel.monthlyAlcohol.collectAsState()
-    val monthlyCigarettes by mainViewModel.monthlyCigarettes.collectAsState()
     val scrollState = rememberScrollState()
 
-    // Professional Validation Logic
+    // Validation
     val isEmailValid = Patterns.EMAIL_ADDRESS.matcher(email).matches()
     val isPasswordValid = password.length >= 6
     val canSubmit = email.isNotBlank() && password.isNotBlank() && !isLoading
@@ -72,56 +62,54 @@ fun LoginScreen(onLoginSuccess: () -> Unit) {
             .fillMaxSize()
             .background(MaterialTheme.colorScheme.surface)
             .verticalScroll(scrollState)
-            .padding(24.dp),
+            .padding(horizontal = 32.dp),
         horizontalAlignment = Alignment.CenterHorizontally,
-        verticalArrangement = Arrangement.Top
+        verticalArrangement = Arrangement.Center
     ) {
-        Spacer(modifier = Modifier.height(40.dp))
+        Spacer(modifier = Modifier.height(60.dp))
 
-        // Branding Element
+        // Professional Logo Placeholder
         Surface(
-            modifier = Modifier.size(80.dp),
-            shape = RoundedCornerShape(20.dp),
-            color = MaterialTheme.colorScheme.primaryContainer
+            modifier = Modifier.size(64.dp),
+            shape = RoundedCornerShape(16.dp),
+            color = MaterialTheme.colorScheme.primary
         ) {
             Box(contentAlignment = Alignment.Center) {
-                  Text(
-                    text = stringResource(R.string.app_name).split(" ").firstOrNull() ?: "HARC",
-                    fontWeight = FontWeight.Black,
-                    color = MaterialTheme.colorScheme.primary,
-                    fontSize = 20.sp
+                Text(
+                    text = "H",
+                    fontWeight = FontWeight.Bold,
+                    color = Color.White,
+                    fontSize = 32.sp
                 )
             }
         }
 
-        Spacer(modifier = Modifier.height(24.dp))
+        Spacer(modifier = Modifier.height(32.dp))
 
         Text(
             text = if (isSignUp) stringResource(R.string.login_create_account) else stringResource(R.string.login_welcome_back),
             style = MaterialTheme.typography.headlineMedium,
-            fontWeight = FontWeight.Bold
+            fontWeight = FontWeight.ExtraBold,
+            color = MaterialTheme.colorScheme.onSurface
         )
+        
+        Spacer(modifier = Modifier.height(8.dp))
+        
         Text(
             text = if (isSignUp) stringResource(R.string.login_sign_up_prompt) else stringResource(R.string.login_sign_in_prompt),
-            style = MaterialTheme.typography.bodyMedium,
+            style = MaterialTheme.typography.bodyLarge,
             color = MaterialTheme.colorScheme.onSurfaceVariant
         )
 
-        Spacer(modifier = Modifier.height(32.dp))
+        Spacer(modifier = Modifier.height(48.dp))
 
-        // Contextual Tracker Card (Expert Design)
-        if (!isSignUp) {
-            MonthlyTrackerCard(monthlyAlcohol, monthlyCigarettes)
-            Spacer(modifier = Modifier.height(32.dp))
-        }
-
-        // Email Field with Validation Feedback
+        // Email Input
         OutlinedTextField(
             value = email,
             onValueChange = { email = it; error = null },
             label = { Text(stringResource(R.string.login_email_label)) },
             modifier = Modifier.fillMaxWidth(),
-            shape = RoundedCornerShape(12.dp),
+            shape = RoundedCornerShape(16.dp),
             singleLine = true,
             isError = email.isNotBlank() && !isEmailValid,
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Email, imeAction = ImeAction.Next)
@@ -129,17 +117,16 @@ fun LoginScreen(onLoginSuccess: () -> Unit) {
 
         Spacer(modifier = Modifier.height(16.dp))
 
-        // Password Field
+        // Password Input
         OutlinedTextField(
             value = password,
             onValueChange = { password = it; error = null },
             label = { Text(stringResource(R.string.login_password_label)) },
             visualTransformation = PasswordVisualTransformation(),
             modifier = Modifier.fillMaxWidth(),
-            shape = RoundedCornerShape(12.dp),
+            shape = RoundedCornerShape(16.dp),
             singleLine = true,
             isError = password.isNotBlank() && !isPasswordValid,
-            supportingText = { if (isSignUp && password.isNotBlank() && !isPasswordValid) Text("Password must be at least 6 characters") },
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Password, imeAction = ImeAction.Done),
             keyboardActions = KeyboardActions(onDone = { focusManager.clearFocus() })
         )
@@ -149,13 +136,13 @@ fun LoginScreen(onLoginSuccess: () -> Unit) {
                 text = error!!,
                 color = MaterialTheme.colorScheme.error,
                 style = MaterialTheme.typography.bodySmall,
-                modifier = Modifier.padding(top = 8.dp)
+                modifier = Modifier.padding(top = 12.dp)
             )
         }
 
-        Spacer(modifier = Modifier.height(24.dp))
+        Spacer(modifier = Modifier.height(32.dp))
 
-        // Primary Action Button
+        // Main Action Button
         Button(
             onClick = {
                 focusManager.clearFocus()
@@ -175,40 +162,41 @@ fun LoginScreen(onLoginSuccess: () -> Unit) {
                         error = it.localizedMessage ?: "Authentication failed"
                     }
                 } else {
-                    error = "Please provide a valid email and 6-character password"
+                    error = "Invalid credentials"
                 }
             },
             modifier = Modifier.fillMaxWidth().height(56.dp),
-            shape = RoundedCornerShape(12.dp),
+            shape = RoundedCornerShape(16.dp),
             enabled = canSubmit
         ) {
             if (isLoading) {
-                CircularProgressIndicator(modifier = Modifier.size(24.dp), color = MaterialTheme.colorScheme.onPrimary, strokeWidth = 2.dp)
+                CircularProgressIndicator(modifier = Modifier.size(24.dp), color = Color.White, strokeWidth = 2.dp)
             } else {
                 Text(
-                    text = if (isSignUp) stringResource(R.string.login_create_account).uppercase() else stringResource(R.string.login_sign_in).uppercase(),
-                    fontWeight = FontWeight.Black,
-                    letterSpacing = 1.sp
+                    text = if (isSignUp) stringResource(R.string.login_create_account) else stringResource(R.string.login_sign_in),
+                    style = MaterialTheme.typography.titleMedium,
+                    fontWeight = FontWeight.Bold
                 )
             }
         }
 
-        Spacer(modifier = Modifier.height(16.dp))
+        Spacer(modifier = Modifier.height(24.dp))
 
+        // Divider
         Row(verticalAlignment = Alignment.CenterVertically) {
             HorizontalDivider(modifier = Modifier.weight(1f), color = MaterialTheme.colorScheme.outlineVariant)
             Text(
-                text = " " + stringResource(R.string.profile_security_privacy).uppercase() + " ",
-                style = MaterialTheme.typography.labelSmall,
-                color = Color.Gray,
-                modifier = Modifier.padding(horizontal = 8.dp)
+                text = " OR ",
+                style = MaterialTheme.typography.labelMedium,
+                color = MaterialTheme.colorScheme.outline,
+                modifier = Modifier.padding(horizontal = 16.dp)
             )
             HorizontalDivider(modifier = Modifier.weight(1f), color = MaterialTheme.colorScheme.outlineVariant)
         }
 
-        Spacer(modifier = Modifier.height(16.dp))
+        Spacer(modifier = Modifier.height(24.dp))
 
-        // Modern Google SSO (Expert Integration)
+        // Social Sign-In
         OutlinedButton(
             onClick = {
                 scope.launch {
@@ -218,7 +206,7 @@ fun LoginScreen(onLoginSuccess: () -> Unit) {
                         val googleIdOption = GetGoogleIdOption.Builder()
                             .setFilterByAuthorizedAccounts(false)
                             .setServerClientId("119651407923-4e5a838i6kku18di1cpp0kb9s9mko6mu.apps.googleusercontent.com")
-                            .setAutoSelectEnabled(true) // Professional: tries to auto-select if one account
+                            .setAutoSelectEnabled(true)
                             .build()
 
                         val request = GetCredentialRequest.Builder()
@@ -233,97 +221,39 @@ fun LoginScreen(onLoginSuccess: () -> Unit) {
                             auth.signInWithCredential(firebaseCredential).await()
                             onLoginSuccess()
                         }
-                    } catch (e: GetCredentialException) {
-                        Log.e("LoginScreen", "Google Sign-In Error", e)
-                        // Don't show error if user just cancelled
-                        if (e !is GetCredentialCancellationException) {
-                            error = "Google Sign-In failed: ${e.message}"
-                        }
                     } catch (e: Exception) {
-                        error = "An unexpected error occurred"
-                        Log.e("LoginScreen", "General Error", e)
+                        if (e !is GetCredentialCancellationException) {
+                            error = "Google Sign-In failed"
+                        }
                     } finally {
                         isLoading = false
                     }
                 }
             },
             modifier = Modifier.fillMaxWidth().height(56.dp),
-            shape = RoundedCornerShape(12.dp),
-            enabled = !isLoading,
-            border = androidx.compose.foundation.BorderStroke(1.dp, MaterialTheme.colorScheme.outlineVariant)
+            shape = RoundedCornerShape(16.dp),
+            enabled = !isLoading
         ) {
-            Icon(Icons.Default.Adjust, contentDescription = null, modifier = Modifier.size(18.dp)) // Minimalist placeholder for Google logo
+            Icon(Icons.Default.Adjust, contentDescription = null, modifier = Modifier.size(20.dp))
             Spacer(modifier = Modifier.width(12.dp))
-            Text(stringResource(R.string.login_continue_google), fontWeight = FontWeight.Bold)
+            Text(
+                text = stringResource(R.string.login_continue_google),
+                style = MaterialTheme.typography.titleSmall,
+                fontWeight = FontWeight.SemiBold
+            )
         }
 
-        Spacer(modifier = Modifier.height(24.dp))
+        Spacer(modifier = Modifier.height(32.dp))
 
         TextButton(onClick = { isSignUp = !isSignUp; error = null }) {
             Text(
                 text = if (isSignUp) stringResource(R.string.login_already_have_account) else stringResource(R.string.login_dont_have_account),
                 style = MaterialTheme.typography.bodyMedium,
-                fontWeight = FontWeight.Medium
-            )
-        }
-    }
-}
-
-@Composable
-fun MonthlyTrackerCard(alcohol: Int, cigarettes: Int) {
-    Card(
-        modifier = Modifier
-            .fillMaxWidth()
-            .border(1.dp, MaterialTheme.colorScheme.outlineVariant, RoundedCornerShape(24.dp)),
-        shape = RoundedCornerShape(24.dp),
-        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.3f))
-    ) {
-        Column(modifier = Modifier.padding(20.dp)) {
-            Text(
-                stringResource(R.string.profile_biometric_login).uppercase(),
-                style = MaterialTheme.typography.labelLarge,
-                color = MaterialTheme.colorScheme.primary,
                 fontWeight = FontWeight.Bold,
-                letterSpacing = 1.sp
+                color = MaterialTheme.colorScheme.primary
             )
-            Spacer(modifier = Modifier.height(16.dp))
-            Row(
-                modifier = Modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.SpaceBetween
-            ) {
-                TrackerItem(
-                    label = "Alcohol",
-                    value = "$alcohol units",
-                    icon = Icons.Default.WineBar,
-                    color = Color(0xFFE91E63)
-                )
-                TrackerItem(
-                    label = "Cigarettes",
-                    value = "$cigarettes count",
-                    icon = Icons.Default.SmokingRooms,
-                    color = Color(0xFF795548)
-                )
-            }
         }
-    }
-}
-
-@Composable
-fun TrackerItem(label: String, value: String, icon: ImageVector, color: Color) {
-    Row(verticalAlignment = Alignment.CenterVertically) {
-        Surface(
-            modifier = Modifier.size(40.dp),
-            shape = RoundedCornerShape(12.dp),
-            color = color.copy(alpha = 0.1f)
-        ) {
-            Box(contentAlignment = Alignment.Center) {
-                Icon(icon, contentDescription = null, tint = color, modifier = Modifier.size(20.dp))
-            }
-        }
-        Spacer(modifier = Modifier.width(12.dp))
-        Column {
-            Text(label, style = MaterialTheme.typography.labelSmall, color = Color.Gray)
-            Text(value, style = MaterialTheme.typography.bodyLarge, fontWeight = FontWeight.Bold)
-        }
+        
+        Spacer(modifier = Modifier.height(40.dp))
     }
 }
