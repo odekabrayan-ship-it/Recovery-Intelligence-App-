@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Recovery Intelligence</title>
+    <link rel="manifest" href="manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#0071e3">
+    <link rel="apple-touch-icon" href="https://via.placeholder.com/192">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .ios-blur {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            background: rgba(20, 20, 20, 0.7);
+        }
+        .card {
+            background: #1c1c1e;
+            border-radius: 16px;
+            border: 1px solid #2c2c2e;
+        }
+        .accent-gradient {
+            background: linear-gradient(135deg, #0071e3 0%, #00d2ff 100%);
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+
+    <!-- Splash / Login Screen -->
+    <div id="auth-screen" class="flex-1 flex flex-col items-center justify-center p-8">
+        <div class="w-20 h-20 accent-gradient rounded-3xl mb-6 flex items-center justify-center shadow-lg">
+            <i class="fas fa-shield-heart text-4xl"></i>
+        </div>
+        <h1 class="text-3xl font-bold mb-2 text-center">Recovery Intelligence</h1>
+        <p class="text-gray-400 mb-8 text-center">Biological Command & Control</p>
+
+        <div class="w-full max-w-sm space-y-4">
+            <input type="email" id="email" placeholder="Email Address" class="w-full bg-[#1c1c1e] border border-[#2c2c2e] p-4 rounded-xl focus:outline-none focus:border-[#0071e3]">
+            <input type="password" id="password" placeholder="Password" class="w-full bg-[#1c1c1e] border border-[#2c2c2e] p-4 rounded-xl focus:outline-none focus:border-[#0071e3]">
+            <button onclick="handleLogin()" class="w-full accent-gradient p-4 rounded-xl font-bold text-lg shadow-lg active:scale-95 transition-transform">
+                Sign In
+            </button>
+            <p class="text-center text-sm text-gray-500">Secure AES-256 Local Encryption</p>
+        </div>
+    </div>
+
+    <!-- Main Dashboard (Hidden by default) -->
+    <div id="main-content" class="hidden flex-1 flex flex-col pb-24">
+        <header class="p-6 pt-12 flex justify-between items-center ios-blur sticky top-0 z-10">
+            <div>
+                <p class="text-xs text-[#0071e3] font-bold tracking-widest uppercase">Biological Command</p>
+                <h2 class="text-2xl font-bold" id="user-greeting">Hello, Agent</h2>
+            </div>
+            <div class="w-10 h-10 rounded-full bg-[#2c2c2e] flex items-center justify-center" onclick="logout()">
+                <i class="fas fa-user-circle text-xl"></i>
+            </div>
+        </header>
+
+        <main class="p-6 space-y-6">
+            <!-- Recovery Index Card -->
+            <div class="card p-6 relative overflow-hidden">
+                <div class="flex justify-between items-start mb-4">
+                    <div>
+                        <h3 class="text-sm font-bold text-gray-400 uppercase tracking-tighter">Recovery Index</h3>
+                        <p class="text-4xl font-black">84%</p>
+                    </div>
+                    <span class="bg-green-500/20 text-green-500 text-[10px] font-bold px-2 py-1 rounded">OPTIMIZED</span>
+                </div>
+                <div class="w-full bg-gray-800 h-2 rounded-full overflow-hidden">
+                    <div class="accent-gradient h-full w-[84%]"></div>
+                </div>
+                <p class="text-xs text-gray-500 mt-4">Systemic resilience and regulation level are stable.</p>
+            </div>
+
+            <!-- Quick Actions -->
+            <section>
+                <h3 class="text-sm font-bold text-gray-400 mb-3 uppercase tracking-widest">Active Directives</h3>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="card p-4 flex flex-col items-center justify-center text-center space-y-2 active:bg-[#2c2c2e]" onclick="alert('Starting Hydration Protocol...')">
+                        <i class="fas fa-droplet text-[#00d2ff] text-xl"></i>
+                        <span class="text-sm font-bold">Hydrate</span>
+                    </div>
+                    <div class="card p-4 flex flex-col items-center justify-center text-center space-y-2 active:bg-[#2c2c2e]" onclick="alert('Initiating Neural Reset...')">
+                        <i class="fas fa-wind text-purple-400 text-xl"></i>
+                        <span class="text-sm font-bold">Reset</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Biological Systems -->
+            <section class="space-y-3">
+                <h3 class="text-sm font-bold text-gray-400 uppercase tracking-widest">Core Systems</h3>
+                <div class="card divide-y divide-[#2c2c2e]">
+                    <div class="p-4 flex justify-between items-center">
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-brain text-blue-400"></i>
+                            <span class="text-sm font-medium">Neural Stability</span>
+                        </div>
+                        <span class="text-xs font-bold text-blue-400">STABLE</span>
+                    </div>
+                    <div class="p-4 flex justify-between items-center">
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-heart-pulse text-red-400"></i>
+                            <span class="text-sm font-medium">Vascular Integrity</span>
+                        </div>
+                        <span class="text-xs font-bold text-green-400">OPTIMAL</span>
+                    </div>
+                    <div class="p-4 flex justify-between items-center">
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-flask text-yellow-400"></i>
+                            <span class="text-sm font-medium">Hepatic Resilience</span>
+                        </div>
+                        <span class="text-xs font-bold text-yellow-400">STRAINED</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Bottom Nav -->
+    <nav id="bottom-nav" class="hidden fixed bottom-0 left-0 right-0 h-20 ios-blur border-t border-[#2c2c2e] flex items-center justify-around px-4 pb-4">
+        <div class="flex flex-col items-center text-[#0071e3]">
+            <i class="fas fa-house text-lg"></i>
+            <span class="text-[10px] mt-1 font-bold">Home</span>
+        </div>
+        <div class="flex flex-col items-center text-gray-500">
+            <i class="fas fa-chart-line text-lg"></i>
+            <span class="text-[10px] mt-1 font-bold">Insights</span>
+        </div>
+        <div class="flex flex-col items-center text-gray-500">
+            <i class="fas fa-robot text-lg"></i>
+            <span class="text-[10px] mt-1 font-bold">Coach</span>
+        </div>
+        <div class="flex flex-col items-center text-gray-500">
+            <i class="fas fa-gear text-lg"></i>
+            <span class="text-[10px] mt-1 font-bold">Settings</span>
+        </div>
+    </nav>
+
+    <script src="app.js"></script>
+</body>
+</html>
