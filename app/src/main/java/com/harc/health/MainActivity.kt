@@ -35,6 +35,8 @@ import com.harc.health.ui.coach.CoachScreen
 import com.harc.health.ui.home.HomeScreen
 import com.harc.health.ui.insights.InsightsScreen
 import com.harc.health.ui.intake.IntakeLoggingScreen
+import com.harc.health.ui.matrix.MatrixScreen
+import com.harc.health.ui.matrix.MatrixViewModel
 import com.harc.health.ui.recovery.RecoveryPlanScreen
 import com.harc.health.ui.theme.HARCHealthTheme
 import com.harc.health.ui.vitalis.VitalisScreen
@@ -163,6 +165,15 @@ fun MainContent(intent: Intent?) {
                         restoreState = true
                     }
                 }
+                is MainViewModel.UiEvent.NavigateToMatrix -> {
+                    navController.navigate(Screen.Matrix.route) {
+                        popUpTo(navController.graph.findStartDestination().id) {
+                            saveState = true
+                        }
+                        launchSingleTop = true
+                        restoreState = true
+                    }
+                }
                 else -> {}
             }
         }
@@ -276,10 +287,26 @@ fun MainContent(intent: Intent?) {
                         viewModel = viewModel, 
                         onNavigateToProfile = { navController.navigate(Screen.Profile.route) },
                         onNavigateToTherapeutic = { navController.navigate(Screen.Therapeutic.route) },
-                        onNavigateToVitalis = { navController.navigate(Screen.Vitalis.route) }
+                        onNavigateToVitalis = { navController.navigate(Screen.Vitalis.route) },
+                        onNavigateToMatrix = { navController.navigate(Screen.Matrix.route) }
                     ) 
                 }
                 composable(Screen.Recovery.route) { RecoveryPlanScreen(viewModel) }
+                composable(Screen.Matrix.route) {
+                    val matrixViewModel: MatrixViewModel = viewModel()
+                    val userName by viewModel.userName.collectAsState()
+                    
+                    // Sync User ID with Matrix ViewModel
+                    LaunchedEffect(currentUser) {
+                        currentUser?.uid?.let { matrixViewModel.setUserId(it) }
+                    }
+
+                    MatrixScreen(
+                        onBack = { navController.popBackStack() },
+                        viewModel = matrixViewModel,
+                        userName = userName
+                    )
+                }
                 composable(Screen.Vitalis.route) { 
                     VitalisScreen(
                         viewModel = viewModel,

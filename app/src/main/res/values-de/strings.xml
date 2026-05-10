@@ -781,6 +781,90 @@
     <!-- State-Specific Clinical Reminders -->
     <string name="notif_stress_title">Amygdala-Übersteuerung erkannt</string>
     <string name="notif_stress_msg">Sympathikotonus dominiert. Führen Sie den [Stress-Reset] aus, um eine vagale Bremse zu erzwingen und systemische Entzündungen zu verhindern.</string>
+    <!-- 30 Tage aus der Matrix -->
+    <string name="matrix_title">30 TAGE AUS DER MATRIX</string>
+    <string name="matrix_subtitle">Ernste Verhaltensintervention</string>
+    <string name="matrix_phase_wake_up">PHASE 1: WACH AUF</string>
+    <string name="matrix_phase_break_loop">PHASE 2: BRICH DIE SCHLEIFE</string>
+    <string name="matrix_phase_rebuild_control">PHASE 3: KONTROLLE WIEDERAUFBAUEN</string>
+    <string name="matrix_day_counter">Tag %1$d von 30</string>
+    <string name="matrix_action_required">AKTION ERFORDERLICH</string>
+    <string name="matrix_daily_directive">TÄGLICHE RICHTLINIE</string>
+
+    <!-- Matrix Verlangen-Intervention -->
+    <string name="matrix_urge_title">VERLANGEN-INTERVENTION</string>
+    <string name="matrix_urge_emergency">NOTFALL-OVERRIDE</string>
+    <string name="matrix_urge_step_1_title">PHYSIOLOGISCHER SCHOCK</string>
+    <string name="matrix_urge_step_1_desc">Legen Sie Eis auf Ihren Nacken oder bespritzen Sie Ihr Gesicht 30 Sekunden lang mit kaltem Wasser. Dies löst den Tauchreflex aus.</string>
+    <string name="matrix_urge_step_2_title">KOGNITIVE STÖRUNG</string>
+    <string name="matrix_urge_step_2_desc">Zählen Sie laut von 100 in 7er-Schritten rückwärts. (100, 93, 86...).</string>
+    <string name="matrix_urge_step_3_title">PHYSISCHE VERLAGERUNG</string>
+    <string name="matrix_urge_step_3_desc">Verlassen Sie sofort den Raum. Gehen Sie an einen öffentlichen Ort oder ins Freie.</string>
+    <string name="matrix_urge_completed">VERLANGEN NEUTRALISIERT</string>
+    <string name="matrix_urge_command_stand">Jetzt aufstehen</string>
+    <string name="matrix_urge_command_leave">RAUM JETZT VERLASSEN</string>
+    <string name="matrix_urge_command_block">ALLE APPS SOFORT BLOCKIEREN</string>
+    <string name="matrix_urge_command_cold">Kaltwasser-Reset</string>
+    <string name="matrix_urge_command_negotiate">Verhandeln Sie nicht mit dem Verlangen</string>
+    <string name="matrix_urge_countdown_active">Aktiver Widerstand: %1$d</string>
+    <string name="matrix_urge_future_self">Was wird Ihr zukünftiges Ich sagen, wenn Sie jetzt scheitern?</string>
+    <string name="matrix_urge_future_self_win">Ihr zukünftiges Ich wartet darauf, dass Sie diesen Moment gewinnen.</string>
+
+    <!-- Matrix Rückfall-Analyse -->
+    <string name="matrix_relapse_title">MUSTERANALYSE</string>
+    <string name="matrix_relapse_intro">Rückfall ist Daten. Analysieren Sie die Schleife ohne Scham.</string>
+    <string name="matrix_relapse_trigger">Was war der primäre Auslöser?</string>
+    <string name="matrix_relapse_environment">Wo befanden Sie sich?</string>
+    <string name="matrix_relapse_emotion">Wie war Ihr emotionaler Zustand?</string>
+    <string name="matrix_relapse_cost">KOSTEN DER SCHLEIFE: Was hat dieser Moment Ihrer Zukunft gestohlen?</string>
+    <string name="matrix_relapse_lesson">Welche strukturelle Änderung ist nötig, um diese Schleife zu verhindern?</string>
+    <string name="matrix_relapse_reset">PROTOKOLL NEU STARTEN</string>
+    <string name="matrix_relapse_cost_prompt">Beziffern Sie den Schaden (Zeit, Gesundheit, Respekt).</string>
+    <string name="matrix_future_self_prompt">Dein zukünftiges Ich schaut zu. Handle entsprechend.</string>
+
+    <!-- Matrix Nachtmodus -->
+    <string name="matrix_night_mode_title">NOTFALL-NACHTMODUS</string>
+    <string name="matrix_night_mode_desc">Das Matrix-Protokoll hat den Notfall-Nachtmodus aktiviert. Hochrisiko-Zeitraum erkannt. Zugriff eingeschränkt, um Ihre neurale Baseline zu stabilisieren.</string>
+    <string name="matrix_night_mode_override">NOTFALL-OVERRIDE (NUR VERWENDEN, WENN SICHER)</string>
+
+    <!-- Finaler Matrix-Bericht -->
+    <string name="matrix_report_title">FINALER MATRIX-EXIT-BERICHT</string>
+    <string name="matrix_report_summary">Zusammenfassung der 30-tägigen Verhaltensrekonstruktion</string>
+    <string name="matrix_report_triggers_found">Erkannte Auslöser</string>
+    <string name="matrix_report_interruption_speed">Durchschn. Interventionsgeschwindigkeit</string>
+    <string name="matrix_report_growth_metric">Zuwachs der neuralen Resilienz</string>
+    <string name="matrix_report_exit_status">STATUS: RAUS AUS DER MATRIX</string>
+    <string name="matrix_maintenance_mode">WARTUNGSMODUS AKTIV</string>
+    <string name="matrix_days_left">%1$d TAGE BIS ZUR GRADUIERUNG</string>
+
+    <!-- Matrix Aufnahme-Erfahrung -->
+    <string name="matrix_intake_opening_1">Dieses System wurde für Menschen entwickelt, die in repetitiven zwanghaften Verhaltensweisen gefangen sind.</string>
+    <string name="matrix_intake_opening_2">Nicht weil sie schwach sind. Sondern weil die Schleife automatisch wurde.</string>
+    <string name="matrix_intake_confrontation_title">Wie lange wiederholt sich die Schleife schon?</string>
+    <string name="matrix_intake_loop_recognition_title">DIE SCHLEIFE</string>
+    <string name="matrix_intake_loop_recognition_familiar">Fühlt sich das vertraut an?</string>
+    <string name="matrix_intake_entry_points_title">Was startet normalerweise die Schleife?</string>
+    <string name="matrix_intake_entry_points_feedback">Gut. Das System identifiziert Ihre Einstiegspunkte.</string>
+    <string name="matrix_intake_hidden_truth_title">DIE VERBORGENE WAHRHEIT</string>
+    <string name="matrix_intake_hidden_truth_1">Die meisten zwanghaften Pornografie- und Masturbationsmuster beginnen nicht mit der Handlung.</string>
+    <string name="matrix_intake_hidden_truth_2">Sie beginnen mit einer passiven Eskalation.</string>
+    <string name="matrix_intake_hidden_truth_3">Je früher die Schleife erkannt wird, desto mehr Kontrolle ist möglich.</string>
+    <string name="matrix_intake_real_cost_title">Was hat diese Schleife am meisten beeinflusst?</string>
+    <string name="matrix_intake_danger_hours_title">Wann sind Sie am verletzlichsten?</string>
+    <string name="matrix_intake_danger_hours_feedback">SCHATTENSTUNDEN ERKANNT</string>
+    <string name="matrix_intake_honesty_check_title">Was passiert normalerweise, wenn Verlangen beginnt?</string>
+    <string name="matrix_intake_honesty_check_feedback">Das System erkennt nun Ihr Eskalationsmuster.</string>
+    <string name="matrix_intake_recovery_reality_title">RECOVERY REALITÄT</string>
+    <string name="matrix_intake_recovery_reality_1">Bei dieser Reise geht es nicht darum, perfekt zu werden.</string>
+    <string name="matrix_intake_recovery_reality_2">Es geht darum, früher innerhalb der Schleife bewusst zu werden.</string>
+    <string name="matrix_intake_decision_title">In den nächsten 30 Tagen wird dieses System Folgendes herausfordern:</string>
+    <string name="matrix_intake_decision_prompt">Sind Sie bereit, bewusst einzutreten?</string>
+    <string name="matrix_intake_enter_system">SYSTEM BETRETEN</string>
+    <string name="matrix_intake_contract_title">DER VERTRAG</string>
+    <string name="matrix_intake_final_msg_1">Die Schleife mag noch sprechen. Verlangen mag noch auftreten.</string>
+    <string name="matrix_intake_final_msg_2">Aber in den nächsten 30 Tagen werden Sie sich nicht mehr unbewusst bewegen.</string>
+    <string name="matrix_intake_final_msg_3">30 TAGE BIS ZUM EXIT</string>
+    <string name="matrix_intake_final_msg_4">Tag 1 beginnt jetzt.</string>
 </resources>
 
 

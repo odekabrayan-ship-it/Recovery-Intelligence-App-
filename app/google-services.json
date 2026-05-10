@@ -22,6 +22,14 @@
           }
         },
         {
+          "client_id": "119651407923-release.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.harc.health",
+            "certificate_hash": "eb5ae3ed89283fe5347449b3fbd6b1e6a3081b54"
+          }
+        },
+        {
           "client_id": "119651407923-4e5a838i6kku18di1cpp0kb9s9mko6mu.apps.googleusercontent.com",
           "client_type": 3
         }

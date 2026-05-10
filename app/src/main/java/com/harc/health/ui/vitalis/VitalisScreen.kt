@@ -129,11 +129,29 @@ fun VitalisScreen(viewModel: MainViewModel, onBack: () -> Unit) {
 
             // --- LIVE INTERVENTION DIALOGS (Inherited from the high-engagement model) ---
             if (activeAdeAction != null) {
-                AdeInterventionDialog(accent = circadianColor, action = activeAdeAction!!, onComplete = { viewModel.toggleAction(activeAdeAction!!.id); showCelebration = activeAdeAction!!.id; activeAdeAction = null }, onDismiss = { activeAdeAction = null })
+                AdeInterventionDialog(
+                    accent = circadianColor,
+                    action = activeAdeAction!!,
+                    viewModel = viewModel,
+                    onComplete = {
+                        showCelebration = activeAdeAction!!.id
+                        activeAdeAction = null
+                    },
+                    onDismiss = { activeAdeAction = null }
+                )
             }
 
             if (activeActivity != null) {
-                ActivityInterventionDialog(accent = circadianColor, activity = activeActivity!!, onComplete = { viewModel.toggleAction(activeActivity!!.id); showCelebration = activeActivity!!.id; activeActivity = null }, onDismiss = { activeActivity = null })
+                ActivityInterventionDialog(
+                    accent = circadianColor,
+                    activity = activeActivity!!,
+                    viewModel = viewModel,
+                    onComplete = {
+                        showCelebration = activeActivity!!.id
+                        activeActivity = null
+                    },
+                    onDismiss = { activeActivity = null }
+                )
             }
 
             if (activeProtocol != null) {
@@ -843,53 +861,264 @@ fun ClinicalBioMap(data: VitalisData, accent: Color) {
 // --- SHARED DIALOG COMPONENTS (Inherited from Engagement Engine) ---
 
 @Composable
-fun AdeInterventionDialog(accent: Color, action: ActionDecisionEngine.AdeAction, onComplete: () -> Unit, onDismiss: () -> Unit) {
+fun AdeInterventionDialog(
+    accent: Color,
+    action: ActionDecisionEngine.AdeAction,
+    viewModel: MainViewModel,
+    onComplete: () -> Unit,
+    onDismiss: () -> Unit
+) {
     AlertDialog(
         onDismissRequest = onDismiss,
         containerColor = VitalisSlate,
-        title = { Text(stringResource(action.instructionRes).uppercase(), fontWeight = FontWeight.Black, color = VitalisPureWhite) },
+        title = {
+            Text(
+                stringResource(action.instructionRes).uppercase(),
+                fontWeight = FontWeight.Black,
+                color = VitalisPureWhite
+            )
+        },
         text = {
             Column {
                 Text(stringResource(action.contextRes), color = VitalisSteel)
                 Spacer(modifier = Modifier.height(16.dp))
                 Surface(color = accent.copy(alpha = 0.1f), shape = RoundedCornerShape(8.dp)) {
-                    Text(stringResource(action.researchInsightRes), modifier = Modifier.padding(12.dp), style = MaterialTheme.typography.bodySmall, color = accent)
+                    Text(
+                        stringResource(action.researchInsightRes),
+                        modifier = Modifier.padding(12.dp),
+                        style = MaterialTheme.typography.bodySmall,
+                        color = accent
+                    )
                 }
             }
         },
         confirmButton = {
-            Button(onClick = onComplete, colors = ButtonDefaults.buttonColors(containerColor = accent, contentColor = VitalisDeepNavy)) {
+            Button(
+                onClick = {
+                    viewModel.toggleAction(action.id, 1.0)
+                    onComplete()
+                },
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = accent,
+                    contentColor = VitalisDeepNavy
+                )
+            ) {
                 Text(stringResource(R.string.vitalis_log_completion), fontWeight = FontWeight.Bold)
             }
         },
         dismissButton = {
-            TextButton(onClick = onDismiss) { Text(stringResource(R.string.settings_close), color = VitalisSteel) }
+            TextButton(onClick = onDismiss) {
+                Text(stringResource(R.string.settings_close), color = VitalisSteel)
+            }
         }
     )
 }
 
 @Composable
-fun ActivityInterventionDialog(accent: Color, activity: VitalisActivity, onComplete: () -> Unit, onDismiss: () -> Unit) {
+fun ActivityInterventionDialog(
+    accent: Color,
+    activity: VitalisActivity,
+    viewModel: MainViewModel,
+    onComplete: () -> Unit,
+    onDismiss: () -> Unit
+) {
+    val stability by viewModel.stabilityScore.collectAsState()
+    val pulse by viewModel.pulseIntensity.collectAsState()
+
+    DisposableEffect(Unit) {
+        viewModel.startSensorMonitoring()
+        onDispose {
+            viewModel.stopSensorMonitoring()
+        }
+    }
+
     AlertDialog(
         onDismissRequest = onDismiss,
         containerColor = VitalisSlate,
-        title = { Text(stringResource(activity.titleRes).uppercase(), fontWeight = FontWeight.Black, color = VitalisPureWhite) },
-        text = {
+        properties = DialogProperties(usePlatformDefaultWidth = false),
+        modifier = Modifier.fillMaxWidth().padding(16.dp),
+        title = {
             Column {
+                Text(
+                    stringResource(activity.titleRes).uppercase(),
+                    fontWeight = FontWeight.Black,
+                    color = VitalisPureWhite
+                )
+                if (activity.interactionType != InteractionType.PASSIVE) {
+                    Text(
+                        text = "LIVE BIO-FEEDBACK ACTIVE",
+                        style = MaterialTheme.typography.labelSmall,
+                        color = accent,
+                        letterSpacing = 1.sp
+                    )
+                }
+            }
+        },
+        text = {
+            Column(modifier = Modifier.verticalScroll(rememberScrollState())) {
                 Text(stringResource(activity.instructionsRes), color = VitalisSteel)
+
+                if (activity.interactionType == InteractionType.GYRO_STABILIZATION) {
+                    Spacer(modifier = Modifier.height(24.dp))
+                    Text(
+                        "STABILITY CALIBRATION",
+                        style = MaterialTheme.typography.labelSmall,
+                        color = VitalisSteel
+                    )
+                    Spacer(modifier = Modifier.height(8.dp))
+                    Box(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .height(12.dp)
+                            .clip(CircleShape)
+                            .background(Color.White.copy(alpha = 0.1f))
+                    ) {
+                        Box(
+                            modifier = Modifier
+                                .fillMaxHeight()
+                                .fillMaxWidth(stability)
+                                .background(accent)
+                        )
+                    }
+                    Text(
+                        text = if (stability > 0.8f) "STABLE" else "STABILIZING...",
+                        style = MaterialTheme.typography.labelSmall,
+                        color = if (stability > 0.8f) VitalisEmerald else accent,
+                        modifier = Modifier.align(Alignment.End)
+                    )
+                }
+
+                if (activity.interactionType == InteractionType.ISOMETRIC_PULSE) {
+                    Spacer(modifier = Modifier.height(24.dp))
+                    Text(
+                        "PULSE INTENSITY",
+                        style = MaterialTheme.typography.labelSmall,
+                        color = VitalisSteel
+                    )
+                    Spacer(modifier = Modifier.height(8.dp))
+                    LinearProgressIndicator(
+                        progress = { (pulse / 20f).coerceIn(0f, 1f) },
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .height(12.dp)
+                            .clip(CircleShape),
+                        color = accent,
+                        trackColor = Color.White.copy(alpha = 0.1f)
+                    )
+                }
+
+                if (activity.interactionType == InteractionType.BIO_FEEDBACK_PPG) {
+                    Spacer(modifier = Modifier.height(24.dp))
+                    BioFeedbackPPGView(
+                        onPulseDetected = { intensity ->
+                            // Map camera intensity to pulse/HRV in future
+                        },
+                        modifier = Modifier.fillMaxWidth().height(100.dp)
+                    )
+                }
+
+                if (activity.interactionType == InteractionType.OPTICAL_FLOW) {
+                    Spacer(modifier = Modifier.height(24.dp))
+                    Text(
+                        "NEURAL SYNCHRONIZATION",
+                        style = MaterialTheme.typography.labelSmall,
+                        color = VitalisSteel
+                    )
+                    Spacer(modifier = Modifier.height(8.dp))
+                    // Visual placeholder for Optical Flow / Neural Sync
+                    Box(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .height(120.dp)
+                            .clip(RoundedCornerShape(8.dp))
+                            .background(Color.Black)
+                    ) {
+                        Text(
+                            "FOLLOW THE MOVING TARGET WITH YOUR EYES",
+                            modifier = Modifier.align(Alignment.Center),
+                            style = MaterialTheme.typography.labelSmall,
+                            color = accent.copy(alpha = 0.5f)
+                        )
+                    }
+                }
+
+                if (activity.interactionType == InteractionType.COGNITIVE_DUAL_TASK) {
+                    Spacer(modifier = Modifier.height(24.dp))
+                    Text(
+                        "COGNITIVE LOAD + MOTOR CONTROL",
+                        style = MaterialTheme.typography.labelSmall,
+                        color = VitalisSteel
+                    )
+                    Spacer(modifier = Modifier.height(8.dp))
+                    // Placeholder for Dual Task
+                    Column(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(8.dp),
+                        horizontalAlignment = Alignment.CenterHorizontally
+                    ) {
+                        Text("SOLVE WHILE BALANCING", color = accent)
+                        Text("14 + 27 = ?", style = MaterialTheme.typography.headlineMedium, color = VitalisPureWhite)
+                    }
+                }
+
+                if (activity.interactionType == InteractionType.DEPTH_FOCUS_SHIFT) {
+                    Spacer(modifier = Modifier.height(24.dp))
+                    Text(
+                        "OPTIC NERVE RESET",
+                        style = MaterialTheme.typography.labelSmall,
+                        color = VitalisSteel
+                    )
+                    Spacer(modifier = Modifier.height(8.dp))
+                    Text(
+                        "SHIFT FOCUS: 20 INCHES -> 20 FEET -> 20 INCHES",
+                        color = accent,
+                        style = MaterialTheme.typography.bodySmall
+                    )
+                }
+
                 Spacer(modifier = Modifier.height(16.dp))
                 Surface(color = accent.copy(alpha = 0.1f), shape = RoundedCornerShape(8.dp)) {
-                    Text(stringResource(activity.researchInsightRes), modifier = Modifier.padding(12.dp), style = MaterialTheme.typography.bodySmall, color = accent)
+                    Text(
+                        stringResource(activity.researchInsightRes),
+                        modifier = Modifier.padding(12.dp),
+                        style = MaterialTheme.typography.bodySmall,
+                        color = accent
+                    )
                 }
             }
         },
         confirmButton = {
-            Button(onClick = onComplete, colors = ButtonDefaults.buttonColors(containerColor = accent, contentColor = VitalisDeepNavy)) {
+            Button(
+                onClick = {
+                    val precision = when (activity.interactionType) {
+                        InteractionType.GYRO_STABILIZATION -> stability.toDouble()
+                        InteractionType.ISOMETRIC_PULSE -> (pulse / 20f).toDouble().coerceIn(0.0, 1.0)
+                        else -> 1.0
+                    }
+                    viewModel.toggleAction(activity.id, precision)
+                    onComplete()
+                },
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = accent,
+                    contentColor = VitalisDeepNavy
+                ),
+                enabled = when (activity.interactionType) {
+                    InteractionType.GYRO_STABILIZATION -> stability > 0.7f
+                    InteractionType.ISOMETRIC_PULSE -> pulse > 5f
+                    else -> true
+                }
+            ) {
                 Text(stringResource(R.string.vitalis_complete), fontWeight = FontWeight.Bold)
             }
         },
         dismissButton = {
-            TextButton(onClick = onDismiss) { Text(stringResource(R.string.settings_close), color = VitalisSteel) }
+            TextButton(onClick = onDismiss) {
+                Text(
+                    stringResource(R.string.settings_close),
+                    color = VitalisSteel
+                )
+            }
         }
     )
 }

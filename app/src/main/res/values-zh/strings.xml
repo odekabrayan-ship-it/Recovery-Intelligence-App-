@@ -373,10 +373,10 @@
     <string name="act_sl3_phys">Maximizes nocturnal anti-cancer mechanisms and cellular repair.</string>
     <string name="act_sl3_rsch">Apply \'Night Shift\' software and physical amber-tinted lenses. Even low-intensity blue light can suppress melatonin release for up to 90 minutes. Ensure all peripheral LEDs in the bedroom are covered or disabled.</string>
     <string name="act_sl4_title">Glymphatic Thermal Trigger</string>
-    <string name="act_sl4_ipre">Lower bedroom temperature to 18�C (64�F).</string>
+    <string name="act_sl4_ipre">Lower bedroom temperature to 18�C (64�F).</string>
     <string name="act_sl4_bio">A drop in core body temperature is the primary physiological trigger for entering N3 Deep Sleep.</string>
     <string name="act_sl4_phys">Triggers glymphatic system to \'flush\' beta-amyloid, reducing Alzheimer\'s and dementia risk.</string>
-    <string name="act_sl4_rsch">Combine with a warm shower 90m before bed. The \'rebound\' vasodilation in hands and feet facilitates the necessary 1�C drop in core temperature required for neural waste-clearance cycles.</string>
+    <string name="act_sl4_rsch">Combine with a warm shower 90m before bed. The \'rebound\' vasodilation in hands and feet facilitates the necessary 1�C drop in core temperature required for neural waste-clearance cycles.</string>
     <string name="act_ca1_title">Orthostatic Vascular Priming</string>
     <string name="act_ca1_ipre">Stand up immediately and perform 2m of light stretching.</string>
     <string name="act_ca1_bio">Forces the vascular system to adapt to gravity, stimulating nitric oxide release in the endothelium.</string>
@@ -584,6 +584,90 @@
     <string name="act_p6_title">Vagal Reset</string>
     <string name="act_p6_desc">EXPERT TIP: Use cold water to reset your nervous system.</string>
     <string name="recovery_lvl">LVL</string>
+    <!-- 30天走出矩阵 -->
+    <string name="matrix_title">30天走出矩阵</string>
+    <string name="matrix_subtitle">严肃行为干预</string>
+    <string name="matrix_phase_wake_up">第一阶段：觉醒</string>
+    <string name="matrix_phase_break_loop">第二阶段：打破循环</string>
+    <string name="matrix_phase_rebuild_control">第三阶段：重建控制</string>
+    <string name="matrix_day_counter">第 %1$d 天（共 30 天）</string>
+    <string name="matrix_action_required">需要采取行动</string>
+    <string name="matrix_daily_directive">每日指令</string>
+
+    <!-- 矩阵欲望干预 -->
+    <string name="matrix_urge_title">欲望干预</string>
+    <string name="matrix_urge_emergency">紧急覆盖</string>
+    <string name="matrix_urge_step_1_title">生理冲击</string>
+    <string name="matrix_urge_step_1_desc">在颈部敷冰或用冷水洗脸 30 秒。这会触发哺乳动物潜水反射。</string>
+    <string name="matrix_urge_step_2_title">认知中断</string>
+    <string name="matrix_urge_step_2_desc">大声从 100 开始以 7 为倍数倒数。（100, 93, 86...）。</string>
+    <string name="matrix_urge_step_3_title">物理位移</string>
+    <string name="matrix_urge_step_3_desc">立即离开房间。去公共场所或室外。</string>
+    <string name="matrix_urge_completed">欲望已中和</string>
+    <string name="matrix_urge_command_stand">现在站起来</string>
+    <string name="matrix_urge_command_leave">现在离开房间</string>
+    <string name="matrix_urge_command_block">立即屏蔽所有应用</string>
+    <string name="matrix_urge_command_cold">冷水重置</string>
+    <string name="matrix_urge_command_negotiate">不要与欲望谈判</string>
+    <string name="matrix_urge_countdown_active">积极抵抗：%1$d</string>
+    <string name="matrix_urge_future_self">如果你现在失败，未来的你会说什么？</string>
+    <string name="matrix_urge_future_self_win">未来的你正等着你赢得这一刻。</string>
+
+    <!-- 矩阵复发分析 -->
+    <string name="matrix_relapse_title">模式分析</string>
+    <string name="matrix_relapse_intro">复发即数据。不带羞耻地分析循环。</string>
+    <string name="matrix_relapse_trigger">主要的触发因素是什么？</string>
+    <string name="matrix_relapse_environment">你当时在哪里？</string>
+    <string name="matrix_relapse_emotion">你当时的情绪状态如何？</string>
+    <string name="matrix_relapse_cost">循环的代价：这一刻偷走了你未来的什么？</string>
+    <string name="matrix_relapse_lesson">为了防止这种循环，需要做出什么结构性改变？</string>
+    <string name="matrix_relapse_reset">重新启动方案</string>
+    <string name="matrix_relapse_cost_prompt">量化损失（时间、健康、自尊）。</string>
+    <string name="matrix_future_self_prompt">未来的你正在注视。请据此行动。</string>
+
+    <!-- 矩阵夜间模式 -->
+    <string name="matrix_night_mode_title">紧急夜间模式</string>
+    <string name="matrix_night_mode_desc">矩阵方案已激活紧急夜间模式。检测到高风险时段。限制访问以稳定您的神经基准。</string>
+    <string name="matrix_night_mode_override">紧急覆盖（仅在安全时使用）</string>
+
+    <!-- 最终矩阵报告 -->
+    <string name="matrix_report_title">最终矩阵退出报告</string>
+    <string name="matrix_report_summary">30天行为重建总结</string>
+    <string name="matrix_report_triggers_found">已识别的触发因素</string>
+    <string name="matrix_report_interruption_speed">平均干预速度</string>
+    <string name="matrix_report_growth_metric">神经韧性增长</string>
+    <string name="matrix_report_exit_status">状态：已退出矩阵</string>
+    <string name="matrix_maintenance_mode">维护模式已激活</string>
+    <string name="matrix_days_left">距离毕业还有 %1$d 天</string>
+
+    <!-- 矩阵准入体验 -->
+    <string name="matrix_intake_opening_1">本系统是为陷入重复性冲动行为的人设计的。</string>
+    <string name="matrix_intake_opening_2">不是因为他们软弱。而是因为循环已经自动化了。</string>
+    <string name="matrix_intake_confrontation_title">这种循环重复多久了？</string>
+    <string name="matrix_intake_loop_recognition_title">循环</string>
+    <string name="matrix_intake_loop_recognition_familiar">这听起来熟悉吗？</string>
+    <string name="matrix_intake_entry_points_title">通常是什么开启了循环？</string>
+    <string name="matrix_intake_entry_points_feedback">很好。系统正在识别您的切入点。</string>
+    <string name="matrix_intake_hidden_truth_title">隐藏的真相</string>
+    <string name="matrix_intake_hidden_truth_1">大多数冲动性色情和自慰模式并非始于行动。</string>
+    <string name="matrix_intake_hidden_truth_2">它们始于被动升级。</string>
+    <string name="matrix_intake_hidden_truth_3">越早识别循环，就越可能实现控制。</string>
+    <string name="matrix_intake_real_cost_title">这种循环受影响最大的是什么？</string>
+    <string name="matrix_intake_danger_hours_title">你最脆弱的时候是什么时候？</string>
+    <string name="matrix_intake_danger_hours_feedback">检测到阴影时间</string>
+    <string name="matrix_intake_honesty_check_title">当欲望开始时，通常会发生什么？</string>
+    <string name="matrix_intake_honesty_check_feedback">系统现在识别了您的升级模式。</string>
+    <string name="matrix_intake_recovery_reality_title">康复现实</string>
+    <string name="matrix_intake_recovery_reality_1">这段旅程不是为了变得完美。</string>
+    <string name="matrix_intake_recovery_reality_2">而是为了在循环中更早地产生意识。</string>
+    <string name="matrix_intake_decision_title">在接下来的 30 天里，本系统将挑战：</string>
+    <string name="matrix_intake_decision_prompt">您准备好有意识地进入了吗？</string>
+    <string name="matrix_intake_enter_system">进入系统</string>
+    <string name="matrix_intake_contract_title">契约</string>
+    <string name="matrix_intake_final_msg_1">循环可能仍在低语。欲望可能仍会出现。</string>
+    <string name="matrix_intake_final_msg_2">但在接下来的 30 天里，您将不再无意识地行动。</string>
+    <string name="matrix_intake_final_msg_3">退出倒计时 30 天</string>
+    <string name="matrix_intake_final_msg_4">第 1 天现在开始。</string>
 </resources>
 
 

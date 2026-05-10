@@ -7,14 +7,17 @@ import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
 import com.harc.health.model.HealthLog
 import com.harc.health.model.LocalMessage
+import com.harc.health.model.MatrixProgress
+import com.harc.health.model.UrgeLog
 import com.harc.health.model.User
 
-@Database(entities = [User::class, HealthLog::class, LocalMessage::class], version = 4, exportSchema = false)
+@Database(entities = [User::class, HealthLog::class, LocalMessage::class, MatrixProgress::class, UrgeLog::class], version = 8, exportSchema = false)
 @TypeConverters(Converters::class)
 abstract class AppDatabase : RoomDatabase() {
     abstract fun userDao(): UserDao
     abstract fun healthLogDao(): HealthLogDao
     abstract fun messageDao(): MessageDao
+    abstract fun matrixDao(): MatrixDao
 
     companion object {
         @Volatile

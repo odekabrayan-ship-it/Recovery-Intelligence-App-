@@ -373,10 +373,10 @@
     <string name="act_sl3_phys">Maximizes nocturnal anti-cancer mechanisms and cellular repair.</string>
     <string name="act_sl3_rsch">Apply \'Night Shift\' software and physical amber-tinted lenses. Even low-intensity blue light can suppress melatonin release for up to 90 minutes. Ensure all peripheral LEDs in the bedroom are covered or disabled.</string>
     <string name="act_sl4_title">Glymphatic Thermal Trigger</string>
-    <string name="act_sl4_ipre">Lower bedroom temperature to 18�C (64�F).</string>
+    <string name="act_sl4_ipre">Lower bedroom temperature to 18�C (64�F).</string>
     <string name="act_sl4_bio">A drop in core body temperature is the primary physiological trigger for entering N3 Deep Sleep.</string>
     <string name="act_sl4_phys">Triggers glymphatic system to \'flush\' beta-amyloid, reducing Alzheimer\'s and dementia risk.</string>
-    <string name="act_sl4_rsch">Combine with a warm shower 90m before bed. The \'rebound\' vasodilation in hands and feet facilitates the necessary 1�C drop in core temperature required for neural waste-clearance cycles.</string>
+    <string name="act_sl4_rsch">Combine with a warm shower 90m before bed. The \'rebound\' vasodilation in hands and feet facilitates the necessary 1�C drop in core temperature required for neural waste-clearance cycles.</string>
     <string name="act_ca1_title">Orthostatic Vascular Priming</string>
     <string name="act_ca1_ipre">Stand up immediately and perform 2m of light stretching.</string>
     <string name="act_ca1_bio">Forces the vascular system to adapt to gravity, stimulating nitric oxide release in the endothelium.</string>
@@ -584,6 +584,90 @@
     <string name="act_p6_title">Vagal Reset</string>
     <string name="act_p6_desc">EXPERT TIP: Use cold water to reset your nervous system.</string>
     <string name="recovery_lvl">LVL</string>
+    <!-- 30 dana van Matriksa -->
+    <string name="matrix_title">30 DANA VAN MATRIKSA</string>
+    <string name="matrix_subtitle">Ozbiljna bihevioralna intervencija</string>
+    <string name="matrix_phase_wake_up">FAZA 1: PROBUDI SE</string>
+    <string name="matrix_phase_break_loop">FAZA 2: PREKINI PETLJU</string>
+    <string name="matrix_phase_rebuild_control">FAZA 3: PONOVO IZGRADI KONTROLU</string>
+    <string name="matrix_day_counter">Dan %1$d od 30</string>
+    <string name="matrix_action_required">POTREBNA AKCIJA</string>
+    <string name="matrix_daily_directive">DNEVNA DIREKTIVA</string>
+
+    <!-- Intervencija Matrix žudnje -->
+    <string name="matrix_urge_title">INTERVENCIJA KOD ŽUDNJE</string>
+    <string name="matrix_urge_emergency">HITNO PREMOŠĆAVANJE</string>
+    <string name="matrix_urge_step_1_title">FIZIOLOŠKI ŠOK</string>
+    <string name="matrix_urge_step_1_desc">Stavite led na vrat ili se poprskajte hladnom vodom po licu 30 sekundi. Ovo pokreće refleks ronjenja kod sisara.</string>
+    <string name="matrix_urge_step_2_title">KOGNITIVNI PREKID</string>
+    <string name="matrix_urge_step_2_desc">Brojte unazad od 100 po 7 naglas. (100, 93, 86...).</string>
+    <string name="matrix_urge_step_3_title">FIZIČKO IZMEŠTANJE</string>
+    <string name="matrix_urge_step_3_desc">Odmah napustite prostoriju. Idite na javno mesto ili napolje.</string>
+    <string name="matrix_urge_completed">ŽUDNJA NEUTRALISANA</string>
+    <string name="matrix_urge_command_stand">Ustani sada</string>
+    <string name="matrix_urge_command_leave">NAPUSTI PROSTORIJU SADA</string>
+    <string name="matrix_urge_command_block">ODMAH BLOKIRAJ SVE APLIKACIJE</string>
+    <string name="matrix_urge_command_cold">Reset hladnom vodom</string>
+    <string name="matrix_urge_command_negotiate">Ne pregovaraj sa žudnjom</string>
+    <string name="matrix_urge_countdown_active">Aktivni otpor: %1$d</string>
+    <string name="matrix_urge_future_self">Šta će tvoje buduće ja reći ako sada ne uspeš?</string>
+    <string name="matrix_urge_future_self_win">Tvoje buduće ja čeka da pobediš u ovom trenutku.</string>
+
+    <!-- Matrix analiza relapsa -->
+    <string name="matrix_relapse_title">ANALIZA OBRAZACA</string>
+    <string name="matrix_relapse_intro">Relaps je podatak. Analiziraj petlju bez stida.</string>
+    <string name="matrix_relapse_trigger">Šta je bio primarni okidač?</string>
+    <string name="matrix_relapse_environment">Gde ste se nalazili?</string>
+    <string name="matrix_relapse_emotion">Kakvo je bilo vaše emocionalno stanje?</string>
+    <string name="matrix_relapse_cost">CENA PETLJE: Šta je ovaj trenutak ukrao od tvoje budućnosti?</string>
+    <string name="matrix_relapse_lesson">Koja je strukturna promena potrebna da bi se sprečila ova petlja?</string>
+    <string name="matrix_relapse_reset">RESTARTUJ PROTOKOL</string>
+    <string name="matrix_relapse_cost_prompt">Kvantifikuj štetu (vreme, zdravlje, poštovanje).</string>
+    <string name="matrix_future_self_prompt">Tvoje Buduće Ja posmatra. Postupaj u skladu sa tim.</string>
+
+    <!-- Matrix noćni režim -->
+    <string name="matrix_night_mode_title">HITAN NOĆNI REŽIM</string>
+    <string name="matrix_night_mode_desc">Matrix protokol je aktivirao hitan noćni režim. Detektovan period visokog rizika. Pristup ograničen radi stabilizacije tvoje neuralne baze.</string>
+    <string name="matrix_night_mode_override">HITNO PREMOŠĆAVANJE (KORISTITI SAMO AKO JE BEZBEDNO)</string>
+
+    <!-- Finalni Matrix izveštaj -->
+    <string name="matrix_report_title">FINALNI IZVEŠTAJ O IZLASKU IZ MATRIKSA</string>
+    <string name="matrix_report_summary">Rezime 30-dnevne rekonstrukcije ponašanja</string>
+    <string name="matrix_report_triggers_found">Identifikovani okidači</string>
+    <string name="matrix_report_interruption_speed">Prosečna brzina intervencije</string>
+    <string name="matrix_report_growth_metric">Rast neuralne otpornosti</string>
+    <string name="matrix_report_exit_status">STATUS: VAN MATRIKSA</string>
+    <string name="matrix_maintenance_mode">REŽIM ODRŽAVANJA AKTIVAN</string>
+    <string name="matrix_days_left">%1$d DANA DO GRADUACIJE</string>
+
+    <!-- Matrix iskustvo prijema -->
+    <string name="matrix_intake_opening_1">Ovaj sistem je napravljen za ljude zarobljene u repetitivnim kompulsivnim ponašanjima.</string>
+    <string name="matrix_intake_opening_2">Ne zato što su slabi. Već zato što je petlja postala automatska.</string>
+    <string name="matrix_intake_confrontation_title">Koliko dugo se petlja ponavlja?</string>
+    <string name="matrix_intake_loop_recognition_title">PETLJA</string>
+    <string name="matrix_intake_loop_recognition_familiar">Da li ti ovo zvuči poznato?</string>
+    <string name="matrix_intake_entry_points_title">Šta obično pokreće petlju?</string>
+    <string name="matrix_intake_entry_points_feedback">Dobro. Sistem identifikuje tvoje ulazne tačke.</string>
+    <string name="matrix_intake_hidden_truth_title">SKRIVENA ISTINA</string>
+    <string name="matrix_intake_hidden_truth_1">Većina kompulsivnih obrazaca pornografije i masturbacije ne počinje akcijom.</string>
+    <string name="matrix_intake_hidden_truth_2">Oni počinju pasivnom eskalacijom.</string>
+    <string name="matrix_intake_hidden_truth_3">Što se ranije petlja prepozna, to je veća kontrola moguća.</string>
+    <string name="matrix_intake_real_cost_title">Na šta je ova petlja najviše uticala?</string>
+    <string name="matrix_intake_danger_hours_title">Kada si najranjiviji/a?</string>
+    <string name="matrix_intake_danger_hours_feedback">DETEKTOVANI SATI SENKE</string>
+    <string name="matrix_intake_honesty_check_title">Kada žudnje počnu, šta se obično dešava?</string>
+    <string name="matrix_intake_honesty_check_feedback">Sistem sada prepoznaje tvoj obrazac eskalacije.</string>
+    <string name="matrix_intake_recovery_reality_title">STVARNOST OPORAVKA</string>
+    <string name="matrix_intake_recovery_reality_1">Ovo putovanje nije o tome da postaneš savršen/a.</string>
+    <string name="matrix_intake_recovery_reality_2">Radi se o tome da postaneš svestan/na ranije unutar petlje.</string>
+    <string name="matrix_intake_decision_title">Tokom narednih 30 dana, ovaj sistem će izazvati:</string>
+    <string name="matrix_intake_decision_prompt">Da li si spreman/na da uđeš svesno?</string>
+    <string name="matrix_intake_enter_system">UĐI U SISTEM</string>
+    <string name="matrix_intake_contract_title">UGOVOR</string>
+    <string name="matrix_intake_final_msg_1">Petlja može i dalje da govori. Žudnje se mogu i dalje pojavljivati.</string>
+    <string name="matrix_intake_final_msg_2">Ali tokom narednih 30 dana, više se nećeš kretati nesvesno.</string>
+    <string name="matrix_intake_final_msg_3">30 DANA DO IZLASKA</string>
+    <string name="matrix_intake_final_msg_4">1. dan počinje sada.</string>
 </resources>
 
 

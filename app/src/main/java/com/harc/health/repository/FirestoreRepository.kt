@@ -29,6 +29,7 @@ class FirestoreRepository {
             Log.d("FirestoreRepository", "Log synced for $userId on ${log.date}")
         } catch (e: Exception) {
             Log.e("FirestoreRepository", "Error syncing log: ${e.message}")
+            throw e
         }
     }
 
@@ -55,6 +56,7 @@ class FirestoreRepository {
             Log.d("FirestoreRepository", "Profile synced for ${user.id}")
         } catch (e: Exception) {
             Log.e("FirestoreRepository", "Error syncing profile: ${e.message}")
+            throw e
         }
     }
 
@@ -65,7 +67,7 @@ class FirestoreRepository {
             snapshot.toObject(User::class.java)
         } catch (e: Exception) {
             Log.e("FirestoreRepository", "Error fetching profile: ${e.message}")
-            null
+            throw e
         }
     }
 

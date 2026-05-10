@@ -64,7 +64,9 @@ data class HealthLog(
     val emotionalTension: Int = 0, // 0-100
     val hrv: Int = 0, // Heart Rate Variability
     val anxietyLevel: Int = 0, // 0-100
-    val actionsCompleted: List<String> = emptyList()
+    val actionsCompleted: List<String> = emptyList(),
+    // Sensor-derived accuracy metrics for Bio-State Verification
+    val sensorPrecisionMap: Map<String, Double> = emptyMap() // actionId -> precision (0.0 to 1.0)
 )
 
 @Keep

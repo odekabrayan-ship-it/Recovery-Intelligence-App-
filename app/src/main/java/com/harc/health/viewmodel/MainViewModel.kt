@@ -9,6 +9,7 @@ import com.harc.health.logic.RecoveryEngine
 import com.harc.health.logic.VitalisEngine
 import com.harc.health.logic.ActionDecisionEngine
 import com.harc.health.logic.SessionManager
+import com.harc.health.logic.BioSensorManager
 import com.harc.health.model.HealthLog
 import com.harc.health.model.User
 import com.harc.health.model.VitalisData
@@ -26,6 +27,13 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     private val firestoreRepository = FirestoreRepository()
     private val sessionManager = SessionManager(application)
     private val auth = FirebaseAuth.getInstance()
+    private val bioSensorManager = BioSensorManager(application)
+
+    val stabilityScore = bioSensorManager.stabilityScore
+    val pulseIntensity = bioSensorManager.pulseIntensity
+
+    fun startSensorMonitoring() = bioSensorManager.startMonitoring()
+    fun stopSensorMonitoring() = bioSensorManager.stopMonitoring()
 
     private val _userId = MutableStateFlow(auth.currentUser?.uid ?: "anonymous")
     val userId: StateFlow<String> = _userId.asStateFlow()
@@ -73,6 +81,7 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     sealed class UiEvent {
         data class ShowSnackbar(val message: String) : UiEvent()
         object NavigateToRecovery : UiEvent()
+        object NavigateToMatrix : UiEvent()
         object NavigateBack : UiEvent()
     }
 
@@ -199,6 +208,16 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
         }
     }
 
+    fun navigate(screen: com.harc.health.ui.Screen) {
+        viewModelScope.launch {
+            when (screen) {
+                com.harc.health.ui.Screen.Recovery -> _uiEvent.emit(UiEvent.NavigateToRecovery)
+                com.harc.health.ui.Screen.Matrix -> _uiEvent.emit(UiEvent.NavigateToMatrix)
+                else -> {}
+            }
+        }
+    }
+
     fun addDrink() {
         _healthLog.update { it.copy(alcoholUnits = it.alcoholUnits + 1) }
         updateScores()
@@ -243,7 +262,7 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
         saveCurrentLog()
     }
 
-    fun toggleAction(actionId: String) {
+    fun toggleAction(actionId: String, precision: Double? = null) {
         _healthLog.update { currentLog ->
             val isCompleting = !currentLog.actionsCompleted.contains(actionId)
             
@@ -266,7 +285,14 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
             } else {
                 currentLog.actionsCompleted - actionId
             }
-            currentLog.copy(actionsCompleted = newActions)
+            
+            val newPrecisionMap = if (precision != null) {
+                currentLog.sensorPrecisionMap + (actionId to precision)
+            } else {
+                currentLog.sensorPrecisionMap
+            }
+
+            currentLog.copy(actionsCompleted = newActions, sensorPrecisionMap = newPrecisionMap)
         }
         updateScores()
         saveCurrentLog()

@@ -373,10 +373,10 @@
     <string name="act_sl3_phys">Maximizes nocturnal anti-cancer mechanisms and cellular repair.</string>
     <string name="act_sl3_rsch">Apply \'Night Shift\' software and physical amber-tinted lenses. Even low-intensity blue light can suppress melatonin release for up to 90 minutes. Ensure all peripheral LEDs in the bedroom are covered or disabled.</string>
     <string name="act_sl4_title">Glymphatic Thermal Trigger</string>
-    <string name="act_sl4_ipre">Lower bedroom temperature to 18�C (64�F).</string>
+    <string name="act_sl4_ipre">Lower bedroom temperature to 18�C (64�F).</string>
     <string name="act_sl4_bio">A drop in core body temperature is the primary physiological trigger for entering N3 Deep Sleep.</string>
     <string name="act_sl4_phys">Triggers glymphatic system to \'flush\' beta-amyloid, reducing Alzheimer\'s and dementia risk.</string>
-    <string name="act_sl4_rsch">Combine with a warm shower 90m before bed. The \'rebound\' vasodilation in hands and feet facilitates the necessary 1�C drop in core temperature required for neural waste-clearance cycles.</string>
+    <string name="act_sl4_rsch">Combine with a warm shower 90m before bed. The \'rebound\' vasodilation in hands and feet facilitates the necessary 1�C drop in core temperature required for neural waste-clearance cycles.</string>
     <string name="act_ca1_title">Orthostatic Vascular Priming</string>
     <string name="act_ca1_ipre">Stand up immediately and perform 2m of light stretching.</string>
     <string name="act_ca1_bio">Forces the vascular system to adapt to gravity, stimulating nitric oxide release in the endothelium.</string>
@@ -584,6 +584,90 @@
     <string name="act_p6_title">Vagal Reset</string>
     <string name="act_p6_desc">EXPERT TIP: Use cold water to reset your nervous system.</string>
     <string name="recovery_lvl">LVL</string>
+    <!-- 30 дни извън Матрицата -->
+    <string name="matrix_title">30 ДНИ ИЗВЪН МАТРИЦАТА</string>
+    <string name="matrix_subtitle">Сериозна поведенческа интервенция</string>
+    <string name="matrix_phase_wake_up">ФАЗА 1: СЪБУЖДАНЕ</string>
+    <string name="matrix_phase_break_loop">ФАЗА 2: РАЗКЪСВАНЕ НА ЦИКЪЛА</string>
+    <string name="matrix_phase_rebuild_control">ФАЗА 3: ВЪЗСТАНОВЯВАНЕ НА КОНТРОЛА</string>
+    <string name="matrix_day_counter">Ден %1$d от 30</string>
+    <string name="matrix_action_required">ИЗИСКВА СЕ ДЕЙСТВИЕ</string>
+    <string name="matrix_daily_directive">ЕЖЕДНЕВНА ДИРЕКТИВА</string>
+
+    <!-- Матрична интервенция при желание -->
+    <string name="matrix_urge_title">ИНТЕРВЕНЦИЯ ПРИ ЖЕЛАНИЕ</string>
+    <string name="matrix_urge_emergency">АВАРИЙНО ПРЕКРАТЯВАНЕ</string>
+    <string name="matrix_urge_step_1_title">ФИЗИОЛОГИЧЕН ШОК</string>
+    <string name="matrix_urge_step_1_desc">Поставете лед на врата си или напръскайте лицето си със студена вода за 30 секунди. Това задейства рефлекса за гмуркане при бозайниците.</string>
+    <string name="matrix_urge_step_2_title">КОГНИТИВНО ПРЕКЪСВАНЕ</string>
+    <string name="matrix_urge_step_2_desc">Бройте на глас от 100 назад през 7. (100, 93, 86...).</string>
+    <string name="matrix_urge_step_3_title">ФИЗИЧЕСКО ПРЕМЕСТВАНЕ</string>
+    <string name="matrix_urge_step_3_desc">Незабавно напуснете стаята. Отидете на обществено място или навън.</string>
+    <string name="matrix_urge_completed">ЖЕЛАНИЕТО Е НЕУТРАЛИЗИРАНО</string>
+    <string name="matrix_urge_command_stand">Стани сега</string>
+    <string name="matrix_urge_command_leave">НАПУСНИ СТАЯТА СЕГА</string>
+    <string name="matrix_urge_command_block">БЛОКИРАЙ ВСИЧКИ ПРИЛОЖЕНИЯ НЕЗАБАВНО</string>
+    <string name="matrix_urge_command_cold">Нулиране със студена вода</string>
+    <string name="matrix_urge_command_negotiate">Не преговаряй с желанието</string>
+    <string name="matrix_urge_countdown_active">Активна съпротива: %1$d</string>
+    <string name="matrix_urge_future_self">Какво ще каже бъдещото ти аз, ако се провалиш сега?</string>
+    <string name="matrix_urge_future_self_win">Бъдещото ти аз чака да спечелиш този момент.</string>
+
+    <!-- Матричен анализ на рецидив -->
+    <string name="matrix_relapse_title">АНАЛИЗ НА МОДЕЛИ</string>
+    <string name="matrix_relapse_intro">Рецидивът е данни. Анализирайте цикъла без срам.</string>
+    <string name="matrix_relapse_trigger">Какъв беше основният тригер?</string>
+    <string name="matrix_relapse_environment">Къде се намираше?</string>
+    <string name="matrix_relapse_emotion">Какво беше емоционалното ти състояние?</string>
+    <string name="matrix_relapse_cost">ЦЕНАТА НА ЦИКЪЛА: Какво открадна този момент от бъдещето ти?</string>
+    <string name="matrix_relapse_lesson">Каква структурна промяна е необходима, за да се предотврати този цикъл?</string>
+    <string name="matrix_relapse_reset">РЕСТАРТИРАЙ ПРОТОКОЛА</string>
+    <string name="matrix_relapse_cost_prompt">Количествено определете щетите (Време, Здраве, Уважение).</string>
+    <string name="matrix_future_self_prompt">Бъдещото ти аз наблюдава. Действай съответно.</string>
+
+    <!-- Матричен нощен режим -->
+    <string name="matrix_night_mode_title">АВАРИЕН НОЩЕН РЕЖИМ</string>
+    <string name="matrix_night_mode_desc">Протоколът Матрица активира авариен нощен режим. Засечен е период с висок риск. Достъпът е ограничен, за да се стабилизира невронната ти база.</string>
+    <string name="matrix_night_mode_override">АВАРИЙНО ПРЕКРАТЯВАНЕ (ИЗПОЛЗВАЙ САМО АКО Е БЕЗОПАСНО)</string>
+
+    <!-- Финален матричен доклад -->
+    <string name="matrix_report_title">ФИНАЛЕН ДОКЛАД ЗА ИЗЛИЗАНЕ ОТ МАТРИЦАТА</string>
+    <string name="matrix_report_summary">Резюме на 30-дневната поведенческа реконструкция</string>
+    <string name="matrix_report_triggers_found">Идентифицирани тригери</string>
+    <string name="matrix_report_interruption_speed">Ср. скорост на интервенция</string>
+    <string name="matrix_report_growth_metric">Ръст на невронната устойчивост</string>
+    <string name="matrix_report_exit_status">СТАТУС: ИЗВЪН МАТРИЦАТА</string>
+    <string name="matrix_maintenance_mode">РЕЖИМ НА ПОДДРЪЖКА АКТИВЕН</string>
+    <string name="matrix_days_left">%1$d ДНИ ДО ДИПЛОМИРАНЕТО</string>
+
+    <!-- Матричен прием - опит -->
+    <string name="matrix_intake_opening_1">Тази система е изградена за хора, заклещени в повтарящо се компулсивно поведение.</string>
+    <string name="matrix_intake_opening_2">Не защото са слаби. А защото цикълът е станал автоматичен.</string>
+    <string name="matrix_intake_confrontation_title">От колко време се повтаря цикълът?</string>
+    <string name="matrix_intake_loop_recognition_title">ЦИКЪЛЪТ</string>
+    <string name="matrix_intake_loop_recognition_familiar">Това познато ли ти звучи?</string>
+    <string name="matrix_intake_entry_points_title">Какво обикновено поставя началото на цикъла?</string>
+    <string name="matrix_intake_entry_points_feedback">Добре. Системата идентифицира твоите входни точки.</string>
+    <string name="matrix_intake_hidden_truth_title">СКРИТАТА ИСТИНА</string>
+    <string name="matrix_intake_hidden_truth_1">Повечето модели на компулсивна порнография и мастурбация не започват с действие.</string>
+    <string name="matrix_intake_hidden_truth_2">Те започват с пасивна ескалация.</string>
+    <string name="matrix_intake_hidden_truth_3">Колкото по-рано се разпознае цикълът, толкова по-голям контрол става възможен.</string>
+    <string name="matrix_intake_real_cost_title">Какво е засегнал най-много този цикъл?</string>
+    <string name="matrix_intake_danger_hours_title">Кога си най-уязвим(а)?</string>
+    <string name="matrix_intake_danger_hours_feedback">ЗАСЕЧЕНИ СЕНЧЕСТИ ЧАСОВЕ</string>
+    <string name="matrix_intake_honesty_check_title">Когато желанията започнат, какво обикновено се случва?</string>
+    <string name="matrix_intake_honesty_check_feedback">Системата вече разпознава твоя модел на ескалация.</string>
+    <string name="matrix_intake_recovery_reality_title">РЕАЛНОСТТА НА ВЪЗСТАНОВЯВАНЕТО</string>
+    <string name="matrix_intake_recovery_reality_1">Това пътуване не е за това да станеш перфектен.</string>
+    <string name="matrix_intake_recovery_reality_2">Става въпрос за това да станеш осъзнат по-рано в цикъла.</string>
+    <string name="matrix_intake_decision_title">През следващите 30 дни тази система ще предизвика:</string>
+    <string name="matrix_intake_decision_prompt">Готов(а) ли си да влезеш съзнателно?</string>
+    <string name="matrix_intake_enter_system">ВЛЕЗ В СИСТЕМАТА</string>
+    <string name="matrix_intake_contract_title">ДОГОВОРЪТ</string>
+    <string name="matrix_intake_final_msg_1">Цикълът може все още да говори. Желанията може все още да се появяват.</string>
+    <string name="matrix_intake_final_msg_2">Но през следващите 30 дни вече няма да се движиш несъзнателно.</string>
+    <string name="matrix_intake_final_msg_3">30 ДНИ ДО ИЗЛИЗАНЕ</string>
+    <string name="matrix_intake_final_msg_4">Ден 1 започва сега.</string>
 </resources>
 
 

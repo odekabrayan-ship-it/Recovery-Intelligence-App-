@@ -879,6 +879,90 @@
     <string name="vitalis_log_intake">Registrar Consumo</string>
     <string name="vitalis_therapeutic">Terapêutico</string>
     <string name="vitalis_engine">Vitalis Engine</string>
+    <!-- 30 Dias Fora da Matrix -->
+    <string name="matrix_title">30 DIAS FORA DA MATRIX</string>
+    <string name="matrix_subtitle">Intervenção Comportamental Séria</string>
+    <string name="matrix_phase_wake_up">FASE 1: ACORDE</string>
+    <string name="matrix_phase_break_loop">FASE 2: QUEBRE O CICLO</string>
+    <string name="matrix_phase_rebuild_control">FASE 3: RECONSTRUA O CONTROLE</string>
+    <string name="matrix_day_counter">Dia %1$d de 30</string>
+    <string name="matrix_action_required">AÇÃO NECESSÁRIA</string>
+    <string name="matrix_daily_directive">DIRETIVA DIÁRIA</string>
+
+    <!-- Intervenção de Desejo Matrix -->
+    <string name="matrix_urge_title">INTERVENÇÃO DE DESEJO</string>
+    <string name="matrix_urge_emergency">SOBREPOSIÇÃO DE EMERGÊNCIA</string>
+    <string name="matrix_urge_step_1_title">CHOQUE FISIOLÓGICO</string>
+    <string name="matrix_urge_step_1_desc">Aplique gelo no pescoço ou jogue água fria no rosto por 30 segundos. Isso ativa o reflexo de mergulho dos mamíferos.</string>
+    <string name="matrix_urge_step_2_title">INTERRUPÇÃO COGNITIVA</string>
+    <string name="matrix_urge_step_2_desc">Conte de 100 para trás de 7 em 7 em voz alta. (100, 93, 86...).</string>
+    <string name="matrix_urge_step_3_title">DESLOCAMENTO FÍSICO</string>
+    <string name="matrix_urge_step_3_desc">Saia do quarto imediatamente. Vá para um espaço público ou ao ar livre.</string>
+    <string name="matrix_urge_completed">DESEJO NEUTRALIZADO</string>
+    <string name="matrix_urge_command_stand">Levante-se agora</string>
+    <string name="matrix_urge_command_leave">SAIA DO QUARTO AGORA</string>
+    <string name="matrix_urge_command_block">BLOQUEIE TODOS OS APPS IMEDIATAMENTE</string>
+    <string name="matrix_urge_command_cold">Reinicialização com água fria</string>
+    <string name="matrix_urge_command_negotiate">Não negocie com o desejo</string>
+    <string name="matrix_urge_countdown_active">Resistência Ativa: %1$d</string>
+    <string name="matrix_urge_future_self">O que seu eu futuro dirá se você falhar agora?</string>
+    <string name="matrix_urge_future_self_win">Seu eu futuro está esperando por você para vencer este momento.</string>
+
+    <!-- Análise de Recaída Matrix -->
+    <string name="matrix_relapse_title">ANÁLISE DE PADRÕES</string>
+    <string name="matrix_relapse_intro">Recaída é dado. Analise o ciclo sem vergonha.</string>
+    <string name="matrix_relapse_trigger">Qual foi o gatilho primário?</string>
+    <string name="matrix_relapse_environment">Onde você estava localizado?</string>
+    <string name="matrix_relapse_emotion">Qual era o seu estado emocional?</string>
+    <string name="matrix_relapse_cost">CUSTO DO CICLO: O que este momento roubou do seu futuro?</string>
+    <string name="matrix_relapse_lesson">Qual é a mudança estrutural necessária para evitar este ciclo?</string>
+    <string name="matrix_relapse_reset">REINICIAR PROTOCOLO</string>
+    <string name="matrix_relapse_cost_prompt">Quantifique o dano (Tempo, Saúde, Respeito).</string>
+    <string name="matrix_future_self_prompt">Seu Eu Futuro está observando. Ajá de acordo.</string>
+
+    <!-- Modo Noturno Matrix -->
+    <string name="matrix_night_mode_title">MODO NOTURNO DE EMERGÊNCIA</string>
+    <string name="matrix_night_mode_desc">O protocolo Matrix ativou o Modo Noturno de Emergência. Período de alto risco detectado. Acesso restrito para estabilizar sua linha de base neural.</string>
+    <string name="matrix_night_mode_override">SOBREPOSIÇÃO DE EMERGÊNCIA (USE APENAS SE SEGURO)</string>
+
+    <!-- Relatório Final Matrix -->
+    <string name="matrix_report_title">RELATÓRIO FINAL DE SAÍDA DA MATRIX</string>
+    <string name="matrix_report_summary">Resumo da Reconstrução Comportamental de 30 Dias</string>
+    <string name="matrix_report_triggers_found">Gatilhos Identificados</string>
+    <string name="matrix_report_interruption_speed">Velocidade Média de Interrupção</string>
+    <string name="matrix_report_growth_metric">Crescimento da Resiliência Neural</string>
+    <string name="matrix_report_exit_status">STATUS: FORA DA MATRIX</string>
+    <string name="matrix_maintenance_mode">MODO DE MANUTENÇÃO ATIVO</string>
+    <string name="matrix_days_left">%1$d DIAS PARA A GRADUAÇÃO</string>
+
+    <!-- Experiência de Admissão Matrix -->
+    <string name="matrix_intake_opening_1">Este sistema foi construído para pessoas presas em comportamentos compulsivos repetitivos.</string>
+    <string name="matrix_intake_opening_2">Não porque sejam fracas. Mas porque o ciclo tornou-se automático.</string>
+    <string name="matrix_intake_confrontation_title">Há quanto tempo o ciclo se repete?</string>
+    <string name="matrix_intake_loop_recognition_title">O CICLO</string>
+    <string name="matrix_intake_loop_recognition_familiar">Isso parece familiar?</string>
+    <string name="matrix_intake_entry_points_title">O que geralmente inicia o ciclo?</string>
+    <string name="matrix_intake_entry_points_feedback">Bom. O sistema está identificando seus pontos de entrada.</string>
+    <string name="matrix_intake_hidden_truth_title">A VERDADE ESCONDIDA</string>
+    <string name="matrix_intake_hidden_truth_1">A maioria dos padrões compulsivos de pornografia e masturbação não começa com a ação.</string>
+    <string name="matrix_intake_hidden_truth_2">Eles começam com uma escalada passiva.</string>
+    <string name="matrix_intake_hidden_truth_3">Quanto mais cedo o ciclo for reconhecido, mais controle se torna possível.</string>
+    <string name="matrix_intake_real_cost_title">O que este ciclo mais afetou?</string>
+    <string name="matrix_intake_danger_hours_title">Quando você está mais vulnerável?</string>
+    <string name="matrix_intake_danger_hours_feedback">HORAS DE SOMBRA DETECTADAS</string>
+    <string name="matrix_intake_honesty_check_title">Quando os desejos começam, o que geralmente acontece?</string>
+    <string name="matrix_intake_honesty_check_feedback">O sistema agora reconhece seu padrão de escalada.</string>
+    <string name="matrix_intake_recovery_reality_title">REALIDADE DA RECUPERAÇÃO</string>
+    <string name="matrix_intake_recovery_reality_1">Esta jornada não é sobre tornar-se perfeito.</string>
+    <string name="matrix_intake_recovery_reality_2">É sobre tornar-se consciente mais cedo dentro do ciclo.</string>
+    <string name="matrix_intake_decision_title">Pelos próximos 30 dias, este sistema desafiará:</string>
+    <string name="matrix_intake_decision_prompt">Você está pronto para entrar conscientemente?</string>
+    <string name="matrix_intake_enter_system">ENTRAR NO SISTEMA</string>
+    <string name="matrix_intake_contract_title">O CONTRATO</string>
+    <string name="matrix_intake_final_msg_1">O ciclo ainda pode falar. Os desejos ainda podem aparecer.</string>
+    <string name="matrix_intake_final_msg_2">Mas pelos próximos 30 dias, você não se moverá mais inconscientemente.</string>
+    <string name="matrix_intake_final_msg_3">30 DIAS PARA A SAÍDA</string>
+    <string name="matrix_intake_final_msg_4">O Dia 1 começa agora.</string>
 </resources>
 
 

@@ -274,4 +274,88 @@
     <string name="community_circles_desc">Lingkungan dukungan pribadi</string>
     <string name="community_cloaked_mode">MODE PENYAMARAN AKTIF</string>
     <string name="community_close_profile">TUTUP PROFIL</string>
+    <!-- 30 Hari Keluar dari Matrix -->
+    <string name="matrix_title">30 HARI KELUAR DARI MATRIX</string>
+    <string name="matrix_subtitle">Intervensi Perilaku Serius</string>
+    <string name="matrix_phase_wake_up">TAHAP 1: BANGUN</string>
+    <string name="matrix_phase_break_loop">TAHAP 2: PUTUSKAN LINGKARAN</string>
+    <string name="matrix_phase_rebuild_control">TAHAP 3: BANGUN KEMBALI KONTROL</string>
+    <string name="matrix_day_counter">Hari ke-%1$d dari 30</string>
+    <string name="matrix_action_required">TINDAKAN DIPERLUKAN</string>
+    <string name="matrix_daily_directive">DIREKTIF HARIAN</string>
+
+    <!-- Intervensi Desakan Matrix -->
+    <string name="matrix_urge_title">INTERVENSI DESAKAN</string>
+    <string name="matrix_urge_emergency">OVERRIDE DARURAT</string>
+    <string name="matrix_urge_step_1_title">KEJUTAN FISIOLOGIS</string>
+    <string name="matrix_urge_step_1_desc">Tempelkan es ke leher Anda atau percikkan air dingin ke wajah selama 30 detik. Ini memicu refleks selam mamalia.</string>
+    <string name="matrix_urge_step_2_title">GANGGUAN KOGNITIF</string>
+    <string name="matrix_urge_step_2_desc">Hitung mundur dari 100 dengan kelipatan 7 dengan suara keras. (100, 93, 86...).</string>
+    <string name="matrix_urge_step_3_title">PERPINDAHAN FISIK</string>
+    <string name="matrix_urge_step_3_desc">Segera tinggalkan ruangan. Pergi ke ruang publik atau luar ruangan.</string>
+    <string name="matrix_urge_completed">DESAKAN DINETRALKAN</string>
+    <string name="matrix_urge_command_stand">Berdiri sekarang</string>
+    <string name="matrix_urge_command_leave">TINGGALKAN RUANGAN SEKARANG</string>
+    <string name="matrix_urge_command_block">BLOKIR SEMUA APLIKASI SEGERA</string>
+    <string name="matrix_urge_command_cold">Reset air dingin</string>
+    <string name="matrix_urge_command_negotiate">Jangan bernegosiasi dengan desakan</string>
+    <string name="matrix_urge_countdown_active">Resistensi Aktif: %1$d</string>
+    <string name="matrix_urge_future_self">Apa yang akan dikatakan dirimu di masa depan jika kamu gagal sekarang?</string>
+    <string name="matrix_urge_future_self_win">Dirimu di masa depan sedang menunggumu memenangkan momen ini.</string>
+
+    <!-- Analisis Relaps Matrix -->
+    <string name="matrix_relapse_title">ANALISIS POLA</string>
+    <string name="matrix_relapse_intro">Relaps adalah data. Analisis lingkaran tanpa rasa malu.</string>
+    <string name="matrix_relapse_trigger">Apa pemicu utamanya?</string>
+    <string name="matrix_relapse_environment">Di mana lokasi Anda?</string>
+    <string name="matrix_relapse_emotion">Bagaimana keadaan emosional Anda?</string>
+    <string name="matrix_relapse_cost">BIAYA LINGKARAN: Apa yang dicuri momen ini dari masa depan Anda?</string>
+    <string name="matrix_relapse_lesson">Apa perubahan struktural yang diperlukan untuk mencegah lingkaran ini?</string>
+    <string name="matrix_relapse_reset">MULAI ULANG PROTOKOL</string>
+    <string name="matrix_relapse_cost_prompt">Kuantifikasi kerusakan (Waktu, Kesehatan, Rasa Hormat).</string>
+    <string name="matrix_future_self_prompt">Dirimu di Masa Depan sedang memperhatikan. Bertindaklah sesuai dengan itu.</string>
+
+    <!-- Mode Malam Matrix -->
+    <string name="matrix_night_mode_title">MODE MALAM DARURAT</string>
+    <string name="matrix_night_mode_desc">Protokol Matrix telah mengaktifkan Mode Malam Darurat. Periode risiko tinggi terdeteksi. Akses dibatasi untuk menstabilkan baseline neural Anda.</string>
+    <string name="matrix_night_mode_override">OVERRIDE DARURAT (GUNAKAN HANYA JIKA AMAN)</string>
+
+    <!-- Laporan Akhir Matrix -->
+    <string name="matrix_report_title">LAPORAN AKHIR KELUAR MATRIX</string>
+    <string name="matrix_report_summary">Ringkasan Rekonstruksi Perilaku 30 Hari</string>
+    <string name="matrix_report_triggers_found">Pemicu Teridentifikasi</string>
+    <string name="matrix_report_interruption_speed">Kecepatan Interupsi Rata-rata</string>
+    <string name="matrix_report_growth_metric">Pertumbuhan Resiliensi Neural</string>
+    <string name="matrix_report_exit_status">STATUS: KELUAR DARI MATRIX</string>
+    <string name="matrix_maintenance_mode">MODE PEMELIHARAAN AKTIF</string>
+    <string name="matrix_days_left">%1$d HARI MENUJU GRADUASI</string>
+
+    <!-- Pengalaman Intake Matrix -->
+    <string name="matrix_intake_opening_1">Sistem ini dibangun untuk orang-orang yang terjebak dalam perilaku kompulsif yang berulang.</string>
+    <string name="matrix_intake_opening_2">Bukan karena mereka lemah. Tetapi karena lingkaran tersebut menjadi otomatis.</string>
+    <string name="matrix_intake_confrontation_title">Sudah berapa lama lingkaran ini berulang?</string>
+    <string name="matrix_intake_loop_recognition_title">LINGKARAN</string>
+    <string name="matrix_intake_loop_recognition_familiar">Apakah ini terasa akrab?</string>
+    <string name="matrix_intake_entry_points_title">Apa yang biasanya memulai lingkaran ini?</string>
+    <string name="matrix_intake_entry_points_feedback">Bagus. Sistem sedang mengidentifikasi titik masuk Anda.</string>
+    <string name="matrix_intake_hidden_truth_title">KEBENARAN TERSEMBUNYI</string>
+    <string name="matrix_intake_hidden_truth_1">Kebanyakan pola pornografi dan masturbasi kompulsif tidak dimulai dengan tindakan.</string>
+    <string name="matrix_intake_hidden_truth_2">Mereka dimulai dengan eskalasi pasif.</string>
+    <string name="matrix_intake_hidden_truth_3">Semakin dini lingkaran dikenali, semakin besar kontrol yang dimungkinkan.</string>
+    <string name="matrix_intake_real_cost_title">Apa yang paling terpengaruh oleh lingkaran ini?</string>
+    <string name="matrix_intake_danger_hours_title">Kapan Anda paling rentan?</string>
+    <string name="matrix_intake_danger_hours_feedback">JAM BAYANGAN TERDETEKSI</string>
+    <string name="matrix_intake_honesty_check_title">Saat desakan dimulai, apa yang biasanya terjadi?</string>
+    <string name="matrix_intake_honesty_check_feedback">Sistem sekarang mengenali pola eskalasi Anda.</string>
+    <string name="matrix_intake_recovery_reality_title">REALITAS RECOVERY</string>
+    <string name="matrix_intake_recovery_reality_1">Perjalanan ini bukan tentang menjadi sempurna.</string>
+    <string name="matrix_intake_recovery_reality_2">Ini tentang menjadi sadar lebih awal di dalam lingkaran.</string>
+    <string name="matrix_intake_decision_title">Selama 30 hari ke depan, sistem ini akan menantang:</string>
+    <string name="matrix_intake_decision_prompt">Apakah Anda siap untuk masuk secara sadar?</string>
+    <string name="matrix_intake_enter_system">MASUK KE SISTEM</string>
+    <string name="matrix_intake_contract_title">KONTRAK</string>
+    <string name="matrix_intake_final_msg_1">Lingkaran mungkin masih berbicara. Desakan mungkin masih muncul.</string>
+    <string name="matrix_intake_final_msg_2">Tetapi selama 30 hari ke depan, Anda tidak akan lagi bergerak tanpa sadar.</string>
+    <string name="matrix_intake_final_msg_3">30 HARI MENUJU KELUAR</string>
+    <string name="matrix_intake_final_msg_4">Hari 1 dimulai sekarang.</string>
 </resources>

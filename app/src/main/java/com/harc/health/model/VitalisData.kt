@@ -37,18 +37,34 @@ data class SystemHealth(
     @StringRes val actionRes: Int
 )
 
-// Shared Activity Structure - Now supporting Localization via StringRes
+// Enhanced Activity Structure for Live Interactive Interventions
 data class VitalisActivity(
     val id: String,
     @StringRes val titleRes: Int,
-    @StringRes val phaseRes: Int, // "Morning", "Daytime", "Evening", "Execution"
+    @StringRes val phaseRes: Int,
     @StringRes val instructionsRes: Int,
     @StringRes val biologicalRationaleRes: Int,
     @StringRes val physiologicalOutcomeRes: Int,
     @StringRes val researchInsightRes: Int = 0,
     val duration: String = "",
-    val isCompleted: Boolean = false
+    val isCompleted: Boolean = false,
+    val interactionType: InteractionType = InteractionType.PASSIVE,
+    val actionId: String? = null
 )
+
+enum class InteractionType {
+    PASSIVE,        // Reading/Information
+    BREATH_SYNC,    // Guided breathing with haptics
+    OPTICAL_FLOW,   // Eye tracking/Neural sync
+    ISOMETRIC_PULSE, // Muscle tension with accelerometer feedback
+    LIGHT_WASH,     // High-intensity light exposure
+    TACTILE_MASSAGE, // Guided lymph/pressure point massage
+    BIO_FEEDBACK_PPG, // Heart rate variability via camera/PPG
+    GYRO_STABILIZATION, // Vestibular/Balance via gyroscope
+    COGNITIVE_DUAL_TASK, // Motor + Cognitive simultaneous load
+    GAIT_SYNCHRONIZATION, // Rhythmic movement via accelerometer
+    DEPTH_FOCUS_SHIFT // Near/Far focal switching via front camera
+}
 
 data class SleepModuleData(
     val sleepScore: Int = 0,

@@ -1004,6 +1004,90 @@
     <string name="notif_night_msg_1">Glimfatik sisteminiz metabolik atıkları temizlemeye hazır. Ortamınızı şimdi N3 derin uykusu için optimize edin.</string>
     <string name="notif_night_msg_2">Nöral senkronizasyon başlatıldı. Derin dinlenme için parasempatik bir geçişi zorlamak üzere 4-7-8 nefes protokolünü kullanın.</string>
 
+    <!-- Matrix\'ten 30 Gün Dışarı -->
+    <string name="matrix_title">MATRIX\'TEN 30 GÜN DIŞARI</string>
+    <string name="matrix_subtitle">Ciddi Davranışsal Müdahale</string>
+    <string name="matrix_phase_wake_up">FAZ 1: UYAN</string>
+    <string name="matrix_phase_break_loop">FAZ 2: DÖNGÜYÜ KIR</string>
+    <string name="matrix_phase_rebuild_control">FAZ 3: KONTROLÜ YENİDEN İNŞA ET</string>
+    <string name="matrix_day_counter">30 Günün %1$d. Günü</string>
+    <string name="matrix_action_required">EYLEM GEREKLİ</string>
+    <string name="matrix_daily_directive">GÜNLÜK DİREKTİF</string>
+
+    <!-- Matrix Aşerme Müdahalesi -->
+    <string name="matrix_urge_title">AŞERME MÜDAHALESİ</string>
+    <string name="matrix_urge_emergency">ACİL DURUM GEÇERSİZ KILMA</string>
+    <string name="matrix_urge_step_1_title">FİZYOLOJİK ŞOK</string>
+    <string name="matrix_urge_step_1_desc">Boynunuza buz uygulayın veya 30 saniye boyunca yüzünüze soğuk su çarpın. Bu, memeli dalış refleksini tetikler.</string>
+    <string name="matrix_urge_step_2_title">BİLİŞSEL BOZULMA</string>
+    <string name="matrix_urge_step_2_desc">100’den geriye doğru 7’şer 7’şer sesli sayın. (100, 93, 86...).</string>
+    <string name="matrix_urge_step_3_title">FİZİKSEL YER DEĞİŞTİRME</string>
+    <string name="matrix_urge_step_3_desc">Odadan derhal çıkın. Halka açık bir alana veya dışarı çıkın.</string>
+    <string name="matrix_urge_completed">AŞERME ETKİSİZ HALE GETİRİLDİ</string>
+    <string name="matrix_urge_command_stand">Şimdi ayağa kalk</string>
+    <string name="matrix_urge_command_leave">ŞİMDİ ODADAN ÇIK</string>
+    <string name="matrix_urge_command_block">TÜM UYGULAMALARI DERHAL ENGELLE</string>
+    <string name="matrix_urge_command_cold">Soğuk su sıfırlaması</string>
+    <string name="matrix_urge_command_negotiate">Aşerme ile pazarlık yapma</string>
+    <string name="matrix_urge_countdown_active">Aktif Direniş: %1$d</string>
+    <string name="matrix_urge_future_self">Şimdi başarısız olursan gelecek benliğin ne der?</string>
+    <string name="matrix_urge_future_self_win">Gelecek benliğin bu anı kazanmanı bekliyor.</string>
+
+    <!-- Matrix Relaps Analizi -->
+    <string name="matrix_relapse_title">ÖRÜNTÜ ANALİZİ</string>
+    <string name="matrix_relapse_intro">Relaps bir veridir. Döngüyü utanmadan analiz edin.</string>
+    <string name="matrix_relapse_trigger">Birincil tetikleyici neydi?</string>
+    <string name="matrix_relapse_environment">Neredeydiniz?</string>
+    <string name="matrix_relapse_emotion">Duygusal durumunuz neydi?</string>
+    <string name="matrix_relapse_cost">DÖNGÜNÜN MALİYETİ: Bu an geleceğinden ne çaldı?</string>
+    <string name="matrix_relapse_lesson">Bu döngüyü önlemek için gereken yapısal değişiklik nedir?</string>
+    <string name="matrix_relapse_reset">PROTOKOLÜ YENİDEN BAŞLAT</string>
+    <string name="matrix_relapse_cost_prompt">Hasarı ölçün (Zaman, Sağlık, Saygı).</string>
+    <string name="matrix_future_self_prompt">Gelecek Benliğin izliyor. Buna göre hareket et.</string>
+
+    <!-- Matrix Gece Modu -->
+    <string name="matrix_night_mode_title">ACİL GECE MODU</string>
+    <string name="matrix_night_mode_desc">Matrix protokolü Acil Gece Modu’nu aktif etti. Yüksek riskli dönem tespit edildi. Nöral temel çizginizi stabilize etmek için erişim kısıtlandı.</string>
+    <string name="matrix_night_mode_override">ACİL DURUM GEÇERSİZ KILMA (SADECE GÜVENLİYSE KULLANIN)</string>
+
+    <!-- Final Matrix Raporu -->
+    <string name="matrix_report_title">FİNAL MATRIX ÇIKIŞ RAPORU</string>
+    <string name="matrix_report_summary">30 Günlük Davranışsal Yeniden İnşa Özeti</string>
+    <string name="matrix_report_triggers_found">Tetikleyiciler Belirlendi</string>
+    <string name="matrix_report_interruption_speed">Ort. Müdahale Hızı</string>
+    <string name="matrix_report_growth_metric">Nöral Dayanıklılık Artışı</string>
+    <string name="matrix_report_exit_status">DURUM: MATRIX\'TEN ÇIKILDI</string>
+    <string name="matrix_maintenance_mode">BAKIM MODU AKTİF</string>
+    <string name="matrix_days_left">MEZUNİYETE %1$d GÜN KALDI</string>
+
+    <!-- Matrix Alım Deneyimi -->
+    <string name="matrix_intake_opening_1">Bu sistem, tekrarlayan dürtüsel davranışlara hapsolmuş insanlar için inşa edildi.</string>
+    <string name="matrix_intake_opening_2">Zayıf oldukları için değil. Döngü otomatik hale geldiği için.</string>
+    <string name="matrix_intake_confrontation_title">Döngü ne kadar süredir tekrar ediyor?</string>
+    <string name="matrix_intake_loop_recognition_title">DÖNGÜ</string>
+    <string name="matrix_intake_loop_recognition_familiar">Bu tanıdık geliyor mu?</string>
+    <string name="matrix_intake_entry_points_title">Döngüyü genellikle ne başlatır?</string>
+    <string name="matrix_intake_entry_points_feedback">Güzel. Sistem giriş noktalarınızı tanımlıyor.</string>
+    <string name="matrix_intake_hidden_truth_title">GİZLİ GERÇEK</string>
+    <string name="matrix_intake_hidden_truth_1">Çoğu dürtüsel pornografi ve mastürbasyon örüntüsü eylemle başlamaz.</string>
+    <string name="matrix_intake_hidden_truth_2">Pasif tırmanma ile başlarlar.</string>
+    <string name="matrix_intake_hidden_truth_3">Döngü ne kadar erken fark edilirse, kontrol o kadar mümkün olur.</string>
+    <string name="matrix_intake_real_cost_title">Bu döngü en çok neyi etkiledi?</string>
+    <string name="matrix_intake_danger_hours_title">En çok ne zaman savunmasızsınız?</string>
+    <string name="matrix_intake_danger_hours_feedback">GÖLGE SAATLER TESPİT EDİLDİ</string>
+    <string name="matrix_intake_honesty_check_title">Aşermeler başladığında genellikle ne olur?</string>
+    <string name="matrix_intake_honesty_check_feedback">Sistem artık tırmanma örüntünüzü tanıyor.</string>
+    <string name="matrix_intake_recovery_reality_title">İYİLEŞME GERÇEĞİ</string>
+    <string name="matrix_intake_recovery_reality_1">Bu yolculuk mükemmel olmakla ilgili değil.</string>
+    <string name="matrix_intake_recovery_reality_2">Döngünün içinde daha erken bilinçli hale gelmekle ilgili.</string>
+    <string name="matrix_intake_decision_title">Önümüzdeki 30 gün boyunca bu sistem şunlara meydan okuyacak:</string>
+    <string name="matrix_intake_decision_prompt">Bilinçli olarak girmeye hazır mısınız?</string>
+    <string name="matrix_intake_enter_system">SİSTEME GİRİŞ YAP</string>
+    <string name="matrix_intake_contract_title">SÖZLEŞME</string>
+    <string name="matrix_intake_final_msg_1">Döngü hala konuşabilir. Aşermeler hala görünebilir.</string>
+    <string name="matrix_intake_final_msg_2">Ancak önümüzdeki 30 gün boyunca artık bilinçsizce hareket etmeyeceksiniz.</string>
+    <string name="matrix_intake_final_msg_3">ÇIKIŞA 30 GÜN</string>
+    <string name="matrix_intake_final_msg_4">1. Gün şimdi başlıyor.</string>
 </resources>
 
 

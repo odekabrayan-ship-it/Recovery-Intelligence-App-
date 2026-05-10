@@ -726,6 +726,90 @@
     <string name="feedback_health_dividends">عوائد صحية</string>
     <string name="feedback_next_ritual">توجيه الطقوس القادمة</string>
     <string name="feedback_close_ritual">إغلاق الطقوس</string>
+    <!-- 30 يوماً خارج الماتريكس -->
+    <string name="matrix_title">30 يوماً خارج الماتريكس</string>
+    <string name="matrix_subtitle">تدخل سلوكي جاد</string>
+    <string name="matrix_phase_wake_up">المرحلة 1: الاستيقاظ</string>
+    <string name="matrix_phase_break_loop">المرحلة 2: كسر الحلقة</string>
+    <string name="matrix_phase_rebuild_control">المرحلة 3: إعادة بناء السيطرة</string>
+    <string name="matrix_day_counter">اليوم %1$d من 30</string>
+    <string name="matrix_action_required">إجراء مطلوب</string>
+    <string name="matrix_daily_directive">التوجيه اليومي</string>
+
+    <!-- تدخل الماتريكس للرغبات الملحة -->
+    <string name="matrix_urge_title">التدخل للرغبات الملحة</string>
+    <string name="matrix_urge_emergency">تجاوز الطوارئ</string>
+    <string name="matrix_urge_step_1_title">صدمة فسيولوجية</string>
+    <string name="matrix_urge_step_1_desc">ضع ثلجاً على رقبتك أو رش وجهك بماء بارد لمدة 30 ثانية. هذا يحفز منعكس الغطس لدى الثدييات.</string>
+    <string name="matrix_urge_step_2_title">تعطيل معرفي</string>
+    <string name="matrix_urge_step_2_desc">عد تنازلياً من 100 بطرح 7 في كل مرة بصوت عالٍ. (100، 93، 86...).</string>
+    <string name="matrix_urge_step_3_title">إزاحة جسدية</string>
+    <string name="matrix_urge_step_3_desc">غادر الغرفة فوراً. اذهب إلى مكان عام أو في الهواء الطلق.</string>
+    <string name="matrix_urge_completed">تم تحييد الرغبة</string>
+    <string name="matrix_urge_command_stand">قف الآن</string>
+    <string name="matrix_urge_command_leave">غادر الغرفة الآن</string>
+    <string name="matrix_urge_command_block">احظر جميع التطبيقات فوراً</string>
+    <string name="matrix_urge_command_cold">إعادة ضبط بالماء البارد</string>
+    <string name="matrix_urge_command_negotiate">لا تتفاوض مع الرغبة</string>
+    <string name="matrix_urge_countdown_active">المقاومة النشطة: %1$d</string>
+    <string name="matrix_urge_future_self">ماذا سيقول "أنت المستقبلي" إذا فشلت الآن؟</string>
+    <string name="matrix_urge_future_self_win">أنت المستقبلي ينتظر منك الفوز في هذه اللحظة.</string>
+
+    <!-- تحليل الانتكاسة في الماتريكس -->
+    <string name="matrix_relapse_title">تحليل الأنماط</string>
+    <string name="matrix_relapse_intro">الانتكاسة هي بيانات. حلل الحلقة دون خجل.</string>
+    <string name="matrix_relapse_trigger">ماذا كان المحفز الأساسي؟</string>
+    <string name="matrix_relapse_environment">أين كنت متواجداً؟</string>
+    <string name="matrix_relapse_emotion">ماذا كانت حالتك العاطفية؟</string>
+    <string name="matrix_relapse_cost">تكلفة الحلقة: ماذا سرقت هذه اللحظة من مستقبلك؟</string>
+    <string name="matrix_relapse_lesson">ما هو التغيير الهيكلي المطلوب لمنع هذه الحلقة؟</string>
+    <string name="matrix_relapse_reset">إعادة بدء البروتوكول</string>
+    <string name="matrix_relapse_cost_prompt">حدد حجم الضرر (الوقت، الصحة، الاحترام).</string>
+    <string name="matrix_future_self_prompt">ذاتك المستقبلية تراقبك. تصرف بناءً على ذلك.</string>
+
+    <!-- وضع الليل في الماتريكس -->
+    <string name="matrix_night_mode_title">وضع الليل للطوارئ</string>
+    <string name="matrix_night_mode_desc">قام بروتوكول الماتريكس بتفعيل وضع الليل للطوارئ. تم اكتشاف فترة عالية المخاطر. تم تقييد الوصول لاستقرار أساسك العصبي.</string>
+    <string name="matrix_night_mode_override">تجاوز الطوارئ (استخدمه فقط إذا كان آمناً)</string>
+
+    <!-- تقرير الماتريكس النهائي -->
+    <string name="matrix_report_title">تقرير الخروج النهائي من الماتريكس</string>
+    <string name="matrix_report_summary">ملخص إعادة البناء السلوكي خلال 30 يوماً</string>
+    <string name="matrix_report_triggers_found">المحفزات المكتشفة</string>
+    <string name="matrix_report_interruption_speed">متوسط سرعة المقاطعة</string>
+    <string name="matrix_report_growth_metric">نمو المرونة العصبية</string>
+    <string name="matrix_report_exit_status">الحالة: خارج الماتريكس</string>
+    <string name="matrix_maintenance_mode">وضع الصيانة نشط</string>
+    <string name="matrix_days_left">%1$d يوماً حتى التخرج</string>
+
+    <!-- تجربة القبول في الماتريكس -->
+    <string name="matrix_intake_opening_1">تم بناء هذا النظام للأشخاص المحاصرين في السلوك القهري المتكرر.</string>
+    <string name="matrix_intake_opening_2">ليس لأنهم ضعفاء، ولكن لأن الحلقة أصبحت تلقائية.</string>
+    <string name="matrix_intake_confrontation_title">منذ متى والحلقة تتكرر؟</string>
+    <string name="matrix_intake_loop_recognition_title">الحلقة</string>
+    <string name="matrix_intake_loop_recognition_familiar">هل يبدو هذا مألوفاً؟</string>
+    <string name="matrix_intake_entry_points_title">ماذا يبدأ الحلقة عادة؟</string>
+    <string name="matrix_intake_entry_points_feedback">جيد. النظام يحدد نقاط دخولك.</string>
+    <string name="matrix_intake_hidden_truth_title">الحقيقة الخفية</string>
+    <string name="matrix_intake_hidden_truth_1">معظم أنماط الإباحية والاستمناء القهرية لا تبدأ بالفعل الجسدي.</string>
+    <string name="matrix_intake_hidden_truth_2">بل تبدأ بالتصاعد السلبي.</string>
+    <string name="matrix_intake_hidden_truth_3">كلما تم التعرف على الحلقة مبكراً، زادت إمكانية السيطرة.</string>
+    <string name="matrix_intake_real_cost_title">ما هو أكثر شيء تأثر بهذه الحلقة؟</string>
+    <string name="matrix_intake_danger_hours_title">متى تكون أكثر عرضة للخطر؟</string>
+    <string name="matrix_intake_danger_hours_feedback">تم اكتشاف ساعات الظل</string>
+    <string name="matrix_intake_honesty_check_title">عندما تبدأ الرغبات، ماذا يحدث عادة؟</string>
+    <string name="matrix_intake_honesty_check_feedback">النظام يتعرف الآن على نمط التصاعد لديك.</string>
+    <string name="matrix_intake_recovery_reality_title">واقع التعافي</string>
+    <string name="matrix_intake_recovery_reality_1">هذه الرحلة لا تتعلق بالوصول إلى الكمال.</string>
+    <string name="matrix_intake_recovery_reality_2">بل تتعلق بأن تصبح واعياً في وقت مبكر داخل الحلقة.</string>
+    <string name="matrix_intake_decision_title">خلال الثلاثين يوماً القادمة، سيتحدى هذا النظام:</string>
+    <string name="matrix_intake_decision_prompt">هل أنت مستعد للدخول بوعي؟</string>
+    <string name="matrix_intake_enter_system">الدخول إلى النظام</string>
+    <string name="matrix_intake_contract_title">العقد</string>
+    <string name="matrix_intake_final_msg_1">قد تستمر الحلقة في الكلام، وقد تستمر الرغبات في الظهور.</string>
+    <string name="matrix_intake_final_msg_2">لكن خلال الثلاثين يوماً القادمة، لن تتحرك بعد الآن دون وعي.</string>
+    <string name="matrix_intake_final_msg_3">30 يوماً حتى الخروج</string>
+    <string name="matrix_intake_final_msg_4">اليوم الأول يبدأ الآن.</string>
 </resources>
 
 

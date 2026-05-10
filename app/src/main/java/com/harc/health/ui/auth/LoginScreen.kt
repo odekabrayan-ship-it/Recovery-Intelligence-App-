@@ -29,16 +29,23 @@ import androidx.credentials.CredentialManager
 import androidx.credentials.GetCredentialRequest
 import androidx.credentials.exceptions.GetCredentialCancellationException
 import androidx.credentials.exceptions.GetCredentialException
+import androidx.lifecycle.viewmodel.compose.viewModel
 import com.google.android.libraries.identity.googleid.GetGoogleIdOption
 import com.google.android.libraries.identity.googleid.GoogleIdTokenCredential
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
 import com.harc.health.R
+import com.harc.health.viewmodel.ProfileViewModel
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.tasks.await
 
 @Composable
-fun LoginScreen(onLoginSuccess: () -> Unit) {
+fun LoginScreen(
+    profileViewModel: ProfileViewModel = viewModel(),
+    onLoginSuccess: () -> Unit
+) {
     var email by remember { mutableStateOf("") }
     var password by remember { mutableStateOf("") }
     var error by remember { mutableStateOf<String?>(null) }
@@ -52,10 +59,21 @@ fun LoginScreen(onLoginSuccess: () -> Unit) {
     val credentialManager = CredentialManager.create(context)
     val scrollState = rememberScrollState()
 
+    val profileError by profileViewModel.error.collectAsState()
+
+    // Sync profile errors to local error state
+    LaunchedEffect(profileError) {
+        if (profileError != null) {
+            error = profileError
+            isLoading = false
+        }
+    }
+
     // Validation
-    val isEmailValid = Patterns.EMAIL_ADDRESS.matcher(email).matches()
+    val trimmedEmail = email.trim()
+    val isEmailValid = Patterns.EMAIL_ADDRESS.matcher(trimmedEmail).matches()
     val isPasswordValid = password.length >= 6
-    val canSubmit = email.isNotBlank() && password.isNotBlank() && !isLoading
+    val canSubmit = trimmedEmail.isNotBlank() && password.isNotBlank() && !isLoading
 
     Column(
         modifier = Modifier
@@ -106,7 +124,11 @@ fun LoginScreen(onLoginSuccess: () -> Unit) {
         // Email Input
         OutlinedTextField(
             value = email,
-            onValueChange = { email = it; error = null },
+            onValueChange = { 
+                email = it
+                error = null
+                profileViewModel.clearError()
+            },
             label = { Text(stringResource(R.string.login_email_label)) },
             modifier = Modifier.fillMaxWidth(),
             shape = RoundedCornerShape(16.dp),
@@ -120,7 +142,11 @@ fun LoginScreen(onLoginSuccess: () -> Unit) {
         // Password Input
         OutlinedTextField(
             value = password,
-            onValueChange = { password = it; error = null },
+            onValueChange = { 
+                password = it
+                error = null
+                profileViewModel.clearError()
+            },
             label = { Text(stringResource(R.string.login_password_label)) },
             visualTransformation = PasswordVisualTransformation(),
             modifier = Modifier.fillMaxWidth(),
@@ -146,17 +172,30 @@ fun LoginScreen(onLoginSuccess: () -> Unit) {
         Button(
             onClick = {
                 focusManager.clearFocus()
+                profileViewModel.clearError()
                 if (isEmailValid && isPasswordValid) {
                     isLoading = true
                     val task = if (isSignUp) {
-                        auth.createUserWithEmailAndPassword(email.trim(), password)
+                        auth.createUserWithEmailAndPassword(trimmedEmail, password)
                     } else {
-                        auth.signInWithEmailAndPassword(email.trim(), password)
+                        auth.signInWithEmailAndPassword(trimmedEmail, password)
                     }
                     
                     task.addOnSuccessListener {
-                        isLoading = false
-                        onLoginSuccess()
+                        scope.launch {
+                            // Wait for ProfileViewModel to start syncing (triggered by AuthStateListener)
+                            delay(300)
+                            if (profileViewModel.isLoading.value) {
+                                profileViewModel.isLoading.first { !it }
+                            }
+                            
+                            if (profileViewModel.error.value == null) {
+                                isLoading = false
+                                onLoginSuccess()
+                            } else {
+                                isLoading = false
+                            }
+                        }
                     }.addOnFailureListener {
                         isLoading = false
                         error = it.localizedMessage ?: "Authentication failed"
@@ -203,6 +242,7 @@ fun LoginScreen(onLoginSuccess: () -> Unit) {
                     try {
                         isLoading = true
                         error = null
+                        profileViewModel.clearError()
                         val googleIdOption = GetGoogleIdOption.Builder()
                             .setFilterByAuthorizedAccounts(false)
                             .setServerClientId("119651407923-4e5a838i6kku18di1cpp0kb9s9mko6mu.apps.googleusercontent.com")
@@ -219,7 +259,16 @@ fun LoginScreen(onLoginSuccess: () -> Unit) {
                         if (credential is GoogleIdTokenCredential) {
                             val firebaseCredential = GoogleAuthProvider.getCredential(credential.idToken, null)
                             auth.signInWithCredential(firebaseCredential).await()
-                            onLoginSuccess()
+                            
+                            // Wait for Profile sync
+                            delay(300)
+                            if (profileViewModel.isLoading.value) {
+                                profileViewModel.isLoading.first { !it }
+                            }
+
+                            if (profileViewModel.error.value == null) {
+                                onLoginSuccess()
+                            }
                         }
                     } catch (e: Exception) {
                         if (e !is GetCredentialCancellationException) {

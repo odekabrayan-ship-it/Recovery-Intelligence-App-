@@ -36,6 +36,7 @@ import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.StrokeCap
 import androidx.core.graphics.toColorInt
 import com.harc.health.logic.ResilienceSystem
+import com.harc.health.ui.Screen
 import java.util.Calendar
 
 @Composable
@@ -89,6 +90,22 @@ fun RecoveryPlanScreen(viewModel: MainViewModel) {
                         color = if (isNight) BluePrimary else MaterialTheme.colorScheme.primary
                     )
                     
+                    // Simulation Toggle for Testing
+                    Surface(
+                        onClick = { viewModel.navigate(Screen.Matrix) },
+                        shape = RoundedCornerShape(4.dp),
+                        color = Color.Red,
+                        modifier = Modifier.padding(start = 8.dp)
+                    ) {
+                        Text(
+                            text = "MATRIX",
+                            modifier = Modifier.padding(horizontal = 8.dp, vertical = 4.dp),
+                            style = MaterialTheme.typography.labelSmall,
+                            color = Color.White,
+                            fontWeight = FontWeight.Bold
+                        )
+                    }
+
                     // Simulation Toggle for Testing
                     Surface(
                         onClick = { 

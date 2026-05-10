@@ -2,27 +2,86 @@ package com.harc.health.logic
 
 import android.content.Context
 import androidx.work.*
+import com.google.firebase.auth.FirebaseAuth
 import com.harc.health.R
 import com.harc.health.repository.LocalRepository
-import kotlinx.coroutines.flow.firstOrNull
+import com.harc.health.repository.MatrixRepository
 import java.util.*
 import java.util.concurrent.TimeUnit
 
 class NotificationWorker(context: Context, workerParams: WorkerParameters) : CoroutineWorker(context, workerParams) {
 
     override suspend fun doWork(): Result {
+        val sessionManager = SessionManager(applicationContext)
+        if (!sessionManager.isNotificationsEnabled()) {
+            return Result.success()
+        }
+
         val calendar = Calendar.getInstance()
         val hour = calendar.get(Calendar.HOUR_OF_DAY)
+
+        if (sessionManager.isQuietHoursEnabled() && (hour >= 22 || hour < 7)) {
+            return Result.success()
+        }
+
         val random = Random()
         
-        // We'll use a hardcoded user ID for now as we don't have a global SessionManager to get the current user
-        // In a real app, this would be fetched from a SessionManager or Auth repository
-        val userId = "current_user" 
+        val userId = FirebaseAuth.getInstance().currentUser?.uid ?: "anonymous"
         val repository = LocalRepository(applicationContext)
+        val matrixRepository = MatrixRepository(applicationContext)
+        
+        val matrixProgress = matrixRepository.getProgressSync(userId)
+        val matrixDirective = matrixProgress?.let { MatrixEngine.getDirectiveForDay(it.currentDay) }
+
         val todayLog = repository.getLogForToday(userId)
+        val recentLogs = repository.getRecentLogs(userId, 7)
+        val yesterdayLog = recentLogs.find { it.date != todayLog?.date }
+
+        // Detection of "Micro-Wins" (Comparison with History)
+        val microWin = when {
+            todayLog != null && yesterdayLog != null -> {
+                when {
+                    todayLog.cigarettes < yesterdayLog.cigarettes && todayLog.cigarettes < 5 -> {
+                        Triple(
+                            applicationContext.getString(R.string.notif_microwin_general_title),
+                            applicationContext.getString(R.string.notif_microwin_general_msg),
+                            null
+                        )
+                    }
+                    todayLog.alcoholUnits < yesterdayLog.alcoholUnits && todayLog.alcoholUnits < 2 -> {
+                        Triple(
+                            applicationContext.getString(R.string.notif_microwin_general_title),
+                            "Your metabolic load is lower today. Systemic recovery is accelerating. Micro-Win!",
+                            null
+                        )
+                    }
+                    todayLog.hydrationMl > yesterdayLog.hydrationMl + 500 -> {
+                        Triple(
+                            applicationContext.getString(R.string.notif_microwin_general_title),
+                            "Hydration levels are significantly higher today. Cellular waste clearance is optimized. Micro-Win!",
+                            null
+                        )
+                    }
+                    else -> null
+                }
+            }
+            else -> null
+        }
 
         // Clinical triggers based on behavior and time
         val (title, message, sessionId) = when {
+            // Micro-Win Detection
+            microWin != null -> microWin
+
+            // Matrix Daily Directive (Highest Priority)
+            matrixDirective != null && hour in 8..10 -> {
+                Triple(
+                    "MATRIX DIRECTIVE: DAY ${matrixProgress.currentDay}",
+                    "MANDATORY: ${matrixDirective.title}. ${matrixDirective.objective}",
+                    "matrix_screen" // Hypothetical screen ID or handle in deep link
+                )
+            }
+
             // Behavioral Triggers (Prioritized)
             todayLog != null && todayLog.cigarettes > 0 -> {
                 Triple(
@@ -90,7 +149,16 @@ class NotificationWorker(context: Context, workerParams: WorkerParameters) : Cor
             else -> return Result.success()
         }
 
-        RecoveryNotificationManager.sendProtocolReminder(applicationContext, title, message, sessionId)
+        val (finalTitle, finalMessage) = if (sessionManager.isPrivacyModeEnabled()) {
+            Pair(
+                applicationContext.getString(R.string.notif_privacy_title),
+                applicationContext.getString(R.string.notif_privacy_msg)
+            )
+        } else {
+            Pair(title, message)
+        }
+
+        RecoveryNotificationManager.sendProtocolReminder(applicationContext, finalTitle, finalMessage, sessionId)
         
         return Result.success()
     }

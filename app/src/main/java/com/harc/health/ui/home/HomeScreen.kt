@@ -37,7 +37,8 @@ fun HomeScreen(
     viewModel: MainViewModel,
     onNavigateToProfile: () -> Unit,
     onNavigateToTherapeutic: () -> Unit,
-    onNavigateToVitalis: () -> Unit
+    onNavigateToVitalis: () -> Unit,
+    onNavigateToMatrix: () -> Unit
 ) {
     val scrollState = rememberScrollState()
     val userName by viewModel.userName.collectAsState()
@@ -71,6 +72,10 @@ fun HomeScreen(
                 Spacer(modifier = Modifier.height(12.dp))
                 
                 VitalisShortcut(onClick = onNavigateToVitalis)
+                
+                Spacer(modifier = Modifier.height(12.dp))
+                
+                MatrixShortcut(onClick = onNavigateToMatrix)
                 
                 Spacer(modifier = Modifier.height(32.dp))
                 
@@ -189,6 +194,48 @@ fun VitalisShortcut(onClick: () -> Unit) {
             }
             Spacer(modifier = Modifier.weight(1f))
             Icon(Icons.Default.ChevronRight, contentDescription = null, tint = MaterialTheme.colorScheme.secondary)
+        }
+    }
+}
+
+@Composable
+fun MatrixShortcut(onClick: () -> Unit) {
+    Surface(
+        modifier = Modifier
+            .fillMaxWidth()
+            .clickable { onClick() },
+        shape = RoundedCornerShape(20.dp),
+        color = Color.Red.copy(alpha = 0.1f),
+        border = BorderStroke(1.dp, Color.Red.copy(alpha = 0.2f))
+    ) {
+        Row(
+            modifier = Modifier.padding(16.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            Box(
+                modifier = Modifier
+                    .size(40.dp)
+                    .background(Color.Red, CircleShape),
+                contentAlignment = Alignment.Center
+            ) {
+                Icon(Icons.Default.Grid4x4, contentDescription = null, tint = Color.White, modifier = Modifier.size(20.dp))
+            }
+            Spacer(modifier = Modifier.width(16.dp))
+            Column {
+                Text(
+                    stringResource(R.string.matrix_title),
+                    style = MaterialTheme.typography.titleSmall,
+                    fontWeight = FontWeight.Bold,
+                    color = Color.Red
+                )
+                Text(
+                    stringResource(R.string.matrix_subtitle),
+                    style = MaterialTheme.typography.labelSmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.7f)
+                )
+            }
+            Spacer(modifier = Modifier.weight(1f))
+            Icon(Icons.Default.ChevronRight, contentDescription = null, tint = Color.Red)
         }
     }
 }

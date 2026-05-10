@@ -47,3 +47,24 @@ interface MessageDao {
     @Query("DELETE FROM local_messages WHERE chatId = :chatId")
     suspend fun deleteMessagesForChat(chatId: String)
 }
+
+@Dao
+interface MatrixDao {
+    @Query("SELECT * FROM matrix_progress WHERE userId = :userId LIMIT 1")
+    fun getProgress(userId: String): Flow<com.harc.health.model.MatrixProgress?>
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun updateProgress(progress: com.harc.health.model.MatrixProgress)
+
+    @Query("SELECT * FROM matrix_urge_logs ORDER BY timestamp DESC")
+    fun getUrgeLogs(): Flow<List<com.harc.health.model.UrgeLog>>
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun insertUrgeLog(log: com.harc.health.model.UrgeLog)
+
+    @Query("SELECT * FROM matrix_urge_logs WHERE futureSelfMessage IS NOT NULL ORDER BY timestamp DESC LIMIT 1")
+    suspend fun getLastFutureSelfMessage(): com.harc.health.model.UrgeLog?
+
+    @Query("SELECT * FROM matrix_progress WHERE userId = :userId LIMIT 1")
+    suspend fun getProgressSync(userId: String): com.harc.health.model.MatrixProgress?
+}

@@ -20,6 +20,9 @@ class SessionManager(context: Context) {
         private const val KEY_DEVICE_ID = "device_id"
         private const val KEY_PIN_HASH = "pin_hash"
         private const val KEY_IS_PROTECTED = "is_protected"
+        private const val KEY_NOTIFICATIONS_ENABLED = "notifications_enabled"
+        private const val KEY_QUIET_HOURS_ENABLED = "quiet_hours_enabled"
+        private const val KEY_PRIVACY_MODE_ENABLED = "privacy_mode_enabled"
     }
 
     init {
@@ -56,5 +59,29 @@ class SessionManager(context: Context) {
 
     fun resetSession() {
         sharedPreferences.edit().clear().apply()
+    }
+
+    fun isNotificationsEnabled(): Boolean {
+        return sharedPreferences.getBoolean(KEY_NOTIFICATIONS_ENABLED, true)
+    }
+
+    fun setNotificationsEnabled(enabled: Boolean) {
+        sharedPreferences.edit().putBoolean(KEY_NOTIFICATIONS_ENABLED, enabled).apply()
+    }
+
+    fun isQuietHoursEnabled(): Boolean {
+        return sharedPreferences.getBoolean(KEY_QUIET_HOURS_ENABLED, false)
+    }
+
+    fun setQuietHoursEnabled(enabled: Boolean) {
+        sharedPreferences.edit().putBoolean(KEY_QUIET_HOURS_ENABLED, enabled).apply()
+    }
+
+    fun isPrivacyModeEnabled(): Boolean {
+        return sharedPreferences.getBoolean(KEY_PRIVACY_MODE_ENABLED, false)
+    }
+
+    fun setPrivacyModeEnabled(enabled: Boolean) {
+        sharedPreferences.edit().putBoolean(KEY_PRIVACY_MODE_ENABLED, enabled).apply()
     }
 }

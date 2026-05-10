@@ -44,6 +44,8 @@ fun ProfileScreen(
     val isLoading by viewModel.isLoading.collectAsState()
     val error by viewModel.error.collectAsState()
     val isProtected by viewModel.isProtected.collectAsState()
+    val notificationsEnabled by viewModel.notificationsEnabled.collectAsState()
+    val quietHoursEnabled by viewModel.quietHoursEnabled.collectAsState()
 
     val isAnonymous = userProfile?.id == "anonymous"
 
@@ -383,6 +385,30 @@ fun ProfileScreen(
                                 onCheckedChange = { 
                                     if (it) showPinDialog = true else viewModel.disableProtection()
                                 }
+                            )
+                        }
+
+                        HorizontalDivider(modifier = Modifier.padding(vertical = 8.dp), thickness = 0.5.dp)
+
+                        Row(verticalAlignment = Alignment.CenterVertically) {
+                            Icon(Icons.Default.Notifications, contentDescription = null, modifier = Modifier.size(20.dp))
+                            Spacer(modifier = Modifier.width(12.dp))
+                            Text(stringResource(R.string.profile_notifications), modifier = Modifier.weight(1f))
+                            Switch(
+                                checked = notificationsEnabled,
+                                onCheckedChange = { viewModel.setNotificationsEnabled(it) }
+                            )
+                        }
+
+                        HorizontalDivider(modifier = Modifier.padding(vertical = 8.dp), thickness = 0.5.dp)
+
+                        Row(verticalAlignment = Alignment.CenterVertically) {
+                            Icon(Icons.Default.Bedtime, contentDescription = null, modifier = Modifier.size(20.dp))
+                            Spacer(modifier = Modifier.width(12.dp))
+                            Text(stringResource(R.string.profile_quiet_hours), modifier = Modifier.weight(1f))
+                            Switch(
+                                checked = quietHoursEnabled,
+                                onCheckedChange = { viewModel.setQuietHoursEnabled(it) }
                             )
                         }
 

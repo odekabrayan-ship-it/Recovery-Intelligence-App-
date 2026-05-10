@@ -674,4 +674,88 @@
     <string name="community_circle">Круг</string>
     <string name="community_recovery">ВОССТАНОВЛЕНИЕ</string>
 
-    </resources>
+        <!-- 30 дней вне Матрицы -->
+    <string name="matrix_title">30 ДНЕЙ ВНЕ МАТРИЦЫ</string>
+    <string name="matrix_subtitle">Серьезное поведенческое вмешательство</string>
+    <string name="matrix_phase_wake_up">ФАЗА 1: ПРОБУЖДЕНИЕ</string>
+    <string name="matrix_phase_break_loop">ФАЗА 2: РАЗРЫВ ЦИКЛА</string>
+    <string name="matrix_phase_rebuild_control">ФАЗА 3: ВОССТАНОВЛЕНИЕ КОНТРОЛЯ</string>
+    <string name="matrix_day_counter">День %1$d из 30</string>
+    <string name="matrix_action_required">ТРЕБУЕТСЯ ДЕЙСТВИЕ</string>
+    <string name="matrix_daily_directive">ЕЖЕДНЕВНАЯ ДИРЕКТИВА</string>
+
+    <!-- Вмешательство при тяге Matrix -->
+    <string name="matrix_urge_title">ВМЕШАТЕЛЬСТВО ПРИ ТЯГЕ</string>
+    <string name="matrix_urge_emergency">ЭКСТРЕННАЯ ПЕРЕЗАГРУЗКА</string>
+    <string name="matrix_urge_step_1_title">ФИЗИОЛОГИЧЕСКИЙ ШОК</string>
+    <string name="matrix_urge_step_1_desc">Приложите лед к шее или плесните холодной водой в лицо на 30 секунд. Это активирует нырятельный рефлекс млекопитающих.</string>
+    <string name="matrix_urge_step_2_title">КОГНИТИВНОЕ ПРЕРЫВАНИЕ</string>
+    <string name="matrix_urge_step_2_desc">Считайте вслух в обратном порядке от 100, вычитая по 7. (100, 93, 86...).</string>
+    <string name="matrix_urge_step_3_title">ФИЗИЧЕСКОЕ ПЕРЕМЕЩЕНИЕ</string>
+    <string name="matrix_urge_step_3_desc">Немедленно покиньте комнату. Выйдите в общественное место или на улицу.</string>
+    <string name="matrix_urge_completed">ТЯГА НЕЙТРАЛИЗОВАНА</string>
+    <string name="matrix_urge_command_stand">Встаньте сейчас</string>
+    <string name="matrix_urge_command_leave">ВЫЙДИТЕ ИЗ КОМНАТЫ СЕЙЧАС</string>
+    <string name="matrix_urge_command_block">НЕМЕДЛЕННО ЗАБЛОКИРУЙТЕ ВСЕ ПРИЛОЖЕНИЯ</string>
+    <string name="matrix_urge_command_cold">Сброс холодной водой</string>
+    <string name="matrix_urge_command_negotiate">Не ведите переговоры с тягой</string>
+    <string name="matrix_urge_countdown_active">Активное сопротивление: %1$d</string>
+    <string name="matrix_urge_future_self">Что скажет ваше «будущее Я», если вы сдадитесь сейчас?</string>
+    <string name="matrix_urge_future_self_win">Ваше «будущее Я» ждет вашей победы в этот момент.</string>
+
+    <!-- Анализ рецидива Matrix -->
+    <string name="matrix_relapse_title">АНАЛИЗ ПАТТЕРНОВ</string>
+    <string name="matrix_relapse_intro">Рецидив — это данные. Проанализируйте цикл без стыда.</string>
+    <string name="matrix_relapse_trigger">Что стало основным триггером?</string>
+    <string name="matrix_relapse_environment">Где вы находились?</string>
+    <string name="matrix_relapse_emotion">Каково было ваше эмоциональное состояние?</string>
+    <string name="matrix_relapse_cost">ЦЕНА ЦИКЛА: Что этот момент украл у вашего будущего?</string>
+    <string name="matrix_relapse_lesson">Какое структурное изменение необходимо, чтобы предотвратить этот цикл?</string>
+    <string name="matrix_relapse_reset">ПЕРЕЗАПУСТИТЬ ПРОТОКОЛ</string>
+    <string name="matrix_relapse_cost_prompt">Оцените ущерб (время, здоровье, самоуважение).</string>
+    <string name="matrix_future_self_prompt">Ваше «будущее Я» наблюдает. Действуйте соответственно.</string>
+
+    <!-- Ночной режим Matrix -->
+    <string name="matrix_night_mode_title">ЭКСТРЕННЫЙ НОЧНОЙ РЕЖИМ</string>
+    <string name="matrix_night_mode_desc">Протокол Matrix активировал экстренный ночной режим. Обнаружен период высокого риска. Доступ ограничен для стабилизации нейронного баланса.</string>
+    <string name="matrix_night_mode_override">ЭКСТРЕННАЯ ПЕРЕЗАГРУЗКА (ИСПОЛЬЗОВАТЬ ТОЛЬКО В БЕЗОПАСНОСТИ)</string>
+
+    <!-- Финальный отчет Matrix -->
+    <string name="matrix_report_title">ФИНАЛЬНЫЙ ОТЧЕТ О ВЫХОДЕ ИЗ МАТРИЦЫ</string>
+    <string name="matrix_report_summary">Итоги 30-дневной поведенческой реконструкции</string>
+    <string name="matrix_report_triggers_found">Выявленные триггеры</string>
+    <string name="matrix_report_interruption_speed">Ср. скорость прерывания</string>
+    <string name="matrix_report_growth_metric">Рост нейронной устойчивости</string>
+    <string name="matrix_report_exit_status">СТАТУС: ВНЕ МАТРИЦЫ</string>
+    <string name="matrix_maintenance_mode">РЕЖИМ ПОДДЕРЖКИ АКТИВЕН</string>
+    <string name="matrix_days_left">ДНЕЙ ДО ВЫПУСКА: %1$d</string>
+
+    <!-- Процесс вступления в систему Matrix -->
+    <string name="matrix_intake_opening_1">Эта система создана для людей, застрявших в повторяющемся компульсивном поведении.</string>
+    <string name="matrix_intake_opening_2">Не потому, что они слабы. А потому, что цикл стал автоматическим.</string>
+    <string name="matrix_intake_confrontation_title">Как долго повторяется этот цикл?</string>
+    <string name="matrix_intake_loop_recognition_title">ЦИКЛ</string>
+    <string name="matrix_intake_loop_recognition_familiar">Это кажется вам знакомым?</string>
+    <string name="matrix_intake_entry_points_title">Что обычно запускает цикл?</string>
+    <string name="matrix_intake_entry_points_feedback">Хорошо. Система определяет ваши точки входа.</string>
+    <string name="matrix_intake_hidden_truth_title">СКРЫТАЯ ПРАВДА</string>
+    <string name="matrix_intake_hidden_truth_1">Большинство компульсивных паттернов не начинаются с действия.</string>
+    <string name="matrix_intake_hidden_truth_2">Они начинаются с пассивной эскалации.</string>
+    <string name="matrix_intake_hidden_truth_3">Чем раньше распознан цикл, тем больше контроля возможно достичь.</string>
+    <string name="matrix_intake_real_cost_title">На что этот цикл повлиял больше всего?</string>
+    <string name="matrix_intake_danger_hours_title">Когда вы наиболее уязвимы?</string>
+    <string name="matrix_intake_danger_hours_feedback">ОБНАРУЖЕНЫ ЧАСЫ ТЕНИ</string>
+    <string name="matrix_intake_honesty_check_title">Что обычно происходит, когда возникает тяга?</string>
+    <string name="matrix_intake_honesty_check_feedback">Теперь система распознает ваш паттерн эскалации.</string>
+    <string name="matrix_intake_recovery_reality_title">РЕАЛЬНОСТЬ ВОССТАНОВЛЕНИЯ</string>
+    <string name="matrix_intake_recovery_reality_1">Этот путь не про достижение совершенства.</string>
+    <string name="matrix_intake_recovery_reality_2">Он про то, чтобы осознать себя раньше внутри цикла.</string>
+    <string name="matrix_intake_decision_title">В течение следующих 30 дней система бросит вызов:</string>
+    <string name="matrix_intake_decision_prompt">Готовы ли вы войти осознанно?</string>
+    <string name="matrix_intake_enter_system">ВОЙТИ В СИСТЕМУ</string>
+    <string name="matrix_intake_contract_title">КОНТРАКТ</string>
+    <string name="matrix_intake_final_msg_1">Цикл все еще может шептать. Тяга может появляться.</string>
+    <string name="matrix_intake_final_msg_2">Но в течение следующих 30 дней вы больше не будете двигаться неосознанно.</string>
+    <string name="matrix_intake_final_msg_3">30 ДНЕЙ ДО ВЫХОДА</string>
+    <string name="matrix_intake_final_msg_4">День 1 начинается сейчас.</string>
+</resources>

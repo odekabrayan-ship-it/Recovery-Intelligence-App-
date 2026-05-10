@@ -41,6 +41,8 @@
   <string name="profile_security_privacy">Security &amp; Privacy</string>
   <string name="profile_pin_protection">PIN Protection</string>
   <string name="profile_biometric_login">Biometric Login</string>
+  <string name="profile_notifications">Notifications Enabled</string>
+  <string name="profile_quiet_hours">Quiet Hours (22:00 - 07:00)</string>
   <string name="profile_local_storage_warning">Local-only storage: Your data stays on this device. If the app is deleted, data cannot be recovered.</string>
   <string name="profile_set_pin_title">Set PIN Lock</string>
   <string name="profile_set_pin_desc">Enter a 4â€“6 digit PIN to protect your local data.</string>
@@ -180,8 +182,8 @@
   <string name="lp_autophagy_insight">Autophagy is a key driver of healthspan and protein homeostasis.</string>
   <string name="lp_thermal_title">Thermal Hormesis (Contrast)</string>
   <string name="lp_thermal_purpose">Activates Heat Shock Proteins (HSP) and brown fat to improve cardiovascular resilience.</string>
-  <string name="lp_thermal_step1">20 minutes of Sauna exposure (80Â°C+).</string>
-  <string name="lp_thermal_step2">Immediate 3-minute Cold Plunge or Shower (10Â°C).</string>
+  <string name="lp_thermal_step1">20 minutes of Sauna exposure (80°C+).</string>
+  <string name="lp_thermal_step2">Immediate 3-minute Cold Plunge or Shower (10°C).</string>
   <string name="lp_thermal_step3">Rest for 10 minutes in a neutral environment.</string>
   <string name="lp_thermal_benefit_short">Vascular Compliance</string>
   <string name="lp_thermal_benefit_long">Cardiovascular Resilience</string>
@@ -205,7 +207,7 @@
   <string name="lp_glymphatic_title">Glymphatic Reset</string>
   <string name="lp_glymphatic_purpose">Optimizes the brain\'s waste clearance system to prevent neurodegenerative accumulation.</string>
   <string name="lp_glymphatic_step1">Zero blue light exposure 90 minutes before sleep.</string>
-  <string name="lp_glymphatic_step2">Lower room temperature to exactly 18Â°C.</string>
+  <string name="lp_glymphatic_step2">Lower room temperature to exactly 18°C.</string>
   <string name="lp_glymphatic_step3">Sleep on your side to facilitate maximal cerebrospinal fluid flow.</string>
   <string name="lp_glymphatic_benefit_short">Cognitive Clarity</string>
   <string name="lp_glymphatic_benefit_long">Neuro-protection</string>
@@ -264,10 +266,10 @@
   <string name="act_sl3_phys">Maximizes nocturnal cancer-fighting and cellular repair mechanisms.</string>
   <string name="act_sl3_rsch">Apply software like \'Night Shift\' and physical amber-tinted lenses. Even low-intensity blue light can suppress melatonin release for up to 90 minutes. Ensure all peripheral LEDs in the bedroom are covered or disabled.</string>
   <string name="act_sl4_title">Glymphatic Thermal Trigger</string>
-  <string name="act_sl4_ipre">Lower bedroom temperature to 18Â°C (64Â°F).</string>
+  <string name="act_sl4_ipre">Lower bedroom temperature to 18°C (64°F).</string>
   <string name="act_sl4_bio">A drop in core body temperature is the primary physiological trigger for entering N3 deep sleep.</string>
   <string name="act_sl4_phys">Activates the glymphatic system to \'flush\' beta-amyloid, reducing the risk of Alzheimer\'s and dementia.</string>
-  <string name="act_sl4_rsch">Pair with a warm shower 90m before bed. The \'rebound\' vasodilation in hands and feet facilitates the necessary 1Â°C drop in core temperature required for neural waste clearance cycles.</string>
+  <string name="act_sl4_rsch">Pair with a warm shower 90m before bed. The \'rebound\' vasodilation in hands and feet facilitates the necessary 1°C drop in core temperature required for neural waste clearance cycles.</string>
   <string name="act_sl5_title">Digital Sunset Protocol</string>
   <string name="act_sl5_ipre">Stop all digital/high-dopamine input 60m before bed.</string>
   <string name="act_sl5_bio">Reduces pre-sleep neural arousal and prevents \'attention residue\' from disrupting REM architecture.</string>
@@ -348,13 +350,14 @@
   <!-- Recovery & Session Sync -->
   <string name="act_me1_ipre_recovery">1 tbsp Apple Cider Vinegar in 250ml water before your largest meal.</string>
   <string name="act_me2_ipre_recovery">15-minute brisk walk immediately following a meal.</string>
+  <string name="act_co1_ipre">20 minutes of guided NSDR or Yoga Nidra.</string>
   <string name="act_co1_ipre_recovery">20 minutes of guided NSDR or Yoga Nidra.</string>
   <string name="act_ph1_ipre_recovery">Perform 3x30s passive dead-hangs from a pull-up bar.</string>
   <string name="act_ph2_ipre_recovery">Perform full-range rotations for neck, shoulders, and hips.</string>
   <string name="act_sl1_ipre_recovery">Exit bed within 120 seconds of waking.</string>
   <string name="act_sl2_ipre_recovery">15m of bright natural light exposure.</string>
   <string name="act_sl3_ipre_recovery">Apply red filter to all screens or use blockers 120m before sleep.</string>
-  <string name="act_sl4_ipre_recovery">Lower bedroom temperature to 18Â°C (64Â°F).</string>
+  <string name="act_sl4_ipre_recovery">Lower bedroom temperature to 18°C (64°F).</string>
   <string name="act_ca1_ipre_recovery">Stand up immediately and perform 2m of light stretching.</string>
   <!-- Recovery Live Activities -->
   <string name="act_osmotic_title">Osmotic Load</string>
@@ -977,31 +980,37 @@
   <string name="next_ritual_pre_sleep">Perform immediately before bed to maximize N3 deep sleep architecture.</string>
   <string name="next_ritual_midday">Execute during the midday metabolic peak to maintain cognitive throughput.</string>
   <string name="next_ritual_stress">Trigger upon detection of elevated sympathetic tone or acute stress.</string>
-  <string name="notif_morning_title">Biological Activation Required</string>
-  <string name="notif_morning_msg_1">Your brain is in a state of nocturnal dehydration. Execute [Morning Hydration] to restore neural throughput and baseline homeostasis.</string>
-  <string name="notif_morning_msg_2">Cortisol awakening response detected. Exit bed now and initiate [Circadian Sync] to lock in your biological clock for the next 16 hours.</string>
-  <string name="notif_midday_title">System Maintenance Alert</string>
-  <string name="notif_midday_msg_1">Metabolic load is peaking. Execute the [Blood Sugar Anchor] protocol to prevent the afternoon cognitive dip and stabilize insulin.</string>
-  <string name="notif_midday_msg_2">Vagal tone is decreasing. A 2-minute [Vagal Reset] will recalibrate your focus and suppress systemic cortisol elevation.</string>
-  <string name="notif_afternoon_title">Protection Phase Active</string>
-  <string name="notif_afternoon_msg_1">Vascular strain detected from cumulative allostatic load. A 5-minute [Vagal Reset] will down-regulate your stress response immediately.</string>
-  <string name="notif_afternoon_msg_2">Neural fatigue is accumulating. Initiate a [Dopamine Fast] for 15 minutes to recalibrate your focus circuits and receptor sensitivity.</string>
-  <string name="notif_evening_title">Restoration Window Opening</string>
-  <string name="notif_evening_msg_1">Prepare your neural architecture for repair. Initiate the [Blue Light Fast] to shield melatonin production and prime N3 deep sleep.</string>
-  <string name="notif_evening_msg_2">Metabolic clearance is slowing. Hydrate with electrolytes and execute [Glymphatic Flush] to support hepatic filtration during sleep.</string>
-  <string name="notif_night_title">Deep Recovery Protocol</string>
-  <string name="notif_night_msg_1">Your glymphatic system is ready to purge metabolic waste. Optimize your environment and execute [Insomnia Relief] for maximal repair.</string>
-  <string name="notif_night_msg_2">Neural synchronization initiated. Use the [4-7-8 Breathing] protocol to force a parasympathetic shift for deep cellular restoration.</string>
+  <string name="notif_morning_title">Start Your Engine</string>
+  <string name="notif_morning_msg_1">Your brain is thirsty after the night. A quick hydration ritual will clear the fog and power up your focus.</string>
+  <string name="notif_morning_msg_2">The day is starting. Step out for some light now to lock in your energy for the next 16 hours.</string>
+  <string name="notif_midday_title">Midday Power-Up</string>
+  <string name="notif_midday_msg_1">Keep your energy steady. A quick nutritional anchor now prevents the afternoon crash.</string>
+  <string name="notif_midday_msg_2">Feeling the midday drift? A 2-minute reset will sharpen your focus immediately.</string>
+  <string name="notif_afternoon_title">Stay Resilient</string>
+  <string name="notif_afternoon_msg_1">The day\'s stress is building up. A quick breathing break will lower your pressure and keep you calm.</string>
+  <string name="notif_afternoon_msg_2">Brain feeling full? Take a 15-minute digital break to refresh your mental clarity.</string>
+  <string name="notif_evening_title">Prepare for Repair</string>
+  <string name="notif_evening_msg_1">Time to wind down. Dim the screens now to protect your sleep quality later.</string>
+  <string name="notif_evening_msg_2">Support your body\'s overnight cleanup. A glass of water now helps your liver work better while you sleep.</string>
+  <string name="notif_night_title">Deep Recovery Mode</string>
+  <string name="notif_night_msg_1">Your brain is ready to clear the day\'s waste. Optimize your space for a deep, restorative sleep.</string>
+  <string name="notif_night_msg_2">Let your body repair itself. Use the 4-7-8 rhythm to drift into deep recovery faster.</string>
   <!-- Addiction-Specific Clinical Reminders -->
-  <string name="notif_smoker_title">Vascular Integrity Warning</string>
-  <string name="notif_smoker_msg">Carboxyhemoglobin levels require clearance. Execute [Pulmonary Ritual] now to restore oxygen saturation and neutralize oxidative stress.</string>
-  <string name="notif_drinker_title">Hepatic Filtration Alert</string>
-  <string name="notif_drinker_msg">Acetaldehyde clearance is lagging. Initiate [Hepatic Flush] to stimulate glutathione production and protect neural architecture.</string>
-  <string name="notif_craving_title">Neural Surge Detected</string>
-  <string name="notif_craving_msg">Dopamine seeking detected. Execute [Urge Surfing] to decouple the stimulus-response loop and strengthen prefrontal control.</string>
+  <string name="notif_smoker_title">Refresh Your Airflow</string>
+  <string name="notif_smoker_msg">Your lungs need a quick clearing. A breathing ritual now will boost your oxygen and refresh your system.</string>
+  <string name="notif_drinker_title">Liver Assist Required</string>
+  <string name="notif_drinker_msg">Your liver is working hard. A quick hydration ritual will help it clear toxins and protect your brain.</string>
+  <string name="notif_craving_title">Craving Wave Detected</string>
+  <string name="notif_craving_msg">A craving is just a wave. Watch it peak and fade. 3 minutes of mindful surfing keeps you in control.</string>
+  <string name="notif_microwin_craving_title">Craving Mastered</string>
+  <string name="notif_microwin_craving_msg">You navigated that high-intensity wave with precision. Your neural resilience is strengthening. That is a Micro-Win!</string>
+  <string name="notif_microwin_general_title">Micro-Win Logged</string>
+  <string name="notif_microwin_general_msg">Every protocol you complete builds cumulative systemic resilience. Keep stacking these wins!</string>
   <!-- State-Specific Clinical Reminders -->
-  <string name="notif_stress_title">Amygdala Overdrive Detected</string>
-  <string name="notif_stress_msg">Sympathetic tone is dominating. Perform the [Stress Reset] to force a vagal brake and prevent systemic inflammation.</string>
+  <string name="notif_stress_title">System Pressure High</string>
+  <string name="notif_stress_msg">Stress levels are peaking. A quick reset will help you reclaim your calm and protect your energy.</string>
+  <string name="notif_privacy_title">Biological Directive Available</string>
+  <string name="notif_privacy_msg">A personalized recovery protocol is ready for execution. Open the app to view details.</string>
   <string name="area_cardio">Cardiovascular</string>
   <string name="area_metabolic">Metabolic</string>
   <string name="area_cellular">Cellular</string>
@@ -1090,15 +1099,68 @@
   <string name="act_ph6_rsch">Try closing your eyes to increase difficulty. This forces the brain to rely on proprioception and the vestibular system, strengthening the neural pathways responsible for balance.</string>
   <!-- Cognitive Activities -->
   <string name="act_co1_title">Monotropic Focus Deep Work</string>
-  <string name="act_co1_ipre">90m block of singular focus with zero task-switching.</string>
-  <string name="act_co1_bio">Eliminates \'Attention Residue\' and allows for the achievement of Flow states.</string>
-  <string name="act_co1_phys">Maximizes neuronal output and reduces the metabolic cost of cognitive labor.</string>
-  <string name="act_co1_rsch">Turn off all notifications and physical distractions. Every time you switch tasks, it takes the brain an average of 23 minutes to return to full focus. Protecting this window preserves your cognitive stamina.</string>
-  <string name="act_co2_title">Amygdala Reset: Lateral Optical Flow</string>
-  <string name="act_co2_ipre">10m walk outdoors while scanning the horizon laterally.</string>
-  <string name="act_co2_bio">Lateral eye movements (optical flow) have been clinically shown to reduce amygdala activity.</string>
-  <string name="act_co2_phys">Immediate reset of mental clarity and reduction in neural anxiety or frustration.</string>
-  <string name="act_co2_rsch">Keep your head still and let your eyes take in the landscape from left to right. This mode of movement is tied to a state of safety, down-regulating the brain\'s threat-detection systems.</string>
+  <string name="act_co1_desc">90m block of singular focus with zero task-switching.</string>
+  <string name="act_co1_bio">Trains the brain to maintain deep focus, eliminates \'Attention Residue\', and allows for the achievement of Flow states.</string>
+  <string name="act_co1_phys">Increases neuroplasticity, cognitive endurance, and maximizes neuronal output while reducing metabolic cost.</string>
+  <string name="act_co1_rsch">Avoid all digital notifications. This 90-minute block aligns with ultradian rhythms, allowing the brain to enter a state of \'flow\'. Every task-switch costs ~23 minutes of focus recovery; protecting this window preserves cognitive stamina.</string>
+  <string name="act_co2_title">Dual N-Back Training</string>
+  <string name="act_co2_ipre">10m of tasking that requires tracking two independent sequences.</string>
+  <string name="act_co2_bio">Directly improves working memory capacity and fluid intelligence.</string>
+  <string name="act_co2_phys">Strengthens the prefrontal cortex and improves executive function.</string>
+  <string name="act_co2_rsch">Consistency is key. 10 minutes of daily working memory training has been shown to improve focus and reduce age-related cognitive decline by strengthening neural pathways in the parietal and frontal lobes.</string>
+  <!-- Expert Biological Interventions -->
+  <string name="act_st_divergence_title">Neural Divergence Sync</string>
+  <string name="act_st_divergence_ipre">Follow the horizontally oscillating light on the screen with your eyes while syncing your breath to the haptic pulses.</string>
+  <string name="act_st_divergence_bio">Mimics EMDR eye movements to decouple emotional intensity from stress while triggering a vagal signal via haptics.</string>
+  <string name="act_st_divergence_phys">Immediate reduction in amygdala over-activation and physical drop in heart rate.</string>
+  <string name="act_st_divergence_rsch">Neural divergence through lateral eye movement is clinically proven to shift the brain from a \'narrow\' stress focus to a \'panoramic\' state of calm.</string>
+
+  <string name="act_st_vagal_ppg_title">Vagal Brake Calibration</string>
+  <string name="act_st_vagal_ppg_ipre">Place your index finger over the rear camera lens. The UI will sync with your live heart rhythm.</string>
+  <string name="act_st_vagal_ppg_bio">Uses photoplethysmography (PPG) to track Heart Rate Variability (HRV) in real-time, closing the feedback loop.</string>
+  <string name="act_st_vagal_ppg_phys">Synchronizes your breath with your actual heart rhythm to maximize vagal tone and systemic recovery.</string>
+  <string name="act_st_vagal_ppg_rsch">HRV entrainment via live PPG feedback is the gold standard for rapid autonomic nervous system recalibration.</string>
+
+  <string name="act_me_soleus_title">Soleus Metabolism Ignition</string>
+  <string name="act_me_soleus_ipre">Perform \'Soleus Pushups\' (rhythmic calf raises) while seated. The app will track your rhythm and fuel burn.</string>
+  <string name="act_me_soleus_bio">The soleus muscle can burn blood glucose for hours without fatiguing, acting as a metabolic sponge.</string>
+  <string name="act_me_soleus_phys">Flattened post-prandial glucose spike and localized thermogenesis in the lower limbs.</string>
+  <string name="act_me_soleus_rsch">Unlike other muscles, the soleus does not rely on glycogen; it pulls fuel directly from the blood, making it the ultimate tool for sedentary metabolic health.</string>
+
+  <string name="act_me_myokine_pulse_title">Myokine Surge Ignition</string>
+  <string name="act_me_myokine_pulse_ipre">Tap the screen with maximum velocity for 10 seconds to hit the metabolic \"Power Zone.\"</string>
+  <string name="act_me_myokine_pulse_bio">Stimulates the release of muscle-derived myokines (Irisin) that support neurogenesis and metabolic flexibility.</string>
+  <string name="act_me_myokine_pulse_phys">Acute surge in cellular energy production and improved insulin sensitivity trajectory.</string>
+  <string name="act_me_myokine_pulse_rsch">High-velocity contractions trigger specialized myokine pathways that are often bypassed in traditional resistance training.</string>
+
+  <string name="act_sl_glymphatic_title">Glymphatic Waste Clearance</string>
+  <string name="act_sl_glymphatic_ipre">Follow the 3D guide for neck and jawline lymph drainage. Match your strokes to the vibration frequency.</string>
+  <string name="act_sl_glymphatic_bio">Mechanically facilitates the drainage of metabolic waste from the head and neck into the lymphatic system.</string>
+  <string name="act_sl_glymphatic_phys">Reduced cranial pressure and activation of the glymphatic clearance cycle during N3 sleep.</string>
+  <string name="act_sl_glymphatic_rsch">Daily lymph drainage signals to the autonomic nervous system that the \'day phase\' is over, facilitating a faster transition into deep restorative sleep.</string>
+
+  <string name="act_ph_gyro_balance_title">Vestibular Equilibrium Reset</string>
+  <string name="act_ph_gyro_balance_ipre">Hold the device flat in your palm. Keep the \"Neural Sphere\" centered using controlled bodily rotation.</string>
+  <string name="act_ph_gyro_balance_bio">Challenges the cerebellum and vestibular system to maintain high-fidelity spatial orientation.</string>
+  <string name="act_ph_gyro_balance_phys">Reduces cognitive load by stabilizing the internal vestibular model and improving motor coordination.</string>
+  <string name="act_ph_gyro_balance_rsch">Gyroscopic stabilization tasks force the brain to prioritize proprioceptive precision over reactive stress signals.</string>
+
+  <string name="act_co_dual_task_title">Neural Cross-Talk Protocol</string>
+  <string name="act_co_dual_task_ipre">Walk in place while solving the visual logic patterns on the screen in rhythm with your steps.</string>
+  <string name="act_co_dual_task_bio">Engages the motor cortex and prefrontal cortex simultaneously to expand usable cognitive bandwidth.</string>
+  <string name="act_co_dual_task_phys">Improved cognitive agility and significantly reduced metabolic cost of simultaneous tasks.</string>
+  <string name="act_co_dual_task_rsch">Dual-tasking protocols are clinically proven to build neural resilience against cognitive decline and stress-induced errors.</string>
+
+  <string name="act_co_depth_shift_title">Optic Nerve Safety Reset</string>
+  <string name="act_co_depth_shift_ipre">Focus on the center point, then immediately look at the farthest point in the room when the screen blurs.</string>
+  <string name="act_co_depth_shift_bio">Manually resets the autonomic nervous system by switching between focused (near) and panoramic (far) vision.</string>
+  <string name="act_co_depth_shift_phys">Immediate reduction in ocular tension and a systemic shift toward parasympathetic safety.</string>
+  <string name="act_co_depth_shift_rsch">Rapid focal shifting leverages the evolutionary link between wide-angle vision and the cessation of the threat-response cycle.</string>
+  <string name="act_co7_title">Amygdala Reset: Lateral Optical Flow</string>
+  <string name="act_co7_ipre">10m walk outdoors while scanning the horizon laterally.</string>
+  <string name="act_co7_bio">Lateral eye movements (optical flow) have been clinically shown to reduce amygdala activity.</string>
+  <string name="act_co7_phys">Immediate reset of mental clarity and reduction in neural anxiety or frustration.</string>
+  <string name="act_co7_rsch">Keep your head still and let your eyes take in the landscape from left to right. This mode of movement is tied to a state of safety, down-regulating the brain\'s threat-detection systems.</string>
   <string name="act_co3_title">Dopamine Shield Protocol</string>
   <string name="act_co3_ipre">No social media, news, or email for the first hour after waking.</string>
   <string name="act_co3_bio">Protects your baseline dopamine levels, ensuring high motivation for high-value, complex tasks.</string>
@@ -1179,4 +1241,96 @@
   <string name="act_circadian_what">Follow the light pulse to signal the SCN (Suprachiasmatic Nucleus) for melatonin readiness.</string>
   <string name="act_dopamine_why">Chronic substance use down-regulates D2 receptors. This ritual uses sensory-minimum stimuli to allow receptor sensitivity to return.</string>
   <string name="act_dopamine_what">Focus on the singular point. Minimize all other sensory input. This allows reward circuits to cool down.</string>
+  <!-- Bio-State Verification & Sensor Interaction -->
+  <string name="vitalis_bio_state_verified">Bio-State Verified</string>
+  <string name="vitalis_precision_bonus">Precision Bonus: +%d%% Score Accuracy</string>
+  <string name="vitalis_complete_now">Complete Now</string>
+  <string name="vitalis_next_phase">Next Phase</string>
+  <string name="vitalis_complete_ritual">Complete Ritual</string>
+
+  <!-- 30 Days Out of the Matrix -->
+  <string name="matrix_title">30 DAYS OUT OF THE MATRIX</string>
+  <string name="matrix_subtitle">Serious Behavioral Intervention</string>
+  <string name="matrix_phase_wake_up">PHASE 1: WAKE UP</string>
+  <string name="matrix_phase_break_loop">PHASE 2: BREAK THE LOOP</string>
+  <string name="matrix_phase_rebuild_control">PHASE 3: REBUILD CONTROL</string>
+  <string name="matrix_day_counter">Day %1$d of 30</string>
+  <string name="matrix_action_required">ACTION REQUIRED</string>
+  <string name="matrix_daily_directive">DAILY DIRECTIVE</string>
+
+  <!-- Matrix Urge Intervention -->
+  <string name="matrix_urge_title">URGE INTERVENTION</string>
+  <string name="matrix_urge_emergency">EMERGENCY OVERRIDE</string>
+  <string name="matrix_urge_step_1_title">PHYSIOLOGICAL SHOCK</string>
+  <string name="matrix_urge_step_1_desc">Apply ice to your neck or splash cold water on your face for 30 seconds. This triggers the mammalian dive reflex.</string>
+  <string name="matrix_urge_step_2_title">COGNITIVE DISRUPTION</string>
+  <string name="matrix_urge_step_2_desc">Count backwards from 100 by 7s out loud. (100, 93, 86...).</string>
+  <string name="matrix_urge_step_3_title">PHYSICAL DISPLACEMENT</string>
+  <string name="matrix_urge_step_3_desc">Leave the room immediately. Go to a public space or outdoors.</string>
+  <string name="matrix_urge_completed">URGE NEUTRALIZED</string>
+  <string name="matrix_urge_command_stand">Stand up now</string>
+  <string name="matrix_urge_command_leave">LEAVE THE ROOM NOW</string>
+  <string name="matrix_urge_command_block">BLOCK ALL APPS IMMEDIATELY</string>
+  <string name="matrix_urge_command_cold">Cold water reset</string>
+  <string name="matrix_urge_command_negotiate">Do not negotiate with the urge</string>
+  <string name="matrix_urge_countdown_active">Active Resistance: %1$d</string>
+  <string name="matrix_urge_future_self">What will your future self say if you fail now?</string>
+  <string name="matrix_urge_future_self_win">Your future self is waiting for you to win this moment.</string>
+
+  <!-- Matrix Relapse Analysis -->
+  <string name="matrix_relapse_title">PATTERN ANALYSIS</string>
+  <string name="matrix_relapse_intro">Relapse is data. Analyze the loop without shame.</string>
+  <string name="matrix_relapse_trigger">What was the primary trigger?</string>
+  <string name="matrix_relapse_environment">Where were you located?</string>
+  <string name="matrix_relapse_emotion">What was your emotional state?</string>
+  <string name="matrix_relapse_cost">COST OF THE LOOP: What did this moment steal from your future?</string>
+  <string name="matrix_relapse_lesson">What is the structural change needed to prevent this loop?</string>
+  <string name="matrix_relapse_reset">RESTART PROTOCOL</string>
+  <string name="matrix_relapse_cost_prompt">Quantify the damage (Time, Health, Respect).</string>
+  <string name="matrix_future_self_prompt">Your Future Self is watching. Act accordingly.</string>
+
+  <!-- Matrix Night Mode -->
+  <string name="matrix_night_mode_title">EMERGENCY NIGHT MODE</string>
+  <string name="matrix_night_mode_desc">The Matrix protocol has activated Emergency Night Mode. High-risk period detected. Access restricted to stabilize your neural baseline.</string>
+  <string name="matrix_night_mode_override">EMERGENCY OVERRIDE (USE ONLY IF SAFE)</string>
+
+  <!-- Final Matrix Report -->
+  <string name="matrix_report_title">FINAL MATRIX EXIT REPORT</string>
+  <string name="matrix_report_summary">30-Day Behavioral Reconstruction Summary</string>
+  <string name="matrix_report_triggers_found">Triggers Identified</string>
+  <string name="matrix_report_interruption_speed">Avg Interruption Speed</string>
+  <string name="matrix_report_growth_metric">Neural Resilience Growth</string>
+  <string name="matrix_report_exit_status">STATUS: OUT OF THE MATRIX</string>
+  <string name="matrix_maintenance_mode">MAINTENANCE MODE ACTIVE</string>
+  <string name="matrix_days_left">%1$d DAYS UNTIL GRADUATION</string>
+
+  <!-- Matrix Intake Experience -->
+  <string name="matrix_intake_opening_1">This system was built for people trapped in repetitive compulsive behavior.</string>
+  <string name="matrix_intake_opening_2">Not because they are weak. But because the loop became automatic.</string>
+  <string name="matrix_intake_confrontation_title">How long has the loop been repeating?</string>
+  <string name="matrix_intake_loop_recognition_title">THE LOOP</string>
+  <string name="matrix_intake_loop_recognition_familiar">Does this feel familiar?</string>
+  <string name="matrix_intake_entry_points_title">What usually starts the loop?</string>
+  <string name="matrix_intake_entry_points_feedback">Good. The system is identifying your entry points.</string>
+  <string name="matrix_intake_hidden_truth_title">THE HIDDEN TRUTH</string>
+  <string name="matrix_intake_hidden_truth_1">Most compulsive pornography and masturbation patterns do not begin with action.</string>
+  <string name="matrix_intake_hidden_truth_2">They begin with passive escalation.</string>
+  <string name="matrix_intake_hidden_truth_3">The earlier the loop is recognized, the more control becomes possible.</string>
+  <string name="matrix_intake_real_cost_title">What has this loop affected most?</string>
+  <string name="matrix_intake_danger_hours_title">When are you most vulnerable?</string>
+  <string name="matrix_intake_danger_hours_feedback">SHADOW HOURS DETECTED</string>
+  <string name="matrix_intake_honesty_check_title">When urges begin, what usually happens?</string>
+  <string name="matrix_intake_honesty_check_feedback">The system now recognizes your escalation pattern.</string>
+  <string name="matrix_intake_recovery_reality_title">RECOVERY REALITY</string>
+  <string name="matrix_intake_recovery_reality_1">This journey is not about becoming perfect.</string>
+  <string name="matrix_intake_recovery_reality_2">It is about becoming conscious earlier inside the loop.</string>
+  <string name="matrix_intake_decision_title">For the next 30 days, this system will challenge:</string>
+  <string name="matrix_intake_decision_prompt">Are you ready to enter consciously?</string>
+  <string name="matrix_intake_enter_system">ENTER THE SYSTEM</string>
+  <string name="matrix_intake_contract_title">THE CONTRACT</string>
+  <string name="matrix_intake_final_msg_1">The loop may still speak. Urges may still appear.</string>
+  <string name="matrix_intake_final_msg_2">But for the next 30 days, you will no longer move unconsciously.</string>
+  <string name="matrix_intake_final_msg_3">30 DAYS UNTIL EXIT</string>
+  <string name="matrix_intake_final_msg_4">Day 1 begins now.</string>
+
 </resources>

@@ -17,5 +17,6 @@ sealed class Screen(val route: String, val icon: ImageVector, @StringRes val lab
     object Profile : Screen("profile", Icons.Default.Person, R.string.settings_account_mgmt)
     object Lock : Screen("lock", Icons.Default.Lock, R.string.settings_security)
     object Therapeutic : Screen("therapeutic", Icons.Default.Spa, R.string.therapeutic_title)
+    object Matrix : Screen("matrix", Icons.Default.Grid4x4, R.string.matrix_title)
     object Login : Screen("login", Icons.AutoMirrored.Filled.Login, R.string.login_sign_in)
 }

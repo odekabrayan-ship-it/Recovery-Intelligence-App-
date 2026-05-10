@@ -1,5 +1,5 @@
-<resources>
-    <string name="app_name">HARC Health</string>
+﻿<resources>
+    <string name="app_name">रिकवरी इंटेलिजेंस</string>
 
     <!-- नेविगेशन -->
     <string name="nav_home">होम</string>
@@ -45,22 +45,45 @@
     <string name="profile_security_privacy">सुरक्षा और गोपनीयता</string>
     <string name="profile_pin_protection">पिन सुरक्षा</string>
     <string name="profile_biometric_login">बायोमेट्रिक लॉगिन</string>
+    <string name="profile_notifications">सूचनाएं सक्षम</string>
+    <string name="profile_quiet_hours">शांत घंटे (22:00 - 07:00)</string>
     <string name="profile_local_storage_warning">केवल स्थानीय संग्रहण: आपका डेटा इसी डिवाइस पर रहता है। यदि ऐप हटा दिया जाता है, तो डेटा पुनर्प्राप्त नहीं किया जा सकता है।</string>
     <string name="profile_set_pin_title">पिन लॉक सेट करें</string>
     <string name="profile_set_pin_desc">अपने स्थानीय डेटा की सुरक्षा के लिए 4-6 अंकों का पिन दर्ज करें।</string>
     <string name="profile_pin_label">पिन</string>
     <string name="profile_set_pin_button">पिन सेट करें</string>
     <string name="profile_not_set">सेट नहीं है</string>
+    <string name="profile_username">आंतरिक आईडी</string>
+    <string name="profile_copy_username">आईडी कॉपी करें</string>
+    <string name="profile_share_profile">ऐप शेयर करें</string>
+    <string name="profile_share_text">गोपनीयता-केंद्रित जैविक अनुकूलन के लिए रिकवरी इंटेलिजेंस में शामिल हों।</string>
+    <string name="profile_username_copied">आईडी क्लिपबोर्ड पर कॉपी की गई</string>
+    <string name="profile_privacy_policy">गोपनीयता नीति</string>
+    <string name="profile_medical_disclaimer">चिकित्सा अस्वीकरण</string>
+    <string name="medical_disclaimer_text">रिकवरी अनुकूलन प्रोटोकॉल केवल सूचनात्मक उद्देश्यों के लिए हैं। वे पेशेवर चिकित्सा सलाह, निदान या उपचार का विकल्प नहीं हैं। कोई भी नया स्वास्थ्य प्रोटोकॉल शुरू करने से पहले हमेशा अपने चिकित्सक की सलाह लें।</string>
 
     <!-- लॉक स्क्रीन एक्स्ट्रा -->
     <string name="lock_wrong_pin">गलत पिन। कृपया पुन: प्रयास करें।</string>
     <string name="lock_forgot_pin">पिन भूल गए?</string>
     <string name="lock_reset_title">ऐप एक्सेस रीसेट करें</string>
+    <string name="lock_title">ऐप लॉक है</string>
+    <string name="lock_enter_pin">जारी रखने के लिए अपना पिन दर्ज करें</string>
+    <string name="lock_unlock">अनलॉक करें</string>
+    <string name="lock_data_privacy_note">आपका डेटा स्थानीय रूप से संग्रहीत और एन्क्रिप्टेड है।</string>
     <string name="lock_reset_desc">अपना पिन रीसेट करने के लिए, हमें सुरक्षा के लिए स्थानीय रूप से संग्रहीत सभी स्वास्थ्य डेटा को मिटाना होगा। इस क्रिया को पूर्ववत नहीं किया जा सकता है। क्या आप आगे बढ़ना चाहते हैं?</string>
     <string name="lock_reset_confirm">डेटा मिटाएं और रीसेट करें</string>
 
     <!-- होम स्क्रीन -->
     <string name="home_biological_command">जैविक कमान</string>
+    <string name="home_biological_directives">जैविक निर्देश</string>
+    <string name="home_biological_directives_subtitle">वाइटलिस एक्सपर्ट इंजन से सटीक कार्रवाइयां</string>
+    <string name="home_therapeutic_subtitle">तनाव और चिंता नियंत्रण के लिए ध्वनि सत्र</string>
+    <string name="home_vitalis_subtitle">सटीक जैविक अनुकूलन इंजन</string>
+    <string name="home_expert_directive">विशेषज्ञ निर्देश</string>
+    <string name="home_how_to_execute">कैसे निष्पादित करें</string>
+    <string name="home_biological_rationale_header">जैविक औचित्य</string>
+    <string name="home_repeat_ritual">अनुष्ठान दोहराएं</string>
+    <string name="home_initiate_ritual">जैविक अनुष्ठान शुरू करें</string>
     <string name="home_hello">नमस्ते, %1$s</string>
     <string name="home_mandatory_triad">अनिवार्य दैनिक त्रय</string>
     <string name="home_triad_subtitle">तत्काल शारीरिक मरम्मत के लिए विशेषज्ञ के नेतृत्व वाले प्रोटोकॉल</string>
@@ -118,6 +141,14 @@
     <string name="vitalis_bio_modules">जैविक मॉड्यूल</string>
     <string name="vitalis_pattern_analysis">पैटर्न विश्लेषण</string>
     <string name="vitalis_health_trajectory">स्वास्थ्य प्रक्षेपवक्र</string>
+    <string name="vitalis_trajectory_optimal">इष्टतम जैविक क्षमता</string>
+    <string name="vitalis_trajectory_stable">स्थिर होमियोस्टैसिस</string>
+    <string name="vitalis_trajectory_drift">प्रणालीगत विचलन पाया गया</string>
+    <string name="vitalis_synchronized">सिंक्रोनाइज़्ड</string>
+    <string name="vitalis_drifting">विचलित</string>
+    <string name="vitalis_stable">स्थिर</string>
+    <string name="vitalis_gathering">एकत्रित कर रहा है</string>
+    <string name="vitalis_analysis_report">जैविक विश्लेषण रिपोर्ट</string>
     <string name="vitalis_help_centre">जैविक सहायता केंद्र</string>
     <string name="vitalis_longevity_index">दीर्घायु सूचकांक</string>
     <string name="vitalis_system_state">सिस्टम स्थिति</string>
@@ -229,10 +260,221 @@
     <string name="vitalis_complete">पूर्ण</string>
     <string name="vitalis_execution_steps">निष्पादन चरण</string>
     <string name="vitalis_log_protocol_completed">प्रोटोकॉल को पूर्ण के रूप में दर्ज करें</string>
+
+    <!-- नए दीर्घायु प्रोटोकॉल स्ट्रिंग्स -->
+    <string name="lp_autophagy_title">ऑटोफैगी चक्र (The Autophagy Cycle)</string>
+    <string name="lp_autophagy_purpose">क्षतिग्रस्त प्रोटीनों के पुनर्चक्रण और चयापचय मलबे की सफाई के माध्यम से कोशिकीय \"हाउसक्लीनिंग\" को सक्रिय करता है।</string>
+    <string name="lp_autophagy_step1">16 घंटे की उपवास खिड़की शुरू करें।</string>
+    <string name="lp_autophagy_step2">उपवास के दौरान 500 मिली खनिज युक्त पानी का सेवन करें।</string>
+    <string name="lp_autophagy_step3">उच्च-प्रोटीन, कम-ग्लाइसेमिक भोजन के साथ उपवास तोड़ें।</string>
+    <string name="lp_autophagy_benefit_short">मेटाबॉलिक स्विचिंग</string>
+    <string name="lp_autophagy_benefit_long">कोशिकीय दीर्घायु</string>
+    <string name="lp_autophagy_insight">ऑटोफैगी स्वास्थ्य अवधि (healthspan) और प्रोटीन होमियोस्टैसिस का एक प्रमुख चालक है।</string>
+    <string name="lp_thermal_title">थर्मल हॉर्मेसिस (कंट्रास्ट)</string>
+    <string name="lp_thermal_purpose">हृदय संबंधी लचीलेपन में सुधार के लिए हीट शॉक प्रोटीन (HSP) और ब्राउन फैट को सक्रिय करता है।</string>
+    <string name="lp_thermal_step1">20 मिनट सौना एक्सपोजर (80°C+)।</string>
+    <string name="lp_thermal_step2">तत्काल 3-मिनट कोल्ड प्लंज या शावर (10°C)।</string>
+    <string name="lp_thermal_step3">एक तटस्थ वातावरण में 10 मिनट के लिए आराम करें।</string>
+    <string name="lp_thermal_benefit_short">संवहनी अनुपालन</string>
+    <string name="lp_thermal_benefit_long">हृदय संबंधी लचीलापन</string>
+    <string name="lp_thermal_insight">हीट शॉक प्रोटीन प्रोटीन फोल्डिंग के लिए आणविक चैपरोन के रूप में कार्य करते हैं।</string>
+    <string name="lp_vo2_title">माइटोकॉन्ड्रियल फोर्ज (VO2 मैक्स)</string>
+    <string name="lp_vo2_purpose">हृदय और फेफड़ों की जैविक उम्र को धीमा करने के लिए अधिकतम ऑक्सीजन उपयोग।</string>
+    <string name="lp_vo2_step1">5 मिनट का प्रगतिशील वार्म-अप।</string>
+    <string name="lp_vo2_step2">4x4 अंतराल: 4 मिनट अधिकतम तीव्रता पर, 3 मिनट सक्रिय रिकवरी।</string>
+    <string name="lp_vo2_step3">डायफ्रामेटिक ब्रीदिंग के साथ कूल डाउन करें।</string>
+    <string name="lp_vo2_benefit_short">माइटोकॉन्ड्रियल घनत्व</string>
+    <string name="lp_vo2_benefit_long">हृदय-श्वसन जीवन शक्ति</string>
+    <string name="lp_vo2_insight">VO2 मैक्स मृत्यु दर (all-cause mortality) का सबसे मजबूत भविष्यवक्ता है।</string>
+    <string name="lp_glycemic_title">ग्लाइसेमिक स्थिरता प्रोटोकॉल</string>
+    <string name="lp_glycemic_purpose">प्रोटीन ग्लाइकेशन को रोकने और त्वचा और अंग लोच को बनाए रखने के लिए इंसुलिन स्पाइक्स को कम करता है।</string>
+    <string name="lp_glycemic_step1">कार्बोहाइड्रेट युक्त भोजन से पहले पानी में 1 चम्मच एप्पल साइडर विनेगर लें।</string>
+    <string name="lp_glycemic_step2">खाने के तुरंत बाद 15 मिनट तेज चलें।</string>
+    <string name="lp_glycemic_step3">किसी भी स्टार्च के सेवन से पहले फाइबर और प्रोटीन को प्राथमिकता दें।</string>
+    <string name="lp_glycemic_benefit_short">पोस्ट-प्रांडियल स्थिरता</string>
+    <string name="lp_glycemic_benefit_long">चयापचय स्वास्थ्य</string>
+    <string name="lp_glycemic_insight">ग्लूकोज परिवर्तनशीलता को कम करने से त्वचा और अंगों की जैविक उम्र धीमी हो जाती है।</string>
+    <string name="lp_glymphatic_title">ग्लिम्फैटिक रिसेट</string>
+    <string name="lp_glymphatic_purpose">न्यूरोडीजेनेरेटिव संचय को रोकने के लिए मस्तिष्क की अपशिष्ट निकासी प्रणाली को अनुकूलित करता है।</string>
+    <string name="lp_glymphatic_step1">सोने से 90 मिनट पहले शून्य नीली रोशनी का संपर्क।</string>
+    <string name="lp_glymphatic_step2">कमरे के तापमान को ठीक 18°C तक कम करें।</string>
+    <string name="lp_glymphatic_step3">अधिकतम सेरेब्रोस्पाइनल फ्लुइड प्रवाह की सुविधा के लिए करवट लेकर सोएं।</string>
+    <string name="lp_glymphatic_benefit_short">संज्ञानात्मक स्पष्टता</string>
+    <string name="lp_glymphatic_benefit_long">न्यूरो-प्रोटेक्शन</string>
+    <string name="lp_glymphatic_insight">ग्लिम्फैटिक प्रणाली गहरी नींद के चक्र के दौरान बीटा-अमाइलॉइड को साफ करती है।</string>
+    <string name="lp_senolytic_title">सेनोलिटिक लोडिंग</string>
+    <string name="lp_senolytic_purpose">\'ज़ोंबी कोशिकाओं\' को साफ करता है जो सूजन को बढ़ावा देती हैं।</string>
+    <string name="lp_senolytic_step1">500mg क्वेरसेटिन या फिसेतिन युक्त खाद्य पदार्थों का सेवन करें।</string>
+    <string name="lp_senolytic_step2">24 घंटे के लिए शून्य परिष्कृत चीनी का सेवन।</string>
+    <string name="lp_senolytic_step3">15 मिनट का हल्का रेजिस्टेंस प्रशिक्षण।</string>
+    <string name="lp_senolytic_benefit_short">सूजन में कमी</string>
+    <string name="lp_senolytic_benefit_long">ऊतक पुनर्जनन</string>
+    <string name="lp_senolytic_insight">सेनोलिटिक्स चुनिंदा रूप से जीर्ण (senescent) कोशिकाओं की मृत्यु को प्रेरित करते हैं।</string>
+    <string name="lp_apob_title">एपो-बी लिपिड स्काउर</string>
+    <string name="lp_apob_purpose">धमनियों में प्लाक जमने के जोखिम को खत्म करने के लिए एथेरोजेनिक कणों की आक्रामक कमी।</string>
+    <string name="lp_apob_step1">घुलनशील फाइबर का सेवन प्रतिदिन 30 ग्राम+ (इसबगोल/ओट्स) तक बढ़ाएं।</string>
+    <string name="lp_apob_step2">2 ग्राम हाई-EPA ओमेगा-3 फैटी एसिड का सेवन करें।</string>
+    <string name="lp_apob_step3">एंडोथेलियम को प्राइम करने के लिए 5 मिनट \"नाइट्रिक ऑक्साइड डंप\" (स्क्वैट्स/प्रेस) करें।</string>
+    <string name="lp_apob_benefit_short">एंडोथेलियल प्राइमिंग</string>
+    <string name="lp_apob_benefit_long">हृदय संबंधी इम्युनिटी</string>
+    <string name="lp_apob_insight">एपो-बी एथेरोस्क्लोरोटिक प्लाक गठन का प्राथमिक चालक है।</string>
+    <string name="lp_skeletal_title">कंकाल सुदृढ़ीकरण</string>
+    <string name="lp_skeletal_purpose">उम्र से संबंधित कमजोरी को रोकने के लिए अस्थि खनिज घनत्व और संरचनात्मक अखंडता को अधिकतम करता है।</string>
+    <string name="lp_skeletal_step1">पुल-अप बार से कुल 3 मिनट \"डेड हैंग\" करें।</string>
+    <string name="lp_skeletal_step2">10 मिनट भारी एक्सेन्ट्रिक लोडिंग (धीमे स्क्वैट्स/पुश-अप्स) करें।</string>
+    <string name="lp_skeletal_step3">कैल्शियम सिग्नलिंग के लिए विटामिन D3 + K2 स्तर को अनुकूलित करें।</string>
+    <string name="lp_skeletal_benefit_short">संरचनात्मक संरेखण</string>
+    <string name="lp_skeletal_benefit_long">कमजोरी की रोकथाम</string>
+    <string name="lp_skeletal_insight">पकड़ की ताकत और हड्डियों का घनत्व बाद के जीवन में स्वायत्तता के उच्च-सटीक भविष्यवक्ता हैं।</string>
+    <string name="lp_dna_title">डीएनए मिथाइलेशन शील्ड</string>
+    <string name="lp_dna_purpose">डीएनए मरम्मत क्षमता को अधिकतम करता है और प्रो-इंफ्लेमेटरी उम्र बढ़ाने वाले जीन को शांत करता है।</string>
+    <string name="lp_dna_step1">100mg सल्फोराफेन (ब्रोकोली स्प्राउट्स) या केंद्रित क्रूसिफेरस अर्क का सेवन करें।</string>
+    <string name="lp_dna_step2">कोर्टिसोल-संचालित डीएनए क्षति को दबाने के लिए 10 मिनट की माइंडफुलनेस।</string>
+    <string name="lp_dna_step3">24 घंटे तक सभी प्रसंस्कृत तेलों और जले हुए मांस से बचें।</string>
+    <string name="lp_dna_benefit_short">जीनोमिक स्थिरता</string>
+    <string name="lp_dna_benefit_long">कैंसर जोखिम न्यूनीकरण</string>
+    <string name="lp_dna_insight">मिथाइलेशन पैटर्न जैविक उम्र बढ़ने (होरवाथ क्लॉक) की दर तय करते हैं।</string>
     <string name="vitalis_biological_optimization">जैविक अनुकूलन</string>
     <string name="vitalis_intervention_logged">हस्तक्षेप सफलतापूर्वक दर्ज किया गया। आपके सेलुलर मार्कर अपडेट कर दिए गए हैं।</string>
     <string name="vitalis_continue_scan">स्कैन जारी रखें</string>
     <string name="vitalis_module_detail_domain">डोमेन</string>
+
+    <!-- जैविक पुरस्कार -->
+    <string name="reward_h1_title">जलयोजन लॉक पूर्ण</string>
+    <string name="reward_h1_msg">तंत्रिका चालकता बहाल। आपके मस्तिष्क में अब इष्टतम सिग्नलिंग और अपशिष्ट निकासी के लिए आवश्यक इलेक्ट्रोलाइट संतुलन है।</string>
+    <string name="reward_mn1_title">मेटाबॉलिक एंकर सेट</string>
+    <string name="reward_mn1_msg">रक्त शर्करा स्थिर। आपने सफलतापूर्वक कोर्टिसोल स्पाइक को रोका है, जिससे अगले 4 घंटों के लिए आपके ऊर्जा भंडार सुरक्षित रहेंगे।</string>
+    <string name="reward_rl1_title">वेगल टोन अनुकूलित</string>
+    <string name="reward_rl1_msg">पैरासिम्पेथेटिक बदलाव प्राप्त हुआ। आपकी हृदय गति परिवर्तनशीलता (HRV) अब ऊपर की ओर बढ़ रही है, जो उच्च रिकवरी लचीलेपन का संकेत है।</string>
+    <string name="reward_sl1_title">मेलाटोनिन शील्ड सक्रिय</string>
+    <string name="reward_sl1_msg">सार्केडियन व्यवधान टला। अपनी आँखों को नीली रोशनी से बचाकर, आपने अपने आगामी N3 नींद चक्र की गहराई सुरक्षित कर ली है।</string>
+    <string name="reward_cc2_title">संवहनी फ्लश शुरू</string>
+    <string name="reward_cc2_msg">प्रणालीगत सूजन कम हुई। ठंडे जोखिम (cold exposure) ने नॉरपेनेफ्रिन रिलीज को प्रेरित किया है, जिससे फोकस तेज होता है और कोशिकीय मरम्मत में तेजी आती है।</string>
+    <string name="reward_lp_autophagy_title">ऑटोफैगी लॉक: सक्रिय</string>
+    <string name="reward_lp_autophagy_gain">+6.2 घंटे</string>
+    <string name="reward_lp_autophagy_metric">कोशिकीय पुनर्चक्रण</string>
+    <string name="reward_lp_autophagy_desc">मिसफोल्डेड प्रोटीन साफ किए गए। प्रणालीगत सूजन कम हुई।</string>
+    <string name="reward_lp_thermal_title">हॉर्मेटिक प्रतिक्रिया: शिखर</string>
+    <string name="reward_lp_thermal_gain">+4.8 घंटे</string>
+    <string name="reward_lp_thermal_metric">संवहनी लचीलापन</string>
+    <string name="reward_lp_thermal_desc">हीट शॉक प्रोटीन (HSP-70) सक्रियण का पता चला।</string>
+    <string name="reward_lp_vo2_title">माइटोकॉन्ड्रियल उछाल: पुष्टि</string>
+    <string name="reward_lp_vo2_gain">+12.5 घंटे</string>
+    <string name="reward_lp_vo2_metric">एरोबिक क्षमता</string>
+    <string name="reward_lp_vo2_desc">माइटोकॉन्ड्रियल घनत्व बढ़ा। VO2 मैक्स प्रक्षेपवक्र अनुकूलित।</string>
+    <string name="reward_lp_glycemic_title">मेटाबॉलिक शील्ड: संलग्न</string>
+    <string name="reward_lp_glycemic_gain">+5.1 घंटे</string>
+    <string name="reward_lp_glycemic_metric">इंसुलिन संवेदनशीलता</string>
+    <string name="reward_lp_glycemic_desc">भोजन के बाद ग्लूकोज स्पाइक बेअसर।</string>
+    <string name="reward_lp_glymphatic_title">न्यूरल फ्लश: तैयार</string>
+    <string name="reward_lp_glymphatic_gain">+3.9 घंटे</string>
+    <string name="reward_lp_glymphatic_metric">अपशिष्ट निकासी</string>
+    <string name="reward_lp_glymphatic_desc">गहरी नींद के लिए बीटा-अमाइलॉइड ड्रेनेज अनुकूलित।</string>
+    <string name="reward_ts_dopamine_title">बेसलाइन रीसेट: सुरक्षित</string>
+    <string name="reward_ts_dopamine_gain">+14%% स्थिरता</string>
+    <string name="reward_ts_dopamine_metric">न्यूरल डोपामाइन ट्यूनिंग</string>
+    <string name="reward_ts_dopamine_desc">निकोटीन रिसेप्टर्स डाउन-रेगुलेट हो रहे हैं। बेसलाइन डोपामाइन संवेदनशीलता बढ़ रही है।</string>
+    <string name="reward_ts_vascular_title">अनुपालन उछाल: शिखर</string>
+    <string name="reward_ts_vascular_gain">+8%% लोच</string>
+    <string name="reward_ts_vascular_metric">एंडोथेलियल रिकवरी</string>
+    <string name="reward_ts_vascular_desc">इथेनॉल-प्रेरित संवहनी संकुचन बेअसर।</string>
+    <string name="reward_ts_cortisol_title">एलोस्टैटिक लोड: कम हुआ</string>
+    <string name="reward_ts_cortisol_gain">-22%% तनाव</string>
+    <string name="reward_ts_cortisol_metric">एड्रेनल कैलिब्रेशन</string>
+    <string name="reward_ts_cortisol_desc">डायाफ्रामेटिक सिंक्रोनाइज़ेशन के माध्यम से कोर्टिसोल का स्तर दबाया गया।</string>
+    <string name="reward_ts_liver_title">हेपेटिक फ्लश: सक्रिय</string>
+    <string name="reward_ts_liver_gain">+11%% दक्षता</string>
+    <string name="reward_ts_liver_metric">मेटाबॉलिक निस्पंदन</string>
+    <string name="reward_ts_liver_desc">त्वरित विष निकासी के लिए ग्लूटाथियोन मार्ग उत्तेजित।</string>
+    <string name="reward_generic_title">निर्देश निष्पादित</string>
+    <string name="reward_generic_gain">+2.5 घंटे</string>
+    <string name="reward_generic_metric">प्रणालीगत लचीलापन</string>
+    <string name="reward_generic_desc">जैविक मार्ग अपडेट किए गए। प्रत्येक प्रोटोकॉल संचयी भंडार बनाता है।</string>
+    <string name="reward_generic_msg">जैविक प्रणाली अपडेट की गई। प्रत्येक पूर्ण निर्देश आपकी दीर्घकालिक रिकवरी वास्तुकला को मजबूत करता है।</string>
+
+    <!-- विशेषज्ञ फीडबैक घटक लेबल -->
+    <string name="feedback_instant_gratification">जैविक बदलाव दर्ज</string>
+    <string name="feedback_health_dividends">स्वास्थ्य लाभांश</string>
+    <string name="feedback_next_ritual">अगला अनुष्ठान निर्देश</string>
+    <string name="feedback_close_ritual">अनुष्ठान बंद करें</string>
+
+    <!-- विशिष्ट स्वास्थ्य लाभांश (विशेषज्ञ मेट्रिक्स) -->
+    <string name="dividend_vascular_elasticity">संवहनी लोच +4.2%%</string>
+    <string name="dividend_cortisol_reduction">कोर्टिसोल स्तर -18.5%%</string>
+    <string name="dividend_neural_coherence">न्यूरल कोहेरेंस +12.0%%</string>
+    <string name="dividend_metabolic_throughput">मेटाबॉलिक थ्रूपुट +7.4%%</string>
+    <string name="dividend_glymphatic_flow">ग्लिम्फैटिक प्रवाह अनुकूलित</string>
+    <string name="dividend_mitochondrial_biogenesis">माइटोकॉन्ड्रियल बायोजेनेसिस शुरू</string>
+    <string name="dividend_systemic_resilience">प्रणालीगत लचीलापन बढ़ा</string>
+
+    <!-- अगले अनुष्ठान निर्देश -->
+    <string name="next_ritual_morning">अपने कोर्टिसोल अवेकनिंग रिस्पॉन्स को रीसेट करने के लिए कल सुबह जागने पर निष्पादित करें।</string>
+    <string name="next_ritual_evening">ग्लिम्फैटिक निकासी की सुविधा के लिए सोने से 60 मिनट पहले दोहराएं।</string>
+    <string name="next_ritual_post_meal">भोजन के बाद ग्लूकोज को स्थिर करने के लिए अपने अगले भोजन के 20 मिनट बाद करें।</string>
+    <string name="next_ritual_urgent">यदि शारीरिक मार्कर इष्टतम सीमा से बाहर रहते हैं तो तुरंत पुनः शुरू करें।</string>
+    <string name="next_ritual_daily">संचयी प्रणालीगत लचीलापन बनाने के लिए दैनिक निष्पादन बनाए रखें।</string>
+    <string name="next_ritual_post_exercise">मेटाबॉलिक उपोत्पादों को हटाने में तेजी लाने के लिए शारीरिक परिश्रम के बाद निष्पादित करें।</string>
+    <string name="next_ritual_pre_sleep">N3 गहरी नींद की वास्तुकला को अधिकतम करने के लिए बिस्तर पर जाने से ठीक पहले करें।</string>
+    <string name="next_ritual_midday">संज्ञानात्मक थ्रूपुट बनाए रखने के लिए मध्याह्न मेटाबॉलिक शिखर के दौरान निष्पादित करें।</string>
+    <string name="next_ritual_stress">ऊंचे सिम्पेथेटिक टोन या तीव्र तनाव का पता चलने पर ट्रिगर करें।</string>
+
+    <!-- सूचनाएं -->
+    <string name="notif_morning_title">अपना इंजन शुरू करें</string>
+    <string name="notif_morning_msg_1">रात के बाद आपका मस्तिष्क प्यासा है। एक त्वरित जलयोजन अनुष्ठान धुंध को साफ करेगा और आपके फोकस को शक्ति देगा।</string>
+    <string name="notif_morning_msg_2">दिन शुरू हो रहा है। अगले 16 घंटों के लिए अपनी ऊर्जा लॉक करने के लिए अभी कुछ हल्की रोशनी में बाहर निकलें।</string>
+    <string name="notif_midday_title">मध्याह्न पावर-अप</string>
+    <string name="notif_midday_msg_1">अपनी ऊर्जा स्थिर रखें। अभी एक त्वरित पोषण एंकर दोपहर के क्रैश को रोकता है।</string>
+    <string name="notif_midday_msg_2">मध्याह्न की सुस्ती महसूस कर रहे हैं? 2 मिनट का रीसेट आपके फोकस को तुरंत तेज कर देगा।</string>
+    <string name="notif_afternoon_title">लचीले बने रहें</string>
+    <string name="notif_afternoon_msg_1">दिन का तनाव बढ़ रहा है। सांस लेने का एक छोटा ब्रेक आपके दबाव को कम करेगा और आपको शांत रखेगा।</string>
+    <string name="notif_afternoon_msg_2">मस्तिष्क भारी महसूस कर रहा है? अपनी मानसिक स्पष्टता को ताज़ा करने के लिए 15 मिनट का डिजिटल ब्रेक लें।</string>
+    <string name="notif_evening_title">मरम्मत के लिए तैयार रहें</string>
+    <string name="notif_evening_msg_1">आराम करने का समय। बाद में अपनी नींद की गुणवत्ता की रक्षा के लिए अब स्क्रीन को कम करें।</string>
+    <string name="notif_evening_msg_2">अपने शरीर की रात भर की सफाई का समर्थन करें। अभी एक गिलास पानी आपके सोते समय लीवर को बेहतर काम करने में मदद करता है।</string>
+    <string name="notif_night_title">गहरी रिकवरी मोड</string>
+    <string name="notif_night_msg_1">आपका मस्तिष्क दिन के कचरे को साफ करने के लिए तैयार है। गहरी, ताज़ा नींद के लिए अपनी जगह को अनुकूलित करें।</string>
+    <string name="notif_night_msg_2">अपने शरीर को खुद की मरम्मत करने दें। गहरी रिकवरी में तेज़ी से जाने के लिए 4-7-8 लय का उपयोग करें।</string>
+    <string name="notif_smoker_title">अपना वायु प्रवाह ताज़ा करें</string>
+    <string name="notif_smoker_msg">आपके फेफड़ों को त्वरित सफाई की आवश्यकता है। अभी एक सांस लेने का अनुष्ठान आपकी ऑक्सीजन को बढ़ाएगा और आपके सिस्टम को ताज़ा करेगा।</string>
+    <string name="notif_drinker_title">लीवर सहायता आवश्यक</string>
+    <string name="notif_drinker_msg">आपका लीवर कड़ी मेहनत कर रहा है। एक त्वरित जलयोजन अनुष्ठान उसे विषाक्त पदार्थों को साफ करने और आपके मस्तिष्क की रक्षा करने में मदद करेगा।</string>
+    <string name="notif_craving_title">लालसा की लहर का पता चला</string>
+    <string name="notif_craving_msg">लालसा सिर्फ एक लहर है। इसे चरम पर जाते और फीका होते देखें। 3 मिनट की माइंडफुल सर्फिंग आपको नियंत्रण में रखती है।</string>
+    <string name="notif_microwin_craving_title">लालसा पर विजय</string>
+    <string name="notif_microwin_craving_msg">आपने उस उच्च-तीव्रता वाली लहर को सटीकता के साथ पार किया। आपका न्यूरल लचीलापन मजबूत हो रहा है। यह एक माइक्रो-विन (Micro-Win) है!</string>
+    <string name="notif_microwin_general_title">माइक्रो-विन दर्ज</string>
+    <string name="notif_microwin_general_msg">प्रत्येक प्रोटोकॉल जो आप पूरा करते हैं, संचयी प्रणालीगत लचीलापन बनाता है। इन जीत को जारी रखें!</string>
+    <string name="notif_stress_title">सिस्टम दबाव उच्च</string>
+    <string name="notif_stress_msg">तनाव का स्तर चरम पर है। एक त्वरित रीसेट आपको अपनी शांति वापस पाने और अपनी ऊर्जा की रक्षा करने में मदद करेगा।</string>
+    <string name="notif_privacy_title">जैविक निर्देश उपलब्ध</string>
+    <string name="notif_privacy_msg">एक व्यक्तिगत रिकवरी प्रोटोकॉल निष्पादन के लिए तैयार है। विवरण देखने के लिए ऐप खोलें।</string>
+
+    <!-- जैविक क्षेत्र और श्रेणियां -->
+    <string name="area_cardio">हृदय संबंधी</string>
+    <string name="area_metabolic">चयापचय</string>
+    <string name="area_cellular">कोशिकीय</string>
+    <string name="area_neurological">न्यूरोलॉजिकल</string>
+    <string name="area_vascular">संवहनी</string>
+    <string name="area_systemic">प्रणालीगत</string>
+    <string name="cat_sleep_arch">स्लीप आर्किटेक्चर</string>
+    <string name="cat_cognitive">संज्ञानात्मक मरम्मत</string>
+    <string name="cat_stress">तनाव लचीलापन</string>
+    <string name="cat_liver">लीवर और मेटाबॉलिक</string>
+    <string name="cat_metabolic">मेटाबॉलिक विनियमन</string>
+    <string name="cat_respiratory">श्वसन स्वास्थ्य</string>
+    <string name="cat_cardiovascular">हृदय संबंधी</string>
+    <string name="cat_behavioral">व्यवहारिक नियंत्रण</string>
+
+    <!-- दर्शक -->
+    <string name="audience_smokers">धूम्रपान करने वाले</string>
+    <string name="audience_drinkers">शराब पीने वाले</string>
+    <string name="audience_both">धूम्रपान और शराब पीने वाले दोनों</string>
+    <string name="recovery_audience_alcohol">लक्ष्य: शराब पीने वाले</string>
+    <string name="recovery_audience_both_short">लक्ष्य: दोनों</string>
+    <string name="recovery_audience_smoking_short">लक्ष्य: धूम्रपान करने वाले</string>
+    <string name="vitalis_therapeutic">चिकित्सीय</string>
+    <string name="vitalis_engine">इंजन</string>
+    <string name="vitalis_log_intake">सेवन लॉग करें</string>
 
     <!-- गतिविधि स्थानीयकरण (वाइटलिस इंजन) -->
     <string name="phase_morning">सुबह</string>
@@ -276,6 +518,12 @@
     <string name="act_sl6_bio">अरबों पेरिफेरल सेलुलर घड़ियों को संरेखित करने के लिए नियमितता सबसे महत्वपूर्ण कारक है।</string>
     <string name="act_sl6_phys">प्रणालीगत एलोस्टैटिक लोड को कम करता है और हृदय लचीलापन में सुधार करता है।</string>
     <string name="act_sl6_rsch">लक्ष्य सोने के समय से 2 घंटे पहले \'विंड-डाउन\' अलार्म सेट करें। यह आपके स्वायत्त तंत्रिका तंत्र को नींद-अवस्था होमियोस्टैसिस में संक्रमण शुरू करने के लिए आवश्यक टेम्पोरल एंकर प्रदान करता है।</string>
+
+    <string name="act_sl_glymphatic_title">ग्लिम्फैटिक अपशिष्ट निकासी (Glymphatic Waste Clearance)</string>
+    <string name="act_sl_glymphatic_ipre">गर्दन और जबड़े की लसीका निकासी (lymph drainage) के लिए 3D गाइड का पालन करें। अपने स्ट्रोक को कंपन आवृत्ति (vibration frequency) से मिलाएं।</string>
+    <string name="act_sl_glymphatic_bio">सिर और गर्दन से मेटाबॉलिक कचरे की लसीका प्रणाली (lymphatic system) में निकासी की यांत्रिक रूप से सुविधा प्रदान करता है।</string>
+    <string name="act_sl_glymphatic_phys">कपाल दबाव (cranial pressure) में कमी और N3 नींद के दौरान ग्लिम्फैटिक निकासी चक्र का सक्रियण।</string>
+    <string name="act_sl_glymphatic_rsch">दैनिक लसीका निकासी स्वायत्त तंत्रिका तंत्र को संकेत देती है कि \'दिन का चरण\' समाप्त हो गया है, जिससे गहरी पुनर्स्थापनात्मक नींद में तेजी से संक्रमण की सुविधा मिलती है।</string>
 
     <!-- हृदय संबंधी गतिविधियाँ -->
     <string name="act_ca1_title">ऑर्थोस्टैटिक वैस्कुलर प्राइमिंग</string>
@@ -351,6 +599,18 @@
     <string name="act_me6_phys">ATP उत्पादन दक्षता को अनुकूलित करता है और सेलुलर स्तर पर ऑक्सीडेटिव तनाव को कम करता है।</string>
     <string name="act_me6_rsch">इष्टतम अवशोषण सुनिश्चित करने के लिए इन्हें अपने सबसे बड़े भोजन के साथ लें। मैग्नीशियम विशेष रूप से 300 से अधिक एंजाइमेटिक प्रतिक्रियाओं के लिए एक सह-कारक के रूप में कार्य करता है, जिसमें डीएनए मरम्मत के लिए जिम्मेदार प्रतिक्रियाएं भी शामिल हैं।</string>
 
+    <string name="act_me_soleus_title">सोलियस मेटाबॉलिज्म इग्निशन (Soleus Metabolism Ignition)</string>
+    <string name="act_me_soleus_ipre">बैठे-बैठे \'सोलियस पुशअप्स\' (लयबद्ध काफ रेज) करें। ऐप आपकी लय और कैलोरी बर्न को ट्रैक करेगा।</string>
+    <string name="act_me_soleus_bio">सोलियस मांसपेशी बिना थके घंटों तक रक्त शर्करा को जला सकती है, जो एक मेटाबॉलिक स्पंज की तरह काम करती है।</string>
+    <string name="act_me_soleus_phys">भोजन के बाद ग्लूकोज स्पाइक में कमी और निचले अंगों में स्थानीय थर्मोजेनेसिस।</string>
+    <string name="act_me_soleus_rsch">अन्य मांसपेशियों के विपरीत, सोलियस ग्लाइकोजन पर निर्भर नहीं होती है; यह सीधे रक्त से ईंधन खींचती है, जिससे यह गतिहीन मेटाबॉलिक स्वास्थ्य के लिए अंतिम उपकरण बन जाता है।</string>
+
+    <string name="act_me_myokine_pulse_title">मायोकाइन सर्ज इग्निशन (Myokine Surge Ignition)</string>
+    <string name="act_me_myokine_pulse_ipre">मेटाबॉलिक "पावर ज़ोन" हिट करने के लिए 10 सेकंड के लिए अधिकतम गति से स्क्रीन को टैप करें।</string>
+    <string name="act_me_myokine_pulse_bio">मांसपेशी-व्युत्पन्न मायोकाइन (इरिसिन) की रिहाई को उत्तेजित करता है जो न्यूरोइन्फ्लेमेशन को कम करता है और मेटाबॉलिक लचीलेपन का समर्थन करता है।</string>
+    <string name="act_me_myokine_pulse_phys">सेलुलर ऊर्जा उत्पादन में तीव्र वृद्धि और बेहतर इंसुलिन संवेदनशीलता प्रक्षेपवक्र।</string>
+    <string name="act_me_myokine_pulse_rsch">उच्च-वेग संकुचन विशेष मायोकाइन मार्गों को सक्रिय करते हैं जिन्हें अक्सर पारंपरिक प्रतिरोध प्रशिक्षण में छोड़ दिया जाता है।</string>
+
     <!-- तनाव की गतिविधियाँ -->
     <string name="act_st1_title">एक्यूट न्यूरल रीसेट (आह)</string>
     <string name="act_st1_ipre">\'शारीरिक आह\' (दोहरी सांस लेना, लंबी सांस छोड़ना) के 5 दोहराव।</string>
@@ -363,6 +623,12 @@
     <string name="act_st2_bio">एमिग्डाला के सक्रियण थ्रेशोल्ड को रीसेट करता है और प्रीफ्रंटल कॉर्टेक्स नियंत्रण को पुनर्स्थापित करता है।</string>
     <string name="act_st2_phys">संज्ञानात्मक ऊर्जा को पुनर्स्थापित करता है और पुराने एलोस्टैटिक लोड संचय को रोकता है।</string>
     <string name="act_st2_rsch">एक अंधेरा, शांत स्थान ढूंढें और सीधे लेट जाएं। गाइडेड बॉडी स्कैन पर ध्यान केंद्रित करें। \'सक्रिय स्थिरता\' की यह स्थिति मस्तिष्क को छद्म-नींद की स्थिति में प्रवेश करने की अनुमति देती है, जिससे बेसल गैन्ग्लिया में डोपामाइन स्तर फिर से भर जाते हैं।</string>
+
+    <string name="act_st_vagal_ppg_title">वेगल ब्रेक कैलिब्रेशन (Vagal Brake Calibration)</string>
+    <string name="act_st_vagal_ppg_ipre">अपनी तर्जनी उंगली को पीछे के कैमरा लेंस पर रखें। यूआई आपके लाइव हृदय ताल के साथ सिंक होगा।</string>
+    <string name="act_st_vagal_ppg_bio">रीयल-टाइम में हृदय गति परिवर्तनशीलता (HRV) को ट्रैक करने के लिए फोटोप्लेथिस्मोग्राफी (PPG) का उपयोग करता है, फीडबैक लूप को बंद करता है।</string>
+    <string name="act_st_vagal_ppg_phys">वेगल टोन और प्रणालीगत रिकवरी को अधिकतम करने के लिए आपकी सांस को आपके वास्तविक हृदय ताल के साथ सिंक्रनाइज़ करता है।</string>
+    <string name="act_st_vagal_ppg_rsch">लाइव पीपीजी फीडबैक के माध्यम से एचआरवी एंट्रेनमेंट रैपिड ऑटोनोमिक नर्वस सिस्टम रिकैलिब्रेशन के लिए गोल्ड स्टैंडर्ड है।</string>
 
     <string name="act_st3_title">बॉक्स ब्रीदिंग कोहेरेंस</string>
     <string name="act_st3_ipre">4 सेकंड सांस लेना, 4 सेकंड रोकना, 4 सेकंड छोड़ना, 4 सेकंड रोकना - 5 मिनट तक।</string>
@@ -387,6 +653,30 @@
     <string name="act_st6_bio">तंत्रिका फोकस को डिफॉल्ट मोड नेटवर्क (विचार चक्र) से सोमाटोसेंसरी कॉर्टेक्स में स्थानांतरित करता है।</string>
     <string name="act_st6_phys">शाम के तनाव चक्रों को बाधित करता है और विश्राम की सुविधा देता है।</string>
     <string name="act_st6_rsch">अपने पैरों के नीचे जमीन के दबाव और बनावट पर गहराई से ध्यान केंद्रित करें। यह \'बॉटम-अप\' संवेदी इनपुट प्रीफ्रंटल कॉर्टेक्स से उत्पन्न होने वाले \'टॉप-डाउन\' चिंता संकेतों को ओवरराइड करता है।</string>
+
+    <string name="act_st_divergence_title">न्यूरल डाइवर्जेंस सिंक (Neural Divergence Sync)</string>
+    <string name="act_st_divergence_ipre">अपनी सांसों को हैप्टिक पल्स के साथ सिंक करते हुए स्क्रीन पर क्षैतिज रूप से डोलती रोशनी का अपनी आंखों से पीछा करें।</string>
+    <string name="act_st_divergence_bio">हैप्टिक्स के माध्यम से वेगल सिग्नल ट्रिगर करते हुए तनाव से भावनात्मक तीव्रता को अलग करने के लिए EMDR आंखों की गतिविधियों की नकल करता है।</string>
+    <string name="act_st_divergence_phys">एमिग्डाला के अत्यधिक सक्रियण में तत्काल कमी और हृदय गति में शारीरिक गिरावट।</string>
+    <string name="act_st_divergence_rsch">पार्श्व आंखों की गति के माध्यम से तंत्रिका विचलन (Neural divergence) चिकित्सकीय रूप से मस्तिष्क को \'संकीर्ण\' तनाव फोकस से शांति की \'पैनोरमिक\' स्थिति में स्थानांतरित करने के लिए सिद्ध हुआ है।</string>
+
+    <string name="act_ph_gyro_balance_title">वेस्टिबुलर इक्विलिब्रियम रीसेट (Vestibular Equilibrium Reset)</string>
+    <string name="act_ph_gyro_balance_ipre">डिवाइस को अपनी हथेली में सपाट रखें। नियंत्रित शारीरिक घुमाव का उपयोग करके "न्यूरल स्फीयर" को केंद्रित रखें।</string>
+    <string name="act_ph_gyro_balance_bio">उच्च-निष्ठा स्थानिक अभिविन्यास बनाए रखने के लिए सेरिबैलम और वेस्टिबुलर सिस्टम को चुनौती देता है।</string>
+    <string name="act_ph_gyro_balance_phys">आंतरिक वेस्टिबुलर मॉडल को स्थिर करके और मोटर समन्वय में सुधार करके संज्ञानात्मक भार को कम करता है।</string>
+    <string name="act_ph_gyro_balance_rsch">जाइरोस्कोपिक स्थिरीकरण कार्य मस्तिष्क को प्रतिक्रियाशील तनाव संकेतों पर प्रोप्रियोसेप्टिव परिशुद्धता को प्राथमिकता देने के लिए मजबूर करते हैं।</string>
+
+    <string name="act_co_dual_task_title">न्यूरल क्रॉस-टॉक प्रोटोकॉल (Neural Cross-Talk Protocol)</string>
+    <string name="act_co_dual_task_ipre">अपने कदमों के साथ तालमेल बिठाते हुए स्क्रीन पर विजुअल लॉजिक पैटर्न को हल करते हुए एक ही जगह पर चलें।</string>
+    <string name="act_co_dual_task_bio">प्रयोग करने योग्य संज्ञानात्मक बैंडविड्थ का विस्तार करने के लिए मोटर कॉर्टेक्स और प्रीफ्रंटल कॉर्टेक्स को एक साथ संलग्न करता है।</string>
+    <string name="act_co_dual_task_phys">बेहतर संज्ञानात्मक चपलता और एक साथ किए जाने वाले कार्यों की काफी कम मेटाबॉलिक लागत।</string>
+    <string name="act_co_dual_task_rsch">संज्ञानात्मक गिरावट और तनाव-प्रेरित त्रुटियों के खिलाफ तंत्रिका लचीलापन बनाने के लिए डुअल-टास्क प्रोटोकॉल चिकित्सकीय रूप से सिद्ध हैं।</string>
+
+    <string name="act_co_depth_shift_title">ऑप्टिक नर्व सेफ्टी रीसेट (Optic Nerve Safety Reset)</string>
+    <string name="act_co_depth_shift_ipre">केंद्र बिंदु पर ध्यान केंद्रित करें, फिर स्क्रीन धुंधली होने पर तुरंत कमरे के सबसे दूर के बिंदु को देखें।</string>
+    <string name="act_co_depth_shift_bio">केंद्रित (निकट) और पैनोरमिक (दूर) दृष्टि के बीच स्विच करके स्वायत्त तंत्रिका तंत्र को मैन्युअल रूप से रीसेट करता है।</string>
+    <string name="act_co_depth_shift_phys">आंखों के तनाव में तत्काल कमी और पैरासिम्पेथेटिक सुरक्षा की ओर एक प्रणालीगत बदलाव।</string>
+    <string name="act_co_depth_shift_rsch">रैपिड फोकल शिफ्टिंग वाइड-एंगल विजन और खतरे-प्रतिक्रिया चक्र की समाप्ति के बीच विकासवादी कड़ी का लाभ उठाती है।</string>
 
     <!-- शारीरिक गतिविधियाँ -->
     <string name="act_ph1_title">आर्टिकुलर जॉइंट प्राइमिंग (CARs)</string>
@@ -627,6 +917,7 @@
 
     <!-- कम्युनिटी -->
     <string name="community_hub">सामुदायिक हब</string>
+    <string name="community_my_username">मेरा उपयोगकर्ता नाम: %1$s</string>
     <string name="community_cloaked_mode">क्लोक मोड सक्रिय</string>
     <string name="community_toggle_anonymity">अनामिकता टॉगल करें</string>
     <string name="community_tab_feed">ग्लोबल फीड</string>
@@ -674,4 +965,124 @@
     <string name="community_circle">सर्कल</string>
     <string name="community_recovery">रिकवरी</string>
 
-    </resources>
+    <!-- Recovery & Session Sync -->
+    <string name="act_osmotic_why">अल्कोहल वासोप्रेसिन को रोकता है, जिससे भारी डिहाइड्रेशन होता है। ऑस्मोटिक दबाव बहाल करने के लिए इलेक्ट्रोलाइट्स की आवश्यकता होती है।</string>
+    <string name="act_osmotic_what">250 मिली पानी, हर 20 सेकंड में धीरे-धीरे घूंट लें।</string>
+    <string name="act_pulmonary_why">धूम्रपान फेफड़ों के कार्यात्मक आयतन को कम करता है। डायाफ्रामिक श्वास निचले लोब को फिर से सक्रिय करती है।</string>
+    <string name="act_pulmonary_what">नाक के माध्यम से धीमी, गहरी पेट की सांसें।</string>
+    <string name="act_vagal_why">ठंड के संपर्क में आने से \'मैमेलियन डाइव रिफ्लेक्स\' सक्रिय होता है, जो तुरंत पैरासिम्पेथेटिक शाखा को सक्रिय करता है।</string>
+    <string name="act_vagal_what">60 सेकंड के लिए चेहरे/गर्दन पर ठंडा पानी लगाएं।</string>
+    <string name="act_hepatic_why">अल्कोहल एसिटाल्डिहाइड बनाता है। फेज़ II लिवर डिटॉक्स के लिए विषाक्त पदार्थों को बेअसर करने के लिए विशिष्ट सल्फर युक्त यौगिकों (NAC/ग्लूटाथियोन) की आवश्यकता होती है।</string>
+    <string name="act_hepatic_what">NAC लें या पानी के साथ ब्रोकली स्प्राउट्स खाएं।</string>
+    <string name="act_steam_why">निकोटीन आपके फेफड़ों में सिलिया को पंगु बना देता है। भाप बलगम को पतला करने में मदद करती, जिससे टार को बाहर निकालना आसान हो जाता है।</string>
+    <string name="act_steam_what">गर्म पानी के कटोरे या ह्यूमिडिफायर से भाप लें।</string>
+    <string name="act_thiamine_why">अल्कोहल थायमिन (B1) के अवशोषण को गंभीर रूप से रोकता है, जो मस्तिष्क की ऊर्जा के लिए महत्वपूर्ण है। कमी से न्यूरोलॉजिकल गिरावट आती है।</string>
+    <string name="act_thiamine_what">एक पूरे गिलास पानी के साथ B1 सप्लीमेंट लें।</string>
+    <string name="act_inspiratory_why">धूम्रपान प्राथमिक श्वसन मांसपेशियों को कमजोर करता है। प्रतिरोध प्रशिक्षण डायाफ्राम की शक्ति को बहाल करता है।</string>
+    <string name="act_inspiratory_what">गहरी सांस लें, फिर अपने होठों में एक छोटे से छेद के माध्यम से सांस छोड़ें, जिससे प्रतिरोध पैदा हो।</string>
+    <string name="act_coherence_why">धूम्रपान और अल्कोहल दोनों हृदय गति (HR) बढ़ाते हैं। कोहेरेंस ब्रीदिंग हृदय को एक स्वस्थ, पुनर्योजी पैटर्न में दोलन करने के लिए प्रशिक्षित करती है।</string>
+    <string name="act_coherence_what">पूरी तरह से समयबद्ध 4-6 लय के लिए विजुअल का पालन करें।</string>
+    <string name="act_postural_why">गुरुत्वाकर्षण फेफड़ों के निचले हिस्सों से टार और बलगम को निकासी के लिए बड़े वायुमार्गों तक ले जाने में मदद करता है।</string>
+    <string name="act_postural_what">पेट के बल लेटते समय अपने कूल्हों को सहारा देने के लिए तकियों का उपयोग करें।</string>
+    <string name="act_reset_why">अल्कोहल नींद की संरचना को बाधित करता है। 4-7-8 श्वास सिम्पेथेटिक तंत्रिका तंत्र के लिए एक जैविक \'ऑफ-स्विच\' है।</string>
+    <string name="act_reset_what">नाक से सांस लें (4s), रोकें (7s), मुंह से सांस छोड़ें (8s)। तंत्रिका मार्करों को अपडेट करने के लिए पूर्णता दर्ज करें।</string>
+    <string name="act_sigh_why">डाउन-रेगुलेट करने का सबसे तेज़ जैविक तरीका। ढह गई एल्वियोली (alveoli) को खोलता है।</string>
+    <string name="act_sigh_what">डबल इनहेल + लंबी, सुनाई देने वाली आह (sigh)।</string>
+    <string name="act_surfing_why">तृष्णा (cravings) न्यूरोकेमिकल तरंगें हैं। उन्हें लहरों के रूप में देखने से लत के लूप को मजबूत होने से रोका जा सकता है।</string>
+    <string name="act_surfing_what">गले/छाती में शारीरिक संवेदनाओं का सचेत अवलोकन।</string>
+    <string name="act_circadian_why">अल्कोहल और निकोटीन REM को दबाकर और शरीर के मुख्य तापमान को बढ़ाकर नींद की संरचना को खंडित करते हैं। यह अनुष्ठान मास्टर क्लॉक को पुन: कैलिब्रेट करता है।</string>
+    <string name="act_circadian_what">मेलाटोनिन तैयारी के लिए SCN (सुप्राचियास्मैटिक न्यूक्लियस) को संकेत देने के लिए लाइट पल्स का पालन करें।</string>
+    <string name="act_dopamine_why">पुराने समय से पदार्थ का उपयोग D2 रिसेप्टर्स को डाउन-रेगुलेट करता है। यह अनुष्ठान रिसेप्टर संवेदनशीलता को वापस आने देने के लिए न्यूनतम-संवेदी उत्तेजनाओं का उपयोग करता है।</string>
+    <string name="act_dopamine_what">एक बिंदु पर ध्यान केंद्रित करें। अन्य सभी संवेदी इनपुट को कम करें। यह रिवार्ड सर्किट को शांत होने देता है।</string>
+
+    <!-- बायो-स्टेट सत्यापन और सेंसर इंटरैक्शन -->
+    <string name="vitalis_bio_state_verified">बायो-स्टेट सत्यापित</string>
+    <string name="vitalis_precision_bonus">सटीकता बोनस: +%d%% स्कोर शुद्धता</string>
+    <string name="vitalis_complete_now">अभी पूरा करें</string>
+    <string name="vitalis_next_phase">अगला चरण</string>
+    <string name="vitalis_complete_ritual">अनुष्ठान पूरा करें</string>
+    <!-- मैट्रिक्स से 30 दिन बाहर -->
+    <string name="matrix_title">मैट्रिक्स से 30 दिन बाहर</string>
+    <string name="matrix_subtitle">गंभीर व्यवहारिक हस्तक्षेप</string>
+    <string name="matrix_phase_wake_up">चरण 1: जागें</string>
+    <string name="matrix_phase_break_loop">चरण 2: लूप को तोड़ें</string>
+    <string name="matrix_phase_rebuild_control">चरण 3: नियंत्रण का पुनर्निर्माण</string>
+    <string name="matrix_day_counter">दिन %1$d / 30</string>
+    <string name="matrix_action_required">कार्रवाई आवश्यक</string>
+    <string name="matrix_daily_directive">दैनिक निर्देश</string>
+
+    <!-- मैट्रिक्स आग्रह हस्तक्षेप (Urge Intervention) -->
+    <string name="matrix_urge_title">आग्रह हस्तक्षेप</string>
+    <string name="matrix_urge_emergency">आपातकालीन ओवरराइड</string>
+    <string name="matrix_urge_step_1_title">शारीरिक झटका (Physiological Shock)</string>
+    <string name="matrix_urge_step_1_desc">अपनी गर्दन पर बर्फ लगाएं या 30 सेकंड के लिए अपने चेहरे पर ठंडा पानी छिड़कें। यह मैमेलियन डाइव रिफ्लेक्स को सक्रिय करता है।</string>
+    <string name="matrix_urge_step_2_title">संज्ञानात्मक व्यवधान (Cognitive Disruption)</string>
+    <string name="matrix_urge_step_2_desc">100 से 7 के अंतराल में पीछे की ओर जोर से गिनती करें। (100, 93, 86...)।</string>
+    <string name="matrix_urge_step_3_title">शारीरिक विस्थापन (Physical Displacement)</string>
+    <string name="matrix_urge_step_3_desc">तुरंत कमरे से बाहर निकलें। किसी सार्वजनिक स्थान या बाहर जाएं।</string>
+    <string name="matrix_urge_completed">आग्रह बेअसर हुआ</string>
+    <string name="matrix_urge_command_stand">अभी खड़े हो जाओ</string>
+    <string name="matrix_urge_command_leave">अभी कमरे से बाहर निकलें</string>
+    <string name="matrix_urge_command_block">सभी ऐप्स को तुरंत ब्लॉक करें</string>
+    <string name="matrix_urge_command_cold">ठंडा पानी रीसेट</string>
+    <string name="matrix_urge_command_negotiate">आग्रह के साथ समझौता न करें</string>
+    <string name="matrix_urge_countdown_active">सक्रिय प्रतिरोध: %1$d</string>
+    <string name="matrix_urge_future_self">यदि आप अभी विफल होते हैं तो आपका भविष्य का स्वरूप क्या कहेगा?</string>
+    <string name="matrix_urge_future_self_win">आपका भविष्य का स्वरूप आपके इस पल को जीतने का इंतजार कर रहा है।</string>
+
+    <!-- मैट्रिक्स रिलैप्स विश्लेषण -->
+    <string name="matrix_relapse_title">पैटर्न विश्लेषण</string>
+    <string name="matrix_relapse_intro">रिलैप्स डेटा है। बिना शर्म के लूप का विश्लेषण करें।</string>
+    <string name="matrix_relapse_trigger">प्राथमिक ट्रिगर क्या था?</string>
+    <string name="matrix_relapse_environment">आप कहाँ स्थित थे?</string>
+    <string name="matrix_relapse_emotion">आपकी भावनात्मक स्थिति क्या थी?</string>
+    <string name="matrix_relapse_cost">लूप की लागत: इस पल ने आपके भविष्य से क्या चुराया?</string>
+    <string name="matrix_relapse_lesson">इस लूप को रोकने के लिए आवश्यक संरचनात्मक परिवर्तन क्या है?</string>
+    <string name="matrix_relapse_reset">प्रोटोकॉल पुनरारंभ करें</string>
+    <string name="matrix_relapse_cost_prompt">क्षति का परिमाण निर्धारित करें (समय, स्वास्थ्य, सम्मान)।</string>
+    <string name="matrix_future_self_prompt">आपका भविष्य का स्वरूप देख रहा है। तदनुसार कार्य करें।</string>
+
+    <!-- मैट्रिक्स नाइट मोड -->
+    <string name="matrix_night_mode_title">आपातकालीन नाइट मोड</string>
+    <string name="matrix_night_mode_desc">मैट्रिक्स प्रोटोकॉल ने आपातकालीन नाइट मोड सक्रिय कर दिया है। उच्च जोखिम वाली अवधि का पता चला। आपकी तंत्रिका आधार रेखा को स्थिर करने के लिए पहुंच प्रतिबंधित है।</string>
+    <string name="matrix_night_mode_override">आपातकालीन ओवरराइड (केवल तभी उपयोग करें जब सुरक्षित हो)</string>
+
+    <!-- मैट्रिक्स फाइनल रिपोर्ट -->
+    <string name="matrix_report_title">अंतिम मैट्रिक्स निकास रिपोर्ट</string>
+    <string name="matrix_report_summary">30-दिवसीय व्यवहारिक पुनर्निर्माण सारांश</string>
+    <string name="matrix_report_triggers_found">ट्रिगर की पहचान की गई</string>
+    <string name="matrix_report_interruption_speed">औसत हस्तक्षेप गति</string>
+    <string name="matrix_report_growth_metric">तंत्रिका लचीलापन विकास</string>
+    <string name="matrix_report_exit_status">स्थिति: मैट्रिक्स से बाहर</string>
+    <string name="matrix_maintenance_mode">मेंटेनेंस मोड सक्रिय</string>
+    <string name="matrix_days_left">स्नातक होने में %1$d दिन शेष</string>
+
+    <!-- मैट्रिक्स सेवन अनुभव (Intake Experience) -->
+    <string name="matrix_intake_opening_1">यह प्रणाली उन लोगों के लिए बनाई गई थी जो दोहरावदार बाध्यकारी व्यवहार में फंसे हुए हैं।</string>
+    <string name="matrix_intake_opening_2">इसलिए नहीं कि वे कमजोर हैं। बल्कि इसलिए कि लूप स्वचालित हो गया था।</string>
+    <string name="matrix_intake_confrontation_title">लूप कितने समय से दोहराया जा रहा है?</string>
+    <string name="matrix_intake_loop_recognition_title">लूप</string>
+    <string name="matrix_intake_loop_recognition_familiar">क्या यह परिचित लगता है?</string>
+    <string name="matrix_intake_entry_points_title">लूप आमतौर पर क्या शुरू करता है?</string>
+    <string name="matrix_intake_entry_points_feedback">अच्छा। प्रणाली आपके प्रवेश बिंदुओं की पहचान कर रही है।</string>
+    <string name="matrix_intake_hidden_truth_title">छिपा हुआ सच</string>
+    <string name="matrix_intake_hidden_truth_1">अधिकांश बाध्यकारी पोर्नोग्राफी और हस्तमैथुन पैटर्न कार्रवाई से शुरू नहीं होते हैं।</string>
+    <string name="matrix_intake_hidden_truth_2">वे निष्क्रिय वृद्धि (passive escalation) से शुरू होते हैं।</string>
+    <string name="matrix_intake_hidden_truth_3">लूप को जितनी जल्दी पहचाना जाएगा, उतना ही अधिक नियंत्रण संभव होगा।</string>
+    <string name="matrix_intake_real_cost_title">इस लूप ने सबसे ज्यादा किसे प्रभावित किया है?</string>
+    <string name="matrix_intake_danger_hours_title">आप सबसे ज्यादा असुरक्षित कब होते हैं?</string>
+    <string name="matrix_intake_danger_hours_feedback">छाया घंटे (SHADOW HOURS) मिले</string>
+    <string name="matrix_intake_honesty_check_title">जब आग्रह शुरू होता है, तो आमतौर पर क्या होता है?</string>
+    <string name="matrix_intake_honesty_check_feedback">प्रणाली अब आपके वृद्धि पैटर्न (escalation pattern) को पहचानती है।</string>
+    <string name="matrix_intake_recovery_reality_title">रिकवरी की वास्तविकता</string>
+    <string name="matrix_intake_recovery_reality_1">यह यात्रा पूर्ण (perfect) बनने के बारे में नहीं है।</string>
+    <string name="matrix_intake_recovery_reality_2">यह लूप के भीतर पहले सचेत होने के बारे में है।</string>
+    <string name="matrix_intake_decision_title">अगले 30 दिनों के लिए, यह प्रणाली चुनौती देगी:</string>
+    <string name="matrix_intake_decision_prompt">क्या आप सचेत रूप से प्रवेश करने के लिए तैयार हैं?</string>
+    <string name="matrix_intake_enter_system">प्रणाली में प्रवेश करें</string>
+    <string name="matrix_intake_contract_title">अनुबंध (THE CONTRACT)</string>
+    <string name="matrix_intake_final_msg_1">लूप अभी भी बोल सकता है। आग्रह अभी भी प्रकट हो सकते हैं।</string>
+    <string name="matrix_intake_final_msg_2">लेकिन अगले 30 दिनों के लिए, आप अब अनजाने में आगे नहीं बढ़ेंगे।</string>
+    <string name="matrix_intake_final_msg_3">निकास तक 30 दिन</string>
+    <string name="matrix_intake_final_msg_4">दिन 1 अब शुरू होता है।</string>
+</resources>

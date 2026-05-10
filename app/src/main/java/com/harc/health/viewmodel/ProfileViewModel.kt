@@ -32,6 +32,12 @@ class ProfileViewModel(application: Application) : AndroidViewModel(application)
     private val _isProtected = MutableStateFlow(sessionManager.isProtected())
     val isProtected: StateFlow<Boolean> = _isProtected.asStateFlow()
 
+    private val _notificationsEnabled = MutableStateFlow(sessionManager.isNotificationsEnabled())
+    val notificationsEnabled: StateFlow<Boolean> = _notificationsEnabled.asStateFlow()
+
+    private val _quietHoursEnabled = MutableStateFlow(sessionManager.isQuietHoursEnabled())
+    val quietHoursEnabled: StateFlow<Boolean> = _quietHoursEnabled.asStateFlow()
+
     init {
         // Observe Auth state to switch profiles dynamically
         auth.addAuthStateListener { firebaseAuth ->
@@ -172,6 +178,16 @@ class ProfileViewModel(application: Application) : AndroidViewModel(application)
     fun disableProtection() {
         sessionManager.disableProtection()
         _isProtected.value = false
+    }
+
+    fun setNotificationsEnabled(enabled: Boolean) {
+        sessionManager.setNotificationsEnabled(enabled)
+        _notificationsEnabled.value = enabled
+    }
+
+    fun setQuietHoursEnabled(enabled: Boolean) {
+        sessionManager.setQuietHoursEnabled(enabled)
+        _quietHoursEnabled.value = enabled
     }
 
     fun logout() {

@@ -31,6 +31,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.harc.health.R
+import com.harc.health.logic.VitalisEngine
 import com.harc.health.model.Activity
 import com.harc.health.model.ActivityStep
 import com.harc.health.ui.theme.GreenRecovery
@@ -50,7 +51,7 @@ import androidx.compose.ui.platform.LocalContext
 @Composable
 fun ActivityPlayer(
     activity: Activity,
-    onComplete: () -> Unit,
+    onComplete: (Double?) -> Unit,
     onBack: () -> Unit
 ) {
     val context = LocalContext.current
@@ -124,7 +125,7 @@ fun ActivityPlayer(
                         onClick = { showCompletion = true },
                         colors = ButtonDefaults.textButtonColors(contentColor = GreenRecovery)
                     ) {
-                        Text("Complete Now", fontWeight = FontWeight.Black)
+                        Text(stringResource(R.string.vitalis_complete_now), fontWeight = FontWeight.Black)
                     }
                     IconButton(onClick = { showGuidance = true }) { Icon(Icons.AutoMirrored.Outlined.HelpOutline, null) }
                 }
@@ -211,7 +212,7 @@ fun ActivityPlayer(
                             ),
                             elevation = ButtonDefaults.buttonElevation(defaultElevation = 4.dp)
                         ) {
-                            Text(if (currentStepIndex < activity.steps.size - 1) "Next Phase" else "Complete Ritual", fontWeight = FontWeight.Black, fontSize = 18.sp)
+                            Text(if (currentStepIndex < activity.steps.size - 1) stringResource(R.string.vitalis_next_phase) else stringResource(R.string.vitalis_complete_ritual), fontWeight = FontWeight.Black, fontSize = 18.sp)
                         }
                     }
                 }
@@ -222,7 +223,9 @@ fun ActivityPlayer(
             }
 
             if (showCompletion) {
-                CompletionRitualOverlay(activity, onComplete)
+                // Mocking sensor precision for demonstration
+                val mockPrecision = if (activity.steps.any { it.animationType in listOf("ppg_pulse", "gyro_balance", "dual_task", "tap_pulse") }) 0.88 else null
+                CompletionRitualOverlay(activity, mockPrecision) { onComplete(mockPrecision) }
             }
         }
     }
@@ -352,6 +355,90 @@ fun CoreBiologicalAnimation(type: String, timeLeft: Int, totalTime: Int, vibrato
                 Icon(Icons.Default.Adjust, null, modifier = Modifier.size(40.dp), tint = BluePrimary)
             }
         }
+        "ppg_pulse" -> {
+            val pulse by infiniteTransition.animateFloat(
+                initialValue = 1f, targetValue = 1.4f,
+                animationSpec = infiniteRepeatable(
+                    animation = keyframes {
+                        durationMillis = 1000
+                        1f at 0 with LinearOutSlowInEasing
+                        1.4f at 150 with FastOutLinearInEasing
+                        1.2f at 300 with LinearOutSlowInEasing
+                        1.3f at 450 with FastOutLinearInEasing
+                        1f at 1000
+                    },
+                    repeatMode = RepeatMode.Restart
+                ), label = "ppg"
+            )
+            Box(contentAlignment = Alignment.Center) {
+                Canvas(modifier = Modifier.size(240.dp).graphicsLayer { scaleX = pulse; scaleY = pulse }) {
+                    drawCircle(
+                        brush = Brush.radialGradient(listOf(Color.Red.copy(alpha = 0.4f), Color.Transparent)),
+                        radius = size.minDimension / 1.2f
+                    )
+                }
+                Icon(Icons.Default.Favorite, null, modifier = Modifier.size(60.dp), tint = Color.Red)
+            }
+        }
+        "gyro_balance" -> {
+            val xOffset by infiniteTransition.animateFloat(
+                initialValue = -50f, targetValue = 50f,
+                animationSpec = infiniteRepeatable(tween(2000, easing = EaseInOutSine), RepeatMode.Reverse), label = "gx"
+            )
+            val yOffset by infiniteTransition.animateFloat(
+                initialValue = -30f, targetValue = 30f,
+                animationSpec = infiniteRepeatable(tween(1500, easing = EaseInOutSine), RepeatMode.Reverse), label = "gy"
+            )
+            Box(contentAlignment = Alignment.Center, modifier = Modifier.size(240.dp)) {
+                Canvas(modifier = Modifier.fillMaxSize()) {
+                    drawCircle(Color.Gray.copy(alpha = 0.2f), style = Stroke(2.dp.toPx()))
+                    drawCircle(
+                        Color.Cyan,
+                        radius = 12.dp.toPx(),
+                        center = center + androidx.compose.ui.geometry.Offset(xOffset, yOffset)
+                    )
+                    drawCircle(Color.Cyan.copy(alpha = 0.3f), style = Stroke(1.dp.toPx()))
+                }
+            }
+        }
+        "dual_task" -> {
+            val rotation by infiniteTransition.animateFloat(
+                initialValue = 0f, targetValue = 360f,
+                animationSpec = infiniteRepeatable(tween(4000, easing = LinearEasing)), label = "rot"
+            )
+            Box(contentAlignment = Alignment.Center) {
+                Canvas(modifier = Modifier.size(220.dp).graphicsLayer { rotationZ = rotation }) {
+                    drawRect(
+                        color = BluePrimary.copy(alpha = 0.4f),
+                        style = Stroke(4.dp.toPx(), cap = StrokeCap.Round)
+                    )
+                    drawCircle(
+                        color = GreenRecovery.copy(alpha = 0.3f),
+                        radius = size.minDimension / 4,
+                        center = center
+                    )
+                }
+                Text("LOGIC", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.Black, color = BluePrimary)
+            }
+        }
+        "tap_pulse" -> {
+            val scale by infiniteTransition.animateFloat(
+                initialValue = 1f, targetValue = 1.2f,
+                animationSpec = infiniteRepeatable(tween(500, easing = FastOutLinearInEasing), RepeatMode.Reverse), label = "tap"
+            )
+            Box(contentAlignment = Alignment.Center) {
+                Surface(
+                    modifier = Modifier.size(160.dp).graphicsLayer { scaleX = scale; scaleY = scale },
+                    shape = CircleShape,
+                    color = AmberWarning.copy(alpha = 0.2f),
+                    border = BorderStroke(4.dp, AmberWarning)
+                ) {
+                    Box(contentAlignment = Alignment.Center) {
+                        Icon(Icons.Default.TouchApp, null, modifier = Modifier.size(64.dp), tint = AmberWarning)
+                    }
+                }
+            }
+        }
         else -> {
             Box(contentAlignment = Alignment.Center) {
                 CircularProgressIndicator(
@@ -394,7 +481,8 @@ fun ExpertGuidanceOverlay(activity: Activity, onDismiss: () -> Unit) {
 }
 
 @Composable
-fun CompletionRitualOverlay(activity: Activity, onLog: () -> Unit) {
+fun CompletionRitualOverlay(activity: Activity, precision: Double? = null, onLog: () -> Unit) {
+    val isVerified = precision != null && VitalisEngine.verifyBioState(precision)
     val dividendRes = remember(activity.id) {
         when {
             activity.id.contains("ca") || activity.id.contains("vascular") -> R.string.dividend_vascular_elasticity
@@ -451,19 +539,28 @@ fun CompletionRitualOverlay(activity: Activity, onLog: () -> Unit) {
             verticalArrangement = Arrangement.Center
         ) {
             Icon(
-                Icons.Default.Verified,
+                if (isVerified) Icons.Default.Verified else Icons.Default.CheckCircle,
                 contentDescription = null,
-                tint = GreenRecovery,
+                tint = if (isVerified) Color(0xFF00E676) else GreenRecovery,
                 modifier = Modifier.size(80.dp)
             )
             Spacer(modifier = Modifier.height(24.dp))
             Text(
-                stringResource(R.string.feedback_instant_gratification),
+                if (isVerified) stringResource(R.string.vitalis_bio_state_verified) else stringResource(R.string.feedback_instant_gratification),
                 style = MaterialTheme.typography.headlineSmall,
                 color = Color.White,
                 fontWeight = FontWeight.Black,
                 textAlign = TextAlign.Center
             )
+            if (isVerified) {
+                Text(
+                    stringResource(R.string.vitalis_precision_bonus, (precision!! * 100).toInt()),
+                    style = MaterialTheme.typography.labelMedium,
+                    color = Color(0xFF00E676),
+                    fontWeight = FontWeight.Bold,
+                    modifier = Modifier.padding(top = 4.dp)
+                )
+            }
             Spacer(modifier = Modifier.height(16.dp))
             
             // Bio-Shift Description

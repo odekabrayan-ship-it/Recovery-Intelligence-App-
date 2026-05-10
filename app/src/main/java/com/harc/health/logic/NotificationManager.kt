@@ -53,7 +53,7 @@ object RecoveryNotificationManager {
             .setContentIntent(pendingIntent)
             .setAutoCancel(true)
             .setColor(context.getColor(android.R.color.holo_blue_dark))
-            .setVisibility(NotificationCompat.VISIBILITY_PUBLIC)
+            .setVisibility(if (SessionManager(context).isPrivacyModeEnabled()) NotificationCompat.VISIBILITY_PRIVATE else NotificationCompat.VISIBILITY_PUBLIC)
 
         val notificationManager = context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
         notificationManager.notify(title.hashCode(), builder.build())
